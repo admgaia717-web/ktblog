@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#c23152"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="100%" style="stop-color:#ee5a24"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#feca57"/>
+      <stop offset="100%" style="stop-color:#ff9f43"/>
+    </linearGradient>
+    <linearGradient id="bar4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#48dbfb"/>
+      <stop offset="100%" style="stop-color:#0abde3"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="50%" style="stop-color:#ff9f43"/>
+      <stop offset="100%" style="stop-color:#48dbfb"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="50" y1="120" x2="1150" y2="120"/>
+    <line x1="50" y1="220" x2="1150" y2="220"/>
+    <line x1="50" y1="320" x2="1150" y2="320"/>
+    <line x1="50" y1="420" x2="1150" y2="420"/>
+    <line x1="50" y1="520" x2="1150" y2="520"/>
+  </g>
+
+  <!-- Memory leak growth chart -->
+  <g transform="translate(80, 50)">
+    <!-- Y-axis labels -->
+    <text x="-10" y="470" fill="#888" font-size="14" text-anchor="end" font-family="monospace">0GB</text>
+    <text x="-10" y="370" fill="#888" font-size="14" text-anchor="end" font-family="monospace">8GB</text>
+    <text x="-10" y="270" fill="#888" font-size="14" text-anchor="end" font-family="monospace">16GB</text>
+    <text x="-10" y="170" fill="#888" font-size="14" text-anchor="end" font-family="monospace">24GB</text>
+    <text x="-10" y="70" fill="#888" font-size="14" text-anchor="end" font-family="monospace">32GB</text>
+
+    <!-- Warning zone (30GB+) -->
+    <rect x="0" y="130" width="1050" height="80" fill="#e94560" fill-opacity="0.08" rx="4"/>
+    <text x="1050" y="145" fill="#e94560" font-size="12" text-anchor="end" font-family="monospace">KRITICAL ZONE</text>
+
+    <!-- Normal zone (0-8GB) -->
+    <rect x="0" y="390" width="1050" height="80" fill="#48dbfb" fill-opacity="0.06" rx="4"/>
+    <text x="1050" y="405" fill="#48dbfb" font-size="12" text-anchor="end" font-family="monospace">NORMAL ZONE</text>
+
+    <!-- Line chart - kalloc growth -->
+    <polyline points="0,460 50,455 100,448 150,440 200,430 250,418 300,405 350,390 400,373 450,355 500,335 550,310 600,285 650,255 700,220 750,180 800,140 850,100 900,65 950,45"
+      fill="none" stroke="url(#line)" stroke-width="3" filter="url(#glow)"/>
+
+    <!-- Time labels -->
+    <text x="0" y="505" fill="#666" font-size="12" text-anchor="middle" font-family="monospace">0h</text>
+    <text x="200" y="505" fill="#666" font-size="12" text-anchor="middle" font-family="monospace">1h</text>
+    <text x="400" y="505" fill="#666" font-size="12" text-anchor="middle" font-family="monospace">2h</text>
+    <text x="600" y="505" fill="#666" font-size="12" text-anchor="middle" font-family="monospace">3h</text>
+    <text x="800" y="505" fill="#666" font-size="12" text-anchor="middle" font-family="monospace">4h</text>
+    <text x="1000" y="505" fill="#666" font-size="12" text-anchor="middle" font-family="monospace">5h</text>
+
+    <!-- Data points -->
+    <circle cx="0" cy="460" r="4" fill="#48dbfb"/>
+    <circle cx="200" cy="430" r="4" fill="#48dbfb"/>
+    <circle cx="400" cy="373" r="4" fill="#feca57"/>
+    <circle cx="600" cy="285" r="4" fill="#ff6b6b"/>
+    <circle cx="800" cy="140" r="6" fill="#e94560" filter="url(#glow)"/>
+    <circle cx="950" cy="45" r="6" fill="#e94560" filter="url(#glow)"/>
+
+    <!-- Annotations -->
+    <text x="800" y="125" fill="#e94560" font-size="13" text-anchor="middle" font-weight="bold" font-family="monospace">▲ 30GB WIRED</text>
+    <text x="950" y="30" fill="#e94560" font-size="13" text-anchor="middle" font-weight="bold" font-family="monospace">⚠ KERNEL PANIC</text>
+  </g>
+
+  <!-- Title area -->
+  <text x="600" y="590" fill="#e94560" font-size="16" text-anchor="middle" font-family="monospace" font-weight="bold" letter-spacing="2">DATA_SHARED.KALLOC.1024 GROWTH OVER TIME</text>
+
+  <!-- KTBLOG branding -->
+  <text x="1140" y="610" fill="#555" font-size="12" text-anchor="end" font-family="monospace">KTBLOG / 2026-06-04</text>
+</svg>
