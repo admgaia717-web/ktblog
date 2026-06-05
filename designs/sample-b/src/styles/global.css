@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sample B: 生成り・墨・赤 — 古文書 × 思想誌 × 奈良の記録 */
+:root {
+  --color-bg: #f5f0e8;
+  --color-bg-secondary: #ebe4d6;
+  --color-text: #2c2416;
+  --color-text-muted: #6b5d4a;
+  --color-accent: #c41e3a;
+  --color-accent-hover: #e02848;
+  --color-border: #d4c9b8;
+  --color-ink: #1a1410;
+  --color-paper: #faf6ee;
+  
+  --font-serif: 'Noto Serif JP', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  line-height: 1.8;
+}
+
+/* カスタムコンポーネント */
+@layer components {
+  .card-manuscript {
+    @apply bg-[var(--color-paper)] 
+           border border-[var(--color-border)] 
+           shadow-sm 
+           hover:shadow-md 
+           transition-all duration-300;
+  }
+  
+  .accent-line {
+    @apply h-0.5 bg-[var(--color-accent)];
+  }
+  
+  .text-accent {
+    color: var(--color-accent);
+  }
+  
+  .text-ink {
+    color: var(--color-ink);
+  }
+  
+  .bg-paper {
+    background-color: var(--color-paper);
+  }
+  
+  .border-manuscript {
+    border-color: var(--color-border);
+  }
+}
+
+/* 和風の装飾 */
+@layer utilities {
+  .shadow-ink {
+    box-shadow: 2px 2px 8px rgba(44, 36, 22, 0.1);
+  }
+  
+  .text-justified {
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+}

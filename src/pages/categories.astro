@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const categoryMap: Record<string, typeof allPosts> = {};
+for (const post of allPosts) {
+  const cat = post.data.category || 'uncategorized';
+  if (!categoryMap[cat]) categoryMap[cat] = [];
+  categoryMap[cat].push(post);
+}
+const categories = Object.entries(categoryMap).sort((a, b) => b[1].length - a[1].length);
+---
+<BaseLayout title="Categories">
+  <header class="mb-12 space-y-3">
+    <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Categories</p>
+    <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight">Topics</h1>
+    <p class="text-[var(--color-text-muted)]">{categories.length}カテゴリ</p>
+  </header>
+
+  <div class="space-y-16">
+    {categories.map(([category, posts]) => (
+      <section>
+        <div class="flex items-baseline justify-between mb-6 pb-3 border-b border-[var(--color-border)]">
+          <h2 class="font-[var(--font-serif)] text-2xl md:text-3xl font-bold tracking-tight">{category}</h2>
+          <span class="text-sm text-[var(--color-text-muted)]">{posts.length}件</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+          {posts
+            .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+            .map((post) => (
+              <PostCard post={post} />
+            ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

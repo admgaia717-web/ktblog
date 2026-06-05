@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const featured = posts[0];
+const rest = posts.slice(1);
+---
+<BaseLayout title="Home">
+  <section class="mb-16 space-y-4">
+    <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Thoughts &middot; Records &middot; Archive</p>
+    <h1 class="font-[var(--font-serif)] text-4xl md:text-6xl font-bold tracking-tight leading-[1.1]">
+      KTblog
+    </h1>
+    <p class="text-[var(--color-text-muted)] max-w-xl leading-relaxed">
+      思想と記録のアーカイブ。技術、文化、デザイン、戦略について、静かに、深く、書き留める。
+    </p>
+  </section>
+
+  {featured && (
+    <section class="mb-16">
+      <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] mb-6">Featured</p>
+      <PostCard post={featured} featured={true} />
+    </section>
+  )}
+
+  {rest.length > 0 && (
+    <section>
+      <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] mb-6">Recent Posts</p>
+      <div class="grid md:grid-cols-2 gap-10">
+        {rest.map((post) => (
+          <PostCard post={post} />
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

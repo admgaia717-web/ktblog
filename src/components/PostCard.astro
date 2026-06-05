@@ -1,0 +1,48 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+  featured?: boolean;
+}
+
+const { post, featured = false } = Astro.props;
+const { title, date, category, eyecatch, excerpt } = post.data;
+const formattedDate = date.toLocaleDateString('ja-JP', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+<article class="group">
+  <a href={`/post/${post.slug}`} class="block">
+    {eyecatch && (
+      <div class="aspect-[1280/670] overflow-hidden rounded-lg bg-[var(--color-bg-secondary)] mb-4 ring-1 ring-[var(--color-border)]">
+        <img
+          src={eyecatch}
+          alt={title}
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+          loading="lazy"
+        />
+      </div>
+    )}
+    <div class="space-y-2">
+      <div class="flex items-center gap-3 text-xs">
+        <span class="text-[var(--color-accent)] tracking-wider uppercase font-medium">{category}</span>
+        <span class="text-[var(--color-border)]">·</span>
+        <time datetime={date.toISOString()} class="text-[var(--color-text-muted)]">{formattedDate}</time>
+      </div>
+      <h2
+        class:list={[
+          'font-[var(--font-serif)] font-bold tracking-tight group-hover:text-[var(--color-accent)] transition-colors leading-tight',
+          featured ? 'text-2xl md:text-4xl' : 'text-lg md:text-xl',
+        ]}
+      >
+        {title}
+      </h2>
+      {excerpt && (
+        <p class="text-sm text-[var(--color-text-muted)] leading-relaxed line-clamp-2">{excerpt}</p>
+      )}
+    </div>
+  </a>
+</article>

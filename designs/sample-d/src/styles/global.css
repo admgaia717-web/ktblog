@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sample D: 白・グレー・金 — 高級note代替 × 読みやすい個人思想メディア */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8f8f8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666666;
+  --color-accent: #d4af37;
+  --color-accent-hover: #b8941f;
+  --color-border: #e5e5e5;
+  --color-surface: #fafafa;
+  
+  --font-serif: 'Noto Serif JP', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+/* カスタムコンポーネント */
+@layer components {
+  .card-luxury {
+    @apply bg-white 
+           border border-[var(--color-border)] 
+           rounded-lg 
+           hover:shadow-lg 
+           transition-all duration-300;
+  }
+  
+  .accent-line {
+    @apply h-0.5 bg-gradient-to-r from-[var(--color-accent)] to-transparent;
+  }
+  
+  .text-luxury {
+    color: var(--color-accent);
+  }
+  
+  .text-subtle {
+    color: var(--color-text-muted);
+  }
+  
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+  
+  .border-luxury {
+    border-color: var(--color-border);
+  }
+}
+
+/* 高級感のあるシャドウ */
+@layer utilities {
+  .shadow-luxury {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .shadow-luxury-hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+}

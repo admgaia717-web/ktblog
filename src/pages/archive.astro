@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts');
+const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<BaseLayout title="Archive">
+  <header class="mb-12 space-y-3">
+    <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Archive</p>
+    <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight">All Posts</h1>
+    <p class="text-[var(--color-text-muted)]">{posts.length}件の記事</p>
+  </header>
+
+  <div class="grid md:grid-cols-2 gap-10">
+    {posts.map((post) => (
+      <PostCard post={post} />
+    ))}
+  </div>
+</BaseLayout>

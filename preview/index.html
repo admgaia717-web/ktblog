@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTblog テーマプレビュー</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+JP:wght@400;700&display=swap');
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #1a1a1a;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      padding: 3rem 2rem;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.25rem;
+      margin-bottom: 3rem;
+    }
+    
+    .intro {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    
+    .intro h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+    
+    .intro p {
+      color: #666666;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+    
+    .intro ul {
+      margin-left: 1.5rem;
+      color: #666666;
+    }
+    
+    .intro li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .theme-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .theme-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+    }
+    
+    .theme-preview {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .theme-preview-a {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      border-bottom: 4px solid #d4af37;
+    }
+    
+    .theme-preview-b {
+      background: linear-gradient(135deg, #f5f0e8 0%, #ebe4d6 100%);
+      border-bottom: 4px solid #c41e3a;
+    }
+    
+    .theme-preview-c {
+      background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+      border-bottom: 4px solid #00ff41;
+    }
+    
+    .theme-preview-d {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+      border-bottom: 4px solid #d4af37;
+    }
+    
+    .theme-preview::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+    
+    .theme-preview-a::after {
+      background: radial-gradient(circle, #d4af37 0%, transparent 70%);
+    }
+    
+    .theme-preview-b::after {
+      background: radial-gradient(circle, #c41e3a 0%, transparent 70%);
+    }
+    
+    .theme-preview-c::after {
+      background: radial-gradient(circle, #00ff41 0%, transparent 70%);
+      box-shadow: 0 0 20px #00ff41;
+    }
+    
+    .theme-preview-d::after {
+      background: radial-gradient(circle, #d4af37 0%, transparent 70%);
+    }
+    
+    .theme-content {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .theme-content h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+    
+    .theme-concept {
+      color: #666666;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    .theme-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .keyword {
+      padding: 0.25rem 0.75rem;
+      background-color: #f0f0f0;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      color: #666666;
+    }
+    
+    .theme-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.2s;
+      margin-top: auto;
+    }
+    
+    .theme-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    
+    .footer {
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.875rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>KTblog テーマプレビュー</h1>
+    <p class="subtitle">4つのデザインコンセプトを比較</p>
+    
+    <div class="intro">
+      <h2>テーマ選択ガイド</h2>
+      <p>KTblogのデザインコンセプトは、4つの異なる方向性で提案されています。各テーマをクリックして詳細を確認し、お好みのテーマを選択してください。</p>
+      <ul>
+        <li><strong>Sample A:</strong> 黒・金・深緑 — 現代の寺子屋 × サイバーパンク × 戦国記録庫</li>
+        <li><strong>Sample B:</strong> 生成り・墨・赤 — 古文書 × 思想誌 × 奈良の記録</li>
+        <li><strong>Sample C:</strong> 黒・白・蛍光グリーン — AI兵法 × ハッカー思想メディア</li>
+        <li><strong>Sample D:</strong> 白・グレー・金 — 高級note代替 × 読みやすい個人思想メディア</li>
+      </ul>
+    </div>
+    
+    <div class="themes-grid">
+      <div class="theme-card">
+        <div class="theme-preview theme-preview-a"></div>
+        <div class="theme-content">
+          <h3>Sample A</h3>
+          <p class="theme-concept">黒・金・深緑 — 現代の寺子屋 × サイバーパンク × 戦国記録庫</p>
+          <div class="theme-keywords">
+            <span class="keyword">重厚感</span>
+            <span class="keyword">未来志向</span>
+            <span class="keyword">知的</span>
+            <span class="keyword">シネマティック</span>
+          </div>
+          <a href="../designs/sample-a/index.html" class="theme-link">プレビューを見る</a>
+        </div>
+      </div>
+      
+      <div class="theme-card">
+        <div class="theme-preview theme-preview-b"></div>
+        <div class="theme-content">
+          <h3>Sample B</h3>
+          <p class="theme-concept">生成り・墨・赤 — 古文書 × 思想誌 × 奈良の記録</p>
+          <div class="theme-keywords">
+            <span class="keyword">古典</span>
+            <span class="keyword">品格</span>
+            <span class="keyword">静謐</span>
+            <span class="keyword">文学的</span>
+          </div>
+          <a href="../designs/sample-b/index.html" class="theme-link">プレビューを見る</a>
+        </div>
+      </div>
+      
+      <div class="theme-card">
+        <div class="theme-preview theme-preview-c"></div>
+        <div class="theme-content">
+          <h3>Sample C</h3>
+          <p class="theme-concept">黒・白・蛍光グリーン — AI兵法 × ハッカー思想メディア</p>
+          <div class="theme-keywords">
+            <span class="keyword">ターミナル</span>
+            <span class="keyword">先鋭的</span>
+            <span class="keyword">ミニマル</span>
+            <span class="keyword">技術的</span>
+          </div>
+          <a href="../designs/sample-c/index.html" class="theme-link">プレビューを見る</a>
+        </div>
+      </div>
+      
+      <div class="theme-card">
+        <div class="theme-preview theme-preview-d"></div>
+        <div class="theme-content">
+          <h3>Sample D</h3>
+          <p class="theme-concept">白・グレー・金 — 高級note代替 × 読みやすい個人思想メディア</p>
+          <div class="theme-keywords">
+            <span class="keyword">洗練</span>
+            <span class="keyword">読みやすい</span>
+            <span class="keyword">高級感</span>
+            <span class="keyword">ミニマル</span>
+          </div>
+          <a href="../designs/sample-d/index.html" class="theme-link">プレビューを見る</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>KTblog Design System - 4 Theme Concepts</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="About">
+  <article class="prose max-w-2xl">
+    <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">About</p>
+    <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight leading-[1.1]">
+      KTblog について
+    </h1>
+
+    <p>
+      思想と記録のアーカイブ。技術、文化、デザイン、戦略について、静かに、深く、書き留める。
+    </p>
+
+    <h2>このサイトについて</h2>
+    <p>
+      KTblogは、個人の思考と記録を長期にわたって保存し、公開するための静的サイトです。
+      Astro + Markdown + Cloudflare Pages で構築され、最小限のJavaScriptで高速に動作します。
+    </p>
+
+    <h2>執筆領域</h2>
+    <ul>
+      <li><strong>AI戦略</strong> — 人工知能と社会、技術の未来</li>
+      <li><strong>文化記録</strong> — 歴史、伝統、継承</li>
+      <li><strong>デザイン哲学</strong> — 美意識、余白、タイポグラフィ</li>
+      <li><strong>思考・思想</strong> — 個人的な考察と記録</li>
+    </ul>
+
+    <h2>技術構成</h2>
+    <ul>
+      <li>Astro (静的サイトジェネレーター)</li>
+      <li>Markdown / MDX (コンテンツ)</li>
+      <li>Tailwind CSS (スタイリング)</li>
+      <li>Cloudflare Pages (ホスティング)</li>
+    </ul>
+
+    <h2>連絡先</h2>
+    <p>
+      お問い合わせは、このサイトの管理チャンネルを通じてお願いします。
+    </p>
+  </article>
+</BaseLayout>

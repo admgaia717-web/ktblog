@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const { title, date, category, eyecatch, excerpt } = post.data;
+const formattedDate = date.toLocaleDateString('ja-JP', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+<BaseLayout title={title} description={excerpt}>
+  <article>
+    <header class="mb-10 space-y-4">
+      <a href="/" class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] hover:opacity-80 transition-opacity">
+        ← Back to Home
+      </a>
+      <div class="flex items-center gap-3 text-sm">
+        <span class="text-[var(--color-accent)] tracking-wider uppercase font-medium">{category}</span>
+        <span class="text-[var(--color-border)]">·</span>
+        <time datetime={date.toISOString()} class="text-[var(--color-text-muted)]">{formattedDate}</time>
+      </div>
+      <h1 class="font-[var(--font-serif)] text-3xl md:text-5xl font-bold tracking-tight leading-[1.15]">
+        {title}
+      </h1>
+      {excerpt && (
+        <p class="text-lg text-[var(--color-text-muted)] leading-relaxed">{excerpt}</p>
+      )}
+    </header>
+
+    {eyecatch && (
+      <figure class="aspect-[1280/670] overflow-hidden rounded-lg bg-[var(--color-bg-secondary)] mb-12 ring-1 ring-[var(--color-border)]">
+        <img src={eyecatch} alt={title} class="w-full h-full object-cover" />
+      </figure>
+    )}
+
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

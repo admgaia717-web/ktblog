@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample C - 黒・白・蛍光グリーン</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+JP:wght@400;700&display=swap');
+    
+    :root {
+      --color-bg: #000000;
+      --color-bg-secondary: #0a0a0a;
+      --color-text: #ffffff;
+      --color-text-muted: #888888;
+      --color-accent: #00ff41;
+      --color-accent-hover: #00ff88;
+      --color-border: #1a1a1a;
+      --color-terminal: #0d0d0d;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1.6;
+      padding: 2rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+    
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 255, 65, 0.03) 50%,
+        transparent 100%
+      );
+      background-size: 100% 4px;
+      pointer-events: none;
+      z-index: 1;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .accent-line {
+      height: 2px;
+      background-color: var(--color-accent);
+      box-shadow: 0 0 10px var(--color-accent);
+      margin: 2rem 0;
+    }
+    
+    h1 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--color-accent);
+      text-shadow: 0 0 10px var(--color-accent);
+    }
+    
+    h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.75rem;
+      margin: 2rem 0 1rem;
+      color: var(--color-accent);
+      text-shadow: 0 0 8px var(--color-accent);
+    }
+    
+    h2:before {
+      content: '> ';
+      color: var(--color-accent);
+    }
+    
+    p {
+      margin-bottom: 1rem;
+      color: var(--color-text-muted);
+    }
+    
+    .card-hacker {
+      background-color: var(--color-terminal);
+      border: 1px solid var(--color-accent);
+      padding: 2rem;
+      margin: 2rem 0;
+      transition: all 0.2s;
+    }
+    
+    .card-hacker:hover {
+      border-color: var(--color-accent-hover);
+      box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+    }
+    
+    .card-hacker h3 {
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 8px var(--color-accent);
+    }
+    
+    .card-hacker h3:before {
+      content: '// ';
+      opacity: 0.5;
+    }
+    
+    .code-block {
+      background-color: var(--color-terminal);
+      border: 1px solid var(--color-accent);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--color-accent);
+      overflow-x: auto;
+      position: relative;
+    }
+    
+    .code-block:before {
+      content: '$ ';
+      color: var(--color-accent);
+      opacity: 0.7;
+    }
+    
+    .terminal-output {
+      background-color: var(--color-terminal);
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--color-accent);
+    }
+    
+    .terminal-output .prompt {
+      color: var(--color-accent);
+      opacity: 0.7;
+    }
+    
+    .terminal-output .output {
+      color: var(--color-text);
+      opacity: 0.8;
+    }
+    
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 20px;
+      background-color: var(--color-accent);
+      animation: blink 1s step-end infinite;
+      vertical-align: text-bottom;
+      margin-left: 2px;
+    }
+    
+    @keyframes blink {
+      from, to { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background-color: var(--color-terminal);
+      border: 1px solid var(--color-accent);
+      color: var(--color-accent);
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-card {
+      background-color: var(--color-terminal);
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      transition: all 0.2s;
+    }
+    
+    .feature-card:hover {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+    }
+    
+    .feature-card h4 {
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+      text-shadow: 0 0 6px var(--color-accent);
+    }
+    
+    .feature-card h4:before {
+      content: '>> ';
+      opacity: 0.5;
+    }
+    
+    .ascii-art {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--color-accent);
+      white-space: pre;
+      line-height: 1.2;
+      margin: 2rem 0;
+      text-align: center;
+      text-shadow: 0 0 8px var(--color-accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sample C</h1>
+    <p style="font-size: 1.25rem; color: var(--color-accent); text-shadow: 0 0 8px var(--color-accent);">黒・白・蛍光グリーン — AI兵法 × ハッカー思想メディア</p>
+    
+    <div class="accent-line"></div>
+    
+    <div class="ascii-art">
+ ____    _    ___ _____ ____  
+/ ___|  / \  |_ _|_   _/ ___| 
+| |     / _ \  | |  | | \___ \ 
+| |___ / ___ \ | |  | |  ___) |
+\____/_/   \_\___| |_| |____/ 
+    </div>
+    
+    <div class="card-hacker">
+      <h3>theme.concept</h3>
+      <p>漆黒の背景に蛍光グリーンが輝く、ターミナルのようなデザイン。ハッカー文化とAI戦略の先鋭的な雰囲気を演出します。</p>
+      <div style="margin-top: 1rem;">
+        <span class="tag">ターミナル</span>
+        <span class="tag">先鋭的</span>
+        <span class="tag">ミニマル</span>
+        <span class="tag">技術的</span>
+      </div>
+    </div>
+    
+    <h2>color.scheme</h2>
+    <p>純粋な黒と白、そして蛍光グリーンのみで構成。ターミナル画面のようなミニマルで先鋭的な配色。</p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>Black</h4>
+        <p>背景色: #000000<br>純粋な黒で無限の奥行き</p>
+      </div>
+      <div class="feature-card">
+        <h4>White</h4>
+        <p>文字色: #ffffff<br>クリアで読みやすい白</p>
+      </div>
+      <div class="feature-card">
+        <h4>Neon Green</h4>
+        <p>アクセント: #00ff41<br>蛍光グリーンで未来的</p>
+      </div>
+    </div>
+    
+    <h2>typography</h2>
+    <div class="card-hacker">
+      <h3>font.selection</h3>
+      <p><strong>全テキスト:</strong> JetBrains Mono - プログラミングに最適な等幅フォント</p>
+      <p><strong>特徴:</strong> コードのような視覚的統一感</p>
+    </div>
+    
+    <h2>terminal.demo</h2>
+    <div class="code-block">
+      <code>
+function hack() {
+  const system = new System();
+  system.bypass('firewall');
+  system.extract('data');
+  return system.output;
+}
+      </code>
+    </div>
+    
+    <div class="terminal-output">
+      <div class="prompt">$ ./analyze.sh --mode=deep</div>
+      <div class="output">
+[INFO] Initializing analysis...
+[INFO] Scanning target systems...
+[OK] Data extraction complete
+[OK] Report generated
+      </div>
+      <div class="prompt">$ <span class="cursor"></span></div>
+    </div>
+    
+    <h2>visual.effects</h2>
+    <div class="card-hacker">
+      <h3>scanline.effect</h3>
+      <p>・スキャンライン効果（CRTモニター風）</p>
+      <p>・蛍光グリーンのグロー効果</p>
+      <p>・ターミナル風のプロンプト表示</p>
+      <p>・ブリンクカーソルアニメーション</p>
+      <p>・ASCII アートの対応</p>
+    </div>
+    
+    <div class="accent-line"></div>
+    
+    <p style="text-align: center; color: var(--color-text-muted); margin-top: 2rem;">
+      ← <a href="../../preview/index.html" style="color: var(--color-accent); text-shadow: 0 0 8px var(--color-accent);">./back --to=preview-list</a>
+    </p>
+  </div>
+</body>
+</html>

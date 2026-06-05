@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sample A: 黒・金・深緑 — 現代の寺子屋 × サイバーパンク × 戦国記録庫 */
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-secondary: #1a1a1a;
+  --color-text: #e8e8e8;
+  --color-text-muted: #999999;
+  --color-accent: #d4af37;
+  --color-accent-hover: #f4cf57;
+  --color-border: #2a2a2a;
+  --color-green: #2d5016;
+  --color-green-light: #4a7c2c;
+  
+  --font-serif: 'Noto Serif JP', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* カスタムコンポーネント */
+@layer components {
+  .card-cyber {
+    @apply bg-gradient-to-br from-[var(--color-bg-secondary)] to-[var(--color-bg)] 
+           border border-[var(--color-border)] 
+           hover:border-[var(--color-accent)] 
+           transition-all duration-300;
+  }
+  
+  .accent-line {
+    @apply h-1 bg-gradient-to-r from-[var(--color-accent)] via-[var(--color-green-light)] to-transparent;
+  }
+  
+  .text-gold {
+    color: var(--color-accent);
+  }
+  
+  .text-green {
+    color: var(--color-green-light);
+  }
+  
+  .bg-dark-card {
+    background-color: var(--color-bg-secondary);
+  }
+  
+  .border-accent {
+    border-color: var(--color-accent);
+  }
+}
+
+/* アニメーション */
+@layer utilities {
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  }
+  
+  .glow-green {
+    box-shadow: 0 0 20px rgba(74, 124, 44, 0.3);
+  }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample B - 生成り・墨・赤</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+JP:wght@400;700&display=swap');
+    
+    :root {
+      --color-bg: #f5f0e8;
+      --color-bg-secondary: #ebe4d6;
+      --color-text: #2c2416;
+      --color-text-muted: #6b5d4a;
+      --color-accent: #c41e3a;
+      --color-accent-hover: #e02848;
+      --color-border: #d4c9b8;
+      --color-ink: #1a1410;
+      --color-paper: #faf6ee;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: 'Noto Serif JP', serif;
+      line-height: 1.8;
+      padding: 2rem;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .accent-line {
+      height: 2px;
+      background-color: var(--color-accent);
+      margin: 3rem 0;
+    }
+    
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-ink);
+      letter-spacing: 0.05em;
+    }
+    
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.75rem;
+      margin: 2.5rem 0 1.5rem;
+      color: var(--color-accent);
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 0.5rem;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+    
+    .card-manuscript {
+      background-color: var(--color-paper);
+      border: 1px solid var(--color-border);
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 2px 2px 8px rgba(44, 36, 22, 0.1);
+      transition: all 0.3s;
+    }
+    
+    .card-manuscript:hover {
+      box-shadow: 4px 4px 16px rgba(44, 36, 22, 0.15);
+    }
+    
+    .card-manuscript h3 {
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    
+    .quote {
+      background-color: var(--color-bg-secondary);
+      border-left: 4px solid var(--color-accent);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--color-text-muted);
+    }
+    
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      height: 300px;
+      margin: 2rem 0;
+      padding: 1rem;
+      background-color: var(--color-paper);
+      border: 1px solid var(--color-border);
+    }
+    
+    .seal {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-accent);
+      color: var(--color-paper);
+      font-weight: 700;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .feature-list {
+      list-style: none;
+      margin: 2rem 0;
+    }
+    
+    .feature-list li {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    
+    .feature-list li:before {
+      content: "◆";
+      color: var(--color-accent);
+      margin-right: 1rem;
+    }
+    
+    .manuscript-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .manuscript-card {
+      background-color: var(--color-paper);
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      transition: all 0.3s;
+    }
+    
+    .manuscript-card:hover {
+      box-shadow: 2px 2px 8px rgba(44, 36, 22, 0.15);
+    }
+    
+    .manuscript-card h4 {
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sample B</h1>
+    <p style="font-size: 1.25rem; color: var(--color-accent); margin-bottom: 2rem;">生成り・墨・赤 — 古文書 × 思想誌 × 奈良の記録</p>
+    
+    <div class="accent-line"></div>
+    
+    <div class="card-manuscript">
+      <h3>テーマコンセプト</h3>
+      <p>和紙のような生成りの背景に、墨色の文字と朱色のアクセント。古くからの書物や思想誌のような、落ち着きと品格を備えたデザインです。</p>
+      <div style="margin-top: 1rem;">
+        <span class="seal">古典</span>
+        <span class="seal">品格</span>
+        <span class="seal">静謐</span>
+        <span class="seal">文学的</span>
+      </div>
+    </div>
+    
+    <h2>色彩構成</h2>
+    <p>和紙を思わせる生成りの背景に、墨のような深い茶色、そして朱色のアクセント。日本の伝統的な配色を現代的に解釈しました。</p>
+    
+    <div class="manuscript-grid">
+      <div class="manuscript-card">
+        <h4>生成り (Kinari)</h4>
+        <p>背景色: #f5f0e8<br>和紙のような温かみのある白</p>
+      </div>
+      <div class="manuscript-card">
+        <h4>墨 (Sumi)</h4>
+        <p>文字色: #2c2416<br>墨のような深い茶黒</p>
+      </div>
+      <div class="manuscript-card">
+        <h4>朱 (Shu)</h4>
+        <p>アクセント: #c41e3a<br>朱色のような鮮やかな赤</p>
+      </div>
+    </div>
+    
+    <h2>タイポグラフィ</h2>
+    <div class="card-manuscript">
+      <h3>フォント選択</h3>
+      <p><strong>見出し・本文:</strong> Noto Serif JP - 明朝体の品格と読みやすさ</p>
+      <p><strong>補助テキスト:</strong> Inter - 補助的な情報にはサンセリフを使用</p>
+      <p><strong>行間:</strong> 1.8 - 余裕のある行間で読みやすさを重視</p>
+    </div>
+    
+    <h2>組版の特徴</h2>
+    <div class="quote">
+      「言葉は、静かに、しかし確かに、時を越えて語りかける。」
+    </div>
+    
+    <ul class="feature-list">
+      <li>均等割付（text-align: justify）による美しい組版</li>
+      <li>十分な余白と行間による読みやすさ</li>
+      <li>明朝体を中心とした品格のあるタイポグラフィ</li>
+      <li>朱色のアクセントによる視覚的なリズム</li>
+    </ul>
+    
+    <h2>デザイン特徴</h2>
+    <div class="card-manuscript">
+      <h3>視覚効果</h3>
+      <p>・朱色のアクセントラインと下線</p>
+      <p>・紙のような影（box-shadow）</p>
+      <p>・引用ブロックの左罫線</p>
+      <p>・印章風のタグデザイン</p>
+      <p>・縦書きテキストの対応</p>
+    </div>
+    
+    <div class="accent-line"></div>
+    
+    <p style="text-align: center; color: var(--color-text-muted); margin-top: 2rem;">
+      ← <a href="../../preview/index.html" style="color: var(--color-accent);">プレビュー一覧に戻る</a>
+    </p>
+  </div>
+</body>
+</html>

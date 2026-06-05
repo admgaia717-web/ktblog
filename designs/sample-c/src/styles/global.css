@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sample C: 黒・白・蛍光グリーン — AI兵法 × ハッカー思想メディア */
+:root {
+  --color-bg: #000000;
+  --color-bg-secondary: #0a0a0a;
+  --color-text: #ffffff;
+  --color-text-muted: #888888;
+  --color-accent: #00ff41;
+  --color-accent-hover: #00ff88;
+  --color-border: #1a1a1a;
+  --color-terminal: #0d0d0d;
+  
+  --font-serif: 'Noto Serif JP', serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  line-height: 1.6;
+}
+
+/* カスタムコンポーネント */
+@layer components {
+  .card-hacker {
+    @apply bg-[var(--color-terminal)] 
+           border border-[var(--color-accent)] 
+           hover:border-[var(--color-accent-hover)] 
+           transition-all duration-200;
+  }
+  
+  .accent-line {
+    @apply h-0.5 bg-[var(--color-accent)] shadow-[0_0_10px_var(--color-accent)];
+  }
+  
+  .text-terminal {
+    color: var(--color-accent);
+  }
+  
+  .text-dim {
+    color: var(--color-text-muted);
+  }
+  
+  .bg-terminal {
+    background-color: var(--color-terminal);
+  }
+  
+  .border-terminal {
+    border-color: var(--color-accent);
+  }
+}
+
+/* ハッカー風エフェクト */
+@layer utilities {
+  .glow-terminal {
+    text-shadow: 0 0 10px var(--color-accent);
+  }
+  
+  .scanline {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 255, 65, 0.03) 50%,
+      transparent 100%
+    );
+    background-size: 100% 4px;
+  }
+  
+  .cursor-blink {
+    animation: blink 1s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+  }
+}

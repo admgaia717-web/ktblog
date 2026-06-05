@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample A - 黒・金・深緑</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+JP:wght@400;700&display=swap');
+    
+    :root {
+      --color-bg: #0a0a0a;
+      --color-bg-secondary: #1a1a1a;
+      --color-text: #e8e8e8;
+      --color-text-muted: #999999;
+      --color-accent: #d4af37;
+      --color-accent-hover: #f4cf57;
+      --color-border: #2a2a2a;
+      --color-green: #2d5016;
+      --color-green-light: #4a7c2c;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .accent-line {
+      height: 4px;
+      background: linear-gradient(to right, var(--color-accent), var(--color-green-light), transparent);
+      margin: 2rem 0;
+    }
+    
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-green-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+      color: var(--color-accent);
+      border-left: 4px solid var(--color-green-light);
+      padding-left: 1rem;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+      color: var(--color-text-muted);
+    }
+    
+    .card-cyber {
+      background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg) 100%);
+      border: 1px solid var(--color-border);
+      padding: 2rem;
+      margin: 2rem 0;
+      transition: all 0.3s;
+    }
+    
+    .card-cyber:hover {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+    
+    .card-cyber h3 {
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+      font-family: 'Noto Serif JP', serif;
+    }
+    
+    .code-block {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--color-green-light);
+      overflow-x: auto;
+    }
+    
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-accent);
+      color: var(--color-accent);
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-card {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+    
+    .feature-card:hover {
+      border-color: var(--color-green-light);
+      box-shadow: 0 0 20px rgba(74, 124, 44, 0.3);
+    }
+    
+    .feature-card h4 {
+      color: var(--color-green-light);
+      margin-bottom: 1rem;
+      font-family: 'Noto Serif JP', serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sample A</h1>
+    <p style="font-size: 1.5rem; color: var(--color-accent);">黒・金・深緑 — 現代の寺子屋 × サイバーパンク × 戦国記録庫</p>
+    
+    <div class="accent-line"></div>
+    
+    <div class="card-cyber">
+      <h3>テーマコンセプト</h3>
+      <p>暗黒の背景に金色と深緑が輝く、未来的な書庫のようなデザイン。戦国時代の記録庫とサイバーパンク美学を融合させました。</p>
+      <div style="margin-top: 1rem;">
+        <span class="tag">重厚感</span>
+        <span class="tag">未来志向</span>
+        <span class="tag">知的</span>
+        <span class="tag">シネマティック</span>
+      </div>
+    </div>
+    
+    <h2>色彩構成</h2>
+    <p>漆黒の背景に、金色のアクセントと深緑の差し色が映える配色。金属的な輝きと有機的な緑のコントラストが特徴です。</p>
+    
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>黒 (Black)</h4>
+        <p>背景色: #0a0a0a<br>深い黒が全体の重厚感を演出</p>
+      </div>
+      <div class="feature-card">
+        <h4>金 (Gold)</h4>
+        <p>アクセント: #d4af37<br>金色が高級感と輝きを追加</p>
+      </div>
+      <div class="feature-card">
+        <h4>深緑 (Deep Green)</h4>
+        <p>サブカラー: #4a7c2c<br>知的で有機的な印象</p>
+      </div>
+    </div>
+    
+    <h2>タイポグラフィ</h2>
+    <div class="card-cyber">
+      <h3>フォント選択</h3>
+      <p><strong>見出し:</strong> Noto Serif JP - 和の重厚感と品格</p>
+      <p><strong>本文:</strong> Inter - モダンで読みやすいサンセリフ</p>
+      <p><strong>コード:</strong> JetBrains Mono - プログラミングに最適</p>
+    </div>
+    
+    <h2>コードブロック例</h2>
+    <div class="code-block">
+      <code>
+function initializeSystem() {
+  const config = {
+    theme: 'cyberpunk-archive',
+    colors: {
+      primary: '#d4af37',
+      secondary: '#4a7c2c'
+    }
+  };
+  return config;
+}
+      </code>
+    </div>
+    
+    <h2>デザイン特徴</h2>
+    <div class="card-cyber">
+      <h3>視覚効果</h3>
+      <p>・グラデーションアクセントライン（金→緑→透明）</p>
+      <p>・ホバー時のグロー効果（金色と緑色）</p>
+      <p>・カードベースのレイアウト</p>
+      <p>・境界線の強調</p>
+      <p>・シャドウと奥行き感</p>
+    </div>
+    
+    <div class="accent-line"></div>
+    
+    <p style="text-align: center; color: var(--color-text-muted); margin-top: 2rem;">
+      ← <a href="../../preview/index.html" style="color: var(--color-accent);">プレビュー一覧に戻る</a>
+    </p>
+  </div>
+</body>
+</html>
