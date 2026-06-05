@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Theme A: 黒・金・深緑 — 現代の寺子屋 × サイバーパンク × 戦国記録庫 */
+/* Hermès Color Palette - エルメスカラー */
 :root {
-  --color-bg: #0a0a0a;
-  --color-bg-secondary: #141414;
-  --color-text: #e8e6e0;
-  --color-text-muted: #8a8680;
-  --color-accent: #b89968;
-  --color-accent-secondary: #4a5d4a;
-  --color-border: #2a2a2a;
+  --color-bg: #F5F0E8;              /* きなり */
+  --color-bg-secondary: #EDE6D6;    /* ベージュ */
+  --color-text: #4A4A4A;            /* ダークグレー */
+  --color-text-muted: #8B8680;      /* トープ */
+  --color-accent: #8B7355;          /* エトープ */
+  --color-accent-secondary: #A0896B; /* エトープ（明るい） */
+  --color-border: #B8B8A8;          /* グレージュ */
   --font-serif: 'Shippori Mincho', 'Noto Serif JP', serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
