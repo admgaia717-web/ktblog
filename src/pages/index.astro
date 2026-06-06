@@ -2,11 +2,21 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
+import { groupPostsByCategory } from '../lib/categories';
 
 const allPosts = await getCollection('posts');
 const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const POSTS_PER_PAGE = 12;
+const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+const currentPage = 1;
+
 const featured = posts[0];
-const rest = posts.slice(1);
+const pagePosts = posts.slice(1, POSTS_PER_PAGE + 1);
+const restPosts = posts.slice(POSTS_PER_PAGE + 1);
+
+const categoryGroups = groupPostsByCategory(allPosts);
+const topCategories = categoryGroups.slice(0, 6);
 ---
 <BaseLayout title="Home">
   <section class="mb-16 space-y-4">
@@ -19,6 +29,23 @@ const rest = posts.slice(1);
     </p>
   </section>
 
+  <!-- Top Categories -->
+  <section class="mb-12">
+    <div class="flex flex-wrap gap-3">
+      {topCategories.map((cat) => (
+        <a href={`/categories#${encodeURIComponent(cat.name)}`} class="group">
+          <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+            {cat.name}
+            <span class="text-[var(--color-text-muted)] text-xs">{cat.posts.length}</span>
+          </span>
+        </a>
+      ))}
+      <a href="/categories" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-dashed border-[var(--color-border)] text-sm text-[var(--color-text-muted)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+        全カテゴリ →
+      </a>
+    </div>
+  </section>
+
   {featured && (
     <section class="mb-16">
       <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] mb-6">Featured</p>
@@ -26,14 +53,29 @@ const rest = posts.slice(1);
     </section>
   )}
 
-  {rest.length > 0 && (
+  {pagePosts.length > 0 && (
     <section>
-      <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] mb-6">Recent Posts</p>
+      <div class="flex items-baseline justify-between mb-6">
+        <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Recent Posts</p>
+        <span class="text-sm text-[var(--color-text-muted)]">{posts.length}件中 {pagePosts.length}件表示</span>
+      </div>
       <div class="grid md:grid-cols-2 gap-10">
-        {rest.map((post) => (
+        {pagePosts.map((post) => (
           <PostCard post={post} />
         ))}
       </div>
     </section>
+  )}
+
+  <!-- Pagination -->
+  {totalPages > 1 && (
+    <nav class="mt-16 flex items-center justify-center gap-2">
+      <span class="px-3 py-2 text-sm text-[var(--color-text-muted)] cursor-default">
+        1 / {totalPages}
+      </span>
+      <a href="/page/2" class="px-4 py-2 rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+        次へ →
+      </a>
+    </nav>
   )}
 </BaseLayout>

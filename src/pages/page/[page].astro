@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('posts');
+  const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const POSTS_PER_PAGE = 12;
+  const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+
+  const paths = [];
+  for (let i = 2; i <= totalPages; i++) {
+    const start = (i - 1) * POSTS_PER_PAGE;
+    const end = start + POSTS_PER_PAGE;
+    paths.push({
+      params: { page: String(i) },
+      props: {
+        posts: posts.slice(start, end),
+        currentPage: i,
+        totalPages,
+        totalPosts: posts.length,
+      },
+    });
+  }
+  return paths;
+}
+
+const { posts, currentPage, totalPages, totalPosts } = Astro.props;
+const startIndex = (currentPage - 1) * 12 + 1;
+const endIndex = Math.min(startIndex + posts.length - 1, totalPosts);
+---
+<BaseLayout title={`Page ${currentPage} | KTblog`}>
+  <section class="mb-12 space-y-4">
+    <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Page {currentPage} of {totalPages}</p>
+    <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight leading-[1.1]">
+      Archive
+    </h1>
+    <p class="text-[var(--color-text-muted)]">
+      {totalPosts}件の記事
+    </p>
+  </section>
+
+  <div class="grid md:grid-cols-2 gap-10">
+    {posts.map((post) => (
+      <PostCard post={post} />
+    ))}
+  </div>
+
+  <!-- Pagination -->
+  <nav class="mt-16 flex items-center justify-center gap-2">
+    {currentPage > 2 && (
+      <a href={`/page/${currentPage - 1}`} class="px-4 py-2 rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+        ← 前へ
+      </a>
+    )}
+    {currentPage === 2 && (
+      <a href="/" class="px-4 py-2 rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+        ← 前へ
+      </a>
+    )}
+    <span class="px-3 py-2 text-sm text-[var(--color-text-muted)]">
+      {currentPage} / {totalPages}
+    </span>
+    {currentPage < totalPages && (
+      <a href={`/page/${currentPage + 1}`} class="px-4 py-2 rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+        次へ →
+      </a>
+    )}
+  </nav>
+</BaseLayout>

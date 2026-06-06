@@ -2,37 +2,38 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
+import { groupPostsByCategory } from '../lib/categories';
 
 const allPosts = await getCollection('posts');
-const categoryMap: Record<string, typeof allPosts> = {};
-for (const post of allPosts) {
-  const cat = post.data.category || 'uncategorized';
-  if (!categoryMap[cat]) categoryMap[cat] = [];
-  categoryMap[cat].push(post);
-}
-const categories = Object.entries(categoryMap).sort((a, b) => b[1].length - a[1].length);
+const categoryGroups = groupPostsByCategory(allPosts);
+const totalPosts = allPosts.length;
 ---
 <BaseLayout title="Categories">
   <header class="mb-12 space-y-3">
     <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Categories</p>
     <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight">Topics</h1>
-    <p class="text-[var(--color-text-muted)]">{categories.length}カテゴリ</p>
+    <p class="text-[var(--color-text-muted)]">{categoryGroups.length}カテゴリ · {totalPosts}件の記事</p>
   </header>
 
-  <div class="space-y-16">
-    {categories.map(([category, posts]) => (
-      <section>
+  <div class="space-y-20">
+    {categoryGroups.map((group) => (
+      <section id={encodeURIComponent(group.name)}>
         <div class="flex items-baseline justify-between mb-6 pb-3 border-b border-[var(--color-border)]">
-          <h2 class="font-[var(--font-serif)] text-2xl md:text-3xl font-bold tracking-tight">{category}</h2>
-          <span class="text-sm text-[var(--color-text-muted)]">{posts.length}件</span>
+          <h2 class="font-[var(--font-serif)] text-2xl md:text-3xl font-bold tracking-tight">{group.name}</h2>
+          <span class="text-sm text-[var(--color-text-muted)]">{group.posts.length}件</span>
         </div>
         <div class="grid md:grid-cols-2 gap-8">
-          {posts
-            .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-            .map((post) => (
-              <PostCard post={post} />
-            ))}
+          {group.posts.slice(0, 6).map((post) => (
+            <PostCard post={post} />
+          ))}
         </div>
+        {group.posts.length > 6 && (
+          <div class="mt-6 text-center">
+            <a href={`/category/${encodeURIComponent(group.name)}`} class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+              全{group.posts.length}件を見る →
+            </a>
+          </div>
+        )}
       </section>
     ))}
   </div>

@@ -5,17 +5,25 @@ import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('posts');
 const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const displayPosts = posts.slice(0, 24);
+const totalPosts = posts.length;
 ---
 <BaseLayout title="Archive">
   <header class="mb-12 space-y-3">
     <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Archive</p>
     <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight">All Posts</h1>
-    <p class="text-[var(--color-text-muted)]">{posts.length}件の記事</p>
+    <p class="text-[var(--color-text-muted)]">{totalPosts}件の記事 · 最新24件を表示</p>
   </header>
 
   <div class="grid md:grid-cols-2 gap-10">
-    {posts.map((post) => (
+    {displayPosts.map((post) => (
       <PostCard post={post} />
     ))}
   </div>
+
+  <nav class="mt-16 flex items-center justify-center">
+    <a href="/page/2" class="px-5 py-2.5 rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+      さらに見る → ページ 2
+    </a>
+  </nav>
 </BaseLayout>
