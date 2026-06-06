@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export const prerender = true;
+
+const title = '404 — Not Found';
+const description = 'お探しのページは見つかりませんでした。';
+const noindex = true;
+---
+
+<BaseLayout title={title} description={description} noindex={noindex}>
+  <main class="mx-auto max-w-4xl px-5 py-20 md:py-32 text-center">
+    <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] mb-6">Error 404</p>
+    <h1 class="font-[var(--font-serif)] text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+      ページが見つかりません
+    </h1>
+    <p class="text-[var(--color-text-muted)] max-w-xl mx-auto leading-relaxed mb-10">
+      URLが間違っているか、ページが移動・削除された可能性があります。<br />
+      トップから探してみてください。
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--color-accent)] text-white text-sm font-medium hover:opacity-90 transition-opacity"
+      >
+        ← トップへ戻る
+      </a>
+      <a
+        href="/archive"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-sm hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors"
+      >
+        全記事を見る
+      </a>
+    </div>
+  </main>
+</BaseLayout>
