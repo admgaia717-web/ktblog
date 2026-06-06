@@ -1,0 +1,41 @@
+# Netlify 設定 — Cloudflare Pages からの即時避難用
+# なぜ必要か: Cloudflare Pages の SPA mode がソースコード側から
+#   制御不能（全オーバーライド無視）。Dashboard 設定変更が必要だが
+#   ユーザー操作の負担が大きい。Netlify なら SPA mode 設定が
+#   存在せず、デフォルトで正しい静的配信がされる。
+#
+# 使い方:
+#   1. https://app.netlify.com/ にログイン
+#   2. 「Add new site」→「Import an existing project」
+#   3. GitHub 連携して `admgaia717-web/ktblog` を選択
+#   4. Build command: pnpm build
+#   5. Publish directory: dist
+#   6. Deploy!
+
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# リダイレクト規則 — Cloudflare Pages の _redirects と同じ
+# Netlify は _redirects ファイルもそのままサポートするが、
+# ここでは netlify.toml で一元管理
+[[redirects]]
+  from = "/feed.xml"
+  to = "/rss.xml"
+  status = 301
+
+# セキュリティヘッダー
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
