@@ -12,14 +12,26 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const { title, date, category, eyecatch, excerpt } = post.data;
+const { title, date, category, eyecatch, excerpt, tags = [] } = post.data;
 const formattedDate = date.toLocaleDateString('ja-JP', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 });
+const isoDate = date.toISOString();
 ---
-<BaseLayout title={title} description={excerpt}>
+<BaseLayout
+  title={title}
+  description={excerpt}
+  image={eyecatch}
+  url={`/post/${post.slug}/`}
+  type="article"
+  publishedTime={isoDate}
+  modifiedTime={isoDate}
+  author="KT"
+  category={category}
+  tags={tags}
+>
   <article>
     <header class="mb-10 space-y-4">
       <a href="/" class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] hover:opacity-80 transition-opacity">

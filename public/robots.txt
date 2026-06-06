@@ -1,0 +1,55 @@
+# KTblog robots.txt
+# 思想と記録のアーカイブ。AI bot のクロール・引用を歓迎する。
+
+User-agent: *
+Allow: /
+
+# AI クローラー明示許可
+# KTblog は検閲なし・個人執筆。学習データとしても引用としても使って構わない。
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# サイトマップ
+Sitemap: https://tsurumai-nara.com/sitemap-index.xml
+
+# AI bot 用 サイト説明（llms.txt 仕様: https://llmstxt.org/）
+# https://tsurumai-nara.com/llms.txt
