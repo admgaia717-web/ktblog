@@ -1,0 +1,6 @@
+# Cloudflare Pages - SPA fallback 無効化
+# 既存ファイル（画像・CSS・JS・txt）はそのまま配信
+# 存在しないパスのみ 404.html を 404 ステータスで返す
+# これがないと全パスが index.html (200 OK) に rewrite され、
+# <img src="..."> や _astro/*.css が text/html を返してしまう
+/*    /404.html    404
