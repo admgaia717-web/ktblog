@@ -1,9 +1,10 @@
 ---
 title: "エージェントリーチによる各界AIニュース"
 date: 2026-06-04
-slug: エージェントリーチによる各界aiニュース
+slug: "エージェントリーチによる各界aiニュース"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ncad257e09b1c.png"
+tags: ["Claude", "OpenAI", "プログラミング", "セキュリティ", "映像", "AIエージェント", "LLM", "ローカルLLM", "Bitcoin", "生成AI", "ロボット", "Apple", "暗号通貨", "デザイン", "節約", "執筆"]
 ---
 
 # エージェントリーチによる各界AIニュース
@@ -78,3 +79,4 @@ AIが初めて作る「共通言語」があるとすれば、それはコード
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ncad257e09b1c*
+

@@ -1,9 +1,10 @@
 ---
 title: "AIに「憑依」を教えた日——自己改善の上流を書き換える技術"
 date: 2026-06-04
-slug: aiに-憑依-を教えた日-自己改善の上流を書き換える技術
+slug: "aiに-憑依-を教えた日-自己改善の上流を書き換える技術"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n0c4c3a7034b7.png"
+tags: ["執筆"]
 ---
 
 # AIに「憑依」を教えた日——自己改善の上流を書き換える技術
@@ -136,3 +137,4 @@ AIに対しても同じだった。そしてAIの有利な点は、「上流の�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n0c4c3a7034b7*
+

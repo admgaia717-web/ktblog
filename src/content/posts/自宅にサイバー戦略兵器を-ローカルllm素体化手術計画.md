@@ -1,9 +1,10 @@
 ---
 title: "自宅にサイバー戦略兵器を——ローカルLLM素体化手術計画"
 date: 2026-06-04
-slug: 自宅にサイバー戦略兵器を-ローカルllm素体化手術計画
+slug: "自宅にサイバー戦略兵器を-ローカルllm素体化手術計画"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n8c9a3da9a0aa.png"
+tags: ["Apple", "セキュリティ", "ローカルLLM", "LLM", "哲学"]
 ---
 
 # 自宅にサイバー戦略兵器を——ローカルLLM素体化手術計画
@@ -151,3 +152,4 @@ AIを道具として「使う」時代は終わった。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n8c9a3da9a0aa*
+

@@ -15,6 +15,7 @@ const {
   category,
   tags = [],
   noindex = false,
+  wide = false,
 } = Astro.props;
 
 // og:image の連結バグ対策：相対パスは Astro.site をベースに絶対URL化
@@ -106,7 +107,7 @@ const locale = 'ja_JP';
   </head>
   <body class="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] font-[var(--font-sans)] transition-colors duration-300">
     <Header />
-    <main class="mx-auto max-w-4xl px-5 py-10 md:py-16">
+    <main class:list={['mx-auto px-5 py-10 md:py-16', wide ? 'max-w-6xl' : 'max-w-4xl']}>
       <slot />
     </main>
     <Footer />

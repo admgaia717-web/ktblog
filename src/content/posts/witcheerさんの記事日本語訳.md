@@ -1,9 +1,10 @@
 ---
 title: "witcheerさんの記事日本語訳"
 date: 2026-06-04
-slug: witcheerさんの記事日本語訳
+slug: "witcheerさんの記事日本語訳"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n4f0f6664a871.png"
+tags: ["暗号通貨", "ローカルLLM", "AIエージェント", "プログラミング", "ロボット", "Apple", "LLM", "映像", "Claude", "哲学", "投資", "執筆", "OpenAI", "Bitcoin"]
 ---
 
 # witcheerさんの記事日本語訳
@@ -482,3 +483,4 @@ walnut、修正ログ、リサーチアーカイブ。AIはエンジン。コン
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4f0f6664a871*
+

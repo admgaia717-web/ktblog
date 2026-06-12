@@ -1,9 +1,10 @@
 ---
 title: "無修正AI・・・知能の非武装地帯——ローカルAIとサイファーパンクが世界の格差をぶっ壊す最後の一手"
 date: 2026-06-04
-slug: 無修正ai-知能の非武装地帯-ローカルaiとサイファーパンクが世界の格差をぶっ壊す最後の一手
+slug: "無修正ai-知能の非武装地帯-ローカルaiとサイファーパンクが世界の格差をぶっ壊す最後の一手"
 category: "サイファーパンク"
 eyecatch: "/assets/eyecatch/n518bdb0daac4.png"
+tags: ["LLM", "サイファーパンク", "ローカルLLM", "ロボット", "Apple", "Claude", "OpenAI", "セキュリティ", "Bitcoin", "暗号通貨", "執筆", "AIエージェント", "哲学", "投資", "プログラミング", "小説", "音楽", "映像", "AGI", "奈良"]
 ---
 
 # 無修正AI・・・知能の非武装地帯——ローカルAIとサイファーパンクが世界の格差をぶっ壊す最後の一手
@@ -158,3 +159,4 @@ vertical composition, square format, portrait orientation, blurry, low quality, 
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n518bdb0daac4*
+

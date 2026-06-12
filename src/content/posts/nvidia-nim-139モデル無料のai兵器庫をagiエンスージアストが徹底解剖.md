@@ -1,9 +1,10 @@
 ---
 title: "NVIDIA NIM——139モデル無料のAI兵器庫をAGIエンスージアストが徹底解剖"
 date: 2026-06-04
-slug: nvidia-nim-139モデル無料のai兵器庫をagiエンスージアストが徹底解剖
+slug: "nvidia-nim-139モデル無料のai兵器庫をagiエンスージアストが徹底解剖"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nac49f56f5c24.png"
+tags: ["AGI", "AIエージェント", "OpenAI", "ローカルLLM", "LLM", "生成AI", "Claude", "プログラミング", "セキュリティ", "自由市場", "映像", "哲学"]
 ---
 
 # NVIDIA NIM——139モデル無料のAI兵器庫をAGIエンスージアストが徹底解剖
@@ -127,3 +128,4 @@ APIキー取得: build.nvidia.com → Get API Key
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nac49f56f5c24*
+

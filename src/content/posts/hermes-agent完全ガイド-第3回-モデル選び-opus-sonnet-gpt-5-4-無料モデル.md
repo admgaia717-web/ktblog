@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第3回：モデル選び — Opus/Sonnet/GPT-5.4/無料モデル"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第3回-モデル選び-opus-sonnet-gpt-5-4-無料モデル
+slug: "hermes-agent完全ガイド-第3回-モデル選び-opus-sonnet-gpt-5-4-無料モデル"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n794f43fe5da1.png"
+tags: ["AIエージェント", "Claude", "ローカルLLM", "OpenAI", "プログラミング", "節約", "哲学", "ロボット", "Apple", "セキュリティ", "執筆", "暗号通貨", "サイファーパンク"]
 ---
 
 # Hermes Agent完全ガイド 第3回：モデル選び — Opus/Sonnet/GPT-5.4/無料モデル
@@ -332,3 +333,4 @@ Hermes Agentの設計思想は「どのモデルでも等しく動く」だ。20
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n794f43fe5da1*
+

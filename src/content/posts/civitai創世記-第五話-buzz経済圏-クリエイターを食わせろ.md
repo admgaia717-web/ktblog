@@ -1,9 +1,10 @@
 ---
 title: "Civitai創世記 第五話：Buzz経済圏 — クリエイターを食わせろ"
 date: 2026-06-04
-slug: civitai創世記-第五話-buzz経済圏-クリエイターを食わせろ
+slug: "civitai創世記-第五話-buzz経済圏-クリエイターを食わせろ"
 category: "Civitai"
 eyecatch: "/assets/eyecatch/nd59a46d12fb3.png"
+tags: ["生成AI", "投資", "サイファーパンク", "暗号通貨", "OpenAI", "哲学", "ロボット", "映像", "ゲーム"]
 ---
 
 # Civitai創世記 第五話：Buzz経済圏 — クリエイターを食わせろ
@@ -178,3 +179,4 @@ Civitaiには無料プランとProプラン（$7.99/月）がある。それぞ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd59a46d12fb3*
+

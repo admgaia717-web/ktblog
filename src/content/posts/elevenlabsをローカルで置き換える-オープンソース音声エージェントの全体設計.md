@@ -1,9 +1,10 @@
 ---
 title: "ElevenLabsをローカルで置き換える——オープンソース音声エージェントの全体設計"
 date: 2026-06-04
-slug: elevenlabsをローカルで置き換える-オープンソース音声エージェントの全体設計
+slug: "elevenlabsをローカルで置き換える-オープンソース音声エージェントの全体設計"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nefdce6df251e.png"
+tags: ["Apple", "プログラミング", "ローカルLLM", "LLM", "ロボット", "投資", "Claude", "OpenAI"]
 ---
 
 # ElevenLabsをローカルで置き換える——オープンソース音声エージェントの全体設計
@@ -156,3 +157,4 @@ $0.08/minを払い続ける必要はない。あなたのマシンの上で、�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nefdce6df251e*
+

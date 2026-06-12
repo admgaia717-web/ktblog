@@ -1,9 +1,10 @@
 ---
 title: "今なら！２０万代！で動く 使える 最先端 無修正AI"
 date: 2026-06-04
-slug: 今なら-万代-で動く-使える-最先端-無修正ai
+slug: "今なら-万代-で動く-使える-最先端-無修正ai"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd9918defbd70.png"
+tags: ["Apple", "ローカルLLM", "Claude", "AIエージェント", "OpenAI", "プログラミング"]
 ---
 
 # 今なら！２０万代！で動く 使える 最先端 無修正AI
@@ -110,3 +111,4 @@ M1 Max 64GBは中古30万円で、検閲ゼロのAI艦隊を自宅に構築で�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd9918defbd70*
+

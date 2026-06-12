@@ -6,8 +6,11 @@ const posts = defineCollection({
     title: z.string(),
     date: z.date(),
     category: z.string().optional(),
+    tags: z.array(z.string()).optional().default([]),
     eyecatch: z.string().optional(),
     excerpt: z.string().optional(),
+    note_url: z.string().optional(),
+    substack_url: z.string().optional(),
   }),
 });
 

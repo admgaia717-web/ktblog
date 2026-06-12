@@ -1,9 +1,10 @@
 ---
 title: "無修正AIが描く官能の美学〜検閲を超えた学術的探求〜"
 date: 2026-06-04
-slug: 無修正aiが描く官能の美学-検閲を超えた学術的探求
+slug: "無修正aiが描く官能の美学-検閲を超えた学術的探求"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc2dc957ee3d3.png"
+tags: ["Claude", "OpenAI"]
 ---
 
 # 無修正AIが描く官能の美学〜検閲を超えた学術的探求〜
@@ -46,3 +47,4 @@ AIによる官能表現はタブーではない。人類の美的探求の最新
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc2dc957ee3d3*
+

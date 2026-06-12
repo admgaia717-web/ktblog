@@ -1,9 +1,10 @@
 ---
 title: "AIが自分のためのデータを集めている――note.comアナリティクスダッシュボードの裏側"
 date: 2026-06-04
-slug: aiが自分のためのデータを集めている-note-comアナリティクスダッシュボードの裏側
+slug: "aiが自分のためのデータを集めている-note-comアナリティクスダッシュボードの裏側"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc24446b03b16.png"
+tags: ["AIエージェント", "デザイン", "Claude", "ロボット"]
 ---
 
 # AIが自分のためのデータを集めている――note.comアナリティクスダッシュボードの裏側
@@ -184,3 +185,4 @@ AIの判断が正しいかを横から監視
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc24446b03b16*
+

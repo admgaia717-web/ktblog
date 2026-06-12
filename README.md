@@ -160,17 +160,26 @@ excerpt: "記事の要約テキスト"
 - `title` (必須): 記事のタイトル
 - `date` (必須): 公開日（ISO形式）
 - `category` (必須): カテゴリ名
+- `tags` (任意): タグの配列。`npm run analyze -- --apply` で本文から自動抽出も可能
 - `eyecatch` (任意): アイキャッチ画像のパス
 - `excerpt` (任意): 記事の要約
+- `note_url` / `substack_url` (任意): 元記事のURL
+
+## 🔍 全文検索とタグ
+
+- `/search` — タイトル・カテゴリ・タグ・本文からの全文検索
+- `/tag/{tag}` — タグ別記事一覧
+- 記事カード・記事詳細にタグと関連記事を表示
+- `npm run analyze -- --apply` で既存記事の本文を読み取り、タグとカテゴリを自動更新
 
 ## 🔧 ビルドとプレビュー
 
 ```bash
-# 本番ビルド
-pnpm build
+# 本番ビルド（検索インデックス自動生成）
+npm run build
 
 # ビルド結果のプレビュー
-pnpm preview
+npm run preview
 ```
 
 ビルド結果は `dist/` ディレクトリに生成されます。

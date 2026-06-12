@@ -1,9 +1,10 @@
 ---
 title: "個人AIコンピューターを自作する——2026年版・全パーツ日本価格リスト（Dee氏スレッド完全解説）"
 date: 2026-06-04
-slug: 個人aiコンピューターを自作する-2026年版-全パーツ日本価格リスト-dee氏スレッド完全解説
+slug: "個人aiコンピューターを自作する-2026年版-全パーツ日本価格リスト-dee氏スレッド完全解説"
 category: "note.com"
 eyecatch: "/assets/eyecatch/naec24c98e47d.png"
+tags: ["Apple", "Claude", "OpenAI", "DIY", "AIエージェント", "ローカルLLM", "ロボット", "哲学"]
 ---
 
 # 個人AIコンピューターを自作する——2026年版・全パーツ日本価格リスト（Dee氏スレッド完全解説）
@@ -214,3 +215,4 @@ ChatGPTが「お役に立てません」と言う質問にも、Claudeが沈黙�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/naec24c98e47d*
+

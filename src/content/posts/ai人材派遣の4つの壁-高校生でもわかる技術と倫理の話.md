@@ -1,9 +1,10 @@
 ---
 title: "AI人材派遣の4つの壁——高校生でもわかる技術と倫理の話"
 date: 2026-06-04
-slug: ai人材派遣の4つの壁-高校生でもわかる技術と倫理の話
+slug: "ai人材派遣の4つの壁-高校生でもわかる技術と倫理の話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n0d6b7c63d090.jpg"
+tags: ["AIエージェント", "Apple", "セキュリティ", "投資"]
 ---
 
 # AI人材派遣の4つの壁——高校生でもわかる技術と倫理の話
@@ -113,3 +114,4 @@ AIエージェント人材派遣は、まだ夢物語に近い。でも、夢物
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n0d6b7c63d090*
+

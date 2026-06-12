@@ -1,9 +1,10 @@
 ---
 title: "シロシビン（Psilocybe）— 精神のインフラ"
 date: 2026-06-04
-slug: シロシビン-psilocybe-精神のインフラ-16
+slug: "シロシビン-psilocybe-精神のインフラ-16"
 category: "シロシビン/マジックマッシュルーム/OMP/薬草自給/崩壊後医学/Psilocybe/PFtek"
 eyecatch: "/assets/eyecatch/n35120b133505.png"
+tags: ["薬草", "健康", "AIエージェント", "AGI", "DIY"]
 ---
 
 # シロシビン（Psilocybe）— 精神のインフラ
@@ -194,3 +195,4 @@ PTSD
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n35120b133505*
+

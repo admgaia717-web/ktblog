@@ -1,9 +1,10 @@
 ---
 title: "鎖国インターネット——Monero×メッシュ×AIの完全設計書"
 date: 2026-06-04
-slug: 鎖国インターネット-monero-メッシュ-aiの完全設計書
+slug: "鎖国インターネット-monero-メッシュ-aiの完全設計書"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc7dd4616c9cb.png"
+tags: ["Monero", "自由市場", "生成AI", "投資", "Bitcoin", "ロボット", "セキュリティ", "暗号通貨", "サイファーパンク", "奈良", "AIエージェント"]
 ---
 
 # 鎖国インターネット——Monero×メッシュ×AIの完全設計書
@@ -159,3 +160,4 @@ Phase内容予算期間
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc7dd4616c9cb*
+

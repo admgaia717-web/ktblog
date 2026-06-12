@@ -1,9 +1,10 @@
 ---
 title: "AIが生成する「紫・グラデ・中央寄せ」にNOと言え——俺のtaste哲学構築記"
 date: 2026-06-04
-slug: aiが生成する-紫-グラデ-中央寄せ-にnoと言え-俺のtaste哲学構築記
+slug: "aiが生成する-紫-グラデ-中央寄せ-にnoと言え-俺のtaste哲学構築記"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc847e6ff01b6.jpg"
+tags: ["デザイン", "執筆", "哲学"]
 ---
 
 # AIが生成する「紫・グラデ・中央寄せ」にNOと言え——俺のtaste哲学構築記
@@ -168,3 +169,4 @@ AIに全部任せると、**世界は紫色のグラデーションになる。*
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc847e6ff01b6*
+

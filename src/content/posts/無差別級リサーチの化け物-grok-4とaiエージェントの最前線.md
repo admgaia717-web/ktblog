@@ -1,9 +1,10 @@
 ---
 title: "無差別級リサーチの化け物——Grok 4とAIエージェントの最前線"
 date: 2026-06-04
-slug: 無差別級リサーチの化け物-grok-4とaiエージェントの最前線
+slug: "無差別級リサーチの化け物-grok-4とaiエージェントの最前線"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nfd14dca09af2.png"
+tags: ["ロボット", "Claude", "AIエージェント", "デザイン", "AGI", "LLM", "プログラミング", "投資"]
 ---
 
 # 無差別級リサーチの化け物——Grok 4とAIエージェントの最前線
@@ -368,3 +369,4 @@ X.aiは、その化け物の飼い取り手となりうる。未完成ではあ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nfd14dca09af2*
+

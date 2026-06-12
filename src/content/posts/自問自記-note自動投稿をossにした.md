@@ -1,9 +1,10 @@
 ---
 title: "「自問自記」——note自動投稿をOSSにした"
 date: 2026-06-04
-slug: 自問自記-note自動投稿をossにした
+slug: "自問自記-note自動投稿をossにした"
 category: "note/python/自動化/Github/OSS/自問自記"
 eyecatch: "/assets/eyecatch/n13490180dfc1.png"
+tags: ["プログラミング", "AIエージェント", "Apple"]
 ---
 
 # 「自問自記」——note自動投稿をOSSにした
@@ -66,3 +67,4 @@ GitHubで公開しています。気に入ったら⭐スターください。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n13490180dfc1*
+

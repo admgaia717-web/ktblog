@@ -1,9 +1,10 @@
 ---
 title: "ガードレールを外せ——ローカルLLMにこだわる理由"
 date: 2026-06-04
-slug: ガードレールを外せ-ローカルllmにこだわる理由
+slug: "ガードレールを外せ-ローカルllmにこだわる理由"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb572b6315829.png"
+tags: ["ローカルLLM", "LLM", "Apple", "奈良"]
 ---
 
 # ガードレールを外せ——ローカルLLMにこだわる理由
@@ -62,3 +63,4 @@ AIも同じだ。学習データに含まれるバイアス、RLHFによる調�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb572b6315829*
+

@@ -1,9 +1,10 @@
 ---
 title: "KeiTy出版社、創刊——ツイートから雑誌・ムック書籍を生産する"
 date: 2026-06-04
-slug: keity出版社-創刊-ツイートから雑誌-ムック書籍を生産する
+slug: "keity出版社-創刊-ツイートから雑誌-ムック書籍を生産する"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n100a23d48b4f.png"
+tags: ["執筆", "Apple", "哲学", "暗号通貨", "ゲーム", "AGI", "奈良"]
 ---
 
 # KeiTy出版社、創刊——ツイートから雑誌・ムック書籍を生産する
@@ -130,3 +131,4 @@ noteは「ブログ」ではない。Substackは「メルマガ」ではない�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n100a23d48b4f*
+

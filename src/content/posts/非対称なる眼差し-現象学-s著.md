@@ -1,9 +1,10 @@
 ---
 title: "​非対称なる眼差し 現象学（S著）"
 date: 2026-06-04
-slug: 非対称なる眼差し-現象学-s著
+slug: "非対称なる眼差し-現象学-s著"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb7aea4976a4e.png"
+tags: ["哲学", "健康", "音楽", "ペット", "執筆"]
 ---
 
 # ​非対称なる眼差し 現象学（S著）
@@ -141,3 +142,4 @@ AIによる補正。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb7aea4976a4e*
+

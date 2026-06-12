@@ -1,9 +1,10 @@
 ---
 title: "AIが作曲する時代、音楽をアップロードする「自由な場所」5選 〜AudiusからFunkwhaleまで〜"
 date: 2026-06-04
-slug: aiが作曲する時代-音楽をアップロードする-自由な場所-5選-audiusからfunkwhaleまで
+slug: "aiが作曲する時代-音楽をアップロードする-自由な場所-5選-audiusからfunkwhaleまで"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb8d6767cd345.png"
+tags: ["音楽", "映像", "暗号通貨", "デザイン", "Monero", "哲学", "AGI"]
 ---
 
 # AIが作曲する時代、音楽をアップロードする「自由な場所」5選 〜AudiusからFunkwhaleまで〜
@@ -166,3 +167,4 @@ AudiusはSpotifyを分散化し、Funkwhaleは誰でもプラットフォーム�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb8d6767cd345*
+

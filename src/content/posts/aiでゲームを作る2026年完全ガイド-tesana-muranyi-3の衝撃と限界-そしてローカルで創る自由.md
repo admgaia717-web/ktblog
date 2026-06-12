@@ -1,9 +1,10 @@
 ---
 title: "AIでゲームを作る2026年完全ガイド：Tesana Muranyi 3の衝撃と限界、そしてローカルで創る自由"
 date: 2026-06-04
-slug: aiでゲームを作る2026年完全ガイド-tesana-muranyi-3の衝撃と限界-そしてローカルで創る自由
+slug: "aiでゲームを作る2026年完全ガイド-tesana-muranyi-3の衝撃と限界-そしてローカルで創る自由"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc720ade1234a.png"
+tags: ["ゲーム", "LLM", "ローカルLLM", "プログラミング", "Claude", "Apple", "アニメ", "哲学", "防災"]
 ---
 
 # AIでゲームを作る2026年完全ガイド：Tesana Muranyi 3の衝撃と限界、そしてローカルで創る自由
@@ -285,3 +286,4 @@ Tesana Muranyi 3は「テキストから遊べるゲームを生成する」と�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc720ade1234a*
+

@@ -1,9 +1,10 @@
 ---
 title: "Siriが本当に使えたら、こうなる──Clawdbotという革命"
 date: 2026-06-04
-slug: siriが本当に使えたら-こうなる-clawdbotという革命
+slug: "siriが本当に使えたら-こうなる-clawdbotという革命"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd2434e6cac8a.png"
+tags: ["OpenAI", "Claude", "Apple", "プログラミング", "LLM", "AGI", "ロボット", "暗号通貨", "音楽", "投資"]
 ---
 
 # Siriが本当に使えたら、こうなる──Clawdbotという革命
@@ -196,3 +197,4 @@ Clawdbotはオープンソースで、世界中の開発者が毎日コントリ
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd2434e6cac8a*
+

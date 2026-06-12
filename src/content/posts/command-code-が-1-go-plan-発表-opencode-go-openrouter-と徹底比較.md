@@ -1,9 +1,10 @@
 ---
 title: "Command Code が $1 Go Plan 発表。OpenCode Go / OpenRouter と徹底比較"
 date: 2026-06-04
-slug: command-code-が-1-go-plan-発表-opencode-go-openrouter-と徹底比較
+slug: "command-code-が-1-go-plan-発表-opencode-go-openrouter-と徹底比較"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n597987c6316d.png"
+tags: ["プログラミング", "Claude", "Apple", "AIエージェント", "ロボット", "セキュリティ", "投資", "節約"]
 ---
 
 # Command Code が $1 Go Plan 発表。OpenCode Go / OpenRouter と徹底比較
@@ -193,3 +194,4 @@ OpenRouter Qwen 3.7 Max: [openrouter.ai/qwen/qwen3.7-max](https://openrouter.ai/
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n597987c6316d*
+

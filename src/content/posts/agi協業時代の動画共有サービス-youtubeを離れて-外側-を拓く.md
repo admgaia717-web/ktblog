@@ -1,9 +1,10 @@
 ---
 title: "AGI協業時代の動画共有サービス——YouTubeを離れて「外側」を拓く"
 date: 2026-06-04
-slug: agi協業時代の動画共有サービス-youtubeを離れて-外側-を拓く
+slug: "agi協業時代の動画共有サービス-youtubeを離れて-外側-を拓く"
 category: "動画/プラットフォーム/判定/peertube"
 eyecatch: "/assets/eyecatch/n222a19c099d2.png"
+tags: ["映像", "AGI", "暗号通貨", "プログラミング", "自由市場", "AIエージェント", "生成AI", "セキュリティ", "哲学", "投資"]
 ---
 
 # AGI協業時代の動画共有サービス——YouTubeを離れて「外側」を拓く
@@ -86,3 +87,4 @@ AI教養時代の初心とは、「プラットフォームに依存しない」
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n222a19c099d2*
+

@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第1回：Hermes Agentとは何か — OpenClawとの決定的な違い"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第1回-hermes-agentとは何か-openclawとの決定的な違い
+slug: "hermes-agent完全ガイド-第1回-hermes-agentとは何か-openclawとの決定的な違い"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n7d161186db83.png"
+tags: ["AIエージェント", "ロボット"]
 ---
 
 # Hermes Agent完全ガイド 第1回：Hermes Agentとは何か — OpenClawとの決定的な違い
@@ -90,3 +91,4 @@ Hermesは**個人の参謀**。1対1で使い込んで、あなた専用の知�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n7d161186db83*
+

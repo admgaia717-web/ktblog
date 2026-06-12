@@ -1,9 +1,10 @@
 ---
 title: "「存在の守護者」— 身体データ×天体×気質×東洋医学をAIで統合する構想"
 date: 2026-06-04
-slug: 存在の守護者-身体データ-天体-気質-東洋医学をaiで統合する構想
+slug: "存在の守護者-身体データ-天体-気質-東洋医学をaiで統合する構想"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n94350d823eda.png"
+tags: ["AGI", "AIエージェント", "健康", "LLM", "OpenAI", "奈良"]
 ---
 
 # 「存在の守護者」— 身体データ×天体×気質×東洋医学をAIで統合する構想
@@ -80,3 +81,4 @@ AGIとは、人間一人の全コンテクストを理解し、物理世界と�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n94350d823eda*
+

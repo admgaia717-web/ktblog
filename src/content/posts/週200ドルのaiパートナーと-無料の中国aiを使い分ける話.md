@@ -1,9 +1,10 @@
 ---
 title: "週200ドルのAIパートナーと、無料の中国AIを使い分ける話"
 date: 2026-06-04
-slug: 週200ドルのaiパートナーと-無料の中国aiを使い分ける話
+slug: "週200ドルのaiパートナーと-無料の中国aiを使い分ける話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n38d0ea642e4b.png"
+tags: ["AIエージェント", "ローカルLLM", "LLM", "Claude", "プログラミング", "Apple"]
 ---
 
 # 週200ドルのAIパートナーと、無料の中国AIを使い分ける話
@@ -107,3 +108,4 @@ KT艦隊航海日誌より。Opusは判断、Kimiは雑談、qwen3は計算。�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n38d0ea642e4b*
+

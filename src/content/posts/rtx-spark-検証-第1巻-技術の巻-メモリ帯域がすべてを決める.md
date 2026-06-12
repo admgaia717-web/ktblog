@@ -1,7 +1,8 @@
 ---
 title: "RTX Spark 検証 — 第1巻 技術の巻 — メモリ帯域がすべてを決める"
 date: 2026-06-04
-slug: rtx-spark-検証-第1巻-技術の巻-メモリ帯域がすべてを決める
+slug: "rtx-spark-検証-第1巻-技術の巻-メモリ帯域がすべてを決める"
+tags: ["Apple", "LLM", "ローカルLLM", "AIエージェント", "生成AI", "映像", "プログラミング", "Claude", "OpenAI", "投資", "ロボット", "デザイン", "哲学", "執筆"]
 ---
 
 # RTX Spark 検証 — 第1巻 技術の巻 — メモリ帯域がすべてを決める
@@ -333,3 +334,4 @@ Claude 3.5 Sonnet 月100万トークン$20-50/月
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4225f55b7455*
+

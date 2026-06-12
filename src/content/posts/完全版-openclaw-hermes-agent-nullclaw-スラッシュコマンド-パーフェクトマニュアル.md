@@ -1,9 +1,10 @@
 ---
 title: "【完全版】OpenClaw / Hermes Agent / NullClaw スラッシュコマンド パーフェクトマニュアル"
 date: 2026-06-04
-slug: 完全版-openclaw-hermes-agent-nullclaw-スラッシュコマンド-パーフェクトマニュアル
+slug: "完全版-openclaw-hermes-agent-nullclaw-スラッシュコマンド-パーフェクトマニュアル"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb8beb542dca6.png"
+tags: ["AIエージェント", "プログラミング", "Claude", "ローカルLLM", "ロボット", "Apple", "映像", "セキュリティ", "節約", "LLM", "OpenAI", "暗号通貨", "健康"]
 ---
 
 # 【完全版】OpenClaw / Hermes Agent / NullClaw スラッシュコマンド パーフェクトマニュアル
@@ -262,3 +263,4 @@ NullClawはOpenClawの軽量フォーク。基本コマンドはOpenClawとほ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb8beb542dca6*
+

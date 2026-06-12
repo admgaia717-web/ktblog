@@ -1,9 +1,10 @@
 ---
 title: "Mercury Agent（ライトニング）完全コマンドマニュアル"
 date: 2026-06-04
-slug: mercury-agent-ライトニング-完全コマンドマニュアル
+slug: "mercury-agent-ライトニング-完全コマンドマニュアル"
 category: "Mercury"
 eyecatch: "/assets/eyecatch/na98cf877f96d.png"
+tags: ["音楽", "ロボット", "LLM", "ローカルLLM", "AIエージェント"]
 ---
 
 # Mercury Agent（ライトニング）完全コマンドマニュアル
@@ -51,3 +52,4 @@ LLM: qwen3.6:35b-a3b / Spotify: Ktアカウント / 予算: 無制限 / 自動�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/na98cf877f96d*
+

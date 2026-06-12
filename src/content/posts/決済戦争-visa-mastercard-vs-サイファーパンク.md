@@ -1,9 +1,10 @@
 ---
 title: "決済戦争 — VISA/Mastercard vs サイファーパンク"
 date: 2026-06-04
-slug: 決済戦争-visa-mastercard-vs-サイファーパンク
+slug: "決済戦争-visa-mastercard-vs-サイファーパンク"
 category: "モデル/ユーザー/決済/NSFW/Civitai"
 eyecatch: "/assets/eyecatch/n028c21e32d26.png"
+tags: ["生成AI", "ロボット", "暗号通貨", "サイファーパンク", "節約"]
 ---
 
 # 決済戦争 — VISA/Mastercard vs サイファーパンク
@@ -149,3 +150,4 @@ Redditの声を借りれば：「ダウンロードできるうちにダウン�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n028c21e32d26*
+

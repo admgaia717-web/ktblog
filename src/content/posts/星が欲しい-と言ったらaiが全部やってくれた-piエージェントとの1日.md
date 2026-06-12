@@ -1,9 +1,10 @@
 ---
 title: "「星が欲しい」と言ったらAIが全部やってくれた——piエージェントとの1日"
 date: 2026-06-04
-slug: 星が欲しい-と言ったらaiが全部やってくれた-piエージェントとの1日
+slug: "星が欲しい-と言ったらaiが全部やってくれた-piエージェントとの1日"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne80cec2a206e.png"
+tags: ["プログラミング", "AIエージェント", "ローカルLLM", "Apple", "投資", "執筆"]
 ---
 
 # 「星が欲しい」と言ったらAIが全部やってくれた——piエージェントとの1日
@@ -98,3 +99,4 @@ pi-agent (4号艦・M1 Max 64GB)
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne80cec2a206e*
+

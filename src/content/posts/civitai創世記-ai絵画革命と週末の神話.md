@@ -1,9 +1,10 @@
 ---
 title: "Civitai創世記 — AI絵画革命と週末の神話"
 date: 2026-06-04
-slug: civitai創世記-ai絵画革命と週末の神話
+slug: "civitai創世記-ai絵画革命と週末の神話"
 category: "Civitai"
 eyecatch: "/assets/eyecatch/nba02d7c85caf.png"
+tags: ["生成AI", "デザイン", "小説", "OpenAI", "プログラミング", "ロボット", "アニメ", "ペット", "執筆"]
 ---
 
 # Civitai創世記 — AI絵画革命と週末の神話
@@ -116,3 +117,4 @@ Civitai成功の本質は、「自由」と「構造」の絶妙なバランス�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nba02d7c85caf*
+

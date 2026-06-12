@@ -1,9 +1,10 @@
 ---
 title: "テストの点より、大事なもの？ ―― AI時代に君だけが持てる宝物 ver2.0"
 date: 2026-06-04
-slug: テストの点より-大事なもの-ai時代に君だけが持てる宝物-ver2-0
+slug: "テストの点より-大事なもの-ai時代に君だけが持てる宝物-ver2-0"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n8fb079a19bd2.png"
+tags: ["AIエージェント", "映像", "デザイン", "ゲーム"]
 ---
 
 # テストの点より、大事なもの？ ―― AI時代に君だけが持てる宝物 ver2.0
@@ -171,3 +172,4 @@ AIが勉強を教えてくれるなら、人間は人間でしかできないこ
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n8fb079a19bd2*
+

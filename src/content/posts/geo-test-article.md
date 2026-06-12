@@ -1,7 +1,7 @@
 ---
 title: "GEO Test Article"
 date: 2026-06-04
-slug: geo-test-article
+slug: "geo-test-article"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n482e044fe949.png"
 ---

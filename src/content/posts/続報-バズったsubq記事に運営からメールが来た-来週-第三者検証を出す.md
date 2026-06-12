@@ -1,9 +1,10 @@
 ---
 title: "【続報】バズったSubQ記事に運営からメールが来た——「来週、第三者検証を出す」"
 date: 2026-06-04
-slug: 続報-バズったsubq記事に運営からメールが来た-来週-第三者検証を出す
+slug: "続報-バズったsubq記事に運営からメールが来た-来週-第三者検証を出す"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n3fb8b9ef541f.png"
+tags: ["AIエージェント", "LLM", "Apple", "ゲーム", "健康", "執筆"]
 ---
 
 # 【続報】バズったSubQ記事に運営からメールが来た——「来週、第三者検証を出す」
@@ -108,3 +109,4 @@ SubQ運営から直接メールが届いた（誠実な文体）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3fb8b9ef541f*
+

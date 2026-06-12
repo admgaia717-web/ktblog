@@ -1,9 +1,10 @@
 ---
 title: "俺に似た考えの人がいた——サイファーパンク先輩HealthRangerの足跡を辿る"
 date: 2026-06-04
-slug: 俺に似た考えの人がいた-サイファーパンク先輩healthrangerの足跡を辿る
+slug: "俺に似た考えの人がいた-サイファーパンク先輩healthrangerの足跡を辿る"
 category: "サイファーパンク"
 eyecatch: "/assets/eyecatch/n446ce76fb80e.png"
+tags: ["サイファーパンク", "映像", "執筆", "健康", "奈良", "OpenAI", "ローカルLLM", "哲学", "LLM", "Apple", "投資"]
 ---
 
 # 俺に似た考えの人がいた——サイファーパンク先輩HealthRangerの足跡を辿る
@@ -117,3 +118,4 @@ Mike、
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n446ce76fb80e*
+

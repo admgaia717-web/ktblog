@@ -1,9 +1,10 @@
 ---
 title: "Imagine Monero"
 date: 2026-06-04
-slug: imagine-monero
+slug: "imagine-monero"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd8d6ed17b0c7.png"
+tags: ["Monero"]
 ---
 
 # Imagine Monero
@@ -106,3 +107,4 @@ Imagine all the people use Monero。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd8d6ed17b0c7*
+

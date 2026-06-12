@@ -1,8 +1,9 @@
 ---
 title: "シロシビン（Psilocybe）— 精神のインフラ"
 date: 2026-06-03
-slug: シロシビン-psilocybe-精神のインフラ
+slug: "シロシビン-psilocybe-精神のインフラ"
 eyecatch: "https://assets.st-note.com/production/uploads/images/282059750/rectangle_large_type_2_71f838329198a6079c75477161001395.png"
+tags: ["薬草", "健康", "AIエージェント", "AGI", "DIY"]
 ---
 
 # シロシビン（Psilocybe）— 精神のインフラ
@@ -127,3 +128,4 @@ MRIの研究でわかってるのは：
 *第5回「DMT・漢方・薬用植物カタログ」に続く*
 
 ![](https://assets.st-note.com/production/uploads/images/282059750/rectangle_large_type_2_71f838329198a6079c75477161001395.png)
+

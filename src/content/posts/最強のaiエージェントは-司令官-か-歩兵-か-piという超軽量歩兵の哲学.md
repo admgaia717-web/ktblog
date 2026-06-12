@@ -1,9 +1,10 @@
 ---
 title: "最強のAIエージェントは「司令官」か「歩兵」か——Piという超軽量歩兵の哲学"
 date: 2026-06-04
-slug: 最強のaiエージェントは-司令官-か-歩兵-か-piという超軽量歩兵の哲学
+slug: "最強のaiエージェントは-司令官-か-歩兵-か-piという超軽量歩兵の哲学"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n6150f7632962.png"
+tags: ["哲学", "Claude", "AIエージェント", "ローカルLLM", "プログラミング", "LLM", "デザイン", "DIY", "執筆"]
 ---
 
 # 最強のAIエージェントは「司令官」か「歩兵」か——Piという超軽量歩兵の哲学
@@ -126,3 +127,4 @@ antirezはRedisを作った男だ。彼のソフトウェア哲学は一貫し�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n6150f7632962*
+

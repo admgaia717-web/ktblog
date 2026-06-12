@@ -1,9 +1,10 @@
 ---
 title: "序章：そもそもSNSとは何か"
 date: 2026-06-04
-slug: 序章-そもそもsnsとは何か
+slug: "序章-そもそもsnsとは何か"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nef2842ad94bc.jpg"
+tags: ["Bitcoin", "投資", "セキュリティ", "デザイン"]
 ---
 
 # 序章：そもそもSNSとは何か
@@ -160,3 +161,4 @@ The Dark Matter of the Web。プライベートコミュニティへの移行が
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nef2842ad94bc*
+

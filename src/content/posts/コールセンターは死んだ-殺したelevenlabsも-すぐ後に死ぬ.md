@@ -1,9 +1,10 @@
 ---
 title: "コールセンターは死んだ。殺したElevenLabsも、すぐ後に死ぬ。"
 date: 2026-06-04
-slug: コールセンターは死んだ-殺したelevenlabsも-すぐ後に死ぬ
+slug: "コールセンターは死んだ-殺したelevenlabsも-すぐ後に死ぬ"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne728fe796791.png"
+tags: ["LLM", "Claude", "投資"]
 ---
 
 # コールセンターは死んだ。殺したElevenLabsも、すぐ後に死ぬ。
@@ -118,3 +119,4 @@ CosyVoice 2が2万スターを超えた時点で、もう市場は変わり始�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne728fe796791*
+

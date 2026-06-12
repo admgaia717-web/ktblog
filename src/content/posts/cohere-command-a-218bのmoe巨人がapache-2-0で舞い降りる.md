@@ -1,9 +1,10 @@
 ---
 title: "Cohere Command A+：218BのMoE巨人がApache 2.0で舞い降りる"
 date: 2026-06-04
-slug: cohere-command-a-218bのmoe巨人がapache-2-0で舞い降りる
+slug: "cohere-command-a-218bのmoe巨人がapache-2-0で舞い降りる"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n2f70853a27a2.png"
+tags: ["プログラミング", "Apple", "サイファーパンク", "執筆"]
 ---
 
 # Cohere Command A+：218BのMoE巨人がApache 2.0で舞い降りる
@@ -98,3 +99,4 @@ Cohere Command A+が重要なのは、以下の理由による。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n2f70853a27a2*
+

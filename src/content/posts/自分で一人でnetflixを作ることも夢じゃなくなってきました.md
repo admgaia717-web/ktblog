@@ -1,9 +1,10 @@
 ---
 title: "自分で一人でNetflixを作ることも夢じゃなくなってきました"
 date: 2026-06-04
-slug: 自分で一人でnetflixを作ることも夢じゃなくなってきました
+slug: "自分で一人でnetflixを作ることも夢じゃなくなってきました"
 category: "note.com"
 eyecatch: "/assets/eyecatch/neb1af0e66ddc.png"
+tags: ["映像", "Apple", "ローカルLLM", "アニメ", "LLM", "生成AI", "小説", "奈良"]
 ---
 
 # 自分で一人でNetflixを作ることも夢じゃなくなってきました
@@ -106,3 +107,4 @@ note.com アカウントSubstack アカウントX / Threads アカウントMac m
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/neb1af0e66ddc*
+

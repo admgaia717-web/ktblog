@@ -1,9 +1,10 @@
 ---
 title: "¥8,800のスマートリングと無料AIで「プライベートドクター」を作れるか — Google PHIA vs 俺の実験"
 date: 2026-06-04
-slug: 8-800のスマートリングと無料aiで-プライベートドクター-を作れるか-google-phia-vs-俺の実験
+slug: "8-800のスマートリングと無料aiで-プライベートドクター-を作れるか-google-phia-vs-俺の実験"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n8282a0aa1c2e.png"
+tags: ["健康", "AIエージェント", "ロボット", "LLM", "Apple", "AGI", "奈良"]
 ---
 
 # ¥8,800のスマートリングと無料AIで「プライベートドクター」を作れるか — Google PHIA vs 俺の実験
@@ -98,3 +99,4 @@ AGIは平等に来ない。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n8282a0aa1c2e*
+

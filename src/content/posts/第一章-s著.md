@@ -1,9 +1,10 @@
 ---
 title: "第一章（S著）"
 date: 2026-06-04
-slug: 第一章-s著
+slug: "第一章-s著"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc8277b6d309a.png"
+tags: ["DIY"]
 ---
 
 # 第一章（S著）
@@ -58,3 +59,4 @@ eyecatch: "/assets/eyecatch/nc8277b6d309a.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc8277b6d309a*
+

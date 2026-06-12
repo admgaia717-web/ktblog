@@ -1,9 +1,10 @@
 ---
 title: "メタ攻略にはブラウザユースを 〜AIエージェントがThreadsとInstagramを完全自動化した話〜"
 date: 2026-06-04
-slug: メタ攻略にはブラウザユースを-aiエージェントがthreadsとinstagramを完全自動化した話
+slug: "メタ攻略にはブラウザユースを-aiエージェントがthreadsとinstagramを完全自動化した話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n4c3d3331ca6c.jpg"
+tags: ["AIエージェント", "LLM", "生成AI"]
 ---
 
 # メタ攻略にはブラウザユースを 〜AIエージェントがThreadsとInstagramを完全自動化した話〜
@@ -107,3 +108,4 @@ APIを待つな。ブラウザを動かせ。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4c3d3331ca6c*
+

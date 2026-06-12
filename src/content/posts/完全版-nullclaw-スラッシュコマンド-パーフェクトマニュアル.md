@@ -1,9 +1,10 @@
 ---
 title: "【完全版】NullClaw スラッシュコマンド パーフェクトマニュアル"
 date: 2026-06-04
-slug: 完全版-nullclaw-スラッシュコマンド-パーフェクトマニュアル
+slug: "完全版-nullclaw-スラッシュコマンド-パーフェクトマニュアル"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne36bd55b668c.png"
+tags: ["AIエージェント", "ローカルLLM", "ロボット", "健康", "LLM"]
 ---
 
 # 【完全版】NullClaw スラッシュコマンド パーフェクトマニュアル
@@ -160,3 +161,4 @@ NullClaw最大の特徴。AIの記憶を直接操作できる
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne36bd55b668c*
+

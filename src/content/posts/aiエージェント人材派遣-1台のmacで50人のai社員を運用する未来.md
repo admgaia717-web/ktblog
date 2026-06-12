@@ -1,9 +1,10 @@
 ---
 title: "AIエージェント人材派遣——1台のMacで50人のAI社員を運用する未来"
 date: 2026-06-04
-slug: aiエージェント人材派遣-1台のmacで50人のai社員を運用する未来
+slug: "aiエージェント人材派遣-1台のmacで50人のai社員を運用する未来"
 category: "AIエージェント"
 eyecatch: "/assets/eyecatch/n0045e2fb87dd.png"
+tags: ["AIエージェント", "Apple", "プログラミング", "セキュリティ"]
 ---
 
 # AIエージェント人材派遣——1台のMacで50人のAI社員を運用する未来
@@ -106,3 +107,4 @@ E2Eテスト確認中
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n0045e2fb87dd*
+

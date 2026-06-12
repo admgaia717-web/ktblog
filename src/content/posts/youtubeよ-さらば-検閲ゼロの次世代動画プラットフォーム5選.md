@@ -1,9 +1,10 @@
 ---
 title: "YouTubeよ、さらば——検閲ゼロの次世代動画プラットフォーム5選"
 date: 2026-06-04
-slug: youtubeよ-さらば-検閲ゼロの次世代動画プラットフォーム5選
+slug: "youtubeよ-さらば-検閲ゼロの次世代動画プラットフォーム5選"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5eb421869687.jpg"
+tags: ["映像", "暗号通貨", "AGI", "自由市場", "Monero", "投資", "デザイン", "AIエージェント", "哲学", "OpenAI", "セキュリティ", "音楽", "ゲーム"]
 ---
 
 # YouTubeよ、さらば——検閲ゼロの次世代動画プラットフォーム5選
@@ -162,3 +163,4 @@ Rumbleは自由をNASDAQに上場させた。Odyseeは動画をブロックチ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5eb421869687*
+

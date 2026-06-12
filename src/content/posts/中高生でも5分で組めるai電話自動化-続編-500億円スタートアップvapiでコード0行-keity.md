@@ -1,9 +1,10 @@
 ---
 title: "中高生でも5分で組めるAI電話自動化【続編】——500億円スタートアップVapiでコード0行｜KeiTy"
 date: 2026-06-04
-slug: 中高生でも5分で組めるai電話自動化-続編-500億円スタートアップvapiでコード0行-keity
+slug: "中高生でも5分で組めるai電話自動化-続編-500億円スタートアップvapiでコード0行-keity"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb79ffb01df0b.png"
+tags: ["AIエージェント", "プログラミング", "LLM", "Claude", "奈良", "投資", "執筆"]
 ---
 
 # 中高生でも5分で組めるAI電話自動化【続編】——500億円スタートアップVapiでコード0行｜KeiTy
@@ -109,3 +110,4 @@ H君の仕事を奪うのではありません。彼を「電話番」から「�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb79ffb01df0b*
+

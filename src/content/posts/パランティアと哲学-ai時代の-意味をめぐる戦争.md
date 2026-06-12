@@ -1,9 +1,10 @@
 ---
 title: "パランティアと哲学──AI時代の“意味をめぐる戦争”"
 date: 2026-06-04
-slug: パランティアと哲学-ai時代の-意味をめぐる戦争
+slug: "パランティアと哲学-ai時代の-意味をめぐる戦争"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ncd912944f413.png"
+tags: ["哲学", "プログラミング", "セキュリティ", "防災", "投資"]
 ---
 
 # パランティアと哲学──AI時代の“意味をめぐる戦争”
@@ -192,3 +193,4 @@ AIとの協働で記録を積む生き方
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ncd912944f413*
+

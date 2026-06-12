@@ -1,9 +1,10 @@
 ---
 title: "日本でAIに電話番号を持たせるのがめちゃくちゃ大変な理由"
 date: 2026-06-04
-slug: 日本でaiに電話番号を持たせるのがめちゃくちゃ大変な理由
+slug: "日本でaiに電話番号を持たせるのがめちゃくちゃ大変な理由"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n0953de0c092d.jpg"
+tags: ["Apple", "AIエージェント", "健康", "投資"]
 ---
 
 # 日本でAIに電話番号を持たせるのがめちゃくちゃ大変な理由
@@ -150,3 +151,4 @@ AIで電話を自動化したい我々からすると「足かせ」にしか見
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n0953de0c092d*
+

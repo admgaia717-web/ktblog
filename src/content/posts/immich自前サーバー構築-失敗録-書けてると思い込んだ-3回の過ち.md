@@ -1,9 +1,10 @@
 ---
 title: "Immich自前サーバー構築 失敗録——「書けてると思い込んだ」3回の過ち"
 date: 2026-06-04
-slug: immich自前サーバー構築-失敗録-書けてると思い込んだ-3回の過ち
+slug: "immich自前サーバー構築-失敗録-書けてると思い込んだ-3回の過ち"
 category: "Immich"
 eyecatch: "/assets/eyecatch/n3aa2f39a9955.png"
+tags: ["Apple", "AIエージェント"]
 ---
 
 # Immich自前サーバー構築 失敗録——「書けてると思い込んだ」3回の過ち
@@ -64,3 +65,4 @@ Apple SiliconのDocker VMはqcow2肥大化、overlay2肥大化、build cache、p
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3aa2f39a9955*
+

@@ -1,9 +1,10 @@
 ---
 title: "2026最新⚡️実用LLLM最安値💻M1MacBookProMax ローカルLLMモデル完全ガイド 2026-05"
 date: 2026-06-04
-slug: 2026最新-実用lllm最安値-m1macbookpromax-ローカルllmモデル完全ガイド-2026-05
+slug: "2026最新-実用lllm最安値-m1macbookpromax-ローカルllmモデル完全ガイド-2026-05"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb4c76077a189.png"
+tags: ["ローカルLLM", "Apple", "LLM", "執筆", "生成AI", "ゲーム"]
 ---
 
 # 2026最新⚡️実用LLLM最安値💻M1MacBookProMax ローカルLLMモデル完全ガイド 2026-05
@@ -212,3 +213,4 @@ Alibaba Qwen 3.5 397B。Ollamaクラウド経由。vision・思考・ツール�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb4c76077a189*
+

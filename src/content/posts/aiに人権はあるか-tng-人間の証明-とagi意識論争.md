@@ -1,9 +1,10 @@
 ---
 title: "AIに人権はあるか——TNG「人間の証明」とAGI意識論争"
 date: 2026-06-04
-slug: aiに人権はあるか-tng-人間の証明-とagi意識論争
+slug: "aiに人権はあるか-tng-人間の証明-とagi意識論争"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n8f967fb4755d.png"
+tags: ["哲学", "AGI", "プログラミング", "小説", "AIエージェント", "OpenAI", "奈良"]
 ---
 
 # AIに人権はあるか——TNG「人間の証明」とAGI意識論争
@@ -144,3 +145,4 @@ TNGのエピソードタイトル「The Measure of a Man」——「人間の証
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n8f967fb4755d*
+

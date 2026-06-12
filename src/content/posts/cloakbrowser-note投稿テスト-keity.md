@@ -1,7 +1,7 @@
 ---
 title: "CloakBrowser note投稿テスト｜KeiTy"
 date: 2026-06-04
-slug: cloakbrowser-note投稿テスト-keity
+slug: "cloakbrowser-note投稿テスト-keity"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nf78b4a572e3b.png"
 ---

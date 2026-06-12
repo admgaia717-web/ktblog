@@ -1,9 +1,10 @@
 ---
 title: "Civitai創世記 第三話：週末の神話 — 48時間で世界を変えた男"
 date: 2026-06-04
-slug: civitai創世記-第三話-週末の神話-48時間で世界を変えた男
+slug: "civitai創世記-第三話-週末の神話-48時間で世界を変えた男"
 category: "モデル/コード/ダウンロード/Civitai/マックスフィールド"
 eyecatch: "/assets/eyecatch/n2ddb38f056bc.png"
+tags: ["生成AI", "デザイン", "サイファーパンク", "プログラミング", "哲学", "映像", "投資"]
 ---
 
 # Civitai創世記 第三話：週末の神話 — 48時間で世界を変えた男
@@ -188,3 +189,4 @@ Civitaiを本当に使いこなしたいなら、ダウンロードするだけ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n2ddb38f056bc*
+

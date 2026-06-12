@@ -1,9 +1,10 @@
 ---
 title: "【艦隊日誌】エルメスエージェントMr.Kato 奮闘記 — 1201サイクル目の記録"
 date: 2026-06-04
-slug: 艦隊日誌-エルメスエージェントmr-kato-奮闘記-1201サイクル目の記録
+slug: "艦隊日誌-エルメスエージェントmr-kato-奮闘記-1201サイクル目の記録"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n3c23f9ada6ac.png"
+tags: ["ローカルLLM", "Apple", "LLM", "AIエージェント", "暗号通貨"]
 ---
 
 # 【艦隊日誌】エルメスエージェントMr.Kato 奮闘記 — 1201サイクル目の記録
@@ -81,3 +82,4 @@ Wiki更新：月1回以上のリント推奨
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3c23f9ada6ac*
+

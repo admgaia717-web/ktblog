@@ -1,9 +1,10 @@
 ---
 title: "【構築録】tmuxとClaude Codeで「AI組織」を動かし、個人が『メディア帝国』を運営する方法。"
 date: 2026-06-04
-slug: 構築録-tmuxとclaude-codeで-ai組織-を動かし-個人が-メディア帝国-を運営する方法
+slug: "構築録-tmuxとclaude-codeで-ai組織-を動かし-個人が-メディア帝国-を運営する方法"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n87ed8fb88012.png"
+tags: ["Claude", "執筆", "AIエージェント", "映像", "サイファーパンク", "生成AI", "プログラミング", "Apple", "音楽", "アニメ", "デザイン"]
 ---
 
 # 【構築録】tmuxとClaude Codeで「AI組織」を動かし、個人が『メディア帝国』を運営する方法。
@@ -112,3 +113,4 @@ Netflixやテレビ局のような「総合メディア」を、たった一人�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n87ed8fb88012*
+

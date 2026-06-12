@@ -1,8 +1,9 @@
 ---
 title: "常時記録のグラスと、崩れゆく信頼の境界線 —— Ray-Ban Metaが示す監視社会の未来"
 date: 2026-06-03
-slug: 常時記録のグラスと-崩れゆく信頼の境界線-ray-ban-metaが示す監視社会の未来-2
+slug: "常時記録のグラスと-崩れゆく信頼の境界線-ray-ban-metaが示す監視社会の未来-2"
 eyecatch: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop"
+tags: ["セキュリティ", "映像"]
 ---
 
 ![常時記録のグラスと監視社会](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop)
@@ -26,3 +27,4 @@ eyecatch: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200
 ## 結論：技術の受容と、新たなプライバシー規範の模索
 
 技術の進歩を止めることはできない。重要なのは、この「常時記録」の現実を直視し、法的・社会的な規範を再構築することだ。インジケーターの改変を違法とする明確な規制、録画データへのアクセス権限の厳格化、そして何より、記録されない権利についての社会的合意形成が急務となる。
+

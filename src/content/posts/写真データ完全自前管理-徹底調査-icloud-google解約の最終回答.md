@@ -1,9 +1,10 @@
 ---
 title: "写真データ完全自前管理 徹底調査——iCloud/Google解約の最終回答"
 date: 2026-06-04
-slug: 写真データ完全自前管理-徹底調査-icloud-google解約の最終回答
+slug: "写真データ完全自前管理-徹底調査-icloud-google解約の最終回答"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ned12f40fa496.png"
+tags: ["Apple", "AIエージェント", "投資", "ロボット", "セキュリティ", "自由市場", "デザイン", "執筆"]
 ---
 
 # 写真データ完全自前管理 徹底調査——iCloud/Google解約の最終回答
@@ -84,3 +85,4 @@ macOS + Docker + 外付けHDDの3層構造では以下が障害になる：
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ned12f40fa496*
+

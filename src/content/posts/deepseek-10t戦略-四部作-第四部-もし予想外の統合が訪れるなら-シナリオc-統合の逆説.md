@@ -1,9 +1,10 @@
 ---
 title: "DeepSeek 10T戦略 四部作 第四部：もし予想外の統合が訪れるなら——シナリオC：統合の逆説"
 date: 2026-06-04
-slug: deepseek-10t戦略-四部作-第四部-もし予想外の統合が訪れるなら-シナリオc-統合の逆説
+slug: "deepseek-10t戦略-四部作-第四部-もし予想外の統合が訪れるなら-シナリオc-統合の逆説"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n1c2e98bd420d.png"
+tags: ["OpenAI", "Apple", "セキュリティ"]
 ---
 
 # DeepSeek 10T戦略 四部作 第四部：もし予想外の統合が訪れるなら——シナリオC：統合の逆説
@@ -60,3 +61,4 @@ KT＋ロデム（Rodemu／MacBook Air M1）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n1c2e98bd420d*
+

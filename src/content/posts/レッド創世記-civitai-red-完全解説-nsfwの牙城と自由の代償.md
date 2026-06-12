@@ -1,9 +1,10 @@
 ---
 title: "レッド創世記 — civitai.red 完全解説：NSFWの牙城と自由の代償"
 date: 2026-06-04
-slug: レッド創世記-civitai-red-完全解説-nsfwの牙城と自由の代償
+slug: "レッド創世記-civitai-red-完全解説-nsfwの牙城と自由の代償"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n9002f178ef7d.png"
+tags: ["生成AI", "暗号通貨", "サイファーパンク", "ロボット", "セキュリティ", "節約"]
 ---
 
 # レッド創世記 — civitai.red 完全解説：NSFWの牙城と自由の代償
@@ -139,3 +140,4 @@ r/civitaiの69,165人の購読者たち。彼らの投稿から見える、AIア
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n9002f178ef7d*
+

@@ -1,9 +1,10 @@
 ---
 title: "UI-TARSを使いこなせませんでした。すみません。"
 date: 2026-06-04
-slug: ui-tarsを使いこなせませんでした-すみません
+slug: "ui-tarsを使いこなせませんでした-すみません"
 category: "UI-TARS"
 eyecatch: "/assets/eyecatch/n162ad33ed1ea.png"
+tags: ["デザイン", "Apple", "AIエージェント", "プログラミング"]
 ---
 
 # UI-TARSを使いこなせませんでした。すみません。
@@ -118,3 +119,4 @@ UI-TARSは魔法の手ではなかった。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n162ad33ed1ea*
+

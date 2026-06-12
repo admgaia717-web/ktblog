@@ -1,9 +1,10 @@
 ---
 title: "コミックの自動化の夢 — LoRAからStoryDiffusion、AnyTextまで、AI漫画生成技術の全史"
 date: 2026-06-04
-slug: コミックの自動化の夢-loraからstorydiffusion-anytextまで-ai漫画生成技術の全史
+slug: "コミックの自動化の夢-loraからstorydiffusion-anytextまで-ai漫画生成技術の全史"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n59e010e8f705.jpg"
+tags: ["生成AI", "プログラミング", "デザイン", "AIエージェント", "映像", "LLM", "ロボット", "音楽", "DIY"]
 ---
 
 # コミックの自動化の夢 — LoRAからStoryDiffusion、AnyTextまで、AI漫画生成技術の全史
@@ -201,3 +202,4 @@ LoRA（20MBのファイル）でキャラは固定できる。ControlNet＋OpenP
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n59e010e8f705*
+

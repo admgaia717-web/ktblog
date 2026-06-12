@@ -1,9 +1,10 @@
 ---
 title: "AIエージェントに「記憶」を与える ― Icarus Memory Protocolの全貌"
 date: 2026-06-04
-slug: aiエージェントに-記憶-を与える-icarus-memory-protocolの全貌
+slug: "aiエージェントに-記憶-を与える-icarus-memory-protocolの全貌"
 category: "AIエージェント"
 eyecatch: "/assets/eyecatch/ne54fbe5eb56a.jpg"
+tags: ["プログラミング", "AIエージェント", "ロボット", "AGI", "暗号通貨", "LLM", "セキュリティ", "哲学", "執筆"]
 ---
 
 # AIエージェントに「記憶」を与える ― Icarus Memory Protocolの全貌
@@ -530,3 +531,4 @@ AIエージェントを運用している方、複数エージェントの連携
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne54fbe5eb56a*
+

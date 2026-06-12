@@ -1,9 +1,10 @@
 ---
 title: "霊犀X2（Lingxi X2）— ついに家庭に入る人型ロボット"
 date: 2026-06-04
-slug: 霊犀x2-lingxi-x2-ついに家庭に入る人型ロボット
+slug: "霊犀x2-lingxi-x2-ついに家庭に入る人型ロボット"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne787b4444c41.jpg"
+tags: ["ロボット", "映像"]
 ---
 
 # 霊犀X2（Lingxi X2）— ついに家庭に入る人型ロボット
@@ -28,3 +29,4 @@ MWC Barcelona 2026で発表。€899/日から17カ国でレンタル。ホテ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne787b4444c41*
+

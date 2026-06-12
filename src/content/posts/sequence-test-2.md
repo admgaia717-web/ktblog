@@ -1,7 +1,8 @@
 ---
 title: "SEQUENCE-TEST-2"
 date: 2026-06-04
-slug: sequence-test-2
+slug: "sequence-test-2"
+tags: ["薬草", "健康", "AGI", "投資", "防災", "DIY", "節約", "AIエージェント", "奈良", "ペット"]
 ---
 
 # OMP六本勝負「薬草自給篇」第2回：大麻 — 文明再起動のユーティリティプラント
@@ -1146,3 +1147,4 @@ AGIとの協業による「完全制御」
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n58d10c5509e7*
+

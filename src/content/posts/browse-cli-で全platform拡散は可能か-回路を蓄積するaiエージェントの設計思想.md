@@ -1,9 +1,10 @@
 ---
 title: "browse CLI で全Platform拡散は可能か——回路を蓄積するAIエージェントの設計思想"
 date: 2026-06-04
-slug: browse-cli-で全platform拡散は可能か-回路を蓄積するaiエージェントの設計思想
+slug: "browse-cli-で全platform拡散は可能か-回路を蓄積するaiエージェントの設計思想"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5a61fc43ea02.png"
+tags: ["AIエージェント", "プログラミング", "ロボット", "Apple", "哲学", "料理", "生成AI", "暗号通貨", "執筆"]
 ---
 
 # browse CLI で全Platform拡散は可能か——回路を蓄積するAIエージェントの設計思想
@@ -336,3 +337,4 @@ JavaScriptのパッチ（playwright-stealth、undetected-chromedriver）はChrom
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5a61fc43ea02*
+

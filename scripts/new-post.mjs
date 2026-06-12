@@ -10,6 +10,7 @@
  *     --title "記事タイトル" \
  *     --date 2026-06-11 \
  *     --category "AI・テクノロジー" \
+ *     --tags "AIエージェント,Claude" \
  *     --eyecatch "/assets/eyecatch/n12345.png" \
  *     --excerpt "記事の要約" \
  *     --file /tmp/article.md
@@ -58,11 +59,12 @@ function escapeYaml(s) {
   return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 }
 
-function makeFrontmatter({ title, date, category, eyecatch, excerpt, noteUrl, substackUrl }) {
+function makeFrontmatter({ title, date, category, tags, eyecatch, excerpt, noteUrl, substackUrl }) {
   const lines = ['---'];
   lines.push(`title: "${escapeYaml(title)}"`);
   lines.push(`date: ${date}`);
   if (category) lines.push(`category: "${escapeYaml(category)}"`);
+  if (Array.isArray(tags) && tags.length > 0) lines.push(`tags: [${tags.map((t) => `"${escapeYaml(t)}"`).join(', ')}]`);
   if (eyecatch) lines.push(`eyecatch: "${escapeYaml(eyecatch)}"`);
   if (excerpt) lines.push(`excerpt: "${escapeYaml(excerpt)}"`);
   if (noteUrl) lines.push(`note_url: "${escapeYaml(noteUrl)}"`);
@@ -88,6 +90,8 @@ async function interactive() {
   if (!title) { console.error('エラー: タイトルは必須です'); process.exit(1); }
   const date = (await prompt(`日付 (${todayStr()}): `)) || todayStr();
   const category = await prompt('カテゴリ: ');
+  const tagsInput = await prompt('タグ（カンマ区切り）: ');
+  tags = tagsInput ? tagsInput.split(',').map((t) => t.trim()).filter(Boolean) : [];
   const eyecatch = await prompt('アイキャッチ画像パス: ');
   const excerpt = await prompt('要約: ');
   console.log('\n--- 本文を入力 (Ctrl+D で終了) ---');
@@ -97,14 +101,14 @@ async function interactive() {
   const body = bodyLines.join('\n').trim();
   if (!body) { console.error('エラー: 本文が空です'); process.exit(1); }
 
-  return { title, date, category, eyecatch, excerpt, body };
+  return { title, date, category, tags, eyecatch, excerpt, body };
 }
 
 async function main() {
   fs.mkdirSync(POSTS_DIR, { recursive: true });
 
   const flags = parseArgs();
-  let title, date, category, eyecatch, excerpt, body, noteUrl, substackUrl;
+  let title, date, category, tags, eyecatch, excerpt, body, noteUrl, substackUrl;
 
   const useCli = flags.title !== undefined;
 
@@ -112,6 +116,8 @@ async function main() {
     title = flags.title;
     date = flags.date || todayStr();
     category = flags.category || '';
+    const rawTags = flags.tags || '';
+    tags = rawTags ? rawTags.split(',').map((t) => t.trim()).filter(Boolean) : [];
     eyecatch = flags.eyecatch || '';
     excerpt = flags.excerpt || '';
     noteUrl = flags['note-url'] || '';
@@ -130,6 +136,7 @@ async function main() {
     title = answers.title;
     date = answers.date;
     category = answers.category;
+    tags = answers.tags;
     eyecatch = answers.eyecatch;
     excerpt = answers.excerpt;
     body = answers.body;
@@ -150,7 +157,7 @@ async function main() {
   const filename = `${slug}.md`;
   const filepath = path.join(POSTS_DIR, filename);
 
-  const frontmatter = makeFrontmatter({ title, date, category, eyecatch, excerpt, noteUrl, substackUrl });
+  const frontmatter = makeFrontmatter({ title, date, category, tags, eyecatch, excerpt, noteUrl, substackUrl });
   const content = frontmatter + body + '\n';
 
   if (flags.dryRun) {

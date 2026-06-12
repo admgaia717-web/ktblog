@@ -1,9 +1,10 @@
 ---
 title: "OpenRouter完全マニュアル — エージェント時代の最強ルーティング"
 date: 2026-06-04
-slug: openrouter完全マニュアル-エージェント時代の最強ルーティング
+slug: "openrouter完全マニュアル-エージェント時代の最強ルーティング"
 category: "AI/AIエージェント/LLM/OpenClaw/OpenRouter"
 eyecatch: "/assets/eyecatch/n329930618ab5.png"
+tags: ["Claude", "OpenAI", "AIエージェント", "生成AI", "プログラミング", "セキュリティ", "音楽", "映像", "ロボット", "暗号通貨", "節約"]
 ---
 
 # OpenRouter完全マニュアル — エージェント時代の最強ルーティング
@@ -524,3 +525,4 @@ OpenRouterは「AIの食べログ」
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n329930618ab5*
+

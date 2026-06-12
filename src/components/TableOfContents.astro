@@ -1,0 +1,33 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+const toc = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+---
+{toc.length > 0 && (
+  <nav class="toc hidden lg:block w-56 shrink-0">
+    <div class="sticky top-28 border-l-2 border-[var(--color-border)] pl-5">
+      <p class="text-xs tracking-[0.2em] uppercase text-[var(--color-accent)] font-medium mb-4">Contents</p>
+      <ul class="space-y-2.5 text-sm">
+        {toc.map((h) => (
+          <li class:list={['leading-snug', h.depth === 3 && 'pl-3 border-l border-[var(--color-border)] ml-0.5']}>
+            <a
+              href={`#${h.slug}`}
+              class="block text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors"
+            >
+              {h.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+)}

@@ -1,9 +1,10 @@
 ---
 title: "AIは忘れる——ChatGPTもClaudeも「記憶喪失」になる問題と、それを防ごうとする世界の挑戦【前編】"
 date: 2026-06-04
-slug: aiは忘れる-chatgptもclaudeも-記憶喪失-になる問題と-それを防ごうとする世界の挑戦-前編
+slug: "aiは忘れる-chatgptもclaudeも-記憶喪失-になる問題と-それを防ごうとする世界の挑戦-前編"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb6f6c2ba70d5.png"
+tags: ["プログラミング", "OpenAI", "Claude", "ペット", "LLM", "哲学"]
 ---
 
 # AIは忘れる——ChatGPTもClaudeも「記憶喪失」になる問題と、それを防ごうとする世界の挑戦【前編】
@@ -104,3 +105,4 @@ Tier 3まで昇格して、27個のツールが稼働し、75件のナレッジ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb6f6c2ba70d5*
+

@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第2回：AIの記憶の限界を超えろ — コンテキストウィンドウの全て"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第2回-aiの記憶の限界を超えろ-コンテキストウィンドウの全て
+slug: "hermes-agent完全ガイド-第2回-aiの記憶の限界を超えろ-コンテキストウィンドウの全て"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb08f87512acd.png"
+tags: ["AIエージェント", "Claude", "Apple", "哲学"]
 ---
 
 # Hermes Agent完全ガイド 第2回：AIの記憶の限界を超えろ — コンテキストウィンドウの全て
@@ -199,3 +200,4 @@ Hermesは**有機的な記憶管理**で、個人の相棒に向いている。�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb08f87512acd*
+

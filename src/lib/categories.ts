@@ -1,4 +1,5 @@
 import type { CollectionEntry } from 'astro:content';
+import { decideCategory } from './tags';
 
 export type Post = CollectionEntry<'posts'>;
 
@@ -263,11 +264,20 @@ export function getGroupName(category: string | undefined): string {
   return 'その他';
 }
 
+/**
+ * 記事の本文も読み取ってカテゴリを決定
+ */
+export function getGroupNameFromPost(post: Post): string {
+  const fromCategory = getGroupName(post.data.category);
+  if (!post.body) return fromCategory;
+  return decideCategory(post.data.category, post.body);
+}
+
 export function groupPostsByCategory(posts: Post[]): CategoryGroup[] {
   const groups: Record<string, Post[]> = {};
 
   for (const post of posts) {
-    const groupName = getGroupName(post.data.category);
+    const groupName = getGroupNameFromPost(post);
     if (!groups[groupName]) groups[groupName] = [];
     groups[groupName].push(post);
   }

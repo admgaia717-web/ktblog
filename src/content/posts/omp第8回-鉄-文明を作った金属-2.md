@@ -1,8 +1,9 @@
 ---
 title: "OMP第8回: 鉄 — 文明を作った金属"
 date: 2026-06-03
-slug: omp第8回-鉄-文明を作った金属-2
+slug: "omp第8回-鉄-文明を作った金属-2"
 eyecatch: "https://assets.st-note.com/production/uploads/images/282091924/rectangle_large_type_2_cdb7dfc21721702d36161dd0196a276c.jpg"
+tags: ["AIエージェント", "DIY"]
 ---
 
 # OMP第8回: 鉄 — 文明を作った金属
@@ -77,3 +78,4 @@ eyecatch: "https://assets.st-note.com/production/uploads/images/282091924/rectan
 OMP 第8回: 鉄 — 完
 
 ![](https://assets.st-note.com/production/uploads/images/282091924/rectangle_large_type_2_cdb7dfc21721702d36161dd0196a276c.jpg)
+

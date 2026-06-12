@@ -1,9 +1,10 @@
 ---
 title: "【完全版】OpenClaw スラッシュコマンド パーフェクトマニュアル"
 date: 2026-06-04
-slug: 完全版-openclaw-スラッシュコマンド-パーフェクトマニュアル
+slug: "完全版-openclaw-スラッシュコマンド-パーフェクトマニュアル"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n756c18f60155.png"
+tags: ["AIエージェント", "プログラミング", "Claude", "ローカルLLM", "ロボット", "Apple", "節約", "OpenAI", "セキュリティ", "映像"]
 ---
 
 # 【完全版】OpenClaw スラッシュコマンド パーフェクトマニュアル
@@ -134,3 +135,4 @@ OpenClawは1つのGatewayでTelegram・Discord・Slack等を同時運用。dock�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n756c18f60155*
+

@@ -1,7 +1,8 @@
 ---
 title: "INT-TEST-2"
 date: 2026-06-04
-slug: int-test-2
+slug: "int-test-2"
+tags: ["薬草", "健康", "AIエージェント", "AGI", "DIY"]
 ---
 
 # シロシビン（Psilocybe）— 精神のインフラ
@@ -192,3 +193,4 @@ PTSD
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n35120b133505*
+

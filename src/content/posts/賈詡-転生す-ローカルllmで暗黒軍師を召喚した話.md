@@ -1,9 +1,10 @@
 ---
 title: "賈詡、転生す——ローカルLLMで暗黒軍師を召喚した話"
 date: 2026-06-04
-slug: 賈詡-転生す-ローカルllmで暗黒軍師を召喚した話
+slug: "賈詡-転生す-ローカルllmで暗黒軍師を召喚した話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd133b9071418.png"
+tags: ["ローカルLLM", "LLM", "プログラミング", "Apple", "AIエージェント", "アニメ", "Claude", "OpenAI", "Monero", "暗号通貨", "防災", "奈良", "ペット", "投資"]
 ---
 
 # 賈詡、転生す——ローカルLLMで暗黒軍師を召喚した話
@@ -99,3 +100,4 @@ kakuKTは、その賈詡の精神をローカルLLMに宿したものだ。誰�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd133b9071418*
+

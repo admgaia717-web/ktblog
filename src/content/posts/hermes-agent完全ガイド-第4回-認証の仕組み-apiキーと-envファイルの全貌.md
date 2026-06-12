@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第4回：認証の仕組み — APIキーと.envファイルの全貌"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第4回-認証の仕組み-apiキーと-envファイルの全貌
+slug: "hermes-agent完全ガイド-第4回-認証の仕組み-apiキーと-envファイルの全貌"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ncb03e791f853.png"
+tags: ["AIエージェント", "Claude", "OpenAI", "プログラミング", "セキュリティ", "ローカルLLM", "投資"]
 ---
 
 # Hermes Agent完全ガイド 第4回：認証の仕組み — APIキーと.envファイルの全貌
@@ -146,3 +147,4 @@ Hermes Agentは認証情報の保護にいくつかの仕組みを持ってい�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ncb03e791f853*
+

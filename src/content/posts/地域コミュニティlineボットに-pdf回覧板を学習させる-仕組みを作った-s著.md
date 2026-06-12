@@ -1,9 +1,10 @@
 ---
 title: "地域コミュニティLINEボットに「PDF回覧板を学習させる」仕組みを作った（S著）"
 date: 2026-06-04
-slug: 地域コミュニティlineボットに-pdf回覧板を学習させる-仕組みを作った-s著
+slug: "地域コミュニティlineボットに-pdf回覧板を学習させる-仕組みを作った-s著"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n60564b244489.jpg"
+tags: ["防災", "暗号通貨"]
 ---
 
 #  地域コミュニティLINEボットに「PDF回覧板を学習させる」仕組みを作った（S著）
@@ -202,3 +203,4 @@ Body: テキスト内容
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n60564b244489*
+

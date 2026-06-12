@@ -1,9 +1,10 @@
 ---
 title: "知らなきゃ損！Hermes Agent作者Nous Researchの「Nous Portal」サブスクリプション完全攻略ガイド"
 date: 2026-06-04
-slug: 知らなきゃ損-hermes-agent作者nous-researchの-nous-portal-サブスクリプション完全攻略ガイド
+slug: "知らなきゃ損-hermes-agent作者nous-researchの-nous-portal-サブスクリプション完全攻略ガイド"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n7b05afafa12e.jpg"
+tags: ["AIエージェント", "ロボット", "生成AI", "OpenAI", "Claude", "投資", "節約"]
 ---
 
 # 知らなきゃ損！Hermes Agent作者Nous Researchの「Nous Portal」サブスクリプション完全攻略ガイド
@@ -159,3 +160,4 @@ hermes auth add grok --type oauth
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n7b05afafa12e*
+

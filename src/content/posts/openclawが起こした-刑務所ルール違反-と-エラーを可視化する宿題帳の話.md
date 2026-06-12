@@ -1,9 +1,10 @@
 ---
 title: "OpenClawが起こした「刑務所ルール違反」と、エラーを可視化する宿題帳の話"
 date: 2026-06-04
-slug: openclawが起こした-刑務所ルール違反-と-エラーを可視化する宿題帳の話
+slug: "openclawが起こした-刑務所ルール違反-と-エラーを可視化する宿題帳の話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd4e605d6f504.png"
+tags: ["AIエージェント", "暗号通貨", "プログラミング", "Apple"]
 ---
 
 # OpenClawが起こした「刑務所ルール違反」と、エラーを可視化する宿題帳の話
@@ -117,3 +118,4 @@ KT艦隊航海日誌より。エラーは隠すな、見せろ。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd4e605d6f504*
+

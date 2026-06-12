@@ -1,9 +1,10 @@
 ---
 title: "Monero×メッシュ×メルカリ——日本サイファーパンク自由市場計画"
 date: 2026-06-04
-slug: monero-メッシュ-メルカリ-日本サイファーパンク自由市場計画
+slug: "monero-メッシュ-メルカリ-日本サイファーパンク自由市場計画"
 category: "LoRa/自由市場/サイファーパンク/Monero/メッシュネット"
 eyecatch: "/assets/eyecatch/n01fc565e46d9.png"
+tags: ["Monero", "自由市場", "生成AI", "ロボット", "サイファーパンク", "プログラミング", "セキュリティ", "Bitcoin", "暗号通貨", "奈良", "小説"]
 ---
 
 # Monero×メッシュ×メルカリ——日本サイファーパンク自由市場計画
@@ -163,3 +164,4 @@ ESP32 LoRa: Heltec WiFi LoRa 32 V3*
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n01fc565e46d9*
+

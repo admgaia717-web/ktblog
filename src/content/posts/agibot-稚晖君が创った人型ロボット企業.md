@@ -1,9 +1,10 @@
 ---
 title: "AgiBot - 稚晖君が创った人型ロボット企業"
 date: 2026-06-04
-slug: agibot-稚晖君が创った人型ロボット企業
+slug: "agibot-稚晖君が创った人型ロボット企業"
 category: "データ/ロボット/プラットフォーム/発表/AgiBot"
 eyecatch: "/assets/eyecatch/n06ab3c0ef6fd.png"
+tags: ["ロボット", "映像", "プログラミング", "セキュリティ", "AGI", "投資"]
 ---
 
 # AgiBot - 稚晖君が创った人型ロボット企業
@@ -106,3 +107,4 @@ KT's LAB - テクノロジーとものづくりの最前線を現場視点で伝
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n06ab3c0ef6fd*
+

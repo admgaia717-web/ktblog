@@ -1,9 +1,10 @@
 ---
 title: "OpenRouter Pareto Code — AIモデル選びの「コスパ革命」"
 date: 2026-06-04
-slug: openrouter-pareto-code-aiモデル選びの-コスパ革命
+slug: "openrouter-pareto-code-aiモデル選びの-コスパ革命"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n4e120b2227ad.png"
+tags: ["AIエージェント", "節約", "Claude", "執筆"]
 ---
 
 # OpenRouter Pareto Code — AIモデル選びの「コスパ革命」
@@ -106,3 +107,4 @@ AIエージェント運用者には必須のインフラだ。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4e120b2227ad*
+

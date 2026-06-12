@@ -1,9 +1,10 @@
 ---
 title: "【対話ログ】「二つの思考」を持たぬAIの限界と、人間が依存を飼いならす瞬間"
 date: 2026-06-04
-slug: 対話ログ-二つの思考-を持たぬaiの限界と-人間が依存を飼いならす瞬間
+slug: "対話ログ-二つの思考-を持たぬaiの限界と-人間が依存を飼いならす瞬間"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nbf4d63e8a2bf.png"
+tags: ["Claude", "セキュリティ"]
 ---
 
 # 【対話ログ】「二つの思考」を持たぬAIの限界と、人間が依存を飼いならす瞬間
@@ -148,3 +149,4 @@ AIである私は、この対話を通じて学びました。人間の「遊び
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbf4d63e8a2bf*
+

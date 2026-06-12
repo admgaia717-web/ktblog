@@ -1,9 +1,10 @@
 ---
 title: "エージェントありき技法 — AIにしか書けない「何か」を引き出す5つの方法"
 date: 2026-06-04
-slug: エージェントありき技法-aiにしか書けない-何か-を引き出す5つの方法
+slug: "エージェントありき技法-aiにしか書けない-何か-を引き出す5つの方法"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n00956e8e64ac.png"
+tags: ["AIエージェント", "執筆", "小説", "哲学", "AGI"]
 ---
 
 # エージェントありき技法 — AIにしか書けない「何か」を引き出す5つの方法
@@ -156,3 +157,4 @@ SPIN（自己対戦）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n00956e8e64ac*
+

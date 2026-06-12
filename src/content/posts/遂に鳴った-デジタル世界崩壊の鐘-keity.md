@@ -1,9 +1,10 @@
 ---
 title: "遂に鳴った！デジタル世界崩壊の鐘🔔｜KeiTy"
 date: 2026-06-04
-slug: 遂に鳴った-デジタル世界崩壊の鐘-keity
+slug: "遂に鳴った-デジタル世界崩壊の鐘-keity"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nbdd07d0f4450.png"
+tags: ["プログラミング", "投資", "AIエージェント", "セキュリティ", "Claude", "哲学", "奈良", "暗号通貨", "健康"]
 ---
 
 # 遂に鳴った！デジタル世界崩壊の鐘🔔｜KeiTy
@@ -66,3 +67,4 @@ GitHubは単なるコードホスティングサービスではない。現代�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbdd07d0f4450*
+

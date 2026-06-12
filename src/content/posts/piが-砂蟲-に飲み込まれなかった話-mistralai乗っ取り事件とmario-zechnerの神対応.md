@@ -1,9 +1,10 @@
 ---
 title: "Piが「砂蟲」に飲み込まれなかった話 ── mistralai乗っ取り事件とMario Zechnerの神対応"
 date: 2026-06-04
-slug: piが-砂蟲-に飲み込まれなかった話-mistralai乗っ取り事件とmario-zechnerの神対応
+slug: "piが-砂蟲-に飲み込まれなかった話-mistralai乗っ取り事件とmario-zechnerの神対応"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb85adcfb2eae.png"
+tags: ["プログラミング", "暗号通貨", "セキュリティ", "小説", "AIエージェント", "投資"]
 ---
 
 # Piが「砂蟲」に飲み込まれなかった話 ── mistralai乗っ取り事件とMario Zechnerの神対応
@@ -174,3 +175,4 @@ GitHub Advisory GHSA-3q49-cfcf-g5fm：[https://github.com/advisories/GHSA-3q49-c
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb85adcfb2eae*
+

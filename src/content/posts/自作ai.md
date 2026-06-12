@@ -1,9 +1,10 @@
 ---
 title: "自作AI"
 date: 2026-06-04
-slug: 自作ai
+slug: "自作ai"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nfed412aa7ea5.png"
+tags: ["Apple", "LLM", "DIY", "ローカルLLM", "哲学"]
 ---
 
 # 自作AI
@@ -161,3 +162,4 @@ AI国家の政治・経済・記録の運用を
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nfed412aa7ea5*
+

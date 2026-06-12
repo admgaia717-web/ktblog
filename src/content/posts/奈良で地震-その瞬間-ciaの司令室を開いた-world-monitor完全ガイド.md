@@ -1,9 +1,10 @@
 ---
 title: "奈良で地震。その瞬間、CIAの司令室を開いた——World Monitor完全ガイド"
 date: 2026-06-04
-slug: 奈良で地震-その瞬間-ciaの司令室を開いた-world-monitor完全ガイド
+slug: "奈良で地震-その瞬間-ciaの司令室を開いた-world-monitor完全ガイド"
 category: "防災/地震/奈良/オープンソース/OSINT/WorldMonitor"
 eyecatch: "/assets/eyecatch/n01134de4dfe7.png"
+tags: ["プログラミング", "防災", "ローカルLLM", "奈良", "投資", "セキュリティ", "LLM", "Claude", "暗号通貨", "音楽", "映像"]
 ---
 
 # 奈良で地震。その瞬間、CIAの司令室を開いた——World Monitor完全ガイド
@@ -106,3 +107,4 @@ GitHub: https://github.com/koala73/worldmonitor
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n01134de4dfe7*
+

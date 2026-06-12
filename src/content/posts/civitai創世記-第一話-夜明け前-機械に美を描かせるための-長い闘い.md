@@ -1,9 +1,10 @@
 ---
 title: "Civitai創世記 第一話：夜明け前 — 機械に美を描かせるための、長い闘い"
 date: 2026-06-04
-slug: civitai創世記-第一話-夜明け前-機械に美を描かせるための-長い闘い
+slug: "civitai創世記-第一話-夜明け前-機械に美を描かせるための-長い闘い"
 category: "Civitai"
 eyecatch: "/assets/eyecatch/n4f4dd83a852f.png"
+tags: ["生成AI", "サイファーパンク", "哲学", "OpenAI", "小説", "アニメ", "デザイン"]
 ---
 
 # Civitai創世記 第一話：夜明け前 — 機械に美を描かせるための、長い闘い
@@ -172,3 +173,4 @@ Discordの個別チャンネル。Google Driveの共有リンク。時には4cha
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4f4dd83a852f*
+

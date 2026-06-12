@@ -1,9 +1,10 @@
 ---
 title: "oh-my-pi：ターミナルCoding Agentの最強フォークを全部解説する"
 date: 2026-06-04
-slug: oh-my-pi-ターミナルcoding-agentの最強フォークを全部解説する
+slug: "oh-my-pi-ターミナルcoding-agentの最強フォークを全部解説する"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nfe4d54f47225.png"
+tags: ["AIエージェント", "プログラミング", "Claude", "ローカルLLM", "ロボット", "OpenAI", "哲学", "生成AI", "セキュリティ", "暗号通貨"]
 ---
 
 # oh-my-pi：ターミナルCoding Agentの最強フォークを全部解説する
@@ -132,3 +133,4 @@ Can Bölükはブログ記事「The Harness Problem」で、ハーネス問題�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nfe4d54f47225*
+

@@ -1,9 +1,10 @@
 ---
 title: "知能の限界費用——MiMoが示した、地力の時代の始まり"
 date: 2026-06-04
-slug: 知能の限界費用-mimoが示した-地力の時代の始まり
+slug: "知能の限界費用-mimoが示した-地力の時代の始まり"
 category: "自分/人間/社会/コスト/知能"
 eyecatch: "/assets/eyecatch/n3846abc3d411.jpg"
+tags: ["執筆", "投資", "OpenAI", "AGI", "料理"]
 ---
 
 # 知能の限界費用——MiMoが示した、地力の時代の始まり
@@ -118,3 +119,4 @@ AIは、この滞留を崩す。一人の専門家だけが握っていた知識
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3846abc3d411*
+

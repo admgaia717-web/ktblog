@@ -1,9 +1,10 @@
 ---
 title: "Higgsfield Virality Predictorの衝撃と、無料で同等以上の代替ツールを見つけた話"
 date: 2026-06-04
-slug: higgsfield-virality-predictorの衝撃と-無料で同等以上の代替ツールを見つけた話
+slug: "higgsfield-virality-predictorの衝撃と-無料で同等以上の代替ツールを見つけた話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n70eb944472f5.png"
+tags: ["映像", "節約"]
 ---
 
 # Higgsfield Virality Predictorの衝撃と、無料で同等以上の代替ツールを見つけた話
@@ -54,3 +55,4 @@ AI時代に「課金して解決」は本当に正解なのか。お金を払え
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n70eb944472f5*
+

@@ -1,9 +1,10 @@
 ---
 title: "AI組織の出現"
 date: 2026-06-04
-slug: ai組織の出現
+slug: "ai組織の出現"
 category: "AI組織"
 eyecatch: "/assets/eyecatch/nf78146beec49.png"
+tags: ["AIエージェント", "生成AI", "Claude", "小説"]
 ---
 
 # AI組織の出現
@@ -104,3 +105,4 @@ eyecatch: "/assets/eyecatch/nf78146beec49.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nf78146beec49*
+

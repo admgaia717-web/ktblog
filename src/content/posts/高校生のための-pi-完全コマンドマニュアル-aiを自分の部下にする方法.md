@@ -1,9 +1,10 @@
 ---
 title: "高校生のための「pi」完全コマンドマニュアル——AIを自分の部下にする方法"
 date: 2026-06-04
-slug: 高校生のための-pi-完全コマンドマニュアル-aiを自分の部下にする方法
+slug: "高校生のための-pi-完全コマンドマニュアル-aiを自分の部下にする方法"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nba7306f8eacd.png"
+tags: ["プログラミング", "AIエージェント", "映像", "ゲーム", "ローカルLLM", "Apple", "デザイン", "生成AI", "OpenAI", "セキュリティ", "暗号通貨"]
 ---
 
 # 高校生のための「pi」完全コマンドマニュアル——AIを自分の部下にする方法
@@ -164,3 +165,4 @@ piは「AIとチャットするツール」ではない。「AIを部下にし�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nba7306f8eacd*
+

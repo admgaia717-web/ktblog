@@ -1,8 +1,9 @@
 ---
 title: "OMP第9回: 塩とマグネシウム — 海からの贈り物"
 date: 2026-06-03
-slug: omp第9回-塩とマグネシウム-海からの贈り物-2
+slug: "omp第9回-塩とマグネシウム-海からの贈り物-2"
 eyecatch: "https://assets.st-note.com/production/uploads/images/282088695/rectangle_large_type_2_67f6008c887827331489d593f379c522.jpg"
+tags: ["AIエージェント", "薬草", "健康"]
 ---
 
 # OMP第9回: 塩とマグネシウム — 海からの贈り物
@@ -115,3 +116,4 @@ eyecatch: "https://assets.st-note.com/production/uploads/images/282088695/rectan
 OMP 第9回: 塩とマグネシウム — 完
 
 ![](https://assets.st-note.com/production/uploads/images/282088695/rectangle_large_type_2_67f6008c887827331489d593f379c522.jpg)
+

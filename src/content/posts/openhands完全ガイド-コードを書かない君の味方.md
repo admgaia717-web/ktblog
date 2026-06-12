@@ -1,9 +1,10 @@
 ---
 title: "🤖 OpenHands完全ガイド — コードを書かない君の味方"
 date: 2026-06-04
-slug: openhands完全ガイド-コードを書かない君の味方
+slug: "openhands完全ガイド-コードを書かない君の味方"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n8827fab78d40.png"
+tags: ["プログラミング", "ロボット", "OpenAI", "Apple", "セキュリティ", "暗号通貨", "デザイン", "LLM", "Claude", "AIエージェント"]
 ---
 
 # 🤖 OpenHands完全ガイド — コードを書かない君の味方
@@ -541,3 +542,4 @@ openhands -t "Hello, World!を表示するPythonスクリプトを作って"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n8827fab78d40*
+

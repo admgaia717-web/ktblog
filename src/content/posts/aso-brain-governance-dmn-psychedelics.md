@@ -1,10 +1,11 @@
 ---
 title: "阿蘇の草千里から——脳の「ガバナンス」と時差のロジック"
 date: 2026-06-06
-slug: aso-brain-governance-dmn-psychedelics
+slug: "aso-brain-governance-dmn-psychedelics"
 category: "brain-science"
 eyecatch: "/assets/eyecatch/aso-brain-governance.png"
 excerpt: "カンナビス離脱症候群（CWS）の有病率は47％に達する——そのリアルなデバッグ体験と、有酸素運動がDMN（デフォルト・モード・ネットワーク）をどう賦活させるかを、阿蘇の草千里を舞台に綴る物語風サイエンスエッセイ。"
+tags: ["薬草", "Apple", "ロボット", "健康", "執筆", "AIエージェント", "奈良"]
 ---
 
 夕刻、阿蘇の外輪山を包み込む霧が、草千里の草原をゆっくりと覆い隠していく。溶岩台地の上に立つと、はるか下方に広がるカルデラの町々が、ポツリポツリと灯り始めるのが見えた。空気には火山性ガスのわずかな匂いが混じり、それがかえって、この場所が地球の呼吸そのものの上に成り立っていることを思い出させる。
@@ -151,3 +152,5 @@ DMNは、「何もしていないとき」に活性化するネットワーク�
 - Microdosing psychedelics and the risk of cardiac fibrosis and valvulopathy: Comparison to known cardiotoxins. *Journal of Psychopharmacology*. 2024.
 
 **本稿は情報提供のみを目的としており、医学的アドバイスや特定の行動を推奨・容認するものではない。脳や精神に関する健康上の判断は、必ず専門家に相談されたい。**
+
+

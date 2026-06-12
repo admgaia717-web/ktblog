@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第6回：メモリシステム — 忘れないAIの仕組み"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第6回-メモリシステム-忘れないaiの仕組み
+slug: "hermes-agent完全ガイド-第6回-メモリシステム-忘れないaiの仕組み"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc11c9c082e8c.png"
+tags: ["AIエージェント", "ロボット", "セキュリティ", "Apple", "LLM", "OpenAI", "プログラミング", "哲学"]
 ---
 
 # Hermes Agent完全ガイド 第6回：メモリシステム — 忘れないAIの仕組み
@@ -208,3 +209,4 @@ Hermes Agentはメモリ書き込み時のセキュリティスキャンを実�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc11c9c082e8c*
+

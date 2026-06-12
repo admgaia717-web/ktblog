@@ -1,17 +1,20 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
-  return posts.map((post) => ({
+  const allPosts = await getCollection('posts');
+  return allPosts.map((post) => ({
     params: { slug: post.slug },
-    props: { post },
+    props: { post, allPosts },
   }));
 }
 
-const { post } = Astro.props;
-const { Content } = await post.render();
+const { post, allPosts } = Astro.props;
+const { Content, headings } = await post.render();
 const { title, date, category, eyecatch, excerpt, tags = [] } = post.data;
 const formattedDate = date.toLocaleDateString('ja-JP', {
   year: 'numeric',
@@ -19,6 +22,27 @@ const formattedDate = date.toLocaleDateString('ja-JP', {
   day: 'numeric',
 });
 const isoDate = date.toISOString();
+
+function getRelatedPosts(current: CollectionEntry<'posts'>, posts: CollectionEntry<'posts'>[], limit = 6) {
+  const currentTags = new Set(current.data.tags || []);
+  const currentCategory = current.data.category;
+  return posts
+    .filter((p) => p.slug !== current.slug)
+    .map((p) => {
+      let score = 0;
+      const pTags = new Set(p.data.tags || []);
+      currentTags.forEach((tag) => { if (pTags.has(tag)) score += 3; });
+      if (p.data.category && p.data.category === currentCategory) score += 2;
+      // 新しい記事をわずかに優先
+      score += p.data.date.valueOf() / 1e15;
+      return { post: p, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((item) => item.post);
+}
+
+const relatedPosts = getRelatedPosts(post, allPosts, 6);
 ---
 <BaseLayout
   title={title}
@@ -31,6 +55,7 @@ const isoDate = date.toISOString();
   author="KT"
   category={category}
   tags={tags}
+  wide={true}
 >
   <article>
     <header class="mb-10 space-y-4">
@@ -56,8 +81,32 @@ const isoDate = date.toISOString();
       </figure>
     )}
 
-    <div class="prose">
-      <Content />
+    {tags.length > 0 && (
+      <div class="flex flex-wrap gap-2 mb-10">
+        {tags.map((tag) => (
+          <a href={`/tag/${encodeURIComponent(tag)}`} class="inline-flex px-3 py-1 rounded-full text-sm border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-[var(--color-text)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">
+            #{tag}
+          </a>
+        ))}
+      </div>
+    )}
+
+    <div class="flex gap-12 items-start">
+      <div class="prose flex-1 min-w-0">
+        <Content />
+      </div>
+      <TableOfContents headings={headings} />
     </div>
+
+    {relatedPosts.length > 0 && (
+      <aside class="mt-20 pt-10 border-t border-[var(--color-border)]">
+        <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)] mb-6">Related Posts</p>
+        <div class="grid md:grid-cols-2 gap-10">
+          {relatedPosts.map((related) => (
+            <PostCard post={related} />
+          ))}
+        </div>
+      </aside>
+    )}
   </article>
 </BaseLayout>

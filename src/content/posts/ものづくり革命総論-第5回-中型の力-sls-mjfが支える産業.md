@@ -1,9 +1,10 @@
 ---
 title: "ものづくり革命総論 第5回：中型の力 — SLS/MJFが支える産業"
 date: 2026-06-04
-slug: ものづくり革命総論-第5回-中型の力-sls-mjfが支える産業
+slug: "ものづくり革命総論-第5回-中型の力-sls-mjfが支える産業"
 category: "ものづくり革命総論"
 eyecatch: "/assets/eyecatch/nea8335f4f874.jpg"
+tags: ["ロボット", "デザイン", "健康"]
 ---
 
 # ものづくり革命総論 第5回：中型の力 — SLS/MJFが支える産業
@@ -258,3 +259,4 @@ SLS/MJFを使うのは
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nea8335f4f874*
+

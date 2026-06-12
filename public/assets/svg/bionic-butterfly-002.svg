@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <defs>
+    <style>
+      .bg { fill: #f5f0eb; }
+      .card { fill: #ffffff; stroke: #d4652a; stroke-width: 1; }
+      .h-en { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #2a2a2a; }
+      .h-jp { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 14px; fill: #6a6a6a; }
+      .body { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 14px; fill: #2a2a2a; }
+      .caption { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 12px; font-style: italic; fill: #6a6a6a; }
+      .divider { stroke: #d4652a; stroke-width: 2; }
+      .label { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 12px; fill: #2a2a2a; }
+      .label-small { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 11px; fill: #6a6a6a; }
+      .servo-body { fill: #3a3a3a; stroke: #1a1a1a; stroke-width: 1.5; }
+      .servo-horn { fill: #d4652a; stroke: #b85522; stroke-width: 1; }
+      .wing { fill: #8B4513; fill-opacity: 0.3; stroke: #8B4513; stroke-width: 1.5; }
+      .wing-up { fill: #8B4513; fill-opacity: 0.15; stroke: #8B4513; stroke-width: 1; stroke-dasharray: 4,3; }
+      .frame { fill: none; stroke: #2a2a2a; stroke-width: 2; }
+      .carbon { fill: #2a2a2a; stroke: #1a1a1a; stroke-width: 1; }
+      .arrow-motion { stroke: #d4652a; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-force { stroke: #22c55e; stroke-width: 2; fill: none; marker-end: url(#arrowhead-green); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d4652a"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="800" height="480"/>
+  <rect class="card" x="20" y="20" width="760" height="440" rx="8"/>
+  <text class="h-en" x="40" y="60">Direct Servo Drive Mechanism</text>
+  <text class="h-jp" x="40" y="85">サーボ式直接駆動 — ギアボックス不要の羽ばたき機構</text>
+  <line class="divider" x1="40" y1="100" x2="760" y2="100"/>
+
+  <!-- === LEFT HALF: DOWNSTROKE === -->
+  <text class="body" x="100" y="145" text-anchor="middle" font-weight="700" fill="#d4652a">▼ Downstroke（打ち下ろし）</text>
+
+  <!-- Servo body left -->
+  <rect class="servo-body" x="100" y="230" width="60" height="60" rx="4"/>
+  <text class="label-small" x="130" y="258" text-anchor="middle">PTK 7465MG</text>
+  <text class="label-small" x="130" y="272" text-anchor="middle">13g / 5.5kg·cm</text>
+
+  <!-- Servo horn left - rotated clockwise -->
+  <rect class="servo-horn" x="145" y="240" width="40" height="8" rx="2" transform="rotate(30, 130, 260)"/>
+  <circle cx="130" cy="260" r="6" fill="#b85522" stroke="#8a4418" stroke-width="1"/>
+
+  <!-- Carbon rod left -->
+  <rect class="carbon" x="170" y="200" width="6" height="120" rx="2" transform="rotate(25, 173, 260)"/>
+
+  <!-- Wing left - down position -->
+  <path class="wing" d="M 185 250 Q 260 290 340 320 Q 370 330 400 310 Q 340 290 270 260 Q 220 240 185 250 Z"/>
+  <text class="label-small" x="300" y="310" text-anchor="middle">翼（打ち下ろし）</text>
+
+  <!-- Force arrow: thrust -->
+  <line class="arrow-force" x1="280" y1="300" x2="360" y2="330"/>
+  <text class="label-small" x="340" y="345" fill="#22c55e">推力→</text>
+
+  <!-- Force arrow: lift -->
+  <line class="arrow-force" x1="260" y1="280" x2="270" y2="220"/>
+  <text class="label-small" x="255" y="215" fill="#22c55e">↑揚力</text>
+
+  <!-- Rotation arrow -->
+  <path class="arrow-motion" d="M 145 215 A 20 20 0 0 1 168 225" marker-end="url(#arrowhead)"/>
+  <text class="label-small" x="155" y="210" fill="#d4652a">サーボ回転</text>
+
+  <!-- === RIGHT HALF: UPSTROKE (dashed) === -->
+  <text class="body" x="540" y="145" text-anchor="middle" font-weight="700" fill="#6a6a6a">▲ Upstroke（打ち上げ）</text>
+
+  <!-- Servo body right -->
+  <rect class="servo-body" x="500" y="230" width="60" height="60" rx="4"/>
+  <text class="label-small" x="530" y="258" text-anchor="middle">PTK 7465MG</text>
+  <text class="label-small" x="530" y="272" text-anchor="middle">13g / 5.5kg·cm</text>
+
+  <!-- Servo horn right - rotated counter-clockwise -->
+  <rect class="servo-horn" x="145" y="240" width="40" height="8" rx="2" transform="rotate(-30, 530, 260)"/>
+  <circle cx="530" cy="260" r="6" fill="#b85522" stroke="#8a4418" stroke-width="1"/>
+
+  <!-- Carbon rod right -->
+  <rect class="carbon" x="170" y="200" width="6" height="120" rx="2" transform="rotate(-25, 573, 260)"/>
+
+  <!-- Wing right - up position (dashed) -->
+  <path class="wing-up" d="M 585 250 Q 620 190 670 140 Q 680 130 690 140 Q 670 170 630 210 Q 600 240 585 250 Z"/>
+
+  <!-- Force arrow upstroke -->
+  <line class="arrow-force" x1="640" y1="180" x2="660" y2="220" stroke="#6a6a6a"/>
+  <text class="label-small" x="645" y="175" fill="#6a6a6a">抵抗最小化</text>
+
+  <!-- Rotation arrow up -->
+  <path class="arrow-motion" d="M 145 215 A 20 20 0 0 0 168 225" marker-end="url(#arrowhead)" transform="translate(400,0)"/>
+  <text class="label-small" x="555" y="210" fill="#d4652a" transform="translate(400,0)">サーボ回転</text>
+
+  <!-- Center annotation -->
+  <text class="label" x="400" y="420" text-anchor="middle">左右のサーボを独立PWM制御 → 差動で機体姿勢を制御（尾翼不要）</text>
+
+  <text class="caption" x="40" y="445">機構: Arduino Pro Micro → PWM → PTK 7465MG × 2 → カーボンロッド → 翼</text>
+</svg>

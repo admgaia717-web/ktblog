@@ -1,0 +1,58 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "cloudflare": {
+      "type": "remote",
+      "url": "https://mcp.cloudflare.com/mcp",
+      "enabled": true
+    },
+    "cloudflare-docs": {
+      "type": "remote",
+      "url": "https://docs.mcp.cloudflare.com/mcp",
+      "enabled": true
+    },
+    "cloudflare-bindings": {
+      "type": "remote",
+      "url": "https://bindings.mcp.cloudflare.com/mcp",
+      "enabled": true
+    },
+    "cloudflare-builds": {
+      "type": "remote",
+      "url": "https://builds.mcp.cloudflare.com/mcp",
+      "enabled": true
+    },
+    "cloudflare-observability": {
+      "type": "remote",
+      "url": "https://observability.mcp.cloudflare.com/mcp",
+      "enabled": true
+    }
+  },
+  "skills": [
+    "https://github.com/cloudflare/skills"
+  ],
+  "customCommands": [
+    {
+      "name": "new-post",
+      "description": "新しいブログ記事を作成する。タイトルとstdin本文を受け取る",
+      "command": "node scripts/new-post.mjs",
+      "args": [
+        "--title",
+        "$TITLE",
+        "--category",
+        "$CATEGORY",
+        "--eyecatch",
+        "$EYECATCH",
+        "--excerpt",
+        "$EXCERPT"
+      ]
+    },
+    {
+      "name": "deploy",
+      "description": "記事変更をコミットしてCloudflare Pagesにデプロイ",
+      "command": "node scripts/deploy.mjs",
+      "args": [
+        "$MESSAGE"
+      ]
+    }
+  ]
+}

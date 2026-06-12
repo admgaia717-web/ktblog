@@ -1,9 +1,10 @@
 ---
 title: "APIもMCPも、もう古い。CAPTCHAを突破する副官を持て"
 date: 2026-06-04
-slug: apiもmcpも-もう古い-captchaを突破する副官を持て
+slug: "apiもmcpも-もう古い-captchaを突破する副官を持て"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n58be5d4885a2.jpg"
+tags: ["ロボット", "自由市場", "Apple", "AIエージェント", "プログラミング", "ペット", "節約"]
 ---
 
 # APIもMCPも、もう古い。CAPTCHAを突破する副官を持て
@@ -148,3 +149,4 @@ CAPTCHAを突破するのは、攻撃するためではない。**読み、探�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n58be5d4885a2*
+

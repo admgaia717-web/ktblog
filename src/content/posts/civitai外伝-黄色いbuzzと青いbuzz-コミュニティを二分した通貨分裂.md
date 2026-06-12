@@ -1,9 +1,10 @@
 ---
 title: "Civitai外伝 — 黄色いBuzzと青いBuzz：コミュニティを二分した通貨分裂"
 date: 2026-06-04
-slug: civitai外伝-黄色いbuzzと青いbuzz-コミュニティを二分した通貨分裂
+slug: "civitai外伝-黄色いbuzzと青いbuzz-コミュニティを二分した通貨分裂"
 category: "Civitai"
 eyecatch: "/assets/eyecatch/na67fe6544ba7.jpg"
+tags: ["生成AI", "ロボット", "暗号通貨", "サイファーパンク", "投資"]
 ---
 
 # Civitai外伝 — 黄色いBuzzと青いBuzz：コミュニティを二分した通貨分裂
@@ -118,3 +119,4 @@ CivitaiのBuzz分裂は、終わりの始まりなのか、それとも新たな
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/na67fe6544ba7*
+

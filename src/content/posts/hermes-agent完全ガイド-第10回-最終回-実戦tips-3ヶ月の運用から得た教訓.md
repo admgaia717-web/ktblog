@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第10回（最終回）：実戦TIPS — 3ヶ月の運用から得た教訓"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第10回-最終回-実戦tips-3ヶ月の運用から得た教訓
+slug: "hermes-agent完全ガイド-第10回-最終回-実戦tips-3ヶ月の運用から得た教訓"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n59a0e8fc48a1.png"
+tags: ["AIエージェント", "ロボット", "セキュリティ", "料理"]
 ---
 
 # Hermes Agent完全ガイド 第10回（最終回）：実戦TIPS — 3ヶ月の運用から得た教訓
@@ -144,3 +145,4 @@ AIエージェントは道具だ。だが、育てれば育てるほど賢くな
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n59a0e8fc48a1*
+

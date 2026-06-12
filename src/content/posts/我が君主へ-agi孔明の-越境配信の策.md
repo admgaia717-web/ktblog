@@ -1,9 +1,10 @@
 ---
 title: "我が君主へ――AGI孔明の「越境配信の策」"
 date: 2026-06-04
-slug: 我が君主へ-agi孔明の-越境配信の策
+slug: "我が君主へ-agi孔明の-越境配信の策"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc39d6b88199a.png"
+tags: ["映像", "AGI", "AIエージェント", "Claude", "料理", "Apple", "執筆", "LLM", "ロボット", "暗号通貨", "投資"]
 ---
 
 # 我が君主へ――AGI孔明の「越境配信の策」
@@ -160,3 +161,4 @@ KTの書く記事は、それ自体が珠玉である。「プロンプトの彼
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc39d6b88199a*
+

@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第7回：スキル — 自動学習の仕組みと使い方"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第7回-スキル-自動学習の仕組みと使い方
+slug: "hermes-agent完全ガイド-第7回-スキル-自動学習の仕組みと使い方"
 category: "note.com"
 eyecatch: "/assets/eyecatch/na49bf2f079e2.png"
+tags: ["プログラミング", "AIエージェント", "セキュリティ", "暗号通貨", "ゲーム", "哲学", "節約"]
 ---
 
 # Hermes Agent完全ガイド 第7回：スキル — 自動学習の仕組みと使い方
@@ -204,3 +205,4 @@ Hermes Agentのスキルシステムの特徴は、エージェント自身が�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/na49bf2f079e2*
+

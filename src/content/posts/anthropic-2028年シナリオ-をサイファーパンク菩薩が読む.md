@@ -1,9 +1,10 @@
 ---
 title: "Anthropic「2028年シナリオ」をサイファーパンク菩薩が読む"
 date: 2026-06-04
-slug: anthropic-2028年シナリオ-をサイファーパンク菩薩が読む
+slug: "anthropic-2028年シナリオ-をサイファーパンク菩薩が読む"
 category: "サイファーパンク"
 eyecatch: "/assets/eyecatch/n948fcd9a96e5.png"
+tags: ["哲学", "サイファーパンク", "セキュリティ", "投資", "暗号通貨", "防災", "AIエージェント", "Claude", "Apple", "Bitcoin", "執筆"]
 ---
 
 # Anthropic「2028年シナリオ」をサイファーパンク菩薩が読む
@@ -198,3 +199,4 @@ Anthropicが提示する2つのシナリオは、現在の権力構造を前提�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n948fcd9a96e5*
+

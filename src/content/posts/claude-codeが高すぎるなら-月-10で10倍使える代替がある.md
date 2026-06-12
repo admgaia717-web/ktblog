@@ -1,9 +1,10 @@
 ---
 title: "Claude Codeが高すぎるなら、月$10で10倍使える代替がある"
 date: 2026-06-04
-slug: claude-codeが高すぎるなら-月-10で10倍使える代替がある
+slug: "claude-codeが高すぎるなら-月-10で10倍使える代替がある"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n4831ce8b0362.png"
+tags: ["Claude", "プログラミング", "Apple"]
 ---
 
 # Claude Codeが高すぎるなら、月$10で10倍使える代替がある
@@ -132,3 +133,4 @@ Claude Opus（Anthropicの最上位）は確かに強い。特に複雑なアー
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4831ce8b0362*
+

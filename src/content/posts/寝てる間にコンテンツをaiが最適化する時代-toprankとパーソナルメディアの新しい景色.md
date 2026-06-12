@@ -1,9 +1,10 @@
 ---
 title: "寝てる間にコンテンツをAIが最適化する時代——Toprankとパーソナルメディアの新しい景色"
 date: 2026-06-04
-slug: 寝てる間にコンテンツをaiが最適化する時代-toprankとパーソナルメディアの新しい景色
+slug: "寝てる間にコンテンツをaiが最適化する時代-toprankとパーソナルメディアの新しい景色"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc6923feadf9c.png"
+tags: ["映像", "Claude", "OpenAI", "AIエージェント", "プログラミング", "執筆", "哲学", "ロボット"]
 ---
 
 # 寝てる間にコンテンツをAIが最適化する時代——Toprankとパーソナルメディアの新しい景色
@@ -159,3 +160,4 @@ Toprank: [https://github.com/nowork-studio/toprank](https://github.com/nowork-st
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc6923feadf9c*
+

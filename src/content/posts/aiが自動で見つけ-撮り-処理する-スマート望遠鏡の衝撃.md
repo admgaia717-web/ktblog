@@ -1,9 +1,10 @@
 ---
 title: "AIが自動で見つけ、撮り、処理する——スマート望遠鏡の衝撃"
 date: 2026-06-04
-slug: aiが自動で見つけ-撮り-処理する-スマート望遠鏡の衝撃
+slug: "aiが自動で見つけ-撮り-処理する-スマート望遠鏡の衝撃"
 category: "AI"
 eyecatch: "/assets/eyecatch/n4aa65f19af55.png"
+tags: ["Apple", "映像"]
 ---
 
 # AIが自動で見つけ、撮り、処理する——スマート望遠鏡の衝撃
@@ -52,3 +53,4 @@ eyecatch: "/assets/eyecatch/n4aa65f19af55.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4aa65f19af55*
+

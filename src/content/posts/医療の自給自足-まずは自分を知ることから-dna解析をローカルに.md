@@ -1,9 +1,10 @@
 ---
 title: "医療の自給自足、まずは自分を知ることから——DNA解析をローカルに"
 date: 2026-06-04
-slug: 医療の自給自足-まずは自分を知ることから-dna解析をローカルに
+slug: "医療の自給自足-まずは自分を知ることから-dna解析をローカルに"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nec3361469a1e.png"
+tags: ["健康", "Apple", "ロボット", "DIY", "哲学", "投資", "Claude", "ペット"]
 ---
 
 # 医療の自給自足、まずは自分を知ることから——DNA解析をローカルに
@@ -104,3 +105,4 @@ DNAはもう、誰かに預けるものじゃない。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nec3361469a1e*
+

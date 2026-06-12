@@ -1,9 +1,10 @@
 ---
 title: "DMT — 最強のサイケデリック、あるいは精神の最終手段"
 date: 2026-06-03
-slug: dmt-最強のサイケデリック-あるいは精神の最終手段
+slug: "dmt-最強のサイケデリック-あるいは精神の最終手段"
 category: "DMT"
 eyecatch: "/assets/eyecatch/nf8014b99a1dc.png"
+tags: ["薬草", "健康", "防災", "AIエージェント", "生成AI", "奈良"]
 ---
 
 # DMT — 最強のサイケデリック、あるいは精神の最終手段
@@ -164,3 +165,4 @@ DMTは最もリスクの高い精神作用物質の一つや。以下のリス�
 *第6回「DMT — 最強のサイケデリック」← 完結編*
 
 ![](https://assets.st-note.com/production/uploads/images/282064425/rectangle_large_type_2_ce7d3035e7d23ed68096715f2ef814fa.png)
+

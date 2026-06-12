@@ -1,9 +1,10 @@
 ---
 title: "地下探検 — レディット・X・Pixivを行き来する欲望の生態系"
 date: 2026-06-04
-slug: 地下探検-レディット-x-pixivを行き来する欲望の生態系
+slug: "地下探検-レディット-x-pixivを行き来する欲望の生態系"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ndc254901f4fc.png"
+tags: ["生成AI", "プログラミング", "サイファーパンク", "セキュリティ"]
 ---
 
 # 地下探検 — レディット・X・Pixivを行き来する欲望の生態系
@@ -159,3 +160,4 @@ NSFW特化モデル：Pony V6 XL / Illustrious系 / Flux
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ndc254901f4fc*
+

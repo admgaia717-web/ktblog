@@ -1,9 +1,10 @@
 ---
 title: "​【平気也大喝（へいきやだいかつ）】​（S著）"
 date: 2026-06-04
-slug: 平気也大喝-へいきやだいかつ-s著
+slug: "平気也大喝-へいきやだいかつ-s著"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n132bd1061105.png"
+tags: ["ペット"]
 ---
 
 # ​【平気也大喝（へいきやだいかつ）】​（S著）
@@ -44,3 +45,4 @@ eyecatch: "/assets/eyecatch/n132bd1061105.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n132bd1061105*
+

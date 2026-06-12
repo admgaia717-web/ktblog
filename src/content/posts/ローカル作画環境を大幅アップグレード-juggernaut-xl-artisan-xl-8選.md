@@ -1,9 +1,10 @@
 ---
 title: "ローカル作画環境を大幅アップグレード——Juggernaut XL × Artisan XL 8選"
 date: 2026-06-04
-slug: ローカル作画環境を大幅アップグレード-juggernaut-xl-artisan-xl-8選
+slug: "ローカル作画環境を大幅アップグレード-juggernaut-xl-artisan-xl-8選"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n6882e0c95ef1.png"
+tags: ["Apple", "アニメ", "生成AI", "セキュリティ", "デザイン"]
 ---
 
 # ローカル作画環境を大幅アップグレード——Juggernaut XL × Artisan XL 8選
@@ -90,3 +91,4 @@ Pony V6 も残してあるので、アニメ・リアル・油絵の三刀流が
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n6882e0c95ef1*
+

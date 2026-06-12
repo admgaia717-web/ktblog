@@ -1,9 +1,10 @@
 ---
 title: "Civitai動画外伝 — ヌルヌル動く裸女たちが予見した、アンドロイド化する未来：AI動画生成の血風録とエロ映画監督への実用ガイド"
 date: 2026-06-04
-slug: civitai動画外伝-ヌルヌル動く裸女たちが予見した-アンドロイド化する未来-ai動画生成の血風録とエロ映画監督への実用ガイド
+slug: "civitai動画外伝-ヌルヌル動く裸女たちが予見した-アンドロイド化する未来-ai動画生成の血風録とエロ映画監督への実用ガイド"
 category: "Civitai"
 eyecatch: "/assets/eyecatch/ne42e89468ef1.png"
+tags: ["映像", "生成AI", "ロボット", "アニメ", "Apple"]
 ---
 
 # Civitai動画外伝 — ヌルヌル動く裸女たちが予見した、アンドロイド化する未来：AI動画生成の血風録とエロ映画監督への実用ガイド
@@ -252,3 +253,4 @@ Redditで2874スコアを取った「I did all this using 4GB VRAM and 16 GB RAM
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne42e89468ef1*
+

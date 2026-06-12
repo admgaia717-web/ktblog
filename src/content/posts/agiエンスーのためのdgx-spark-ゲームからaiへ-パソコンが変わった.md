@@ -1,9 +1,10 @@
 ---
 title: "AGIエンスーのためのDGX Spark——ゲームからAIへ、パソコンが変わった"
 date: 2026-06-04
-slug: agiエンスーのためのdgx-spark-ゲームからaiへ-パソコンが変わった
+slug: "agiエンスーのためのdgx-spark-ゲームからaiへ-パソコンが変わった"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ncea4daac281d.png"
+tags: ["ゲーム", "ロボット", "ローカルLLM", "AGI", "LLM", "生成AI", "OpenAI", "Apple", "映像", "健康", "DIY", "投資"]
 ---
 
 # AGIエンスーのためのDGX Spark——ゲームからAIへ、パソコンが変わった
@@ -160,3 +161,4 @@ NIM対応❌✅ DGX OS搭載
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ncea4daac281d*
+

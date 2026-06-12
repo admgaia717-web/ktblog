@@ -1,9 +1,10 @@
 ---
 title: "6人チームがOpenAIより4倍速いモデルを作った話 — ZeroEntropy"
 date: 2026-06-04
-slug: 6人チームがopenaiより4倍速いモデルを作った話-zeroentropy
+slug: "6人チームがopenaiより4倍速いモデルを作った話-zeroentropy"
 category: "note.com"
 eyecatch: "/assets/eyecatch/na36cffd89ce1.png"
+tags: ["OpenAI", "Apple"]
 ---
 
 # 6人チームがOpenAIより4倍速いモデルを作った話 — ZeroEntropy
@@ -61,3 +62,4 @@ KT＋ロデム（Rodemu／MacBook Air M1）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/na36cffd89ce1*
+

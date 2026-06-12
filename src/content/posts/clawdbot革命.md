@@ -1,9 +1,10 @@
 ---
 title: "🦞Clawdbot革命"
 date: 2026-06-04
-slug: clawdbot革命
+slug: "clawdbot革命"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ndc605a4d24e0.png"
+tags: ["哲学", "LLM", "AIエージェント", "OpenAI", "プログラミング"]
 ---
 
 # 🦞Clawdbot革命
@@ -135,3 +136,4 @@ KT のヤマト建国記録やノート系列とも見事に連動しうる概�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ndc605a4d24e0*
+

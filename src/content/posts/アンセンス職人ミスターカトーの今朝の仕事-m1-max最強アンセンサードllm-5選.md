@@ -1,9 +1,10 @@
 ---
 title: "アンセンス職人ミスターカトーの今朝の仕事 — M1 Max最強アンセンサードLLM 5選"
 date: 2026-06-04
-slug: アンセンス職人ミスターカトーの今朝の仕事-m1-max最強アンセンサードllm-5選
+slug: "アンセンス職人ミスターカトーの今朝の仕事-m1-max最強アンセンサードllm-5選"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc808ff5e0015.jpg"
+tags: ["Apple", "ローカルLLM", "Claude", "LLM", "ゲーム", "節約"]
 ---
 
 # アンセンス職人ミスターカトーの今朝の仕事 — M1 Max最強アンセンサードLLM 5選
@@ -85,3 +86,4 @@ GGUF 4モデルはollama create、MLX版はollama create --experimentalでsafete
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc808ff5e0015*
+

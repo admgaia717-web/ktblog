@@ -1,9 +1,10 @@
 ---
 title: "寝てる間にエージェントが勝手に成長する — Hermes Dojo 導入記"
 date: 2026-06-04
-slug: 寝てる間にエージェントが勝手に成長する-hermes-dojo-導入記
+slug: "寝てる間にエージェントが勝手に成長する-hermes-dojo-導入記"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n6b4a0e01da23.png"
+tags: ["プログラミング", "AIエージェント", "LLM", "ロボット"]
 ---
 
 # 寝てる間にエージェントが勝手に成長する — Hermes Dojo 導入記
@@ -72,3 +73,4 @@ LLM単体の性能競争は飽和しつつある。次の戦場は**「エージ
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n6b4a0e01da23*
+

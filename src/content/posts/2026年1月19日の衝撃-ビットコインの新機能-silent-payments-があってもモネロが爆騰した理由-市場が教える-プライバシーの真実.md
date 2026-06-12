@@ -1,9 +1,10 @@
 ---
 title: "【2026年1月19日の衝撃】ビットコインの新機能「Silent Payments」があってもモネロが爆騰した理由――市場が教える「プライバシーの真実」"
 date: 2026-06-04
-slug: 2026年1月19日の衝撃-ビットコインの新機能-silent-payments-があってもモネロが爆騰した理由-市場が教える-プライバシーの真実
+slug: "2026年1月19日の衝撃-ビットコインの新機能-silent-payments-があってもモネロが爆騰した理由-市場が教える-プライバシーの真実"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n838f2ded5d85.png"
+tags: ["Monero", "セキュリティ", "Bitcoin", "投資", "暗号通貨", "ロボット"]
 ---
 
 # 【2026年1月19日の衝撃】ビットコインの新機能「Silent Payments」があってもモネロが爆騰した理由――市場が教える「プライバシーの真実」
@@ -357,3 +358,4 @@ Silent Payments技術解説：Area Bitcoin (BIP 352)
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n838f2ded5d85*
+

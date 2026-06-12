@@ -1,9 +1,10 @@
 ---
 title: "glitchさんのX記事「a swarm & hermes that grows with you」の日本語訳だ。"
 date: 2026-06-04
-slug: glitchさんのx記事-a-swarm-hermes-that-grows-with-you-の日本語訳だ
+slug: "glitchさんのx記事-a-swarm-hermes-that-grows-with-you-の日本語訳だ"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ndf92db2de104.jpg"
+tags: ["AIエージェント", "プログラミング", "ロボット", "映像", "デザイン"]
 ---
 
 # glitchさんのX記事「a swarm & hermes that grows with you」の日本語訳だ。
@@ -100,3 +101,4 @@ Karpathyのautoresearchパターンをグロスに適応した。全エージェ
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ndf92db2de104*
+

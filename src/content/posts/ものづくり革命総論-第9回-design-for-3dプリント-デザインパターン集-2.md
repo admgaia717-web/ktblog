@@ -1,9 +1,10 @@
 ---
 title: "ものづくり革命総論 第9回：Design for 3Dプリント — デザインパターン集"
 date: 2026-06-04
-slug: ものづくり革命総論-第9回-design-for-3dプリント-デザインパターン集-2
+slug: "ものづくり革命総論-第9回-design-for-3dプリント-デザインパターン集-2"
 category: "ものづくり革命総論"
 eyecatch: "/assets/eyecatch/n7657a94b4e39.jpg"
+tags: ["デザイン", "ロボット"]
 ---
 
 # ものづくり革命総論 第9回：Design for 3Dプリント — デザインパターン集
@@ -315,3 +316,4 @@ CADで形を作る。プリントする。壊れる。直す。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n7657a94b4e39*
+

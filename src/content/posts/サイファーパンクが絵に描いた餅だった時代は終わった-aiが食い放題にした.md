@@ -1,9 +1,10 @@
 ---
 title: "サイファーパンクが絵に描いた餅だった時代は終わった。AIが食い放題にした。"
 date: 2026-06-04
-slug: サイファーパンクが絵に描いた餅だった時代は終わった-aiが食い放題にした
+slug: "サイファーパンクが絵に描いた餅だった時代は終わった-aiが食い放題にした"
 category: "AI/テクノロジー/スパイダーマン/セルフホスト/サイファーパンク"
 eyecatch: "/assets/eyecatch/n05230bb53edb.png"
+tags: ["サイファーパンク", "ローカルLLM", "セキュリティ", "LLM", "Apple", "映像"]
 ---
 
 # サイファーパンクが絵に描いた餅だった時代は終わった。AIが食い放題にした。
@@ -123,3 +124,4 @@ https://note.com/famous_prawn2009/n/nd7cb856754a9
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n05230bb53edb*
+

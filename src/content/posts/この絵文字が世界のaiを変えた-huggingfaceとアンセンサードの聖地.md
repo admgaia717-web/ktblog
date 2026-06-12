@@ -1,9 +1,10 @@
 ---
 title: "🤗この絵文字が世界のAIを変えた——HuggingFaceとアンセンサードの聖地"
 date: 2026-06-04
-slug: この絵文字が世界のaiを変えた-huggingfaceとアンセンサードの聖地
+slug: "この絵文字が世界のaiを変えた-huggingfaceとアンセンサードの聖地"
 category: "AI/LLM/オープンソース/HuggingFace/transformers/アンセンサード"
 eyecatch: "/assets/eyecatch/n1ddb92292c5e.png"
+tags: ["プログラミング", "ローカルLLM", "ロボット", "LLM", "OpenAI", "生成AI", "Apple", "ペット"]
 ---
 
 # 🤗この絵文字が世界のAIを変えた——HuggingFaceとアンセンサードの聖地
@@ -179,3 +180,4 @@ Transformers: https://github.com/huggingface/transformers
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n1ddb92292c5e*
+

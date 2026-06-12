@@ -1,9 +1,10 @@
 ---
 title: "「AIに合わせるな、AIが合わせる」——AX（Agent Transformation）が変える地域と仕事と老後"
 date: 2026-06-04
-slug: aiに合わせるな-aiが合わせる-ax-agent-transformation-が変える地域と仕事と老後
+slug: "aiに合わせるな-aiが合わせる-ax-agent-transformation-が変える地域と仕事と老後"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nabffd9346e2f.png"
+tags: ["デザイン", "Apple", "哲学", "AGI", "投資", "AIエージェント"]
 ---
 
 # 「AIに合わせるな、AIが合わせる」——AX（Agent Transformation）が変える地域と仕事と老後
@@ -220,3 +221,4 @@ KTさんは「良いものを独占するのでなく広げる」という思想
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nabffd9346e2f*
+

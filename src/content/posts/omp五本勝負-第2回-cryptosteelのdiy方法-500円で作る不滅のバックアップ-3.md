@@ -1,7 +1,8 @@
 ---
 title: "OMP五本勝負 第2回：CryptosteelのDIY方法 — 500円で作る不滅のバックアップ"
 date: 2026-06-04
-slug: omp五本勝負-第2回-cryptosteelのdiy方法-500円で作る不滅のバックアップ-3
+slug: "omp五本勝負-第2回-cryptosteelのdiy方法-500円で作る不滅のバックアップ-3"
+tags: ["DIY", "投資", "セキュリティ", "AIエージェント", "Bitcoin", "ロボット", "防災", "節約"]
 ---
 
 # OMP五本勝負 第2回：CryptosteelのDIY方法 — 500円で作る不滅のバックアップ
@@ -120,3 +121,4 @@ Amazonで3000円程度の回転式エングレーバー（デンタルドリル�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n64dcc6cd474b*
+

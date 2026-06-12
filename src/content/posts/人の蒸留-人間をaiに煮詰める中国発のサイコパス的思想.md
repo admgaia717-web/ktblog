@@ -1,9 +1,10 @@
 ---
 title: "「人の蒸留」——人間をAIに煮詰める中国発のサイコパス的思想"
 date: 2026-06-04
-slug: 人の蒸留-人間をaiに煮詰める中国発のサイコパス的思想
+slug: "人の蒸留-人間をaiに煮詰める中国発のサイコパス的思想"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n90f3a0b94b40.png"
+tags: ["プログラミング", "Claude", "哲学", "AIエージェント", "ゲーム", "投資", "AGI", "料理"]
 ---
 
 # 「人の蒸留」——人間をAIに煮詰める中国発のサイコパス的思想
@@ -80,3 +81,4 @@ eyecatch: "/assets/eyecatch/n90f3a0b94b40.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n90f3a0b94b40*
+

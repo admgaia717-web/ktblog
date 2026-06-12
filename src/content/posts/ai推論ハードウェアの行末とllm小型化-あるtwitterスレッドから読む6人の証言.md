@@ -1,9 +1,10 @@
 ---
 title: "AI推論ハードウェアの行末とLLM小型化——あるTwitterスレッドから読む6人の証言"
 date: 2026-06-04
-slug: ai推論ハードウェアの行末とllm小型化-あるtwitterスレッドから読む6人の証言
+slug: "ai推論ハードウェアの行末とllm小型化-あるtwitterスレッドから読む6人の証言"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nbd97bea78ca4.png"
+tags: ["LLM", "ローカルLLM", "プログラミング", "Apple", "節約", "AIエージェント", "セキュリティ"]
 ---
 
 # AI推論ハードウェアの行末とLLM小型化——あるTwitterスレッドから読む6人の証言
@@ -100,3 +101,4 @@ AJが言うように、同じハードウェアでより賢いモデル、より
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbd97bea78ca4*
+

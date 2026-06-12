@@ -1,9 +1,10 @@
 ---
 title: "現代のサイファーパンクな生存戦略 （S著）"
 date: 2026-06-04
-slug: 現代のサイファーパンクな生存戦略-s著
+slug: "現代のサイファーパンクな生存戦略-s著"
 category: "サイファーパンク"
 eyecatch: "/assets/eyecatch/n7fb4b105b837.png"
+tags: ["セキュリティ", "サイファーパンク", "LLM", "Monero", "投資"]
 ---
 
 #  現代のサイファーパンクな生存戦略 （S著）
@@ -162,3 +163,4 @@ AIに濾過させる。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n7fb4b105b837*
+

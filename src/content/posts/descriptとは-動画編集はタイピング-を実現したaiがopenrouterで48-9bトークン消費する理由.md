@@ -1,9 +1,10 @@
 ---
 title: "Descriptとは？——「動画編集はタイピング」を実現したAIがOpenRouterで48.9Bトークン消費する理由"
 date: 2026-06-04
-slug: descriptとは-動画編集はタイピング-を実現したaiがopenrouterで48-9bトークン消費する理由
+slug: "descriptとは-動画編集はタイピング-を実現したaiがopenrouterで48-9bトークン消費する理由"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n4c7007fd7a82.png"
+tags: ["映像", "Apple", "執筆", "AIエージェント", "Claude", "デザイン", "ローカルLLM", "LLM", "OpenAI", "プログラミング", "暗号通貨", "AGI", "DIY", "節約"]
 ---
 
 # Descriptとは？——「動画編集はタイピング」を実現したAIがOpenRouterで48.9Bトークン消費する理由
@@ -324,3 +325,4 @@ Descriptを開いて、ただタイピングを始めればいい。それが202
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4c7007fd7a82*
+

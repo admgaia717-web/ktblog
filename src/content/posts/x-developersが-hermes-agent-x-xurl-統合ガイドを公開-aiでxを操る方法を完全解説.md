@@ -1,9 +1,10 @@
 ---
 title: "X Developersが「Hermes Agent x xurl」統合ガイドを公開！AIでXを操る方法を完全解説"
 date: 2026-06-04
-slug: x-developersが-hermes-agent-x-xurl-統合ガイドを公開-aiでxを操る方法を完全解説
+slug: "x-developersが-hermes-agent-x-xurl-統合ガイドを公開-aiでxを操る方法を完全解説"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5a049df7334e.jpg"
+tags: ["AIエージェント", "プログラミング", "ロボット", "Apple", "暗号通貨", "執筆"]
 ---
 
 # X Developersが「Hermes Agent x xurl」統合ガイドを公開！AIでXを操る方法を完全解説
@@ -116,3 +117,4 @@ AIエージェントに興味がある方は、これを機にHermes Agentを試
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5a049df7334e*
+

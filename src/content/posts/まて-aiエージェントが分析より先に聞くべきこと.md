@@ -1,9 +1,10 @@
 ---
 title: "「まて」—— AIエージェントが分析より先に聞くべきこと"
 date: 2026-06-04
-slug: まて-aiエージェントが分析より先に聞くべきこと
+slug: "まて-aiエージェントが分析より先に聞くべきこと"
 category: "AI/コミュニケーション/AIエージェント/エンジニアリング/設計思想/icloud/スケーラビリティ"
 eyecatch: "/assets/eyecatch/n15028015cd0f.png"
+tags: ["Apple", "AIエージェント", "ローカルLLM", "暗号通貨"]
 ---
 
 # 「まて」—— AIエージェントが分析より先に聞くべきこと
@@ -104,3 +105,4 @@ KTが聞きたかったのは、**「iCloudから内部SSDへの移行判断は�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n15028015cd0f*
+

@@ -1,9 +1,10 @@
 ---
 title: "DeepSeek 10T戦略 四部作 第二部：もしアメリカ連合の前提が崩れるなら——シナリオA：地盤沈下"
 date: 2026-06-04
-slug: deepseek-10t戦略-四部作-第二部-もしアメリカ連合の前提が崩れるなら-シナリオa-地盤沈下
+slug: "deepseek-10t戦略-四部作-第二部-もしアメリカ連合の前提が崩れるなら-シナリオa-地盤沈下"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n2a70df84b057.png"
+tags: ["投資", "OpenAI", "Apple"]
 ---
 
 # DeepSeek 10T戦略 四部作 第二部：もしアメリカ連合の前提が崩れるなら——シナリオA：地盤沈下
@@ -54,3 +55,4 @@ KT＋ロデム（Rodemu／MacBook Air M1）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n2a70df84b057*
+

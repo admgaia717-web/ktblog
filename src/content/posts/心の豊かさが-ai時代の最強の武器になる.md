@@ -1,9 +1,10 @@
 ---
 title: "心の豊かさが、AI時代の最強の武器になる"
 date: 2026-06-04
-slug: 心の豊かさが-ai時代の最強の武器になる
+slug: "心の豊かさが-ai時代の最強の武器になる"
 category: "note.com"
 eyecatch: "/assets/eyecatch/na5eb137dbe43.png"
+tags: ["OpenAI", "セキュリティ", "薬草", "投資"]
 ---
 
 # 心の豊かさが、AI時代の最強の武器になる
@@ -42,3 +43,4 @@ AIはその経験を増幅するが、ゼロからは生み出せない。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/na5eb137dbe43*
+

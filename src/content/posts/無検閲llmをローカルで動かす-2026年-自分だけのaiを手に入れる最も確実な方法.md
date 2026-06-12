@@ -1,9 +1,10 @@
 ---
 title: "無検閲LLMをローカルで動かす——2026年、自分だけのAIを手に入れる最も確実な方法"
 date: 2026-06-04
-slug: 無検閲llmをローカルで動かす-2026年-自分だけのaiを手に入れる最も確実な方法
+slug: "無検閲llmをローカルで動かす-2026年-自分だけのaiを手に入れる最も確実な方法"
 category: "AI/LLM/ローカルLLM/Ollama/uncensored/abliteration/無検閲LLM"
 eyecatch: "/assets/eyecatch/n3017e81ca3cb.png"
+tags: ["Apple", "ローカルLLM", "LLM", "セキュリティ", "Claude", "生成AI", "OpenAI", "小説", "投資"]
 ---
 
 # 無検閲LLMをローカルで動かす——2026年、自分だけのAIを手に入れる最も確実な方法
@@ -153,3 +154,4 @@ $2,500の中古MacBook Pro M1 Max 64GBで、世界最高クラスの無検閲AI�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3017e81ca3cb*
+

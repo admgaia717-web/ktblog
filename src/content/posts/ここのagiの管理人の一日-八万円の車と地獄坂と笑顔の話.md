@@ -1,9 +1,10 @@
 ---
 title: "ここのAGIの管理人の一日 —八万円の車と地獄坂と笑顔の話—"
 date: 2026-06-04
-slug: ここのagiの管理人の一日-八万円の車と地獄坂と笑顔の話
+slug: "ここのagiの管理人の一日-八万円の車と地獄坂と笑顔の話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n7eff813c2d0d.png"
+tags: ["AGI", "奈良"]
 ---
 
 # ここのAGIの管理人の一日 —八万円の車と地獄坂と笑顔の話—
@@ -86,3 +87,4 @@ eyecatch: "/assets/eyecatch/n7eff813c2d0d.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n7eff813c2d0d*
+

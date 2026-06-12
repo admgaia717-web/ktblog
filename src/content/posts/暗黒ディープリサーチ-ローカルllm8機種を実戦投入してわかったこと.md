@@ -1,9 +1,10 @@
 ---
 title: "暗黒ディープリサーチ——ローカルLLM8機種を実戦投入してわかったこと"
 date: 2026-06-04
-slug: 暗黒ディープリサーチ-ローカルllm8機種を実戦投入してわかったこと
+slug: "暗黒ディープリサーチ-ローカルllm8機種を実戦投入してわかったこと"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n59659a268c54.png"
+tags: ["ローカルLLM", "LLM", "Apple", "AIエージェント", "生成AI", "Claude", "OpenAI", "ロボット"]
 ---
 
 # 暗黒ディープリサーチ——ローカルLLM8機種を実戦投入してわかったこと
@@ -97,3 +98,4 @@ Xアカウント販売市場の3層構造：
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n59659a268c54*
+

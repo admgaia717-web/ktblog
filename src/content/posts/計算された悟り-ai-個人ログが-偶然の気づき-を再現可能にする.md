@@ -1,9 +1,10 @@
 ---
 title: "計算された悟り：AI×個人ログが「偶然の気づき」を再現可能にする"
 date: 2026-06-04
-slug: 計算された悟り-ai-個人ログが-偶然の気づき-を再現可能にする
+slug: "計算された悟り-ai-個人ログが-偶然の気づき-を再現可能にする"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nf240e5f62688.png"
+tags: ["AIエージェント", "LLM", "生成AI", "ロボット", "映像"]
 ---
 
 # 計算された悟り：AI×個人ログが「偶然の気づき」を再現可能にする
@@ -118,3 +119,4 @@ C. G. Jung, “Synchronicity: An Acausal Connecting Principle” (1952)（概説
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nf240e5f62688*
+

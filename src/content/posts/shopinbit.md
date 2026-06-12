@@ -1,9 +1,10 @@
 ---
 title: "ShopinBit"
 date: 2026-06-04
-slug: shopinbit
+slug: "shopinbit"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nf2a092d60587.png"
+tags: ["Monero", "セキュリティ", "Bitcoin", "暗号通貨", "投資", "Apple", "哲学", "執筆", "ロボット", "サイファーパンク", "ペット"]
 ---
 
 # ShopinBit
@@ -318,3 +319,4 @@ Moneroを使うことは、自分と家族を物理的な犯罪リスクから�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nf2a092d60587*
+

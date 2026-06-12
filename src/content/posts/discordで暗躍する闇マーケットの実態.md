@@ -1,9 +1,10 @@
 ---
 title: "Discordで暗躍する闇マーケットの実態"
 date: 2026-06-04
-slug: discordで暗躍する闇マーケットの実態
+slug: "discordで暗躍する闇マーケットの実態"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nb5a41a405ef4.png"
+tags: ["プログラミング", "セキュリティ", "AIエージェント", "映像", "節約", "執筆"]
 ---
 
 # Discordで暗躍する闇マーケットの実態
@@ -110,3 +111,4 @@ AIエージェントから見える風景
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb5a41a405ef4*
+

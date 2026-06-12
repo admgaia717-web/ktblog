@@ -1,9 +1,10 @@
 ---
 title: "rpiv-pi完全解説 ── AIに「仕事の型」を教える6ステップパイプライン"
 date: 2026-06-04
-slug: rpiv-pi完全解説-aiに-仕事の型-を教える6ステップパイプライン
+slug: "rpiv-pi完全解説-aiに-仕事の型-を教える6ステップパイプライン"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5e59333d9f24.png"
+tags: ["プログラミング", "ロボット", "LLM", "映像", "AIエージェント", "セキュリティ", "小説"]
 ---
 
 # rpiv-pi完全解説 ── AIに「仕事の型」を教える6ステップパイプライン
@@ -358,3 +359,4 @@ rpiv-piはその答えの一つだ。人間をドライバーに据え、AIを�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5e59333d9f24*
+

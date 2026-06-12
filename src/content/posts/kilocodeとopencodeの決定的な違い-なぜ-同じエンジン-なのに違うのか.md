@@ -1,9 +1,10 @@
 ---
 title: "KiloCodeとOpenCodeの決定的な違い——なぜ「同じエンジン」なのに違うのか"
 date: 2026-06-04
-slug: kilocodeとopencodeの決定的な違い-なぜ-同じエンジン-なのに違うのか
+slug: "kilocodeとopencodeの決定的な違い-なぜ-同じエンジン-なのに違うのか"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n03967b62bfa6.png"
+tags: ["プログラミング", "デザイン", "ローカルLLM", "LLM", "AIエージェント", "Claude", "ロボット"]
 ---
 
 # KiloCodeとOpenCodeの決定的な違い——なぜ「同じエンジン」なのに違うのか
@@ -223,3 +224,4 @@ KTの使い方なら**OpenCode + Piの併用**で十分だろう。ターミナ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n03967b62bfa6*
+

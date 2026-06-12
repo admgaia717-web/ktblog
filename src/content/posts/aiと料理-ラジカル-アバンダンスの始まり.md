@@ -1,9 +1,10 @@
 ---
 title: "AIと料理——ラジカル・アバンダンスの始まり"
 date: 2026-06-04
-slug: aiと料理-ラジカル-アバンダンスの始まり
+slug: "aiと料理-ラジカル-アバンダンスの始まり"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n77b1c48f35c3.png"
+tags: ["料理", "LLM", "健康", "OpenAI", "映像"]
 ---
 
 # AIと料理——ラジカル・アバンダンスの始まり
@@ -86,3 +87,4 @@ AIは道具。料理は実践。そして、食べる喜びは自分のもの。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n77b1c48f35c3*
+

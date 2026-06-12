@@ -1,9 +1,10 @@
 ---
 title: "Monero,Wickr,Utatane"
 date: 2026-06-04
-slug: monero-wickr-utatane
+slug: "monero-wickr-utatane"
 category: "Monero"
 eyecatch: "/assets/eyecatch/n3355c23e5e66.png"
+tags: ["Monero", "セキュリティ", "暗号通貨", "自由市場", "哲学", "薬草", "Bitcoin", "防災", "投資"]
 ---
 
 # Monero,Wickr,Utatane
@@ -154,3 +155,4 @@ Moneroが担保した「匿名」の価値。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3355c23e5e66*
+

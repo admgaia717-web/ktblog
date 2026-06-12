@@ -1,9 +1,10 @@
 ---
 title: "AgiBot — 稚暉君が創った世界最速で育つ人型ロボット企業"
 date: 2026-06-04
-slug: agibot-稚暉君が創った世界最速で育つ人型ロボット企業
+slug: "agibot-稚暉君が創った世界最速で育つ人型ロボット企業"
 category: "AgiBot"
 eyecatch: "/assets/eyecatch/n3210d29f230e.png"
+tags: ["ロボット"]
 ---
 
 # AgiBot — 稚暉君が創った世界最速で育つ人型ロボット企業
@@ -48,3 +49,4 @@ AIDEA Giga Data Factory：上海臨港4,000平米で100台のロボットが常�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3210d29f230e*
+

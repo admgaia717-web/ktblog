@@ -1,9 +1,10 @@
 ---
 title: "もう少しでAGI——Nous Research Hermes AGI最前線"
 date: 2026-06-04
-slug: もう少しでagi-nous-research-hermes-agi最前線
+slug: "もう少しでagi-nous-research-hermes-agi最前線"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd588ec6e2fb1.png"
+tags: ["AGI", "AIエージェント", "ロボット", "Apple", "OpenAI", "小説", "生成AI", "Claude", "プログラミング"]
 ---
 
 # もう少しでAGI——Nous Research Hermes AGI最前線
@@ -123,3 +124,4 @@ Nous Researchという小さな研究所が、Hermes Agentというオープン�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd588ec6e2fb1*
+

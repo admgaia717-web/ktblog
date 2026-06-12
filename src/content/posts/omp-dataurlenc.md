@@ -1,9 +1,11 @@
 ---
 title: "OMP-DATAURLENC"
 date: 2026-06-04
-slug: omp-dataurlenc
+slug: "omp-dataurlenc"
+tags: ["AIエージェント"]
 ---
 
 # test from data-urlencode
 
 content here
+

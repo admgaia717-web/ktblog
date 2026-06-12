@@ -1,9 +1,10 @@
 ---
 title: "¥0で「記事→YouTube動画」を完全自動化した——AIエージェントによる自律型コンテンツパイプラインの全記録"
 date: 2026-06-04
-slug: 0で-記事-youtube動画-を完全自動化した-aiエージェントによる自律型コンテンツパイプラインの全記録
+slug: "0で-記事-youtube動画-を完全自動化した-aiエージェントによる自律型コンテンツパイプラインの全記録"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne1a364da5ca2.png"
+tags: ["映像", "Apple", "AIエージェント", "生成AI", "プログラミング", "LLM", "OpenAI", "ローカルLLM", "ロボット", "音楽"]
 ---
 
 # ¥0で「記事→YouTube動画」を完全自動化した——AIエージェントによる自律型コンテンツパイプラインの全記録
@@ -138,3 +139,4 @@ YouTube Data API v3のOAuth実装で遭遇した最大の障壁は、権限ス�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne1a364da5ca2*
+

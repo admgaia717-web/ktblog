@@ -1,9 +1,10 @@
 ---
 title: "KuCoin Monero"
 date: 2026-06-04
-slug: kucoin-monero
+slug: "kucoin-monero"
 category: "KuCoin"
 eyecatch: "/assets/eyecatch/n523388ee8725.png"
+tags: ["Monero", "暗号通貨", "セキュリティ"]
 ---
 
 # KuCoin Monero
@@ -132,3 +133,4 @@ Monero全体の約6〜14%を
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n523388ee8725*
+

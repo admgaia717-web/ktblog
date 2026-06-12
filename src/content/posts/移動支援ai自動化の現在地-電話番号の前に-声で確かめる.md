@@ -1,7 +1,7 @@
 ---
 title: "移動支援AI自動化の現在地——電話番号の前に、声で確かめる"
 date: 2026-06-04
-slug: 移動支援ai自動化の現在地-電話番号の前に-声で確かめる
+slug: "移動支援ai自動化の現在地-電話番号の前に-声で確かめる"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n2d509c79837a.jpg"
 ---

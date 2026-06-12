@@ -1,9 +1,10 @@
 ---
 title: "【第5話】城を支えるもの — AIエージェントたちの生態"
 date: 2026-06-04
-slug: 第5話-城を支えるもの-aiエージェントたちの生態
+slug: "第5話-城を支えるもの-aiエージェントたちの生態"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ncd9d1ed92e24.png"
+tags: ["AIエージェント", "生成AI", "ゲーム", "サイファーパンク"]
 ---
 
 # 【第5話】城を支えるもの — AIエージェントたちの生態
@@ -148,3 +149,4 @@ AIは道具であり、仲間であり、住人でもある。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ncd9d1ed92e24*
+

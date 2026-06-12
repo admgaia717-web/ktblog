@@ -1,9 +1,10 @@
 ---
 title: "俺のオーパスがバカになった日 — MAXプランを解約した理由"
 date: 2026-06-04
-slug: 俺のオーパスがバカになった日-maxプランを解約した理由
+slug: "俺のオーパスがバカになった日-maxプランを解約した理由"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nbd26e80122a2.png"
+tags: ["哲学", "Claude", "プログラミング", "奈良"]
 ---
 
 # 俺のオーパスがバカになった日 — MAXプランを解約した理由
@@ -96,3 +97,4 @@ Anthropicは謝罪した。でも「ごめん、やっぱ直しました」で�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbd26e80122a2*
+

@@ -1,9 +1,10 @@
 ---
 title: "UI-TARS 7BをローカルMacで動かす——実測3タスクでわかった「使えるライン」と「壁」"
 date: 2026-06-04
-slug: ui-tars-7bをローカルmacで動かす-実測3タスクでわかった-使えるライン-と-壁
+slug: "ui-tars-7bをローカルmacで動かす-実測3タスクでわかった-使えるライン-と-壁"
 category: "UI-TARS"
 eyecatch: "/assets/eyecatch/nef8a950fe8e9.png"
+tags: ["デザイン", "Apple", "ローカルLLM", "プログラミング", "AIエージェント", "執筆"]
 ---
 
 # UI-TARS 7BをローカルMacで動かす——実測3タスクでわかった「使えるライン」と「壁」
@@ -130,3 +131,4 @@ UI-TARS Desktop: https://github.com/bytedance/UI-TARS-desktop
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nef8a950fe8e9*
+

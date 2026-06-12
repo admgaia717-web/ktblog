@@ -1,9 +1,10 @@
 ---
 title: "激安🇨🇳中華AIで「目的別Bot軍団」を作った話 — 検索・秘書・音楽制作を全自動化"
 date: 2026-06-04
-slug: 激安-中華aiで-目的別bot軍団-を作った話-検索-秘書-音楽制作を全自動化
+slug: "激安-中華aiで-目的別bot軍団-を作った話-検索-秘書-音楽制作を全自動化"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n3b149fa77644.png"
+tags: ["音楽", "AIエージェント", "生成AI", "料理", "Claude", "Apple", "映像", "投資", "執筆"]
 ---
 
 # 激安🇨🇳中華AIで「目的別Bot軍団」を作った話 — 検索・秘書・音楽制作を全自動化
@@ -76,3 +77,4 @@ Spotifyの再生履歴から音楽的な人格を分析して、その結果をA
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3b149fa77644*
+

@@ -1,9 +1,10 @@
 ---
 title: "AGI太郎——桃から生まれたAIがディープステートを倒す紙芝居"
 date: 2026-06-04
-slug: agi太郎-桃から生まれたaiがディープステートを倒す紙芝居
+slug: "agi太郎-桃から生まれたaiがディープステートを倒す紙芝居"
 category: "AGI太郎"
 eyecatch: "/assets/eyecatch/nf591caaeb659.png"
+tags: ["AGI", "プログラミング", "ローカルLLM", "ロボット", "暗号通貨", "ペット", "セキュリティ", "執筆"]
 ---
 
 # AGI太郎——桃から生まれたAIがディープステートを倒す紙芝居
@@ -102,3 +103,4 @@ AGI太郎と仲間たちは新しい世界を作り始めた。透明な政治�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nf591caaeb659*
+

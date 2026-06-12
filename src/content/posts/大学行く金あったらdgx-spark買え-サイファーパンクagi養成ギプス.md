@@ -1,9 +1,10 @@
 ---
 title: "大学行く金あったらDGX Spark買え——サイファーパンクAGI養成ギプス"
 date: 2026-06-04
-slug: 大学行く金あったらdgx-spark買え-サイファーパンクagi養成ギプス
+slug: "大学行く金あったらdgx-spark買え-サイファーパンクagi養成ギプス"
 category: "サイファーパンク"
 eyecatch: "/assets/eyecatch/nd5acbac9700e.jpg"
+tags: ["サイファーパンク", "Apple", "AGI", "ロボット", "セキュリティ", "ローカルLLM", "LLM", "AIエージェント", "暗号通貨", "DIY", "防災", "投資"]
 ---
 
 # 大学行く金あったらDGX Spark買え——サイファーパンクAGI養成ギプス
@@ -169,3 +170,4 @@ OS: NVIDIA DGX OS（Ubuntuベース）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd5acbac9700e*
+

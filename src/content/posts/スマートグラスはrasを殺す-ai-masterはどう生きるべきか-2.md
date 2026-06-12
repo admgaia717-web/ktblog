@@ -1,10 +1,11 @@
 ---
 title: "スマートグラスはRASを殺す — AI Masterはどう生きるべきか"
 date: 2026-06-04
-slug: スマートグラスはrasを殺す-ai-masterはどう生きるべきか-2
+slug: "スマートグラスはrasを殺す-ai-masterはどう生きるべきか-2"
 eyecatch: "/assets/eyecatch_smartglasses_ras.png"
 note_url: "https://note.com/famous_prawn2009/n/n2b5b040cc88d"
 substack_url: "https://keity717.substack.com/p/ras-ai-master"
+tags: ["哲学", "ペット", "執筆", "AIエージェント", "ロボット", "防災", "プログラミング", "Apple", "セキュリティ", "映像"]
 ---
 
 # スマートグラスはRASを殺す — AI Masterはどう生きるべきか
@@ -384,3 +385,4 @@ A. Huxleyの『すばらしい新世界』では、国家は市民を「強制�
 ---
 
 *本記事は二〇二六年六月四日、KT（KeiTy）とロデム（AIエージェント）の対話から生まれた。学術的裏付けとして、Lugrin(2022), Billinghurst(2023), Ericsson & Li(2024), Farah(2023)のarXiv論文、ITU(2025)調査、Pew Research Center(2024)調査、Zuboff(2020), Harari(2021), Lanier(2018), Newport(2023), Ng(2024)、日本の研究者では鈴木宏昭(2022)、西垣通(2023)の知見を参照した。*
+

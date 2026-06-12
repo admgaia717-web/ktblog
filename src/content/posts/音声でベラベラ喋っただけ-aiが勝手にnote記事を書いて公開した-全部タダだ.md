@@ -1,9 +1,10 @@
 ---
 title: "音声でベラベラ喋っただけ——AIが勝手にnote記事を書いて公開した。全部タダだ"
 date: 2026-06-04
-slug: 音声でベラベラ喋っただけ-aiが勝手にnote記事を書いて公開した-全部タダだ
+slug: "音声でベラベラ喋っただけ-aiが勝手にnote記事を書いて公開した-全部タダだ"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n69549b3365f8.png"
+tags: ["ロボット", "Apple", "執筆", "生成AI", "AIエージェント", "Claude", "OpenAI", "LLM", "ローカルLLM", "プログラミング", "映像", "節約"]
 ---
 
 # 音声でベラベラ喋っただけ——AIが勝手にnote記事を書いて公開した。全部タダだ
@@ -58,3 +59,4 @@ eyecatch: "/assets/eyecatch/n69549b3365f8.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n69549b3365f8*
+

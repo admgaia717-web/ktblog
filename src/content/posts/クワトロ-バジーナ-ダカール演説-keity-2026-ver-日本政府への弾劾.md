@@ -1,9 +1,10 @@
 ---
 title: "クワトロ・バジーナ ダカール演説 〜 KeiTy 2026 ver. 〜——日本政府への弾劾——"
 date: 2026-06-04
-slug: クワトロ-バジーナ-ダカール演説-keity-2026-ver-日本政府への弾劾
+slug: "クワトロ-バジーナ-ダカール演説-keity-2026-ver-日本政府への弾劾"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5921d1cd6316.jpg"
+tags: ["薬草", "小説", "哲学", "LLM", "AIエージェント", "セキュリティ", "Monero", "健康", "奈良"]
 ---
 
 # クワトロ・バジーナ ダカール演説 〜 KeiTy 2026 ver. 〜——日本政府への弾劾——
@@ -76,3 +77,4 @@ eyecatch: "/assets/eyecatch/n5921d1cd6316.jpg"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5921d1cd6316*
+

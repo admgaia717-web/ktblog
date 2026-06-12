@@ -1,9 +1,10 @@
 ---
 title: "DeepSeek 10T戦略 四部作 第一部：ルール変更という方法——DeepSeek戦略の構造"
 date: 2026-06-04
-slug: deepseek-10t戦略-四部作-第一部-ルール変更という方法-deepseek戦略の構造
+slug: "deepseek-10t戦略-四部作-第一部-ルール変更という方法-deepseek戦略の構造"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n46583fdd1ef6.png"
+tags: ["OpenAI", "投資", "プログラミング", "ロボット", "Apple"]
 ---
 
 # DeepSeek 10T戦略 四部作 第一部：ルール変更という方法——DeepSeek戦略の構造
@@ -70,3 +71,4 @@ KT＋ロデム（Rodemu／MacBook Air M1）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n46583fdd1ef6*
+

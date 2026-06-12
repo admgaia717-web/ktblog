@@ -1,7 +1,8 @@
 ---
 title: "RTX Spark 検証 — 第3巻 戦略の巻 — 哲学を現実に変える"
 date: 2026-06-04
-slug: rtx-spark-検証-第3巻-戦略の巻-哲学を現実に変える
+slug: "rtx-spark-検証-第3巻-戦略の巻-哲学を現実に変える"
+tags: ["プログラミング", "Apple", "投資", "哲学", "ローカルLLM", "LLM", "AIエージェント", "生成AI", "OpenAI", "Claude", "セキュリティ", "映像", "ロボット", "健康", "デザイン"]
 ---
 
 # RTX Spark 検証 — 第3巻 戦略の巻 — 哲学を現実に変える
@@ -819,3 +820,4 @@ GPT-4o API (月50万トークン)$180
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nf2663cc8a8bd*
+

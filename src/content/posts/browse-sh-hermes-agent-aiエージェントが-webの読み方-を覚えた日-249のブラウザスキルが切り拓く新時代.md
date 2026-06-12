@@ -1,9 +1,10 @@
 ---
 title: "Browse.sh × Hermes Agent：AIエージェントが「Webの読み方」を覚えた日 — 249のブラウザスキルが切り拓く新時代"
 date: 2026-06-04
-slug: browse-sh-hermes-agent-aiエージェントが-webの読み方-を覚えた日-249のブラウザスキルが切り拓く新時代
+slug: "browse-sh-hermes-agent-aiエージェントが-webの読み方-を覚えた日-249のブラウザスキルが切り拓く新時代"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n1ef91a27a58c.png"
+tags: ["AIエージェント", "LLM", "ロボット", "Apple", "ローカルLLM", "映像"]
 ---
 
 # Browse.sh × Hermes Agent：AIエージェントが「Webの読み方」を覚えた日 — 249のブラウザスキルが切り拓く新時代
@@ -81,3 +82,4 @@ Browserbaseの無料枠でも3並列セッションまで使える。遊ぶだ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n1ef91a27a58c*
+

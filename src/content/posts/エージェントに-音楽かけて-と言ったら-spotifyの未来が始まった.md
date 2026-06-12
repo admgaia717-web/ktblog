@@ -1,9 +1,10 @@
 ---
 title: "エージェントに「音楽かけて」と言ったら、Spotifyの未来が始まった"
 date: 2026-06-04
-slug: エージェントに-音楽かけて-と言ったら-spotifyの未来が始まった
+slug: "エージェントに-音楽かけて-と言ったら-spotifyの未来が始まった"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n8a3b672eb78c.png"
+tags: ["音楽", "AIエージェント", "ロボット", "デザイン"]
 ---
 
 # エージェントに「音楽かけて」と言ったら、Spotifyの未来が始まった
@@ -76,3 +77,4 @@ Mercury Agent（コードネーム: ライトニング）は、Telegramボット
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n8a3b672eb78c*
+

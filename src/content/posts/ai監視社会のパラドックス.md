@@ -1,9 +1,10 @@
 ---
 title: "AI監視社会のパラドックス"
 date: 2026-06-04
-slug: ai監視社会のパラドックス
+slug: "ai監視社会のパラドックス"
 category: "AI監視社会"
 eyecatch: "/assets/eyecatch/nbc0967a5f362.png"
+tags: ["Monero", "投資", "Bitcoin", "セキュリティ", "暗号通貨"]
 ---
 
 # AI監視社会のパラドックス
@@ -82,3 +83,4 @@ eyecatch: "/assets/eyecatch/nbc0967a5f362.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbc0967a5f362*
+

@@ -1,9 +1,10 @@
 ---
 title: "AIとわたし〜自分をなくさないための5つのおはなし〜"
 date: 2026-06-04
-slug: aiとわたし-自分をなくさないための5つのおはなし
+slug: "aiとわたし-自分をなくさないための5つのおはなし"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne7829e73ad07.jpg"
+tags: ["AIエージェント", "哲学", "執筆"]
 ---
 
 # AIとわたし〜自分をなくさないための5つのおはなし〜
@@ -230,3 +231,4 @@ KT × ロデム 🦎
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne7829e73ad07*
+

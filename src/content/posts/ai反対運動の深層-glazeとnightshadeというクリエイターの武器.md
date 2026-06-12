@@ -1,9 +1,10 @@
 ---
 title: "AI反対運動の深層：GlazeとNightshadeというクリエイターの武器"
 date: 2026-06-04
-slug: ai反対運動の深層-glazeとnightshadeというクリエイターの武器
+slug: "ai反対運動の深層-glazeとnightshadeというクリエイターの武器"
 category: "AI/クリエイター/Glaze/Nightshade/AI反対運動"
 eyecatch: "/assets/eyecatch/n0d655b7d9151.png"
+tags: ["ペット", "生成AI", "セキュリティ", "アニメ", "防災", "OpenAI", "音楽", "哲学", "AGI", "執筆"]
 ---
 
 # AI反対運動の深層：GlazeとNightshadeというクリエイターの武器
@@ -122,3 +123,4 @@ Nightshadeは一歩進んで、**「AIの言葉とイメージの結びつきを
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n0d655b7d9151*
+

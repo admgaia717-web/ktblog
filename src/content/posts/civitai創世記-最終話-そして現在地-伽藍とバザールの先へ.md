@@ -1,9 +1,10 @@
 ---
 title: "Civitai創世記 最終話：そして現在地 — 伽藍とバザールの先へ"
 date: 2026-06-04
-slug: civitai創世記-最終話-そして現在地-伽藍とバザールの先へ
+slug: "civitai創世記-最終話-そして現在地-伽藍とバザールの先へ"
 category: "Civitai"
 eyecatch: "/assets/eyecatch/nbc3a0f53c867.png"
+tags: ["生成AI", "プログラミング", "サイファーパンク", "LLM", "セキュリティ", "暗号通貨", "映像", "ペット", "投資"]
 ---
 
 # Civitai創世記 最終話：そして現在地 — 伽藍とバザールの先へ
@@ -130,3 +131,4 @@ Civitaiはそのインフラだ。完璧ではない。問題もある。DMCA申
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbc3a0f53c867*
+

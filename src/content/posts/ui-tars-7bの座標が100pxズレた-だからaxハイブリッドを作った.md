@@ -1,9 +1,10 @@
 ---
 title: "UI-TARS 7Bの座標が100pxズレた。だからAXハイブリッドを作った"
 date: 2026-06-04
-slug: ui-tars-7bの座標が100pxズレた-だからaxハイブリッドを作った
+slug: "ui-tars-7bの座標が100pxズレた-だからaxハイブリッドを作った"
 category: "UI-TARS"
 eyecatch: "/assets/eyecatch/nbf94f3a84aad.png"
+tags: ["Apple", "デザイン", "ローカルLLM", "AIエージェント"]
 ---
 
 # UI-TARS 7Bの座標が100pxズレた。だからAXハイブリッドを作った
@@ -60,3 +61,4 @@ UI-TARS 7Bは座標を狂わせた。だがその「目」は正確だった。�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbf94f3a84aad*
+

@@ -1,9 +1,10 @@
 ---
 title: "12MトークンでAIが「忘れない」になる——SubQが壊すTransformerの二乗の呪い"
 date: 2026-06-04
-slug: 12mトークンでaiが-忘れない-になる-subqが壊すtransformerの二乗の呪い
+slug: "12mトークンでaiが-忘れない-になる-subqが壊すtransformerの二乗の呪い"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ndd64e59a33d4.png"
+tags: ["AIエージェント", "LLM", "Claude", "プログラミング", "ローカルLLM", "小説", "Apple", "健康"]
 ---
 
 # 12MトークンでAIが「忘れない」になる——SubQが壊すTransformerの二乗の呪い
@@ -117,3 +118,4 @@ Transformerの「二乗の呪い」を回避するサブ二乗アーキテクチ
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ndd64e59a33d4*
+

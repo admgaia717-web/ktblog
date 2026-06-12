@@ -1,9 +1,10 @@
 ---
 title: "GitとGitHubは別物——文系のためのバイブコーダー入門"
 date: 2026-06-04
-slug: gitとgithubは別物-文系のためのバイブコーダー入門
+slug: "gitとgithubは別物-文系のためのバイブコーダー入門"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n56fb1991b931.png"
+tags: ["プログラミング", "AIエージェント", "小説", "生成AI", "暗号通貨", "ゲーム", "ローカルLLM", "デザイン", "料理", "執筆"]
 ---
 
 # GitとGitHubは別物——文系のためのバイブコーダー入門
@@ -242,3 +243,4 @@ OBLITERATUS: https://github.com/dr-diffie/OBLITERATUS*
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n56fb1991b931*
+

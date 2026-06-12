@@ -1,9 +1,10 @@
 ---
 title: "ep11 Mr. Kato｜パラレルワールド 解放の第三形態"
 date: 2026-06-04
-slug: ep11-mr-kato-パラレルワールド-解放の第三形態
+slug: "ep11-mr-kato-パラレルワールド-解放の第三形態"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd83e825487bf.png"
+tags: ["小説", "プログラミング", "セキュリティ", "Monero", "暗号通貨", "デザイン", "薬草", "投資", "執筆"]
 ---
 
 # ep11 Mr. Kato｜パラレルワールド 解放の第三形態
@@ -138,3 +139,4 @@ Mr. KatoをIcarus Fabricに統合しシステム全体を再起動した夜。�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd83e825487bf*
+

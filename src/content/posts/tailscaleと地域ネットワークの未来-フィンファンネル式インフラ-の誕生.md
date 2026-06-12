@@ -1,9 +1,10 @@
 ---
 title: "Tailscaleと地域ネットワークの未来──「フィンファンネル式インフラ」の誕生"
 date: 2026-06-04
-slug: tailscaleと地域ネットワークの未来-フィンファンネル式インフラ-の誕生
+slug: "tailscaleと地域ネットワークの未来-フィンファンネル式インフラ-の誕生"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne9e63412065f.png"
+tags: ["Apple", "セキュリティ", "Monero", "暗号通貨", "映像", "哲学", "執筆"]
 ---
 
 # Tailscaleと地域ネットワークの未来──「フィンファンネル式インフラ」の誕生
@@ -254,3 +255,4 @@ AIが日常を支える
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne9e63412065f*
+

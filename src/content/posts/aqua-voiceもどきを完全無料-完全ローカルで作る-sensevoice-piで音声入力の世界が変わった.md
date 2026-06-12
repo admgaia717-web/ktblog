@@ -1,9 +1,10 @@
 ---
 title: "Aqua Voiceもどきを完全無料・完全ローカルで作る——SenseVoice + piで音声入力の世界が変わった"
 date: 2026-06-04
-slug: aqua-voiceもどきを完全無料-完全ローカルで作る-sensevoice-piで音声入力の世界が変わった
+slug: "aqua-voiceもどきを完全無料-完全ローカルで作る-sensevoice-piで音声入力の世界が変わった"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5b2062dc92c6.png"
+tags: ["プログラミング", "Apple", "AIエージェント", "暗号通貨"]
 ---
 
 # Aqua Voiceもどきを完全無料・完全ローカルで作る——SenseVoice + piで音声入力の世界が変わった
@@ -52,3 +53,4 @@ Aqua Voiceはクラウド経由。ネット必須。有料。俺のこれは完�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5b2062dc92c6*
+

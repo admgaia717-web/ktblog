@@ -1,9 +1,10 @@
 ---
 title: "AIはもう、インフラである — Command CodeとMac艦隊でAPI課金から脱却する戦略"
 date: 2026-06-04
-slug: aiはもう-インフラである-command-codeとmac艦隊でapi課金から脱却する戦略
+slug: "aiはもう-インフラである-command-codeとmac艦隊でapi課金から脱却する戦略"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n98be0dbcd4ec.png"
+tags: ["Apple", "ローカルLLM", "映像", "OpenAI", "LLM"]
 ---
 
 # AIはもう、インフラである — Command CodeとMac艦隊でAPI課金から脱却する戦略
@@ -88,3 +89,4 @@ Command CodeでQwen 3.7 Maxの実力を見極めながら、裏でMac miniの増
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n98be0dbcd4ec*
+

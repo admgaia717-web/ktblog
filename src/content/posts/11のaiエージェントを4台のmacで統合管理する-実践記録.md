@@ -1,9 +1,10 @@
 ---
 title: "11のAIエージェントを4台のMacで統合管理する ― 実践記録"
 date: 2026-06-04
-slug: 11のaiエージェントを4台のmacで統合管理する-実践記録
+slug: "11のaiエージェントを4台のmacで統合管理する-実践記録"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n9a4b578f6302.jpg"
+tags: ["AIエージェント", "Apple", "Claude", "プログラミング", "暗号通貨", "デザイン", "執筆", "LLM", "ローカルLLM", "ロボット", "セキュリティ", "哲学"]
 ---
 
 # 11のAIエージェントを4台のMacで統合管理する ― 実践記録
@@ -302,3 +303,4 @@ Icarus Memory Protocolの導入は、ゴールではなくスタートだ。現�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n9a4b578f6302*
+

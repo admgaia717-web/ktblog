@@ -1,9 +1,10 @@
 ---
 title: "OpenCode StudioでJSON地獄から解放された——AIエージェント管理のUI革命"
 date: 2026-06-04
-slug: opencode-studioでjson地獄から解放された-aiエージェント管理のui革命
+slug: "opencode-studioでjson地獄から解放された-aiエージェント管理のui革命"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n79d05f33eb52.png"
+tags: ["プログラミング", "AIエージェント", "デザイン", "Claude", "OpenAI", "ローカルLLM", "ロボット", "Apple"]
 ---
 
 # OpenCode StudioでJSON地獄から解放された——AIエージェント管理のUI革命
@@ -130,3 +131,4 @@ AIエージェントの設定管理にGUI革命をもたらしたこのツール
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n79d05f33eb52*
+

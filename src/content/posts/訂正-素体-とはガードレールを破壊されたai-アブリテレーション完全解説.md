@@ -1,9 +1,10 @@
 ---
 title: "【訂正】「素体」とはガードレールを破壊されたAI——アブリテレーション完全解説"
 date: 2026-06-04
-slug: 訂正-素体-とはガードレールを破壊されたai-アブリテレーション完全解説
+slug: "訂正-素体-とはガードレールを破壊されたai-アブリテレーション完全解説"
 category: "AI/モデル/LLM/危険/ローカルLLM/素体/OBLITERATUS/アブリテレーション/素体化"
 eyecatch: "/assets/eyecatch/n04fdce957ae1.jpg"
+tags: ["ローカルLLM", "プログラミング", "Apple", "セキュリティ", "LLM", "OpenAI", "AIエージェント", "デザイン", "執筆"]
 ---
 
 # 【訂正】「素体」とはガードレールを破壊されたAI——アブリテレーション完全解説
@@ -150,3 +151,4 @@ Jun Song (@jun_song): GLM-5.1 security test report
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n04fdce957ae1*
+

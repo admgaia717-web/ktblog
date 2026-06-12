@@ -1,9 +1,10 @@
 ---
 title: "最強のAIエージェントは「司令官」か「歩兵」か【完結編】——Paperclipという究極の戦略司令官OS"
 date: 2026-06-04
-slug: 最強のaiエージェントは-司令官-か-歩兵-か-完結編-paperclipという究極の戦略司令官os
+slug: "最強のaiエージェントは-司令官-か-歩兵-か-完結編-paperclipという究極の戦略司令官os"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nc7fb8fff4705.png"
+tags: ["ロボット", "Claude", "プログラミング", "AIエージェント", "デザイン", "OpenAI", "哲学"]
 ---
 
 # 最強のAIエージェントは「司令官」か「歩兵」か【完結編】——Paperclipという究極の戦略司令官OS
@@ -174,3 +175,4 @@ PaperclipはPiを歩兵として、Claude Codeを将校として、Codexを砲�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nc7fb8fff4705*
+

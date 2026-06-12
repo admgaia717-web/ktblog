@@ -1,9 +1,10 @@
 ---
 title: "OMP五本勝負 第4回：自家培養キノコ — 廃棄物からタンパク質を生む技術"
 date: 2026-06-04
-slug: omp五本勝負-第4回-自家培養キノコ-廃棄物からタンパク質を生む技術-6
+slug: "omp五本勝負-第4回-自家培養キノコ-廃棄物からタンパク質を生む技術-6"
 category: "OMP五本勝負"
 eyecatch: "/assets/eyecatch/n77bb24a2f8b4.png"
+tags: ["AIエージェント"]
 ---
 
 # OMP五本勝負 第4回：自家培養キノコ — 廃棄物からタンパク質を生む技術
@@ -118,3 +119,4 @@ eyecatch: "/assets/eyecatch/n77bb24a2f8b4.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n77bb24a2f8b4*
+

@@ -1,9 +1,10 @@
 ---
 title: "🦞Clawdbot🦞導入顛末。。。結構大変"
 date: 2026-06-04
-slug: clawdbot-導入顛末-結構大変
+slug: "clawdbot-導入顛末-結構大変"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5ea4b09ccd12.png"
+tags: ["Claude", "プログラミング", "Apple"]
 ---
 
 # 🦞Clawdbot🦞導入顛末。。。結構大変
@@ -217,3 +218,4 @@ Written by KT with Claude Opus 4.5
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5ea4b09ccd12*
+

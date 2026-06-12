@@ -1,9 +1,10 @@
 ---
 title: "AI動画編集に挑戦して失敗した話——そしてまた挑戦すると誓う話"
 date: 2026-06-04
-slug: ai動画編集に挑戦して失敗した話-そしてまた挑戦すると誓う話
+slug: "ai動画編集に挑戦して失敗した話-そしてまた挑戦すると誓う話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne81f4db870b1.png"
+tags: ["映像", "LLM", "暗号通貨"]
 ---
 
 # AI動画編集に挑戦して失敗した話——そしてまた挑戦すると誓う話
@@ -54,3 +55,4 @@ AIによる動画編集の自動化は、おそらくあと1〜2年で劇的に�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne81f4db870b1*
+

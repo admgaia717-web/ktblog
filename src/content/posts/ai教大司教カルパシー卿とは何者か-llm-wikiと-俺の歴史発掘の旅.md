@@ -1,9 +1,10 @@
 ---
 title: "AI教大司教カルパシー卿とは何者か──LLM Wikiと、俺の歴史発掘の旅"
 date: 2026-06-04
-slug: ai教大司教カルパシー卿とは何者か-llm-wikiと-俺の歴史発掘の旅
+slug: "ai教大司教カルパシー卿とは何者か-llm-wikiと-俺の歴史発掘の旅"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n90067ce71a69.jpg"
+tags: ["LLM", "哲学", "AIエージェント", "ローカルLLM", "サイファーパンク", "OpenAI", "ロボット", "生成AI", "映像", "投資", "執筆"]
 ---
 
 # AI教大司教カルパシー卿とは何者か──LLM Wikiと、俺の歴史発掘の旅
@@ -257,3 +258,4 @@ AI教大司教カルパシー卿が示したのは、単なるWikiではない�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n90067ce71a69*
+

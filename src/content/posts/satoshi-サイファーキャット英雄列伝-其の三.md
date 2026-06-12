@@ -1,9 +1,10 @@
 ---
 title: "satoshi~サイファーキャット英雄列伝（其の三）"
 date: 2026-06-04
-slug: satoshi-サイファーキャット英雄列伝-其の三
+slug: "satoshi-サイファーキャット英雄列伝-其の三"
 category: "エッセイ/小説/創作/ビットコイン/ブロックチェーン/暗号通貨/夏目漱石/bitcoin/パロディ/クリプト/吾輩は猫である/分散型/P2P/暗号技術/サトシナカモト/サイファーパンク/サイファーキャット英雄列伝"
 eyecatch: "/assets/eyecatch/n07564f6c0978.png"
+tags: ["Bitcoin", "ペット", "哲学", "暗号通貨", "サイファーパンク", "自由市場", "セキュリティ", "小説", "執筆"]
 ---
 
 # satoshi~サイファーキャット英雄列伝（其の三）
@@ -136,3 +137,4 @@ eyecatch: "/assets/eyecatch/n07564f6c0978.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n07564f6c0978*
+

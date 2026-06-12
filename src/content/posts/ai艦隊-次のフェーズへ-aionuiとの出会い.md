@@ -1,9 +1,10 @@
 ---
 title: "AI艦隊、次のフェーズへ — AionUiとの出会い"
 date: 2026-06-04
-slug: ai艦隊-次のフェーズへ-aionuiとの出会い
+slug: "ai艦隊-次のフェーズへ-aionuiとの出会い"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ndcdc9549351c.png"
+tags: ["Claude", "AIエージェント", "プログラミング", "Apple", "LLM", "OpenAI", "奈良"]
 ---
 
 # AI艦隊、次のフェーズへ — AionUiとの出会い
@@ -86,3 +87,4 @@ AionUiはその過渡期を、一足飛びに現実にする道具に見える�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ndcdc9549351c*
+

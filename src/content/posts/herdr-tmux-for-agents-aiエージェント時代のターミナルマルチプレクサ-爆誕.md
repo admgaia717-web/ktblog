@@ -1,9 +1,10 @@
 ---
 title: "herdr——tmux for agents。AIエージェント時代のターミナルマルチプレクサ、爆誕。"
 date: 2026-06-04
-slug: herdr-tmux-for-agents-aiエージェント時代のターミナルマルチプレクサ-爆誕
+slug: "herdr-tmux-for-agents-aiエージェント時代のターミナルマルチプレクサ-爆誕"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n45fe7835026c.png"
+tags: ["AIエージェント", "Claude", "プログラミング", "Apple"]
 ---
 
 # herdr——tmux for agents。AIエージェント時代のターミナルマルチプレクサ、爆誕。
@@ -136,3 +137,4 @@ tmuxが登場した2007年、誰も「このツールが10年後にすべての�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n45fe7835026c*
+

@@ -1,9 +1,10 @@
 ---
 title: "ローカルAI推論、今どっちを買うべきか——DGX Spark・Mac Ultra・Arc Proの三角関係と、待ち時間の心理学"
 date: 2026-06-04
-slug: ローカルai推論-今どっちを買うべきか-dgx-spark-mac-ultra-arc-proの三角関係と-待ち時間の心理学
+slug: "ローカルai推論-今どっちを買うべきか-dgx-spark-mac-ultra-arc-proの三角関係と-待ち時間の心理学"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n2ee5253d9978.png"
+tags: ["ロボット", "Apple", "ローカルLLM", "LLM", "ゲーム", "節約"]
 ---
 
 # ローカルAI推論、今どっちを買うべきか——DGX Spark・Mac Ultra・Arc Proの三角関係と、待ち時間の心理学
@@ -66,3 +67,4 @@ Joeyが言う「推論システム全体を所有する面白さ」は、この�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n2ee5253d9978*
+

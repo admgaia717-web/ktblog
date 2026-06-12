@@ -1,9 +1,10 @@
 ---
 title: "テレグラムに「音楽かけて」と送ったらSpotifyが動いた話"
 date: 2026-06-04
-slug: テレグラムに-音楽かけて-と送ったらspotifyが動いた話
+slug: "テレグラムに-音楽かけて-と送ったらspotifyが動いた話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n3c604517eb4e.png"
+tags: ["音楽", "デザイン", "ローカルLLM", "Apple", "LLM", "AIエージェント", "ロボット", "執筆"]
 ---
 
 # テレグラムに「音楽かけて」と送ったらSpotifyが動いた話
@@ -80,3 +81,4 @@ M1 Max 64GBのMacBook Proが、テレグラムボットとして24時間待機�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n3c604517eb4e*
+

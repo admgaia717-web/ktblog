@@ -1,9 +1,10 @@
 ---
 title: "AgiBot — 稚暉君が創った、世界最速で育つ人型ロボット企業の全貌"
 date: 2026-06-04
-slug: agibot-稚暉君が創った-世界最速で育つ人型ロボット企業の全貌-2
+slug: "agibot-稚暉君が創った-世界最速で育つ人型ロボット企業の全貌-2"
 category: "AgiBot"
 eyecatch: "/assets/eyecatch/nedfdeb9b900f.png"
+tags: ["ロボット", "映像"]
 ---
 
 # AgiBot — 稚暉君が創った、世界最速で育つ人型ロボット企業の全貌
@@ -48,3 +49,4 @@ KT's LAB — テクノロジーとものづくりの最前線
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nedfdeb9b900f*
+

@@ -1,9 +1,10 @@
 ---
 title: "ものづくり革命総論 第4回：デスクトップ革命 — Bambu Labが変えた世界"
 date: 2026-06-04
-slug: ものづくり革命総論-第4回-デスクトップ革命-bambu-labが変えた世界
+slug: "ものづくり革命総論-第4回-デスクトップ革命-bambu-labが変えた世界"
 category: "ものづくり革命総論"
 eyecatch: "/assets/eyecatch/n899ea35e4576.jpg"
+tags: ["ロボット", "デザイン", "プログラミング", "Apple", "哲学", "投資"]
 ---
 
 # ものづくり革命総論 第4回：デスクトップ革命 — Bambu Labが変えた世界
@@ -159,3 +160,4 @@ Bambu Labの世界: クローズド統合→箱出し即使える→制限され
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n899ea35e4576*
+

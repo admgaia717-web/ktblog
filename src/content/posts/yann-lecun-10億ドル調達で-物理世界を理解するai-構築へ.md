@@ -1,9 +1,10 @@
 ---
 title: "Yann LeCun、10億ドル調達で「物理世界を理解するAI」構築へ"
 date: 2026-06-04
-slug: yann-lecun-10億ドル調達で-物理世界を理解するai-構築へ
+slug: "yann-lecun-10億ドル調達で-物理世界を理解するai-構築へ"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n599cd862dfa2.png"
+tags: ["LLM", "ロボット", "Apple", "投資"]
 ---
 
 # Yann LeCun、10億ドル調達で「物理世界を理解するAI」構築へ
@@ -47,3 +48,4 @@ Source: [WIRED](https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n599cd862dfa2*
+

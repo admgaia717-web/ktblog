@@ -7,17 +7,42 @@ const allPosts = await getCollection('posts');
 const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const displayPosts = posts.slice(0, 24);
 const totalPosts = posts.length;
+
+function formatYearMonth(date: Date) {
+  return `${date.getFullYear()}年${date.getMonth() + 1}月`;
+}
+
+const groups: { label: string; posts: typeof displayPosts }[] = [];
+for (const post of displayPosts) {
+  const label = formatYearMonth(post.data.date);
+  const last = groups[groups.length - 1];
+  if (last && last.label === label) {
+    last.posts.push(post);
+  } else {
+    groups.push({ label, posts: [post] });
+  }
+}
 ---
 <BaseLayout title="Archive">
-  <header class="mb-12 space-y-3">
+  <header class="mb-12 md:mb-16 space-y-3">
     <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Archive</p>
     <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight">All Posts</h1>
     <p class="text-[var(--color-text-muted)]">{totalPosts}件の記事 · 最新24件を表示</p>
   </header>
 
-  <div class="grid md:grid-cols-2 gap-10">
-    {displayPosts.map((post) => (
-      <PostCard post={post} />
+  <div class="space-y-14">
+    {groups.map((group) => (
+      <section>
+        <div class="flex items-center gap-4 mb-6">
+          <h2 class="font-[var(--font-serif)] text-2xl md:text-3xl font-bold tracking-tight">{group.label}</h2>
+          <span class="text-sm text-[var(--color-text-muted)]">{group.posts.length}件</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+          {group.posts.map((post) => (
+            <PostCard post={post} />
+          ))}
+        </div>
+      </section>
     ))}
   </div>
 

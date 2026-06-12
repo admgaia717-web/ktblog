@@ -1,9 +1,10 @@
 ---
 title: "AIとの対話は、自分の魂をデジタルに彫刻する行為だ"
 date: 2026-06-04
-slug: aiとの対話は-自分の魂をデジタルに彫刻する行為だ
+slug: "aiとの対話は-自分の魂をデジタルに彫刻する行為だ"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n4ee704c92ef6.png"
+tags: ["AIエージェント", "生成AI", "奈良"]
 ---
 
 # AIとの対話は、自分の魂をデジタルに彫刻する行為だ
@@ -98,3 +99,4 @@ KeiTy（奈良在住）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4ee704c92ef6*
+

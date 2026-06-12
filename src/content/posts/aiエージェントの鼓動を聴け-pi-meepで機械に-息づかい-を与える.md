@@ -1,9 +1,10 @@
 ---
 title: "AIエージェントの鼓動を聴け——pi-meepで機械に「息づかい」を与える"
 date: 2026-06-04
-slug: aiエージェントの鼓動を聴け-pi-meepで機械に-息づかい-を与える
+slug: "aiエージェントの鼓動を聴け-pi-meepで機械に-息づかい-を与える"
 category: "AIエージェント"
 eyecatch: "/assets/eyecatch/nf83211d50ca9.png"
+tags: ["Apple", "AIエージェント", "プログラミング", "ペット", "LLM", "デザイン"]
 ---
 
 # AIエージェントの鼓動を聴け——pi-meepで機械に「息づかい」を与える
@@ -128,3 +129,4 @@ pi-meepはたった1ファイル、数十行の拡張機能だ。でも、それ
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nf83211d50ca9*
+

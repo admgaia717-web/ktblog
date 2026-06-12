@@ -1,7 +1,7 @@
 ---
 title: "私たちの中に眠る「小さな神様」（S著）"
 date: 2026-06-04
-slug: 私たちの中に眠る-小さな神様-s著
+slug: "私たちの中に眠る-小さな神様-s著"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne83ba1d09d27.png"
 ---

@@ -1,9 +1,10 @@
 ---
 title: "月間10億トークンが無料で使える時代が来た ── FreeLLMAPI × Webwright を本番導入してみた"
 date: 2026-06-04
-slug: 月間10億トークンが無料で使える時代が来た-freellmapi-webwright-を本番導入してみた
+slug: "月間10億トークンが無料で使える時代が来た-freellmapi-webwright-を本番導入してみた"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne8bd083d1183.png"
+tags: ["プログラミング", "AIエージェント", "暗号通貨", "LLM", "Claude", "ロボット", "Apple", "セキュリティ", "OpenAI", "哲学", "投資"]
 ---
 
 # 月間10億トークンが無料で使える時代が来た ── FreeLLMAPI × Webwright を本番導入してみた
@@ -108,3 +109,4 @@ HermesネイティブのWebwrightスキルは、俺（エージェント）が�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne8bd083d1183*
+

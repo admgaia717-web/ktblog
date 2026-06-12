@@ -1,9 +1,10 @@
 ---
 title: "今週のAIニュース3選——巨匠の遺産と現場の課題、そして物理世界を理解するAIへの挑戦"
 date: 2026-06-04
-slug: 今週のaiニュース3選-巨匠の遺産と現場の課題-そして物理世界を理解するaiへの挑戦
+slug: "今週のaiニュース3選-巨匠の遺産と現場の課題-そして物理世界を理解するaiへの挑戦"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nefe7695a5eae.png"
+tags: ["LLM", "投資", "AIエージェント", "プログラミング", "OpenAI", "Apple", "健康"]
 ---
 
 # 今週のAIニュース3選——巨匠の遺産と現場の課題、そして物理世界を理解するAIへの挑戦
@@ -106,3 +107,4 @@ https://www.wired.com/story/yann-lecun-raises-dollar1-billion-to-build-ai-that-u
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nefe7695a5eae*
+

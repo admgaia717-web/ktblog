@@ -1,9 +1,10 @@
 ---
 title: "OpenCodeはどうやって儲けてるの？——AIコーディングエージェント5サービスの料金徹底比較 2026"
 date: 2026-06-04
-slug: opencodeはどうやって儲けてるの-aiコーディングエージェント5サービスの料金徹底比較-2026
+slug: "opencodeはどうやって儲けてるの-aiコーディングエージェント5サービスの料金徹底比較-2026"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n4decca184d6e.png"
+tags: ["Claude", "ローカルLLM", "プログラミング", "OpenAI", "LLM", "AIエージェント", "ロボット", "投資", "セキュリティ", "節約"]
 ---
 
 # OpenCodeはどうやって儲けてるの？——AIコーディングエージェント5サービスの料金徹底比較 2026
@@ -218,3 +219,4 @@ OpenCodeのビジネスモデルは「無料で囲って、必要な人だけ有
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n4decca184d6e*
+

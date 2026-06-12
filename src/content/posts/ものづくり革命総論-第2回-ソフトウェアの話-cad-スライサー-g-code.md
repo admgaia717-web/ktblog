@@ -1,9 +1,10 @@
 ---
 title: "ものづくり革命総論 第2回：ソフトウェアの話 — CAD・スライサー・G-code"
 date: 2026-06-04
-slug: ものづくり革命総論-第2回-ソフトウェアの話-cad-スライサー-g-code
+slug: "ものづくり革命総論-第2回-ソフトウェアの話-cad-スライサー-g-code"
 category: "ものづくり革命総論"
 eyecatch: "/assets/eyecatch/nb99dcd2d1b4d.jpg"
+tags: ["ロボット", "プログラミング", "暗号通貨", "ゲーム", "Apple", "健康"]
 ---
 
 # ものづくり革命総論 第2回：ソフトウェアの話 — CAD・スライサー・G-code
@@ -151,3 +152,4 @@ iPhoneのLiDARスキャナーでも簡易的なスキャンができる。専用
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nb99dcd2d1b4d*
+

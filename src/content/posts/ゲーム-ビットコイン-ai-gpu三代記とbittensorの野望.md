@@ -1,9 +1,10 @@
 ---
 title: "ゲーム→ビットコイン→AI——GPU三代記とBittensorの野望"
 date: 2026-06-04
-slug: ゲーム-ビットコイン-ai-gpu三代記とbittensorの野望
+slug: "ゲーム-ビットコイン-ai-gpu三代記とbittensorの野望"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n9548da9638a5.jpg"
+tags: ["Bitcoin", "ゲーム", "ロボット", "OpenAI", "暗号通貨", "哲学", "AGI", "AIエージェント", "生成AI"]
 ---
 
 # ゲーム→ビットコイン→AI——GPU三代記とBittensorの野望
@@ -123,3 +124,4 @@ NVIDIA NIM: https://build.nvidia.com（無料枠あり）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n9548da9638a5*
+

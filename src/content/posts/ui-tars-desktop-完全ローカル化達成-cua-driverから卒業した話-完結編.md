@@ -1,9 +1,10 @@
 ---
 title: "UI-TARS Desktop 完全ローカル化達成：cua-driverから卒業した話（完結編）"
 date: 2026-06-04
-slug: ui-tars-desktop-完全ローカル化達成-cua-driverから卒業した話-完結編
+slug: "ui-tars-desktop-完全ローカル化達成-cua-driverから卒業した話-完結編"
 category: "UI-TARS"
 eyecatch: "/assets/eyecatch/n660a4c4a77ab.png"
+tags: ["デザイン", "ローカルLLM", "Apple", "生成AI", "プログラミング", "暗号通貨"]
 ---
 
 # UI-TARS Desktop 完全ローカル化達成：cua-driverから卒業した話（完結編）
@@ -122,3 +123,4 @@ APIが変わっても、DOM構造が変わっても、この方法なら動き�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n660a4c4a77ab*
+

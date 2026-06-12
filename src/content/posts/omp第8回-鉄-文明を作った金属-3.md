@@ -1,7 +1,8 @@
 ---
 title: "OMP第8回: 鉄 — 文明を作った金属"
 date: 2026-06-04
-slug: omp第8回-鉄-文明を作った金属-3
+slug: "omp第8回-鉄-文明を作った金属-3"
+tags: ["AIエージェント", "DIY"]
 ---
 
 # OMP第8回: 鉄 — 文明を作った金属
@@ -90,3 +91,4 @@ OMP 第8回: 鉄 — 完
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n86596c72ff35*
+

@@ -1,9 +1,10 @@
 ---
 title: "元ITエンジニアの私が、日本の公道を走る個人EVメーカーを作るまで"
 date: 2026-06-04
-slug: 元itエンジニアの私が-日本の公道を走る個人evメーカーを作るまで
+slug: "元itエンジニアの私が-日本の公道を走る個人evメーカーを作るまで"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n49e0c3ac2f15.png"
+tags: ["ロボット", "プログラミング", "映像", "DIY", "投資"]
 ---
 
 # 元ITエンジニアの私が、日本の公道を走る個人EVメーカーを作るまで
@@ -48,3 +49,4 @@ eyecatch: "/assets/eyecatch/n49e0c3ac2f15.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n49e0c3ac2f15*
+

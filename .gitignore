@@ -6,3 +6,5 @@ dist/
 .env
 .env.local
 ktblog.sqlite*
+public/search-index.json
+public/tags.json

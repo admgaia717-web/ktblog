@@ -1,9 +1,10 @@
 ---
 title: "ローカルに自分専用LLM-DJを作る｜プロローグ"
 date: 2026-06-04
-slug: ローカルに自分専用llm-djを作る-プロローグ
+slug: "ローカルに自分専用llm-djを作る-プロローグ"
 category: "AI/音楽/プログラミング/DIY/LLM/Spotify/Macmini/tailscale/selfhosted"
 eyecatch: "/assets/eyecatch/n14dceccb8f39.jpg"
+tags: ["音楽", "LLM", "Apple", "映像", "ローカルLLM", "節約"]
 ---
 
 # ローカルに自分専用LLM-DJを作る｜プロローグ
@@ -108,3 +109,4 @@ Spotifyの新曲レコメンドを監視して、自分のテイストに合い�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n14dceccb8f39*
+

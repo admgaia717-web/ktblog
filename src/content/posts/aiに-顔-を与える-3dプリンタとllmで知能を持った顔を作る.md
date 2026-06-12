@@ -1,9 +1,10 @@
 ---
 title: "AIに「顔」を与える——3DプリンタとLLMで知能を持った顔を作る"
 date: 2026-06-04
-slug: aiに-顔-を与える-3dプリンタとllmで知能を持った顔を作る
+slug: "aiに-顔-を与える-3dプリンタとllmで知能を持った顔を作る"
 category: "AI/ロボット/LLM/3Dプリンタ/アニマトロニクス/EyeMech"
 eyecatch: "/assets/eyecatch/n28f2d90f2b8f.png"
+tags: ["ローカルLLM", "ロボット", "LLM", "映像", "Claude", "OpenAI", "小説", "アニメ", "DIY"]
 ---
 
 # AIに「顔」を与える——3DプリンタとLLMで知能を持った顔を作る
@@ -94,3 +95,4 @@ EyeMechキットを注文した。Raspberry PiにOllamaを載せて、whisperで
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n28f2d90f2b8f*
+

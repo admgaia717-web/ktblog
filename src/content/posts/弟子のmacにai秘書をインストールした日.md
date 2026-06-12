@@ -1,9 +1,10 @@
 ---
 title: "弟子のMacにAI秘書をインストールした日"
 date: 2026-06-04
-slug: 弟子のmacにai秘書をインストールした日
+slug: "弟子のmacにai秘書をインストールした日"
 category: "AI/初心者/OpenClaw/セットアップ"
 eyecatch: "/assets/eyecatch/n357614b5314b.png"
+tags: ["AIエージェント", "Apple", "Claude"]
 ---
 
 # 弟子のMacにAI秘書をインストールした日
@@ -80,3 +81,4 @@ OpenClawの「頭脳」にはいろんなAIモデルを選べる。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n357614b5314b*
+

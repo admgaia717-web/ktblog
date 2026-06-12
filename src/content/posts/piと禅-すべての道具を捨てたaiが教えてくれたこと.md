@@ -1,9 +1,10 @@
 ---
 title: "piと禅——すべての道具を捨てたAIが教えてくれたこと"
 date: 2026-06-04
-slug: piと禅-すべての道具を捨てたaiが教えてくれたこと
+slug: "piと禅-すべての道具を捨てたaiが教えてくれたこと"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5b51744d7962.png"
+tags: ["哲学", "プログラミング", "サイファーパンク", "ゲーム"]
 ---
 
 # piと禅——すべての道具を捨てたAIが教えてくれたこと
@@ -142,3 +143,4 @@ pi -nbt は、AIの禅だ。
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5b51744d7962*
+

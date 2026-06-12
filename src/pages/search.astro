@@ -1,0 +1,278 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { groupPostsByCategory } from '../lib/categories';
+import { TAG_RULES } from '../lib/tags';
+
+const allPosts = await getCollection('posts');
+const categoryGroups = groupPostsByCategory(allPosts);
+const categories = categoryGroups.map((g) => g.name);
+const tags = TAG_RULES.map((r) => r.tag);
+---
+<BaseLayout title="Search" description="KTblog 全文検索。タイトル・タグ・本文から記事を探せます。">
+  <section class="mb-10 space-y-4">
+    <p class="text-xs tracking-[0.25em] uppercase text-[var(--color-accent)]">Content Search</p>
+    <h1 class="font-[var(--font-serif)] text-4xl md:text-5xl font-bold tracking-tight leading-[1.1]">
+      記事を検索
+    </h1>
+    <p class="text-[var(--color-text-muted)] max-w-xl leading-relaxed">
+      タイトル・カテゴリ・タグ・本文から探せます。683件の記事を全文索引で検索します。
+    </p>
+  </section>
+
+  <div
+    id="search-app"
+    data-categories={JSON.stringify(categories)}
+    data-tags={JSON.stringify(tags)}
+  >
+    <div class="space-y-6">
+      <!-- Search input -->
+      <div class="relative">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="キーワードを入力…"
+          class="w-full px-5 py-4 pr-14 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent)] transition-colors text-lg"
+          autocomplete="off"
+        />
+        <span class="absolute right-5 top-1/2 -translate-y-1/2 text-[var(--color-text-muted)]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </span>
+      </div>
+
+      <!-- Facets -->
+      <div class="space-y-4">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-[var(--color-text-muted)] mb-2">カテゴリ</p>
+          <div id="category-facets" class="flex flex-wrap gap-2">
+            {categories.map((cat) => (
+              <button
+                type="button"
+                data-category={cat}
+                class="facet-cat px-3 py-1.5 rounded-full text-sm border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-[var(--color-text)] hover:border-[var(--color-accent)] transition-colors"
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-wider text-[var(--color-text-muted)] mb-2">タグ</p>
+          <div id="tag-facets" class="flex flex-wrap gap-2">
+            {tags.slice(0, 20).map((tag) => (
+              <button
+                type="button"
+                data-tag={tag}
+                class="facet-tag px-3 py-1.5 rounded-full text-sm border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-[var(--color-text)] hover:border-[var(--color-accent)] transition-colors"
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Status -->
+      <div id="search-status" class="text-sm text-[var(--color-text-muted)]">読み込み中…</div>
+
+      <!-- Results -->
+      <div id="search-results" class="space-y-8"></div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script is:inline>
+  (function () {
+    const app = document.getElementById('search-app');
+    const categories = JSON.parse(app.dataset.categories || '[]');
+    const tagList = JSON.parse(app.dataset.tags || '[]');
+    const input = document.getElementById('search-input');
+    const status = document.getElementById('search-status');
+    const results = document.getElementById('search-results');
+    const catButtons = document.querySelectorAll('.facet-cat');
+    const tagButtons = document.querySelectorAll('.facet-tag');
+
+    let index = [];
+    let activeCategories = new Set();
+    let activeTags = new Set();
+
+    function normalize(s) {
+      return String(s || '')
+        .toLowerCase()
+        .replace(/[\u3000]/g, ' ')
+        .replace(/[\.\/\,\!\?\(\)\[\]\{\}"'"]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function tokens(s) {
+      return normalize(s).split(' ').filter((t) => t.length > 0);
+    }
+
+    function highlight(text, queryTokens) {
+      let html = escapeHtml(text);
+      queryTokens.forEach((tok) => {
+        const re = new RegExp('(' + tok.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+        html = html.replace(re, '<mark class="bg-[var(--color-accent)]/20 text-[var(--color-accent)] rounded px-0.5">$1</mark>');
+      });
+      return html;
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function snippet(text, queryTokens, maxLen = 160) {
+      const norm = normalize(text);
+      let bestPos = -1;
+      let bestScore = -1;
+      // 最初にヒットした語の位置を探す
+      queryTokens.forEach((tok) => {
+        const pos = norm.indexOf(tok);
+        if (pos !== -1) {
+          const score = tok.length;
+          if (score > bestScore) {
+            bestScore = score;
+            bestPos = pos;
+          }
+        }
+      });
+      if (bestPos === -1) {
+        return text.slice(0, maxLen) + (text.length > maxLen ? '…' : '');
+      }
+      const start = Math.max(0, bestPos - Math.floor(maxLen / 2));
+      const end = Math.min(text.length, start + maxLen);
+      return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+    }
+
+    function score(post, queryTokens) {
+      if (queryTokens.length === 0) return 1;
+      let s = 0;
+      const titleNorm = normalize(post.title);
+      const bodyNorm = normalize(post.body);
+      const excerptNorm = normalize(post.excerpt);
+      const catNorm = normalize(post.category);
+      const tagNorms = (post.tags || []).map(normalize);
+
+      queryTokens.forEach((tok) => {
+        if (titleNorm.includes(tok)) s += 10;
+        if (tagNorms.some((t) => t.includes(tok))) s += 5;
+        if (catNorm.includes(tok)) s += 4;
+        if (excerptNorm.includes(tok)) s += 2;
+        if (bodyNorm.includes(tok)) {
+          const count = (bodyNorm.match(new RegExp(tok, 'g')) || []).length;
+          s += Math.min(count, 5);
+        }
+      });
+      return s;
+    }
+
+    function matchesFacets(post) {
+      if (activeCategories.size > 0 && !activeCategories.has(post.category)) return false;
+      if (activeTags.size > 0) {
+        const postTags = new Set(post.tags || []);
+        let hit = false;
+        activeTags.forEach((t) => { if (postTags.has(t)) hit = true; });
+        if (!hit) return false;
+      }
+      return true;
+    }
+
+    function render() {
+      const query = input.value;
+      const queryTokens = tokens(query);
+      const filtered = index
+        .filter(matchesFacets)
+        .map((post) => ({ post, score: score(post, queryTokens) }))
+        .filter((item) => item.score > 0)
+        .sort((a, b) => b.score - a.score || new Date(b.post.date) - new Date(a.post.date));
+
+      status.textContent = queryTokens.length === 0 && activeCategories.size === 0 && activeTags.size === 0
+        ? `${index.length}件の記事を読み込み済み。キーワードまたはファセットを選択してください。`
+        : `${filtered.length}件ヒット`;
+
+      if (filtered.length === 0) {
+        results.innerHTML = '<p class="text-[var(--color-text-muted)]">該当する記事が見つかりませんでした。</p>';
+        return;
+      }
+
+      results.innerHTML = filtered.map(({ post }) => {
+        const dateObj = new Date(post.date);
+        const dateStr = isNaN(dateObj) ? post.date : dateObj.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+        const titleHtml = highlight(post.title, queryTokens);
+        const bodySnippet = snippet(post.body, queryTokens, 180);
+        const snippetHtml = highlight(bodySnippet, queryTokens);
+        const tagHtml = (post.tags || []).slice(0, 8).map((tag) =>
+          `<a href="/tag/${encodeURIComponent(tag)}/" class="inline-flex px-2 py-0.5 rounded text-xs border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-[var(--color-text-muted)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors">${escapeHtml(tag)}</a>`
+        ).join('');
+        return `
+          <article class="group">
+            <a href="/post/${post.slug}/" class="block">
+              <div class="space-y-2">
+                <div class="flex items-center gap-3 text-xs">
+                  <span class="text-[var(--color-accent)] tracking-wider uppercase font-medium">${escapeHtml(post.category || 'その他')}</span>
+                  <span class="text-[var(--color-border)]">·</span>
+                  <time class="text-[var(--color-text-muted)]">${dateStr}</time>
+                </div>
+                <h2 class="font-[var(--font-serif)] text-xl md:text-2xl font-bold tracking-tight group-hover:text-[var(--color-accent)] transition-colors leading-tight">${titleHtml}</h2>
+                <p class="text-sm text-[var(--color-text-muted)] leading-relaxed">${snippetHtml}</p>
+                <div class="flex flex-wrap gap-2 pt-1">${tagHtml}</div>
+              </div>
+            </a>
+          </article>
+        `;
+      }).join('<hr class="border-[var(--color-border)]" />');
+    }
+
+    function updateFacet(buttons, activeSet, cls) {
+      buttons.forEach((btn) => {
+        const value = btn.dataset[cls];
+        if (activeSet.has(value)) {
+          btn.classList.add('border-[var(--color-accent)]', 'text-[var(--color-accent)]');
+        } else {
+          btn.classList.remove('border-[var(--color-accent)]', 'text-[var(--color-accent)]');
+        }
+      });
+    }
+
+    catButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        if (activeCategories.has(cat)) activeCategories.delete(cat);
+        else activeCategories.add(cat);
+        updateFacet(catButtons, activeCategories, 'category');
+        render();
+      });
+    });
+
+    tagButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const tag = btn.dataset.tag;
+        if (activeTags.has(tag)) activeTags.delete(tag);
+        else activeTags.add(tag);
+        updateFacet(tagButtons, activeTags, 'tag');
+        render();
+      });
+    });
+
+    input.addEventListener('input', render);
+
+    fetch('/search-index.json')
+      .then((res) => res.json())
+      .then((data) => {
+        index = data;
+        const params = new URLSearchParams(window.location.search);
+        const q = params.get('q');
+        if (q) {
+          input.value = q;
+          render();
+        } else {
+          status.textContent = `${index.length}件の記事を読み込み済み。キーワードまたはファセットを選択してください。`;
+        }
+      })
+      .catch((err) => {
+        status.textContent = '検索インデックスの読み込みに失敗しました。';
+        console.error(err);
+      });
+  })();
+</script>

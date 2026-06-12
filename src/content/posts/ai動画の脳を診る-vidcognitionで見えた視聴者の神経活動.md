@@ -1,9 +1,10 @@
 ---
 title: "AI動画の脳を診る——VidCognitionで見えた視聴者の神経活動"
 date: 2026-06-04
-slug: ai動画の脳を診る-vidcognitionで見えた視聴者の神経活動
+slug: "ai動画の脳を診る-vidcognitionで見えた視聴者の神経活動"
 category: "note.com"
 eyecatch: "/assets/eyecatch/ne1e4c7340107.png"
+tags: ["映像"]
 ---
 
 # AI動画の脳を診る——VidCognitionで見えた視聴者の神経活動
@@ -82,3 +83,4 @@ VidCognition で「脳の反応」を知り、Go Viral で「実践的なスコ�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/ne1e4c7340107*
+

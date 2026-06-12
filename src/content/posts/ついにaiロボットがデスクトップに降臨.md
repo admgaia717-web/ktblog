@@ -1,9 +1,10 @@
 ---
 title: "ついにAIロボットがデスクトップに降臨✨"
 date: 2026-06-04
-slug: ついにaiロボットがデスクトップに降臨
+slug: "ついにaiロボットがデスクトップに降臨"
 category: "ロボット/相棒/OpenClaw/ROS2/ROSpider"
 eyecatch: "/assets/eyecatch/n1c9ed8db89fb.png"
+tags: ["ロボット", "AIエージェント", "Apple", "ローカルLLM", "LLM", "OpenAI", "小説", "映像"]
 ---
 
 # ついにAIロボットがデスクトップに降臨✨
@@ -138,3 +139,4 @@ Hiwonderのサイトでは在庫が999個と表示されているが、世界中
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n1c9ed8db89fb*
+

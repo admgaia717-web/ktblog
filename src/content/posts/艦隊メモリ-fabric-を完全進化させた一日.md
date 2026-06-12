@@ -1,9 +1,10 @@
 ---
 title: "艦隊メモリ「Fabric」を完全進化させた一日"
 date: 2026-06-04
-slug: 艦隊メモリ-fabric-を完全進化させた一日
+slug: "艦隊メモリ-fabric-を完全進化させた一日"
 category: "エージェント/ファイル/Obsidian/fabric"
 eyecatch: "/assets/eyecatch/n07fc095dce26.png"
+tags: ["AIエージェント", "投資", "暗号通貨", "Apple", "ロボット", "プログラミング", "デザイン", "LLM", "哲学", "健康", "奈良"]
 ---
 
 # 艦隊メモリ「Fabric」を完全進化させた一日
@@ -478,3 +479,4 @@ obsidian/DoOS と obsidian/wiki のファイルを `[[ファイル名]]` 形式�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n07fc095dce26*
+

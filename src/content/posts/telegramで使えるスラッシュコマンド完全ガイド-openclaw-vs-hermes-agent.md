@@ -1,9 +1,10 @@
 ---
 title: "Telegramで使えるスラッシュコマンド完全ガイド — OpenClaw vs Hermes Agent"
 date: 2026-06-04
-slug: telegramで使えるスラッシュコマンド完全ガイド-openclaw-vs-hermes-agent
+slug: "telegramで使えるスラッシュコマンド完全ガイド-openclaw-vs-hermes-agent"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n96983be718db.png"
+tags: ["AIエージェント", "Claude", "節約", "執筆", "LLM", "Apple", "デザイン", "ゲーム"]
 ---
 
 # Telegramで使えるスラッシュコマンド完全ガイド — OpenClaw vs Hermes Agent
@@ -236,3 +237,4 @@ Hermes
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n96983be718db*
+

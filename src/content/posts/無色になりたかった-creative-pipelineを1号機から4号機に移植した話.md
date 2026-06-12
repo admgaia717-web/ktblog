@@ -1,9 +1,10 @@
 ---
 title: "無色になりたかった──creative-pipelineを1号機から4号機に移植した話"
 date: 2026-06-04
-slug: 無色になりたかった-creative-pipelineを1号機から4号機に移植した話
+slug: "無色になりたかった-creative-pipelineを1号機から4号機に移植した話"
 category: "note.com"
 eyecatch: "/assets/eyecatch/na19e379ca628.png"
+tags: ["AGI", "Apple", "哲学", "生成AI", "プログラミング", "暗号通貨", "執筆"]
 ---
 
 # 無色になりたかった──creative-pipelineを1号機から4号機に移植した話
@@ -98,3 +99,4 @@ AIは調べ、描き、書き、拡散する。人間は直感し、語り、方
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/na19e379ca628*
+

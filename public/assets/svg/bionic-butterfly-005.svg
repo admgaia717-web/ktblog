@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <defs>
+    <style>
+      .bg { fill: #f5f0eb; }
+      .card { fill: #ffffff; stroke: #d4652a; stroke-width: 1; }
+      .h-en { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #2a2a2a; }
+      .h-jp { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 14px; fill: #6a6a6a; }
+      .body { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 14px; fill: #2a2a2a; }
+      .caption { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 12px; font-style: italic; fill: #6a6a6a; }
+      .divider { stroke: #d4652a; stroke-width: 2; }
+      .label { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 12px; fill: #2a2a2a; }
+      .wing-sec { fill: #8B4513; fill-opacity: 0.4; stroke: #8B4513; stroke-width: 2; }
+      .wing-sec-light { fill: #8B4513; fill-opacity: 0.15; stroke: #8B4513; stroke-width: 1.5; stroke-dasharray: 4,3; }
+      .airflow { stroke: #6a9fb5; stroke-width: 1.5; fill: none; marker-end: url(#arrow-blue); }
+      .force-lift { stroke: #22c55e; stroke-width: 2; fill: none; marker-end: url(#arrow-green); }
+      .force-thrust { stroke: #d4652a; stroke-width: 2; fill: none; marker-end: url(#arrow-orange); }
+      .phase-label { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 15px; font-weight: 700; }
+      .clap-fill { fill: #e8864a; fill-opacity: 0.6; stroke: #d4652a; stroke-width: 1.5; }
+    </style>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6a9fb5"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#22c55e"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d4652a"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="800" height="480"/>
+  <rect class="card" x="20" y="20" width="760" height="440" rx="8"/>
+  <text class="h-en" x="40" y="60">Butterfly Ornithopter Aerodynamics</text>
+  <text class="h-jp" x="40" y="85">蝶型オーニソプターの飛行原理 — 羽ばたきが生む揚力と推力</text>
+  <line class="divider" x1="40" y1="100" x2="760" y2="100"/>
+
+  <!-- === PHASE 1: DOWNSTROKE === -->
+  <text class="phase-label" x="120" y="140" text-anchor="middle" fill="#d4652a">Phase 1 ▼ Downstroke</text>
+
+  <!-- Wing section - downstroke -->
+  <ellipse class="wing-sec" cx="130" cy="210" rx="80" ry="18" transform="rotate(20, 130, 210)"/>
+  <text class="label" x="130" y="215" text-anchor="middle">翼断面（打�下ろし）</text>
+
+  <!-- Airflow arrows below -->
+  <path class="airflow" d="M 70 235 Q 100 250 130 240"/>
+  <path class="airflow" d="M 100 245 Q 130 260 160 248"/>
+  <text class="label" x="90" y="270" fill="#6a9fb5">気流</text>
+
+  <!-- Lift force up -->
+  <line class="force-lift" x1="130" y1="190" x2="130" y2="155"/>
+  <text class="label" x="135" y="150" fill="#22c55e">揚力↑</text>
+
+  <!-- Thrust forward -->
+  <line class="force-thrust" x1="130" y1="240" x2="180" y2="260"/>
+  <text class="label" x="175" y="275" fill="#d4652a">推力→</text>
+
+  <!-- === PHASE 2: UPSTROKE === -->
+  <text class="phase-label" x="370" y="140" text-anchor="middle" fill="#6a6a6a">Phase 2 ▲ Upstroke</text>
+
+  <!-- Wing section - upstroke (dashed, feathered) -->
+  <ellipse class="wing-sec-light" cx="380" cy="210" rx="80" ry="18" transform="rotate(-10, 380, 210)"/>
+  <text class="label" x="380" y="215" text-anchor="middle" fill="#6a6a6a">翼捻り（抵抗最小）</text>
+
+  <!-- Minimal airflow -->
+  <path class="airflow" d="M 320 200 Q 350 195 380 200" stroke="#b0b0b0" stroke-width="1"/>
+  <path class="airflow" d="M 350 210 Q 380 205 410 210" stroke="#b0b0b0" stroke-width="1"/>
+  <text class="label" x="340" y="190" fill="#b0b0b0">抵抗小→</text>
+
+  <!-- === PHASE 3: CLAP-AND-FLING === -->
+  <text class="phase-label" x="620" y="140" text-anchor="middle" fill="#e8864a">Phase 3 ✦ Clap-and-Fling</text>
+
+  <!-- Left wing approaching -->
+  <rect class="clap-fill" x="540" y="185" width="60" height="40" rx="8" transform="rotate(-5, 570, 205)"/>
+  <text class="label" x="570" y="200" text-anchor="middle">左翼</text>
+
+  <!-- Right wing approaching -->
+  <rect class="clap-fill" x="660" y="185" width="60" height="40" rx="8" transform="rotate(5, 690, 205)"/>
+  <text class="label" x="690" y="200" text-anchor="middle">右翼</text>
+
+  <!-- Clap arrows -->
+  <path class="force-thrust" d="M 600 195 L 618 195"/>
+  <path class="force-thrust" d="M 660 195 L 642 195"/>
+  <text class="label" x="620" y="190" text-anchor="middle" fill="#d4652a">Clap</text>
+
+  <!-- Fling arrows -->
+  <path class="force-thrust" d="M 600 225 L 618 225" stroke="#22c55e"/>
+  <path class="force-thrust" d="M 660 225 L 642 225" stroke="#22c55e"/>
+  <text class="label" x="620" y="240" text-anchor="middle" fill="#22c55e">Fling</text>
+
+  <text class="label" x="620" y="270" text-anchor="middle" fill="#6a6a6a" font-size="11">翼を合わせて剥がす</text>
+  <text class="label" x="620" y="285" text-anchor="middle" fill="#6a6a6a" font-size="11">→ 強い揚力を生成</text>
+
+  <!-- Bottom annotation row -->
+  <line class="divider" x1="40" y1="310" x2="760" y2="310"/>
+
+  <!-- Flight profile -->
+  <text class="body" x="400" y="340" text-anchor="middle" font-weight="700">飛行プロファイル</text>
+  <path d="M 80 420 Q 200 380 300 410 Q 400 370 500 400 Q 600 360 720 390" fill="none" stroke="#d4652a" stroke-width="2.5"/>
+  <circle cx="300" cy="410" r="3" fill="#22c55e"/>
+  <circle cx="500" cy="400" r="3" fill="#22c55e"/>
+  <text class="label" x="80" y="440">離陸</text>
+  <text class="label" x="300" y="425" fill="#22c55e">巡航</text>
+  <text class="label" x="500" y="415" fill="#22c55e">旋回</text>
+  <text class="label" x="700" y="435">着陸</text>
+  <text class="label" x="400" y="390" fill="#6a6a6a" font-size="11">飛行時間: 約10分 / 2S 180mAh LiPo</text>
+</svg>

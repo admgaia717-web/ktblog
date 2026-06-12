@@ -1,9 +1,10 @@
 ---
 title: "DeepSeek 10T戦略 四部作 第三部：もし世界が二つのAIに分割されるなら——シナリオB：二極化"
 date: 2026-06-04
-slug: deepseek-10t戦略-四部作-第三部-もし世界が二つのaiに分割されるなら-シナリオb-二極化
+slug: "deepseek-10t戦略-四部作-第三部-もし世界が二つのaiに分割されるなら-シナリオb-二極化"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n020168d83f7a.png"
+tags: ["OpenAI", "Apple", "健康", "投資"]
 ---
 
 # DeepSeek 10T戦略 四部作 第三部：もし世界が二つのAIに分割されるなら——シナリオB：二極化
@@ -62,3 +63,4 @@ KT＋ロデム（Rodemu／MacBook Air M1）
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n020168d83f7a*
+

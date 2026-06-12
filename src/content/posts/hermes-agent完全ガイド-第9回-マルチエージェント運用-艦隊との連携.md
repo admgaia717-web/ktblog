@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第9回：マルチエージェント運用 — 艦隊との連携"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第9回-マルチエージェント運用-艦隊との連携
+slug: "hermes-agent完全ガイド-第9回-マルチエージェント運用-艦隊との連携"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd822d4e41105.png"
+tags: ["AIエージェント", "暗号通貨", "Claude", "Apple", "プログラミング", "LLM", "ロボット", "Monero", "サイファーパンク", "奈良", "節約"]
 ---
 
 # Hermes Agent完全ガイド 第9回：マルチエージェント運用 — 艦隊との連携
@@ -126,3 +127,4 @@ OpenClawの強み：シンプルで軽い。設定が少ない。特定の作業
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd822d4e41105*
+

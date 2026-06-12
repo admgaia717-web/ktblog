@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
+  <defs>
+    <style>
+      .bg { fill: #f5f0eb; }
+      .card { fill: #ffffff; stroke: #d4652a; stroke-width: 1; }
+      .h-en { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 24px; font-weight: 700; fill: #2a2a2a; }
+      .h-jp { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 14px; fill: #6a6a6a; }
+      .body { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 14px; fill: #2a2a2a; }
+      .caption { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 12px; font-style: italic; fill: #6a6a6a; }
+      .divider { stroke: #d4652a; stroke-width: 2; }
+      .bar-label { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 13px; fill: #2a2a2a; }
+      .bar-val { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 13px; font-weight: 700; fill: #2a2a2a; }
+      .pct { font-family: 'Noto Sans CJK JP', 'Hiragino Sans', sans-serif; font-size: 11px; fill: #ffffff; }
+      .bar-servo { fill: #d4652a; }
+      .bar-batt { fill: #e8864a; }
+      .bar-frame { fill: #c0a080; }
+      .bar-arduino { fill: #6a9fb5; }
+      .bar-rx { fill: #8a8a8a; }
+      .bar-wire { fill: #b0b0b0; }
+    </style>
+  </defs>
+  <rect class="bg" width="800" height="480"/>
+  <rect class="card" x="20" y="20" width="760" height="440" rx="8"/>
+  <text class="h-en" x="40" y="60">Weight Breakdown</text>
+  <text class="h-jp" x="40" y="85">パーツ構成と重量配分 — 推定総重量 55〜61g</text>
+  <line class="divider" x1="40" y1="100" x2="760" y2="100"/>
+
+  <!-- Bar chart -->
+  <!-- Servo x2: 26g -->
+  <text class="bar-label" x="50" y="137">サー�ボ PTK 7465MG ×2</text>
+  <rect class="bar-servo" x="220" y="120" width="286" height="24" rx="3"/>
+  <text class="pct" x="510" y="137">26g (44%)</text>
+
+  <!-- Battery: 13g -->
+  <text class="bar-label" x="50" y="177">バッテリ 2S 180mAh LiPo</text>
+  <rect class="bar-batt" x="220" y="160" width="143" height="24" rx="3"/>
+  <text class="pct" x="367" y="177">13g (22%)</text>
+
+  <!-- Frame: 5-8g -->
+  <text class="bar-label" x="50" y="217">カーボンフレーム + 翅</text>
+  <rect class="bar-frame" x="220" y="200" width="72" height="24" rx="3"/>
+  <text class="pct" x="296" y="217">5-8g (11%)</text>
+
+  <!-- Pro Micro: 5g -->
+  <text class="bar-label" x="50" y="257">Arduino Pro Micro</text>
+  <rect class="bar-arduino" x="220" y="240" width="55" height="24" rx="3"/>
+  <text class="pct" x="279" y="257">5g (8%)</text>
+
+  <!-- RX: 1.2g -->
+  <text class="bar-label" x="50" y="297">FS-A8S 受信機</text>
+  <rect class="bar-rx" x="220" y="280" width="14" height="24" rx="3"/>
+  <text class="bar-val" x="240" y="297">1.2g (2%)</text>
+
+  <!-- Wiring: 5-8g -->
+  <text class="bar-label" x="50" y="337">配線 + その他</text>
+  <rect class="bar-wire" x="220" y="320" width="72" height="24" rx="3"/>
+  <text class="pct" x="296" y="337">5-8g (11%)</text>
+
+  <!-- Total bar -->
+  <line x1="50" y1="375" x2="600" y2="375" stroke="#d4652a" stroke-width="1" stroke-dasharray="4,3"/>
+  <text class="bar-val" x="50" y="400" font-size="16">総重量</text>
+  <rect x="220" y="385" width="605" height="28" rx="3" fill="none" stroke="#d4652a" stroke-width="2"/>
+  <text class="bar-val" x="260" y="404" font-size="16">55〜61g</text>
+
+  <!-- Scale -->
+  <line x1="220" y1="420" x2="610" y2="420" stroke="#d0d0d0" stroke-width="1"/>
+  <text class="caption" x="220" y="435">0g</text>
+  <text class="caption" x="380" y="435">20g</text>
+  <text class="caption" x="540" y="435">40g</text>
+  <text class="caption" x="610" y="435">60g</text>
+  <line x1="220" y1="416" x2="220" y2="420" stroke="#d0d0d0" stroke-width="1"/>
+  <line x1="380" y1="416" x2="380" y2="420" stroke="#d0d0d0" stroke-width="1"/>
+  <line x1="540" y1="416" x2="540" y2="420" stroke="#d0d0d0" stroke-width="1"/>
+  <line x1="610" y1="416" x2="610" y2="420" stroke="#d0d0d0" stroke-width="1"/>
+</svg>

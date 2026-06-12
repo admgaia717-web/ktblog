@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第5回：Telegram接続と運用 — AIエージェントをポケットに入れる"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第5回-telegram接続と運用-aiエージェントをポケットに入れる
+slug: "hermes-agent完全ガイド-第5回-telegram接続と運用-aiエージェントをポケットに入れる"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nbcd50491718d.png"
+tags: ["AIエージェント", "Apple", "プログラミング", "哲学", "セキュリティ", "デザイン"]
 ---
 
 # Hermes Agent完全ガイド 第5回：Telegram接続と運用 — AIエージェントをポケットに入れる
@@ -206,3 +207,4 @@ Telegramには1メッセージ4096文字の制限がある。Hermes Agentは長�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbcd50491718d*
+

@@ -1,9 +1,10 @@
 ---
 title: "piの/modelが不便すぎたので艦隊ダッシュボードを作った——CTX/TPS可視化＋セッション即時切替"
 date: 2026-06-04
-slug: piの-modelが不便すぎたので艦隊ダッシュボードを作った-ctx-tps可視化-セッション即時切替
+slug: "piの-modelが不便すぎたので艦隊ダッシュボードを作った-ctx-tps可視化-セッション即時切替"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nbfa197efa4fd.jpg"
+tags: ["ローカルLLM", "デザイン", "プログラミング", "Apple"]
 ---
 
 # piの/modelが不便すぎたので艦隊ダッシュボードを作った——CTX/TPS可視化＋セッション即時切替
@@ -95,3 +96,4 @@ CTXとTPSを横長バーで視覚化。無検閲モデルには🔞マーク
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nbfa197efa4fd*
+

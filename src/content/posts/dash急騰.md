@@ -1,9 +1,10 @@
 ---
 title: "Dash急騰"
 date: 2026-06-04
-slug: dash急騰
+slug: "dash急騰"
 category: "Dash"
 eyecatch: "/assets/eyecatch/n9d281b78399c.png"
+tags: ["Monero", "セキュリティ", "Bitcoin", "暗号通貨", "哲学", "投資", "サイファーパンク"]
 ---
 
 # Dash急騰
@@ -94,3 +95,4 @@ Dashの急騰を見て焦る必要はありません。それは「市場の歪�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n9d281b78399c*
+

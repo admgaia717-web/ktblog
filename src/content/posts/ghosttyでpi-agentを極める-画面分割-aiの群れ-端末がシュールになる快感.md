@@ -1,9 +1,10 @@
 ---
 title: "GhosttyでPi Agentを極める——画面分割、AIの群れ、端末がシュールになる快感"
 date: 2026-06-04
-slug: ghosttyでpi-agentを極める-画面分割-aiの群れ-端末がシュールになる快感
+slug: "ghosttyでpi-agentを極める-画面分割-aiの群れ-端末がシュールになる快感"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n61bc26d0e4b9.png"
+tags: ["AIエージェント", "Apple", "プログラミング", "ロボット", "執筆"]
 ---
 
 # GhosttyでPi Agentを極める——画面分割、AIの群れ、端末がシュールになる快感
@@ -151,3 +152,4 @@ Pi Agentの真価は並行稼働にある。並行稼働の真価はターミナ
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n61bc26d0e4b9*
+

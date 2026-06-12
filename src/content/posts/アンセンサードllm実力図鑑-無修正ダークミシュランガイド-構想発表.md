@@ -1,9 +1,10 @@
 ---
 title: "アンセンサードLLM実力図鑑 〜「無修正ダークミシュランガイド」構想発表〜"
 date: 2026-06-04
-slug: アンセンサードllm実力図鑑-無修正ダークミシュランガイド-構想発表
+slug: "アンセンサードllm実力図鑑-無修正ダークミシュランガイド-構想発表"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n96cd3297c28b.png"
+tags: ["LLM", "映像", "ローカルLLM", "生成AI", "Apple", "小説", "哲学"]
 ---
 
 # アンセンサードLLM実力図鑑 〜「無修正ダークミシュランガイド」構想発表〜
@@ -68,3 +69,4 @@ eyecatch: "/assets/eyecatch/n96cd3297c28b.png"
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n96cd3297c28b*
+

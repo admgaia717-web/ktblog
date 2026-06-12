@@ -1,9 +1,10 @@
 ---
 title: "Civitai創世記 第二話：混沌の時代 — モデル共有カオスと沈黙のフラストレーション"
 date: 2026-06-04
-slug: civitai創世記-第二話-混沌の時代-モデル共有カオスと沈黙のフラストレーション
+slug: "civitai創世記-第二話-混沌の時代-モデル共有カオスと沈黙のフラストレーション"
 category: "Civitai"
 eyecatch: "/assets/eyecatch/nacd0ebe0ea3b.png"
+tags: ["生成AI", "サイファーパンク", "プログラミング", "LLM", "ローカルLLM", "アニメ"]
 ---
 
 # Civitai創世記 第二話：混沌の時代 — モデル共有カオスと沈黙のフラストレーション
@@ -173,3 +174,4 @@ Civitaiの検索バーはスペース区切りでAND検索になる。「pony re
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nacd0ebe0ea3b*
+

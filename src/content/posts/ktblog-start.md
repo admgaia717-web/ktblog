@@ -1,7 +1,7 @@
 ---
 title: "KTBLOG 起動"
 date: 2026-06-03
-slug: ktblog-start
+slug: "ktblog-start"
 ---
 
 ## KTBLOG 起動

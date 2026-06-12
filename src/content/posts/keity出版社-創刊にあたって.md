@@ -1,9 +1,10 @@
 ---
 title: "KeiTy出版社 創刊にあたって"
 date: 2026-06-04
-slug: keity出版社-創刊にあたって
+slug: "keity出版社-創刊にあたって"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n586c1163a846.png"
+tags: ["Apple", "ゲーム", "哲学", "奈良", "AGI", "執筆"]
 ---
 
 # KeiTy出版社 創刊にあたって
@@ -90,3 +91,4 @@ Agentは俺を自律的に研究し、「KTの傾向マップ」を構築する�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n586c1163a846*
+

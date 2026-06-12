@@ -1,9 +1,10 @@
 ---
 title: "Hermes Agent完全ガイド 第8回：落ちる問題と対策 — 24時間稼働の泥臭い現実"
 date: 2026-06-04
-slug: hermes-agent完全ガイド-第8回-落ちる問題と対策-24時間稼働の泥臭い現実
+slug: "hermes-agent完全ガイド-第8回-落ちる問題と対策-24時間稼働の泥臭い現実"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n34c499e6fcce.png"
+tags: ["AIエージェント", "Apple", "プログラミング", "セキュリティ", "健康"]
 ---
 
 # Hermes Agent完全ガイド 第8回：落ちる問題と対策 — 24時間稼働の泥臭い現実
@@ -156,3 +157,4 @@ com.fleet.ip-updater.plist — IPアドレスの自動更新
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n34c499e6fcce*
+

@@ -1,9 +1,10 @@
 ---
 title: "AIコードレビュー、3人寄れば文殊の知恵 — 複数AIでレビュー品質を高める方法"
 date: 2026-06-04
-slug: aiコードレビュー-3人寄れば文殊の知恵-複数aiでレビュー品質を高める方法
+slug: "aiコードレビュー-3人寄れば文殊の知恵-複数aiでレビュー品質を高める方法"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nff3e8e547941.png"
+tags: ["Claude", "OpenAI", "プログラミング", "健康"]
 ---
 
 # AIコードレビュー、3人寄れば文殊の知恵 — 複数AIでレビュー品質を高める方法
@@ -84,3 +85,4 @@ AIにコードレビューを任せるなら、3人以上で。絶対に1人に�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nff3e8e547941*
+

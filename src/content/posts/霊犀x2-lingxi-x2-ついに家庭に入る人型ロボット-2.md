@@ -1,9 +1,10 @@
 ---
 title: "霊犀X2（Lingxi X2）— ついに家庭に入る人型ロボット"
 date: 2026-06-04
-slug: 霊犀x2-lingxi-x2-ついに家庭に入る人型ロボット-2
+slug: "霊犀x2-lingxi-x2-ついに家庭に入る人型ロボット-2"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n275b6c528ec9.jpg"
+tags: ["ロボット", "映像"]
 ---
 
 # 霊犀X2（Lingxi X2）— ついに家庭に入る人型ロボット
@@ -36,3 +37,4 @@ KT's LAB — テクノロジーとものづくりの最前線
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n275b6c528ec9*
+

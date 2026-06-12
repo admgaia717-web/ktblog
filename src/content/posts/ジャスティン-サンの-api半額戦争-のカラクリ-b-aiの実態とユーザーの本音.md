@@ -1,9 +1,10 @@
 ---
 title: "ジャスティン・サンの「API半額戦争」のカラクリ——B.AIの実態とユーザーの本音"
 date: 2026-06-04
-slug: ジャスティン-サンの-api半額戦争-のカラクリ-b-aiの実態とユーザーの本音
+slug: "ジャスティン-サンの-api半額戦争-のカラクリ-b-aiの実態とユーザーの本音"
 category: "note.com"
 eyecatch: "/assets/eyecatch/nd4c2604909c3.png"
+tags: ["AIエージェント", "Claude", "投資", "セキュリティ", "暗号通貨", "ロボット", "Apple", "ゲーム"]
 ---
 
 # ジャスティン・サンの「API半額戦争」のカラクリ——B.AIの実態とユーザーの本音
@@ -202,3 +203,4 @@ API代行の収益より、BAIClawの取引手数料とTRONエコシステムの
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/nd4c2604909c3*
+

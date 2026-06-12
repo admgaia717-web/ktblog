@@ -1,9 +1,10 @@
 ---
 title: "おっさんがAIエージェント「pi」でエロ動画をダウンロードした夜——全部タダのAI革命"
 date: 2026-06-04
-slug: おっさんがaiエージェント-pi-でエロ動画をダウンロードした夜-全部タダのai革命
+slug: "おっさんがaiエージェント-pi-でエロ動画をダウンロードした夜-全部タダのai革命"
 category: "AI/無料/テクノロジー/おっさん/ターミナル/Pi/OpenRouter"
 eyecatch: "/assets/eyecatch/n275aed7bde7d.jpg"
+tags: ["映像", "プログラミング", "AIエージェント", "LLM", "Apple", "暗号通貨", "OpenAI", "ローカルLLM", "哲学", "生成AI", "小説", "DIY", "奈良"]
 ---
 
 # おっさんがAIエージェント「pi」でエロ動画をダウンロードした夜——全部タダのAI革命
@@ -98,3 +99,4 @@ pi
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n275aed7bde7d*
+

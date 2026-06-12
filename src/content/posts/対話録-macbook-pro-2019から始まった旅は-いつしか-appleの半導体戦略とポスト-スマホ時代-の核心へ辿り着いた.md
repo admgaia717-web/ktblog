@@ -1,9 +1,10 @@
 ---
 title: "【対話録】MacBook Pro 2019から始まった旅は、いつしか「Appleの半導体戦略とポスト・スマホ時代」の核心へ辿り着いた。"
 date: 2026-06-04
-slug: 対話録-macbook-pro-2019から始まった旅は-いつしか-appleの半導体戦略とポスト-スマホ時代-の核心へ辿り着いた
+slug: "対話録-macbook-pro-2019から始まった旅は-いつしか-appleの半導体戦略とポスト-スマホ時代-の核心へ辿り着いた"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n568d39b5a727.png"
+tags: ["Apple", "哲学", "投資", "LLM", "AIエージェント", "生成AI", "ローカルLLM", "プログラミング", "セキュリティ", "ゲーム", "執筆"]
 ---
 
 # 【対話録】MacBook Pro 2019から始まった旅は、いつしか「Appleの半導体戦略とポスト・スマホ時代」の核心へ辿り着いた。
@@ -182,3 +183,4 @@ Google先生からの講評
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n568d39b5a727*
+

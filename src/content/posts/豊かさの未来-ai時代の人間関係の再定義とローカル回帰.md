@@ -1,9 +1,10 @@
 ---
 title: "豊かさの未来：AI時代の人間関係の再定義とローカル回帰"
 date: 2026-06-06
-slug: 豊かさの未来-ai時代の人間関係の再定義とローカル回帰
+slug: "豊かさの未来-ai時代の人間関係の再定義とローカル回帰"
 category: "AI"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
+tags: ["投資", "プログラミング", "執筆", "奈良", "生成AI", "ロボット", "映像", "ローカルLLM", "デザイン", "健康"]
 ---
 
 > 出典: 対話ログ / 2026-06-06
@@ -89,3 +90,5 @@ eyecatch: "/assets/eyecatch/hero-local-ai.png"
 - Robertson, R. (1995). "Glocalization: Time-Space and Homogeneity-Heterogeneity." In M. Featherstone et al. (Eds.), Global Modernities. Sage.
 - Wellman, B. & Hampton, K. (1999). "Living Networked On and Offline." Contemporary Sociology, 28(6), 648-654.
 - Makimoto, T. & Manners, D. (1997). Digital Nomad. Wiley.
+
+

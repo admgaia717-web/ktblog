@@ -1,9 +1,10 @@
 ---
 title: "【完全版】Hermes Agent スラッシュコマンド パーフェクトマニュアル"
 date: 2026-06-04
-slug: 完全版-hermes-agent-スラッシュコマンド-パーフェクトマニュアル
+slug: "完全版-hermes-agent-スラッシュコマンド-パーフェクトマニュアル"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n53e0a0b57e3b.png"
+tags: ["AIエージェント", "プログラミング", "ロボット"]
 ---
 
 # 【完全版】Hermes Agent スラッシュコマンド パーフェクトマニュアル
@@ -110,3 +111,4 @@ Hermes AgentのスラッシュコマンドをCLI専用・Gateway共通含めて�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n53e0a0b57e3b*
+

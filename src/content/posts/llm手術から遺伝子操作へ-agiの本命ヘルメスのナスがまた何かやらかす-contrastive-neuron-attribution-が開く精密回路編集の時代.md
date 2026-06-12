@@ -1,9 +1,10 @@
 ---
 title: "LLM手術から遺伝子操作へ — AGIの本命ヘルメスのナスがまた何かやらかす？ Contrastive Neuron Attribution が開く精密回路編集の時代"
 date: 2026-06-04
-slug: llm手術から遺伝子操作へ-agiの本命ヘルメスのナスがまた何かやらかす-contrastive-neuron-attribution-が開く精密回路編集の時代
+slug: "llm手術から遺伝子操作へ-agiの本命ヘルメスのナスがまた何かやらかす-contrastive-neuron-attribution-が開く精密回路編集の時代"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n5e9c7af6da66.png"
+tags: ["LLM", "ロボット", "健康", "AIエージェント", "プログラミング", "AGI", "執筆"]
 ---
 
 # LLM手術から遺伝子操作へ — AGIの本命ヘルメスのナスがまた何かやらかす？ Contrastive Neuron Attribution が開く精密回路編集の時代
@@ -183,3 +184,4 @@ Nous Researchがオープンにしたこの技術を、我々は どう使うか
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n5e9c7af6da66*
+

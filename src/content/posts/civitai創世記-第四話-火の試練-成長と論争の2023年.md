@@ -1,9 +1,10 @@
 ---
 title: "Civitai創世記 第四話：火の試練 — 成長と論争の2023年"
 date: 2026-06-04
-slug: civitai創世記-第四話-火の試練-成長と論争の2023年
+slug: "civitai創世記-第四話-火の試練-成長と論争の2023年"
 category: "自由/コミュニティ/モデル/プラットフォーム/Civitai/lazy"
 eyecatch: "/assets/eyecatch/n0084b0e7c8ce.png"
+tags: ["生成AI", "サイファーパンク", "アニメ", "投資", "暗号通貨", "小説", "デザイン", "哲学"]
 ---
 
 # Civitai創世記 第四話：火の試練 — 成長と論争の2023年
@@ -158,3 +159,4 @@ Civitaiからモデルをダウンロードするとき、**ライセンス表�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n0084b0e7c8ce*
+

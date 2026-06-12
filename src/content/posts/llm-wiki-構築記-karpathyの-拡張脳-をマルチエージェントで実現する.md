@@ -1,9 +1,10 @@
 ---
 title: "LLM Wiki 構築記 — Karpathyの「拡張脳」をマルチエージェントで実現する"
 date: 2026-06-04
-slug: llm-wiki-構築記-karpathyの-拡張脳-をマルチエージェントで実現する
+slug: "llm-wiki-構築記-karpathyの-拡張脳-をマルチエージェントで実現する"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n41ce3325a5b5.png"
+tags: ["LLM", "プログラミング", "AIエージェント", "哲学", "ロボット"]
 ---
 
 # LLM Wiki 構築記 — Karpathyの「拡張脳」をマルチエージェントで実現する
@@ -143,3 +144,4 @@ Karpathyのエネルギーが結晶になったような「LLM Wiki」という�
 
 ---
 *この記事は note.com から KTBLOG に移行されました。元記事: https://note.com/famous_prawn2009/n/n41ce3325a5b5*
+
