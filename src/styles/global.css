@@ -145,6 +145,43 @@ body {
   line-height: 1.6;
 }
 
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.prose thead {
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.prose th {
+  text-align: left;
+  padding: 0.75rem 0.75rem;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prose td {
+  padding: 0.7rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.prose tbody tr:hover {
+  background: var(--color-bg-secondary);
+}
+
+.prose tbody tr:last-child td {
+  border-bottom: none;
+}
+
 .prose hr {
   border: none;
   border-top: 1px solid var(--color-border);
