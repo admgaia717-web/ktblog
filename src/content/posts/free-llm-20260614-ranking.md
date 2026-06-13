@@ -10,7 +10,7 @@ tags: ["LLM", "格安AI", "コスパ", "OpenRouter", "日次更新"]
 
 # 💰 リサーチインスティチュート — 格安LLMランキング
 
-> **2026-06-14 04:51 JST** · 毎日02・08・12・17・22時更新  
+> **2026-06-14 08:00 JST** · 毎日02・08・12・17・22時更新  
 > 最安モデルランキングとコスト比較  
 > データ元: [OpenRouter](https://openrouter.ai/models?order=newest)
 
@@ -35,7 +35,7 @@ tags: ["LLM", "格安AI", "コスパ", "OpenRouter", "日次更新"]
 ---
 
 ## 📊 無料モデル（$0）
-**全26モデル** — [→ 一覧](https://openrouter.ai/models?order=newest&showFree=true)
+**全27モデル** — [→ 一覧](https://openrouter.ai/models?order=newest&showFree=true)
 
 人気の無料モデル:
 - [Nemotron 3 Ultra (550B, 1M ctx)](https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b:free)
