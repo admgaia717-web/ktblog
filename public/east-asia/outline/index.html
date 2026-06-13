@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>東アジアの歴史観：家族としての日本・中国・韓国・北朝鮮</title>
+<meta name="description" content="在日韓国人の視点から、日本・中国・韓国・北朝鮮四カ国を「家族」として捉え直す歴史プロジェクト。">
+<style>
+  :root {
+    --bg: #fdfcf8;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #b24a4a;
+    --accent2: #3a6b8f;
+    --border: #e5e0d8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 2;
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  /* ── ヘッダー ── */
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .site-header a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .site-header a:hover { color: var(--accent); }
+
+  /* ── ヒーロー画像 ── */
+  .hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    min-height: 260px;
+    background:
+      linear-gradient(135deg, rgba(60,40,20,0.55) 0%, rgba(30,50,80,0.65) 100%),
+      url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1400&q=80');
+    background-size: cover;
+    background-position: center 40%;
+    display: flex;
+    align-items: flex-end;
+    padding: 32px 36px;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
+  }
+  .hero-category {
+    position: relative;
+    z-index: 1;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--accent);
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+
+  /* ── 本文 ── */
+  article {
+    padding: 44px 36px 64px;
+  }
+  .meta {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 2.4em;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .meta span { display: flex; align-items: center; gap: 4px; }
+  p {
+    margin: 0 0 1.8em 0;
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+
+  /* ── インライン画像 ── */
+  figure {
+    margin: 2em 0;
+    padding: 0;
+  }
+  figure img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  }
+  figcaption {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 8px;
+    text-align: right;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── 区切り ── */
+  hr.section-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.6em 0;
+    position: relative;
+  }
+  hr.section-divider::after {
+    content: "◆";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg);
+    padding: 0 12px;
+    color: var(--accent);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+  }
+
+  /* ── セクション見出し ── */
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 2.4em 0 0.8em;
+    color: var(--text);
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+    line-height: 1.5;
+  }
+
+  /* ── リンク ── */
+  a { color: var(--accent2); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+  a:hover { border-bottom-color: var(--accent2); }
+
+  /* ── 脚注 ── */
+  .footnote {
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-top: 1px dashed var(--border);
+    margin-top: 3em;
+    padding-top: 1em;
+  }
+  .footnote a { color: var(--muted); }
+
+  /* ── フッター ── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 36px;
+    font-size: 0.75rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 600px) {
+    article { padding: 28px 20px 48px; }
+    .hero { padding: 22px 20px; aspect-ratio: 16 / 9; }
+  }
+</style>
+</head>
+<body>
+
+<!-- サイトヘッダー -->
+<div class="site-header">
+  <a href="https://ktblog.pages.dev/">KTblog</a>
+  <span>Thoughts · Records · Archive</span>
+</div>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div>
+    <span class="hero-category">東アジアの歴史観</span>
+    <h1>家族としての日本・中国・韓国・北朝鮮</h1>
+  </div>
+</div>
+
+<article>
+
+<div class="meta">
+  <span>📅 2026-06-10</span>
+  <span>✍️ KT</span>
+  <span>🏷️ <a href="https://ktblog.pages.dev/categories">歴史観・在日・東アジア</a></span>
+</div>
+
+<!-- ── 序 ── -->
+<p>在日韓国人として日本で育った僕にとって、東アジアの近現代史は、遠いどこかの教科書の話ではなかった。差別や偏見の中で暮らしていると、「日本人」という同一性の裏側に、日本人自身が忘れさせられている民族・階級・ジェンダーの記憶が透けて見える。同時に、幼い頃から中国の歴史に深く惹かれ、朝鮮半島の物語を追うなかで、日本・中国・韓国・北朝鮮の四カ国は、国際関係の道具語ではうまく説明できない「家族」に似た力学を持っていると考えるようになった。</p>
+
+<!-- 区切り画像 -->
+<figure>
+  <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?w=1200&q=80"
+       alt="東アジアの街並み — 重なり合う歴史の層"
+       loading="lazy">
+  <figcaption>四カ国の記憶が重なり合う風景 — 国境を越える「血のつながり」の比喩</figcaption>
+</figure>
+
+<p>国と国は原則として対等な主権者のはずだが、東アジアには植民地支配、侵略、分断という過去が横たわる。そのため、国家同士の政治的な修辞を解釈するだけでは見えない「血のつながり」が、私たちの記憶、言語、食習慣、道徳にまで巣食っている。この「血のつながり」を、あえて感傷的な家族論に矮小化してしまうのは易しい。しかしそうではなく、四カ国の歴史経験を並列に読み、共通の構造を見出したい。</p>
+
+<!-- ── 第1部 ── -->
+<hr class="section-divider">
+
+<h2>1. 国家が語る歴史、個人が記す記憶</h2>
+
+<p>本プロジェクトは、まず「東アジアの歴史観」という用語を検討することから始まる。日本、韓国、中国、そして北朝鮮の各「民族」や「国民」が自国の過去をどう語るのか、その時に決定的な役割を果たした国家プロパガンダ、教科書検定、制度化された記憶を観察する。それらを並べた上で、日本の「<a href="https://ja.wikipedia.org/wiki/%E9%9D%96%E5%9B%BD%E7%A5%87%E7%A4%BC%E9%A4%A8" target="_blank" rel="noopener">靖国論議</a>」と韓国の「<a href="https://ja.wikipedia.org/wiki/%E5%8F%8D%E6%97%A5%E6%9C%AC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AA%E3%82%BA%E3%83%A0" target="_blank" rel="noopener">反日ナショナリズム</a>」、中国の「<a href="https://ja.wikipedia.org/wiki/%E7%88%B1%E5%9B%BD%E4%B8%BB%E7%BE%A9%E6%95%99%E8%82%B2" target="_blank" rel="noopener">愛国主義教育</a>」、北朝鮮の「<a href="https://ja.wikipedia.org/wiki/%E4%B8%BB%E4%BD%93%E5%8F%B2%E8%A6%B3" target="_blank" rel="noopener">主体史観</a>」が、互いに鏡像のように響き合う構造を明らかにする。それぞれの国で語られる「被害者意識」と「英雄叙事詩」は、内外の敵を設定することで国民を統合する機能を果たしている。だが、その機能の背後にある共通のメカニズムを比較することで、はじめて物語の外側に立つ視点が得られる。</p>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1545569312-33f66te79148?w=1200&q=80"
+       alt="書棚に並ぶ歴史書"
+       loading="lazy"
+       onerror="this.style.display='none';this.parentElement.style.display='none'">
+  <figcaption>国家が選んだ「記憶」と、人々が残した「記録」の狭間で</figcaption>
+</figure>
+
+<p>教科書検定のプロセス、検閲の基準、 Memorial complex の政治利用——これらはどれも、国家が「何を記憶させ、何を忘れさせるか」を決定する装置だ。その装置が機能する背景には、常に経済構造と国際関係がある。戦後の東アジアは、冷戦体制という大きな外枠の中で、四カ国がそれぞれ異なる「正しさ」を採用せざるを得なかった経緯がある。</p>
+
+<!-- ── 第2部 ── -->
+<hr class="section-divider">
+
+<h2>2. 在日という分散型記憶</h2>
+
+<p>次に、在日韓国人という視点を再定位する。在日の経験は、差別と同化圧力の中で「二重の歴史」を内面化する。日本社会では朝鮮史を抹消されかねないが、韓国でも分断の経験から北朝鮮を語ることが難しい。その中で、在日の声は国家ナラティブの外側に位置するからこそ、分散型記憶としての価値を持つ。</p>
+
+<p>「分散型記憶」——これはサイバーパンク的な発想だが、歴史の文脈で言い換えれば「国家が単一のサーバーで管理する記憶に対抗して、无数の個人が独自に保持する記録のネットワーク」とも言える。在日の口承、家族のアルバム、地域の祭り、同士団の新聞——これらはどれも、国家 Geschichte の補完であり、時にそれに対する異議申し立てである。</p>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=1200&q=80"
+       alt="手元に残る古い写真と記録"
+       loading="lazy"
+       onerror="this.style.display='none';this.parentElement.style.display='none'">
+  <figcaption>家族が残した記録は、国家の物語を補完し、時に修正する</figcaption>
+</figure>
+
+<!-- ── 第3部 ── -->
+<hr class="section-divider">
+
+<h2>3. 「家族」というメタファーを検証する</h2>
+
+<p>そして、「家族・兄弟」メタファーを慎重に検証する。親族は時に未解決の確執を抱え、和解もあれば再び争うこともある。だが、敵対する西側諸国との関係とは異なり、東アジアの四カ国の間では文化大革命、植民地化、戦争と平和条約、経済相互依存が重層的に絡まり合う。このメタファーは、国境に囚われない連帯の可能性を示唆する。</p>
+
+<p>ここで注意したいのは、「家族」という言葉が内包する暴力性だ。家族とは、そもそもが権力関係と再生産のユニットである。日本の国家主義が「家族国家」という修辞を用いて戦争を正当化した歴史を忘れてはならない。ゆえに、このプロジェクトでの「家族」は、保守的な家族主義への回帰ではなく、あくまで「対等ではないが切っても切れない関係にある者同士」という意味での比喩にとどめる。国家が「家族」を悪用した過去があるからこそ、民衆の言葉で「家族」をとり戻す作業が必要になる。</p>
+
+<!-- ── 第4部 ── -->
+<hr class="section-divider">
+
+<h2>4. 記録と歴史観の未来</h2>
+
+<p>最後に、「国家の物語」と「民衆の記録」の対話を跡付ける。趣味や学問として歴史を愛する個人の目と、検閲され制度化された歴史教育の目。この二つが交差する地点に、東アジアの歴史観の未来がある。そうして紡がれる物語は、国が所有するのではなく、地域の人々が互いに語りかける「会話」としての歴史観となることを願う。</p>
+
+<p>四カ国の民衆が、それぞれの視点から同じ過去に語りかけるとき、はじめて「東アジアの歴史観」という複数の声が成立する。それは誰かの所有物ではなく、誰もが参加できる「場」である。このプロジェクトは、その場を一方 Langer で作る試みだ。</p>
+
+<!-- 区切り画像 -->
+<figure>
+  <img src="https://images.unsplash.com/photo-1506318137071-a8bcbf6e943d?w=1200&q=80"
+       alt="水平線の彼方に広がる東アジアの風景"
+       loading="lazy"
+       onerror="this.style.display='none';this.parentElement.style.display='none'">
+  <figcaption>国境を越えて続く、人々の語らいの地平</figcaption>
+</figure>
+
+<p>プロジェクトは、この流れに沿って、概念ノート、比較ノート、執筆指針、公開プランを順に積み上げる。まずはここから。</p>
+
+</article>
+
+<!-- 脚注・関連リンク -->
+<div class="footnote">
+  <strong>📎 関連リンク</strong><br>
+  • <a href="https://ktblog.pages.dev/">KTblog — 思想と記録のアーカイブ</a><br>
+  • 本プロジェクトの詳細：<a href="https://ktblog.pages.dev/post/東アジアの歴史観_プロジェクト概要">プロジェクト概要（近日公開）</a><br>
+  • <a href="https://ja.wikipedia.org/wiki/%E6%9D%B1%E3%82%A2%E3%82%B8%E3%82%A2%E5%8E%86%E5%8F%B2" target="_blank" rel="noopener">東アジア史（Wikipedia）</a><br>
+  • <a href="https://ja.wikipedia.org/wiki/%E5%9C%A8%E6%97%A5%E9%9F%93%E5%9B%BD%E4%BA%BA" target="_blank" rel="noopener">在日韓国人（Wikipedia）</a><br>
+  <br>
+  <em>本記事は llm-wiki（Obsidian + Karpathy-style ナレッジベース）上で編集中。</em>
+</div>
+
+<footer>
+  <span>&copy; 2026 <a href="https://ktblog.pages.dev/">KTblog</a></span>
+  <span>Thoughts · Records · Archive</span>
+</footer>
+
+</body>
+</html>

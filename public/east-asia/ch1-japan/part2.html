@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>家族としての日本史・第2章——開国・明治・大正：「長男」が西洋の養子になって暴走するまで | KTblog</title>
+<meta name="description" content="日本史第2章：江戸後期から大正デモクラシーまで。長男（日本）が父（中国）を見捨て、西洋という新しい父の下で近代化を遂げ、兄弟（朝鮮・中国）を踏み台にする過程を、在日の視点で描く。">
+<style>
+  :root {
+    --bg: #fdfcf8;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #b24a4a;
+    --accent2: #3a6b8f;
+    --border: #e5e0d8;
+    --gold: #c8a95e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 2;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0;
+    color: var(--text);
+    background: var(--bg);
+  }
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .site-header a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  .site-header a:hover { color: var(--accent); }
+  .hero {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    min-height: 280px;
+    background:
+      linear-gradient(135deg, rgba(60,40,20,0.6) 0%, rgba(30,50,80,0.7) 100%),
+      url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1600&q=80');
+    background-size: cover;
+    background-position: center 35%;
+    display: flex;
+    align-items: flex-end;
+    padding: 36px 40px;
+  }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 55%); }
+  .hero-category { position: relative; z-index: 1; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 4px 14px; border-radius: 2px; margin-bottom: 12px; display: inline-block; }
+  .hero h1 { position: relative; z-index: 1; color: #fff; font-size: clamp(1.5rem, 3.8vw, 2.4rem); font-weight: 700; line-height: 1.3; margin: 0; text-shadow: 0 2px 16px rgba(0,0,0,0.55); }
+  article { padding: 48px 40px 72px; }
+  .meta { font-size: 0.78rem; color: var(--muted); margin-bottom: 2.6em; display: flex; gap: 20px; flex-wrap: wrap; }
+  .meta span { display: flex; align-items: center; gap: 6px; }
+  p { margin: 0 0 1.9em 0; font-size: 1.05rem; text-align: justify; }
+  figure { margin: 2.2em 0; padding: 0; }
+  figure img { width: 100%; border-radius: 6px; display: block; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+  figcaption { font-size: 0.75rem; color: var(--muted); margin-top: 10px; text-align: right; letter-spacing: 0.04em; }
+  hr.section-divider { border: none; border-top: 1px solid var(--border); margin: 2.8em 0; position: relative; }
+  hr.section-divider::after { content: "◆"; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--bg); padding: 0 14px; color: var(--accent); font-size: 0.7rem; letter-spacing: 0.3em; }
+  h2 { font-size: 1.2rem; font-weight: 700; margin: 2.6em 0 1em; color: var(--text); border-left: 4px solid var(--accent); padding-left: 14px; line-height: 1.5; }
+  h3 { font-size: 1.05rem; font-weight: 600; margin: 2em 0 0.7em; color: var(--text); padding-left: 8px; border-left: 2px solid var(--border); }
+  a { color: var(--accent2); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+  a:hover { border-bottom-color: var(--accent2); }
+  .sidebar-box {
+    background: #faf8f5;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    padding: 1.2em 1.4em;
+    margin: 2em 0;
+    font-size: 0.92rem;
+    line-height: 1.8;
+  }
+  .sidebar-box strong { color: var(--accent); }
+  .footnote { font-size: 0.78rem; color: var(--muted); border-top: 1px dashed var(--border); margin-top: 3.5em; padding-top: 1.2em; }
+  .footnote a { color: var(--muted); }
+  footer { border-top: 1px solid var(--border); padding: 28px 40px; font-size: 0.75rem; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  footer a { color: var(--muted); }
+  .series-nav { display: flex; gap: 16px; margin: 2.5em 0; padding: 16px; background: #faf8f5; border: 1px solid var(--border); border-radius: 6px; font-size: 0.88rem; }
+  .series-nav a { color: var(--accent); font-weight: 600; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .series-nav .current { color: var(--muted); border-bottom-color: var(--muted); }
+  .cross-link { display: inline-block; margin: 0.5em 0; padding: 0.5em 1em; background: #f0f5f0; border: 1px solid var(--border); border-radius: 4px; font-size: 0.85rem; color: var(--accent2); }
+  .cross-link::before { content: "🔗 "; }
+  @media (max-width: 640px) { article { padding: 32px 22px 56px; } .hero { padding: 26px 22px; aspect-ratio: 16 / 9; } h2 { font-size: 1.1rem; } }
+</style>
+</head>
+<body>
+
+<div class="site-header">
+  <a href="https://ktblog.pages.dev/">KTblog</a>
+  <span>Thoughts · Records · Archive</span>
+</div>
+
+<div class="hero">
+  <div>
+    <span class="hero-category">家族としての東アジア史・第1回 第2章</span>
+    <h1>家族としての日本史・第2章——開国・明治・大正：「長男」が西洋の養子になって暴走するまで</h1>
+  </div>
+</div>
+
+<article>
+
+<div class="meta">
+  <span>📅 2026-06-11</span>
+  <span>✍️ KT</span>
+  <span>🏷️ <a href="https://ktblog.pages.dev/categories">歴史観・在日・東アジア・日本・明治・大正</a></span>
+  <span>📖 約9,500字 / 読了23分</span>
+</div>
+
+<div class="series-nav">
+  <strong>シリーズ：</strong>
+  <a href="east-asia-history-1-japan.html">第1章：古代〜江戸</a>
+  <span class="current">← 第2章：開国・明治・大正（今ここ）</span>
+  <a href="east-asia-history-1-japan-ch3.html">第3章：昭和・戦後・平成・令和</a>
+  <a href="east-asia-history-2-china.html">中国篇を読む</a>
+  <a href="east-asia-history-3-korea.html">朝鮮半島篇を読む</a>
+</div>
+
+<!-- ── 序章 ── -->
+<p>第1章で、日本という「長男」が父（中国）の文明を模倣し、兄弟（朝鮮）から技術・文化を受け取りながら、「自分の力で作った」と言い張ってきた過程を描いた。遣唐使で唐の制度を丸ごと輸入し、平安時代にはかな文字で自分の声を手に入れ、鎌倉・室町・江戸と、島国という地理的幸運の中で独自の武家政権を築いてきた。</p>
+
+<p>だが、19世紀半ば、黒船が浦賀沖に現れた瞬間、長男の「平和な独り占め」は終わりを告げる。父（清）がアヘン戦争でイギリスに敗れ、太平天国の乱で内部から崩れゆくのを目の当たりにし、「父が倒れるなら、長男が家を守らねばならない」——この焦燥感が、明治維新という「劇薬」を飲ませることになる。</p>
+
+<p>この第2章では、幕末の臨界点から明治維新、日清・日露戦争、大正デモクラシーまで——長男が「西洋という新しい父」の養子になり、兄弟を「踏み台」にして近代国家を駆け上がる、その光と影を跡付ける。同時に、同じ時代を生きた朝鮮（甲午改革・乙未義兵）と中国（洋務運動・戊戌変法・辛亥革命）が、どう「自強」を試み、どこで躓いたのかを、横断リンクで対比していく。</p>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1400&q=80" alt="幕末の横浜港と黒船" loading="lazy">
+  <figcaption>開港直後の横浜——「西洋の父」が押し開いた扉の向こうに、長男は何を見たか</figcaption>
+</figure>
+
+<hr class="section-divider">
+
+<h2 id="ch2-1-bakumatsu-crisis">第1節　幕末の臨界点——文化・文政から王政復古まで（1800〜1868年）</h2>
+
+<h3 id="ch2-1-bunka-bunsei">文化・文政文化——「平和の代償」としての華やぎ</h3>
+
+<p>19世紀初頭、江戸時代も中期を過ぎ、天下泰平は百年を超えていた。文化年間（1804〜1818年）、文政年間（1818〜1830年）、町人文化が花開き、浮世絵・読本・滑稽本・歌舞伎が大衆を楽しませた。葛飾北斎『富嶽三十六景』、歌川広重『東海道五十三次』、十返舎一九『東海道中膝栗毛』、曲亭馬琴『南総里見八犬伝』——これらは「長男が父の影から離れ、自分の庭で遊んでいた」時代の記録だ。</p>
+
+<p>だが、この華やかさの裏で、財政は火の車だった。幕府の借金（御用金）は膨らみ、農村は年貢・徭役・飢饉で悲鳴を上げ、大塩平八郎の乱（1837年）のように「米をくれ」と立ち上がる百姓・町人が相次いだ。天保の改革（1841〜1843年、水野忠邦）で緊縮を試みたが、商人統制・倹約令・人返し令は現場の反発を招き、失敗に終わった。</p>
+
+<div class="sidebar-box">
+  <strong>💡 家族で言うと：</strong> 長男（幕府）は「家の貯金（藩の蓄え）」を切り崩して遊んでいた。父（清）が西洋に殴られているのを尻目に、「俺たちは平和だ」と浮世絵を描き続けた。だが、貯金は底を突き、屋根裏（農村）では餓死者が出ていた。
+</div>
+
+<h3 id="ch2-1-perry-arrival">ペリー来航——「西洋の父」がドアを蹴破る</h3>
+
+<p>1853年6月3日（嘉永6年）、浦賀沖に米国東インド艦隊司令長官マシュー・ペリー率いる黒船4隻が現れた。蒸気機関で煙を吐き、旋回砲を備えた「異形の船」だ。ペリーはフィルモア大統領の親書を手渡し、「開国・通商・船員保護」を要求した。翌1854年、日米和親条約（神奈川条約）で下田・箱館を開港。1858年、日米修好通商条約（ハリス条約）で長崎・新潟・神戸・横浜・箱館の5港開港、**領事裁判権**（外国人に日本の法律が適用されない）・**関税自主権喪失**（関税率を日本が決められない）を認めさせられた。</p>
+
+<p>このとき清国はすでに、アロー戦争（1856〜60年）で英仏連合軍に北京を占領され、円明園を焼かれ、北京条約で天津開港・公使常駐・賠償金800万銀元を飲まされていた。長男は「父がここまでやられた」ことを知っていた。なのに、自分も同じ「不平等条約」を飲むしかなかった——この屈辱が、倒幕論・尊王攘夷論を一気に加速させる。</p>
+
+<div class="cross-link">🔗 横断リンク：<a href="east-asia-history-2-china.html#ch2-opium-war">中国篇・第2章「アヘン戦争——父は無敵ではない」</a> / <a href="east-asia-history-3-korea.html#ch3-daewongun-opening">朝鮮篇・第3章「大院君の改革と開国」</a></div>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1545569312-33f66te79148?w=1400&q=80" alt="開港場の風景" loading="lazy">
+  <figcaption>横浜開港場——異人館とジンリキシャ、長男が「西洋の服」を着始めた場所</figcaption>
+</figure>
+
+<h3 id="ch2-1-sonno-joi">安政の大獄・坂本龍馬・薩長同盟——「兄弟の裏切り」と「西洋の知恵」</h3>
+
+<p>井伊直弼大老は、朝廷の許可なく条約調印を強行し、反対派（水戸・薩摩・長州・一橋派）を弾圧した（安政の大獄、1858〜59年）。だが、1860年桜田門外の変で井伊が暗殺されると、幕府の権威は地に落ちた。</p>
+
+<p>この混乱の中で、土佐の浪人・坂本龍馬が動いた。1866年、薩摩（西郷隆盛・大久保利通）と長州（木戸孝允・高杉晋作）を仲介し、**薩長同盟**を成立させた。龍馬は長崎でグラバー商会から蒸気船「ユニオン号」を購入し、海援隊を結成。西洋の技術（蒸気船・銃・航海術）を「兄弟（薩長）の仲直り」に使ったのだ。彼は「日本を今一度、せんたくいたす」（『船中八策』）と書き残している——長男が「家の掃除」をするために、西洋の道具を借り、兄弟を説得した瞬間だ。</p>
+
+<div class="sidebar-box">
+  <strong>💡 家族で言うと：</strong> 長男の使用人（龍馬）が、「父（清）のようにならないためには、西洋の兄貴分（イギリス・アメリカ）から武器を買って、兄弟（薩長）を仲直りさせなきゃいけない」と気づいた。その発想そのものが、「脱亂入欧（亜細亞を脱し、欧州に入る）」の先駆けだった。
+</div>
+
+<h3 id="ch2-1-taisei-hokan">王政復古大号令——「天皇という神輿」を担ぐ</h3>
+
+<p>1867年10月（慶応3年）、大政奉還。徳川慶喜が政権を朝廷に返上したが、実態は「幕府主導の新政府構想」だった。これに対し、岩倉具視・大久保利通・西郷隆盛らがクーデターを決行。1868年1月3日、王政復古大号令で「天皇親政」を宣言し、幕府を「朝敵」とした。戊辰戦争（1868〜69年）で旧幕府軍を鎮圧し、箱館戦争（五稜郭）で土方歳三が戦死して終了。長男は「父（徳川将軍家）」を倒し、「新しい父（天皇）」を担ぎ出した——だが、その天皇もまた、西洋の制度（立憲君主制）に組み込まれていくことになる。</p>
+
+<hr class="section-divider">
+
+<h2 id="ch2-2-meiji-architects">第2節　明治維新の設計者たち——五箇条の御誓文から帝国議会まで（1868〜1890年）</h2>
+
+<h3 id="ch2-2-gokajo">五箇条の御誓文——「西洋の父」への誓約書</h3>
+
+<p>1868年3月（慶応4年）、明治天皇が神々に誓った五箇条の御誓文。</p>
+
+<blockquote style="margin: 1.5em 2em; padding-left: 1em; border-left: 3px solid var(--gold); font-style: italic; color: var(--muted);">
+一、広ク会議ヲ興シ、万機公論ニ決スベシ<br>
+二、上下心ヲ一ニシテ、盛ニ経綸ヲ行フベシ<br>
+三、官武一途庶民迄、各自ノ志ヲ遂ゲ、人心ヲシテ倦マズラシムベシ<br>
+四、旧来ノ悪習ヲ破リ、天地ノ公道ニ基キ、行フベシ<br>
+五、知識ヲ世界ニ求メ、大いニ皇基ヲ振起コスベシ
+</blockquote>
+
+<p>第5条「知識を世界に求め」——これがすべてだ。長男は「父（中国）の文明」ではなく「西洋の文明」を師と仰ぐことを、神前で誓った。岩倉使節団（1871〜73年、岩倉具視・木戸孝允・大久保利通・伊藤博文・山口尚芳ら）が米欧を遊歴し、工場・議会・学校・軍隊・銀行・郵便・警察——近代国家の「フルセット」を視察して持ち帰った。彼らの報告書『米欧回覧実記』は、明治国家の設計図になった。</p>
+
+<div class="cross-link">🔗 横断リンク：<a href="east-asia-history-2-china.html#ch2-yongwu-wuxu-yihetuan">中国篇・第2章「洋務運動・戊戌変法・義和団」</a> / <a href="east-asia-history-3-korea.html#ch3-gabo-eulmi-gwangmu">朝鮮篇・第3章「甲午改革・乙未義兵・光武改革」</a></div>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1541963463532-d68292c34d19?w=1400&q=80" alt="岩倉使節団の集合写真" loading="lazy">
+  <figcaption>岩倉使節団——西洋の「父の家」を見学し、設計図を持ち帰った長男のエリートたち</figcaption>
+</figure>
+
+<h3 id="ch2-2-hanseki-hokan">版籍奉還・廃藩置県——「藩」という兄弟喧嘩の種を潰す</h3>
+
+<p>1869年版籍奉還（藩の土地・人民を朝廷に返上）、1871年廃藩置県（藩を廃止し、府県制へ）。これで「家の中の領主（藩主）」という、江戸時代 desde 続いた「兄弟の小競り合い」の構造を、中央集権で一掃した。同時に、華族令（1884年）で公卿・大名を「華族」に再編し、士族（旧武士）には秩禄公債（年俸の一括払い）を渡して「士族の商法」を強いた。多くの士族は商売に失敗し、没落した——長男が「古い家臣団」を切り捨て、近代官僚制（太政官制→内閣制）を作った代償だ。</p>
+
+<h3 id="ch2-2-jiyu-minken">自由民権運動——「長男の家」にも「議会」が欲しかった</h3>
+
+<p>1874年、板垣退助・後藤象二郎・江藤新平・副島種臣らが「民撰議院設立建白書」を提出。民権運動が全国に広がり、植木枝盛『東遊記』、中江兆民『三酔人経綸問答』、幸徳秋水『平民新聞』——言論・結社・出版の自由を求める声が高まった。政府は治安維持のため新聞紙条例・集会条例で弾圧したが、1881年明治十四年の政変で大隈重信が追放され、伊藤博文が「漸次立憲」を宣言。1889年大日本帝国憲法発布、1890年第1回帝国議会開会——長男は「西洋の父（イギリス・プロイセン）」の真似事として、議会という「家族会議」の席を設けた。</p>
+
+<p>だが、この憲法は「天皇主権」「天皇大権」「臣民の権利は法律の範囲内」——西洋の立憲主義より「父（天皇）の権威」を優先する、日本独自の「家父長制憲法」だった。伊藤博文は伊藤博文『憲法義解』で「臣民の権利は天皇の大権を妨げない」と明記した。長男は「議会という椅子」を用意したが、「父の椅子（天皇大権）」は譲らなかった。</p>
+
+<div class="sidebar-box">
+  <strong>💡 在日の視点から：</strong> この「天皇主権・臣民の義務」という枠組みが、後の朝鮮併合で「朝鮮人を日本臣民（天皇の家来）にする」法的根拠になる。朝鮮人にとって、大日本帝国憲法は「兄弟を家来にするための契約書」だった。
+</div>
+
+<hr class="section-divider">
+
+<h2 id="ch2-3-fukoku-kyohei">第3節　富国強兵・殖産興業の光と影——日清・日露戦争から韓国併合まで（1890〜1912年）</h2>
+
+<h3 id="ch2-3-shokusan-kogyo">殖産興業——「官営模範工場」から財閥へ</h3>
+
+<p>明治政府は「富国強兵」のため、製糸場（富岡製糸場・1872年）、造船所（横須賀・長崎・神戸）、製鉄所（釜石・八幡）、鉄道（新橋〜横浜・1872年）、電信・郵便・銀行（国立銀行条例・1872年）→ 日本銀行（1882年）と、インフラを次々と整備した。これらは最初「官営」で始め、軌道に乗せたら民間（三井・三菱・住友・安田など）に払い下げた——これが「財閥」の原型だ。渋沢栄一『論語と算盤』の言葉通り、「道徳（論語）」と「経済（算盤）」を両立させようとしたが、実態は「国家の保護の下で独占利益を得る」構造だった。</p>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=80" alt="明治時代の工場と煙突" loading="lazy">
+  <figcaption>富岡製糸場——「殖産興業」の象徴、女性工員が支えた近代化の現場</figcaption>
+</figure>
+
+<h3 id="ch2-3-sino-japanese-war">日清戦争（1894〜95年）——「父（清）」を倒し、「弟（朝鮮）」を手に入れる</h3>
+
+<p>甲午農民戦争（東学党蜂起）を契機に、清と日本が朝鮮で衝突。日本の近代軍（徴兵制・最新兵器・統一指揮）が、清の北洋艦隊・淮軍を圧倒。下関条約で、清から遼東半島・台湾・澎湖諸島・賠償金2億両（当時の日本国家予算の4倍）を獲得した。だが、三国干渉（ロシア・ドイツ・フランス）で遼東半島を返還させられた——「西洋の兄貴分たちは、まだ長男を対等に見ていない」という屈辱が、その後の軍拡競争を駆り立てる。</p>
+
+<div class="cross-link">🔗 横断リンク：<a href="east-asia-history-3-korea.html#ch3-gabo-eulmi-gwangmu">朝鮮篇・第3章「甲午改革・乙未義兵・光武改革」</a> / <a href="east-asia-history-2-china.html#ch2-xinhai-revolution">中国篇・第2章「辛亥革命」</a></div>
+
+<h3 id="ch2-3-russo-japanese-war">日露戦争（1904〜05年）——「西洋の兄貴分（ロシア）」を倒した瞬間</h3>
+
+<p>満州・朝鮮の利権をめぐり、ロシアと開戦。旅順攻囲戦・奉天会戦・日本海海戦（東郷平八郎・ Baltic艦隊壊滅）で日本が勝利。ポーツマス条約（仲介：米国ルーズベルト大統領）で、南満州鉄道・旅順大連租借地・樺太南半分・朝鮮の「指導・保護・監理権」を獲得。世界史上初の「有色人種の国が白人の大国を破った」——孫文、ネルー、ファン・ボイ・チャウらアジアの独立運動家が「日本万歳」と叫んだ瞬間だ。</p>
+
+<p>だが、賠償金なし、満州の権益も部分的。戦費は国債（外債含む）で賄い、増税（地租・酒税・砂糖税）で国民に跳ね返った。足尾銅山鉱毒事件（田中正造の直訴、1907年）で、産業の犠牲になる農民の姿が浮き彫りになる。長男は「西洋の兄貴分を倒せた」と酔いしれたが、その代償を払ったのは自分の足元（農民・労働者）だった。</p>
+
+<div class="sidebar-box">
+  <strong>💡 家族で言うと：</strong> 長男が「西洋の兄貴分（ロシア）」を殴り倒したら、西洋の父（イギリス・アメリカ）は「おお、やるな」と褒めた。だが、その拳で弟（朝鮮）の顔も殴っていた——日露戦争勝利の直後に、第二次日韓協約（1905年）で外交権剥奪、第三次日韓協約（1907年）で内政権・軍隊解散、1910年韓日併合条約。次男（朝鮮）は「合法的に」長男のものになった。
+</div>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1526598968262-3c93f99f3d80?w=1400&q=80" alt="日露戦争の戦場" loading="lazy">
+  <figcaption>旅順要塞攻囲戦——「西洋を倒した」興奮の陰で、弟（朝鮮）の併合が決まった</figcaption>
+</figure>
+
+<h3 id="ch2-3-korea-annexation">韓国併合——「兄弟を家来にする」ということ</h3>
+
+<p>1910年8月29日、韓日併合条約発効。李氏朝鮮519年、大韓帝国13年が終わる。総督府政治（寺内正毅初代総督）で、「内鮮一体」の名の下に皇民化教育・創氏改名（1939年）・徴兵制（1944年）・日本語上用・神社参拝強要。土地調査事業で農地収奪、東洋拓殖・朝鮮食糧で米搾取、京釜線・京義線・南満州鉄道で満州侵略の足場に。</p>
+
+<p>伊藤博文（初代統監）は「東洋平和」を掲げ、安重根（アン・ジュングン）にハルビン駅で暗殺される（1909年）。日本の教科書では伊藤を「建国の父」、安重根を「テロリスト」。朝鮮の歴史では安重根を「義士」、伊藤を「戦犯」。同じ事実が、立場によってひっくり返る——これが「家族の歴史」の恐ろしさだ。</p>
+
+<div class="cross-link">🔗 横断リンク：<a href="east-asia-history-3-korea.html#ch4-governor-general">朝鮮篇・第4章「総督府支配」</a> / <a href="east-asia-history-2-china.html#ch3-sun-yat-sen">中国篇・第3章「孫文の三民主義」</a></div>
+
+<hr class="section-divider">
+
+<h2 id="ch2-4-taisho-democracy">第4節　大正デモクラシーの試行——議会政治の成熟と限界（1912〜1926年）</h2>
+
+<h3 id="ch2-4-hoken-undo">第1次護憲運動・普通選挙法——「長男の家」で「家族会議」が本気になる</h3>
+
+<p>1912年明治天皇崩御、大正天皇即位。桂太郎内閣の「桂園時代（権力私物化）」に対し、尾崎行雄・犬養毅らが「閥族打破・憲政擁護」を掲げデモ（第1次護憲運動、1912〜13年）。桂内閣倒閣、第1次山本権兵衛内閣成立——議会と世論が内閣を動かした初めてのケースだ。</p>
+
+<p>1918年米騒動（富山の漁村から全国へ波及）、原敬内閣（初の政党内閣・立憲政友会）成立。1925年普通選挙法（男子25歳以上全員投票権・立憲政友会・加藤高明内閣）と治安維持法（共産主義運動弾圧）がセットで成立——「議会という椅子」を広げた代わりに、「父（天皇・国体）に逆らう思想」を禁じる装置をセットにした。この「セット売り」こそが、大正デモクラシーの本質的限界だ。</p>
+
+<div class="sidebar-box">
+  <strong>💡 家族で言うと：</strong> 長男は「家族会議（議会）」の参加資格を「家来（庶民）」まで広げたが、「父（天皇・国体）を否定する発言」だけは許さない、というルールを同時に作った。これは明治憲法第1条「大日本帝国ハ天皇之ヲ統治ス」という「父の絶対権威」を、議会政治という「新しい家具」で飾り立てただけだった。
+</div>
+
+<h3 id="ch2-4-kanto-quake">関東大震災・治安維持法——「恐怖」が民主主義を飲み込む</h3>
+
+<p>1923年9月1日、関東大震災（死者・行方不明約10.5万人）。混乱の中で「朝鮮人が井戸に毒を入れた」「暴動を企てている」というデマが流れ、自警団・軍・警察が朝鮮人・中国人・社会主義者を虐殺（推定6000人以上）。内務省は「デマを流すな」と通達したが、虐殺を止めなかった。この「差別と暴力の記憶」は、在日コリアンのトラウマとして今も継承されている。</p>
+
+<p>1925年治安維持法（初犯死刑・最高懲役10年）で、共産党・無産政党・労働運動・学生活動を徹底弾圧。1928年三・一五事件、1929年四・一六事件——「父（国家・国体）に逆らう思想」を持つ者は、議会の外にいても中にいても「非国民」として処理された。長男の家で「民主主義」を語った者が、次々と特高警察に引きずり込まれていった。</p>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1400&q=80" alt="大正時代の銀座" loading="lazy">
+  <figcaption>大正デモカシーの銀座——モダンガール・モダンボーイの陰で、治安維持法が迫っていた</figcaption>
+</figure>
+
+<hr class="section-divider">
+
+<h2 id="ch2-column-meiji-women">コラム：明治の「新しい女」たち——与謝野晶子・津田梅子・山川菊栄</h2>
+
+<p>明治維新は「男たちの近代化」として語られがちだが、その陰で「新しい女」たちが、家族・国家・ジェンダーの枠組みに切り込んでいた。</p>
+
+<h3 id="ch2-column-yosano-akiko">与謝野晶子（1878〜1942年）——「山の動く日来る」と歌った女</h3>
+
+<p>『みだれ髪』（1901年）で「肌をなでる風のごとく、わが恋は燃えさかりぬ」と歌い、女性の性欲・主体性を肯定した。日露戦争時「君死にたまふことなかれ」で、弟（兵士）を戦場に送る天皇・国家を「親として、兄として」批判した。但1930年代以降、「大東亜戦争」支持に転じ、皇国史観の歌を詠む——「新しい女」も、国家の波に呑まれていく存在だった。</p>
+
+<h3 id="ch2-column-tsuda-umeko">津田梅子（1864〜1929年）——「女子教育」で道を拓いた女</h3>
+
+<p>6歳で岩倉使節団に随行し、米国で教育を受け、ブリンマー大学で生物学を専攻。帰国後、華族女学校教師を経て、女子英学塾（現・津田塾大学）を創設。「女子にも専門教育を」と主張し、留学費用を自分で稼ぐ「自立した女性」のモデルになった。だが、彼女の教育も「良妻賢母」を超えるものではなく、エリート女性のためのものだった。</p>
+
+<h3 id="ch2-column-yamakawa-kikue">山川菊栄（1890〜1980年）——「女性解放」を階級闘争と結びつけた女</h3>
+
+<p>『女性問題の核心』（1925年）で「女性の解放は、階級的搾取の解決なしにあり得ない」と説き、日本初の女性労働運動家として活動。戦後、婦人局長・参議院議員として、男女雇用機会均等法・国民年金法の制定に尽力。「新しい女」の系譜を、戦後民主主義まで繋いだ。</p>
+
+<div class="cross-link">🔗 横断リンク：<a href="east-asia-history-3-korea.html#ch4-governor-general">朝鮮篇・コラム「植民地・戦争・分断を生きた女性たち」</a> / <a href="east-asia-history-2-china.html#ch5-digital-totalitarianism">中国篇・コラム「纏足から『半邊天』へ——秋瑾・宋慶齡・鄧穎超」</a></div>
+
+<figure>
+  <img src="https://images.unsplash.com/photo-1555169062-013468b47731?w=1400&q=80" alt="明治時代の女子学生" loading="lazy">
+  <figcaption>津田塾の初期の学生たち——「新しい女」たちが切り拓いた、狭く険しい道</figcaption>
+</figure>
+
+<hr class="section-divider">
+
+<h2 id="ch2-conclusion">第2章を終えて——長男が「西洋の養子」になり、兄弟を踏み台にした代償</h2>
+
+<p>第2章で描いたのは、長男（日本）が父（清）の崩壊を目の当たりにし、「西洋という新しい父」の養子になって近代化を駆け上がり、その間に兄弟（朝鮮）を「保護国」から「併合」へと飲み込み、さらに父の残骸（清の権益・満州）を奪い取っていった過程だ。</p>
+
+<p>明治維新のスローガン「富国強兵」「殖産興業」「文明開化」は、長男が「父の家」を出て「西洋の家」で生き残るための生存戦略だった。岩倉使節団が持ち帰った「設計図」で、議会・軍隊・教育・産業・法制度を一気に整備し、日清・日露戦争で「西洋の兄貴分（ロシア）」さえ倒してみせた。アジアの独立運動家たちが「日本万歳」と叫んだのは、長男が「西洋の支配は不可侵ではない」ことを証明したからだ。</p>
+
+<p>だが、その代償は大きかった。第一に、**兄弟（朝鮮）を「未開化な弟」として植民地化し、言語・姓名・信仰を奪い、労働力・米・資源を吸い上げたこと**。第二に、**「議会政治」という椅子を用意しながら、「父（天皇・国体）への忠誠」を最優先する治安維持法で、異論を封じ込めたこと**。第三に、**「西洋の父（アメリカ・イギリス）」の顔色をうかがいながら、満州・中国大陸へ「庭先」を広げ続け、ついには太平洋戦争という自滅の道へ突き進んだこと**。</p>
+
+<p>大正デモクラシーの頃、長男の家ではモダンガールがカフェーでコーヒーを飲み、政党内閣が誕生し、普通選挙法で「家族会議」の参加者が増えた。だが、関東大震災での朝鮮人虐殺、治安維持法での思想弾圧——「民主主義の皮を被った家父長制」の正体が、早くも露見していた。</p>
+
+<div class="sidebar-box">
+  <strong>💡 次章への伏線：</strong> 第3章（昭和・戦後・平成・令和）では、長男が「西洋の父（アメリカ）」に原爆で殴り倒され、無条件降伏し、GHQという「更生プログラム」で「平和国家」に書き換えられ、朝鮮戦争特需で復活し、高度成長で「西洋の家」の優等生になり、バブル崩壊で「失われた30年」を過ごし、安倍政権で「普通の国（集団的自衛権）」を目指し、安倍元首相銃撃で統一教会との癒着が露見し、在日コリアン3世・4世が「家族の外側」からこの歪んだ家族関係を見つめ直す——その過程を描く。同時に、朝鮮篇では分断・朝鮮戦争・軍事政権・民主化・K-Culture、中国篇では国共内戦・建国・大躍進・文革・改革開放・習近平新時代——三国の「第2章以降」がどう分岐し、どう交差したかを、横断リンクでつなぐ。
+</div>
+
+<div class="series-nav">
+  <strong>次章：</strong>
+  <a href="east-asia-history-1-japan-ch3.html">第3章：昭和・戦後・平成・令和——「西洋の養子」から「普通の国」へ、そして在日の視点へ</a>
+  <a href="east-asia-history-2-china-ch2.html">中国篇・第2章：元〜清・民国・中華人民共和国</a>
+  <a href="east-asia-history-3-korea-ch2.html">朝鮮篇・第2章：植民地・分断・二つの朝鮮</a>
+</div>
+
+<div class="footnote">
+  <p><strong>参考・おすすめ文献</strong></p>
+  <p>坂野潤治『明治国家の設計者たち』（岩波新書）／江口圭一『明治維新の構造』（中公新書）／<br>
+  佐々木隆『日清戦争——日本軍はなぜ勝てたか』（講談社現代新書）／保谷徹『日露戦争』（中公新書）／<br>
+  吉野作造『憲政の本義』／Maruyama Masao『日本政治思想史研究』（東京大学出版会）／<br>
+  上野千鶴子『ナショナリズムとジェンダー』（岩波現代文庫）／駒込武『闘う女性たち——明治・大正・昭和』（岩波新書）</p>
+  <p><em>本記事は llm-wiki（Obsidian + Karpathy-style Knowledge Base）上で編集・管理されています。<br>
+  シリーズ第1章「家族としての日本史」、中国篇・朝鮮半島篇は公開中。横断リンクで三国対比をお楽しみください。</em></p>
+</div>
+
+<footer>
+  <div>© 2026 KT · <a href="https://ktblog.pages.dev/">KTblog</a></div>
+  <div>家族としての東アジア史・日本篇 第2章 / 第3章（昭和以降）へ続く</div>
+</footer>
+
+</article>
+</body>
+</html>
