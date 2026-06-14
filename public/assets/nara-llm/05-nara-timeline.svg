@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">奈良の1300年タイムライン</text>
+  
+  <g transform="translate(50, 260)">
+    <!-- タイムライン -->
+    <line x1="0" y1="0" x2="700" y2="0" stroke="#8b0000" stroke-width="3"/>
+    
+    <!-- マーカー: 702年 大宝律令 -->
+    <circle cx="30" cy="0" r="6" fill="#8b0000"/>
+    <text x="30" y="-15" text-anchor="middle" font-size="11" font-weight="bold" fill="#8b0000">702年</text>
+    <text x="30" y="25" text-anchor="middle" font-size="10" fill="#555">大宝律令</text>
+    <text x="30" y="40" text-anchor="middle" font-size="10" fill="#555">正倉院文書</text>
+    <text x="30" y="55" text-anchor="middle" font-size="10" fill="#555">開始</text>
+    
+    <!-- マーカー: 710年 平城京 -->
+    <circle cx="55" cy="0" r="6" fill="#8b0000"/>
+    <text x="55" y="-15" text-anchor="middle" font-size="11" font-weight="bold" fill="#8b0000">710年</text>
+    <text x="55" y="25" text-anchor="middle" font-size="10" fill="#555">平城京遷都</text>
+    
+    <!-- マーカー: 743年 大仏建立 -->
+    <circle cx="80" cy="0" r="6" fill="#8b0000"/>
+    <text x="80" y="-15" text-anchor="middle" font-size="11" font-weight="bold" fill="#8b0000">743年</text>
+    <text x="80" y="25" text-anchor="middle" font-size="10" fill="#555">大仏建立</text>
+    <text x="80" y="40" text-anchor="middle" font-size="10" fill="#555">発願</text>
+    
+    <!-- マーカー: 794年 平安京 -->
+    <circle cx="110" cy="0" r="4" fill="#a52a2a"/>
+    <text x="110" y="-15" text-anchor="middle" font-size="10" fill="#a52a2a">794年</text>
+    <text x="110" y="22" text-anchor="middle" font-size="10" fill="#555">平安京遷都</text>
+    
+    <!-- 〜中世・近世〜 -->
+    <line x1="110" y1="-40" x2="350" y2="-40" stroke="#ccc" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="230" y="-50" text-anchor="middle" font-size="11" fill="#999">中世・近世（約1000年）</text>
+    
+    <!-- マーカー: 1868 明治 -->
+    <circle cx="370" cy="0" r="4" fill="#4a6fa5"/>
+    <text x="370" y="-15" text-anchor="middle" font-size="10" fill="#4a6fa5">1868年</text>
+    <text x="370" y="22" text-anchor="middle" font-size="10" fill="#555">明治維新</text>
+    
+    <!-- マーカー: 1950 文化財保護法 -->
+    <circle cx="420" cy="0" r="4" fill="#4a6fa5"/>
+    <text x="420" y="-15" text-anchor="middle" font-size="10" fill="#4a6fa5">1950年</text>
+    <text x="420" y="22" text-anchor="middle" font-size="10" fill="#555">文化財保護法</text>
+    
+    <!-- マーカー: 2009 フルテキストDB -->
+    <circle cx="510" cy="0" r="5" fill="#2d4059"/>
+    <text x="510" y="-15" text-anchor="middle" font-size="10" fill="#2d4059">2009年</text>
+    <text x="510" y="22" text-anchor="middle" font-size="10" fill="#555">古文書DB公開</text>
+    
+    <!-- マーカー: 2026 現在 -->
+    <circle cx="680" cy="0" r="8" fill="#8b0000"/>
+    <text x="680" y="-20" text-anchor="middle" font-size="12" font-weight="bold" fill="#8b0000">2026年</text>
+    <text x="680" y="25" text-anchor="middle" font-size="11" fill="#8b0000" font-weight="bold">★ ならしLLM</text>
+    <text x="680" y="42" text-anchor="middle" font-size="11" fill="#8b0000" font-weight="bold">構想</text>
+    
+    <!-- 年代幅 -->
+    <rect x="20" y="-85" width="660" height="20" fill="#f5f0eb" rx="10" opacity="0.6"/>
+    <text x="350" y="-72" text-anchor="middle" font-size="12" fill="#666">約1300年のデータ連続性 —— 世界でも類を見ない</text>
+  </g>
+</svg>

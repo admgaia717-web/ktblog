@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">産学民政4者連携スキーム</text>
+  
+  <g transform="translate(400, 250)">
+    <!-- 中心 -->
+    <circle cx="0" cy="0" r="55" fill="#8b0000"/>
+    <text x="0" y="-8" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">奈良LLM</text>
+    <text x="0" y="12" text-anchor="middle" font-size="12" fill="#ffd6d6">産学民政</text>
+    
+    <!-- 産（地元IT企業） -->
+    <rect x="-120" y="-190" width="240" height="60" fill="#fff5e6" stroke="#b8860b" stroke-width="2" rx="8"/>
+    <text x="0" y="-165" text-anchor="middle" font-size="15" font-weight="bold" fill="#b8860b">🏢 産（地元IT企業）</text>
+    <text x="0" y="-145" text-anchor="middle" font-size="12" fill="#555">システム開発・運用保守・サポート</text>
+    <line x1="0" y1="-55" x2="0" y2="-120" stroke="#b8860b" stroke-width="2" marker-end="url(#ar4)"/>
+    
+    <!-- 学（NAIST） -->
+    <rect x="-120" y="130" width="240" height="60" fill="#e8f0e8" stroke="#2d6a4f" stroke-width="2" rx="8"/>
+    <text x="0" y="155" text-anchor="middle" font-size="15" font-weight="bold" fill="#2d6a4f">🎓 学（NAIST）</text>
+    <text x="0" y="175" text-anchor="middle" font-size="12" fill="#555">研究開発・人材育成・スパコン提供</text>
+    <line x1="0" y1="55" x2="0" y2="120" stroke="#2d6a4f" stroke-width="2" marker-end="url(#ar4)"/>
+    
+    <!-- 政（奈良市） -->
+    <rect x="130" y="-60" width="200" height="60" fill="#e8f0f8" stroke="#4a6fa5" stroke-width="2" rx="8"/>
+    <text x="230" y="-35" text-anchor="middle" font-size="15" font-weight="bold" fill="#4a6fa5">🏛️ 政（奈良市）</text>
+    <text x="230" y="-15" text-anchor="middle" font-size="12" fill="#555">予算拠出・政策決定・実運用</text>
+    <line x1="55" y1="0" x2="120" y2="0" stroke="#4a6fa5" stroke-width="2" marker-end="url(#ar4)"/>
+    
+    <!-- 民（市民・有識者） -->
+    <rect x="-330" y="-60" width="200" height="60" fill="#f0e8f5" stroke="#6a4fa5" stroke-width="2" rx="8"/>
+    <text x="-230" y="-35" text-anchor="middle" font-size="15" font-weight="bold" fill="#6a4fa5">👥 民（市民）</text>
+    <text x="-230" y="-15" text-anchor="middle" font-size="12" fill="#555">データ提供・評価・FB</text>
+    <line x1="-55" y1="0" x2="-120" y2="0" stroke="#6a4fa5" stroke-width="2" marker-end="url(#ar4)"/>
+  </g>
+  
+  <defs>
+    <marker id="ar4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8b0000"/>
+    </marker>
+  </defs>
+  
+  <text x="400" y="480" text-anchor="middle" font-size="13" fill="#888">リスク分散・人材確保・政治的レジリエンス——4者連携で持続可能な体制に</text>
+</svg>

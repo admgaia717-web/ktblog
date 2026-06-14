@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">4億円の使い道——奈良市デジタル独立への投資配分</text>
+  
+  <g transform="translate(400, 260)">
+    <!-- 1. NAIST講座 -->
+    <path d="M0,0 L0,-150 A150,150 0 0,1 106.1,106.1 Z" fill="#2d4059"/>
+    <text x="45" y="-65" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">3000万</text>
+    <text x="45" y="-48" text-anchor="middle" font-size="11" fill="#ddd">NAIST寄附講座</text>
+    
+    <!-- 2. Linux移行 -->
+    <path d="M0,0 L106.1,106.1 A150,150 0 0,1 141.5,46 Z" fill="#4a6fa5"/>
+    <text x="135" y="70" text-anchor="middle" font-size="13" fill="#fff">5000万</text>
+    <text x="135" y="85" text-anchor="middle" font-size="10" fill="#ddd">Linux移行</text>
+    
+    <!-- 3. データセンター -->
+    <path d="M0,0 L141.5,46 A150,150 0 0,1 150,0 Z" fill="#ea907a"/>
+    <text x="150" y="20" text-anchor="middle" font-size="12" fill="#333">2000万</text>
+    <text x="150" y="35" text-anchor="middle" font-size="10" fill="#555">自前DC</text>
+    
+    <!-- 4. アーカイブ局 -->
+    <path d="M0,0 L150,0 A150,150 0 0,1 75,-130 Z" fill="#b8860b"/>
+    <text x="90" y="-60" text-anchor="middle" font-size="12" fill="#fff">5000万/年</text>
+    <text x="90" y="-45" text-anchor="middle" font-size="10" fill="#ddd">アーカイブ局</text>
+    
+    <!-- 5. 循環ファンド -->
+    <path d="M0,0 L75,-130 A150,150 0 0,1 -110,-102 Z" fill="#8b0000"/>
+    <text x="-20" y="-90" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">2億</text>
+    <text x="-20" y="-73" text-anchor="middle" font-size="12" fill="#ffd6d6">循環ファンド</text>
+    
+    <!-- 6. 奈良LLM -->
+    <path d="M0,0 L-110,-102 A150,150 0 0,1 -150,0 Z" fill="#3a7a3a"/>
+    <text x="-95" y="-40" text-anchor="middle" font-size="12" fill="#fff">3500万</text>
+    <text x="-95" y="-25" text-anchor="middle" font-size="10" fill="#ddd">奈良LLM</text>
+    
+    <circle cx="0" cy="0" r="50" fill="#fafaf7"/>
+    <text x="0" y="-8" text-anchor="middle" font-size="16" font-weight="bold" fill="#8b0000">4億円</text>
+    <text x="0" y="12" text-anchor="middle" font-size="11" fill="#555">総投資</text>
+  </g>
+  
+  <text x="400" y="470" text-anchor="middle" font-size="12" fill="#888">奈良市一般会計年間予算2300億円の0.17%に過ぎない</text>
+</svg>

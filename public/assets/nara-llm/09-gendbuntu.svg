@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">フランスGendBuntuの20年実績</text>
+  
+  <!-- タイムライン -->
+  <g transform="translate(50, 80)">
+    <line x1="0" y1="0" x2="700" y2="0" stroke="#333" stroke-width="2"/>
+    
+    <!-- 2004 -->
+    <circle cx="40" cy="0" r="5" fill="#4a6fa5"/>
+    <text x="40" y="-15" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a6fa5">2004年</text>
+    <text x="40" y="25" text-anchor="middle" font-size="11" fill="#555">Firefox+OpenOffice</text>
+    <text x="40" y="42" text-anchor="middle" font-size="11" fill="#555">導入開始</text>
+    
+    <!-- 2008 -->
+    <circle cx="120" cy="0" r="5" fill="#2d4059"/>
+    <text x="120" y="-15" text-anchor="middle" font-size="11" font-weight="bold" fill="#2d4059">2008年</text>
+    <text x="120" y="25" text-anchor="middle" font-size="11" fill="#555">GendBuntu</text>
+    <text x="120" y="42" text-anchor="middle" font-size="11" fill="#555">本格導入</text>
+    
+    <!-- 2013 -->
+    <circle cx="200" cy="0" r="4" fill="#888"/>
+    <text x="200" y="-15" text-anchor="middle" font-size="10" fill="#888">2013年</text>
+    <text x="200" y="20" text-anchor="middle" font-size="10" fill="#555">全拠点展開</text>
+    
+    <!-- 2024 -->
+    <circle cx="340" cy="0" r="8" fill="#8b0000"/>
+    <text x="340" y="-20" text-anchor="middle" font-size="12" font-weight="bold" fill="#8b0000">★ 2024年</text>
+    <text x="340" y="25" text-anchor="middle" font-size="11" fill="#8b0000" font-weight="bold">103,164台</text>
+    <text x="340" y="42" text-anchor="middle" font-size="11" fill="#8b0000">全PCの97%</text>
+    
+    <!-- 2026 -->
+    <circle cx="460" cy="0" r="8" fill="#8b0000"/>
+    <text x="460" y="-20" text-anchor="middle" font-size="12" font-weight="bold" fill="#8b0000">★ 2026年</text>
+    <text x="460" y="25" text-anchor="middle" font-size="11" fill="#8b0000" font-weight="bold">政府全体へ</text>
+    <text x="460" y="42" text-anchor="middle" font-size="11" fill="#8b0000">250万台移行</text>
+    
+    <!-- 成果 -->
+    <rect x="50" y="80" width="620" height="120" fill="#f5f0eb" rx="8"/>
+    <text x="360" y="105" text-anchor="middle" font-size="15" font-weight="bold" fill="#8b0000">GendBuntuの成果（2024年6月時点）</text>
+    
+    <text x="120" y="135" font-size="13" fill="#333">✅ 103,164台のPCで稼働（達成率97%）</text>
+    <text x="120" y="158" font-size="13" fill="#333">✅ 年間200万ユーロ（約3.4億円）のライセンス費用削減</text>
+    <text x="120" y="181" font-size="13" fill="#333">✅ 総所有コスト（TCO）を40%削減</text>
+    <text x="120" y="204" font-size="13" fill="#333">✅ 20年にわたる安定運用</text>
+  </g>
+  
+  <text x="400" y="470" text-anchor="middle" font-size="12" fill="#888">出典: TechHQ (2026年4月), The Next Web (2026年4月), DINUM発表</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">「ならしデジタル独立」の4つの政策効果</text>
+  
+  <g transform="translate(60, 80)">
+    <!-- 文化 -->
+    <rect x="0" y="0" width="340" height="90" fill="#fff5e6" stroke="#b8860b" stroke-width="2" rx="8"/>
+    <text x="170" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#8b0000">📜 文化政策</text>
+    <text x="170" y="55" text-anchor="middle" font-size="13" fill="#555">1300年の文化データを</text>
+    <text x="170" y="75" text-anchor="middle" font-size="13" fill="#555">AIで保存・継承する</text>
+    
+    <!-- 財政 -->
+    <rect x="0" y="105" width="340" height="90" fill="#e8f0e8" stroke="#2d6a4f" stroke-width="2" rx="8"/>
+    <text x="170" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="#2d6a4f">💰 財政政策</text>
+    <text x="170" y="160" text-anchor="middle" font-size="13" fill="#555">年2億の海外流出を止め、</text>
+    <text x="170" y="180" text-anchor="middle" font-size="13" fill="#555">2.5年で投資を回収する</text>
+    
+    <!-- 教育 -->
+    <rect x="360" y="0" width="340" height="90" fill="#e8f0f8" stroke="#4a6fa5" stroke-width="2" rx="8"/>
+    <text x="530" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#4a6fa5">🎓 教育政策</text>
+    <text x="530" y="55" text-anchor="middle" font-size="13" fill="#555">NAISTと連携した</text>
+    <text x="530" y="75" text-anchor="middle" font-size="13" fill="#555">IT人材育成の好循環</text>
+    
+    <!-- 経済 -->
+    <rect x="360" y="105" width="340" height="90" fill="#f0e8f5" stroke="#6a4fa5" stroke-width="2" rx="8"/>
+    <text x="530" y="135" text-anchor="middle" font-size="18" font-weight="bold" fill="#6a4fa5">🔄 経済政策</text>
+    <text x="530" y="160" text-anchor="middle" font-size="13" fill="#555">オープンソースで</text>
+    <text x="530" y="180" text-anchor="middle" font-size="13" fill="#555">地域内経済循環を創出</text>
+    
+    <!-- 下の総合効果 -->
+    <rect x="80" y="230" width="540" height="70" fill="#8b0000" rx="10"/>
+    <text x="350" y="260" text-anchor="middle" font-size="20" font-weight="bold" fill="#fff">4つの柱が同時に成立する政策は、そうそうない</text>
+    <text x="350" y="285" text-anchor="middle" font-size="14" fill="#ffd6d6">「奈良市長、間違いない」——その確信の根拠</text>
+    
+    <text x="350" y="350" text-anchor="middle" font-size="14" fill="#888">文化・財政・教育・経済——4分野の政策が同時に実現する</text>
+  </g>
+</svg>

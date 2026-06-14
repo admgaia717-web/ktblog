@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">奈良市の文化データセット資産</text>
+  
+  <g transform="translate(60, 75)">
+    <!-- 1. 正倉院文書 -->
+    <rect x="0" y="0" width="340" height="70" fill="#fff5e6" stroke="#b8860b" stroke-width="1.5" rx="6"/>
+    <text x="15" y="25" font-size="14" font-weight="bold" fill="#8b0000">📜 正倉院文書</text>
+    <text x="15" y="45" font-size="12" fill="#555">大宝2年(702)〜宝亀11年(780) 約80年分</text>
+    <text x="15" y="62" font-size="12" fill="#555">『大日本古文書』全25冊 全文検索DB化済</text>
+    
+    <!-- 2. 木簡庫 -->
+    <rect x="360" y="0" width="340" height="70" fill="#fff5e6" stroke="#b8860b" stroke-width="1.5" rx="6"/>
+    <text x="375" y="25" font-size="14" font-weight="bold" fill="#8b0000">🪵 木簡庫</text>
+    <text x="375" y="45" font-size="12" fill="#555">平城宮跡出土木簡の釈文・画像DB</text>
+    <text x="375" y="62" font-size="12" fill="#555">奈良文化財研究所公開</text>
+    
+    <!-- 3. e-Museum -->
+    <rect x="0" y="85" width="340" height="70" fill="#fff5e6" stroke="#b8860b" stroke-width="1.5" rx="6"/>
+    <text x="15" y="110" font-size="14" font-weight="bold" fill="#8b0000">🏛️ e-Museum / 奈良国立博物館</text>
+    <text x="15" y="130" font-size="12" fill="#555">約1300件の収蔵品データ</text>
+    <text x="15" y="147" font-size="12" fill="#555">多言語解説（日・英・中・韓）</text>
+    
+    <!-- 4. 無形文化遺産 -->
+    <rect x="360" y="85" width="340" height="70" fill="#fff5e6" stroke="#b8860b" stroke-width="1.5" rx="6"/>
+    <text x="375" y="110" font-size="14" font-weight="bold" fill="#8b0000">🎭 無形文化遺産アーカイブ</text>
+    <text x="375" y="130" font-size="12" fill="#555">6カテゴリー・映像DB</text>
+    <text x="375" y="147" font-size="12" fill="#555">祭礼・民俗芸能・工芸技術</text>
+    
+    <!-- 5. 行政データ -->
+    <rect x="0" y="170" width="340" height="70" fill="#e8f0e8" stroke="#2d6a4f" stroke-width="1.5" rx="6"/>
+    <text x="15" y="195" font-size="14" font-weight="bold" fill="#2d6a4f">🏢 奈良市行政データ</text>
+    <text x="15" y="215" font-size="12" fill="#555">市議会議事録、統計、観光データ</text>
+    <text x="15" y="232" font-size="12" fill="#555">オープンデータカタログとして公開中</text>
+    
+    <!-- 6. 方言 -->
+    <rect x="360" y="170" width="340" height="70" fill="#e8f0e8" stroke="#2d6a4f" stroke-width="1.5" rx="6"/>
+    <text x="375" y="195" font-size="14" font-weight="bold" fill="#2d6a4f">🗣️ 奈良弁コーパス</text>
+    <text x="375" y="215" font-size="12" fill="#555">「やん」「はる」「でっしゃろ」</text>
+    <text x="375" y="232" font-size="12" fill="#555">関西方言研究の一環として収集可能</text>
+    
+    <!-- 統合 -->
+    <rect x="110" y="280" width="480" height="60" fill="#8b0000" rx="8"/>
+    <text x="350" y="308" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">→ 奈良LLM：1300年の時間を内包したAIへ</text>
+    <text x="350" y="328" text-anchor="middle" font-size="13" fill="#ffd6d6">文字資料の継続性と量では日本唯一</text>
+    
+    <text x="350" y="390" text-anchor="middle" font-size="13" fill="#888">参考: 東京大学史料編纂所「奈良時代古文書フルテキストデータベース」</text>
+    <text x="350" y="410" text-anchor="middle" font-size="13" fill="#888">奈良文化財研究所「木簡庫」「全国遺跡報告総覧」</text>
+  </g>
+</svg>

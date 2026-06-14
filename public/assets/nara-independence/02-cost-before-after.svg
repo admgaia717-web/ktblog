@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">奈良市ITコスト——移行前と移行後の比較（年間）</text>
+  
+  <g transform="translate(80, 80)">
+    <!-- Before -->
+    <text x="150" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#8b0000">移行前</text>
+    
+    <rect x="0" y="50" width="300" height="35" fill="#8b0000" rx="4"/>
+    <text x="10" y="73" font-size="13" fill="#fff">Microsoft 365 ライセンス</text>
+    <text x="290" y="73" text-anchor="end" font-size="13" fill="#ffd6d6">1億円</text>
+    
+    <rect x="0" y="90" width="100" height="35" fill="#a52a2a" rx="4"/>
+    <text x="10" y="113" font-size="13" fill="#fff">Google系</text>
+    <text x="290" y="113" text-anchor="end" font-size="13" fill="#ffd6d6">1,000万</text>
+    
+    <rect x="0" y="130" width="200" height="35" fill="#cd5c5c" rx="4"/>
+    <text x="10" y="153" font-size="13" fill="#fff">クラウド（ConoHa等）</text>
+    <text x="290" y="153" text-anchor="end" font-size="13" fill="#ffd6d6">2,000万</text>
+    
+    <rect x="0" y="170" width="50" height="35" fill="#e9967a" rx="4"/>
+    <text x="10" y="193" font-size="13" fill="#333">保守</text>
+    <text x="290" y="193" text-anchor="end" font-size="13" fill="#555">500万</text>
+    
+    <text x="150" y="240" text-anchor="middle" font-size="18" font-weight="bold" fill="#8b0000">合計 約2億円/年</text>
+    
+    <!-- Arrow -->
+    <text x="380" y="145" text-anchor="middle" font-size="30" fill="#8b0000">→</text>
+    
+    <!-- After -->
+    <g transform="translate(440, 0)">
+      <text x="150" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#2d6a4f">移行後</text>
+      
+      <rect x="0" y="50" width="20" height="35" fill="#2d6a4f" rx="4"/>
+      <text x="30" y="73" font-size="13" fill="#333">MSライセンス</text>
+      <text x="290" y="73" text-anchor="end" font-size="13" fill="#2d6a4f">ゼロ</text>
+      
+      <rect x="0" y="90" width="20" height="35" fill="#2d6a4f" rx="4"/>
+      <text x="30" y="113" font-size="13" fill="#333">Google系</text>
+      <text x="290" y="113" text-anchor="end" font-size="13" fill="#2d6a4f">ゼロ</text>
+      
+      <rect x="0" y="130" width="50" height="35" fill="#4a6fa5" rx="4"/>
+      <text x="60" y="153" font-size="13" fill="#333">自前DC運用</text>
+      <text x="290" y="153" text-anchor="end" font-size="13" fill="#4a6fa5">300万</text>
+      
+      <rect x="0" y="170" width="30" height="35" fill="#4a6fa5" rx="4"/>
+      <text x="40" y="193" font-size="13" fill="#333">ファンド運用益</text>
+      <text x="290" y="193" text-anchor="end" font-size="13" fill="#2d6a4f">▲600万（収入）</text>
+      
+      <text x="150" y="240" text-anchor="middle" font-size="18" font-weight="bold" fill="#2d6a4f">合計 約300万円/年</text>
+    </g>
+  </g>
+  
+  <text x="400" y="470" text-anchor="middle" font-size="13" fill="#888">移行後は年間約2億円の流出が奈良市内での循環に変わる</text>
+</svg>

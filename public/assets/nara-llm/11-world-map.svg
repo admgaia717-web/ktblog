@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520">
+  <rect width="800" height="520" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">世界各地の「ローカルAI」文化保存の動き</text>
+  
+  <g transform="translate(60, 70)">
+    <!-- 世界地図（簡略） -->
+    <ellipse cx="200" cy="60" rx="160" ry="80" fill="#e8e0d8" stroke="#ccc" stroke-width="1"/>
+    <ellipse cx="500" cy="80" rx="80" ry="100" fill="#e8e0d8" stroke="#ccc" stroke-width="1"/>
+    <ellipse cx="350" cy="120" rx="100" ry="60" fill="#e8e0d8" stroke="#ccc" stroke-width="1"/>
+    <ellipse cx="350" cy="60" rx="120" ry="50" fill="#e8e0d8" stroke="#ccc" stroke-width="1"/>
+    
+    <!-- 1. ブラジル・リオ -->
+    <circle cx="380" cy="160" r="12" fill="#8b0000"/>
+    <text x="380" y="160" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">1</text>
+    <text x="380" y="185" text-anchor="middle" font-size="11" fill="#8b0000" font-weight="bold">🇧🇷 リオ</text>
+    <text x="380" y="200" text-anchor="middle" font-size="10" fill="#555">Rio 3.5 Open</text>
+    
+    <!-- 2. ニュージーランド -->
+    <circle cx="590" cy="180" r="12" fill="#2d4059"/>
+    <text x="590" y="180" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">2</text>
+    <text x="590" y="205" text-anchor="middle" font-size="11" fill="#2d4059" font-weight="bold">🇳🇿 NZ</text>
+    <text x="590" y="220" text-anchor="middle" font-size="10" fill="#555">マオリ語保存</text>
+    
+    <!-- 3. ナイジェリア -->
+    <circle cx="430" cy="110" r="12" fill="#2d4059"/>
+    <text x="430" y="110" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">3</text>
+    <text x="430" y="135" text-anchor="middle" font-size="11" fill="#2d4059" font-weight="bold">🇳🇬 ナイジェリア</text>
+    <text x="430" y="150" text-anchor="middle" font-size="10" fill="#555">3言語LLM統合</text>
+    
+    <!-- 4. 北米先住民 -->
+    <circle cx="150" cy="40" r="12" fill="#2d4059"/>
+    <text x="150" y="40" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">4</text>
+    <text x="150" y="65" text-anchor="middle" font-size="11" fill="#2d4059" font-weight="bold">🇺🇸 FLAIR</text>
+    <text x="150" y="80" text-anchor="middle" font-size="10" fill="#555">先住民言語</text>
+    
+    <!-- 5. インド -->
+    <circle cx="520" cy="110" r="12" fill="#2d4059"/>
+    <text x="520" y="110" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">5</text>
+    <text x="520" y="135" text-anchor="middle" font-size="11" fill="#2d4059" font-weight="bold">🇮🇳 インド</text>
+    <text x="520" y="150" text-anchor="middle" font-size="10" fill="#555">古代文字解読</text>
+    
+    <!-- 6. フランス -->
+    <circle cx="290" cy="70" r="12" fill="#2d4059"/>
+    <text x="290" y="70" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">6</text>
+    <text x="290" y="95" text-anchor="middle" font-size="11" fill="#2d4059" font-weight="bold">🇫🇷 フランス</text>
+    <text x="290" y="110" text-anchor="middle" font-size="10" fill="#555">Linux移行</text>
+    
+    <!-- ★ 奈良 -->
+    <circle cx="510" cy="60" r="16" fill="#ffd700" stroke="#8b0000" stroke-width="3"/>
+    <text x="510" y="60" text-anchor="middle" font-size="12" fill="#8b0000" font-weight="bold">★</text>
+    <text x="510" y="87" text-anchor="middle" font-size="13" fill="#8b0000" font-weight="bold">🇯🇵 奈良</text>
+    <text x="510" y="103" text-anchor="middle" font-size="11" fill="#8b0000">← HERE</text>
+    
+    <!-- 凡例 -->
+    <rect x="50" y="270" width="540" height="70" fill="#f5f0eb" rx="6"/>
+    <text x="60" y="295" font-size="13" font-weight="bold" fill="#333">世界のローカルAI文化保存プロジェクト</text>
+    <text x="60" y="318" font-size="12" fill="#555">1. リオデジャネイロ / 2. ニュージーランド・マオリ / 3. ナイジェリア</text>
+    <text x="60" y="335" font-size="12" fill="#555">4. 北米先住民FLAIR / 5. インド古代文字 / 6. フランス</text>
+  </g>
+  
+  <text x="400" y="490" text-anchor="middle" font-size="12" fill="#888">出典: Brookings (2025年3月), arXiv (2025年1月), 各政府発表</text>
+</svg>

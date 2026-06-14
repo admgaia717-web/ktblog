@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">技術実装パイプライン</text>
+  
+  <g transform="translate(40, 80)">
+    <!-- ステップ1 -->
+    <rect x="0" y="0" width="170" height="100" fill="#fff5e6" stroke="#b8860b" stroke-width="2" rx="8"/>
+    <text x="85" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#8b0000">① データ準備</text>
+    <text x="85" y="52" text-anchor="middle" font-size="11" fill="#555">3〜6ヶ月</text>
+    <text x="85" y="72" text-anchor="middle" font-size="11" fill="#555">データ収集・整形</text>
+    <text x="85" y="88" text-anchor="middle" font-size="11" fill="#555">クリーニング</text>
+    
+    <!-- 矢印1 -->
+    <line x1="175" y1="50" x2="210" y2="50" stroke="#8b0000" stroke-width="2" marker-end="url(#ar)"/>
+    
+    <!-- ステップ2 -->
+    <rect x="215" y="0" width="170" height="100" fill="#fff5e6" stroke="#b8860b" stroke-width="2" rx="8"/>
+    <text x="300" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#8b0000">② 継続学習</text>
+    <text x="300" y="52" text-anchor="middle" font-size="11" fill="#555">2〜4週間</text>
+    <text x="300" y="72" text-anchor="middle" font-size="11" fill="#555">LoRA/QLoRA</text>
+    <text x="300" y="88" text-anchor="middle" font-size="11" fill="#555">H100×8〜16枚</text>
+    
+    <!-- 矢印2 -->
+    <line x1="390" y1="50" x2="425" y2="50" stroke="#8b0000" stroke-width="2" marker-end="url(#ar)"/>
+    
+    <!-- ステップ3 -->
+    <rect x="430" y="0" width="170" height="100" fill="#fff5e6" stroke="#b8860b" stroke-width="2" rx="8"/>
+    <text x="515" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#8b0000">③ 評価・調整</text>
+    <text x="515" y="52" text-anchor="middle" font-size="11" fill="#555">1〜2ヶ月</text>
+    <text x="515" y="72" text-anchor="middle" font-size="11" fill="#555">RLHF/DPO調整</text>
+    <text x="515" y="88" text-anchor="middle" font-size="11" fill="#555">ハルシネーション対策</text>
+    
+    <!-- 矢印3 -->
+    <line x1="605" y1="50" x2="640" y2="50" stroke="#8b0000" stroke-width="2" marker-end="url(#ar)"/>
+    
+    <!-- ステップ4 -->
+    <rect x="645" y="0" width="120" height="100" fill="#e8f0e8" stroke="#2d6a4f" stroke-width="2" rx="8"/>
+    <text x="705" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#2d6a4f">④ 運用</text>
+    <text x="705" y="52" text-anchor="middle" font-size="11" fill="#555">常時稼働</text>
+    <text x="705" y="72" text-anchor="middle" font-size="11" fill="#555">llama.cpp</text>
+    <text x="705" y="88" text-anchor="middle" font-size="11" fill="#555">Mac Studio可</text>
+    
+    <!-- ベースモデル注釈 -->
+    <rect x="100" y="140" width="560" height="45" fill="#f5f0eb" stroke="#ccc" stroke-width="1" rx="6"/>
+    <text x="380" y="162" text-anchor="middle" font-size="13" fill="#555">ベースモデル: Qwen 3.5 397B-A17B (Apache 2.0ライセンス)</text>
+    <text x="380" y="178" text-anchor="middle" font-size="12" fill="#888">活性化パラメータ17BのMoEアーキテクチャで推論コスト低減</text>
+    
+    <!-- 予算 -->
+    <rect x="100" y="210" width="560" height="70" fill="#fff" stroke="#8b0000" stroke-width="2" rx="8" stroke-dasharray="6,3"/>
+    <text x="380" y="238" text-anchor="middle" font-size="16" font-weight="bold" fill="#8b0000">推定総予算: 1300〜3500万円</text>
+    <text x="380" y="262" text-anchor="middle" font-size="13" fill="#555">うち最大75%を国が補助 → 市の負担は約875万円〜</text>
+    
+    <text x="380" y="330" text-anchor="middle" font-size="13" fill="#888">参考: リオデジャネイロ市は50万レアル（約2000万円）で成功</text>
+  </g>
+  
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8b0000"/>
+    </marker>
+  </defs>
+</svg>

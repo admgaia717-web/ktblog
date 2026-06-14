@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">知識の主権——奈良市が自前AIを持つ意味</text>
+  
+  <!-- Before: 海外AIの常識で回答 -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="330" height="160" fill="#f5f0eb" rx="8"/>
+    <text x="165" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#8b0000">❌ 海外AIに委ねた場合</text>
+    
+    <text x="165" y="58" text-anchor="middle" font-size="12" fill="#555">Q: 奈良の大仏はなぜ建てられた？</text>
+    
+    <rect x="15" y="70" width="300" height="70" fill="#fff" stroke="#ccc" stroke-width="1" rx="6"/>
+    <text x="165" y="92" text-anchor="middle" font-size="12" fill="#888">A:</text>
+    <text x="165" y="112" text-anchor="middle" font-size="12" fill="#666">「聖武天皇が仏教の力で</text>
+    <text x="165" y="130" text-anchor="middle" font-size="12" fill="#666">国を安定させるために建立」</text>
+    
+    <text x="165" y="155" text-anchor="middle" font-size="11" fill="#bbb">→ 間違いではないが、浅い。文化的な厚みがない。</text>
+  </g>
+  
+  <!-- Arrow -->
+  <text x="400" y="160" text-anchor="middle" font-size="30" fill="#8b0000">→</text>
+  
+  <!-- After: 奈良LLMの回答 -->
+  <g transform="translate(420, 80)">
+    <rect x="0" y="0" width="330" height="160" fill="#e8f0e8" stroke="#2d6a4f" stroke-width="2" rx="8"/>
+    <text x="165" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#2d6a4f">✅ 奈良LLMが答えた場合</text>
+    
+    <text x="165" y="58" text-anchor="middle" font-size="12" fill="#555">Q: 奈良の大仏はなぜ建てられた？</text>
+    
+    <rect x="15" y="70" width="300" height="70" fill="#fff" stroke="#2d6a4f" stroke-width="1" rx="6"/>
+    <text x="165" y="92" text-anchor="middle" font-size="11" fill="#333">A: 聖武天皇が743年に発願。</text>
+    <text x="165" y="108" text-anchor="middle" font-size="11" fill="#333">天然痘の大流行と藤原広嗣の乱という</text>
+    <text x="165" y="124" text-anchor="middle" font-size="11" fill="#333">社会不安の中、国家の安定と</text>
+    <text x="165" y="140" text-anchor="middle" font-size="11" fill="#333">仏教信仰の深まりが背景にあります。</text>
+    
+    <text x="165" y="155" text-anchor="middle" font-size="11" fill="#2d6a4f">→ 正しく、厚みがある。奈良の視点で語る。</text>
+  </g>
+  
+  <!-- 下部説明 -->
+  <g transform="translate(50, 270)">
+    <rect x="0" y="0" width="700" height="120" fill="#fff5e6" stroke="#b8860b" stroke-width="2" rx="8"/>
+    <text x="350" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#8b0000">知識の主権とは——自らの文化を自らの言葉で定義する権利</text>
+    
+    <text x="350" y="58" text-anchor="middle" font-size="13" fill="#555">海外AIに委ねれば、奈良の文化は「アメリカのデータセットにおける奈良の常識」で</text>
+    <text x="350" y="80" text-anchor="middle" font-size="13" fill="#555">語られることになる。間違いではないが、豊かさを失う。</text>
+    <text x="350" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#8b0000">奈良LLMは、その「解釈権」を奈良市の手に取り戻すための装置である。</text>
+  </g>
+  
+  <text x="400" y="480" text-anchor="middle" font-size="12" fill="#888">この「解釈権の回復」に、4億円という投資は決して高くない</text>
+</svg>

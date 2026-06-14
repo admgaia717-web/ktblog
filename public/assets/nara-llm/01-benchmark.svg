@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">リオ3.5 Open 397B ベースモデルからの改善幅</text>
+  
+  <!-- ベンチマーク棒グラフ -->
+  <g transform="translate(80, 360)">
+    <!-- Y軸 -->
+    <line x1="0" y1="0" x2="0" y2="-300" stroke="#999" stroke-width="1"/>
+    <!-- X軸 -->
+    <line x1="0" y1="0" x2="700" y2="0" stroke="#999" stroke-width="1"/>
+    
+    <!-- バー: Terminal-Bench 2.1 (+18.3) -->
+    <rect x="30" y="-256" width="80" height="256" fill="#8b0000" rx="3"/>
+    <text x="70" y="-262" text-anchor="middle" font-size="13" fill="#8b0000" font-weight="bold">+18.3</text>
+    <text x="70" y="18" text-anchor="middle" font-size="11" fill="#555">Terminal</text>
+    
+    <!-- バー: DeepSWE (+17.0) -->
+    <rect x="130" y="-238" width="80" height="238" fill="#a52a2a" rx="3"/>
+    <text x="170" y="-244" text-anchor="middle" font-size="13" fill="#a52a2a" font-weight="bold">+17.0</text>
+    <text x="170" y="18" text-anchor="middle" font-size="11" fill="#555">DeepSWE</text>
+    
+    <!-- バー: Apex (+19.8) -->
+    <rect x="230" y="-277" width="80" height="277" fill="#8b0000" rx="3"/>
+    <text x="270" y="-283" text-anchor="middle" font-size="13" fill="#8b0000" font-weight="bold">+19.8</text>
+    <text x="270" y="18" text-anchor="middle" font-size="11" fill="#555">Apex</text>
+    
+    <!-- バー: HLE (+7.8) -->
+    <rect x="330" y="-109" width="80" height="109" fill="#cd5c5c" rx="3"/>
+    <text x="370" y="-115" text-anchor="middle" font-size="13" fill="#cd5c5c" font-weight="bold">+7.8</text>
+    <text x="370" y="18" text-anchor="middle" font-size="11" fill="#555">HLE</text>
+    
+    <!-- バー: SWE-Bench ML (+7.7) -->
+    <rect x="430" y="-108" width="80" height="108" fill="#cd5c5c" rx="3"/>
+    <text x="470" y="-114" text-anchor="middle" font-size="13" fill="#cd5c5c" font-weight="bold">+7.7</text>
+    <text x="470" y="18" text-anchor="middle" font-size="11" fill="#555">SWE-ML</text>
+    
+    <!-- バー: IMOAnswer (+8.6) -->
+    <rect x="530" y="-120" width="80" height="120" fill="#cd5c5c" rx="3"/>
+    <text x="570" y="-126" text-anchor="middle" font-size="13" fill="#cd5c5c" font-weight="bold">+8.6</text>
+    <text x="570" y="18" text-anchor="middle" font-size="11" fill="#555">IMO</text>
+    
+    <!-- バー: GDPval (+333) -->
+    <rect x="630" y="-140" width="60" height="140" fill="#b22222" rx="3"/>
+    <text x="660" y="-146" text-anchor="middle" font-size="12" fill="#b22222" font-weight="bold">+333</text>
+    <text x="660" y="18" text-anchor="middle" font-size="11" fill="#555">GDPval</text>
+  </g>
+  
+  <text x="400" y="480" text-anchor="middle" font-size="12" fill="#888">出典: prefeitura-rio/Rio-3.5-Open-397B, Hugging Face, 2026年4月</text>
+</svg>

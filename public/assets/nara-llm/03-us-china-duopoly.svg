@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fafaf7" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-family="serif" font-size="22" font-weight="bold" fill="#2c2c2c">世界のAI産業二極構造</text>
+  
+  <!-- アメリカ極 -->
+  <ellipse cx="250" cy="220" rx="180" ry="160" fill="#e8e0d8" stroke="#1a1a2e" stroke-width="2" fill-opacity="0.5"/>
+  <text x="250" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">🇺🇸 アメリカ</text>
+  <text x="250" y="130" text-anchor="middle" font-size="13" fill="#333">OpenAI (GPT 5.5)</text>
+  <text x="250" y="155" text-anchor="middle" font-size="13" fill="#333">Google (Gemini 3.5)</text>
+  <text x="250" y="180" text-anchor="middle" font-size="13" fill="#333">Anthropic (Claude Fable 5)</text>
+  <text x="250" y="205" text-anchor="middle" font-size="13" fill="#333">Meta (Llama 4)</text>
+  
+  <!-- 中国極 -->
+  <ellipse cx="550" cy="220" rx="180" ry="160" stroke="#2d4059" stroke-width="2" fill-opacity="0.5" fill="#e8e0d8"/>
+  <text x="550" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#2d4059">🇨🇳 中国</text>
+  <text x="550" y="130" text-anchor="middle" font-size="13" fill="#333">DeepSeek (V4 Pro)</text>
+  <text x="550" y="155" text-anchor="middle" font-size="13" fill="#333">Alibaba (Qwen 3.5/3.7)</text>
+  <text x="550" y="180" text-anchor="middle" font-size="13" fill="#333">ByteDance</text>
+  <text x="550" y="205" text-anchor="middle" font-size="13" fill="#333">Kimi (K2.6)</text>
+  
+  <!-- 日本の位置づけ -->
+  <ellipse cx="400" cy="390" rx="150" ry="50" fill="#fff5e6" stroke="#b8860b" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="400" y="385" text-anchor="middle" font-size="16" font-weight="bold" fill="#b8860b">🇯🇵 日本</text>
+  <text x="400" y="410" text-anchor="middle" font-size="12" fill="#888">「消費者」の立場に甘んじている</text>
+  
+  <!-- 矢印 -->
+  <line x1="300" y1="340" x2="360" y2="370" stroke="#b8860b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="500" y1="340" x2="440" y2="370" stroke="#b8860b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  
+  <text x="400" y="480" text-anchor="middle" font-size="12" fill="#888">日本産LLMの学習データは全体の1%未満、フロンティアモデルを持たない</text>
+</svg>
