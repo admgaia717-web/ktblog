@@ -23,6 +23,7 @@ try {
 
   execSync('git add src/content/posts/', { stdio: 'inherit' });
   execSync('git add scripts/', { stdio: 'inherit' });
+  execSync('git add public/', { stdio: 'inherit' });
   execSync(`git commit -m "${msg.replace(/"/g, '\\"')}"`, { stdio: 'inherit' });
 
   if (process.env.DRY_RUN) {

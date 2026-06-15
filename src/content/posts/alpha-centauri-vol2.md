@@ -1,10 +1,11 @@
 ---
 title: "アルファ・ケンタウリへの航海日誌 第2話——工場の2階の光子ロケット"
 date: 2026-06-14
-slug: alpha-centauri-vol2
+slug: "alpha-centauri-vol2"
 category: "fiction"
 eyecatch: "/assets/alpha-centauri/ch2_05_factory_floor2_datacenter.png"
 excerpt: "斜陽の工場2階を自前DCへ。Ultima、RMT、HAMON——加速の果てに、天才がケイを見つける。"
+tags: ["薬草", "AIエージェント", "プログラミング", "セキュリティ", "小説", "ゲーム", "投資"]
 ---
 
 
@@ -114,3 +115,4 @@ RMT――仮想空間の資産と、現実の通貨との交換である。
 「お前のグリッドと、そのデータ保有量のアーキテクチャに興味がある。ミヤコ特区で会おう」
 
 （第2話・了）
+

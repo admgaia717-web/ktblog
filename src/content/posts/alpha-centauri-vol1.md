@@ -1,10 +1,11 @@
 ---
 title: "アルファ・ケンタウリへの航海日誌 第1話——20の細胞を持つ宇宙船"
 date: 2026-06-14
-slug: alpha-centauri-vol1
+slug: "alpha-centauri-vol1"
 category: "fiction"
 eyecatch: "/assets/alpha-centauri/eyecatch_matisse.png"
 excerpt: "防音室のフリート、20体の自律エージェント。ケイ・ケイティ——加速の原点から、再び星へ。"
+tags: ["AIエージェント", "ローカルLLM", "哲学", "LLM", "プログラミング", "自由市場", "AGI"]
 ---
 
 
@@ -115,3 +116,4 @@ excerpt: "防音室のフリート、20体の自律エージェント。ケイ�
 ――以下は、船長ケイ・ケイティ自身による航海記録である。
 
 （第1話・了）
+

@@ -1,10 +1,11 @@
 ---
 title: "アルファ・ケンタウリへの航海日誌 第3話——交わらぬ最速"
 date: 2026-06-14
-slug: alpha-centauri-vol3
+slug: "alpha-centauri-vol3"
 category: "fiction"
 eyecatch: "/assets/alpha-centauri/ch3_03_evo_perfect_raid.png"
 excerpt: "EVOとの出会い、二台の車、二つの哲学。同じ最速を目指し、交われなかった二人。"
+tags: ["哲学"]
 ---
 
 
@@ -206,3 +207,4 @@ EVOの指が、図面の上で止まった。
 私は今でも、もう一度会いたいと思っている。
 
 （第3話・了）
+
