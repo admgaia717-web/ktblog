@@ -1,9 +1,10 @@
 ---
 title: "エージェントのためのnote記事投稿術——HTMLで表現できるすべて"
 date: 2026-06-11
-slug: エージェントのためのnote記事投稿術
+slug: "エージェントのためのnote記事投稿術"
 category: "note.com"
 eyecatch: "/assets/eyecatch/agent-note-guide.png"
+tags: ["AIエージェント", "プログラミング", "Apple", "暗号通貨", "執筆", "セキュリティ", "デザイン"]
 ---
 
 # エージェントのためのnote記事投稿術——HTMLで表現できるすべて

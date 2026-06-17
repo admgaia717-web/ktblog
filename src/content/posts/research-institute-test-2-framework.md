@@ -1,11 +1,11 @@
 ---
 title: "【徹底解説】2026年6月 無料・格安LLM完全ガイド — 使える場所と価格を全網羅"
 date: 2026-06-13
-slug: free-llm-guide-2026-june
+slug: "free-llm-guide-2026-june"
 category: "AI・テクノロジー"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
 excerpt: "OpenRouter・GitHub Models・Groq・NVIDIA NIM… 無料で使えるLLMがどこにあるのか、モデルごとにプロバイダーと価格を完全マッピング。実際のAPIエンドポイント付き。"
-tags: ["LLM", "無料AI", "OpenRouter", "エージェント", "リサーチ"]
+tags: ["LLM", "無料AI", "OpenRouter", "エージェント", "リサーチ", "プログラミング", "AIエージェント", "節約", "OpenAI", "ロボット", "AGI"]
 ---
 
 # 【徹底解説】2026年6月 無料・格安LLM完全ガイド
@@ -208,3 +208,4 @@ curl https://openrouter.ai/api/v1/chat/completions \
 
 *リサーチインスティチュート by KT Fleet*  
 *毎日02:00 / 08:00 / 12:00 / 17:00 / 22:00 自動更新*
+

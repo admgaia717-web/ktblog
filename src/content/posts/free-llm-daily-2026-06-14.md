@@ -1,11 +1,11 @@
 ---
 title: "【日次更新】2026-06-14 無料・格安LLM最新状況"
 date: 2026-06-14
-slug: free-llm-daily-2026-06-14
+slug: "free-llm-daily-2026-06-14"
 category: "AI・テクノロジー"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
 excerpt: "OpenRouter 26の無料モデルを含む最新LLM情報を日次更新"
-tags: ["LLM", "無料AI", "OpenRouter", "リサーチ", "自動更新"]
+tags: ["LLM", "無料AI", "OpenRouter", "リサーチ", "自動更新", "プログラミング", "AIエージェント", "OpenAI", "節約", "AGI", "ロボット"]
 ---
 
 # 🧪 リサーチインスティチュート 日次レポート
@@ -168,3 +168,4 @@ curl https://integrate.api.nvidia.com/v1/chat/completions \
 > 🏢 **KT Fleet Research Institute** · 無料・格安LLMを追跡・検証し公開  
 > 毎日5回更新（02/08/12/17/22 JST）  
 > [KTblog](https://ktblog.pages.dev) · [GitHub](https://github.com/admgaia717-web/ktblog)
+

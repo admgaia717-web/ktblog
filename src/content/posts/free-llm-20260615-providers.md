@@ -1,11 +1,11 @@
 ---
 title: "🏗️ 【2026-06-15】LLMプロバイダー比較 — プロバイダー比較大全"
 date: 2026-06-15
-slug: free-llm-20260615-providers
+slug: "free-llm-20260615-providers"
 category: "AI・テクノロジー"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
 excerpt: "OpenRouter・Groq・NVIDIA NIM・GitHub Models… 無料LLMが使える全プロバイダを徹底比較。"
-tags: ["LLM", "プロバイダー", "無料API", "OpenRouter", "日次更新"]
+tags: ["LLM", "プロバイダー", "無料API", "OpenRouter", "日次更新", "プログラミング", "AIエージェント", "OpenAI", "ロボット"]
 ---
 
 # 🏗️ リサーチインスティチュート — プロバイダー比較大全
@@ -77,3 +77,4 @@ curl https://integrate.api.nvidia.com/v1/chat/completions \
 ---
 
 > 🏢 **KT Fleet Research Institute** · 次回22:00: 本日総まとめ＆明日予告
+

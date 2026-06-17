@@ -1,11 +1,11 @@
 ---
 title: "📋 【2026-06-16】本日のLLM総まとめ"
 date: 2026-06-16
-slug: free-llm-20260616-summary
+slug: "free-llm-20260616-summary"
 category: "AI・テクノロジー"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
 excerpt: "本日27の無料モデルを検証。明日2026-06-17の注目ポイントを事前解説。"
-tags: ["LLM", "まとめ", "OpenRouter", "エージェント", "日次更新"]
+tags: ["LLM", "まとめ", "OpenRouter", "エージェント", "日次更新", "AIエージェント", "プログラミング", "節約", "ロボット"]
 ---
 
 # 📋 リサーチインスティチュート — 本日の総まとめ
@@ -70,3 +70,4 @@ tags: ["LLM", "まとめ", "OpenRouter", "エージェント", "日次更新"]
 ---
 
 > 🏢 **KT Fleet Research Institute** · 明日02:00に次回更新
+

@@ -1,11 +1,11 @@
 ---
 title: "🔬 【2026-06-14】モデル深掘り — 実力検証"
 date: 2026-06-14
-slug: free-llm-20260614-deepdive
+slug: "free-llm-20260614-deepdive"
 category: "AI・テクノロジー"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
 excerpt: "本日ピックアップ3モデルの詳細スペック・コンテキスト・価格体系・リンクを徹底比較。"
-tags: ["LLM", "モデル比較", "OpenRouter", "深掘り", "日次更新"]
+tags: ["LLM", "モデル比較", "OpenRouter", "深掘り", "日次更新", "OpenAI", "ロボット", "AIエージェント"]
 ---
 
 # 🔬 リサーチインスティチュート — モデル深掘り
@@ -81,3 +81,4 @@ tags: ["LLM", "モデル比較", "OpenRouter", "深掘り", "日次更新"]
 ---
 
 > 🏢 **KT Fleet Research Institute** · 次回17:00: プロバイダー比較大全
+

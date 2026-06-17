@@ -1,11 +1,11 @@
 ---
 title: "💰 【2026-06-15】格安LLMランキング — 格安ランキング＆コスパ検証"
 date: 2026-06-15
-slug: free-llm-20260615-ranking
+slug: "free-llm-20260615-ranking"
 category: "AI・テクノロジー"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
 excerpt: "全モデルの価格を徹底比較。20の超格安モデル発見！"
-tags: ["LLM", "格安AI", "コスパ", "OpenRouter", "日次更新"]
+tags: ["LLM", "格安AI", "コスパ", "OpenRouter", "日次更新", "AIエージェント", "節約", "ロボット"]
 ---
 
 # 💰 リサーチインスティチュート — 格安LLMランキング
@@ -59,3 +59,4 @@ tags: ["LLM", "格安AI", "コスパ", "OpenRouter", "日次更新"]
 ---
 
 > 🏢 **KT Fleet Research Institute** · 次回12:00: モデル深掘り — 特定モデルの実力検証
+
