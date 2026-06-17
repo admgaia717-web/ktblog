@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="lightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#81ECEC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00CEC9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="heavyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FD7272;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D63031;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="520" rx="20" fill="#F8F9FA"/>
+  
+  <text x="400" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#2D3436">軽量ハーネス vs 重量ハーネス 比較</text>
+  
+  <!-- LEFT: Lightweight -->
+  <rect x="30" y="60" width="355" height="440" rx="18" fill="white" stroke="#00CEC9" stroke-width="2.5"/>
+  <rect x="30" y="60" width="355" height="60" rx="18" fill="url(#lightGrad)"/>
+  <rect x="30" y="100" width="355" height="20" fill="url(#lightGrad)"/>
+  <text x="207" y="97" text-anchor="middle" font-size="22" font-weight="bold" fill="white">🪶 軽量ハーネス型</text>
+  <text x="207" y="120" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.85)">例：Pi（200〜1,000トークン）</text>
+  
+  <text x="55" y="160" font-size="14" font-weight="bold" fill="#00CEC9">✅ メリット</text>
+  <text x="55" y="182" font-size="13" fill="#2D3436">• システムプロンプト 200〜1Kトークン</text>
+  <text x="55" y="202" font-size="13" fill="#2D3436">• ツールはたった4つ（read/write/edit/bash）</text>
+  <text x="55" y="222" font-size="13" fill="#2D3436">• 起動爆速、1回の呼び出しが安い</text>
+  <text x="55" y="242" font-size="13" fill="#2D3436">• 完全透明、セッションが全部読める</text>
+  <text x="55" y="262" font-size="13" fill="#2D3436">• モデル自由に差し替え可能</text>
+  
+  <text x="55" y="295" font-size="14" font-weight="bold" fill="#D63031">⚠️ デメリット</text>
+  <text x="55" y="317" font-size="13" fill="#2D3436">• 複雑なタスクだと迷う</text>
+  <text x="55" y="337" font-size="13" fill="#2D3436">• モデルが弱いと結果も弱い</text>
+  <text x="55" y="357" font-size="13" fill="#2D3436">• サブエージェント等の高度機能なし</text>
+  
+  <text x="55" y="393" font-size="14" font-weight="bold" fill="#6C5CE7">🎯 向いてる人</text>
+  <text x="55" y="415" font-size="13" fill="#2D3436">「とりあえず試したい」</text>
+  <text x="55" y="435" font-size="13" fill="#2D3436">「コスト最優先」</text>
+  <text x="55" y="455" font-size="13" fill="#2D3436">「仕組みを理解したい」</text>
+  <text x="55" y="478" font-size="13" fill="#2D3436">「月数百円に抑えたい」</text>
+  
+  <!-- VS -->
+  <text x="400" y="290" text-anchor="middle" font-size="32" font-weight="bold" fill="#B2BEC3">⚡️VS⚡️</text>
+  
+  <!-- RIGHT: Heavyweight -->
+  <rect x="415" y="60" width="355" height="440" rx="18" fill="white" stroke="#D63031" stroke-width="2.5"/>
+  <rect x="415" y="60" width="355" height="60" rx="18" fill="url(#heavyGrad)"/>
+  <rect x="415" y="100" width="355" height="20" fill="url(#heavyGrad)"/>
+  <text x="592" y="97" text-anchor="middle" font-size="22" font-weight="bold" fill="white">🎒 重量ハーネス型</text>
+  <text x="592" y="120" text-anchor="middle" font-size="13" fill="rgba(255,255,255,0.85)">例：Claude Code（〜10,000トークン+）</text>
+  
+  <text x="440" y="160" font-size="14" font-weight="bold" fill="#00CEC9">✅ メリット</text>
+  <text x="440" y="182" font-size="13" fill="#2D3436">• 複雑タスクを安定実行</text>
+  <text x="440" y="202" font-size="13" fill="#2D3436">• 豊富な機能（Teams/cron/remote）</text>
+  <text x="440" y="222" font-size="13" fill="#2D3436">• MCPサーバーで拡張自由</text>
+  <text x="440" y="242" font-size="13" fill="#2D3436">• SWE-bench最高スコア（80.9%）</text>
+  
+  <text x="440" y="275" font-size="14" font-weight="bold" fill="#D63031">⚠️ デメリット</text>
+  <text x="440" y="297" font-size="13" fill="#2D3436">• プロンプト 10Kトークン超</text>
+  <text x="440" y="317" font-size="13" fill="#2D3436">• ツール定義だけで55Kトークン</text>
+  <text x="440" y="337" font-size="13" fill="#2D3436">• 月$100払わないとすぐ上限</text>
+  <text x="440" y="357" font-size="13" fill="#2D3436">• 「Hello」だけで55K消費</text>
+  
+  <text x="440" y="393" font-size="14" font-weight="bold" fill="#6C5CE7">🎯 向いてる人</text>
+  <text x="440" y="415" font-size="13" fill="#2D3436">「品質最優先、予算は気にしない」</text>
+  <text x="440" y="435" font-size="13" fill="#2D3436">「大規模プロジェクト」</text>
+  <text x="440" y="455" font-size="13" fill="#2D3436">「AIに全部任せたい」</text>
+  <text x="440" y="478" font-size="13" fill="#2D3436">「月$100が許容範囲」</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="'Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C44569;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="neckGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#45B7D1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C86A0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A29BFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6C5CE7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="340" rx="20" fill="#FFF5F7"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#2D3436">AIエージェントの3層構造</text>
+  
+  <!-- HEAD -->
+  <rect x="100" y="70" width="180" height="100" rx="18" fill="url(#headGrad)"/>
+  <text x="190" y="115" text-anchor="middle" font-size="28" font-weight="bold" fill="white">🧠 HEAD</text>
+  <text x="190" y="145" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.85)">LLM Model</text>
+  <text x="190" y="162" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.7)">GPT-5 / Claude / Gemini</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="280" y1="120" x2="350" y2="120" stroke="#B2BEC3" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="345,114 358,120 345,126" fill="#B2BEC3"/>
+  
+  <!-- NECK -->
+  <rect x="360" y="70" width="180" height="100" rx="18" fill="url(#neckGrad)"/>
+  <text x="450" y="115" text-anchor="middle" font-size="28" font-weight="bold" fill="white">📡 NECK</text>
+  <text x="450" y="145" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.85)">Provider</text>
+  <text x="450" y="162" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.7)">OpenRouter / OpenCode</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="540" y1="120" x2="610" y2="120" stroke="#B2BEC3" stroke-width="3" stroke-dasharray="6,4"/>
+  <polygon points="605,114 618,120 605,126" fill="#B2BEC3"/>
+  
+  <!-- BODY -->
+  <rect x="620" y="70" width="180" height="100" rx="18" fill="url(#bodyGrad)"/>
+  <text x="710" y="115" text-anchor="middle" font-size="28" font-weight="bold" fill="white">🦾 BODY</text>
+  <text x="710" y="145" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.85)">Harness</text>
+  <text x="710" y="162" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.7)">Pi / OpenCode / Claude Code</text>
+  
+  <!-- Bottom info boxes -->
+  <rect x="100" y="200" width="180" height="50" rx="12" fill="#FFE0EC" stroke="#FF6B9D" stroke-width="1.5"/>
+  <text x="190" y="225" text-anchor="middle" font-size="12" font-weight="bold" fill="#C44569">取り替え可能な「頭脳」</text>
+  <text x="190" y="240" text-anchor="middle" font-size="11" fill="#C44569">モデルを選べば性能が変わる</text>
+  
+  <rect x="360" y="200" width="180" height="50" rx="12" fill="#D6F0F7" stroke="#45B7D1" stroke-width="1.5"/>
+  <text x="450" y="225" text-anchor="middle" font-size="12" font-weight="bold" fill="#2C86A0">モデルをルーティングする「首」</text>
+  <text x="450" y="240" text-anchor="middle" font-size="11" fill="#2C86A0">プロバイダで課金・速度が変わる</text>
+  
+  <rect x="620" y="200" width="180" height="50" rx="12" fill="#E8E3FF" stroke="#A29BFE" stroke-width="1.5"/>
+  <text x="710" y="225" text-anchor="middle" font-size="12" font-weight="bold" fill="#6C5CE7">今回の主役！</text>
+  <text x="710" y="240" text-anchor="middle" font-size="11" fill="#6C5CE7">ハーネス次第で費用が10倍変わる</text>
+  
+  <!-- Analogy -->
+  <rect x="100" y="275" width="680" height="50" rx="14" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5"/>
+  <text x="440" y="298" text-anchor="middle" font-size="13" fill="#E65100">🔍 料理にたとえると：HEAD=シェフの腕前 NECK=仕入先 BODY=厨房の設計・道具の揃え方</text>
+  <text x="440" y="315" text-anchor="middle" font-size="12" fill="#E65100">同じシェフでも、厨房が違えば出来上がる料理も予算もまったく変わる！</text>
+</svg>

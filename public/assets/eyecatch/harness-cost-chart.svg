@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <linearGradient id="bar1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00CEC9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#81ECEC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A29BFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DDA0DD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bar3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FD7272;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9F9F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bar4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FDCB6E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFEAA7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="520" rx="20" fill="#FFF5F7"/>
+  
+  <text x="400" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#2D3436">💰 同じ仕事、この値段の差！</text>
+  <text x="400" y="62" text-anchor="middle" font-size="14" fill="#636E72">週20小タスク + 10中タスク + 2大タスクをこなす開発者の場合</text>
+  
+  <!-- Chart area -->
+  <rect x="80" y="90" width="680" height="380" rx="15" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Bar: Claude Code -->
+  <rect x="110" y="120" width="180" height="30" rx="8" fill="url(#bar3)"/>
+  <text x="115" y="140" font-size="13" font-weight="bold" fill="white">Claude Code</text>
+  <text x="295" y="140" font-size="14" font-weight="bold" fill="#D63031">$23.36/月</text>
+  
+  <!-- Bar: Codex CLI -->
+  <rect x="110" y="170" width="100" height="30" rx="8" fill="url(#bar2)"/>
+  <text x="115" y="190" font-size="13" font-weight="bold" fill="white">Codex CLI</text>
+  <text x="215" y="190" font-size="14" font-weight="bold" fill="#6C5CE7">$9.96/月</text>
+  
+  <!-- Bar: Gemini CLI -->
+  <rect x="110" y="220" width="85" height="30" rx="8" fill="url(#bar1)"/>
+  <text x="115" y="240" font-size="13" font-weight="bold" fill="white">Gemini CLI</text>
+  <text x="200" y="240" font-size="14" font-weight="bold" fill="#00CEC9">$8.48/月</text>
+  
+  <!-- Bar: Optimal Mix -->
+  <rect x="110" y="270" width="75" height="30" rx="8" fill="url(#bar4)"/>
+  <text x="115" y="290" font-size="13" font-weight="bold" fill="#E17055">最適混合</text>
+  <text x="190" y="290" font-size="14" font-weight="bold" fill="#D63031">$7.84/月</text>
+  
+  <!-- Insights -->
+  <rect x="110" y="330" width="620" height="120" rx="14" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5"/>
+  <text x="420" y="355" text-anchor="middle" font-size="15" font-weight="bold" fill="#E65100">💡 気づき</text>
+  <text x="130" y="380" font-size="13" fill="#2D3436">• 同じ開発作業でも、ツール選びで月額費用が3倍も変わる</text>
+  <text x="130" y="400" font-size="13" fill="#2D3436">• 年間にすると$94 vs $280 → 約19万円の差！</text>
+  <text x="130" y="420" font-size="13" fill="#2D3436">• 「最適混合」戦略なら、最大効果を最小コストで実現</text>
+  <text x="130" y="440" font-size="13" fill="#2D3436">• タスクに合わせて軽量・重量を使い分けるのが正解</text>
+</svg>
