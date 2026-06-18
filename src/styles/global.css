@@ -169,6 +169,15 @@ mark {
   line-height: 1.6;
 }
 
+@media (max-width: 640px) {
+  .prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 .prose thead {
   border-bottom: 2px solid var(--color-accent);
 }
