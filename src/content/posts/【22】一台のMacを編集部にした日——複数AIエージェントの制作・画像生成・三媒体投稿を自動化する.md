@@ -64,7 +64,7 @@ LLMが得意なことは限られている。記事の本文を書く、タイ�
 
 ComfyUIは同時に複数を走らせない。原則一件ずつ。ComfyUIロックを取ってからAPIを叩き、画像が戻ったらロックを解放する。戻った画像はサイズと存在とSHA-256を検査し、プロンプトと生成設定を同名のJSONに保存する。こうしておけば、半年後に「この画像どう作ったっけ」が必ず再現できる。Seedを固定すれば、同じ画像を同じ品質で焼き直すこともできる。この記事のキャッチと三枚の章挿絵も、すべてArtisan XLで、文字もロゴも入れない指定で焼いた。Seedは日付に沿った四つの数字だ。設定は同名のJSONに残してある。
 
-## 6. Cloudflare→note→Substackの順に配信する
+## 6. Cloudflare、note、Substackの順に配信する
 
 ![三媒体配信と検査](/assets/meta-publisher/shared-publisher-verify-artisan-22061934.png)
 
