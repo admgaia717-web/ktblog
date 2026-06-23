@@ -1,0 +1,13 @@
+body { font-family: "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; color: #222; max-width: 720px; margin: 0 auto; padding: 40px 20px; background: #fafafa; }
+h1 { font-size: 1.4em; color: #1a5490; border-bottom: 2px solid #1a5490; padding-bottom: 10px; }
+h2 { font-size: 1.15em; color: #2a6db0; margin-top: 32px; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 24px; }
+.meta .series { background: #eef4fb; padding: 2px 8px; border-radius: 4px; }
+.body p { margin: 16px 0; }
+.body strong { color: #1a5490; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+th { background: #1a5490; color: white; }
+footer.references { margin-top: 40px; padding-top: 16px; border-top: 1px solid #ddd; color: #888; font-size: 0.85em; }
+.article-nav { margin-top: 40px; }
+.article-nav a { color: #1a5490; }
