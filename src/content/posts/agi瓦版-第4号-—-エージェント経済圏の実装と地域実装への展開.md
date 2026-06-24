@@ -4,6 +4,7 @@ date: 2026-06-23
 category: "AI"
 eyecatch: "/assets/eyecatch/agi-waban-4.jpg"
 excerpt: "AGI瓦版 第1号から第3号までで提示した一人出版社コンセプトを統合し、「エージェント経済圏」の実装フェーズと地域特化型LLM「ならしLLM」への展開を報告する"
+tags: ["AGI", "LLM", "奈良", "映像", "生成AI", "哲学", "OpenAI", "プログラミング", "Apple", "投資"]
 ---
 # AGI瓦版 第4号 — エージェント経済圏の実装と地域実装への展開
 
@@ -147,3 +148,4 @@ AGI瓦版 第4号 完
 2026-06-22 KeiTy（加藤敬太）
 
 元記事: https://note.com/famous_prawn2009/n/n61aeee316f19
+
