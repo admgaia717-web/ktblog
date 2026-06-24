@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>移動支援「つるまい」運営ダッシュボード</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.6; color: #1a1a1a; background: #f5f7fa; padding: 24px 16px; }
+  .container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 12px; padding: 28px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  header { border-bottom: 3px solid #1a5490; padding-bottom: 14px; margin-bottom: 22px; }
+  h1 { font-size: 1.3em; color: #1a5490; }
+  .subtitle { color: #666; font-size: 0.9em; margin-top: 4px; }
+  .updated { color: #888; font-size: 0.8em; text-align: right; margin-top: 6px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 18px 0; }
+  .kpi { background: linear-gradient(135deg, #eef4fb, #dde9f5); border-radius: 10px; padding: 16px 12px; text-align: center; border: 1px solid #b0d4f1; }
+  .kpi .num { font-size: 2em; font-weight: bold; color: #1a5490; line-height: 1; }
+  .kpi .label { font-size: 0.82em; color: #444; margin-top: 6px; }
+  .kpi .sub { font-size: 0.7em; color: #888; margin-top: 2px; }
+  .section { margin-top: 26px; }
+  h2 { font-size: 1.05em; color: #1a5490; border-left: 5px solid #1a5490; padding-left: 10px; margin-bottom: 12px; }
+  .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 700px) { .chart-row { grid-template-columns: 1fr; } }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+  th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+  th { background: #eef4fb; }
+  .bar-container { margin: 4px 0; }
+  .bar-label { display: flex; justify-content: space-between; font-size: 0.85em; margin-bottom: 2px; }
+  .bar-bg { background: #e8eef5; border-radius: 4px; height: 18px; overflow: hidden; }
+  .bar-fill { background: linear-gradient(90deg, #1a5490, #2a6db0); height: 100%; border-radius: 4px; }
+  .bar-fill.medical { background: linear-gradient(90deg, #c62828, #e53935); }
+  .insight { background: #fff8e1; border-left: 4px solid #f9a825; padding: 10px 14px; margin: 12px 0; font-size: 0.9em; }
+  .ai-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 10px; font-size: 0.75em; font-weight: bold; margin-left: 6px; }
+  footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 0.8em; color: #666; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>移動支援「つるまい」運営ダッシュボード</h1>
+  <div class="subtitle">奈良市鶴舞地区 高齢者通院送迎支援 — 運営実績の可視化</div>
+  <div class="updated">最終更新: 2026年6月24日 / データ期間: 2025年3月〜 / 個人情報マスキング済</div>
+</header>
+
+<div class="kpi-grid">
+  <div class="kpi"><div class="num">894</div><div class="label">累計予約受付</div><div class="sub">件（継続中）</div></div>
+  <div class="kpi"><div class="num">161</div><div class="label">利用高齢者数</div><div class="sub">人（実数）</div></div>
+  <div class="kpi"><div class="num">15</div><div class="label">運用月数</div><div class="sub">ヶ月（継続）</div></div>
+  <div class="kpi"><div class="num">¥1,550</div><div class="label">月額運用費</div><div class="sub">低コスト運営</div></div>
+  <div class="kpi"><div class="num">149</div><div class="label">医療機関への移送</div><div class="sub">件（全体の17%）</div></div>
+</div>
+
+<div class="section">
+  <h2>月別予約受付推移<span class="ai-badge">需要予測AI分析対象</span></h2>
+  <div id="monthly-chart"></div>
+</div>
+
+<div class="chart-row section">
+  <div>
+    <h2>曜日別利用傾向</h2>
+    <div id="weekday-chart"></div>
+    <div class="insight">月水金に集中（運行日）。リソース配分の最適化根拠。</div>
+  </div>
+  <div>
+    <h2>時間帯別出発</h2>
+    <div id="hour-chart"></div>
+    <div class="insight">9時台が最多。通院の朝イチ需要。</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>目的地ランキング（上位10）</h2>
+  <div id="dest-chart"></div>
+  <div class="insight">パラディ（商業施設）・医療機関が中心。通院＋買い物移送の実態。</div>
+</div>
+
+<div class="section">
+  <h2>出発地ランキング（上位10）</h2>
+  <div id="dep-chart"></div>
+</div>
+
+<div class="section">
+  <h2>AI活用による運営最適化（継続取り組み）</h2>
+  <div class="insight">
+  本ダッシュボードは、予約データ894件を集計・可視化したもの。KT（玉川勝史）は、このデータ分析に加え、以下をAIで継続実施中：<br>
+  ① 月次の需要予測（曜日・時間帯別の運行リソース配分）<br>
+  ② 既存音声データ184件の分析（高齢者音声の認識課題・方言対応）<br>
+  ③ 電話受付完全自動化PoC基盤の構築（音声AI・LLM・予約連携）<br>
+  ④ 本ダッシュボードの自動更新（新規予約の継続反映）
+  </div>
+</div>
+
+<footer>
+  運営: 株式会社プロスインターナショナル大塩（担当: 玉川勝史）<br>
+  データ元: Googleフォーム予約受付（個人情報は氏名・電話番号・住所を除き集計）<br>
+  お問合せ: 090-6054-2929 / admgaia717@gmail.com
+</footer>
+
+</div>
+
+<script>
+const data = {
+  monthly: [["2025/03",13],["2025/04",37],["2025/05",29],["2025/06",58],["2025/07",57],["2025/08",41],["2025/09",72],["2025/10",75],["2025/11",65],["2025/12",68],["2026/01",65],["2026/02",40],["2026/03",45],["2026/04",74],["2026/05",67],["2026/06",81]],
+  weekday: [["月",239],["火",12],["水",276],["木",11],["金",346],["土",3],["日",4]],
+  hours: [[8,3],[9,49],[10,29],[11,18],[12,3],[13,7],[14,21],[15,4]],
+  destinations: [["パラディ",342],["自宅",199],["あやめ池駅北ロータリー",129],["西奈良中央病院",57],["メディカルコートあやめ池",41],["中田整形外科",38],["万代",25],["コーポ",17],["西福祉センター",17],["栗原歯科",12]],
+  departures: [["自宅",320],["エクセルハイツ",59],["パラディ",53],["あやめ池北ロータリー",43],["集合住宅A",25],["駅ロータリーB",14],["集合住宅C",13],["商業施設D",13],["集合住宅E",11],["個人宅F",11]]
+};
+function renderBars(containerId, items, maxVal, medicalKeywords) {
+  const el = document.getElementById(containerId);
+  let html = '';
+  const max = maxVal || Math.max(...items.map(i=>i[1]));
+  items.forEach(([label, val]) => {
+    const isMed = medicalKeywords && medicalKeywords.some(k => label.includes(k));
+    const pct = (val/max*100).toFixed(0);
+    html += `<div class="bar-container"><div class="bar-label"><span>${label}${isMed?' <span style="color:#c62828;font-size:0.8em">[医療]</span>':''}</span><span><b>${val}</b></span></div><div class="bar-bg"><div class="bar-fill${isMed?' medical':''}" style="width:${pct}%"></div></div></div>`;
+  });
+  el.innerHTML = html;
+}
+renderBars('monthly-chart', data.monthly, 90);
+renderBars('weekday-chart', data.weekday, 346);
+renderBars('hour-chart', data.hours.map(h=>[h[0]+'時',h[1]]), 49);
+renderBars('dest-chart', data.destinations, 342, ['病院','クリニック','整形','メディカル','歯科','内科']);
+renderBars('dep-chart', data.departures, 320);
+</script>
+</body>
+</html>
