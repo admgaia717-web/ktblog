@@ -3,7 +3,7 @@ title: "【27】奈良でLLMを鍛える——RFI残り8日が照らす、技術
 date: 2026-06-25
 slug: "27奈良でLLMを鍛える-RFI残り8日が照らす技術制度学術の交差点"
 category: "note.com"
-tags: ["LLM", "奈良", "RFI", "NAIST", "ローカルLLM", "QLoRA", "生成AI", "地域特化型AI"]
+tags: ["LLM", "奈良", "RFI", "NAIST", "ローカルLLM", "QLoRA", "生成AI", "地域特化型AI", "Apple", "プログラミング", "哲学", "執筆"]
 ---
 
 # 【27】奈良でLLMを鍛える——RFI残り8日が照らす、技術・制度・学術の交差点
@@ -158,3 +158,4 @@ IBM Brazilの事例も示唆的だ。Guarani Mbya語のライティングアシ�
 > - arXiv 2510.05069「SwiReasoning」（ICLR 2026）
 > - NAIST 2027年度博士前期課程 学生募集要項
 > - 渡辺研究室 発表文献 https://nlp.naist.jp/ja/publications/
+
