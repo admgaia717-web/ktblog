@@ -4,7 +4,7 @@ date: 2026-06-26
 category: "Tech"
 eyecatch: "/assets/eyecatch/xbat-vtol.jpg"
 excerpt: "Shield AIが公開したX-BATは、滑走路なしで垂直離着陸できる完全自律型ジェット戦闘機。GE F110エンジン搭載、高度50,000ft、航続距離2,000海里、AIパイロットHivemindが操縦する。"
-tags: ["Shield AI", "X-BAT", "VTOL", "自律型", "ドローン", "軍事", "AI", "Hivemind"]
+tags: ["Shield AI", "X-BAT", "VTOL", "自律型", "ドローン", "軍事", "AI", "Hivemind", "ロボット", "映像", "ゲーム"]
 ---
 
 # X-BAT：滑走路不要のジェット戦闘ドローン——Shield AIが示す航空戦力のパラダイムシフト
@@ -68,3 +68,4 @@ GPS不能、通信妨害、完全オフライン——いずれの環境でも�
 ---
 
 参考: [Shield AI 公式](https://shield.ai/x-bat)
+

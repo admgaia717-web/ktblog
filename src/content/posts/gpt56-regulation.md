@@ -4,7 +4,7 @@ date: 2026-06-26
 category: "AI"
 eyecatch: "/assets/eyecatch/gpt56-regulation.jpg"
 excerpt: "GPT-5.6が一般公開されず、米政府が顧客ごとにアクセス承認。ONCD・OSTP・商務省・財務省が連携し、最先端AIへのアクセスを利用者単位で管理し始めた。サイファーパンクの理想が死ぬ日。"
-tags: ["GPT5.6", "OpenAI", "ChatGPT", "トランプ", "AI規制", "サイファーパンク", "Mythos", "AI安全保障"]
+tags: ["GPT5.6", "OpenAI", "ChatGPT", "トランプ", "AI規制", "サイファーパンク", "Mythos", "AI安全保障", "セキュリティ"]
 ---
 
 # ついにチャッピー最新版も規制❗️ChatGPTとトランプ政権は人間を選別し始めた！
@@ -93,3 +93,4 @@ ChatGPTは人間を選別し始めた。その最初の一歩が、2026年6月�
 ---
 
 元記事: https://note.com/famous_prawn2009/n/n6f60b52508da
+

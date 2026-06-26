@@ -4,7 +4,7 @@ date: 2026-06-26
 category: "Apple"
 eyecatch: "/assets/eyecatch/m5-ultra-500.jpg"
 excerpt: "2026年登場が噂されるM5 Ultra Mac Studio。768GB統一メモリの技術的真実と、500万円に達する価格予測。コード、開発型番、中古市場の狂騒から、次世代Macの全貌を徹底解剖。"
-tags: ["M5Ultra", "MacStudio", "Apple", "768GB", "統一メモリ", "値上げ", "AI"]
+tags: ["M5Ultra", "MacStudio", "Apple", "768GB", "統一メモリ", "値上げ", "AI", "自由市場", "哲学"]
 ---
 
 # さあ、500万円を握り締めてアップルショップに並ぶんだ——M5 Ultra Mac Studio 768GBの真実と狂騒の価格
@@ -92,3 +92,4 @@ MacRumorsの見出しは「768GB版が登場する」と読める。しかしBlo
 ---
 
 元記事: https://note.com/famous_prawn2009/n/n10130f515155
+
