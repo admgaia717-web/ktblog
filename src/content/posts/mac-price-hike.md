@@ -4,7 +4,7 @@ date: 2026-06-26
 category: "Apple"
 eyecatch: "/assets/eyecatch/mac-price-hike.jpg"
 excerpt: "2026年6月25日、AppleがMac/iPad/Vision Proを一斉値上げ。最大9万円超の大幅改定の背景と、M5 Ultra Mac Studioが1TB統一メモリを搭載する可能性、そして価格予想を徹底解説。"
-tags: ["Apple", "MacBookPro", "MacStudio", "M5Ultra", "値上げ", "統一メモリ", "AI", "DRAM", "AppleSilicon"]
+tags: ["Apple", "MacBookPro", "MacStudio", "M5Ultra", "値上げ", "統一メモリ", "AI", "DRAM", "AppleSilicon", "投資", "ローカルLLM", "LLM", "AGI"]
 ---
 
 # MacBook大幅値上げ！次のMac Studioはついに統一メモリ1TB突破か
@@ -79,3 +79,4 @@ BloombergのMark Gurmanは、M5 Ultraを搭載する次世代Mac Studioが2026�
 ---
 
 元記事: https://note.com/famous_prawn2009/n/n53d294aa115d
+

@@ -4,7 +4,7 @@ date: 2026-06-26
 category: "AI"
 eyecatch: "/assets/eyecatch/m5-vlm-eyecatch.jpg"
 excerpt: "M5 Maxの超大容量統一メモリとVLM（Vision Language Model）のComfyUI統合が、AGI作画パイプラインに何をもたらすのか。現在のM1 Max 64GB環境との比較から未来像までを描く。"
-tags: ["M5Max", "ComfyUI", "VLM", "統一メモリ", "AppleSilicon", "AGI", "画像生成", "AI"]
+tags: ["M5Max", "ComfyUI", "VLM", "統一メモリ", "AppleSilicon", "AGI", "画像生成", "AI", "生成AI", "Apple", "LLM", "ローカルLLM"]
 ---
 
 # M5 MAX 128TB統一メモリとComfyUI——VLMが「絵を読む」とき、AGI作画は何を変えるのか
@@ -92,3 +92,4 @@ M5 Maxの超大容量統一メモリは、ComfyUIを「絵を描くツール」�
 ---
 
 元記事: https://note.com/famous_prawn2009/n/na254aeeaf2cf
+
