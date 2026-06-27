@@ -3,7 +3,7 @@ title: "【38】一本のパイプラインが見えた——RFIからならしL
 date: 2026-06-27
 slug: "38-4lane-pipeline-rfi-narashi-llm"
 category: "kt-research"
-tags: ["kt-research", "RFI", "NAIST", "ならしLLM", "音声技術", "PEFT", "ASR"]
+tags: ["kt-research", "RFI", "NAIST", "ならしLLM", "音声技術", "PEFT", "ASR", "LLM", "奈良", "生成AI", "プログラミング", "ロボット", "執筆"]
 ---
 
 
@@ -98,4 +98,5 @@ NAISTと奈良女子大学は2019年12月に包括連携協定を締結してい
 ---
 
 *この記事は2026年6月27日の研究蓄積（RFI/DX動向・NAIST入試・音声技術・PEFT最新動向）を統合したものです。研究ログの生データは~/fabric/research-accumulator.mdに蓄積されています。*
+
 
