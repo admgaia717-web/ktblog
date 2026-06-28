@@ -45,3 +45,4 @@ Osaurus（macOSネイティブAIエージェント）+ Gemma 4 の組み合わ�
 - [9to5Mac: Micron CBO Sadanaへのインタビュー](https://9to5mac.com/2026/06/25/micron-exec-suggests-apples-aggressive-purchasing-tactics-helped-fuel-memory-shortage/)
 - [Osaurus GitHub](https://github.com/osaurus-ai/osaurus)
 - WSJ "Apple Raises Prices on Macs, iPads by $200 or More" (2026/6/25)
+ 
