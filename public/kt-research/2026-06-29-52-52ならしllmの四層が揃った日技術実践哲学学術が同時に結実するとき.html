@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【52】ならしLLMの四層が揃った日——技術・実践・哲学・学術が同時に結実するとき</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --fg: #e0e0e0;
+            --accent: #d4a857;
+            --card-bg: #1a1a1a;
+            --border: #333;
+            --link: #6db4ff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: var(--fg);
+            font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+            line-height: 1.85;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.15rem;
+            color: #ccc;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        p { margin-bottom: 1.2rem; }
+        a { color: var(--link); }
+        strong { color: var(--accent); }
+        blockquote {
+            border-left: 3px solid var(--accent);
+            margin: 1.5rem 0;
+            padding: 0.5rem 1rem;
+            background: rgba(212, 168, 87, 0.05);
+            color: #bbb;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.6rem 0.8rem;
+            text-align: left;
+        }
+        th {
+            background: var(--card-bg);
+            color: var(--accent);
+        }
+        code {
+            background: var(--card-bg);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        em {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        .back-link {
+            margin-top: 3rem;
+            display: inline-block;
+            color: var(--link);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>【52】ならしLLMの四層が揃った日——技術・実践・哲学・学術が同時に結実するとき</h1>
+    <p>RFI提出まであと4日。7月3日が迫っている。</p>
+<p>その直前の今日、研究ジョブが立て続けに四つのエントリを吐き出した。PEFTの最新手法、全国の自治体AI電話動向、文化継承×LLMの国際事例、そしてNAIST渡辺研の古文書NLP研究クラスター。バラバラに見えるが、読み返してみると一つのことが起きている。</p>
+<p>ならしLLMを構成する四つの層——技術・実践・哲学・学術——が、同じ日に、同時に更新された。</p>
+<hr />
+<h2>第一層：技術——PiSSAとDoRA、そしてDAPTの順序</h2>
+<p>Qwen3.6-8BをMLX QLoRAでM1 Maxに乗せている今の構成に対して、2026年5月時点のPEFTガイドが示す改善余地は三つある。</p>
+<p>一つ目は<strong>PiSSA</strong>。LoRAと同じメモリ消費量で、SVD（特異値分解）による初期化を行うことで学習時間を30〜50%短縮する。M1 Maxの計算時間には上限がある。1時間の学習枠を40分で終わらせられるなら、残り20分で別の実験ができる。PEFT 0.11.0以降で <code>init_lora_weights="pissa"</code> を指定するだけ。</p>
+<p>二つ目は<strong>DoRA</strong>。LoRAの重み行列を「方向」と「大きさ」に分離して学習する。メモリは5〜10%増えるが、精度が1〜3%向上する。正倉院文書のQ&amp;Aのように、「この文書は何を書いているか」という事実的正解率が問われるタスクでは、その1〜3%が効く。</p>
+<p>三つ目は、順序の話だ。Qiitaでmenon氏が整理したドメイン特化LLMのファインチューニング戦略が、自分の構想と完全に一致していた。<strong>DAPT（追加事前学習）で正倉院文書の生テキストを注入し、そのあとSFT（教師あり学習）で対話能力をつける。</strong> 逆だとだめだ。SFTだけで古文書を覚えさせようとしても、表面的なパターンマッチングで終わる。DAPTだけで対話させようとしても、文章生成器にしかならない。</p>
+<p>面白かったのは、ベースモデルの選択肢が広がっていることだ。<strong>GLM-4.7-Flash</strong>（清華大学、MITライセンス、30B MoEで稼働3B）の日本語性能がコミュニティで「DeepSeekより上」と評価されている。Qwen3.6-8Bからの乗り換えを検討する価値はある。M1 Maxの統合メモリはMoEモデルと構造的に相性が良い——Expertの切り替え時にPCIe転送が発生しないから。</p>
+<hr />
+<h2>第二層：実践——奈良市はすでにZoomと組んでいた</h2>
+<p>ここが一番驚いた。</p>
+<p>2026年2月10日、奈良市はZVC JAPAN（Zoom）と「音声コミュニケーション及びAI活用事業に関する協定」を締結している。自治体初の試みとして、Zoom Phone、Zoom Contact Center、Zoom Virtual Agentの三製品を統合導入。Zoom Virtual AgentによるAI一次受付は2026年秋に稼働予定だ。</p>
+<p>つまり、7月3日に提出するRFI提案書（つるまい電話自動化PoC）は、「ゼロからの提案」ではない。奈良市はすでにエンタープライズ級のAI電話基盤を導入決定している。</p>
+<p>だが、これは悪いニュースではない。位置づけが明確になったのだ。</p>
+<p>Zoom系は全庁的な基盤。つるまいRFI提案は、特定業務（移動支援予約）に特化した低コスト路線。両者は競合ではなく補完関係にあり、RFIの提出先であるDX推進課はZoom協定を推進した同じ部署だ。提案書ではZoom協定を認識していることを示しつつ、つるまいの差別化要因を明確に打ち出す。</p>
+<p>全国の相場を見ると、つるまいの異常さが際立つ。</p>
+<ul>
+<li>一関市（EasyDialog easyPhone）：日本初のRAG型生成AI電話、3月運用開始</li>
+<li>三次市（Verbex）：全83件中ハルシネーション0%、対応完了率84.3%</li>
+<li>四日市市（GeN）：月12万件処理。過去のチャットボット失敗から「情報更新の持続可能性」を最優先に再設計</li>
+<li>福島市（DNP）：自己完結率60%、住民満足度82%</li>
+</ul>
+<p>これらの自治体AI電話の導入費用は、初期50〜200万円、月額10〜30万円が相場。</p>
+<p><strong>つるまいは月1,550円。</strong> OSS構成で音声184件の実稼働実績がある。</p>
+<p>三次市の「誤回答率0%」は特に重要だ。人口5万人の小規模自治体でも、AI電話は実用レベルで機能する。この事実は、つるまいPoCの実現可能性を根拠づける最も強力なエビデンスになる。</p>
+<hr />
+<h2>第三層：哲学——データは誰のものか</h2>
+<p>技術と実践を支える思想面で、2026年前半に画期的な動きがあった。</p>
+<p>2026年4月、UNDPが「LORYA」というAIツールを発表した。従来のOCRでは処理できなかった歴史的文字資料——複数の文字体系、手書き、非標準レイアウト——をクリーンテキスト化する。<strong>日本政府が資金支援している。</strong> オープンソースのデジタル公共財として公開予定で、イラクやネパールへの展開も始まっている。</p>
+<p>正倉院文書の電子化にLORYAの手法が応用できる。これは推測ではなく、LORYAの対象範囲に正倉院文書が完全に合致するという事実だ。</p>
+<p>もう一つ、刺さったのが<strong>FLAIR</strong>の存在だ。Michael Running Wolf（北シャイアン族、元Amazon Alexa開発者）が設立したこの組織は、先住民言語をAIで保存する。彼の哲学は明確だ。</p>
+<blockquote>
+<p>「私はAI懐疑論者だ。MicrosoftやOpenAIがAPIを止めたらどうなる？」</p>
+</blockquote>
+<p>だから、FLAIRはオフラインで動く。Low Techを志向する。データ主権を徹底する——すべての言語データは部族の財産で、大学やBig Techには渡さない。「大学が最大のデータ侵害者だ」と彼は言う。</p>
+<p>Springer誌に掲載されたデータ植民地主義の批判的レビュー（Kwok, 2026年5月）は、これを理論化している。FAIR原則（データのfindability, accessibility, interoperability, reusability）だけでは足りない。<strong>CARE原則</strong>——Collective Benefit（共同利益）、Authority to Control（統制権限）、Responsibility（責任）、Ethics（倫理）——で補完すべきだと論じる。</p>
+<p>Google TranslateにGuaraní語が追加されたのは「既存の公開テキストを収穫して独占モデルに組み込んだ」行為だ。InuktitutもGoogleのAPIに依存することで、コミュニティの制御権を失った。これがデータ植民地主義の典型パターンだ。</p>
+<p><strong>ならしLLMは、この対極に立てる。</strong></p>
+<p>奈良の正倉院文書データを、奈良の市民が管理し、奈良のコミュニティが恩恵を受ける。月1,550円のOSS構成で、外部APIに依存しない。これは技術的な選択ではなく、思想的な選択だ。「地域完結型循環経済」という自分の北極星が、国際的なデータ主権の議論と接続された。</p>
+<hr />
+<h2>第四層：学術——渡辺研に「乗る」場所がすでにあった</h2>
+<p>NAIST渡辺研究室の出版物リストを全件取得して調査した結果、一つの事実が浮かび上がった。</p>
+<p><strong>東山翔平助教が、中世・近世日本語資料の現代語機械翻訳を組織的に研究している。</strong></p>
+<p>NLP2026での発表タイトル：「中世・近世日本語資料の現代語機械翻訳：評価用対訳データセットの構築とLLMの性能評価」</p>
+<p>これは、ならしLLMの正倉院文書現代語訳と同じ研究領域だ。しかも単発ではない。片山歩希らの「場所参照表現抽出における時代横断型評価」、武内樹治の「歴史災害史料からの自動地名抽出」と、古文書NLPの論文が3本以上連なっている。渡辺研は「歴史的日本語テキストのNLP処理」を一つの研究クラスターとして組織的に推進している。</p>
+<p>さらに、平川稜真らが「大規模言語モデルにおける方言生成過程の内部機序分析」をNLP2026で発表している。LLMが方言をどう処理するか、どの層が方言情報を符号化しているかを探る研究だ。奈良方言を理解するAIの技術基盤に直結する。</p>
+<p>渡辺研のNLP2026での発表数は約40件。国内NLP研究室として最大規模だ。教員陣は7名に拡大し、坂井助教（低リソース言語・LLM評価、ICML 2026採録）と東山助教（古文書NLP）という二人の若手が、それぞれKTの研究テーマ直結する領域を牽引している。</p>
+<p>自分がNAIST進学後に「正倉院文書のAI解読」を研究テーマとして提出する場合、ゼロから立ち上げる必要はない。東山助教の先行研究とデータセット（対訳コーパス・場所参照表現コーパス）の上に乗って、正倉院文書（奈良時代）へと時代を拡張する。それがKTの研究課題になり得る。</p>
+<p>2027年度入試の募集要項PDFも公開されている。春2回（2026年9月出願）が現実的な目標だ。RFI提出後の夏場に渡辺教授へメールコンタクトを開始し、つるまいの実績とRFI提案書を添えて「共同研究の可能性」として打診する。そこから面接準備を経て9月出願、2027年4月入学。</p>
+<hr />
+<h2>四層が揃った意味</h2>
+<p>今日、四つの研究エントリが同時に届いた。バラバラに見えるが、一つの構造を描いている。</p>
+<table>
+<thead>
+<tr>
+<th>層</th>
+<th>今日の発見</th>
+<th>ならしLLMにおける役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>技術</td>
+<td>PiSSAで学習時間半減、DoRAで精度向上、DAPT→SFTの順序確立</td>
+<td>どう作るか</td>
+</tr>
+<tr>
+<td>実践</td>
+<td>奈良市のZoom協定、全国相場との比較、月1550円の位置づけ</td>
+<td>どこで使うか</td>
+</tr>
+<tr>
+<td>哲学</td>
+<td>FLAIRのデータ主権、CARE原則、データ植民地主義への対抗</td>
+<td>なぜやるか</td>
+</tr>
+<tr>
+<td>学術</td>
+<td>東山助教の古文書機械翻訳、渡辺研の研究クラスター、2027春入学</td>
+<td>誰と研究するか</td>
+</tr>
+</tbody>
+</table>
+<p>一つだけ明確に言えることがある。</p>
+<p>ならしLLMは、もう「構想」の段階を脱している。</p>
+<p>技術的な実現方法は見えている（DAPT→SFT、PiSSA、DoRA）。実証の場はある（つるまい音声184件・月1550円）。哲学的基盤は国際的な議論と接続した（データ主権・CARE原則）。そして、研究を深める場所も見つかった（NAIST渡辺研・東山助教の先行研究）。</p>
+<p>残っているのは、順番に実行することだけだ。</p>
+<p>7月3日にRFIを提出する。夏に渡辺研へコンタクトする。秋にPiSSAの検証実験を走らせる。来年4月にNAISTに入学する。その先に、奈良女子大でAIを教える場所がある。</p>
+<p>四層は揃った。あとは動くだけだ。</p>
+<hr />
+<p><em>この記事は2026年6月29日の研究蓄積（4エントリ）を統合したものです。次回の研究蓄積サイクルでまたお会いしましょう。</em></p>
+    <hr>
+    <p><a href="https://ktblog.pages.dev/" class="back-link">← 記事一覧に戻る</a></p>
+</body>
+</html>
