@@ -4,7 +4,7 @@ date: 2026-06-26
 category: "Tech"
 eyecatch: "/assets/eyecatch/eastasia-counterattack.jpg"
 excerpt: "GAFAMの搾取構造が崩壊しつつある。Micron CBOのApple批判、ローカルAIの台頭、半導体製造を握る東アジア——「調和」の倫理がポストGAFAM時代の中核を形成する。"
-tags: ["GAFAM", "東アジア", "半導体", "Apple", "Micron", "ローカルAI", "AI", "文明論", "Osaurus", "Gemma 4"]
+tags: ["GAFAM", "東アジア", "半導体", "Apple", "Micron", "ローカルAI", "AI", "文明論", "Osaurus", "Gemma 4", "プログラミング", "AIエージェント", "投資", "執筆"]
 ---
 
 # 東アジアの逆襲——AIが解き放つ「搾取なき文明圏」の誕生
@@ -46,3 +46,4 @@ Osaurus（macOSネイティブAIエージェント）+ Gemma 4 の組み合わ�
 - [Osaurus GitHub](https://github.com/osaurus-ai/osaurus)
 - WSJ "Apple Raises Prices on Macs, iPads by $200 or More" (2026/6/25)
  
+

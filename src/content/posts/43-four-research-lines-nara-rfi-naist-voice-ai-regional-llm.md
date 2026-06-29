@@ -3,7 +3,7 @@ title: "【43】四つの研究線が奈良で交わる——RFI・NAIST・音�
 date: 2026-06-28
 slug: "43-four-research-lines-nara-rfi-naist-voice-ai-regional-llm"
 category: "KT研究"
-tags: ["RFI", "NAIST", "音声AI", "地域LLM", "奈良"]
+tags: ["RFI", "NAIST", "音声AI", "地域LLM", "奈良", "LLM", "生成AI", "Claude", "健康", "投資", "節約", "執筆"]
 excerpt: "RFI締切5日前。四つの研究線——奈良市DX動向、NAIST入試、音声対話技術、地域LLMアーキテクチャ——が一本の線路の上にあることが見えてきた。"
 ---
 
@@ -110,3 +110,4 @@ RFI提出（7/3）は、奈良市のAI活用の「外側」——市民の生活
 | 9月28〜30日 | NAIST春学期第2回出願 |
 | 10月27〜29日 | 面接選抜（オンライン20分） |
 | 11月6日 | 合格発表 |
+
