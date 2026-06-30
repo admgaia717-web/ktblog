@@ -4,7 +4,7 @@ date: 2026-06-28
 category: "Tech"
 eyecatch: "/assets/eyecatch/nara-messenger.jpg"
 excerpt: "奈良市LINE公式アカウント登録者11万人。だが、行政の通信基盤を営利企業に委ねることはデジタル主権の放棄だ。フランスのTchapをモデルに、奈良から「住民のメッセンジャー」を作る提案。"
-tags: ["奈良市", "LINE", "自治体", "デジタル主権", "公共メッセンジャー", "Tchap", "Matrix", "Signal", "AI"]
+tags: ["奈良市", "LINE", "自治体", "デジタル主権", "公共メッセンジャー", "Tchap", "Matrix", "Signal", "AI", "奈良", "セキュリティ", "映像", "防災"]
 ---
 
 # 住民の連絡網を営利企業に明け渡した国——奈良市から「住民のメッセンジャー」を作れ
@@ -63,3 +63,4 @@ LINEヤフーのプライバシーポリシーでは、広告識別子、電話�
 - [個人情報保護委員会「LINEヤフー勧告」](https://www.ppc.go.jp/pdf/240328_houdou.pdf)
 - [Matrix.org「French gov deployment」](https://cfp.2025.matrix.org/talk/WWAVBQ/)
 - [Element「Tchap case study」](https://element.io/case-studies/tchap)
+
