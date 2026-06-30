@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【59】GPT-4が36%しか取れなかった壁を、どう越えるか——2026年のAI対話研究が示す設計図</title>
+<meta name="description" content="FnCTOD × ReacTOD × つるまい881件の実データ。GPT-4が日本語タスク対話で36%しか取れなかった壁を越える2026年の最新設計図。">
+<style>
+:root {
+  --bg: #fafaf7;
+  --text: #2c2c2c;
+  --accent: #c0392b;
+  --accent-light: #e74c3c;
+  --border: #e0ddd5;
+  --quote-bg: #f5f3ee;
+  --code-bg: #f0ede5;
+  --muted: #888;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.85;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+.series-label {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+h1 {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 22px;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+  font-weight: 600;
+}
+h3 {
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-weight: 600;
+}
+p {
+  margin-bottom: 22px;
+}
+strong {
+  color: var(--accent);
+}
+hr.section-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 48px 0;
+}
+code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.eyecatch {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+.meta {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+.footer-nav {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--muted);
+}
+.footer-nav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="series-label">高齢者のためのAI電話 —— 奈良弁・人生強者・地域循環</div>
+<div class="meta">2026年6月30日 · KT（玉川勝史）</div>
+<h1>【59】GPT-4が36%しか取れなかった壁を、どう越えるか——2026年のAI対話研究が示す設計図</h1>
+
+<p>前回の記事で、一つの数字を提示した。GPT-4が日本語のタスク対話ベンチマーク（JMultiWOZ）で、正答率わずか36%だったという事実だ。</p>
+
+<p>英語なら76%。日本語だと36%。この「40ポイントの壁」は、つるまいでAI電話予約を作るうえで、最大の技術的障壁になる。</p>
+
+<p>今日は、この壁をどう越えるか。2026年の最新研究が、明確な設計図を示し始めている。</p>
+
+<h2>「36%」の壁が意味するもの</h2>
+
+<p>まず確認したいのは、この36%が「AIの性能不足」を意味するのではない、ということだ。</p>
+
+<p>JMultiWOZは、レストラン予約・電車案内・ホテル検索などのタスクを、ユーザーとシステムが複数回やり取りしながら完了させる対話データセットだ。評価指標のJoint Goal Accuracy（JGA）は、全ての予約情報（日付・時間・場所・人数）が同時に正解である割合を測る。1つでも間違えれば、そのターンは不正解になる。</p>
+
+<p>つまり36%とは、「10回中6回以上は、どこか一つの情報を取り間違えている」ということだ。予約日を聞き間違えれば、翌日の送迎車が空振りする。人数を間違えれば、車椅子の利用者が乗れない。</p>
+
+<p>高齢者向けの電話予約では、この精度は許されない。</p>
+
+<h2>2026年に現れた3つのトレンド</h2>
+
+<p>KTの研究調査で、2026年1月から6月にかけてarXivに発表されたTOD（Task-Oriented Dialogue）関連論文を系統的に洗った。結果、明確な3つのトレンドが見えた。</p>
+
+<p>第一に、<strong>Neuro-symbolic（神経記号的）な自己訂正</strong>。AIの対話状態追跡（DST）エラーを、ルールベースの検証で自動修正するアプローチだ。第二に、<strong>Function Calling統合</strong>。対話状態の追跡を「関数呼び出し」として定式化し、ハルシネーションを防ぐ。第三に、<strong>現実的な音声対話の評価</strong>。きれいなテキストではなく、ためらいや割り込みを含む実際の音声でDSTを評価する試み。</p>
+
+<p>この中で、つるまいの設計に直接活かせる論文が2つあった。</p>
+
+<h2>FnCTOD——DSTを「関数呼び出し」で解く</h2>
+
+<p>1つ目は、Meta（旧Facebook）の研究チームがACL 2024で発表したFnCTODだ。</p>
+
+<p>この論文の核心は単純だ。予約情報の抽出（slot filling）を、プロンプトで指示するのではなく、LLMのfunction calling機能で実装する。</p>
+
+<p>従来の方法は、LLMに「以下の対話から、予約日・時間・目的地を抽出してください」とテキストで指示し、出力をパースしていた。だがLLMは、フォーマットを間違えたり、存在しないスロットを捏造したりする。</p>
+
+<p>FnCTODは、予約情報を関数の引数として定義する。LLMは<code>call_reservation(date='来週火曜', time='9時', destination='奈良駅前')</code>という関数呼び出しを出力する。出力が構造化されるため、フォーマットエラーが起きない。そして、定義されていない引数は最初から使えないため、ハルシネーションを構造的に防げる。</p>
+
+<p>実験結果は驚異的だった。GPT-3.5で+4.8%、GPT-4で+14%のJGA改善。LLaMA2-7Bを少量のTODデータでファインチューニングすると、GPT-3.5と同等の精度に達した。</p>
+
+<p>つるまいに直訳する。予約のslot（date, time, destination, passenger_count, wheelchair_need）をfunction schemaとして定義する。Qwen3.5-4Bがfunction callingで直接これらを抽出する。これだけでも、プロンプトベースの抽出より大幅にエラーが減るはずだ。</p>
+
+<h2>ReacTOD——AIが自分の間違いを直す</h2>
+
+<p>2つ目は、ACL 2026 TrustNLP Workshopで採録されたReacTODだ。より新しい。</p>
+
+<p>FnCTODが「構造化された出力」を実現したなら、ReacTODは「構造化された出力を検証し、間違っていたら直す」機構を追加する。</p>
+
+<p>仕組みを説明する。ReacTODは、LLMがslotを抽出したあと、決定論的なバリデータ（ルールエンジン）が3つをチェックする。アクション適合性（そのアクションは予約ドメインで有効か）、スキーマ適合性（日付の形式は正しいか）、共参照一貫性（「それ」が何を指しているか）。</p>
+
+<p>バリデータがエラーを検出した場合、LLMに「ここが間違っている。直せ」とフィードバックを返す。LLMは再度推論し、修正版を出力する。このループを上限回数まで繰り返す（bounded ReAct loop）。</p>
+
+<p>結果。Qwen3-8BでMultiWOZ 2.1のJGA 47.34%。従来のゼロショット手法から+9.3ポイントの改善。エラーの93.1%を自己修正した。gpt-oss-20Bでは52.71%に達し、ゼロショットDSTの新SOTA（最優秀成績）を叩き出した。</p>
+
+<p>つるまいでどう使うか。</p>
+
+<p>高齢者が「あさっての朝一で」と言ったとする。Whisperが「あさって」と正しく書き起こしたとしても、LLMが今日の日付を知らなければ「あさって」を具体的な日付に変換できない。ここでバリデータが動く。「dateスロットの値が『あさって』のままです。YYYY-MM-DD形式に正規化してください」。LLMは現在日付を参照し、「2026-07-02」に修正する。</p>
+
+<p>この仕組みがあれば、881件の予約データの中で実際に起きた抽出エラーの大半を、ループ内で自己修正できる。</p>
+
+<h2>車輪の再発明をしない</h2>
+
+<p>KTの研究原則に「車輪の再発明を避ける」というものがある。</p>
+
+<p>FnCTODのコードはGitHubで公開されている（facebookresearch/FnCTOD）。ReacTODのコードも公開予定だ。これらをベースにすれば、slot fillingのパイプラインをゼロから設計する必要がない。</p>
+
+<p>つるまいに固有な部分——奈良弁の処理、高齢者の発話特性（反復・言い淀み・脱線）、福祉交通の予約ドメイン定義——に集中できる。これこそが「先行研究を敬意を持って活用する」姿勢であり、同時にKTの研究の独自性を際立たせる戦略だ。</p>
+
+<p>FnCTODが英語のMultiWOZで証明したfunction callingアプローチを、日本語のJMultiWOZベンチマークに適応し、さらに奈良弁と高齢者音声に拡張する。この3段階の移行が、NAIST小論文②の研究計画の骨格になる。</p>
+
+<h2>881件のデータが世界で唯一の武器</h2>
+
+<p>最後に、一つだけ強調しておきたい。</p>
+
+<p>FnCTODもReacTODも、評価にはMultiWOZ（英語）やSGD（Schema-Guided Dialogue）を使っている。これらは研究者が作成したクリーンなテキストデータだ。実際の電話のノイズ、ためらい、方言、高齢者の特徴的な話し方は含まれていない。</p>
+
+<p>つるまいは881件の予約データと184件の実音声を持っている。このデータを教師信号として、Qwen3.5-4Bをファインチューニングすれば、FnCTODのfunction calling能力を奈良弁と福祉交通の文脈に特化させることができる。</p>
+
+<p>実音声コーパスを用いた教師あり適応。これが、KTの研究が世界に貢献できる唯一無二のポイントだ。36%の壁は、FnCTODとReacTODの設計図と、881件の現場データがあれば、越えられる。その確証が、今日の調査で得られた。</p>
+
+<hr class="section-divider">
+<div class="footer-nav">
+<p>シリーズ：高齢者のためのAI電話 —— 奈良弁・人生強者・地域循環</p>
+<p><a href="https://note.com/famous_prawn2009/n/n3342a110dfab">note.comで読む</a> · <a href="https://keity717.substack.com/p/59gpt-4362026ai">Substackで読む</a></p>
+<p><a href="https://ktblog.pages.dev/kt-research/">kt-research シリーズ一覧</a></p>
+</div>
+</div>
+</body>
+</html>
