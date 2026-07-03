@@ -1,11 +1,11 @@
 ---
 title: "📡 【2026-07-03】無料LLM新着情報 — 新着モデル＆週間トレンド"
 date: 2026-07-03
-slug: free-llm-20260703-trend
+slug: "free-llm-20260703-trend"
 category: "AI・テクノロジー"
 eyecatch: "/assets/eyecatch/hero-local-ai.png"
 excerpt: "OpenRouter無料モデル26種の最新動向。今週追加されたモデル・巨大コンテキストモデル・注目トピック。"
-tags: ["LLM", "無料AI", "OpenRouter", "トレンド", "日次更新"]
+tags: ["LLM", "無料AI", "OpenRouter", "トレンド", "日次更新", "プログラミング", "節約", "AIエージェント", "ロボット"]
 ---
 
 # 📡 リサーチインスティチュート — 無料LLM新着情報
@@ -68,3 +68,4 @@ tags: ["LLM", "無料AI", "OpenRouter", "トレンド", "日次更新"]
 ---
 
 > 🏢 **KT Fleet Research Institute** · 次回08:00: 格安ランキング
+
