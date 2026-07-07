@@ -2,7 +2,7 @@
 title: "【1】AIエージェントを「使いこなす」ための無料スキル集——David Ondrej氏の貢献を、奈良の現場から活用する"
 date: 2026-07-07
 category: "AIエージェント"
-tags: ["AIエージェント", "Claude", "プロンプトエンジニアリング", "人工知能", "David Ondrej", "プログラミング", "Apple", "映像", "奈良", "ロボット", "哲学", "LLM", "OpenAI", "執筆", "生成AI"]
+tags: ["AIエージェント", "Claude", "プロンプトエンジニアリング", "人工知能", "David Ondrej", "プログラミング", "Apple", "映像", "奈良", "ロボット", "哲学", "LLM", "OpenAI", "執筆", "生成AI", "DIY"]
 ---
 ## はじめに——「hundreds of hours of trial & error」の結晶
 
@@ -103,4 +103,5 @@ David Ondrej 氏は、競合が隠し持ちがちな実践ノウハウを、無�
 ---
 
 *（本記事は、導入時に各スキルの実ファイルを全読みし、David 氏の背景・cmux/Pi/DeepAPI/DeepSWE/Claude Fable 5 について並列ディープリサーチを行った上で執筆した。）*
+
 
