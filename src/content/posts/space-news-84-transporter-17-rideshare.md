@@ -6,6 +6,7 @@ category: "space"
 eyecatch: "/assets/space_eyecatch.png"
 tags: ["宇宙開発", "SpaceX", "Transporter17", "ファルコン9", "人工衛星", "相乗り打ち上げ"]
 note_url: "https://note.com/famous_prawn2009/n/n4aeb8aeb2ea5"
+substack_url: "https://keity717.substack.com/p/8481transporter-17-b9f"
 ---
 
 # 【加藤宇宙開発ニュース #84】81機の相乗り——Transporter-17が示す宇宙アクセスの民主化と、その先にあるもの
