@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#f5f0eb"/>
+  
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#d4652a" text-anchor="middle">RCリンクプロトコル比較（2026年）</text>
+  
+  <!-- Table header -->
+  <rect x="40" y="70" width="160" height="35" rx="4" fill="#d4652a"/>
+  <text x="120" y="93" font-family="Arial" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">プロトコル</text>
+  
+  <rect x="200" y="70" width="130" height="35" rx="4" fill="#d4652a"/>
+  <text x="265" y="93" font-family="Arial" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">レイテンシ</text>
+  
+  <rect x="330" y="70" width="130" height="35" rx="4" fill="#d4652a"/>
+  <text x="395" y="93" font-family="Arial" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">最大距離</text>
+  
+  <rect x="460" y="70" width="130" height="35" rx="4" fill="#d4652a"/>
+  <text x="525" y="93" font-family="Arial" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">オープン</text>
+  
+  <rect x="590" y="70" width="170" height="35" rx="4" fill="#d4652a"/>
+  <text x="675" y="93" font-family="Arial" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">主な用途</text>
+
+  <!-- Row 1: ELRS -->
+  <rect x="40" y="115" width="160" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="120" y="140" font-family="Arial" font-size="13" font-weight="bold" fill="#333" text-anchor="middle">ExpressLRS</text>
+  <rect x="200" y="115" width="130" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="265" y="140" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">&lt; 5.5ms (F1000)</text>
+  <rect x="330" y="115" width="130" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="395" y="140" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">30km+ (2.4GHz)</text>
+  <rect x="460" y="115" width="130" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="525" y="140" font-family="Arial" font-size="13" fill="#0a0" text-anchor="middle">✅ 完全OSS</text>
+  <rect x="590" y="115" width="170" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="675" y="140" font-family="Arial" font-size="11" fill="#666" text-anchor="middle">FPV / レース / LR</text>
+
+  <!-- Row 2: CRSF -->
+  <rect x="40" y="165" width="160" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="120" y="190" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">TBS Crossfire</text>
+  <rect x="200" y="165" width="130" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="265" y="190" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">~5.5ms (50Hz)</text>
+  <rect x="330" y="165" width="130" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="395" y="190" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">40km+ (915MHz)</text>
+  <rect x="460" y="165" width="130" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="525" y="190" font-family="Arial" font-size="13" fill="#a00" text-anchor="middle">❌ プロプライエタリ</text>
+  <rect x="590" y="165" width="170" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="675" y="190" font-family="Arial" font-size="11" fill="#666" text-anchor="middle">FPV / LR / 産業</text>
+
+  <!-- Row 3: Ghost -->
+  <rect x="40" y="215" width="160" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="120" y="240" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">Ghost (IRC)</text>
+  <rect x="200" y="215" width="130" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="265" y="240" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">~5ms</text>
+  <rect x="330" y="215" width="130" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="395" y="240" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">20km+</text>
+  <rect x="460" y="215" width="130" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="525" y="240" font-family="Arial" font-size="13" fill="#a00" text-anchor="middle">❌ プロプライエタリ</text>
+  <rect x="590" y="215" width="170" height="40" rx="4" fill="#fff" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="675" y="240" font-family="Arial" font-size="11" fill="#666" text-anchor="middle">FPV / レース</text>
+
+  <!-- Row 4: SBUS -->
+  <rect x="40" y="265" width="160" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="120" y="290" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">SBUS (Futaba)</text>
+  <rect x="200" y="265" width="130" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="265" y="290" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">~14ms</text>
+  <rect x="330" y="265" width="130" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="395" y="290" font-family="Arial" font-size="13" fill="#333" text-anchor="middle">1-3km</text>
+  <rect x="460" y="265" width="130" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="525" y="290" font-family="Arial" font-size="13" fill="#a00" text-anchor="middle">❌ プロプライエタリ</text>
+  <rect x="590" y="265" width="170" height="40" rx="4" fill="#f0ebe5" stroke="#e0d5c8" stroke-width="1"/>
+  <text x="675" y="290" font-family="Arial" font-size="11" fill="#666" text-anchor="middle">ホビー全般 (旧式)</text>
+
+  <!-- Bottom text -->
+  <text x="400" y="350" font-family="Arial" font-size="14" font-weight="bold" fill="#d4652a" text-anchor="middle">ExpressLRSはオープンソースでありながら、レイテンシ・距離・柔軟性で</text>
+  <text x="400" y="375" font-family="Arial" font-size="14" font-weight="bold" fill="#d4652a" text-anchor="middle">プロプライエタリ製品を凌駕する性能を実現している</text>
+  
+  <text x="400" y="420" font-family="Arial" font-size="10" fill="#999" text-anchor="middle">【加藤ラジコン出版 #59】ExpressLRS 4.0 解説 ｜ データ出典: ExpressLRS公式 / Oscar Liang</text>
+</svg>
