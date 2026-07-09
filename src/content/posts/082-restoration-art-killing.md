@@ -4,6 +4,7 @@ date: 2026-07-09
 category: "芸術哲学"
 tags: ["芸術", "修復", "ルーヴル", "モナリザ", "システィーナ", "美術", " conservation"]
 note_url: "https://note.com/famous_prawn2009/n/n03fe08aeaf2c"
+substack_url: "https://keity717.substack.com/p/82"
 ---
 
 2012年8月、スペイン北東部、ボルーニャという人口5000人の町で、81歳の老婆が教会の壁に描かれたキリストの fresco を筆で塗り替えた。結果は、毛むくじゃらの猿のようなイコン。BBCのヨーロッパ担当記者は「クレヨンで描かれた、毛深く、衣装が似合わない猿のスケッチ」と書いた。世界中が笑った。Ecce Mono—— behold the monkey。修復という名の破壊が、世界で最も有名な笑い話になった。
