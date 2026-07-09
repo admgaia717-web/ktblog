@@ -2,7 +2,7 @@
 title: "【加藤バトルロボット #1】BattleBots Pro League 2026 — ロボット格闘技の新時代"
 date: 2026-07-09
 category: "ロボット"
-tags: ["BattleBots", "ロボット格闘技", "NHRL", "ROBO-ONE", "Pro League", "combat robotics", "tombstone"]
+tags: ["BattleBots", "ロボット格闘技", "NHRL", "ROBO-ONE", "Pro League", "combat robotics", "tombstone", "ロボット", "映像", "ゲーム", "投資", "AIエージェント", "プログラミング", "セキュリティ", "AGI"]
 eyecatch: "/images/battle-robot-1.jpg"
 excerpt: "2026年4月、ラスベガス。BattleBots Pro Leagueが始まった。24台のロボットが6つのグループで戦う新フォーマット。トゥームストーンのブレードが毎分2500回転で回る。NHRLは草の根から革新を生む。ROBO-ONEは二足歩行で格闘する。ロボット格闘技の新時代を、5つの視点から描く。"
 ---
@@ -175,3 +175,4 @@ Pro League第一戦から3時間後、アリーナの清掃員が、床に散ら
 ---
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+

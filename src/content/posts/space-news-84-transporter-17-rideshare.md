@@ -4,7 +4,7 @@ date: 2026-07-09
 slug: "space-news-84-transporter-17-rideshare"
 category: "space"
 eyecatch: "/assets/space_eyecatch.png"
-tags: ["宇宙開発", "SpaceX", "Transporter17", "ファルコン9", "人工衛星", "相乗り打ち上げ"]
+tags: ["宇宙開発", "SpaceX", "Transporter17", "ファルコン9", "人工衛星", "相乗り打ち上げ", "ロボット", "投資", "AGI"]
 note_url: "https://note.com/famous_prawn2009/n/n4aeb8aeb2ea5"
 substack_url: "https://keity717.substack.com/p/8481transporter-17-b9f"
 ---
@@ -118,3 +118,4 @@ SpaceXは、2030年までに1機のブースターを100回使用する目標を
 それは、もはや夢物語ではない。2026年の日常だ。
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+

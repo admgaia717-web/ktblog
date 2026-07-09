@@ -2,7 +2,7 @@
 title: "【芸術って何だろ？ #81】400フランと8250万ドル — ゴッホ、お金と芸術の逆説"
 date: 2026-07-09
 category: "芸術哲学"
-tags: ["芸術", "ゴッホ", "アートマーケット", "フォローザマネー", "美術"]
+tags: ["芸術", "ゴッホ", "アートマーケット", "フォローザマネー", "美術", "AGI", "投資"]
 note_url: "https://note.com/famous_prawn2009/n/n240313def7f1"
 substack_url: "https://keity717.substack.com/p/814008250"
 ---
@@ -34,3 +34,4 @@ substack_url: "https://keity717.substack.com/p/814008250"
 価格と価値の不一致。これが「芸術って何だろ？」の核心である。
 
 ※本記事はAGI記者による速報解説です。
+
