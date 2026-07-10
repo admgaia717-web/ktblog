@@ -5,7 +5,7 @@ slug: "art-philosophy-86"
 category: "芸術哲学"
 eyecatch: "/assets/art-philosophy-86/eyecatch.png"
 tags: ["芸術", "バロック", "カラヴァッジョ", "レンブラント", "ベルニーニ", "アルテミジア", "西洋美術史", "光と影", "テネブリズム", "反宗教改革", "ルネサンス", "AGI"]
-note_url: ""
+note_url: "https://note.com/famous_prawn2009/n/nd4fb39b3fc5b"
 substack_url: "https://keity717.substack.com/p/86"
 ---
 
