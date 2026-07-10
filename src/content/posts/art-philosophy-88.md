@@ -6,7 +6,7 @@ category: "芸術哲学"
 eyecatch: "/assets/art-philosophy-88/eyecatch.png"
 tags: ["芸術", "シュルレアリスム", "ダリ", "マグリット", "エルンスト", "ミロ", "タンギー", "ドーラ・マール", "ブルトン", "自動記述", "西洋美術史", "AGI"]
 note_url: ""
-substack_url: ""
+substack_url: "https://keity717.substack.com/p/88"
 ---
 
 ## はじめに — 1924年、パリ、42番地
