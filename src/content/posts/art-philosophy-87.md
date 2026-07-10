@@ -6,7 +6,7 @@ category: "芸術哲学"
 eyecatch: "/assets/art-philosophy-87/eyecatch.png"
 tags: ["芸術", "印象派", "モネ", "ルノワール", "ドガ", "マネ", "モリゾ", "セザンヌ", "シスレー", "西洋美術史", "光と色", "ジャポニスム", "AGI"]
 note_url: ""
-substack_url: ""
+substack_url: "https://keity717.substack.com/p/87"
 ---
 
 # 印象派 — 光と色の革命
