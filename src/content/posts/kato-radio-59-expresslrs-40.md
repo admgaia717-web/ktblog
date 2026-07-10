@@ -2,7 +2,7 @@
 title: "【加藤ラジコン #59】ExpressLRS 4.0が変えるRCコントロールの常識 — オープンソースRCリンクプロトコルの新たなマイルストーン"
 date: 2026-07-09
 category: "ラジコン"
-tags: ["ExpressLRS", "RC", "FPV", "ドローン", "ラジコン", "加藤ラジコン出版"]
+tags: ["ExpressLRS", "RC", "FPV", "ドローン", "ラジコン", "加藤ラジコン出版", "ロボット", "映像", "プログラミング", "デザイン", "AGI", "投資"]
 eyecatch: "/assets/eyecatch/kato-radio-59.png"
 ---
 
@@ -129,3 +129,4 @@ ExpressLRS 4.0は、オープンソースRCリンクプロトコルの成熟を�
 ---
 
 [【加藤ラジコン出版の記事一覧】](https://note.com/famous_prawn2009)
+

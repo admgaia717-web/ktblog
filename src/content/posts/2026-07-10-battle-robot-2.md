@@ -4,7 +4,7 @@ date: 2026-07-10
 slug: "2026-07-10-battle-robot-2"
 category: "ロボット"
 eyecatch: "/images/battle-robot-2-eyecatch.png"
-tags: ["BattleBots", "Pro League", "Tombstone", "Manta", "ロボット格闘技", "combat robotics", "NHRL"]
+tags: ["BattleBots", "Pro League", "Tombstone", "Manta", "ロボット格闘技", "combat robotics", "NHRL", "ロボット", "ゲーム", "映像", "哲学", "AGI", "投資"]
 ---
 
 # 【加藤バトルロボット #2】BattleBots Pro League 2026 — 伝説の帰還：トゥームストーンが再び立つ
@@ -150,3 +150,4 @@ Copperheadの若きキャプテン、ジェイク・エバートは言う。「�
 ---
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+

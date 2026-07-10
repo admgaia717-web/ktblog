@@ -2,7 +2,7 @@
 title: "【加藤宇宙開発ニュース #86】10万基の星座——SpaceX、Gen3 Starlinkで地球軌道を埋め尽くす計画"
 date: 2026-07-10
 category: "宇宙開発"
-tags: ["SpaceX", "Starlink", "Gen3", "LEO", "衛星", "宇宙開発", "Musk", "FCC", "AI", "Starmind"]
+tags: ["SpaceX", "Starlink", "Gen3", "LEO", "衛星", "宇宙開発", "Musk", "FCC", "AI", "Starmind", "ロボット", "哲学", "AGI", "投資"]
 eyecatch: "/tmp/space-news-images/eyecatch.png"
 excerpt: "SpaceXが10万基のGen3 Starlink衛星をFCCに申請。LEO宇宙開発の新章が幕を開ける。"
 ---
@@ -104,3 +104,4 @@ SpaceXが10万基をFCCから許可されれば、事実上、LEOの「優先権
 ---
 
 【加藤ラジコン出版記事 #86】
+
