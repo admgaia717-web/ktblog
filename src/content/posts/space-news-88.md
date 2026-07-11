@@ -4,7 +4,7 @@ date: 2026-07-12
 slug: "space-news-88"
 category: "宇宙開発"
 eyecatch: "/assets/eyecatch/space-news-88.png"
-tags: ["宇宙開発", "JAXA", "SpaceX", "Axiom", "ispace", "MUFG", "宇宙投資"]
+tags: ["宇宙開発", "JAXA", "SpaceX", "Axiom", "ispace", "MUFG", "宇宙投資", "投資", "ロボット", "哲学", "自由市場", "AGI", "DIY"]
 ---
 
 # 【加藤宇宙開発ニュース #88】日本が宇宙開発で「取り戻す」もの——RV-X初飛行、MUFGのAxiom出資、ispace月面拡大の三位一体
@@ -157,3 +157,4 @@ Falcon 9が36回目の飛行を達成した同じ週に、日本は11メート�
 ## 免責事項
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+

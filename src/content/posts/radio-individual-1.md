@@ -4,7 +4,7 @@ date: 2026-07-11
 slug: "radio-individual-1"
 category: "個人製作"
 eyecatch: "/assets/eyecatch/radio-individual-1.png"
-tags: ["3Dプリンタ", "メイカー", "個人製作", "スクーター", "Ivan Miranda", "Mirandetta", "Prague Maker Faire", "TPU", "e-bike", "OpenCat"]
+tags: ["3Dプリンタ", "メイカー", "個人製作", "スクーター", "Ivan Miranda", "Mirandetta", "Prague Maker Faire", "TPU", "e-bike", "OpenCat", "ロボット", "映像", "プログラミング", "ペット", "AIエージェント", "セキュリティ", "小説", "哲学", "AGI", "DIY"]
 ---
 
 # 【加藤ラジコン #1】スーツケースに折りたたむスクーター — 3Dプリンタで「もの」をつくる時代の最前線
@@ -98,3 +98,4 @@ Ivan Mirandaのスーツケースから取り出されたスクーターは、�
 ---
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+

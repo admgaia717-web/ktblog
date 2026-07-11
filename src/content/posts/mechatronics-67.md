@@ -4,7 +4,7 @@ date: 2026-07-11
 slug: "mechatronics-67"
 category: "産業・テクノロジー"
 eyecatch: "/assets/eyecatch/mechatronics-67.png"
-tags: ["デジタルツイン", "Siemens", "三菱電機", "オムロン", "e-F@ctory", "Xcelerator", "i-Automation", "FA", "Industry 4.0", "シミュレーション", "製造業DX", "PLC", "SCADA", "IIoT"]
+tags: ["デジタルツイン", "Siemens", "三菱電機", "オムロン", "e-F@ctory", "Xcelerator", "i-Automation", "FA", "Industry 4.0", "シミュレーション", "製造業DX", "PLC", "SCADA", "IIoT", "ロボット", "Apple", "投資", "AGI", "節約"]
 ---
 
 # 【加藤メカトロ #67】デジタルツインが変える工場の設計・運用 — Siemens・三菱電機・オムロンの最新事例から読み解く
@@ -106,3 +106,4 @@ Siemens Xceleratorは、最上位の総合プラットフォームだ。PLCか�
 デジタルツインは、2026年、ついに「おもちゃ」から「道具」になった。
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+

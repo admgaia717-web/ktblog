@@ -4,7 +4,7 @@ date: 2026-07-11
 slug: "mechatronics-66"
 category: "産業・テクノロジー"
 eyecatch: "/assets/eyecatch/mechatronics-66.png"
-tags: ["物理AI", "産業用ロボット", "NVIDIA", "FANUC", "ABB", "Automate 2026", "安川電機", "KUKA", "Jetson", "協働ロボット", "エッジAI", "Standard Bots", "ロボット", "デジタルツイン", "AGI"]
+tags: ["物理AI", "産業用ロボット", "NVIDIA", "FANUC", "ABB", "Automate 2026", "安川電機", "KUKA", "Jetson", "協働ロボット", "エッジAI", "Standard Bots", "ロボット", "デジタルツイン", "AGI", "LLM", "プログラミング", "セキュリティ", "映像", "投資"]
 note_url: "https://note.com/famous_prawn2009/n/n49e356cbd389"
 ---
 
@@ -96,3 +96,4 @@ Standard Botsのようなスタートアップの参入も、市場の活性化�
 産業用ロボットの制御盤にGPUが入る。たったそれだけのことだ。しかし、その小さな変化が、工場の風景を確実に変え始めている。
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+
