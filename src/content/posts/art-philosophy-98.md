@@ -3,8 +3,10 @@ title: "【芸術って何だろ？ #98】「作者の死」— ロラン・バ�
 date: 2026-07-13
 category: "芸術・哲学"
 tags: ["ロラン・バルト", "作者の死", "デュシャン", "ウォーホル", "コンセプチュアル・アート", "AIアート", "Death of the Author", "アプロプリエーション", "現代美術", "AGI"]
-eyecatch: "/assets/art-philosophy-98/eyecatch.jpg"
+eyecatch: "/assets/art-philosophy-98/eyecatch.png"
 excerpt: "1967年、ロラン・バルトが「作者の死」を宣言してから半世紀。デュシャンのレディメイド、ウォーホルの大量複製、盗用芸術、そして生成AIまで——作者の座をめぐる200年の攻防を追う。"
+note_url: "https://note.com/famous_prawn2009/n/n0262edf0d43e"
+substack_url: "https://keity717.substack.com/p/98-ai"
 ---
 【芸術って何だろ？ #98】「作者の死」— ロラン・バルトからAIアートまで、芸術の主権は誰の手に
 
