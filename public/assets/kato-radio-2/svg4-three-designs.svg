@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#f5f0eb;font-family:'Helvetica Neue',Arial,sans-serif">
+  <rect width="800" height="500" fill="#f5f0eb"/>
+  
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#d4652a">3Dプリンタ義手 — 主要デザイン3機種比較</text>
+  
+  <!-- Phoenix v2 -->
+  <g transform="translate(30, 60)">
+    <rect x="0" y="0" width="230" height="300" rx="10" fill="white" stroke="#d4652a" stroke-width="2"/>
+    <text x="115" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#d4652a">Phoenix v2</text>
+    <text x="115" y="55" text-anchor="middle" font-size="11" fill="#999">上級者向け | 2023年</text>
+    
+    <!-- Hand diagram -->
+    <rect x="65" y="70" width="100" height="60" rx="30" fill="#d4652a" opacity="0.15"/>
+    <line x1="115" y1="90" x2="115" y2="50" stroke="#d4652a" stroke-width="2"/>
+    <circle cx="115" cy="45" r="5" fill="#d4652a"/>
+    
+    <text x="115" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">筋電センサー制御</text>
+    <text x="115" y="175" text-anchor="middle" font-size="11" fill="#666">TPU+PLAハイブリッド</text>
+    <text x="115" y="195" text-anchor="middle" font-size="11" fill="#666">バネ機構搭載</text>
+    <text x="115" y="215" text-anchor="middle" font-size="11" fill="#666">自然な握り動作</text>
+    
+    <line x1="20" y1="235" x2="210" y2="235" stroke="#eee" stroke-width="1"/>
+    <text x="115" y="258" text-anchor="middle" font-size="14" font-weight="bold" fill="#d4652a">約20,000円</text>
+    <text x="115" y="278" text-anchor="middle" font-size="10" fill="#999">材料費のみ</text>
+  </g>
+  
+  <!-- Raptor Reloaded -->
+  <g transform="translate(285, 60)">
+    <rect x="0" y="0" width="230" height="300" rx="10" fill="white" stroke="#d4652a" stroke-width="2"/>
+    <text x="115" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#d4652a">Raptor Reloaded</text>
+    <text x="115" y="55" text-anchor="middle" font-size="11" fill="#999">初心者向け | 2021年</text>
+    
+    <!-- Simple hand diagram -->
+    <rect x="65" y="70" width="100" height="60" rx="15" fill="#d4652a" opacity="0.1"/>
+    <line x1="115" y1="90" x2="115" y2="50" stroke="#d4652a" stroke-width="2"/>
+    
+    <text x="115" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">ケーブル駆動</text>
+    <text x="115" y="175" text-anchor="middle" font-size="11" fill="#666">部品点数最小</text>
+    <text x="115" y="195" text-anchor="middle" font-size="11" fill="#666">組立容易（半日）</text>
+    <text x="115" y="215" text-anchor="middle" font-size="11" fill="#666">PLA素材</text>
+    
+    <line x1="20" y1="235" x2="210" y2="235" stroke="#eee" stroke-width="1"/>
+    <text x="115" y="258" text-anchor="middle" font-size="14" font-weight="bold" fill="#d4652a">約8,000円</text>
+    <text x="115" y="278" text-anchor="middle" font-size="10" fill="#999">最も安価</text>
+  </g>
+  
+  <!-- Neon Hand -->
+  <g transform="translate(540, 60)">
+    <rect x="0" y="0" width="230" height="300" rx="10" fill="white" stroke="#d4652a" stroke-width="2"/>
+    <text x="115" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#d4652a">Neon Hand</text>
+    <text x="115" y="55" text-anchor="middle" font-size="11" fill="#999">子供向け | 2025年</text>
+    
+    <!-- Colorful hand -->
+    <rect x="65" y="70" width="100" height="60" rx="20" fill="#d4652a" opacity="0.12"/>
+    <circle cx="80" cy="75" r="3" fill="#ff0"/>
+    <circle cx="100" cy="70" r="3" fill="#f00"/>
+    <circle cx="120" cy="72" r="3" fill="#0f0"/>
+    <circle cx="140" cy="78" r="3" fill="#00f"/>
+    
+    <text x="115" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">カラフルデザイン</text>
+    <text x="115" y="175" text-anchor="middle" font-size="11" fill="#666">LED指先搭載</text>
+    <text x="115" y="195" text-anchor="middle" font-size="11" fill="#666">パラメトリックCAD調整</text>
+    <text x="115" y="215" text-anchor="middle" font-size="11" fill="#666">夜間使用可</text>
+    
+    <line x1="20" y1="235" x2="210" y2="235" stroke="#eee" stroke-width="1"/>
+    <text x="115" y="258" text-anchor="middle" font-size="14" font-weight="bold" fill="#d4652a">約12,000円</text>
+    <text x="115" y="278" text-anchor="middle" font-size="10" fill="#999">子供に大人気</text>
+  </g>
+  
+  <!-- Bottom comparison note -->
+  <rect x="60" y="380" width="680" height="70" rx="8" fill="#d4652a" opacity="0.08" stroke="#d4652a" stroke-width="1"/>
+  <text x="400" y="405" text-anchor="middle" font-size="13" font-weight="bold" fill="#d4652a">⚡ 選択のポイント</text>
+  <text x="400" y="425" text-anchor="middle" font-size="11" fill="#333">初心者 → Raptor Reloaded（低コスト・組立容易）</text>
+  <text x="400" y="442" text-anchor="middle" font-size="11" fill="#333">アクティブユーザー → Phoenix v2（EMG制御・高機能）</text>
+  
+  <text x="400" y="485" text-anchor="middle" font-size="10" fill="#999">出典: e-NABLE Community, Thingiverse Design Pages | 加藤ラジコン出版</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#f5f0eb;font-family:'Helvetica Neue',Arial,sans-serif">
+  <rect width="800" height="500" fill="#f5f0eb"/>
+  
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#d4652a">3Dプリンタ義手 — 国別規制状況と課題</text>
+  
+  <!-- USA -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="170" height="170" rx="10" fill="white" stroke="#090" stroke-width="2"/>
+    <text x="85" y="30" text-anchor="middle" font-size="14" font-weight="bold">🇺🇸 米国</text>
+    <text x="85" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#090">✅ 規制なし</text>
+    <text x="85" y="72" text-anchor="middle" font-size="10" fill="#333">FDA規制対象外</text>
+    <text x="85" y="90" text-anchor="middle" font-size="10" fill="#333">自家製医療機器扱い</text>
+    <text x="85" y="112" text-anchor="middle" font-size="10" fill="#666">e-NABLE本拠地</text>
+    <text x="85" y="132" text-anchor="middle" font-size="10" fill="#666">寄付が主流</text>
+  </g>
+  
+  <!-- EU -->
+  <g transform="translate(220, 70)">
+    <rect x="0" y="0" width="170" height="170" rx="10" fill="white" stroke="#c00" stroke-width="2"/>
+    <text x="85" y="30" text-anchor="middle" font-size="14" font-weight="bold">🇪🇺 欧州</text>
+    <text x="85" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#c00">⚠️ CE必須</text>
+    <text x="85" y="72" text-anchor="middle" font-size="10" fill="#333">医療機器指令</text>
+    <text x="85" y="90" text-anchor="middle" font-size="10" fill="#333">MDR認証必要</text>
+    <text x="85" y="112" text-anchor="middle" font-size="10" fill="#666">参入障壁高い</text>
+    <text x="85" y="132" text-anchor="middle" font-size="10" fill="#666">研究用途が中心</text>
+  </g>
+  
+  <!-- Japan -->
+  <g transform="translate(410, 70)">
+    <rect x="0" y="0" width="170" height="170" rx="10" fill="white" stroke="#fa0" stroke-width="2"/>
+    <text x="85" y="30" text-anchor="middle" font-size="14" font-weight="bold">🇯🇵 日本</text>
+    <text x="85" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#fa0">⚠️ グレーゾーン</text>
+    <text x="85" y="72" text-anchor="middle" font-size="10" fill="#333">薬機法解釈</text>
+    <text x="85" y="90" text-anchor="middle" font-size="10" fill="#333">未確定</text>
+    <text x="85" y="112" text-anchor="middle" font-size="10" fill="#666">研究段階</text>
+    <text x="85" y="132" text-anchor="middle" font-size="10" fill="#666">教育活用進む</text>
+  </g>
+  
+  <!-- India -->
+  <g transform="translate(600, 70)">
+    <rect x="0" y="0" width="170" height="170" rx="10" fill="white" stroke="#090" stroke-width="2"/>
+    <text x="85" y="30" text-anchor="middle" font-size="14" font-weight="bold">🇮🇳 インド</text>
+    <text x="85" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="#090">✅ 規制なし</text>
+    <text x="85" y="72" text-anchor="middle" font-size="10" fill="#333">規制未整備</text>
+    <text x="85" y="90" text-anchor="middle" font-size="10" fill="#333">寄付が主流</text>
+    <text x="85" y="112" text-anchor="middle" font-size="10" fill="#666">NGO連携</text>
+    <text x="85" y="132" text-anchor="middle" font-size="10" fill="#666">農村部で展開</text>
+  </g>
+  
+  <!-- Key issues section -->
+  <rect x="30" y="270" width="740" height="180" rx="10" fill="white" stroke="#d4652a" stroke-width="1.5"/>
+  <text x="400" y="300" text-anchor="middle" font-size="16" font-weight="bold" fill="#d4652a">主要課題</text>
+  
+  <!-- Issue 1: Durability -->
+  <g transform="translate(50, 315)">
+    <rect x="0" y="0" width="220" height="55" rx="8" fill="#d4652a" opacity="0.08"/>
+    <text x="110" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#d4652a">🔧 耐久性</text>
+    <text x="110" y="42" text-anchor="middle" font-size="11" fill="#333">PLA義手: 3〜6ヶ月で劣化</text>
+  </g>
+  
+  <!-- Issue 2: Fitting -->
+  <g transform="translate(290, 315)">
+    <rect x="0" y="0" width="220" height="55" rx="8" fill="#d4652a" opacity="0.08"/>
+    <text x="110" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#d4652a">📐 フィッティング</text>
+    <text x="110" y="42" text-anchor="middle" font-size="11" fill="#333">AIでも専門家調整が必要</text>
+  </g>
+  
+  <!-- Issue 3: Regulation -->
+  <g transform="translate(530, 315)">
+    <rect x="0" y="0" width="220" height="55" rx="8" fill="#d4652a" opacity="0.08"/>
+    <text x="110" y="22" text-anchor="middle" font-size="13" font-weight="bold" fill="#d4652a">⚖️ 規制</text>
+    <text x="110" y="42" text-anchor="middle" font-size="11" fill="#333">国ごとにまちまち</text>
+  </g>
+  
+  <!-- WHO recommendation -->
+  <rect x="100" y="385" width="600" height="50" rx="10" fill="#d4652a" opacity="0.15" stroke="#d4652a" stroke-width="1.5"/>
+  <text x="400" y="406" text-anchor="middle" font-size="11" font-weight="bold" fill="#d4652a">🏛️ WHO提言（2026）</text>
+  <text x="400" y="424" text-anchor="middle" font-size="11" fill="#333">「少量多品種・低リスク・患者個別対応」を考慮した新しい規制枠組みを各国に勧告</text>
+  
+  <text x="400" y="485" text-anchor="middle" font-size="10" fill="#999">出典: WHO Assistive Technology Department 2026 Technical Report | 加藤ラジコン出版</text>
+</svg>

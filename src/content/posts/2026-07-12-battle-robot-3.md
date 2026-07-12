@@ -4,7 +4,7 @@ date: 2026-07-12
 slug: "2026-07-12-battle-robot-3"
 category: "ロボット"
 eyecatch: "/images/battle-robot-3-eyecatch.png"
-tags: ["BattleBots", "Pro League", "Witch Doctor", "SawBlaze", "Manta", "NHRL", "KOB", "ROBO-ONE", "combat robotics", "ロボット格闘技", "ロボット", "ゲーム"]
+tags: ["BattleBots", "Pro League", "Witch Doctor", "SawBlaze", "Manta", "NHRL", "KOB", "ROBO-ONE", "combat robotics", "ロボット格闘技", "ロボット", "ゲーム", "哲学", "映像", "AGI", "投資"]
 ---
 
 # 【加藤バトルロボット #3】Pro League新章 — 第3週、戦術の分岐点
@@ -232,3 +232,4 @@ Shadow-Xが高速で接近し、零式改のサイドを狙う。零式改はス
 【加藤ラジコン出版記事 #3】
 ---
 [【加藤ラジコン出版の記事一覧】](https://note.com/famous_prawn2009)
+

@@ -2,7 +2,7 @@
 title: "【加藤ビーグル #5】トヨタ カローラクロス Z Adventure — 60周年記念の楔、CセグメントSUVに突き刺さる"
 date: 2026-07-12
 category: "乗り物"
-tags: ["トヨタ", "カローラクロス", "Z Adventure", "SUV", "特別仕様車", "60周年", "加藤ビーグル"]
+tags: ["トヨタ", "カローラクロス", "Z Adventure", "SUV", "特別仕様車", "60周年", "加藤ビーグル", "ロボット", "デザイン", "AGI", "投資", "執筆"]
 eyecatch: "/images/beagle5/beagle5-eyecatch.png"
 ---
 
@@ -110,3 +110,4 @@ ZR-Vは全長4,570mm、ホイールベース2,655mm。カローラクロス（�
 ---
 
 [【加藤ラジコン出版の記事一覧】](https://note.com/famous_prawn2009)
+

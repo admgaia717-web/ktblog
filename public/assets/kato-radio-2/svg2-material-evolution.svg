@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#f5f0eb;font-family:'Helvetica Neue',Arial,sans-serif">
+  <rect width="800" height="500" fill="#f5f0eb"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#d4652a">3Dプリンタ義手 材料進化</text>
+  <text x="400" y="55" text-anchor="middle" font-size="12" fill="#666">PLAからカーボンファイバー、バイオプラスチックへ</text>
+  
+  <!-- Timeline base line -->
+  <line x1="80" y1="150" x2="740" y2="150" stroke="#d4652a" stroke-width="3"/>
+  
+  <!-- Node 1: PLA (2013) -->
+  <circle cx="120" cy="150" r="12" fill="#d4652a"/>
+  <text x="120" y="150" text-anchor="middle" dy="4" font-size="11" fill="white" font-weight="bold">1</text>
+  <text x="120" y="120" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">PLA</text>
+  <text x="120" y="105" text-anchor="middle" font-size="11" fill="#999">2013〜</text>
+  <rect x="50" y="170" width="140" height="55" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="120" y="188" text-anchor="middle" font-size="10" fill="#333">強度: ★★</text>
+  <text x="120" y="203" text-anchor="middle" font-size="10" fill="#666">コスト: 2,000円/kg</text>
+  <text x="120" y="218" text-anchor="middle" font-size="10" fill="#c00">寿命: 3〜6ヶ月</text>
+  
+  <!-- Arrow 1→2 -->
+  <line x1="140" y1="150" x2="210" y2="150" stroke="#d4652a" stroke-width="2" stroke-dasharray="4,3"/>
+  
+  <!-- Node 2: TPU (2018) -->
+  <circle cx="250" cy="150" r="12" fill="#d4652a"/>
+  <text x="250" y="150" text-anchor="middle" dy="4" font-size="11" fill="white" font-weight="bold">2</text>
+  <text x="250" y="120" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">TPU</text>
+  <text x="250" y="105" text-anchor="middle" font-size="11" fill="#999">2018〜</text>
+  <rect x="180" y="170" width="140" height="55" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="250" y="188" text-anchor="middle" font-size="10" fill="#333">強度: ★★★</text>
+  <text x="250" y="203" text-anchor="middle" font-size="10" fill="#666">コスト: 4,000円/kg</text>
+  <text x="250" y="218" text-anchor="middle" font-size="10" fill="#090">寿命: 1〜2年</text>
+  
+  <!-- Arrow 2→3 -->
+  <line x1="270" y1="150" x2="340" y2="150" stroke="#d4652a" stroke-width="2" stroke-dasharray="4,3"/>
+  
+  <!-- Node 3: Carbon PLA (2023) -->
+  <circle cx="390" cy="150" r="12" fill="#d4652a"/>
+  <text x="390" y="150" text-anchor="middle" dy="4" font-size="11" fill="white" font-weight="bold">3</text>
+  <text x="390" y="120" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Carbon PLA</text>
+  <text x="390" y="105" text-anchor="middle" font-size="11" fill="#999">2023〜</text>
+  <rect x="320" y="170" width="140" height="55" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="390" y="188" text-anchor="middle" font-size="10" fill="#333">強度: ★★★★</text>
+  <text x="390" y="203" text-anchor="middle" font-size="10" fill="#666">コスト: 6,000円/kg</text>
+  <text x="390" y="218" text-anchor="middle" font-size="10" fill="#090">寿命: 2〜3年</text>
+  
+  <!-- Arrow 3→4 -->
+  <line x1="410" y1="150" x2="480" y2="150" stroke="#d4652a" stroke-width="2" stroke-dasharray="4,3"/>
+  
+  <!-- Node 4: Onyx (2025) -->
+  <circle cx="530" cy="150" r="12" fill="#d4652a"/>
+  <text x="530" y="150" text-anchor="middle" dy="4" font-size="11" fill="white" font-weight="bold">4</text>
+  <text x="530" y="120" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Onyx®</text>
+  <text x="530" y="105" text-anchor="middle" font-size="11" fill="#999">2025〜</text>
+  <rect x="460" y="170" width="140" height="55" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="530" y="188" text-anchor="middle" font-size="10" fill="#333">強度: ★★★★★</text>
+  <text x="530" y="203" text-anchor="middle" font-size="10" fill="#c00">コスト: 15,000円/kg</text>
+  <text x="530" y="218" text-anchor="middle" font-size="10" fill="#090">寿命: 3〜5年</text>
+  
+  <!-- Arrow 4→5 -->
+  <line x1="550" y1="150" x2="620" y2="150" stroke="#d4652a" stroke-width="2" stroke-dasharray="4,3"/>
+  
+  <!-- Node 5: PHA (2026+) -->
+  <circle cx="670" cy="150" r="12" fill="#d4652a" opacity="0.5"/>
+  <text x="670" y="150" text-anchor="middle" dy="4" font-size="11" fill="white" font-weight="bold">5</text>
+  <text x="670" y="120" text-anchor="middle" font-size="13" font-weight="bold" fill="#666">PHA</text>
+  <text x="670" y="105" text-anchor="middle" font-size="11" fill="#999">2026〜</text>
+  <rect x="600" y="170" width="140" height="55" rx="6" fill="white" stroke="#ccc" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="670" y="188" text-anchor="middle" font-size="10" fill="#333">強度: ★★★</text>
+  <text x="670" y="203" text-anchor="middle" font-size="10" fill="#666">生分解性✅</text>
+  <text x="670" y="218" text-anchor="middle" font-size="10" fill="#090">開発中</text>
+  
+  <!-- Key insight box -->
+  <rect x="100" y="260" width="600" height="80" rx="10" fill="#d4652a" opacity="0.1" stroke="#d4652a" stroke-width="1.5"/>
+  <text x="400" y="288" text-anchor="middle" font-size="14" font-weight="bold" fill="#d4652a">📈 材料進化のインパクト</text>
+  <text x="400" y="310" text-anchor="middle" font-size="12" fill="#333">PLAの3〜6ヶ月 → Onyxで3〜5年へ  <tspan fill="#d4652a" font-weight="bold">寿命6〜10倍</tspan></text>
+  <text x="400" y="328" text-anchor="middle" font-size="12" fill="#333">強度はPLA比で25倍（Onyxはアルミニウム同等）</text>
+  
+  <!-- Source -->
+  <text x="400" y="480" text-anchor="middle" font-size="10" fill="#999">出典: MatterHackers 3D Printing Industry Report 2025, Markforged Material Datasheet | 加藤ラジコン出版</text>
+</svg>

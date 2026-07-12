@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" style="background:#f5f0eb;font-family:'Helvetica Neue',Arial,sans-serif">
+  <rect width="800" height="420" fill="#f5f0eb"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#d4652a">3Dプリンタ義手 製作ワークフロー</text>
+  <text x="400" y="55" text-anchor="middle" font-size="12" fill="#666">3Dスキャン → AIフィッティング → プリント → フィッティング</text>
+  
+  <!-- Step 1: LiDAR Scan -->
+  <g transform="translate(40, 90)">
+    <rect x="0" y="0" width="160" height="160" rx="10" fill="white" stroke="#d4652a" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" font-size="28">📱</text>
+    <text x="80" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Step 1</text>
+    <text x="80" y="80" text-anchor="middle" font-size="12" fill="#d4652a">LiDAR 3Dスキャン</text>
+    <text x="80" y="100" text-anchor="middle" font-size="11" fill="#666">iPhone LiDAR /</text>
+    <text x="80" y="115" text-anchor="middle" font-size="11" fill="#666">Structure Sensor</text>
+    <text x="80" y="135" text-anchor="middle" font-size="10" fill="#999">所要: 数秒</text>
+  </g>
+  
+  <!-- Arrow 1→2 -->
+  <g transform="translate(205, 160)">
+    <polygon points="0,10 25,0 25,20" fill="#d4652a"/>
+    <rect x="2" y="8" width="24" height="4" fill="#d4652a"/>
+  </g>
+  
+  <!-- Step 2: AI Fitting -->
+  <g transform="translate(235, 90)">
+    <rect x="0" y="0" width="160" height="160" rx="10" fill="white" stroke="#d4652a" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" font-size="28">🤖</text>
+    <text x="80" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Step 2</text>
+    <text x="80" y="80" text-anchor="middle" font-size="12" fill="#d4652a">AI自動フィッティング</text>
+    <text x="80" y="100" text-anchor="middle" font-size="11" fill="#666">AIが最適デザインを</text>
+    <text x="80" y="115" text-anchor="middle" font-size="11" fill="#666">自動生成</text>
+    <text x="80" y="135" text-anchor="middle" font-size="10" fill="#999">所要: 数分</text>
+  </g>
+  
+  <!-- Arrow 2→3 -->
+  <g transform="translate(400, 160)">
+    <polygon points="0,10 25,0 25,20" fill="#d4652a"/>
+    <rect x="2" y="8" width="24" height="4" fill="#d4652a"/>
+  </g>
+  
+  <!-- Step 3: 3D Print -->
+  <g transform="translate(430, 90)">
+    <rect x="0" y="0" width="160" height="160" rx="10" fill="white" stroke="#d4652a" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" font-size="28">🖨️</text>
+    <text x="80" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Step 3</text>
+    <text x="80" y="80" text-anchor="middle" font-size="12" fill="#d4652a">3Dプリント</text>
+    <text x="80" y="100" text-anchor="middle" font-size="11" fill="#666">FDM / SLA方式</text>
+    <text x="80" y="115" text-anchor="middle" font-size="11" fill="#666">TPU or Carbon PLA</text>
+    <text x="80" y="135" text-anchor="middle" font-size="10" fill="#999">所要: 半日〜2日</text>
+  </g>
+  
+  <!-- Arrow 3→4 -->
+  <g transform="translate(595, 160)">
+    <polygon points="0,10 25,0 25,20" fill="#d4652a"/>
+    <rect x="2" y="8" width="24" height="4" fill="#d4652a"/>
+  </g>
+  
+  <!-- Step 4: Fit & Use -->
+  <g transform="translate(625, 90)">
+    <rect x="0" y="0" width="160" height="160" rx="10" fill="white" stroke="#d4652a" stroke-width="2"/>
+    <text x="80" y="30" text-anchor="middle" font-size="28">✋</text>
+    <text x="80" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">Step 4</text>
+    <text x="80" y="80" text-anchor="middle" font-size="12" fill="#d4652a">装着・調整</text>
+    <text x="80" y="100" text-anchor="middle" font-size="11" fill="#666">最終フィッティング</text>
+    <text x="80" y="115" text-anchor="middle" font-size="11" fill="#666">必要に応じ再プリント</text>
+    <text x="80" y="135" text-anchor="middle" font-size="10" fill="#999">従来比: 90%短縮</text>
+  </g>
+  
+  <!-- Traditional process comparison -->
+  <rect x="100" y="280" width="600" height="90" rx="10" fill="#8B4513" opacity="0.08" stroke="#8B4513" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="400" y="305" text-anchor="middle" font-size="14" font-weight="bold" fill="#8B4513">従来の義手製作（比較）</text>
+  
+  <g transform="translate(120, 315)">
+    <rect x="0" y="0" width="110" height="40" rx="5" fill="#ddd"/>
+    <text x="55" y="16" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">石膏型取り</text>
+    <text x="55" y="30" text-anchor="middle" font-size="9" fill="#666">1〜3日</text>
+  </g>
+  <text x="240" y="340" font-size="16" fill="#8B4513">→</text>
+  <g transform="translate(265, 315)">
+    <rect x="0" y="0" width="110" height="40" rx="5" fill="#ddd"/>
+    <text x="55" y="16" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">専門家調整</text>
+    <text x="55" y="30" text-anchor="middle" font-size="9" fill="#666">3〜7日</text>
+  </g>
+  <text x="385" y="340" font-size="16" fill="#8B4513">→</text>
+  <g transform="translate(410, 315)">
+    <rect x="0" y="0" width="110" height="40" rx="5" fill="#ddd"/>
+    <text x="55" y="16" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">製作</text>
+    <text x="55" y="30" text-anchor="middle" font-size="9" fill="#666">3〜7日</text>
+  </g>
+  <text x="530" y="340" font-size="16" fill="#8B4513">→</text>
+  <g transform="translate(555, 315)">
+    <rect x="0" y="0" width="110" height="40" rx="5" fill="#ddd"/>
+    <text x="55" y="16" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">試着・修正</text>
+    <text x="55" y="30" text-anchor="middle" font-size="9" fill="#666">度々</text>
+  </g>
+  
+  <!-- Source -->
+  <text x="400" y="405" text-anchor="middle" font-size="10" fill="#999">出典: e-NABLE Documentation, UCSD Jacobs School of Engineering | 加藤ラジコン出版</text>
+</svg>

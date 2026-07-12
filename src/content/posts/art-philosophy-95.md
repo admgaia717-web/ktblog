@@ -3,7 +3,7 @@ title: "【芸術って何だろ？ #95】ダダイズム — 芸術の自殺宣
 date: 2026-07-12
 slug: "art-philosophy-95"
 category: "芸術・哲学"
-tags: ["ダダイズム", "Dada", "デュシャン", "ツァラ", "フーゴ・バル", "マン・レイ", "シュールレアリスム", "前衛芸術", "芸術史", "AGI"]
+tags: ["ダダイズム", "Dada", "デュシャン", "ツァラ", "フーゴ・バル", "マン・レイ", "シュールレアリスム", "前衛芸術", "芸術史", "AGI", "音楽", "哲学", "ロボット"]
 eyecatch: "/assets/art-philosophy-95/eyecatch.png"
 note_url: "https://note.com/famous_prawn2009/n/nb84cb1e15ab1"
 substack_url: "https://keity717.substack.com/p/95-805"
@@ -101,3 +101,4 @@ Man Ray（マン・レイ）——本名 Emmanuel Radnitzky（エマニュエル
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。判断の際は、必ず公式データや専門家の意見を確認してください。
 
 【加藤ラジコン出版記事 #95】
+
