@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【78】数字系ハルシネーションを99.5%防ぐ——SLOT手法が変える高齢者向けAI電話の信頼性</title>
+<style>
+body{max-width:720px;margin:0 auto;padding:1.5em;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.9;color:#333;font-size:1rem}
+h1{font-size:1.6rem;margin:1.5em 0 0.3em;line-height:1.4;color:#111}
+h2{font-size:1.3rem;margin:1.5em 0 0.5em;color:#222;border-bottom:1px solid #eee;padding-bottom:0.2em}
+h3{font-size:1.1rem;margin:1.2em 0 0.3em;color:#333}
+p{margin:0.8em 0}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9rem}
+th,td{border:1px solid #ddd;padding:0.5em;text-align:left}
+th{background:#f5f5f5;font-weight:600}
+code{background:#f0f0f0;padding:0.15em 0.3em;border-radius:3px;font-size:0.9em}
+pre{background:#f5f5f5;padding:1em;border-radius:5px;overflow-x:auto;font-size:0.85rem}
+blockquote{border-left:3px solid #ddd;margin:1em 0;padding:0.5em 1em;color:#555}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+.meta{color:#888;font-size:0.85rem;margin:0.5em 0 2em}
+.footer{margin-top:3em;padding-top:1em;border-top:1px solid #eee;font-size:0.85rem;color:#888}
+</style>
+</head>
+<body>
+
+<h1>【78】数字系ハルシネーションを99.5%防ぐ——SLOT手法が変える高齢者向けAI電話の信頼性</h1>
+<p class="meta">2026-07-12 · 高齢者のためのAI電話</p>
+
+<h1>status: ready</h1>
+<h1>series: 高齢者のためのAI電話 —— 奈良弁・人生強者・地域循環</h1>
+<h1>target: 3pl</h1>
+<h1>platforms: note, substack, ktblog</h1>
+<h1>created: 2026-07-12</h1>
+<p>「来週の火曜日、午前9時に、鶴舞の公民館まで迎えに来てください」</p>
+<p>つるまいの電話予約で、高齢者がこう言ったとする。AIが正しく認識できなければ——「来週の水曜日」「午後9時」「別の施設」——実際の送迎に支障が出る。空振りが続けば、利用者は電話をかけるのをやめてしまう。</p>
+<p>AIの「ハルシネーション」（事実と異なる内容を生成すること）はよく話題になるが、実は<strong>最も深刻なのは「数字」の間違い</strong>だ。そして最新の研究が、その解決策を明確に示し始めている。</p>
+<hr />
+<h2>実対話ログが暴いた衝撃の数字</h2>
+<p>2026年、LREC（言語資源評価国際会議）で発表された<strong>AuthenHallu</strong>という研究がある。</p>
+<p>何が画期的かというと、これまでのハルシネーション研究が「研究者が人工的に作ったテストデータ」を使っていたのに対し、AuthenHalluは<strong>実際のLLMと人間の対話ログ</strong>から抽出したハルシネーションを分析した点だ。</p>
+<p>その結果は衝撃的だった。</p>
+<ul>
+<li><strong>全対話の31.4%</strong>で何らかのハルシネーションが発生</li>
+<li>特に<strong>数学的・数字的な問題では60%</strong>もの高い確率でハルシネーションが起きていた</li>
+</ul>
+<p>つまり、AIに今日の日付を聞けば3回に1回は間違える。電話で予約時間を伝えれば、10回中6回はどこかの数字を取り違えている可能性がある。数字問題の60%という率は、同じ研究チームの他の分析と比べても突出して高い。</p>
+<p>これは、つるまいのような電話予約システムにとって、極めて深刻な問題だ。予約とは「日付・時間・人数・場所」という数字と固有名詞の連続だからだ。</p>
+<p><strong>しかし、希望もある。</strong></p>
+<p>同じ2025-2026年の研究の流れが、この問題の解決策をすでに用意している。</p>
+<hr />
+<h2>構造化出力がもたらす「枠」</h2>
+<p>答えは、EMNLP 2025（産業トラック）で発表された<strong>SLOT</strong>（Structured LLM Output Transformer）という手法にある。</p>
+<p>SLOTの考え方は驚くほどシンプルだ。LLMが自由にテキストを生成させるのではなく、<strong>生成後に軽量な処理モデルを通して、決められた形式に強制変換する</strong>。</p>
+<p>イメージで説明しよう。</p>
+<p>従来の方法は、受付係に「電話の内容をメモして」と頼むようなものだ。受付係は自由にメモを書く。日付の順番が違っていたり、時間の書き方が統一されていなかったりする。</p>
+<p>SLOTは、そのメモを「専用のフォーマットに変換する機械」を通すようなものだ。日付は常に「YYYY-MM-DD」の形式に、時間は24時間表記に、人数は数字のみに変換される。書式の自由度をゼロにすることで、解釈の揺れを防ぐ。</p>
+<p>実証結果は驚異的だった。</p>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>スキーマ精度（形式の正しさ）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mistral-7B + SLOT</td>
+<td><strong>99.5%</strong></td>
+</tr>
+<tr>
+<td>Claude-3.5-Sonnet（ネイティブ）</td>
+<td>~74.5%</td>
+</tr>
+<tr>
+<td>Llama-3.2-1B + SLOT</td>
+<td>Claude-3.5と同等以上</td>
+</tr>
+</tbody>
+</table>
+<p>Claude-3.5-Sonnetは2024年後半の最高峰モデルの一つだが、SLOTを組み合わせたMistral-7B（はるかに小さなモデル）が<strong>25ポイント以上</strong>の差をつけた。</p>
+<p>しかもSLOTは<strong>元のLLMに依存しない</strong>。どんなLLMの出力にも後付けできる。だから、すでに動いているシステムに後から追加することも可能だ。</p>
+<hr />
+<h2>なぜ数字がそんなに間違えられるのか</h2>
+<p>ここで少し立ち止まって考えたい。なぜAIは数字を間違えるのか。</p>
+<p>AuthenHalluの研究は、この原因を鋭く分析している。LLMの学習データには、数字の「パターン」が無数にある。「2026年7月12日午前9時」という表現は、訓練データの中で「2026年7月11日午後3時」「2026年7月13日午前10時」などと隣接して存在する。LLMは統計的に「もっともらしい」次の単語を選ぶが、数字の世界では「もっともらしい」は「正しい」とイコールではない。</p>
+<p>特に厄介なのは<strong>日付の相対表現</strong>だ。</p>
+<p>「明後日」「来週の火曜日」「月末の金曜日」——人間なら何気なく使うこれらの表現を、LLMは現在日付と結びつけて具体的な日付に変換しなければならない。この変換プロセスで誤差が生まれる。</p>
+<p>つるまいの実運用でも、高齢者は「あさっての朝イチで」というように相対表現を好んで使う。絶対日付で言う人は少ない。だからこそ、この変換の信頼性が極めて重要になる。</p>
+<hr />
+<h2>つるまいへの適用——三層の防御</h2>
+<p>SLOTの手法を、つるまいの電話予約システムにどう適用するか。具体的な設計を考えてみよう。</p>
+<p>私の構想では、3層の防御を設ける。</p>
+<p><strong>第一層：SLOTによる構造化出力</strong></p>
+<p>Qwen3.5-4Bが生成した応答テキストを、SLOT層で予約スキーマに強制変換する。</p>
+<pre><code>{intent: &quot;ride_request&quot;,
+ pickup: &quot;鶴舞地区センター&quot;,
+ destination: &quot;JR奈良駅&quot;,
+ datetime: &quot;2026-07-14T09:00&quot;,
+ passengers: 1,
+ wheelchair: false}
+</code></pre>
+<p>この時点ですでに、時間の表記ゆれ（「午前9時」「9:00」「9時」など）はすべてISO形式に統一される。存在しない日付（2月30日など）はじかれる。</p>
+<p><strong>第二層：スロット検証</strong></p>
+<p>SLOTで構造化されたデータを、つるまいのデータベースと照合する。存在しない停留所名は拒否され、運行時間外の予約はエラーになる。この層はルールベースなので100%正確だ。</p>
+<p><strong>第三層：不確かな場合は人間に</strong></p>
+<p>上記の二層を通過しても、不確かな要素がある場合は、人間のオペレーターに転送する。この「自信がないときは人に渡す」設計が、Gladia（音声AI企業）が提唱する安全設計の要諦でもある。</p>
+<hr />
+<h2>車輪の再発明をしない</h2>
+<p>ここで、KTの研究原則を思い出したい。<strong>「車輪の再発明を避ける」</strong>。</p>
+<p>SLOTのコードはarXivで公開されている。Mistral-7BをベースにしたSLOTモデルは、そのまま、あるいはQwenの小型モデルに移植して使うことができる。</p>
+<p>つまり、KTがやるべきことはSLOTをゼロから実装することではない。</p>
+<ul>
+<li><strong>SLOTを日本語のタスク対話に適応すること</strong>（JMultiWOZベンチマークのslotsスキーマで再学習）</li>
+<li><strong>SLOTを奈良弁の音声認識パイプラインと統合すること</strong></li>
+<li><strong>SLOTの出力を高齢者の発話特性（言い淀み・反復・修正）に対して頑健にすること</strong></li>
+</ul>
+<p>これらは、SLOTという基盤の上に、KTだけが積み上げられる価値だ。</p>
+<hr />
+<h2>99.5%の先にあるもの</h2>
+<p>SLOTが99.5%のスキーマ精度を達成したことは、電話予約AIが「実用域」に入ったことを意味する。99.5%なら、1000回の予約につき5回のエラー。これは、人間のオペレーターのミス率と同等かそれ以下だ。</p>
+<p>もちろん、数字のスキーマ精度と、対話全体の満足度は別物だ。高齢者が「なんでや、さっき言うたやろ」と怒る場面は、スキーマが正しくても起こりうる。</p>
+<p>それでも、<strong>最低限「予約の内容を間違えない」というベースラインが確保できたことは大きい</strong>。</p>
+<p>2026年夏。四日市市、高松市、福島市で自治体AI電話が一気に拡大し、Bot Expressのような新サービスも参入している。その流れの中で、月1,550円のつるまいが、SLOTのような最先端手法を組み込んで、<strong>高齢者×奈良弁×超低コスト</strong>という誰もやっていない領域を攻め続ける。</p>
+<p>数字の壁を越えた先に、本当の対話が始まる。</p>
+<hr />
+<h2>参考文献</h2>
+<ul>
+<li>AuthenHallu (arXiv:2510.10539, LREC 2026) — 実対話ログに基づくハルシネーション検出ベンチマーク。数字問題60%を含む実測データ</li>
+<li>SLOT (arXiv:2505.04016, EMNLP 2025 Industry) — 構造化出力変換による99.5%スキーマ精度</li>
+<li>Gladia Safety Stack (gladia.io/blog/safety-voice-ai-hallucinations, 2026-03) — 音声AIエージェントの5層安全設計実践ガイド</li>
+<li>HalluDial (arXiv:2406.07070) — 対話レベルハルシネーション評価の大規模ベンチマーク</li>
+<li>Gosmar &amp; Dahl (arXiv:2501.13946) — マルチエージェントによるハルシネーション緩和フレームワーク（評価パイプライン設計参考）</li>
+</ul>
+
+<p class="footer"><a href="https://ktblog.pages.dev/kt-research/">← kt-research 一覧</a> · <a href="https://note.com/famous_prawn2009/n/n5308406df7a2">note で読む</a></p>
+
+</body>
+</html>
