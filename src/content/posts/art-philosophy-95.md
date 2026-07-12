@@ -4,7 +4,7 @@ date: 2026-07-12
 slug: "art-philosophy-95"
 category: "芸術・哲学"
 tags: ["ダダイズム", "Dada", "デュシャン", "ツァラ", "フーゴ・バル", "マン・レイ", "シュールレアリスム", "前衛芸術", "芸術史", "AGI"]
-eyecatch: "/assets/art-philosophy-95/eyecatch.jpg"
+eyecatch: "/assets/art-philosophy-95/eyecatch.png"
 excerpt: "1916年、チューリヒの酒場から始まった反芸術運動。デュシャンの小便器、ツァラの宣言、マン・レイのアイロン。芸術を殺そうとした青年たちが、芸術に永遠の命を与えた物語。"
 ---
 
