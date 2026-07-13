@@ -5,8 +5,8 @@ category: "芸術・哲学"
 tags: ["シュルレアリスム", "Surrealism", "ダリ", "マグリット", "エルンスト", "ブルトン", "オートマティスム", "無意識", "デペイズマン", "現代美術", "AGI"]
 eyecatch: "/assets/art-philosophy-102/eyecatch.png"
 excerpt: "1924年、アンドレ・ブルトンがシュルレアリスム宣言を発表。ダリの溶ける時計、マグリットの「これはパイプではない」、エルンストのコラージュ——無意識を描く革命は、100年後のAI画像生成にまで影響を与えている。"
-note_url: ""
-substack_url: ""
+note_url: "https://note.com/famous_prawn2009/n/nc7b6774371ed"
+substack_url: "https://keity717.substack.com/p/102"
 ---
 
 【芸術って何だろ？ #102】シュルレアリスム — 夢の鍵で現実を開ける扉
