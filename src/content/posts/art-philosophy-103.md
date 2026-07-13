@@ -9,7 +9,7 @@ tags: ["抽象表現主義", "Abstract Expressionism", "ポロック", "ロス�
 eyecatch: "/assets/art-philosophy-103/eyecatch.jpg"
 excerpt: "ポロックのドリッピング、ロスコの色面、デ・クーニングの激しい筆致——1940年代ニューヨークで炸裂した抽象表現主義は、戦争の傷痕を抱えた人間の叫びだった。CIAに利用され、市場で百億円の値を付け、今なお現代美術の基層を流れる。"
 note_url: ""
-substack_url: ""
+substack_url: "https://keity717.substack.com/p/103-9cc"
 
 【芸術って何だろ？ #103】抽象表現主義 — キャンバスに叩きつけた魂の叫び
 
