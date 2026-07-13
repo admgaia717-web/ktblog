@@ -4,7 +4,7 @@ date: 2026-07-13
 slug: "mechatronics-72"
 category: "産業・テクノロジー"
 eyecatch: "/assets/eyecatch/mechatronics-72.png"
-tags: ["FANUC", "Google", "フィジカルAI", "Gemini Enterprise", "Intrinsic", "AIエージェント", "ROS", "産業用ロボット", "協働ロボット", "CRX", "デジタルツイン", "メカトロ", "FA", "DeepMind", "Flowstate", "自動化", "IP69K", "パラレルリンクロボット"]
+tags: ["FANUC", "Google", "フィジカルAI", "Gemini Enterprise", "Intrinsic", "AIエージェント", "ROS", "産業用ロボット", "協働ロボット", "CRX", "デジタルツイン", "メカトロ", "FA", "DeepMind", "Flowstate", "自動化", "IP69K", "パラレルリンクロボット", "ロボット", "投資", "プログラミング", "生成AI", "AGI"]
 ---
 
 # 【加藤メカトロ #72】ファナック×Google フィジカルAI革命 — AIエージェントが産業用ロボットを操る日
@@ -118,3 +118,4 @@ Yaskawaは自社技術にこだわる傾向がある。KUKAは中国企業によ
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 【加藤ラジコン出版記事 #72】
+

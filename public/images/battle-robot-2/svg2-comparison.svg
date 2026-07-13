@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ede5dd;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="nhrl" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4652a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e8854a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bb" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3949ab;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="8"/>
+  <text x="400" y="35" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1a237e">二大ロボット格闘技リーグ比較 2026</text>
+
+  <!-- League Labels -->
+  <text x="180" y="70" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#d4652a">🏟️ NHRL</text>
+  <text x="620" y="70" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1a237e">⚔️ BattleBots</text>
+
+  <!-- Divider -->
+  <line x1="400" y1="80" x2="400" y2="460" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- Row 1: Founded -->
+  <text x="50" y="108" font-family="sans-serif" font-size="12" fill="#666" font-weight="bold">設立</text>
+  <rect x="100" y="95" width="160" height="24" rx="4" fill="#d4652a" opacity="0.15"/>
+  <text x="180" y="112" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">2018年</text>
+  <rect x="540" y="95" width="160" height="24" rx="4" fill="#1a237e" opacity="0.15"/>
+  <text x="620" y="112" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">2015年（TV再開）</text>
+
+  <!-- Row 2: Weight classes -->
+  <text x="50" y="148" font-family="sans-serif" font-size="12" fill="#666" font-weight="bold">階級</text>
+  <rect x="100" y="135" width="160" height="24" rx="4" fill="#d4652a" opacity="0.15"/>
+  <text x="180" y="152" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">3/12/30ポンド</text>
+  <rect x="540" y="135" width="160" height="24" rx="4" fill="#1a237e" opacity="0.15"/>
+  <text x="620" y="152" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">250ポンド（ヘビー級）</text>
+
+  <!-- Row 3: YouTube subscribers -->
+  <text x="50" y="188" font-family="sans-serif" font-size="12" fill="#666" font-weight="bold">登録者</text>
+  <rect x="100" y="175" width="250" height="24" rx="4" fill="#d4652a" opacity="0.2"/>
+  <text x="225" y="192" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#d4652a" font-weight="bold">300万人 🟢</text>
+  <rect x="540" y="175" width="160" height="24" rx="4" fill="#1a237e" opacity="0.15"/>
+  <text x="620" y="192" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">~150万人</text>
+
+  <!-- Row 4: Annual views -->
+  <text x="50" y="228" font-family="sans-serif" font-size="12" fill="#666" font-weight="bold">年間再生</text>
+  <rect x="100" y="215" width="250" height="24" rx="4" fill="#d4652a" opacity="0.2"/>
+  <text x="225" y="232" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#d4652a" font-weight="bold">5億回目標 🟢</text>
+  <rect x="540" y="215" width="180" height="24" rx="4" fill="#1a237e" opacity="0.15"/>
+  <text x="630" y="232" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">~2億回</text>
+
+  <!-- Row 5: Platform -->
+  <text x="50" y="268" font-family="sans-serif" font-size="12" fill="#666" font-weight="bold">配信</text>
+  <rect x="100" y="255" width="180" height="24" rx="4" fill="#d4652a" opacity="0.15"/>
+  <text x="190" y="272" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">YouTube + DAZN</text>
+  <rect x="540" y="255" width="160" height="24" rx="4" fill="#1a237e" opacity="0.15"/>
+  <text x="620" y="272" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">YouTube + TV</text>
+
+  <!-- Row 6: Pro League -->
+  <text x="50" y="308" font-family="sans-serif" font-size="12" fill="#666" font-weight="bold">プロリーグ</text>
+  <rect x="100" y="295" width="180" height="24" rx="4" fill="#d4652a" opacity="0.15"/>
+  <text x="190" y="312" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">2027年開始予定</text>
+  <rect x="540" y="295" width="200" height="24" rx="4" fill="#1a237e" opacity="0.15"/>
+  <text x="640" y="312" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">2025年開始済み 🟢</text>
+
+  <!-- Row 7: Strategy -->
+  <text x="50" y="348" font-family="sans-serif" font-size="12" fill="#666" font-weight="bold">戦略</text>
+  <rect x="100" y="335" width="250" height="24" rx="4" fill="#d4652a" opacity="0.15"/>
+  <text x="225" y="352" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">コミュニティ拡大・民主化</text>
+  <rect x="540" y="335" width="250" height="24" rx="4" fill="#1a237e" opacity="0.15"/>
+  <text x="665" y="352" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#333">エンタメ頂点・制作費100万ドル超</text>
+
+  <!-- Conclusion -->
+  <rect x="100" y="390" width="600" height="50" rx="8" fill="#1a237e" opacity="0.08"/>
+  <text x="400" y="412" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a237e">同じロボット格闘技というジャンルに属しながら、全く異なる方向性</text>
+  <text x="400" y="432" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">NHRL = 草の根からの急成長 ⚡ BattleBots = 確立されたエンターテインメント帝国</text>
+
+  <text x="400" y="475" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#888">加藤ラジコン出版 | 出典: NHRL CEOブログ・BattleBots Pro League公式</text>
+  <rect x="0" y="0" width="800" height="4" fill="#d4652a"/>
+</svg>

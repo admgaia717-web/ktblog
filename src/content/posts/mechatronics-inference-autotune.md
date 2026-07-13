@@ -2,7 +2,7 @@
 title: "【メカトロ】Inference AutoTune — フロンティアモデルを「自分の手」で小さくする技術"
 date: 2026-07-12
 category: "メカトロ"
-tags: ["AI", "LLM", "Inference.net", "AutoTune", "Catalyst", "蒸留", "SLM", "コスト削減", "AIインフラ"]
+tags: ["AI", "LLM", "Inference.net", "AutoTune", "Catalyst", "蒸留", "SLM", "コスト削減", "AIインフラ", "OpenAI", "セキュリティ", "プログラミング", "AIエージェント", "Claude", "ロボット", "哲学", "投資"]
 excerpt: "OpenAIのGPT-5.2を1/100のコストで手に入れる——Inference AutoTuneが実現する「フロンティアモデルの民主化」とは何か。25行のコード、2時間、250ドル以下。"
 ---
 
@@ -175,3 +175,4 @@ GPT-5.2のような能力を、月額100万円ではなく月1万円で手に入
 - Catalyst ブログ記事（2026年4月14日）: 「Introducing Catalyst: Monitor, train, and deploy self-improving AI models」
 - GravityAds ケーススタディ: p-90レイテンシ900ms→240ms
 - Inference.net シードファンド: 2025年10月、1,180万ドル（Multicoin Capital, a16z CSX）
+

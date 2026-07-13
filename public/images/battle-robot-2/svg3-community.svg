@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0eb;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ede5dd;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4652a;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#e8854a;stop-opacity:0.85"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b85520;stop-opacity:0.75"/>
+      <stop offset="100%" style="stop-color:#d4652a;stop-opacity:0.75"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#3949ab;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1452;stop-opacity:0.85"/>
+      <stop offset="100%" style="stop-color:#1a237e;stop-opacity:0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#bg)" rx="8"/>
+  <text x="400" y="35" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1a237e">NHRL エンゲージメント・ファネル</text>
+  <text x="400" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#666">視聴者から競技者へ——コミュニティの深化プロセス</text>
+
+  <!-- Layer 1: Viewers (widest) -->
+  <path d="M 60 100 L 740 100 L 700 160 L 100 160 Z" fill="url(#g1)" opacity="0.9"/>
+  <text x="400" y="120" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="white">👀 視聴者</text>
+  <text x="400" y="140" text-anchor="middle" font-family="sans-serif" font-size="13" fill="white">年間5億回再生 • YouTube登録者300万人</text>
+  <text x="400" y="155" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" opacity="0.8">全世界からアクセス • 無料配信</text>
+
+  <!-- Arrow -->
+  <text x="400" y="180" text-anchor="middle" font-size="16" fill="#d4652a">▼</text>
+
+  <!-- Layer 2: Fans -->
+  <path d="M 120 190 L 680 190 L 640 250 L 160 250 Z" fill="url(#g2)" opacity="0.9"/>
+  <text x="400" y="210" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="white">❤️ ファン</text>
+  <text x="400" y="230" text-anchor="middle" font-family="sans-serif" font-size="13" fill="white">試合を何度も見直す • 破壊メカニズムを考察</text>
+  <text x="400" y="245" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" opacity="0.8">故障解析 • 駆動方式比較 • 知識の共有</text>
+
+  <!-- Arrow -->
+  <text x="400" y="270" text-anchor="middle" font-size="16" fill="#b85520">▼</text>
+
+  <!-- Layer 3: Participants -->
+  <path d="M 180 280 L 620 280 L 580 340 L 220 340 Z" fill="url(#g3)" opacity="0.9"/>
+  <text x="400" y="300" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="white">🔧 参加者</text>
+  <text x="400" y="320" text-anchor="middle" font-family="sans-serif" font-size="13" fill="white">参加費50ドル • 累計70回のイベント</text>
+  <text x="400" y="335" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" opacity="0.8">38%がエンジニアリング学位 • 平均年齢27歳</text>
+
+  <!-- Arrow -->
+  <text x="400" y="360" text-anchor="middle" font-size="16" fill="#1a237e">▼</text>
+
+  <!-- Layer 4: Pro League (narrowest) -->
+  <path d="M 260 370 L 540 370 L 500 430 L 300 430 Z" fill="url(#g4)" opacity="0.9"/>
+  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="white">🏆 Pro League</text>
+  <text x="400" y="410" text-anchor="middle" font-family="sans-serif" font-size="13" fill="white">2027年開始予定 • フルシーズン制</text>
+  <text x="400" y="425" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" opacity="0.8">公式チーム制 • DAZN配信</text>
+
+  <text x="400" y="465" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#888">加藤ラジコン出版 | 出典: NHRL CEOブログ</text>
+  <rect x="0" y="0" width="800" height="4" fill="#d4652a"/>
+</svg>

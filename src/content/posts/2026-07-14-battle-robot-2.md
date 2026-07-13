@@ -2,7 +2,7 @@
 title: "【加藤バトルロボット #2】NHRL、5億回再生への道 — 世界最速で成長するロボット格闘技リーグの戦略"
 date: 2026-07-14
 category: "ロボット"
-tags: ["NHRL", "ロボット格闘技", "BattleBots", "Pro League", "DAZN", "Terminal5", "ニューヨーク", "combat robotics", "ロボット", "映像", "ゲーム", "投資", "AIエージェント", "プログラミング"]
+tags: ["NHRL", "ロボット格闘技", "BattleBots", "Pro League", "DAZN", "Terminal5", "ニューヨーク", "combat robotics", "ロボット", "映像", "ゲーム", "投資", "AIエージェント", "プログラミング", "哲学", "AGI", "防災", "執筆"]
 eyecatch: "/images/battle-robot-2/eyecatch.jpg"
 excerpt: "NHRLのYouTube登録者は7年間で4,000人から300万人に拡大。年間再生回数は5億回に迫る。DAZN契約、ニューヨーク・ターミナル5進出、2027年プロリーグ構想——CEOサラ・コノリーの手紙から読み解く、ロボット格闘技の新たな成長戦略。"
 ---
@@ -13,11 +13,23 @@ import { IMAGE } from '~/components/Image.astro'
 
 2026年6月29日。NHRL（National Havoc Robot League）のCEO、サラ・コノリー（41歳）は、一本のブログ記事を公開した。タイトルは「AN EXCITING UPDATE FROM OUR CEO」。普段は製品発表や試合結果を淡々と伝えるだけのページだ。だが、この日ばかりは違った。
 
-彼女はこう書いた。「私がCEOを始めたとき、NHRLのYouTube登録者は四千人だった。年間再生回数は四十万回。今、登録者は三百万人だ。年間再生回数は、五億回に向かって加速している。」
+> 「私がCEOを始めたとき、NHRLのYouTube登録者は四千人だった。年間再生回数は四十万回。今、登録者は三百万人だ。年間再生回数は、五億回に向かって加速している。」
+> — サラ・コノリー NHRL CEO
 
 五億回。Five billion views。ロボット格闘技の世界で、この数字を出せるリーグは他にない。
 
 この手紙は、ある変革の始まりを告げていた。NHRLは、草の根のホビーリーグから、世界最速で成長するスポーツへの脱皮を宣言したのだ。
+
+<IMAGE src="/images/battle-robot-2/svg1-timeline.svg" alt="NHRL成長タイムライン：2018年→2026年の六つの数字" />
+
+NHRLの軌跡は、六つの数字に要約できる。
+
+1. **四千人** — 2018年、創業者オースティンが最初のイベントを開いたときのYouTube登録者数
+2. **四十万回** — 年間総再生回数（2018年）
+3. **三百万人** — 2026年時点のYouTube登録者数（7年で750倍）
+4. **五億回** — 2026年の年間総再生回数目標（秒間15回再生が365日継続）
+5. **七十回** — NHRLがこれまで開催した全イベント数
+6. **2027年** — NHRL Pro League開始予定年
 
 <IMAGE src="/images/battle-robot-2/eyecatch.jpg" alt="NHRL World Championship 2025 - Robot Combat Arena" />
 
@@ -131,4 +143,5 @@ NHRLは、コミュニティの力を拡大する方向に進む。DAZNとの提
 - **note.com**: [【加藤バトルロボット #2】NHRL、5億回再生への道](https://note.com/famous_prawn2009/n/nb83df7826f21)
 - **Substack**: [【加藤バトルロボット #2】NHRL、5億回再生への道](https://keity717.substack.com/p/2nhrl5)
 - **ktblog**: [【加藤バトルロボット #2】](https://tsurumai-nara.com/2026-07-14-battle-robot-2/)
+
 

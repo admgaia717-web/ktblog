@@ -2,7 +2,7 @@
 title: "【加藤宇宙開発ニュース #91】ロケット再利用の新記録、月基地の胎動、フロリダの巨人——2026年7月、宇宙経済の三重奏"
 date: 2026-07-13
 category: "宇宙開発"
-tags: ["SpaceX", "Falcon 9", "B1067", "Blue Origin", "New Glenn", "NASA", "Moon Base", "ULA", "Atlas 5", "Starship", "ロケット再利用", "月面開発"]
+tags: ["SpaceX", "Falcon 9", "B1067", "Blue Origin", "New Glenn", "NASA", "Moon Base", "ULA", "Atlas 5", "Starship", "ロケット再利用", "月面開発", "投資", "ロボット", "プログラミング", "Apple", "AGI"]
 eyecatch: "/assets/eyecatch/space-news-91.png"
 excerpt: "SpaceX B1067が36回飛行達成。ULA Atlas 5最後の飛行。Blue Origin New Glenn復帰計画。NASA Moon Base Phase Oneに4機のランダー。宇宙経済が「技術競争」から「経済競争」へ移行する2026年夏の定点観測。"
 note_url: "https://note.com/famous_prawn2009/n/n2b00285c298c"
@@ -118,3 +118,4 @@ Falcon 9の第一段階は約15回飛行可能。B1067の36回は上限を大幅
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 【加藤宇宙開発ニュース #91】
+
