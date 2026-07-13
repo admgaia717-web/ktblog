@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0eb"/>
+      <stop offset="100%" style="stop-color:#ebe3d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg2)" rx="12"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c2c2c">フィジカルAI システムアーキテクチャ</text>
+  <text x="400" y="60" text-anchor="middle" font-size="12" fill="#666">FANUC × Google Gemini Enterprise</text>
+  
+  <!-- Layer 1: Human Interface -->
+  <rect x="50" y="85" width="700" height="75" fill="#d4652a" rx="8" opacity="0.15"/>
+  <rect x="50" y="85" width="700" height="75" fill="none" stroke="#d4652a" stroke-width="2" rx="8"/>
+  <text x="70" y="108" font-size="14" font-weight="bold" fill="#d4652a">第一層: 人間インターフェース</text>
+  <text x="70" y="128" font-size="12" fill="#555">自然言語指示 → 「あの赤い部品を取って、左のコンベアに置いて」</text>
+  <text x="70" y="148" font-size="11" fill="#888">ティーチングペンダント / ボイスコマンド / タブレットUI</text>
+  
+  <!-- Arrow down -->
+  <polygon points="400,165 385,155 415,155" fill="#d4652a"/>
+  
+  <!-- Layer 2: AI Brain -->
+  <rect x="50" y="180" width="700" height="95" fill="#2a7dd4" rx="8" opacity="0.15"/>
+  <rect x="50" y="180" width="700" height="95" fill="none" stroke="#2a7dd4" stroke-width="2" rx="8"/>
+  <text x="70" y="205" font-size="14" font-weight="bold" fill="#2a7dd4">第二層: AIエージェント</text>
+  
+  <!-- AI components -->
+  <rect x="80" y="215" width="140" height="45" fill="white" rx="6" stroke="#2a7dd4" stroke-width="1"/>
+  <text x="150" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#2a7dd4">Gemini Enterprise</text>
+  <text x="150" y="250" text-anchor="middle" font-size="9" fill="#666">自然言語理解</text>
+  
+  <rect x="240" y="215" width="140" height="45" fill="white" rx="6" stroke="#2a7dd4" stroke-width="1"/>
+  <text x="310" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#2a7dd4">DeepMind Robotics</text>
+  <text x="310" y="250" text-anchor="middle" font-size="9" fill="#666">基盤モデル</text>
+  
+  <rect x="400" y="215" width="140" height="45" fill="white" rx="6" stroke="#2a7dd4" stroke-width="1"/>
+  <text x="470" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#2a7dd4">タスクプランナー</text>
+  <text x="470" y="250" text-anchor="middle" font-size="9" fill="#666">行動生成・分解</text>
+  
+  <rect x="560" y="215" width="170" height="45" fill="white" rx="6" stroke="#2a7dd4" stroke-width="1"/>
+  <text x="645" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#2a7dd4">状態認識</text>
+  <text x="645" y="250" text-anchor="middle" font-size="9" fill="#666">センサフュージョン</text>
+  
+  <!-- Arrow down -->
+  <polygon points="400,282 385,272 415,272" fill="#2a7dd4"/>
+  
+  <!-- Layer 3: Robot Platform -->
+  <rect x="50" y="297" width="700" height="85" fill="#4caf50" rx="8" opacity="0.15"/>
+  <rect x="50" y="297" width="700" height="85" fill="none" stroke="#4caf50" stroke-width="2" rx="8"/>
+  <text x="70" y="320" font-size="14" font-weight="bold" fill="#4caf50">第三層: ロボットプラットフォーム</text>
+  
+  <rect x="80" y="330" width="120" height="40" fill="white" rx="6" stroke="#4caf50" stroke-width="1"/>
+  <text x="140" y="355" text-anchor="middle" font-size="11" fill="#4caf50">CRX 協働</text>
+  
+  <rect x="215" y="330" width="120" height="40" fill="white" rx="6" stroke="#4caf50" stroke-width="1"/>
+  <text x="275" y="355" text-anchor="middle" font-size="11" fill="#4caf50">ロボット 3kg</text>
+  
+  <rect x="350" y="330" width="120" height="40" fill="white" rx="6" stroke="#4caf50" stroke-width="1"/>
+  <text x="410" y="355" text-anchor="middle" font-size="11" fill="#4caf50">ロボット 2.3t</text>
+  
+  <rect x="485" y="330" width="120" height="40" fill="white" rx="6" stroke="#4caf50" stroke-width="1"/>
+  <text x="545" y="355" text-anchor="middle" font-size="11" fill="#4caf50">パラレル</text>
+  
+  <rect x="620" y="330" width="110" height="40" fill="white" rx="6" stroke="#4caf50" stroke-width="1"/>
+  <text x="675" y="355" text-anchor="middle" font-size="11" fill="#4caf50">CNC統合</text>
+  
+  <!-- Arrow down -->
+  <polygon points="400,390 385,380 415,380" fill="#4caf50"/>
+  
+  <!-- Layer 4: Software Stack -->
+  <rect x="50" y="405" width="700" height="95" fill="#9c27b0" rx="8" opacity="0.15"/>
+  <rect x="50" y="405" width="700" height="95" fill="none" stroke="#9c27b0" stroke-width="2" rx="8"/>
+  <text x="70" y="428" font-size="14" font-weight="bold" fill="#9c27b0">第四層: ソフトウェアスタック</text>
+  
+  <rect x="80" y="438" width="100" height="50" fill="white" rx="6" stroke="#9c27b0" stroke-width="1"/>
+  <text x="130" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#9c27b0">ROS 2</text>
+  <text x="130" y="475" text-anchor="middle" font-size="9" fill="#666">ミドルウェア</text>
+  
+  <rect x="195" y="438" width="100" height="50" fill="white" rx="6" stroke="#9c27b0" stroke-width="1"/>
+  <text x="245" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#9c27b0">Python API</text>
+  <text x="245" y="475" text-anchor="middle" font-size="9" fill="#666">制御インターフェース</text>
+  
+  <rect x="310" y="438" width="100" height="50" fill="white" rx="6" stroke="#9c27b0" stroke-width="1"/>
+  <text x="360" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#9c27b0">Intrinsic</text>
+  <text x="360" y="475" text-anchor="middle" font-size="9" fill="#666">Flowstate</text>
+  
+  <rect x="425" y="438" width="100" height="50" fill="white" rx="6" stroke="#9c27b0" stroke-width="1"/>
+  <text x="475" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#9c27b0">デジタルツイン</text>
+  <text x="475" y="475" text-anchor="middle" font-size="9" fill="#666">CNC Design Studio</text>
+  
+  <rect x="540" y="438" width="100" height="50" fill="white" rx="6" stroke="#9c27b0" stroke-width="1"/>
+  <text x="590" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#9c27b0">PLC対応</text>
+  <text x="590" y="475" text-anchor="middle" font-size="9" fill="#666">既存産業互換</text>
+  
+  <rect x="655" y="438" width="80" height="50" fill="white" rx="6" stroke="#9c27b0" stroke-width="1"/>
+  <text x="695" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#9c27b0">IP69K</text>
+  <text x="695" y="475" text-anchor="middle" font-size="9" fill="#666">保護等級</text>
+</svg>

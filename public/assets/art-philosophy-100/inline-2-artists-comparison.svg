@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#f5f0eb">
+  <style>text{font-family:sans-serif;fill:#333}</style>
+  <rect width="800" height="500" fill="#f5f0eb" rx="8"/>
+  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#d4652a">ジェネラティブアート 主要アーティスト・潮流マップ</text>
+
+  <!-- Column headers -->
+  <rect x="40" y="55" width="130" height="28" rx="4" fill="#d4652a"/>
+  <text x="105" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">時代</text>
+  <rect x="180" y="55" width="170" height="28" rx="4" fill="#d4652a"/>
+  <text x="265" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">アーティスト／プロジェクト</text>
+  <rect x="360" y="55" width="130" height="28" rx="4" fill="#d4652a"/>
+  <text x="425" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">手法</text>
+  <rect x="500" y="55" width="130" height="28" rx="4" fill="#d4652a"/>
+  <text x="565" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">代表作</text>
+  <rect x="640" y="55" width="130" height="28" rx="4" fill="#d4652a"/>
+  <text x="705" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">影響</text>
+
+  <!-- Row 1: Nees -->
+  <rect x="40" y="90" width="130" height="60" rx="3" fill="#f0e5da"/>
+  <text x="105" y="125" text-anchor="middle" font-size="11" font-weight="bold" fill="#666">1960s 開拓</text>
+  <rect x="180" y="90" width="170" height="60" rx="3" fill="#f0e5da"/>
+  <text x="220" y="112" text-anchor="start" font-size="11" font-weight="bold">Georg Nees</text>
+  <text x="220" y="130" text-anchor="start" font-size="9" fill="#666">シュトゥットガルト</text>
+  <rect x="360" y="90" width="130" height="60" rx="3" fill="#f0e5da"/>
+  <text x="425" y="120" text-anchor="middle" font-size="10">計算＋プロッタ</text>
+  <rect x="500" y="90" width="130" height="60" rx="3" fill="#f0e5da"/>
+  <text x="565" y="120" text-anchor="middle" font-size="10">Schotter(1970)</text>
+  <rect x="640" y="90" width="130" height="60" rx="3" fill="#f0e5da"/>
+  <text x="705" y="120" text-anchor="middle" font-size="10">CAの原点</text>
+
+  <!-- Row 2: Molnár -->
+  <rect x="40" y="155" width="130" height="60" rx="3" fill="#f5e8d5"/>
+  <text x="105" y="190" text-anchor="middle" font-size="11" font-weight="bold" fill="#666">1960s-</text>
+  <rect x="180" y="155" width="170" height="60" rx="3" fill="#f5e8d5"/>
+  <text x="220" y="177" text-anchor="start" font-size="11" font-weight="bold">Vera Molnár</text>
+  <text x="220" y="195" text-anchor="start" font-size="9" fill="#666">ハンガリー→仏</text>
+  <rect x="360" y="155" width="130" height="60" rx="3" fill="#f5e8d5"/>
+  <text x="425" y="185" text-anchor="middle" font-size="10">制御された偶然</text>
+  <rect x="500" y="155" width="130" height="60" rx="3" fill="#f5e8d5"/>
+  <text x="565" y="185" text-anchor="middle" font-size="10">Réticulée</text>
+  <rect x="640" y="155" width="130" height="60" rx="3" fill="#f5e8d5"/>
+  <text x="705" y="185" text-anchor="middle" font-size="10">GenArt哲学</text>
+
+  <!-- Row 3: Reas/Fry -->
+  <rect x="40" y="220" width="130" height="60" rx="3" fill="#e8dcc8"/>
+  <text x="105" y="255" text-anchor="middle" font-size="11" font-weight="bold" fill="#666">2001</text>
+  <rect x="180" y="220" width="170" height="60" rx="3" fill="#e8dcc8"/>
+  <text x="220" y="242" text-anchor="start" font-size="11" font-weight="bold">Reas / Fry</text>
+  <text x="220" y="260" text-anchor="start" font-size="9" fill="#666">Processing</text>
+  <rect x="360" y="220" width="130" height="60" rx="3" fill="#e8dcc8"/>
+  <text x="425" y="250" text-anchor="middle" font-size="10">コーディング民主化</text>
+  <rect x="500" y="220" width="130" height="60" rx="3" fill="#e8dcc8"/>
+  <text x="565" y="250" text-anchor="middle" font-size="10">Processing</text>
+  <rect x="640" y="220" width="130" height="60" rx="3" fill="#e8dcc8"/>
+  <text x="705" y="250" text-anchor="middle" font-size="10">GenArt基盤</text>
+
+  <!-- Row 4: Anadol -->
+  <rect x="40" y="285" width="130" height="60" rx="3" fill="#e8873a" opacity="0.8"/>
+  <text x="105" y="320" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">2020s</text>
+  <rect x="180" y="285" width="170" height="60" rx="3" fill="#e8873a" opacity="0.8"/>
+  <text x="220" y="307" text-anchor="start" font-size="11" font-weight="bold" fill="#fff">Refik Anadol</text>
+  <text x="220" y="325" text-anchor="start" font-size="9" fill="#ffe">トルコ系米国</text>
+  <rect x="360" y="285" width="130" height="60" rx="3" fill="#e8873a" opacity="0.8"/>
+  <text x="425" y="320" text-anchor="middle" font-size="10" fill="#fff">データ彫刻</text>
+  <rect x="500" y="285" width="130" height="60" rx="3" fill="#e8873a" opacity="0.8"/>
+  <text x="565" y="320" text-anchor="middle" font-size="10" fill="#fff">Unsupervised</text>
+  <rect x="640" y="285" width="130" height="60" rx="3" fill="#e8873a" opacity="0.8"/>
+  <text x="705" y="320" text-anchor="middle" font-size="10" fill="#fff">MoMA展示</text>
+
+  <!-- Row 5: Hobbs -->
+  <rect x="40" y="350" width="130" height="60" rx="3" fill="#d4652a" opacity="0.9"/>
+  <text x="105" y="385" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">2021</text>
+  <rect x="180" y="350" width="170" height="60" rx="3" fill="#d4652a" opacity="0.9"/>
+  <text x="220" y="372" text-anchor="start" font-size="11" font-weight="bold" fill="#fff">Tyler Hobbs</text>
+  <text x="220" y="390" text-anchor="start" font-size="9" fill="#ffe">Art Blocks</text>
+  <rect x="360" y="350" width="130" height="60" rx="3" fill="#d4652a" opacity="0.9"/>
+  <text x="425" y="385" text-anchor="middle" font-size="10" fill="#fff">オンチェーンGA</text>
+  <rect x="500" y="350" width="130" height="60" rx="3" fill="#d4652a" opacity="0.9"/>
+  <text x="565" y="385" text-anchor="middle" font-size="10" fill="#fff">Fidenza</text>
+  <rect x="640" y="350" width="130" height="60" rx="3" fill="#d4652a" opacity="0.9"/>
+  <text x="705" y="385" text-anchor="middle" font-size="10" fill="#fff">NFT×GA革命</text>
+
+  <text x="400" y="465" text-anchor="middle" font-size="11" fill="#d4652a" font-weight="bold">開拓 → 民主化 → データ化 → オンチェーン → AI拡散</text>
+
+  <text x="400" y="490" text-anchor="middle" font-size="8" fill="#ccc">加藤ラジコン出版 | 芸術 #100 付録</text>
+</svg>

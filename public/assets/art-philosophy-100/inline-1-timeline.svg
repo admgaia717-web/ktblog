@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="background:#f5f0eb">
+  <style>text{font-family:sans-serif;fill:#333}</style>
+  <rect width="800" height="500" fill="#f5f0eb" rx="8"/>
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#d4652a">ジェネラティブアート年表</text>
+  <text x="400" y="60" text-anchor="middle" font-size="12" fill="#888">1960—2026</text>
+
+  <!-- Horizontal timeline -->
+  <line x1="60" y1="200" x2="760" y2="200" stroke="#d4652a" stroke-width="3"/>
+
+  <!-- 1962 Noll -->
+  <circle cx="120" cy="200" r="8" fill="#d4652a"/>
+  <line x1="120" y1="200" x2="120" y2="140" stroke="#d4652a" stroke-width="1.5"/>
+  <text x="120" y="130" text-anchor="middle" font-size="10" font-weight="bold">1962</text>
+  <text x="120" y="120" text-anchor="middle" font-size="9">A.Michael Noll</text>
+  <text x="120" y="110" text-anchor="middle" font-size="8" fill="#666">ベル研・初のCA</text>
+
+  <!-- 1965 Nees -->
+  <circle cx="190" cy="200" r="8" fill="#d4652a"/>
+  <line x1="190" y1="200" x2="190" y2="270" stroke="#d4652a" stroke-width="1.5"/>
+  <text x="190" y="285" text-anchor="middle" font-size="10" font-weight="bold">1965</text>
+  <text x="190" y="298" text-anchor="middle" font-size="9">Georg Nees</text>
+  <text x="190" y="310" text-anchor="middle" font-size="8" fill="#666">初のCA展示</text>
+
+  <!-- 1968 Molnár -->
+  <circle cx="260" cy="200" r="8" fill="#d4652a"/>
+  <line x1="260" y1="200" x2="260" y2="140" stroke="#d4652a" stroke-width="1.5"/>
+  <text x="260" y="130" text-anchor="middle" font-size="10" font-weight="bold">1968</text>
+  <text x="260" y="120" text-anchor="middle" font-size="9">Vera Molnár</text>
+  <text x="260" y="110" text-anchor="middle" font-size="8" fill="#666">女性先駆者</text>
+
+  <!-- 2001 Processing -->
+  <circle cx="370" cy="200" r="10" fill="#e8873a"/>
+  <line x1="370" y1="200" x2="370" y2="270" stroke="#e8873a" stroke-width="2"/>
+  <text x="370" y="285" text-anchor="middle" font-size="11" font-weight="bold">2001</text>
+  <text x="370" y="300" text-anchor="middle" font-size="10">Processing</text>
+  <text x="370" y="313" text-anchor="middle" font-size="8" fill="#666">民主化の道具</text>
+
+  <!-- 2018 Refik Anadol -->
+  <circle cx="500" cy="200" r="10" fill="#e8873a"/>
+  <line x1="500" y1="200" x2="500" y2="140" stroke="#e8873a" stroke-width="2"/>
+  <text x="500" y="130" text-anchor="middle" font-size="11" font-weight="bold">2018</text>
+  <text x="500" y="120" text-anchor="middle" font-size="10">Refik Anadol</text>
+  <text x="500" y="110" text-anchor="middle" font-size="8" fill="#666">データ彫刻</text>
+
+  <!-- 2021 Art Blocks -->
+  <circle cx="600" cy="200" r="12" fill="#d4652a"/>
+  <line x1="600" y1="200" x2="600" y2="270" stroke="#d4652a" stroke-width="2.5"/>
+  <text x="600" y="285" text-anchor="middle" font-size="12" font-weight="bold">2021</text>
+  <text x="600" y="300" text-anchor="middle" font-size="10" font-weight="bold">Art Blocks</text>
+  <text x="600" y="313" text-anchor="middle" font-size="8" fill="#666">NFT×GA革命</text>
+
+  <!-- 2022 AI Art -->
+  <circle cx="690" cy="200" r="12" fill="#d4652a"/>
+  <line x1="690" y1="200" x2="690" y2="140" stroke="#d4652a" stroke-width="2.5"/>
+  <text x="690" y="130" text-anchor="middle" font-size="12" font-weight="bold">2022</text>
+  <text x="690" y="120" text-anchor="middle" font-size="10" font-weight="bold">DALL-E/MJ/SD</text>
+  <text x="690" y="110" text-anchor="middle" font-size="8" fill="#666">AI爆発</text>
+
+  <!-- Era labels at bottom -->
+  <rect x="60" y="340" width="70" height="25" rx="4" fill="#e0d5c8" opacity="0.5"/>
+  <text x="95" y="356" text-anchor="middle" font-size="9" fill="#666">開拓期</text>
+  <line x1="60" y1="352" x2="310" y2="352" stroke="#e0d5c8" stroke-width="20" opacity="0.3"/>
+  <line x1="60" y1="352" x2="310" y2="352" stroke="#d4652a" stroke-width="2" opacity="0.5"/>
+
+  <rect x="320" y="340" width="120" height="25" rx="4" fill="#e0d5c8" opacity="0.5"/>
+  <text x="380" y="356" text-anchor="middle" font-size="9" fill="#666">民主化期</text>
+  <line x1="320" y1="352" x2="440" y2="352" stroke="#e8873a" stroke-width="20" opacity="0.3"/>
+
+  <rect x="450" y="340" width="160" height="25" rx="4" fill="#e0d5c8" opacity="0.5"/>
+  <text x="530" y="356" text-anchor="middle" font-size="9" fill="#666">商業爆発期</text>
+  <line x1="450" y1="352" x2="610" y2="352" stroke="#d4652a" stroke-width="20" opacity="0.3"/>
+
+  <rect x="620" y="340" width="130" height="25" rx="4" fill="#e0d5c8" opacity="0.5"/>
+  <text x="685" y="356" text-anchor="middle" font-size="9" fill="#666">AI拡散期</text>
+  <line x1="620" y1="352" x2="750" y2="352" stroke="#cc5533" stroke-width="20" opacity="0.3"/>
+
+  <!-- Legend -->
+  <text x="400" y="400" text-anchor="middle" font-size="11" font-weight="bold" fill="#666">━ 重要マイルストーン ━</text>
+  <text x="400" y="420" text-anchor="middle" font-size="9" fill="#999">開拓期(1960-90) → 民主化期(2001) → 商業爆発(2021) → AI拡散(2022-)</text>
+
+  <!-- footer -->
+  <text x="400" y="480" text-anchor="middle" font-size="8" fill="#ccc">加藤ラジコン出版 | 芸術 #100 付録</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0eb"/>
+      <stop offset="100%" style="stop-color:#ebe3d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#bg3)" rx="12"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c2c2c">FANUC × Google エコシステム</text>
+  <text x="400" y="60" text-anchor="middle" font-size="12" fill="#666">フィジカルAI協業の全体像（2026年5月時点）</text>
+  
+  <!-- Center: FANUC -->
+  <circle cx="400" cy="240" r="70" fill="#d4652a" opacity="0.2" stroke="#d4652a" stroke-width="2"/>
+  <text x="400" y="235" text-anchor="middle" font-size="16" font-weight="bold" fill="#d4652a">FANUC</text>
+  <text x="400" y="255" text-anchor="middle" font-size="11" fill="#666">世界最大級出荷台数</text>
+  
+  <!-- Left: Google ecosystem -->
+  <rect x="50" y="100" width="180" height="120" fill="white" rx="8" stroke="#2a7dd4" stroke-width="2"/>
+  <text x="140" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#2a7dd4">Google Cloud</text>
+  <text x="140" y="145" text-anchor="middle" font-size="10" fill="#555">Gemini Enterprise</text>
+  <text x="140" y="160" text-anchor="middle" font-size="10" fill="#555">Vertex AI</text>
+  <text x="140" y="175" text-anchor="middle" font-size="10" fill="#555">Cloud Robotics</text>
+  <text x="140" y="195" text-anchor="middle" font-size="10" fill="#888">2026年5月統合発表</text>
+  
+  <!-- Line from Google to FANUC -->
+  <line x1="230" y1="160" x2="330" y2="220" stroke="#2a7dd4" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Left bottom: Intrinsic -->
+  <rect x="50" y="260" width="180" height="100" fill="white" rx="8" stroke="#2a7dd4" stroke-width="2"/>
+  <text x="140" y="285" text-anchor="middle" font-size="13" font-weight="bold" fill="#2a7dd4">Intrinsic (Google)</text>
+  <text x="140" y="305" text-anchor="middle" font-size="10" fill="#555">ROS開発管理</text>
+  <text x="140" y="320" text-anchor="middle" font-size="10" fill="#555">Flowstate</text>
+  <text x="140" y="335" text-anchor="middle" font-size="10" fill="#555">エンタープライズ</text>
+  <text x="140" y="350" text-anchor="middle" font-size="10" fill="#888">オープンプラットフォーム</text>
+  
+  <!-- Line from Intrinsic to FANUC -->
+  <line x1="230" y1="310" x2="330" y2="260" stroke="#2a7dd4" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Right: FANUC products -->
+  <rect x="570" y="80" width="180" height="130" fill="white" rx="8" stroke="#d4652a" stroke-width="2"/>
+  <text x="660" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#d4652a">FANUC ロボット</text>
+  <text x="660" y="125" text-anchor="middle" font-size="10" fill="#555">CRX 協働ロボット</text>
+  <text x="660" y="140" text-anchor="middle" font-size="10" fill="#555">3kg〜2.3t フルライン</text>
+  <text x="660" y="155" text-anchor="middle" font-size="10" fill="#555">DR/8-16B Stainless</text>
+  <text x="660" y="170" text-anchor="middle" font-size="10" fill="#555">パラレルリンク</text>
+  <text x="660" y="190" text-anchor="middle" font-size="10" fill="#888">1,000台以上出荷済</text>
+  
+  <!-- Line from FANUC to products -->
+  <line x1="470" y1="220" x2="570" y2="145" stroke="#d4652a" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Right bottom: Investment -->
+  <rect x="570" y="240" width="180" height="110" fill="white" rx="8" stroke="#d4652a" stroke-width="2"/>
+  <text x="660" y="265" text-anchor="middle" font-size="13" font-weight="bold" fill="#d4652a">9,000万ドル投資</text>
+  <text x="660" y="285" text-anchor="middle" font-size="10" fill="#555">ミシガン州新施設</text>
+  <text x="660" y="300" text-anchor="middle" font-size="10" fill="#555">84万平方フィート</text>
+  <text x="660" y="315" text-anchor="middle" font-size="10" fill="#555">フィジカルAI対応</text>
+  <text x="660" y="335" text-anchor="middle" font-size="10" fill="#888">2026年3月発表</text>
+  
+  <!-- Line from FANUC to investment -->
+  <line x1="470" y1="260" x2="570" y2="295" stroke="#d4652a" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Bottom: DeepMind -->
+  <rect x="270" y="380" width="260" height="80" fill="white" rx="8" stroke="#9c27b0" stroke-width="2"/>
+  <text x="400" y="405" text-anchor="middle" font-size="13" font-weight="bold" fill="#9c27b0">Google DeepMind</text>
+  <text x="400" y="425" text-anchor="middle" font-size="10" fill="#555">Gemini Robotics Trusted Tester</text>
+  <text x="400" y="440" text-anchor="middle" font-size="10" fill="#555">ロボット向け基盤モデル研究開発</text>
+  <text x="400" y="455" text-anchor="middle" font-size="10" fill="#888">FANUCが参加中</text>
+  
+  <!-- Line from DeepMind to FANUC -->
+  <line x1="400" y1="380" x2="400" y2="310" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Key insight box -->
+  <rect x="150" y="395" width="100" height="30" fill="#d4652a" rx="4" opacity="0.15"/>
+  <text x="200" y="415" text-anchor="middle" font-size="10" fill="#d4652a" font-weight="bold">オープン戦略</text>
+  
+  <rect x="550" y="355" width="100" height="30" fill="#2a7dd4" rx="4" opacity="0.15"/>
+  <text x="600" y="375" text-anchor="middle" font-size="10" fill="#2a7dd4" font-weight="bold">規模の優位</text>
+</svg>
