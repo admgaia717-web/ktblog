@@ -124,3 +124,11 @@ NHRLは、コミュニティの力を拡大する方向に進む。DAZNとの提
 2026年7月16日午後1時（太平洋時間）、Pro Leagueのエピソード103が公開される。Switchback対Ribbot、Disarray対Magnitude、TerrorTops対Valkyr——三試合の勝敗が、グループ順位を大きく動かす。9月12日、NHRLがニューヨークに立つ。そして2027年、NHRL Pro Leagueが始まる。ロボット格闘技の時計は、かつてない速度で回り始めている。見逃すな。
 
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
+
+---
+
+### 公開プラットフォーム
+- **note.com**: [【加藤バトルロボット #2】NHRL、5億回再生への道](https://note.com/famous_prawn2009/n/nb83df7826f21)
+- **Substack**: [【加藤バトルロボット #2】NHRL、5億回再生への道](https://keity717.substack.com/p/2nhrl5)
+- **ktblog**: [【加藤バトルロボット #2】](https://tsurumai-nara.com/2026-07-14-battle-robot-2/)
+
