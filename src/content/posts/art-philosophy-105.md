@@ -5,8 +5,8 @@ category: "芸術・哲学"
 tags: ["ポップアート", "Pop Art", "アンディ・ウォーホル", "Andy Warhol", "ロイ・リキテンスタイン", "Roy Lichtenstein", "現代美術", "大衆文化", "AGI"]
 eyecatch: "/assets/art-philosophy-105/eyecatch.jpg"
 excerpt: "キャンベルスープ缶が美術館に飾られた日。アンディ・ウォーホル、ロイ・リキテンスタイン、そしてインディペンデント・グループが仕掛けた、20世紀最大の芸術革命。大衆文化とハイアートの境界を破壊したポップアートの全貌。"
-note_url: ""
-substack_url: ""
+note_url: "https://note.com/famous_prawn2009/n/nfd96cb4df6e8"
+substack_url: "https://keity717.substack.com/p/105"
 ---
 
 # 🎨【芸術って何だろ？ #105】ポップアート — 大衆文化が芸術になった瞬間
