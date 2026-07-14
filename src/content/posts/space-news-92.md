@@ -6,7 +6,7 @@ tags: ["CALT", "Long March 10", "China", "ブースター回収", "再利用", "
 eyecatch: "/assets/eyecatch/space-news-92.png"
 excerpt: "中国の長征10号Bがブースター回収に成功。世界2カ国目の軌道ブースター回収で、宇宙開発は「SpaceX一強」から「SpaceX vs 中国」の二極時代へ突入する。"
 note_url: "https://note.com/famous_prawn2009/n/n1a37805ee478"
-substack_url: ""
+substack_url: "https://keity717.substack.com/p/92-d36"
 ---
 
 2026年7月10日。文昌宇宙発射場。午前8時30分（現地時間）。

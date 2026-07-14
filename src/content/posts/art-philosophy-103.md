@@ -1,7 +1,4 @@
 ---
-tags: ["デザイン", "哲学", "音楽", "AGI", "ロボット", "投資"]
----
----
 title: "【芸術って何だろ？ #103】抽象表現主義 — キャンバスに叩きつけた魂の叫び"
 date: 2026-07-14
 category: "芸術・哲学"
@@ -10,6 +7,7 @@ eyecatch: "/assets/art-philosophy-103/eyecatch.jpg"
 excerpt: "ポロックのドリッピング、ロスコの色面、デ・クーニングの激しい筆致——1940年代ニューヨークで炸裂した抽象表現主義は、戦争の傷痕を抱えた人間の叫びだった。CIAに利用され、市場で百億円の値を付け、今なお現代美術の基層を流れる。"
 note_url: "https://note.com/famous_prawn2009/n/na62ba26dac0f"
 substack_url: "https://keity717.substack.com/p/103-9cc"
+---
 
 【芸術って何だろ？ #103】抽象表現主義 — キャンバスに叩きつけた魂の叫び
 

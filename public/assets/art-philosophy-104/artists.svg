@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#f5f0eb"/>
+  <text x="400" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#d4652a">三大ストリートアーティスト比較</text>
+
+  <!-- TAKI 183 -->
+  <rect x="30" y="60" width="240" height="420" rx="10" fill="#fff" stroke="#d4652a" stroke-width="2"/>
+  <text x="150" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d4652a">TAKI 183</text>
+  <text x="150" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">1971〜</text>
+  <line x1="50" y1="120" x2="250" y2="120" stroke="#ddd" stroke-width="1"/>
+  <text x="50" y="145" font-family="Arial, sans-serif" font-size="11" fill="#333">時代</text>
+  <text x="150" y="145" font-family="Arial, sans-serif" font-size="11" fill="#555">1970s</text>
+  <text x="50" y="170" font-family="Arial, sans-serif" font-size="11" fill="#333">技法</text>
+  <text x="150" y="170" font-family="Arial, sans-serif" font-size="11" fill="#555">スプレー缶</text>
+  <text x="50" y="195" font-family="Arial, sans-serif" font-size="11" fill="#333">スタイル</text>
+  <text x="150" y="195" font-family="Arial, sans-serif" font-size="11" fill="#555">署名タグ</text>
+  <text x="50" y="220" font-family="Arial, sans-serif" font-size="11" fill="#333">動機</text>
+  <text x="150" y="220" font-family="Arial, sans-serif" font-size="11" fill="#555">存在証明</text>
+  <text x="50" y="245" font-family="Arial, sans-serif" font-size="11" fill="#333">正体</text>
+  <text x="150" y="245" font-family="Arial, sans-serif" font-size="11" fill="#555">匿名</text>
+  <text x="50" y="270" font-family="Arial, sans-serif" font-size="11" fill="#333">市場</text>
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="11" fill="#555">なし</text>
+  <text x="150" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#999">「抵抗の言語」</text>
+  <text x="150" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#999">NYT, 2011</text>
+
+  <!-- K. Haring -->
+  <rect x="280" y="60" width="240" height="420" rx="10" fill="#fff" stroke="#d4652a" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d4652a">K.ヘリング</text>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">1980〜1990</text>
+  <line x1="300" y1="120" x2="500" y2="120" stroke="#ddd" stroke-width="1"/>
+  <text x="300" y="145" font-family="Arial, sans-serif" font-size="11" fill="#333">時代</text>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="11" fill="#555">1980s</text>
+  <text x="300" y="170" font-family="Arial, sans-serif" font-size="11" fill="#333">技法</text>
+  <text x="400" y="170" font-family="Arial, sans-serif" font-size="11" fill="#555">白チョーク</text>
+  <text x="300" y="195" font-family="Arial, sans-serif" font-size="11" fill="#333">スタイル</text>
+  <text x="400" y="195" font-family="Arial, sans-serif" font-size="11" fill="#555">シルエット</text>
+  <text x="300" y="220" font-family="Arial, sans-serif" font-size="11" fill="#333">動機</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="11" fill="#555">大衆化</text>
+  <text x="300" y="245" font-family="Arial, sans-serif" font-size="11" fill="#333">正体</text>
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="11" fill="#555">公開</text>
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="11" fill="#333">市場</text>
+  <text x="400" y="270" font-family="Arial, sans-serif" font-size="11" fill="#555">大規模</text>
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#999">「アートは</text>
+  <text x="400" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#999">みんなのもの」</text>
+
+  <!-- Banksy -->
+  <rect x="530" y="60" width="240" height="420" rx="10" fill="#fff" stroke="#d4652a" stroke-width="2"/>
+  <text x="650" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d4652a">バンクシー</text>
+  <text x="650" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">1990s〜</text>
+  <line x1="550" y1="120" x2="750" y2="120" stroke="#ddd" stroke-width="1"/>
+  <text x="550" y="145" font-family="Arial, sans-serif" font-size="11" fill="#333">時代</text>
+  <text x="650" y="145" font-family="Arial, sans-serif" font-size="11" fill="#555">1990s〜現在</text>
+  <text x="550" y="170" font-family="Arial, sans-serif" font-size="11" fill="#333">技法</text>
+  <text x="650" y="170" font-family="Arial, sans-serif" font-size="11" fill="#555">ステンシル</text>
+  <text x="550" y="195" font-family="Arial, sans-serif" font-size="11" fill="#333">スタイル</text>
+  <text x="650" y="195" font-family="Arial, sans-serif" font-size="11" fill="#555">政治的風刺</text>
+  <text x="550" y="220" font-family="Arial, sans-serif" font-size="11" fill="#333">動機</text>
+  <text x="650" y="220" font-family="Arial, sans-serif" font-size="11" fill="#555">社会批判</text>
+  <text x="550" y="245" font-family="Arial, sans-serif" font-size="11" fill="#333">正体</text>
+  <text x="650" y="245" font-family="Arial, sans-serif" font-size="11" fill="#555">秘密</text>
+  <text x="550" y="270" font-family="Arial, sans-serif" font-size="11" fill="#333">市場</text>
+  <text x="650" y="270" font-family="Arial, sans-serif" font-size="11" fill="#555">$100M+</text>
+  <text x="650" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#999">「Going, going,</text>
+  <text x="650" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#999">gone」</text>
+</svg>

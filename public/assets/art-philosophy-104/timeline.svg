@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#f5f0eb"/>
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#d4652a">ストリートアート年表 — Timeline</text>
+  <!-- Timeline axis -->
+  <line x1="50" y1="250" x2="750" y2="250" stroke="#d4652a" stroke-width="3"/>
+  <!-- 1970 -->
+  <circle cx="100" cy="250" r="8" fill="#d4652a"/>
+  <text x="100" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">1971</text>
+  <text x="100" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555">TAKI 183</text>
+  <text x="100" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">NYでタグ始まる</text>
+  <!-- 1980 -->
+  <circle cx="230" cy="250" r="8" fill="#d4652a"/>
+  <text x="230" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">1980</text>
+  <text x="230" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555">K.ヘリング</text>
+  <text x="230" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">地下鉄チョーク画</text>
+  <!-- 1990 -->
+  <circle cx="360" cy="250" r="8" fill="#d4652a"/>
+  <text x="360" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">1990s</text>
+  <text x="360" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555">バンクシー登場</text>
+  <text x="360" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">ステンシル技法</text>
+  <!-- 2008 -->
+  <circle cx="490" cy="250" r="8" fill="#d4652a"/>
+  <text x="490" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">2008</text>
+  <text x="490" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555">MOCA展</text>
+  <text x="490" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">美術館が迎え入れ</text>
+  <!-- 2018 -->
+  <circle cx="580" cy="250" r="8" fill="#d4652a"/>
+  <text x="580" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">2018</text>
+  <text x="580" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555">自爆オークション</text>
+  <text x="580" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">少女と風船</text>
+  <!-- 2025 -->
+  <circle cx="700" cy="250" r="8" fill="#d4652a"/>
+  <text x="700" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">2025</text>
+  <text x="700" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555">市場$6億</text>
+  <text x="700" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">商業化の頂点</text>
+  <!-- Section labels -->
+  <text x="100" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#999">●グラフィティ誕生</text>
+  <text x="230" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#999">●ストリートアート</text>
+  <text x="360" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#999">●政治的メッセージ</text>
+  <text x="490" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#999">●美術館収蔵</text>
+  <text x="700" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#999">●NFT/AI</text>
+</svg>
