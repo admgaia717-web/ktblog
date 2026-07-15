@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <rect width="800" height="520" fill="#f5f0eb"/>
+  
+  <text x="400" y="35" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#333">M5 Max 128GB モデル比較マップ</text>
+  <text x="400" y="55" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#888">用途に応じた最適モデルの選択</text>
+
+  <!-- Grid headers -->
+  <rect x="20" y="75" width="240" height="30" rx="5" fill="#333"/>
+  <text x="140" y="95" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#fff">モデル</text>
+  
+  <rect x="270" y="75" width="100" height="30" rx="5" fill="#d4652a"/>
+  <text x="320" y="95" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">メモリ</text>
+  
+  <rect x="380" y="75" width="100" height="30" rx="5" fill="#e8894a"/>
+  <text x="430" y="95" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">速度</text>
+  
+  <rect x="490" y="75" width="130" height="30" rx="5" fill="#c04020"/>
+  <text x="555" y="95" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">用途</text>
+  
+  <rect x="630" y="75" width="150" height="30" rx="5" fill="#333"/>
+  <text x="705" y="95" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">実行環境</text>
+
+  <!-- Row 1: FLUX.2 klein 4B -->
+  <rect x="20" y="115" width="240" height="36" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="30" y="138" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">FLUX.2 klein 4B</text>
+  <rect x="270" y="115" width="100" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="320" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">〜13 GB</text>
+  <rect x="380" y="115" width="100" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="430" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">⚡ 〜2秒</text>
+  <rect x="490" y="115" width="130" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="555" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">ラフ・構図検討</text>
+  <rect x="630" y="115" width="150" height="36" rx="4" fill="#e3f2fd" stroke="#ddd"/>
+  <text x="705" y="138" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#1565c0">Draw Things</text>
+
+  <!-- Row 2: FLUX.2 dev 32B -->
+  <rect x="20" y="155" width="240" height="36" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="30" y="178" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">FLUX.2 dev 32B</text>
+  <rect x="270" y="155" width="100" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="320" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">〜64 GB</text>
+  <rect x="380" y="155" width="100" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="430" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">〜30秒</text>
+  <rect x="490" y="155" width="130" height="36" rx="4" fill="#fce4ec" stroke="#ddd"/>
+  <text x="555" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#c62828">最終品質・編集</text>
+  <rect x="630" y="155" width="150" height="36" rx="4" fill="#e3f2fd" stroke="#ddd"/>
+  <text x="705" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#1565c0">Draw Things</text>
+
+  <!-- Row 3: Krea 2 Turbo -->
+  <rect x="20" y="195" width="240" height="36" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="30" y="218" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Krea 2 Turbo 12B</text>
+  <rect x="270" y="195" width="100" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="320" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">〜24 GB</text>
+  <rect x="380" y="195" width="100" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="430" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">〜15秒</text>
+  <rect x="490" y="195" width="130" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="555" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">創造的構図</text>
+  <rect x="630" y="195" width="150" height="36" rx="4" fill="#f3e5f5" stroke="#ddd"/>
+  <text x="705" y="218" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6a1b9a">MFLUX</text>
+
+  <!-- Row 4: Ideogram 4 -->
+  <rect x="20" y="235" width="240" height="36" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="30" y="258" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Ideogram 4 FP8</text>
+  <rect x="270" y="235" width="100" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="320" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">〜28 GB</text>
+  <rect x="380" y="235" width="100" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="430" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">〜20秒</text>
+  <rect x="490" y="235" width="130" height="36" rx="4" fill="#fce4ec" stroke="#ddd"/>
+  <text x="555" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#c62828">タイポグラフィ</text>
+  <rect x="630" y="235" width="150" height="36" rx="4" fill="#f3e5f5" stroke="#ddd"/>
+  <text x="705" y="258" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#6a1b9a">MFLUX</text>
+
+  <!-- Row 5: Qwen Image -->
+  <rect x="20" y="275" width="240" height="36" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="30" y="298" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Qwen Image 2512</text>
+  <rect x="270" y="275" width="100" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="320" y="298" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">〜40 GB</text>
+  <rect x="380" y="275" width="100" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="430" y="298" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">〜25秒</text>
+  <rect x="490" y="275" width="130" height="36" rx="4" fill="#fce4ec" stroke="#ddd"/>
+  <text x="555" y="298" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#c62828">多言語文字</text>
+  <rect x="630" y="275" width="150" height="36" rx="4" fill="#e3f2fd" stroke="#ddd"/>
+  <text x="705" y="298" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#1565c0">Draw Things</text>
+
+  <!-- Row 6: Anima Preview 3 -->
+  <rect x="20" y="315" width="240" height="36" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="30" y="338" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">Anima Preview 3</text>
+  <rect x="270" y="315" width="100" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="320" y="338" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">〜15 GB</text>
+  <rect x="380" y="315" width="100" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="430" y="338" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">⚡ 〜5秒</text>
+  <rect x="490" y="315" width="130" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="555" y="338" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">アニメ・イラスト</text>
+  <rect x="630" y="315" width="150" height="36" rx="4" fill="#e3f2fd" stroke="#ddd"/>
+  <text x="705" y="338" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#1565c0">Draw Things</text>
+
+  <!-- Row 7: SeedVR2 -->
+  <rect x="20" y="355" width="240" height="36" rx="4" fill="#fff" stroke="#ddd"/>
+  <text x="30" y="378" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#333">SeedVR2 3B/7B</text>
+  <rect x="270" y="355" width="100" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="320" y="378" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">〜8/16 GB</text>
+  <rect x="380" y="355" width="100" height="36" rx="4" fill="#e8f5e9" stroke="#ddd"/>
+  <text x="430" y="378" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#2e7d32">〜3-8秒</text>
+  <rect x="490" y="355" width="130" height="36" rx="4" fill="#fff3e0" stroke="#ddd"/>
+  <text x="555" y="378" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#e65100">超解像・復元</text>
+  <rect x="630" y="355" width="150" height="36" rx="4" fill="#e3f2fd" stroke="#ddd"/>
+  <text x="705" y="378" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#1565c0">Draw Things/MFLUX</text>
+
+  <!-- Memory usage bar -->
+  <text x="400" y="415" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#555">128GB Unified Memory 使用イメージ</text>
+  
+  <rect x="50" y="430" width="700" height="30" rx="6" fill="#e0e0e0"/>
+  
+  <!-- Model memory blocks (scaled proportionally) -->
+  <!-- Model layer: Draw Things cache ~40% = 280px starting at x=50 -->
+  <rect x="50" y="430" width="180" height="30" rx="6" fill="#d4652a" opacity="0.8"/>
+  <text x="140" y="450" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#fff">モデル群(64GB)</text>
+  
+  <!-- Cache: 20% = 140px -->
+  <rect x="230" y="430" width="160" height="30" rx="0" fill="#e8894a" opacity="0.7"/>
+  <text x="310" y="450" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#fff">キャッシュ(32GB)</text>
+  
+  <!-- OS + Apps: 25% = 175px -->
+  <rect x="390" y="430" width="140" height="30" rx="0" fill="#c04020" opacity="0.6"/>
+  <text x="460" y="450" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#fff">macOS+App(24GB)</text>
+  
+  <!-- Free: 15% = 105px -->
+  <rect x="530" y="430" width="220" height="30" rx="6" fill="#90a4ae" opacity="0.4"/>
+  <text x="640" y="450" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#546e7a">空き(8GB+)</text>
+
+  <text x="400" y="490" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#999">Draw Things Universal Weights Cache: 物理メモリの半分(64GB)を自動割り当て</text>
+
+  <!-- Legend -->
+  <rect x="50" y="505" width="12" height="12" rx="2" fill="#e3f2fd"/>
+  <text x="66" y="515" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555">Draw Things</text>
+  <rect x="160" y="505" width="12" height="12" rx="2" fill="#f3e5f5"/>
+  <text x="176" y="515" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555">MFLUX</text>
+</svg>

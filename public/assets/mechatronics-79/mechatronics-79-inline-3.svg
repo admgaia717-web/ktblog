@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620">
+  <rect width="900" height="620" fill="#f5f0eb"/>
+  <text x="450" y="35" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#333">主要協働ロボット比較 2026</text>
+  <rect x="20" y="55" width="170" height="35" rx="4" fill="#d4652a"/>
+  <rect x="195" y="55" width="160" height="35" rx="4" fill="#d4652a"/>
+  <rect x="360" y="55" width="120" height="35" rx="4" fill="#d4652a"/>
+  <rect x="485" y="55" width="130" height="35" rx="4" fill="#d4652a"/>
+  <rect x="620" y="55" width="130" height="35" rx="4" fill="#d4652a"/>
+  <rect x="755" y="55" width="130" height="35" rx="4" fill="#d4652a"/>
+  <text x="105" y="78" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="bold" fill="white">メーカー</text>
+  <text x="275" y="78" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="bold" fill="white">代表機種</text>
+  <text x="420" y="78" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="bold" fill="white">可搬重量</text>
+  <text x="550" y="78" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="bold" fill="white">標準価格</text>
+  <text x="685" y="78" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="bold" fill="white">耐環境</text>
+  <text x="820" y="78" text-anchor="middle" font-family="Helvetica" font-size="13" font-weight="bold" fill="white">国</text>
+  <!-- UR -->
+  <rect x="20" y="92" width="860" height="38" rx="2" fill="white"/>
+  <text x="105" y="117" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">Universal Robots</text>
+  <text x="275" y="117" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">UR20</text>
+  <text x="420" y="117" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">20kg</text>
+  <text x="550" y="117" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#d4652a" font-weight="bold">$39,900</text>
+  <text x="685" y="117" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">IP54</text>
+  <text x="820" y="117" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">🇩🇰</text>
+  <!-- FANUC -->
+  <rect x="20" y="131" width="860" height="38" rx="2" fill="#fdfaf7"/>
+  <text x="105" y="156" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">FANUC</text>
+  <text x="275" y="156" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">CRX-10iA</text>
+  <text x="420" y="156" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">10kg</text>
+  <text x="550" y="156" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#d4652a" font-weight="bold">$34,900</text>
+  <text x="685" y="156" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">IP67</text>
+  <text x="820" y="156" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">🇯🇵</text>
+  <!-- ABB -->
+  <rect x="20" y="170" width="860" height="38" rx="2" fill="white"/>
+  <text x="105" y="195" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">ABB</text>
+  <text x="275" y="195" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">GoFa CRB 15000</text>
+  <text x="420" y="195" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">12kg</text>
+  <text x="550" y="195" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#d4652a" font-weight="bold">$32,000</text>
+  <text x="685" y="195" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">IP54</text>
+  <text x="820" y="195" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">🇸🇪</text>
+  <!-- Yaskawa -->
+  <rect x="20" y="209" width="860" height="38" rx="2" fill="#fdfaf7"/>
+  <text x="105" y="234" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">安川電機</text>
+  <text x="275" y="234" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">HC20</text>
+  <text x="420" y="234" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">20kg</text>
+  <text x="550" y="234" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#d4652a" font-weight="bold">$36,000</text>
+  <text x="685" y="234" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">IP54</text>
+  <text x="820" y="234" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">🇯🇵</text>
+  <!-- KUKA -->
+  <rect x="20" y="248" width="860" height="38" rx="2" fill="white"/>
+  <text x="105" y="273" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">KUKA</text>
+  <text x="275" y="273" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">LBR iisy 11</text>
+  <text x="420" y="273" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">11kg</text>
+  <text x="550" y="273" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#d4652a" font-weight="bold">$32,000</text>
+  <text x="685" y="273" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">IP54</text>
+  <text x="820" y="273" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">🇩🇪</text>
+  <!-- Dobot -->
+  <rect x="20" y="287" width="860" height="38" rx="2" fill="#fdfaf7"/>
+  <text x="105" y="312" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">Dobot（中国）</text>
+  <text x="275" y="312" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">CR5</text>
+  <text x="420" y="312" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">5kg</text>
+  <text x="550" y="312" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#d4652a" font-weight="bold">$7,990</text>
+  <text x="685" y="312" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">IP43</text>
+  <text x="820" y="312" text-anchor="middle" font-family="Helvetica" font-size="13" fill="#333">🇨🇳</text>
+  <!-- Market share -->
+  <text x="450" y="380" text-anchor="middle" font-family="Helvetica" font-size="18" font-weight="bold" fill="#333">2025年協働ロボット市場シェア（推定）</text>
+  <path d="M 180,480 L 180,380 A 100,100 0 0,1 299.1,413.6 Z" fill="#d4652a"/>
+  <path d="M 180,480 L 299.1,413.6 A 100,100 0 0,1 355.8,490.8 Z" fill="#e88a4a"/>
+  <path d="M 180,480 L 355.8,490.8 A 100,100 0 0,1 341.3,569.1 Z" fill="#f0a86a"/>
+  <path d="M 180,480 L 341.3,569.1 A 100,100 0 0,1 268.5,579.8 Z" fill="#f5c08a"/>
+  <path d="M 180,480 L 268.5,579.8 A 100,100 0 0,1 213.4,548.5 Z" fill="#fad5aa"/>
+  <path d="M 180,480 L 213.4,548.5 A 100,100 0 0,1 180,580 L 180,480 Z" fill="#b8562a"/>
+  <rect x="310" y="400" width="14" height="14" rx="2" fill="#d4652a"/>
+  <text x="330" y="412" font-family="Helvetica" font-size="12" fill="#333">Universal Robots 28%</text>
+  <rect x="310" y="420" width="14" height="14" rx="2" fill="#e88a4a"/>
+  <text x="330" y="432" font-family="Helvetica" font-size="12" fill="#333">FANUC 18%</text>
+  <rect x="310" y="440" width="14" height="14" rx="2" fill="#f0a86a"/>
+  <text x="330" y="452" font-family="Helvetica" font-size="12" fill="#333">ABB 15%</text>
+  <rect x="310" y="460" width="14" height="14" rx="2" fill="#f5c08a"/>
+  <text x="330" y="472" font-family="Helvetica" font-size="12" fill="#333">安川電機 12%</text>
+  <rect x="310" y="480" width="14" height="14" rx="2" fill="#fad5aa"/>
+  <text x="330" y="492" font-family="Helvetica" font-size="12" fill="#333">KUKA 10%</text>
+  <rect x="310" y="500" width="14" height="14" rx="2" fill="#b8562a"/>
+  <text x="330" y="512" font-family="Helvetica" font-size="12" fill="#333">中国勢 30%</text>
+  <rect x="310" y="520" width="14" height="14" rx="2" fill="#ddd"/>
+  <text x="330" y="532" font-family="Helvetica" font-size="12" fill="#333">その他 5%</text>
+  <text x="450" y="600" text-anchor="middle" font-family="Helvetica" font-size="11" fill="#aaa">出典：IFR、各社IR、業界アナリストレポートから加藤ラジコン出版推定</text>
+</svg>
