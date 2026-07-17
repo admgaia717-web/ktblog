@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <rect width="900" height="500" fill="#f5f0eb"/>
+  <text x="450" y="40" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" fill="#333">「作者の死」200年の系譜</text>
+  <line x1="80" y1="120" x2="820" y2="120" stroke="#d4652a" stroke-width="4"/>
+  <line x1="80" y1="380" x2="820" y2="380" stroke="#d4652a" stroke-width="4"/>
+  <circle cx="120" cy="120" r="12" fill="#d4652a"/>
+  <text x="120" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">1800</text>
+  <text x="120" y="155" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">ロマン主義</text>
+  <text x="120" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">天才神話の成立</text>
+  <circle cx="240" cy="120" r="12" fill="#d4652a"/>
+  <text x="240" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">1917</text>
+  <text x="240" y="155" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">デュシャン</text>
+  <text x="240" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">レディメイド「泉」</text>
+  <circle cx="380" cy="120" r="12" fill="#d4652a"/>
+  <text x="380" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">1967</text>
+  <text x="380" y="155" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">ロラン・バルト</text>
+  <text x="380" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">「作者の死」宣言</text>
+  <circle cx="500" cy="120" r="12" fill="#d4652a"/>
+  <text x="500" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">1960s</text>
+  <text x="500" y="155" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">ウォーホル</text>
+  <text x="500" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">ファクトリー大量複製</text>
+  <circle cx="600" cy="120" r="12" fill="#d4652a"/>
+  <text x="600" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">1970s</text>
+  <text x="600" y="155" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">コンセプチュアル</text>
+  <text x="600" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">アイデアこそ芸術</text>
+  <circle cx="700" cy="120" r="12" fill="#d4652a"/>
+  <text x="700" y="100" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">1980s</text>
+  <text x="700" y="155" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">盗用芸術</text>
+  <text x="700" y="172" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">レヴァイン/プリンス</text>
+  <line x1="80" y1="250" x2="820" y2="250" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="450" y="240" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#999">--- 新しい時代 ---</text>
+  <circle cx="350" cy="380" r="12" fill="#1a237e"/>
+  <text x="350" y="360" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">2000s</text>
+  <text x="350" y="415" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">インターネット</text>
+  <text x="350" y="432" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">二次創作/リミックス/ミーム</text>
+  <circle cx="550" cy="380" r="12" fill="#1a237e"/>
+  <text x="550" y="360" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#333">2022~</text>
+  <text x="550" y="415" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#555">生成AI時代</text>
+  <text x="550" y="432" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#777">Midjourney/SD</text>
+  <text x="450" y="480" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#999">加藤ラジコン出版 | art-philosophy-98</text>
+</svg>

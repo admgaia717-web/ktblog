@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <rect width="900" height="500" fill="#f5f0eb"/>
+  <text x="450" y="35" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="22" font-weight="bold" fill="#333">「作品の意味」を決めるのは誰か？</text>
+  <ellipse cx="450" cy="160" rx="80" ry="35" fill="#d4652a" opacity="0.9"/>
+  <text x="450" y="166" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#fff">芸術作品</text>
+  <line x1="450" y1="125" x2="450" y2="65" stroke="#888" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="450,60 445,70 455,70" fill="#888"/>
+  <text x="450" y="55" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#999"><- 従来: 作者が決定</text>
+  <rect x="50" y="270" width="180" height="80" rx="8" fill="#fff" stroke="#d4652a" stroke-width="2"/>
+  <text x="140" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#d4652a">読者 / 鑑賞者</text>
+  <text x="140" y="320" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555">バルト「読者の誕生」</text>
+  <text x="140" y="338" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555">解釈の主権者</text>
+  <line x1="230" y1="290" x2="380" y2="210" stroke="#d4652a" stroke-width="2"/>
+  <polygon points="385,205 375,210 380,218" fill="#d4652a"/>
+  <rect x="250" y="300" width="180" height="80" rx="8" fill="#fff" stroke="#888" stroke-width="2"/>
+  <text x="340" y="330" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#555">美術館 / 学芸員</text>
+  <text x="340" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555">選別/展示/解釈枠組</text>
+  <rect x="470" y="300" width="180" height="80" rx="8" fill="#fff" stroke="#888" stroke-width="2"/>
+  <text x="560" y="330" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#555">市場 / コレクター</text>
+  <text x="560" y="350" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555">価格で価値を定義</text>
+  <rect x="670" y="270" width="180" height="80" rx="8" fill="#fff" stroke="#1a237e" stroke-width="2"/>
+  <text x="760" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" font-weight="bold" fill="#1a237e">AI / アルゴリズム</text>
+  <text x="760" y="320" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#555">レコメンドが可視性決定</text>
+  <text x="450" y="490" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" fill="#999">加藤ラジコン出版 | art-philosophy-98</text>
+</svg>
