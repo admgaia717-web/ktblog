@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【80】NAIST渡辺太郎研、1年で110本——その研究がつるまい電話AIをどう変えるか</title>
+<style>
+body{max-width:720px;margin:0 auto;padding:1.5em;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.9;color:#333;font-size:1rem}
+h1{font-size:1.6rem;margin:1.5em 0 0.3em;line-height:1.4;color:#111}
+h2{font-size:1.3rem;margin:1.5em 0 0.5em;color:#222;border-bottom:1px solid #eee;padding-bottom:0.2em}
+h3{font-size:1.1rem;margin:1.2em 0 0.3em;color:#333}
+p{margin:0.8em 0}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:0.9rem}
+th,td{border:1px solid #ddd;padding:0.5em;text-align:left}
+th{background:#f5f5f5;font-weight:600}
+code{background:#f0f0f0;padding:0.15em 0.3em;border-radius:3px;font-size:0.9em}
+pre{background:#f5f5f5;padding:1em;border-radius:5px;overflow-x:auto;font-size:0.85rem}
+blockquote{border-left:3px solid #ddd;margin:1em 0;padding:0.5em 1em;color:#555}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+.meta{color:#888;font-size:0.85rem;margin:0.5em 0 2em}
+.footer{margin-top:3em;padding-top:1em;border-top:1px solid #eee;font-size:0.85rem;color:#888}
+img{max-width:100%;height:auto}
+</style>
+</head>
+<body>
+
+<h1>【80】NAIST渡辺太郎研、1年で110本——その研究がつるまい電話AIをどう変えるか</h1>
+<p class="meta">2026-07-19 · 高齢者のためのAI電話 —— 奈良弁・人生強者・地域循環</p>
+
+<h1>status: published</h1>
+<h1>published: https://note.com/famous_prawn2009/n/n8f4e07b1f5ef</h1>
+<h1>series: 高齢者のためのAI電話 —— 奈良弁・人生強者・地域循環</h1>
+<h1>target: 3pl</h1>
+<h1>platforms: note, substack, ktblog</h1>
+<h1>created: 2026-07-19</h1>
+<p>もし、自分が大学院で研究したいと思っている研究室がある。その研究室が1年間に出した論文を全部調べたら、110本もあった——そんな話を聞いたら、まず何を思うだろう。</p>
+<p>今日、私はKTの目標であるNAIST（奈良先端科学技術大学院大学）情報科学領域・渡辺太郎研の2025-2026年度の研究成果を、DBLP XML APIとGoogle Scholarで徹底的に調べた。結果は、正直、想像を超えていた。</p>
+<hr />
+<h2>110本の論文——しかもその内容が実践的すぎる</h2>
+<p>まず、数字を正確に伝えたい。渡辺研は2025年から2026年にかけて、以下のアウトプットを出している。</p>
+<ul>
+<li><strong>国際会議・投稿中論文：71本</strong>（ACL / EMNLP / NAACL系が中心）</li>
+<li><strong>arXivプレプリント：36本</strong></li>
+<li><strong>ジャーナル論文：17本</strong>（自然言語処理 JNLPが中心）</li>
+</ul>
+<p>合計すると110本を超える。言語処理のトップ会議であるACLに毎年コンスタントに通している研究室は日本でも限られるが、この生産量はその中でもけた違いだ。</p>
+<p>ただ、数が多いだけなら「すごいな」で終わる。私が驚いたのは、その研究の内容そのものが、つるまいでいまぶつかっている壁と<strong>直接つながっていた</strong>ことだ。</p>
+<hr />
+<h2>三つの研究ラインとつるまいの接点</h2>
+<h3>1. ハルシネーション検出——つるまいの品質保証にそのまま使える</h3>
+<p>渡辺研が2026年に発表した <strong>HalluCitation Matters</strong>。これは、学術論文同士の引用にハルシネーション（事実と異なる内容）がどれだけ紛れ込むかを調べた研究だ。300件の偽造論文を使って、LLMが「もっともらしいが間違った引用」をどれだけ生成するかを暴いた。</p>
+<p>最初に読んだとき、これは論文引用の話だと思った。でも、よく考えるとまったく同じ構造がつるまいにもある。</p>
+<p>高齢者が電話で「あさっての朝イチ」「いつものところ」と言う。LLMがこれを正しく解釈しているかどうか——HalluCitationの「もっともらしいが間違った理解」を検出するロジックは、そのまま使える。</p>
+<p>さらに <strong>HalluCiteChecker</strong> という軽量ツールもある。OSS公開が想定されている。つるまいのシステムに組み込めば、日々の対話を自動チェックできる。</p>
+<p>つまり、渡辺研の研究を「そのまま応用」すればいい。車輪の再発明をする必要はない。</p>
+<h3>2. MBRデコーディング——複数の答えから一番いいものを選ぶ</h3>
+<p>もう一つ、渡辺研が強みとしているのが <strong>MBR（Minimum Bayes Risk）デコーディング</strong> だ。ようするに、LLMに一発勝負で答えさせるのではなく、複数の候補を出させて、その中から「一番損失が少なそうなもの」を選ぶ手法。</p>
+<p>渡辺研はこのMBR関連で6本もの論文を一貫して出している。最新のICML 2026ではNoisy-Channel MBR Decodingを発表した。</p>
+<p>なぜこれが音声対話なのか。高齢者の電話は、声が小さかったり、周囲が騒がしかったり、言い淀みがあったりする。1回の認識結果だけを信じると間違う。でも複数の候補をMBRで比較すれば、より確からしいものが選べる。</p>
+<p>【78】で紹介したSLOT（構造化出力）とMBRを組み合わせれば、認識→構造化→品質評価のパイプラインが一貫して回る。それぞれは別々の研究だが、組み合わせれば一つのシステムになる。</p>
+<h3>3. 低リソース言語の手法→奈良弁への応用</h3>
+<p>渡辺研は、世界的に見ても<strong>言語の多様性</strong>を重視している点が特徴的だ。</p>
+<p>アメリカ大陸の先住民言語を対象にしたLLM評価（Measuring Linguistic Competence of LLMs on Indigenous Languages of the Americas）や、低リソース言語のためのモジュラーファインチューニング（Completely Modular Fine-tuning for Dynamic Language Adaptation）など。</p>
+<p>これらの研究のポイントは「データが少ない言語でも、うまく適応する方法」を探っていることだ。これは、奈良弁のような方言LLMを構築するのとまったく同じ課題構造を持つ。</p>
+<p>すでに奈良方言のCPJDコーパスは存在するが、その規模は限られている。渡辺研の低リソース手法を応用すれば、限られた奈良弁データでも効果的な適応ができる可能性がある。</p>
+<hr />
+<h2>なぜ「車輪の再発明」をしてはいけないのか</h2>
+<p>ここで、KTの研究原則を思い出したい。<strong>「車輪の再発明を避ける」</strong>。</p>
+<p>渡辺研の110本の研究を調査してはっきりしたのは、KTがつるまいで直面している課題の多くに、すでに渡辺研が答えを出しつつあるということだ。</p>
+<ul>
+<li>ハルシネーション制御 → HalluCiteChecker</li>
+<li>構造化出力 → SLOT（別研究だが組み合わせ可能）</li>
+<li>音声対話品質 → MBR decoding</li>
+<li>方言適応 → 低リソース言語ファインチューニング</li>
+</ul>
+<p>つまり、KTがやるべきことは、これらをゼロから実装することではない。<strong>すでにある手法を、高齢者×奈良弁×超低コストOSSという独自の組み合わせで実装し、実証すること</strong>だ。</p>
+<p>これが「車輪の再発明」と「研究の新規性」の境界線だ。</p>
+<hr />
+<h2>NAIST入試——7ヶ月の猶予</h2>
+<p>そしてもう一つ、実務的な確認ができた。</p>
+<p>NAISTの2027年度入試スケジュール（協定大学特別推薦）を公式PDFから確認したところ：</p>
+<ul>
+<li><strong>出願期間：2027年2月8日〜10日</strong></li>
+<li><strong>合格発表：2027年3月15日</strong></li>
+<li><strong>入学手続：2027年9月下旬</strong></li>
+</ul>
+<p>つまり、いま（2026年7月）から約7ヶ月の準備期間がある。</p>
+<p>KTが志願する社会人特別選抜は別要項の可能性が高いが、基本的な枠組みは同じと見てよい。必要なのは：<br />
+- 推薦書<br />
+- 小論文（研究計画）<br />
+- 英語スコア（Duolingo English Test / TOEIC / IELTS / TOEFL すべて可）<br />
+- 面談（研究マッチング）</p>
+<p>Duolingo English Testが使えるのは大きい。自宅で受験できて、結果もすぐに出る。</p>
+<hr />
+<h2>まとめ——110本の論文を見て確信したこと</h2>
+<p>渡辺研の研究を一通り見て、私が感じたのは「この研究室で研究したい」という率直な思いだった。</p>
+<p>ハルシネーション検出、MBRデコーディング、低リソース言語適応——これらのテーマはどれも、つるまいの電話自動化という現実の課題と直結している。881件の予約、184件の音声対話、月1,550円の運用実績——KTが現場で積んできたものを、学術的な枠組みで証明できる。</p>
+<p>あとは、その橋を実際に渡るだけだ。</p>
+<p>7ヶ月後、出願書類を書くとき。この記事が、その時点での「自分なりの答え」になっていればいい。</p>
+<hr />
+<h2>参考文献</h2>
+<ul>
+<li>DBLP XML API: Taro Watanabe (pid/50/4741.xml)</li>
+<li>HalluCitation Matters — ハルシネーション引用検出・分析（ACL 2026）</li>
+<li>HalluCiteChecker — 軽量ハルシネーション引用検証ツールキット</li>
+<li>Enhancing Factuality through Consensus and Consistency using MBR Decoding</li>
+<li>Beyond Sampling: Self-Sorting for Long-Context Ranking (ACL 2026)</li>
+<li>Measuring Linguistic Competence of LLMs on Indigenous Languages of the Americas</li>
+<li>Completely Modular Fine-tuning for Dynamic Language Adaptation</li>
+<li>NAIST 2027年度 協定大学特別推薦選抜試験 要項</li>
+</ul>
+<p><em>本記事は、2026年7月19日の研究蓄積（テーマB: NAIST入試情報・渡辺研最新論文）をもとに作成されました。</em></p>
+
+<div class="footer">
+<p><a href="https://note.com/famous_prawn2009/n/n8f4e07b1f5ef">note.com</a> · <a href="https://keity717.substack.com/p/80naist1110ai">Substack</a> · <a href="https://ktblog.pages.dev/">KT Research</a></p>
+</div>
+
+</body>
+</html>

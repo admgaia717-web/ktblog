@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0eb"/>
+      <stop offset="100%" style="stop-color:#e8dfd7"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d4652a"/>
+    </marker>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">ブースター回収技術の歴史</text>
+  <text x="400" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#666">2015年 → 2026年 — 再利用ロケット競争の11年</text>
+  
+  <!-- Timeline line -->
+  <line x1="80" y1="120" x2="750" y2="120" stroke="#d4652a" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- SpaceX - 2015 Dec -->
+  <line x1="120" y1="120" x2="120" y2="145" stroke="#005288" stroke-width="2"/>
+  <circle cx="120" cy="120" r="8" fill="#005288"/>
+  <text x="120" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#005288">2015.12</text>
+  <text x="120" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">Falcon 9</text>
+  <text x="120" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">初の垂直着陸成功</text>
+  
+  <!-- 2016 -->
+  <line x1="210" y1="120" x2="210" y2="145" stroke="#005288" stroke-width="2"/>
+  <circle cx="210" cy="120" r="6" fill="#005288" opacity="0.7"/>
+  <text x="210" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#005288">2016</text>
+  <text x="210" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">Falcon 9</text>
+  <text x="210" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">初の洋上着陸成功</text>
+  
+  <!-- 2017 -->
+  <line x1="290" y1="120" x2="290" y2="145" stroke="#005288" stroke-width="2"/>
+  <circle cx="290" cy="120" r="6" fill="#005288" opacity="0.7"/>
+  <text x="290" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#005288">2017</text>
+  <text x="290" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">Falcon 9</text>
+  <text x="290" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">初のブースター再飛行</text>
+  
+  <!-- 2018 -->
+  <line x1="370" y1="120" x2="370" y2="145" stroke="#005288" stroke-width="2"/>
+  <circle cx="370" cy="120" r="6" fill="#005288" opacity="0.7"/>
+  <text x="370" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#005288">2018</text>
+  <text x="370" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">Falcon Heavy</text>
+  <text x="370" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">初飛行＋3機回収</text>
+  
+  <!-- 2020 -->
+  <line x1="450" y1="120" x2="450" y2="145" stroke="#005288" stroke-width="2"/>
+  <circle cx="450" cy="120" r="6" fill="#005288" opacity="0.7"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#005288">2020〜</text>
+  <text x="450" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">Falcon 9</text>
+  <text x="450" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">10回再飛行達成</text>
+  
+  <!-- 2023 -->
+  <line x1="530" y1="120" x2="530" y2="145" stroke="#d4652a" stroke-width="2"/>
+  <circle cx="530" cy="120" r="6" fill="#d4652a" opacity="0.7"/>
+  <text x="530" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d4652a">2023</text>
+  <text x="530" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">中国</text>
+  <text x="530" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">再利用開発本格化</text>
+  
+  <!-- 2024 -->
+  <line x1="600" y1="120" x2="600" y2="145" stroke="#d4652a" stroke-width="2"/>
+  <circle cx="600" cy="120" r="6" fill="#d4652a" opacity="0.7"/>
+  <text x="600" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d4652a">2024</text>
+  <text x="600" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">XZY-1</text>
+  <text x="600" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">垂直離着陸試験</text>
+  
+  <!-- 2026.2 -->
+  <line x1="670" y1="120" x2="670" y2="145" stroke="#d4652a" stroke-width="2"/>
+  <circle cx="670" cy="120" r="6" fill="#d4652a" opacity="0.7"/>
+  <text x="670" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d4652a">2026.2</text>
+  <text x="670" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">CZ-10 第一段</text>
+  <text x="670" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#555">制御着水成功</text>
+  
+  <!-- 2026.7.10 -->
+  <line x1="730" y1="120" x2="730" y2="145" stroke="#d4652a" stroke-width="3"/>
+  <circle cx="730" cy="120" r="10" fill="#d4652a"/>
+  <circle cx="730" cy="120" r="10" fill="none" stroke="#d4652a" stroke-width="2" opacity="0.5">
+    <animate attributeName="r" values="10;18;10" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="730" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d4652a">2026.7.10</text>
+  <text x="730" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d4652a" font-weight="bold">★ 中国 初の</text>
+  <text x="730" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#d4652a" font-weight="bold">軌道ブースター回収成功</text>
+  
+  <!-- Key insight box -->
+  <rect x="80" y="230" width="640" height="100" rx="8" fill="#fff" stroke="#d4652a" stroke-width="2"/>
+  <text x="100" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d4652a">🔑 重要なのは「時間」ではない。「速さ」だ</text>
+  <text x="100" y="282" font-family="Arial, sans-serif" font-size="12" fill="#555">SpaceX: 2011年（GRASS開始）→ 2015年12月（初着陸）→ 約5年</text>
+  <text x="100" y="302" font-family="Arial, sans-serif" font-size="12" fill="#555">中国: 2023年（開発本格化）→ 2026年7月（初回収）→ 約3年半</text>
+  <text x="100" y="322" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">中国はSpaceXより約1.5倍の速度で技術を獲得した</text>
+  
+  <!-- Source -->
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">加藤ラジコン出版 | 宇宙開発ニュース #92 | 出典：各種報道・企業発表</text>
+</svg>

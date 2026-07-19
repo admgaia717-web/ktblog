@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f0eb"/>
+      <stop offset="100%" stop-color="#e8e0d6"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4652a"/>
+      <stop offset="100%" stop-color="#b8551a"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a8fc4"/>
+      <stop offset="100%" stop-color="#2a5f8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="10"/>
+  <text x="400" y="35" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#333">世界の大型ロケット比較 2026</text>
+  
+  <!-- Header row -->
+  <rect x="50" y="55" width="150" height="30" fill="#333" rx="3"/>
+  <text x="125" y="75" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">項目</text>
+  
+  <rect x="200" y="55" width="180" height="30" fill="url(#g1)" rx="3"/>
+  <text x="290" y="75" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">Starship V3 (SpaceX)</text>
+  
+  <rect x="380" y="55" width="130" height="30" fill="url(#g2)" rx="3"/>
+  <text x="445" y="75" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">長征9号 (中国)</text>
+  
+  <rect x="510" y="55" width="120" height="30" fill="#666" rx="3"/>
+  <text x="570" y="75" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">H3 (日本)</text>
+  
+  <rect x="630" y="55" width="130" height="30" fill="#888" rx="3"/>
+  <text x="695" y="75" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">ニューグレン (BO)</text>
+  
+  <!-- Row 1: Height -->
+  <rect x="50" y="90" width="150" height="28" fill="#eee" rx="2"/>
+  <text x="125" y="109" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">全高</text>
+  <rect x="200" y="90" width="180" height="28" fill="#f9f4ef" rx="2"/>
+  <text x="290" y="109" text-anchor="middle" font-size="11" fill="#333" font-weight="bold">121m</text>
+  <rect x="380" y="90" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="445" y="109" text-anchor="middle" font-size="11" fill="#333">105m</text>
+  <rect x="510" y="90" width="120" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="570" y="109" text-anchor="middle" font-size="11" fill="#333">63m</text>
+  <rect x="630" y="90" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="695" y="109" text-anchor="middle" font-size="11" fill="#333">98m</text>
+  
+  <!-- Row 2: Thrust -->
+  <rect x="50" y="120" width="150" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="125" y="139" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">推力</text>
+  <rect x="200" y="120" width="180" height="28" fill="#fdf5f0" rx="2"/>
+  <text x="290" y="139" text-anchor="middle" font-size="11" fill="#d4652a" font-weight="bold">7,590t ★</text>
+  <rect x="380" y="120" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="445" y="139" text-anchor="middle" font-size="11" fill="#333">5,800t</text>
+  <rect x="510" y="120" width="120" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="570" y="139" text-anchor="middle" font-size="11" fill="#333">730t</text>
+  <rect x="630" y="120" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="695" y="139" text-anchor="middle" font-size="11" fill="#333">1,750t</text>
+  
+  <!-- Row 3: Reusability -->
+  <rect x="50" y="150" width="150" height="28" fill="#eee" rx="2"/>
+  <text x="125" y="169" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">再使用</text>
+  <rect x="200" y="150" width="180" height="28" fill="#f0f7f0" rx="2"/>
+  <text x="290" y="169" text-anchor="middle" font-size="11" fill="#2a7a3a" font-weight="bold">完全再使用 ✅</text>
+  <rect x="380" y="150" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="445" y="169" text-anchor="middle" font-size="11" fill="#aa3333">使い捨て ❌</text>
+  <rect x="510" y="150" width="120" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="570" y="169" text-anchor="middle" font-size="11" fill="#aa3333">使い捨て ❌</text>
+  <rect x="630" y="150" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="695" y="169" text-anchor="middle" font-size="11" fill="#aa3333">部分再使用</text>
+  
+  <!-- Row 4: Payload to LEO -->
+  <rect x="50" y="180" width="150" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="125" y="199" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">LEOペイロード</text>
+  <rect x="200" y="180" width="180" height="28" fill="#fdf5f0" rx="2"/>
+  <text x="290" y="199" text-anchor="middle" font-size="11" fill="#d4652a" font-weight="bold">150t ★最大</text>
+  <rect x="380" y="180" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="445" y="199" text-anchor="middle" font-size="11" fill="#333">50t</text>
+  <rect x="510" y="180" width="120" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="570" y="199" text-anchor="middle" font-size="11" fill="#333">16t</text>
+  <rect x="630" y="180" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="695" y="199" text-anchor="middle" font-size="11" fill="#333">45t</text>
+  
+  <!-- Row 5: Cost per launch -->
+  <rect x="50" y="210" width="150" height="28" fill="#eee" rx="2"/>
+  <text x="125" y="229" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">打上げコスト</text>
+  <rect x="200" y="210" width="180" height="28" fill="#f0f7f0" rx="2"/>
+  <text x="290" y="229" text-anchor="middle" font-size="11" fill="#2a7a3a" font-weight="bold">200万$以下</text>
+  <rect x="380" y="210" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="445" y="229" text-anchor="middle" font-size="11" fill="#333">2億$</text>
+  <rect x="510" y="210" width="120" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="570" y="229" text-anchor="middle" font-size="11" fill="#333">5,000万$</text>
+  <rect x="630" y="210" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="695" y="229" text-anchor="middle" font-size="11" fill="#333">6,800万$</text>
+  
+  <!-- Row 6: Status -->
+  <rect x="50" y="240" width="150" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="125" y="259" text-anchor="middle" font-size="11" fill="#555" font-weight="bold">状況</text>
+  <rect x="200" y="240" width="180" height="28" fill="#f0f7f0" rx="2"/>
+  <text x="290" y="259" text-anchor="middle" font-size="11" fill="#2a7a3a" font-weight="bold">Flight 13試験中</text>
+  <rect x="380" y="240" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="445" y="259" text-anchor="middle" font-size="11" fill="#aa6600">開発中 (2030)</text>
+  <rect x="510" y="240" width="120" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="570" y="259" text-anchor="middle" font-size="11" fill="#2a7a3a">運用中</text>
+  <rect x="630" y="240" width="130" height="28" fill="#f0f0f0" rx="2"/>
+  <text x="695" y="259" text-anchor="middle" font-size="11" fill="#aa3333">延期中</text>
+  
+  <!-- Section: Mechazilla Capture Process -->
+  <text x="400" y="310" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="bold" fill="#333">メカジラ捕捉プロセス</text>
+  
+  <text x="220" y="340" text-anchor="middle" font-size="11" fill="#d4652a" font-weight="bold">① 帰還軌道計算</text>
+  <text x="220" y="358" text-anchor="middle" font-size="10" fill="#777">エンジンカット後</text>
+  <text x="220" y="372" text-anchor="middle" font-size="10" fill="#777">1,000km弧を描く</text>
+  
+  <line x1="280" y1="350" x2="340" y2="350" stroke="#ccc" stroke-width="2"/>
+  
+  <text x="400" y="340" text-anchor="middle" font-size="11" fill="#d4652a" font-weight="bold">② 大気圏再入</text>
+  <text x="400" y="358" text-anchor="middle" font-size="10" fill="#777">発射塔6km前で</text>
+  <text x="400" y="372" text-anchor="middle" font-size="10" fill="#777">Grid Fins展開</text>
+  
+  <line x1="460" y1="350" x2="520" y2="350" stroke="#ccc" stroke-width="2"/>
+  
+  <text x="580" y="340" text-anchor="middle" font-size="11" fill="#d4652a" font-weight="bold">③ 捕捉完了</text>
+  <text x="580" y="358" text-anchor="middle" font-size="10" fill="#777">アームがクレーン</text>
+  <text x="580" y="372" text-anchor="middle" font-size="10" fill="#777">ポイントを掴む</text>
+  
+  <!-- Footer -->
+  <text x="400" y="420" text-anchor="middle" font-size="10" fill="#999">★ = 全ロケット中最大</text>
+  <text x="400" y="440" text-anchor="middle" font-size="9" fill="#bbb">出典: SpaceX, CASC, JAXA, Blue Origin 各社公開データ</text>
+  <text x="400" y="480" text-anchor="middle" font-size="11" fill="#999">【加藤宇宙開発ニュース #94】世界の大型ロケット比較 2026</text>
+</svg>

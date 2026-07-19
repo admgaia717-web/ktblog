@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0eb"/>
+      <stop offset="100%" style="stop-color:#e8dfd7"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4652a"/>
+      <stop offset="100%" style="stop-color:#e8854a"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#005288"/>
+      <stop offset="100%" style="stop-color:#2a7ab8"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#888"/>
+      <stop offset="100%" style="stop-color:#bbb"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">世界のロケット再利用技術マップ 2026</text>
+  
+  <!-- Tier 1 - SpaceX -->
+  <rect x="30" y="60" width="740" height="100" rx="6" fill="#e8f4ff" stroke="#005288" stroke-width="2"/>
+  <rect x="30" y="60" width="100" height="100" rx="6" fill="url(#g2)"/>
+  <text x="80" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff">Tier 1</text>
+  <text x="150" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#005288">SpaceX — 圧倒的リーダー</text>
+  <text x="150" y="108" font-family="Arial, sans-serif" font-size="13" fill="#333">Falcon 9 ブロック5 / Falcon Heavy / Starship</text>
+  <text x="150" y="128" font-family="Arial, sans-serif" font-size="12" fill="#666">✓ 635回着陸成功 ✓ 単機36回飛行 ✓ Starshipキャッチ成功 ✓ 2026年100回以上打上げ</text>
+  <text x="150" y="148" font-family="Arial, sans-serif" font-size="12" fill="#666">✓ 展開脚方式（10年以上の実績） ✓ 着陸成功率99%超 ✓ 世界唯一の実用完全再使用</text>
+  
+  <!-- Tier 2 - China -->
+  <rect x="30" y="175" width="740" height="100" rx="6" fill="#fff4ed" stroke="#d4652a" stroke-width="2"/>
+  <rect x="30" y="175" width="100" height="100" rx="6" fill="url(#g1)"/>
+  <text x="80" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff">Tier 2</text>
+  <text x="150" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d4652a">中国 (CALT/CASC) — 急追</text>
+  <text x="150" y="223" font-family="Arial, sans-serif" font-size="13" fill="#333">長征10号B / 長征9号（開発中）</text>
+  <text x="150" y="243" font-family="Arial, sans-serif" font-size="12" fill="#666">✓ 2026年7月10日：初の軌道ブースター回収成功 ✓ ネット捕捉方式（独自路線）</text>
+  <text x="150" y="263" font-family="Arial, sans-serif" font-size="12" fill="#666">✓ 3年未満で開発 ✓ CZ-10A有人飛行2026年内予定</text>
+  
+  <!-- Tier 3 - Others -->
+  <rect x="30" y="290" width="740" height="90" rx="6" fill="#f0f0f0" stroke="#aaa" stroke-width="1.5"/>
+  <rect x="30" y="290" width="100" height="90" rx="6" fill="url(#g3)"/>
+  <text x="80" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff">Tier 3</text>
+  <text x="150" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#555">その他のプレイヤー — 開発中／計画段階</text>
+  <text x="150" y="338" font-family="Arial, sans-serif" font-size="12" fill="#666">Rocket Lab (Neutron 2027〜) | Blue Origin (New Glenn 未飛行) | ULA (SMART 2027〜)</text>
+  <text x="150" y="358" font-family="Arial, sans-serif" font-size="12" fill="#666">ISRO (RLV-LEX 試験段階) | JAXA (2030年代初頭目標) | 欧州 (Ariane 6：使い捨て継続)</text>
+  
+  <!-- Bottom insight -->
+  <rect x="30" y="395" width="740" height="85" rx="6" fill="#fff" stroke="#d4652a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d4652a">💡 2026年7月現在、軌道ブースターを実用的に回収できる国は米国と中国の2カ国のみ</text>
+  <text x="400" y="442" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">SpaceX以外のプレイヤーは全員「まだ軌道ブースターを回収したことがない」</text>
+  <text x="400" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#555">中国の参入で打上げ価格はさらに3〜5割下落の可能性。再利用技術の有無が死活問題に</text>
+  
+  <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#999">加藤ラジコン出版 | 宇宙開発ニュース #92</text>
+</svg>
