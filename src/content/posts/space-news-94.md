@@ -2,7 +2,7 @@
 title: "【加藤宇宙開発ニュース #94】Starship Flight 13、明日に迫る——V3の再起動と「mechazilla」捕捉への道"
 date: 2026-07-16
 category: "宇宙開発"
-tags: ["SpaceX", "Starship", "Flight 13", "V3", "Raptor 3", "Mechazilla", "Starlink", "Artemis", "Booster Catch"]
+tags: ["SpaceX", "Starship", "Flight 13", "V3", "Raptor 3", "Mechazilla", "Starlink", "Artemis", "Booster Catch", "AGI", "投資", "執筆"]
 eyecatch: "/assets/eyecatch/space-news-94.png"
 excerpt: "スペースXのスターシップFlight 13が明日に迫る。V3の二度目の飛行で、メカジラ捕捉と軌道投入の両立を目指す。成功すれば宇宙開発の歴史が変わる。"
 note_url: "https://note.com/famous_prawn2009/n/n42bacecebf55"
@@ -176,3 +176,4 @@ Starship Flight 13の成功は、単にSpaceXの勝利だけではない。世�
 > ※ 本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 【加藤宇宙開発ニュース #94】
+

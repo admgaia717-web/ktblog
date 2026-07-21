@@ -2,7 +2,7 @@
 title: "【加藤AIマルチメディア #1】ダビンチリゾルブなど動画編集AIの最前線2026"
 date: 2026-07-15
 category: "AIマルチメディア"
-tags: ["AI", "動画編集", "DaVinci Resolve", "Premiere Pro", "Final Cut Pro"]
+tags: ["AI", "動画編集", "DaVinci Resolve", "Premiere Pro", "Final Cut Pro", "映像", "Apple", "投資", "執筆", "暗号通貨", "AIエージェント", "生成AI", "LLM", "プログラミング", "アニメ"]
 excerpt: "2026年、動画編集ソフトは単なるツールから、自律的に判断するエージェントへと変わりつつある。DaVinci Resolve 21、Premiere Pro Firefly、Final Cut Pro 12.3、CapCutのAI機能を徹底比較。"
 ---
 
@@ -153,3 +153,4 @@ Magic Mask v2は完璧ではない。Generative Extendが生成する映像は�
 *【加藤AIマルチメディア #1】ダビンチリゾルブなど動画編集AIの最前線2026*
 *KT（加藤出版）・2026年7月*
 *次回予告：#2では「2026年のAI音声合成——TTSが変えるナレーション制作」を予定*
+

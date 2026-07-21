@@ -2,7 +2,7 @@
 title: "【芸術って何だろ？ #120】ジェネラティブアート — コードが生む美の新地平"
 date: 2026-07-19
 category: "芸術・哲学"
-tags: ["ジェネラティブアート", "Generative Art", "アルゴリズムアート", "Vera Molnar", "Manfred Mohr", "Casey Reas", "Refik Anadol", "Tyler Hobbs", "Processing", "AI", "現代美術", "AGI", "芸術", "哲学"]
+tags: ["ジェネラティブアート", "Generative Art", "アルゴリズムアート", "Vera Molnar", "Manfred Mohr", "Casey Reas", "Refik Anadol", "Tyler Hobbs", "Processing", "AI", "現代美術", "AGI", "芸術", "哲学", "暗号通貨", "音楽", "プログラミング", "ロボット", "映像"]
 eyecatch: "/assets/art-philosophy-120/eyecatch.png"
 excerpt: "1980年、マンデルブロが画面に見た無限の図形。一行の数式が生む、予測不能な美。ジェネラティブアートは、アルゴリズムと人間の想像力が出会った場所で、芸術の定義を塗り替えている。"
 ---
@@ -158,3 +158,4 @@ Fidenzaの価格は、最高で数百 ETH（数億円）に達した。コード
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。判断の際は、必ず公式データや専門家の意見を確認してください。
 
 【加藤ラジコン出版記事 #120】
+

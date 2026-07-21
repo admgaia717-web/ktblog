@@ -3,6 +3,7 @@ title: "【芸術って何だろ？ #112】抽象表現主義 — キャンバ�
 date: 2026-07-16
 series: "芸術って何だろ？"
 eyecatch: "/images/art-philosophy-112/eyecatch.png"
+tags: ["デザイン", "ロボット", "哲学", "AGI", "健康"]
 ---
 
 # 【芸術って何だろ？ #112】抽象表現主義 — キャンバスの向こう側
@@ -207,3 +208,4 @@ eyecatch: "/images/art-philosophy-112/eyecatch.png"
 【加藤ラジコン出版記事 #112】
 
 [【加藤ラジコン出版の記事一覧】](https://note.com/famous_prawn2009)
+

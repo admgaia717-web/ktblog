@@ -2,7 +2,7 @@
 title: "【芸術って何だろ？ #100】ジェネラティブアート — アルゴリズムが筆を取った日"
 date: 2026-07-13
 category: "芸術・哲学"
-tags: ["ジェネラティブアート", "Generative Art", "コンピュータアート", "Processing", "Art Blocks", "NFT", "Refik Anadol", "Vera Molnár", "Georg Nees", "アルゴリズム", "AIアート", "ブロックチェーン", "デジタルアート", "現代美術", "AGI", "暗号通貨", "プログラミング", "哲学", "生成AI", "映像", "AIエージェント", "執筆"]
+tags: ["ジェネラティブアート", "Generative Art", "コンピュータアート", "Processing", "Art Blocks", "NFT", "Refik Anadol", "Vera Molnár", "Georg Nees", "アルゴリズム", "AIアート", "ブロックチェーン", "デジタルアート", "現代美術", "AGI", "暗号通貨", "プログラミング", "哲学", "生成AI", "映像", "AIエージェント", "執筆", "ロボット", "Apple"]
 eyecatch: "/assets/art-philosophy-100/eyecatch.png"
 excerpt: "1965年、Georg Neesの展示会から始まったジェネラティブアート。Processingの民主化、Art Blocksのブロックチェーン革命、Refik Anadolのデータスクリプチャ——アルゴリズムが筆を取った日、芸術の定義はどう変わったのか。"
 note_url: ""
@@ -237,3 +237,4 @@ Art Blocksは、Ethereumのスマートコントラクトにコードを書き�
 ---
 
 【加藤ラジコン出版記事 #100】
+

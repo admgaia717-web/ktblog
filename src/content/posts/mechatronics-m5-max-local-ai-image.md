@@ -2,7 +2,7 @@
 title: "【加藤メカトロ】M5 Maxで考える2026年夏の最強ローカル作画環境—Draw Things + ComfyUI + MFLUX三層構成"
 date: 2026-07-14
 category: "メカトロ"
-tags: ["M5 Max", "Draw Things", "ComfyUI", "MFLUX", "ローカル画像生成", "Apple Silicon", "AI作画", "FLUX"]
+tags: ["M5 Max", "Draw Things", "ComfyUI", "MFLUX", "ローカル画像生成", "Apple Silicon", "AI作画", "FLUX", "Apple", "生成AI", "プログラミング", "ロボット", "デザイン", "投資", "アニメ", "映像"]
 eyecatch: "/assets/rqgm83/eyecatch.png"
 excerpt: "M5 Max 128GBで実現する2026年夏の最強ローカル作画環境。Draw Things + ComfyUI + MFLUX 三層構成、FLUX.2 dev 32BからKrea 2 Turbo、Ideogram 4まで、モデルの適材適所を解説。"
 note_url: ""
@@ -344,3 +344,4 @@ MFLUXを追加することで、Draw Thingsが未対応の最新モデルも補�
 ---
 
 *2026年7月14日 | 【加藤ラジコン出版記事 #83】*
+
