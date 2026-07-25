@@ -4,6 +4,7 @@ date: 2026-07-21
 category: "テクノロジー"
 eyecatch: "/assets/eyecatch/eyecatch-128gb.png"
 excerpt: "128GB MacでDeepSeek V4 Flash、アンセンサードLLM、MLX/SwiftLMを動かす完全ガイド"
+tags: ["Apple", "ローカルLLM", "Claude", "LLM", "プログラミング", "AIエージェント", "生成AI", "ロボット", "執筆"]
 ---
 # 128GB Macを持ってる君へ — アンセンサードLLMという、一番高い遊び場の話
 
@@ -415,3 +416,4 @@ M5 Ultra Mac Studio（2026年Q4予定）は、1,100 GB/sの帯域と512GBの統�
 *この記事のデータは、KT艦隊の3層記憶システム（Fabric → LLMWiki → G-Brain）から回収されたセッションログ・実測ベンチマーク・技術調査結果を基に構成されています。実測値はM1 Max 64GB環境のものが多く、M5 Max 128GBでの検証は継続中です。*
 
 *2026年7月 執筆*
+
