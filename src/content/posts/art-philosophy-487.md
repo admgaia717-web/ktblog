@@ -3,7 +3,7 @@ title: "【芸術って何だろ？ #487】デジタルアートが芸術の「�
 date: 2026-07-31
 category: "芸術・哲学"
 tags: ["デジタルアート", "NFT", "AIアート", "インスタレーション", "ブロックチェーン", "TeamLab", "Beeple", "生成AI", "現代美術", "美術館", "アートマーケット", "ヴェネツィア・ビエンナーレ"]
-eyecatch: "/assets/art-philosophy-487/eyecatch.jpg"
+eyecatch: "/assets/art-philosophy-487/eyecatch.png"
 excerpt: "NFTバブルの残骸、AIアートの著作権裁判、TeamLabの没入型インスタレーション、ブロックチェーンによるアートマーケットの再編——デジタルが芸術の正体を暴き始めている。"
 ---
 
