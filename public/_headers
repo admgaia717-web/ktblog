@@ -1,0 +1,9 @@
+# HTML・拡張子なしページ: エッジに長く溜めない（デプロイ後すぐ反映させる）
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# ハッシュ付き静的アセットは長期キャッシュ
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
