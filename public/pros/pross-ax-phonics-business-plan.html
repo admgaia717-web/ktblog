@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="プロス社内のAX化と、独自教育資産「プロスフォニックス」のデジタル商品化・収益化を一体で進める事業計画書">
+  <meta name="robots" content="noindex,nofollow">
+  <title>プロスAX・プロスフォニックス事業計画書｜KTブログ</title>
+  <style>
+    :root{
+      --bg:#f5f7fb;--paper:#fff;--ink:#172033;--muted:#647087;--line:#dfe5ef;
+      --brand:#2347c6;--brand2:#6d4aff;--accent:#0d8b74;--soft:#eef2ff;
+      --warn:#a65a00;--warnbg:#fff6e8;--shadow:0 18px 50px rgba(31,45,82,.10);
+      --radius:22px;--max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.85}
+    a{color:inherit}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#14265d 0%,#283fc5 54%,#7254ef 100%);color:#fff;padding:76px 24px 68px}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.18;background:#fff}
+    .hero:before{width:420px;height:420px;right:-130px;top:-180px}
+    .hero:after{width:250px;height:250px;left:-70px;bottom:-140px}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:.82rem;letter-spacing:.06em;background:rgba(255,255,255,.08)}
+    h1{font-size:clamp(2.2rem,5vw,4.7rem);line-height:1.13;margin:22px 0 18px;letter-spacing:-.035em}
+    .lead{max-width:840px;font-size:clamp(1.05rem,2vw,1.32rem);color:rgba(255,255,255,.88);margin:0}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;color:rgba(255,255,255,.72);font-size:.92rem}
+    .layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:34px;padding:44px 0 80px}
+    nav{position:sticky;top:18px;align-self:start;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 30px rgba(34,45,80,.06)}
+    nav strong{display:block;margin-bottom:10px;font-size:.9rem;color:var(--muted)}
+    nav a{display:block;text-decoration:none;padding:8px 10px;border-radius:9px;font-size:.9rem;color:#3c4860}
+    nav a:hover{background:var(--soft);color:var(--brand)}
+    main{min-width:0}
+    section{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,4vw,46px);margin-bottom:24px;box-shadow:0 9px 30px rgba(33,45,80,.045)}
+    h2{font-size:clamp(1.5rem,2.8vw,2.2rem);line-height:1.35;margin:0 0 22px;letter-spacing:-.02em}
+    h3{font-size:1.14rem;margin:30px 0 10px}
+    p{margin:0 0 1.05em}
+    ul,ol{padding-left:1.25em}
+    li{margin:.35em 0}
+    .section-no{display:inline-block;color:var(--brand);font-weight:800;font-size:.82rem;letter-spacing:.08em;margin-bottom:8px}
+    .summary{font-size:1.08rem}
+    .quote{border-left:5px solid var(--brand);background:var(--soft);padding:18px 22px;border-radius:0 14px 14px 0;font-weight:650;margin:24px 0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{border:1px solid var(--line);border-radius:16px;padding:20px;background:#fbfcff}
+    .card h3{margin:0 0 8px}
+    .card p:last-child{margin-bottom:0}
+    .metric{font-size:2rem;font-weight:850;color:var(--brand);line-height:1.1}
+    .label{font-size:.86rem;color:var(--muted);margin-top:6px}
+    .pill{display:inline-block;padding:5px 10px;border-radius:999px;background:var(--soft);color:var(--brand);font-size:.82rem;font-weight:700;margin:3px 4px 3px 0}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch;margin-top:22px}
+    .flow .step{position:relative;text-align:center;padding:18px 10px;border-radius:14px;background:#f6f8fd;border:1px solid var(--line);font-size:.9rem;font-weight:700}
+    .flow .step:not(:last-child):after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);color:var(--brand);font-size:1.2rem;z-index:2}
+    .timeline{position:relative;margin-top:18px}
+    .timeline:before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:2px;background:var(--line)}
+    .phase{position:relative;padding:0 0 26px 48px}
+    .phase:last-child{padding-bottom:0}
+    .dot{position:absolute;left:6px;top:4px;width:20px;height:20px;border-radius:50%;background:var(--brand);border:5px solid #e8edff}
+    .phase strong{display:block;font-size:1.02rem}
+    .phase span{display:block;color:var(--muted);font-size:.92rem;margin-top:2px}
+    table{width:100%;border-collapse:collapse;margin-top:18px;font-size:.92rem}
+    th,td{padding:13px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#f7f9fd;font-weight:750}
+    .notice{background:var(--warnbg);border:1px solid #f0d5ad;color:#67400f;border-radius:15px;padding:18px 20px;margin-top:22px}
+    .success{background:#edf9f5;border:1px solid #bfe5d9;border-radius:15px;padding:18px 20px}
+    .kpi{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .kpi .card{padding:17px}
+    .small{font-size:.9rem;color:var(--muted)}
+    .cta{background:linear-gradient(135deg,#152961,#314fd1 55%,#7254ef);color:#fff;border:none}
+    .cta h2{color:#fff}
+    .cta p{color:rgba(255,255,255,.85)}
+    .cta .box{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:22px}
+    footer{text-align:center;padding:0 20px 50px;color:var(--muted);font-size:.85rem}
+    @media(max-width:900px){
+      .layout{grid-template-columns:1fr}
+      nav{position:relative;top:auto;display:none}
+      .grid.three,.kpi{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .flow{grid-template-columns:1fr}
+      .flow .step:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-20px;transform:translateX(-50%)}
+    }
+    @media(max-width:620px){
+      .wrap{width:min(100% - 24px,var(--max))}
+      .hero{padding:54px 12px}
+      .grid,.grid.three,.kpi{grid-template-columns:1fr}
+      section{border-radius:17px}
+      h1{font-size:2.35rem}
+      table{display:block;overflow-x:auto;white-space:nowrap}
+    }
+    @media print{
+      body{background:#fff;font-size:10.5pt}
+      .hero{padding:35px 0;background:#fff;color:#111;border-bottom:3px solid #222}
+      .hero .lead,.hero-meta{color:#333}
+      .eyebrow{border-color:#aaa;background:none}
+      .layout{display:block;padding-top:20px}
+      nav{display:none}
+      section{box-shadow:none;border:1px solid #bbb;break-inside:avoid;padding:24px;margin-bottom:14px}
+      .cta{background:#fff;color:#111;border:1px solid #333}
+      .cta h2,.cta p{color:#111}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">KT BLOG / PRIVATE BUSINESS PLAN</div>
+      <h1>プロスAX・<br>プロスフォニックス事業計画書</h1>
+      <p class="lead">教育会社プロスの業務をAIエージェントとの協働へ移行し、そこで生まれた時間と知見を使って、独自教育資産「プロスフォニックス」をデジタル商品として育てる。</p>
+      <div class="hero-meta">
+        <span>作成：玉川勝史</span>
+        <span>初版：2026年7月23日</span>
+        <span>位置づけ：内部検討・事業設計用</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap layout">
+    <nav aria-label="目次">
+      <strong>CONTENTS</strong>
+      <a href="#executive">01. エグゼクティブサマリー</a>
+      <a href="#background">02. 背景と現在地</a>
+      <a href="#issues">03. 解決すべき課題</a>
+      <a href="#vision">04. 事業構想</a>
+      <a href="#ax">05. プロス社内AX</a>
+      <a href="#product">06. 教材商品化</a>
+      <a href="#mvp">07. 最小スタート</a>
+      <a href="#workflow">08. リモート開発</a>
+      <a href="#roadmap">09. ロードマップ</a>
+      <a href="#roles">10. 役割分担</a>
+      <a href="#revenue">11. 収益化</a>
+      <a href="#kpi">12. 評価指標</a>
+      <a href="#risks">13. リスク管理</a>
+      <a href="#next">14. 最初の実行項目</a>
+      <a href="#philosophy">15. 理念と差別化</a>
+    </nav>
+
+    <main>
+      <section id="executive">
+        <span class="section-no">01 / EXECUTIVE SUMMARY</span>
+        <h2>この計画の核心</h2>
+        <p class="summary">本計画は、単に「英語教材アプリを作る」ことを目的としない。まずプロス社内の定型業務や知識作業をAIエージェントで支援し、先生方が教育判断と商品開発に集中できる時間を生み出す。そのうえで、プロス独自の8年間の教育体系「プロスフォニックス」を、最小の教材ブロックから段階的にデジタル商品へ変換する。</p>
+        <div class="quote">週3時間の制約の中で無理に完成品を作るのではなく、AIによって週3時間以上の余力を生み出しながら、小さな完成品を一つずつ積み上げる。</div>
+        <div class="grid three">
+          <div class="card"><div class="metric">AX</div><div class="label">AIエージェントと人が協働する社内体制</div></div>
+          <div class="card"><div class="metric">MVP</div><div class="label">最小の教材・最小の業務から検証</div></div>
+          <div class="card"><div class="metric">資産化</div><div class="label">教材・業務ノウハウ・導入プロセスを蓄積</div></div>
+        </div>
+      </section>
+
+      <section id="background">
+        <span class="section-no">02 / BACKGROUND</span>
+        <h2>背景と現在地</h2>
+        <p>プロスには、幼児・小学生、中学・高校生、大学生・社会人の3部門がある。その中で明確に独自メソッドと呼べる資産が、幼稚園年中から小学6年生まで8年間を通じて学ぶ「プロスフォニックス」である。</p>
+        <div class="grid three">
+          <div class="card"><div class="metric">約50人</div><div class="label">幼児・小学生部門</div></div>
+          <div class="card"><div class="metric">約80人</div><div class="label">中学・高校生部門</div></div>
+          <div class="card"><div class="metric">約10人</div><div class="label">大学生・社会人部門</div></div>
+        </div>
+        <h3>これまでの経緯</h3>
+        <ul>
+          <li>2026年1月15日、玉川がプロスフォニックスの概要説明を受け、実際のクラスを見学。</li>
+          <li>1月から4月の繁忙期に入り、具体化の協議は一時中断。</li>
+          <li>その後、プロス側から「教室に通わなくても、英語を読んで、聞いて、書けるようにするプログラム」への再構成と収益化について正式な打診。</li>
+          <li>実務担当候補は北浦先生。ただし既存業務が多く、商品開発に割ける時間は週3時間程度が上限。</li>
+          <li>プログラム開発だけでなく、収益化とマーケティングまで玉川側が主導する前提が示された。</li>
+        </ul>
+      </section>
+
+      <section id="issues">
+        <span class="section-no">03 / ISSUES</span>
+        <h2>解決すべき三つの経営課題</h2>
+        <div class="grid three">
+          <div class="card">
+            <h3>差別化が見えにくい</h3>
+            <p>一般的なAI活用や市販教材の延長では、他社との違いが弱い。独自資産であるプロスフォニックスを中核に据える必要がある。</p>
+          </div>
+          <div class="card">
+            <h3>AI人材がいない</h3>
+            <p>社内にAI活用の知見を持つスタッフがいない。外部が完成品を納品するだけでは、社内に能力が残らない。</p>
+          </div>
+          <div class="card">
+            <h3>時間と手間が足りない</h3>
+            <p>北浦先生をはじめ現場が多忙で、将来収益を生む商品開発へ十分な時間を振り向けにくい。</p>
+          </div>
+        </div>
+        <div class="notice"><strong>重要：</strong>「週3時間しかない」は前提条件であると同時に、改善対象でもある。既存業務のAX化によって、商品開発へ使える時間を増やす。</div>
+      </section>
+
+      <section id="vision">
+        <span class="section-no">04 / VISION</span>
+        <h2>二本の事業を同時に育てる</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>事業A：プロス内部のAX化</h3>
+            <p>AIエージェントに資料整理、文章の下書き、検索、記録、定型処理を担当させ、先生方は教育判断、生徒対応、品質確認に集中する。</p>
+            <span class="pill">業務時間の創出</span><span class="pill">属人化の軽減</span><span class="pill">AI人材育成</span>
+          </div>
+          <div class="card">
+            <h3>事業B：プロスフォニックス商品化</h3>
+            <p>8年間の教育体系を小さな学習ブロックへ分解し、試作・確認・実証を反復しながら、ブラウザ教材、アプリ、継続課金商品へ育てる。</p>
+            <span class="pill">独自教材</span><span class="pill">オンライン販売</span><span class="pill">知的資産化</span>
+          </div>
+        </div>
+        <p class="success"><strong>相乗効果：</strong>AX化で生まれた時間を教材開発へ使い、教材開発で得たAI実践知を再び社内業務へ還元する。最終的には、この導入プロセス自体を他社支援サービスとして商品化できる。</p>
+      </section>
+
+      <section id="ax">
+        <span class="section-no">05 / INTERNAL AX</span>
+        <h2>プロス社内AXの対象候補</h2>
+        <p>最初から会社全体を自動化しない。時間がかかり、頻度が高く、判断基準を説明できる業務から一つ選ぶ。</p>
+        <table>
+          <thead><tr><th>対象業務</th><th>AIエージェントの役割</th><th>人が残す判断</th></tr></thead>
+          <tbody>
+            <tr><td>教材・テスト作成</td><td>問題案、解答例、難易度違い、体裁の下書き</td><td>学習目標、妥当性、最終採用</td></tr>
+            <tr><td>授業記録</td><td>記録の整形、要点抽出、次回課題の候補化</td><td>生徒理解、指導方針、評価</td></tr>
+            <tr><td>保護者向け連絡</td><td>連絡文、報告文、案内文の初稿作成</td><td>配慮、個別事情、送信判断</td></tr>
+            <tr><td>問い合わせ整理</td><td>分類、要約、回答案、担当振り分け</td><td>例外対応、契約・教育判断</td></tr>
+            <tr><td>会議と社内知識</td><td>議事録、決定事項、マニュアル、検索可能な知識化</td><td>意思決定、承認、責任</td></tr>
+          </tbody>
+        </table>
+        <h3>AX化の原則</h3>
+        <ul>
+          <li>AIは先生の代わりではなく、下準備と反復作業を担当する。</li>
+          <li>導入初期は、説明・確認・修正のため一時的に時間が増える。</li>
+          <li>小さく試し、削減時間と品質が確認できた業務だけを拡大する。</li>
+          <li>従業員全員が、AIへの指示、確認、修正、再利用の感覚を身につける。</li>
+        </ul>
+      </section>
+
+      <section id="product">
+        <span class="section-no">06 / PRODUCT DEVELOPMENT</span>
+        <h2>プロスフォニックスを「教材ブロック」に分解する</h2>
+        <p>プロスフォニックスは、AIへ一度指示すれば完成する教材ではない。学習順序、説明、発音確認、声掛け、つまずきへの対応など、先生方が暗黙に行っている判断を一つずつ言語化する必要がある。</p>
+        <div class="flow">
+          <div class="step">教育体系を<br>カテゴリー化</div>
+          <div class="step">カテゴリーを<br>小ブロック化</div>
+          <div class="step">最小単位を<br>一つ選定</div>
+          <div class="step">試作・実証・<br>修正</div>
+          <div class="step">型を再利用し<br>全体へ拡張</div>
+        </div>
+        <h3>最小ブロックの例</h3>
+        <ul>
+          <li>一つの文字と音の関係を聞き分ける。</li>
+          <li>一つの発音規則を覚え、該当単語を選ぶ。</li>
+          <li>数個の単語を見て、読めるようにする。</li>
+          <li>音声を聞き、正しい文字・単語を選ぶ。</li>
+          <li>短い単語を並べ替え、正しい綴りを完成させる。</li>
+        </ul>
+        <p>初期形態は、子どもが数分で終えられるミニゲーム型が有力である。まずブラウザで動く教材として作り、スマートフォン、タブレット、パソコンで試す。本格的なネイティブアプリ化は、利用継続と支払意思を確認した後に判断する。</p>
+      </section>
+
+      <section id="mvp">
+        <span class="section-no">07 / MINIMUM VIABLE START</span>
+        <h2>最初の完成品は「小さく、単独で価値があるもの」</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>MVP教材の条件</h3>
+            <ul>
+              <li>一つの学習目標に限定する。</li>
+              <li>5〜10分で一回の学習が完結する。</li>
+              <li>正誤と到達度を記録できる。</li>
+              <li>先生が改善点を具体的に指摘できる。</li>
+              <li>生徒・保護者の感想を回収できる。</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>MVP業務の条件</h3>
+            <ul>
+              <li>毎週または毎月繰り返す。</li>
+              <li>現在の所要時間が把握できる。</li>
+              <li>入力と望ましい出力を説明できる。</li>
+              <li>誤りが起きても人が確認できる。</li>
+              <li>効果を時間と品質で測定できる。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="quote">完成した小ブロックは単なる試作品ではない。次の教材を作るための設計図、評価基準、作業手順を含む「製造ラインの原型」である。</div>
+      </section>
+
+      <section id="workflow">
+        <span class="section-no">08 / REMOTE WORKFLOW</span>
+        <h2>リモート中心で進める開発サイクル</h2>
+        <p>先生方に長時間の会議参加を求めず、既存資料と短い説明をもとに玉川側が先にたたき台を作る。先生方は、ゼロから作るのではなく、具体物を見て修正を指示する。</p>
+        <div class="flow">
+          <div class="step">対象を一つ<br>指定</div>
+          <div class="step">資料・現行手順を<br>共有</div>
+          <div class="step">玉川側が<br>たたき台作成</div>
+          <div class="step">先生が確認し<br>修正指示</div>
+          <div class="step">試験運用し<br>次の版へ</div>
+        </div>
+        <h3>先生方にお願いする内容</h3>
+        <ul>
+          <li>現在のやり方と、達成したい状態を短く説明する。</li>
+          <li>教材、資料、見本、過去の成果物を共有する。</li>
+          <li>たたき台を見て「違う点」「譲れない点」「不足」を指摘する。</li>
+          <li>実際の利用者で試し、観察結果を返す。</li>
+          <li>次へ進むか、止めるか、作り直すかを判断する。</li>
+        </ul>
+      </section>
+
+      <section id="roadmap">
+        <span class="section-no">09 / ROADMAP</span>
+        <h2>初期6か月のロードマップ</h2>
+        <div class="timeline">
+          <div class="phase"><span class="dot"></span><strong>第0段階：合意形成</strong><span>目的、対象範囲、権利、費用、責任、利用データの扱いを整理する。</span></div>
+          <div class="phase"><span class="dot"></span><strong>1〜2か月目：最小対象の選定と可視化</strong><span>AX対象業務を一つ、教材ブロックを一つ選ぶ。現行手順と評価基準を記録する。</span></div>
+          <div class="phase"><span class="dot"></span><strong>2〜3か月目：たたき台の制作</strong><span>業務エージェントの初版と、ミニゲーム型教材の初版を作る。</span></div>
+          <div class="phase"><span class="dot"></span><strong>3〜4か月目：現場試験</strong><span>先生方、生徒、保護者の限定グループで利用し、誤り、使いにくさ、学習効果を確認する。</span></div>
+          <div class="phase"><span class="dot"></span><strong>5〜6か月目：効果検証と次期判断</strong><span>削減時間、品質、継続率、学習成果、支払意思を評価し、次のブロックと業務へ拡張する。</span></div>
+          <div class="phase"><span class="dot"></span><strong>7か月目以降：商品化と販売実験</strong><span>価格、契約形態、販売導線、サポート範囲を決め、限定販売から開始する。</span></div>
+        </div>
+        <p class="small">期間は目安であり、教材の複雑さと確認可能時間に応じて変動する。全体完成日を先に約束するのではなく、各ブロックの完成条件を定めて進める。</p>
+      </section>
+
+      <section id="roles">
+        <span class="section-no">10 / ROLES</span>
+        <h2>役割分担の基本案</h2>
+        <table>
+          <thead><tr><th>担当</th><th>主な役割</th><th>責任範囲</th></tr></thead>
+          <tbody>
+            <tr><td>プロス経営側</td><td>理念、事業方針、予算、優先順位、最終承認</td><td>会社としての意思決定</td></tr>
+            <tr><td>北浦先生・担当教員</td><td>教育内容、現場手順、品質基準、フィードバック</td><td>教育的妥当性と現場適合</td></tr>
+            <tr><td>玉川勝史</td><td>AI設計、試作、業務フロー、商品設計、収益化、マーケティングのたたき台</td><td>プロジェクト推進と実装設計</td></tr>
+            <tr><td>生徒・保護者</td><td>試用、利用感、継続性、理解度、支払意思の検証</td><td>実利用に基づく評価</td></tr>
+          </tbody>
+        </table>
+        <div class="notice"><strong>未決定事項：</strong>開発費用、教材とソフトウェアの権利、売上分配、運営費、保守、顧客データ、他社展開時の利用範囲は、試作前に文書化する。</div>
+      </section>
+
+      <section id="revenue">
+        <span class="section-no">11 / REVENUE MODEL</span>
+        <h2>収益化の仮説</h2>
+        <p>初期段階では一つに固定せず、MVPの利用結果を見ながら複数の形を比較する。</p>
+        <div class="grid three">
+          <div class="card">
+            <h3>家庭向け継続課金</h3>
+            <p>月額で教材ブロックを順番に提供。学習履歴、反復、保護者レポートを付加価値にする。</p>
+          </div>
+          <div class="card">
+            <h3>教室向けライセンス</h3>
+            <p>他の英語教室や学童へ、教材と管理機能を人数単位または教室単位で提供する。</p>
+          </div>
+          <div class="card">
+            <h3>ハイブリッド受講</h3>
+            <p>オンライン教材とプロスの対面・遠隔指導を組み合わせ、成果確認と個別支援を提供する。</p>
+          </div>
+          <div class="card">
+            <h3>教材単品販売</h3>
+            <p>特定の音、規則、年齢層など、目的別のミニ教材を買い切りで販売する。</p>
+          </div>
+          <div class="card">
+            <h3>指導者研修</h3>
+            <p>教材の利用権に加え、プロスフォニックスの教え方、評価方法、授業設計を研修商品化する。</p>
+          </div>
+          <div class="card">
+            <h3>AX導入支援</h3>
+            <p>プロスで確立した「教育会社の業務をAI化し、独自教材を商品化する手順」を他社へ提供する。</p>
+          </div>
+        </div>
+        <h3>商品階層の考え方</h3>
+        <p><span class="pill">無料体験</span><span class="pill">単品ミニ教材</span><span class="pill">月額学習コース</span><span class="pill">教室ライセンス</span><span class="pill">導入コンサルティング</span></p>
+      </section>
+
+      <section id="kpi">
+        <span class="section-no">12 / KPI</span>
+        <h2>成功を判断する指標</h2>
+        <div class="kpi">
+          <div class="card"><div class="metric">時間</div><div class="label">対象業務の削減時間</div></div>
+          <div class="card"><div class="metric">品質</div><div class="label">誤り率・修正回数</div></div>
+          <div class="card"><div class="metric">学習</div><div class="label">正答率・定着・再挑戦</div></div>
+          <div class="card"><div class="metric">継続</div><div class="label">利用率・離脱率</div></div>
+          <div class="card"><div class="metric">負担</div><div class="label">先生の確認工数</div></div>
+          <div class="card"><div class="metric">価値</div><div class="label">保護者・生徒の評価</div></div>
+          <div class="card"><div class="metric">収益</div><div class="label">支払意思・粗利</div></div>
+          <div class="card"><div class="metric">再現</div><div class="label">次ブロック制作時間</div></div>
+        </div>
+        <p class="small">特に重要なのは、初回の制作速度ではなく、二つ目以降の教材ブロックと業務エージェントをどれだけ速く、安定して再現できるかである。</p>
+      </section>
+
+      <section id="risks">
+        <span class="section-no">13 / RISK MANAGEMENT</span>
+        <h2>主要リスクと対応</h2>
+        <table>
+          <thead><tr><th>リスク</th><th>起こりうる問題</th><th>対応方針</th></tr></thead>
+          <tbody>
+            <tr><td>範囲の拡大</td><td>全教材・全業務を同時に扱い、完成しない</td><td>一回につき教材1ブロック・業務1工程に限定</td></tr>
+            <tr><td>教育品質</td><td>AIのもっともらしい誤りが教材へ混入</td><td>先生の承認なしに公開しない。根拠と変更履歴を残す</td></tr>
+            <tr><td>現場負担</td><td>確認作業が増え、導入が止まる</td><td>確認項目を絞り、たたき台を先に提示する</td></tr>
+            <tr><td>個人情報</td><td>生徒情報や音声が外部へ漏れる</td><td>匿名化、権限管理、利用サービス選定、保存範囲の明確化</td></tr>
+            <tr><td>権利関係</td><td>教材・コード・ノウハウの帰属で対立</td><td>試作前に利用権、販売権、他社展開条件を合意</td></tr>
+            <tr><td>需要不足</td><td>良い教材でも購入されない</td><td>本格開発前に限定ユーザーで支払意思を検証</td></tr>
+            <tr><td>AI依存</td><td>特定サービスの価格・仕様変更に影響される</td><td>データと教材構造を分離し、移行可能な設計にする</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="next">
+        <span class="section-no">14 / FIRST ACTIONS</span>
+        <h2>最初に決める二つの対象</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>① 最初の教材ブロック</h3>
+            <p>プロスフォニックスの中から、単独で学習目標を設定できる最小単位を一つ選ぶ。</p>
+            <p><strong>必要資料：</strong>現行教材、授業時の説明、音声、正答条件、つまずき例、先生の補助方法。</p>
+          </div>
+          <div class="card">
+            <h3>② 最初のAX対象業務</h3>
+            <p>時間がかかっている反復業務から、一工程だけを選ぶ。</p>
+            <p><strong>必要資料：</strong>入力例、完成見本、現行手順、所要時間、確認者、失敗例。</p>
+          </div>
+        </div>
+        <h3>キックオフ時の確認項目</h3>
+        <ol>
+          <li>今回の試作で何ができれば成功か。</li>
+          <li>誰が、いつ、どの程度確認できるか。</li>
+          <li>試験対象となる生徒・保護者を何人確保できるか。</li>
+          <li>使用可能な教材、音声、画像、名称の権利範囲。</li>
+          <li>試作費、外部サービス費、公開範囲。</li>
+          <li>改善を続けるか中止するかの判断日。</li>
+        </ol>
+      </section>
+
+      <section id="philosophy">
+        <span class="section-no">15 / PHILOSOPHY</span>
+        <h2>理念に一直線に進むことが、結果として差別化になる</h2>
+        <p>AIエージェントを企業の実務へどう組み込み、どのように成果へつなげるかは、まだ世界中で試行錯誤が続いている。すべての会社に通用する決定版は存在しない。</p>
+        <p>だからこそ、流行している他社事例を表面的にまねるのではなく、プロスが何を大切にし、誰にどのような価値を届けたいのかを明確にし、その理念に沿って一つずつ誠実に実践する必要がある。</p>
+        <div class="quote">無理に差別化を作ろうとするのではない。理念を定め、そこへ一直線に進む。その蓄積が、自然に他社にはない違いになる。</div>
+        <p>プロスが持つ教育の知見と、AIエージェントによる新しい働き方を組み合わせる。焦らず、小さな成功を積み上げる。教材だけでなく、働き方、組織能力、事業化の方法そのものを資産として残す。</p>
+        <p>この取り組みが実現すれば、プロスは独自のデジタル教材を持つだけではない。従業員がAI時代の働き方を理解し、新しい商品を継続的に生み出し、同じ課題を抱える他社を支援できる会社へ変化する。</p>
+      </section>
+
+      <section class="cta">
+        <span class="section-no" style="color:#dfe5ff">CONCLUSION</span>
+        <h2>最初の一歩は、二つだけでよい。</h2>
+        <div class="box">
+          <p><strong>プロスフォニックスから、最小の教材ブロックを一つ。</strong></p>
+          <p><strong>プロスの現行業務から、AI化したい一工程を一つ。</strong></p>
+          <p>資料を共有してもらい、玉川側が最初のたたき台を作る。先生方が確認し、直し、実際に試す。その小さな循環から、プロスのAXと新事業を始める。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2026 Katsushi Tamagawa / KT Blog — Pross AX & Pross Phonics Business Plan
+  </footer>
+</body>
+</html>
