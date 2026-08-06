@@ -4,7 +4,7 @@ date: 2026-08-05
 slug: "mechatronics-114"
 category: "メカトロ"
 eyecatch: "/assets/eyecatch/mechatronics-114-eyecatch.jpg"
-tags: ["メカトロ", "工作機械", "CNC", "サーボ", "ボールねじ", "リニアモータ", "五軸", "精密加工", "ロボット", "自動化", "製造業"]
+tags: ["メカトロ", "工作機械", "CNC", "サーボ", "ボールねじ", "リニアモータ", "五軸", "精密加工", "ロボット", "自動化", "製造業", "Apple", "哲学", "AGI", "投資"]
 series: "加藤メカトロ"
 description: "CNC工作機械がなぜ一マイクロメートルの精度を出せるのか。ボールねじ、サーボ、熱変位補正、リニアモータ、五軸加工まで、精密位置決めの技術を徹底解説。"
 note_url: "https://note.com/keity717/n/n9cf361f26416"

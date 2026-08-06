@@ -4,7 +4,7 @@ date: 2026-08-02
 slug: "radio-106"
 category: "ホビー"
 eyecatch: "/assets/eyecatch/radio-106-eyecatch.jpg"
-tags: ["FPV", "ドローン", "ラジコン", "自作", "Betaflight", "BLHeli", "レース", "電子工作", "ホビー", "メカトロ"]
+tags: ["FPV", "ドローン", "ラジコン", "自作", "Betaflight", "BLHeli", "レース", "電子工作", "ホビー", "メカトロ", "DIY", "ロボット", "映像"]
 ---
 
 # 【加藤ラジコン #106】FPVレースドローン自作入門——5インチ機を一から組む、2026年の個人製作
@@ -185,3 +185,4 @@ FPVとはFirst Person View、一人称視点のことだ。機体に載せたカ
 
 
 【加藤ラジコン出版記事 #106】
+
