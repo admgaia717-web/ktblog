@@ -5,8 +5,8 @@ category: "宇宙開発"
 tags: ["宇宙開発", "ブルーオリジン", "ニューグレン", "BE-4", "ロケット事故", "再利用ロケット", "酸素バルブ", "ロボット", "投資", "AGI", "哲学"]
 eyecatch: "/assets/eyecatch/space-news-143.jpg"
 excerpt: "ニューグレン五月の静燃焼試験爆発の原因が酸素バルブの故障として特定された。年内復帰への工程表と、ステニス宇宙センターでの上段検証を読み解く。"
-note_url: ""
-substack_url: ""
+note_url: "https://note.com/keity717/n/n4e4fb24cec56"
+substack_url: "https://keity717.substack.com/p/143-1e8"
 ---
 2026年8月6日。ケープカナベラル第36射場。青い空の下で、ひとつの炎が過去形になった。
 
