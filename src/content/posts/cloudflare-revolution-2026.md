@@ -4,6 +4,7 @@ date: 2026-08-10
 category: "テクノロジー"
 eyecatch: "/assets/eyecatch/cf-eyecatch.png"
 excerpt: "Cloudflareが2026年に革命を起こす理由。Workers AI、Project Think、Cloudflare Wallets、R2ゼロエグレス、中小企業の12メリット。"
+tags: ["AIエージェント", "Claude", "OpenAI", "セキュリティ", "映像", "哲学"]
 ---
 # Cloudflareが今まさに革命を起こしている理由
 
@@ -46,3 +47,4 @@ AIエージェントに財布とIDを持たせる。Account Wallet（人間）�
 ---
 
 参考: Cloudflare公式プレスリリース・ブログ・Workers AI公式・R2比較記事・Impress Watch・explainx.ai
+
