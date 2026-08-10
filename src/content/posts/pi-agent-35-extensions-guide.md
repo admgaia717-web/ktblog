@@ -4,6 +4,7 @@ date: 2026-08-10
 category: "テクノロジー"
 eyecatch: "/assets/eyecatch/pi-ext-eyecatch.png"
 excerpt: "Pi Agentの35個の拡張を3カテゴリ全解説。permission-gateからssh・subagent・snake gameまで。"
+tags: ["AIエージェント", "プログラミング", "デザイン", "ゲーム"]
 ---
 # Pi Agentの35個の拡張を全解説—— 日本一詳細な拡張ガイド【続編】
 
@@ -38,3 +39,4 @@ StringEnumを使え（Google API互換）、detailsに状態を保存しろ（�
 ---
 
 参考: Pi Agent公式リポジトリ（earendil-works/pi） examples/extensions/README.md精読・主要拡張ソースコード分析
+
