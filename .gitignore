@@ -4,7 +4,7 @@ dist/
 .DS_Store
 *.log
 .env
-.env.local
-ktblog.sqlite*
+.env.local*ktblog.sqlite
+*dump.sql
 public/search-index.json
-public/tags.json
+public/tags.json4
