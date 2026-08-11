@@ -8,3 +8,4 @@ dist/
 *dump.sql
 public/search-index.json
 public/tags.json4
+.netlify/
