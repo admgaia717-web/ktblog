@@ -12,9 +12,13 @@
 #   5. Publish directory: dist
 #   6. Deploy!
 
+# 【2026-08-12 追記】本番は Cloudflare Pages で配信済みのため、
+# Netlify の GitHub 連携による本番ビルドは完全スキップ（credits 消費ゼロ化）。
+# サイト自体の削除は Dashboard で別途実施。
 [build]
   command = "npm run build"
   publish = "dist"
+  ignore = "exit 0"
 
 [build.environment]
   NODE_VERSION = "20"
