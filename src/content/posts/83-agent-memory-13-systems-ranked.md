@@ -31,7 +31,7 @@ Mem0とSupermemory。会話から事実を抽出し、ユーザープロファ�
 
 **② Cognitive Memory（認知記憶）**
 
-HindsightとLetta。HindsightはObservation→Memory→Entity relationships→Mental model→Reflectionへ進む認知アーキテクチャで、10M token級のBEAMベンチマークで公開ベストの64.1%を報告している。Letta（旧MemGPT）はエージェント自身にcore/archival memoryを読み書きさせるstateful agent harnessで、検索APIではなくエージェントランタイムそのものだ。
+HindsightとLetta。Hindsightは4つの論理ネットワーク（World＝事実、Experience＝経験、Opinion＝意見、Observation＝観察）と3つの操作（retain／recall／reflect）で構成される認知アーキテクチャで、10M token級のBEAMベンチマークで公開ベストの64.1%を報告している。Letta（旧MemGPT）はエージェント自身にcore/archival memoryを読み書きさせるstateful agent harnessで、検索APIではなくエージェントランタイムそのものだ。
 
 **③ Temporal / Knowledge Graph（時間・知識グラフ）**
 
@@ -77,7 +77,7 @@ OpenViking（ByteDance/Volcengine系）はこれを「Context Database」と呼�
 
 ここが重要だ。各社のLongMemEvalスコアを一列に並べて「1位は誰か」を決めることはできない。条件が違うからだ。
 
-SupermemoryのLongMemEval「95%」はRecall@15の独自集計で、session単位で履歴を投入するvendor runだ。Hindsightの「94.6%」は公開artifact付きの現行Agent Memory Benchmark値だが、論文の旧条件では83.6%〜91.4%と幅がある。Mem0の「94.4%」はmanaged platformのproprietary最適化込みで、OSS版は91.0%（GPT-5 extractor条件）にとどまる。
+SupermemoryのLongMemEval「95%」はRecall@15の独自集計で、session単位で履歴を投入するvendor runだ。Hindsightの「94.6%」は公開artifact付きの現行Agent Memory Benchmark値だが、論文の旧条件では83.6%〜91.4%と幅がある。Mem0の「94.4%」はmanaged platform版の自己申告であり、README自体が「OSS版は方向性は似るが同一の数値ではない」と明記している。
 
 Zepについても「論文の71.2%」と「現行Zepの90.2%」は矛盾ではなく、世代と条件の違いだ。CogneeのBEAM 10M「0.67」は1会話20問に対するin-sample routingで、著者自身がexploratoryと明記しているため、Hindsightの64.1%と順位比較してはいけない。
 
