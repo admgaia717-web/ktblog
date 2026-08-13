@@ -1,9 +1,9 @@
 ---
 title: "禁止されると暴きたくなる —— 注目経済学が暴く論争資本の科学"
 date: 2026-08-14T06:30:00+09:00
-tags: [注目経済学, 行動経済学, サイファーパンク, 論争マーケティング, AI, ビジネス, 思想]
+tags: ["注目経済学", "行動経済学", "サイファーパンク", "論争マーケティング", "AI", "ビジネス", "思想", "哲学", "ロボット", "執筆", "Bitcoin", "プログラミング", "投資", "AIエージェント", "映像", "セキュリティ", "Monero"]
 series: "サイファーパンク経済"
-weight: 999
+weight: "999"
 eyecatch: "/posts/forbidden-knowledge-attention-economy/eyecatch.png"
 ---
 
@@ -253,3 +253,4 @@ AIは文脈（コンテクスト）を読めない。「形式的に正しい回
   (2018)
 - Pelin et al.「Alluring or Alarming? Forbidden Knowledge Frames in
   Political Discourse」(2024)
+
