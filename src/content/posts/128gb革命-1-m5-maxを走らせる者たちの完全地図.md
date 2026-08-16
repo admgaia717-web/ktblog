@@ -2,6 +2,7 @@
 title: "128GB革命 #1 M5 Maxを走らせる者たちの完全地図"
 date: 2026-08-16
 category: "テクノロジー"
+eyecatch: "/assets/eyecatch/n4c7007fd7a82.png"
 tags: ["M5Max", "ローカルLLM", "128GB", "Apple", "映像", "LLM", "DIY", "執筆", "プログラミング"]
 excerpt: "17回連載の第1回。M5 Max 128GBローカルLLMコミュニティの完全地図。13人の実在確認、4層エコシステム、38万行の実測データ。"
 ---
