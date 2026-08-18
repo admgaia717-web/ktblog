@@ -3,7 +3,7 @@ title: "【83】AIに記憶を渡す戦い——13基盤を一次情報で比較
 date: 2026-08-13
 category: "AI・エージェント"
 tags: ["AI", "エージェント", "メモリー", "LLM", "Agent Memory", "投資", "プログラミング", "ロボット", "AIエージェント", "生成AI", "OpenAI", "Apple"]
-eyecatch: "/Users/kt/Desktop/artisan_gen/artisan_f68ab465.png"
+eyecatch: "/assets/eyecatch/83-agent-memory-artisan.png"
 ---
 テンセントが5月にMITで公開した「TencentDB Agent Memory」を調べた。調べれば調べるほど、これは単なるベクトルDBの上位互換ではなく、エージェントの記憶基盤を巡る戦争が始まっていることが見えてきた。
 
