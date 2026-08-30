@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Build check (Cloudflare Pages builds on push via GitHub source)
 
 on:
   push:
@@ -6,11 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
     steps:
       - uses: actions/checkout@v4
 
@@ -26,8 +23,3 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm build
-
-      - name: Deploy to Cloudflare Pages
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: pnpm exec wrangler pages deploy dist --project-name=ktblog
