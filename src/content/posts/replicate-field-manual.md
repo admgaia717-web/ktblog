@@ -3,6 +3,7 @@ title: "replicate-field-manual"
 date: 2026-08-30
 category: "テクノロジー"
 excerpt: "GPUを持たず最新AIモデルを試す。Replicateの使い方総まとめ。"
+tags: ["プログラミング", "AIエージェント", "ロボット", "Apple", "映像", "DIY"]
 ---
 # Replicate 徹底マニュアル —— 玄関先で AI 厨房を借りる方法
 
@@ -48,3 +49,4 @@ GPU の秒数で課金。T4 は 1 秒 0.000225 ドル（約 0.81 ドル/時）�
 GPU を持たず最新モデルを試したい人、自作モデルを URL で渡したい人におすすめ。本番トラフィックを安く捌くなら専用 GPU の方が結局安い場合も。便利さに値段が乗ってる店だ。
 
 詳細は note 本編へ：https://note.com/keity717/n/n348a10af15ce
+
