@@ -1,12 +1,20 @@
-name: Build check (Cloudflare Pages builds on push via GitHub source)
+name: Deploy to Cloudflare Pages
 
+# 正規デプロイ経路はこのワークフローに一本化する。
+# - CF 側 Git 連携（github source）は deployments_enabled: false で無効のまま維持
+# - ローカル（~/ktblog-deploy 等）からの wrangler 直接デプロイは緊急用。
+#   古いコミットからの上書き事故防止のため deploy-cf.mjs 側に同期ガードあり。
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
+concurrency:
+  group: deploy-pages
+  cancel-in-progress: false
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,3 +31,9 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm build
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: pnpm exec wrangler pages deploy dist --project-name=ktblog --branch=main --commit-dirty=true
