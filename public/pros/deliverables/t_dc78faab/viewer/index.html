@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>26字ジェスチャー分解ビューア（叩き台v1）— プロスフォニックス</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; background: #f6f7f9; color: #1c2330; }
+  header { background: #14304a; color: #fff; padding: 22px 20px 18px; }
+  header h1 { margin: 0 0 6px; font-size: 1.25rem; }
+  header p { margin: 2px 0; font-size: .82rem; opacity: .85; }
+  #summary { display: inline-block; margin-top: 8px; background: rgba(255,255,255,.14); border-radius: 999px; padding: 4px 12px; font-size: .78rem; font-weight: 700; }
+  main { max-width: 1180px; margin: 0 auto; padding: 18px 16px 40px; }
+  .legend { font-size: .76rem; color: #5b6675; margin: 0 0 14px; line-height: 1.7; }
+  .legend b { color: #1c2330; }
+  #grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  .card { background: #fff; border: 1px solid #dde3ea; border-radius: 12px; padding: 10px; box-shadow: 0 1px 3px rgba(20,48,74,.06); }
+  .card .head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .lt { font-size: 1.35rem; font-weight: 800; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: #eef2f6; border-radius: 8px; text-transform: lowercase; }
+  .nm { font-size: .74rem; font-weight: 700; flex: 1; }
+  .badge { font-size: .66rem; font-weight: 700; border-radius: 999px; padding: 3px 8px; white-space: nowrap; }
+  .b-match { background: #e3f6e8; color: #177a37; }
+  .b-partial { background: #fdf3dc; color: #9a6a08; }
+  .b-mismatch { background: #fde3e3; color: #b3261e; }
+  .card video { width: 100%; border-radius: 8px; background: #000; aspect-ratio: 16/9; }
+  .meta { font-size: .68rem; color: #5b6675; margin-top: 6px; font-variant-numeric: tabular-nums; }
+  .act { font-size: .7rem; margin-top: 4px; line-height: 1.55; }
+  .obs { font-size: .68rem; color: #40506a; margin-top: 4px; line-height: 1.55; }
+  .note { font-size: .66rem; color: #9a3b08; margin-top: 2px; }
+  .v-match { border-top: 3px solid #2fae5c; }
+  .v-partial { border-top: 3px solid #e5a50a; }
+  .v-mismatch { border-top: 3px solid #d93025; }
+  footer { max-width: 1180px; margin: 0 auto; padding: 0 16px 30px; font-size: .7rem; color: #7a8494; }
+</style>
+</head>
+<body>
+<header>
+  <h1>26字ジェスチャー分解ビューア（叩き台v1）</h1>
+  <p>正式版メソッド動画（980秒・YouTube bYJFlGa7sO4）第1周実演 26.9–205.0秒から切り出し。実測タイムスタンプ・クリップ・正本アクション突合を一覧再生できます。</p>
+  <p>検品: chisu 合格（t_680f8b49）／Kanban: t_dc78faab（2026-09-04 納品）</p>
+  <span id="summary"></span>
+</header>
+<main>
+  <p class="legend">
+    判定は「正本アクション（お話し通り・merged版）× 動画実演」の突合。
+    <b>○ 一致13</b>／<b>△ 一部一致10</b>／<b>× 別系統3（h・m・s）</b>。
+    ×3字と△10字の動き採否は 9/10 蜂谷先生「お話し通り」照合待ち。出演者は鏡像（視聴者から見て右手＝先生の左手）。
+    カード意匠は食べ物が正本キャラと異なる字あり（詳細は action_breakdown.md）。
+  </p>
+  <div id="grid"></div>
+</main>
+<footer>
+  タイムスタンプ正本: clip_windows_measured.json（v2タイムマップは最大7秒ドリフトのため参照用）。
+  ソースは教材動画（社内利用前提）。Basic認証（/pros/*）で保護された関係者向けページです。
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
