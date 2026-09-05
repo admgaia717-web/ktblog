@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>正本（t_b071b7a8/story_diff.md）からの変更点一覧 — PROS お話し通り突合（t_a4b29680）</title>
+<style>
+  :root { --bg:#0b1220; --card:#121a2b; --line:#233250; --text:#e8edf7; --muted:#93a1bd; --ok:#4ade80; --warn:#fbbf24; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; padding:24px 16px 60px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  a.back { color:var(--muted); text-decoration:none; font-size:.85rem; }
+  a.back:hover { color:var(--text); }
+  h1 { font-size:1.35rem; margin:10px 0 4px; }
+  .sub { color:var(--muted); font-size:.85rem; line-height:1.7; margin-bottom:20px; }
+  h2 { font-size:1.05rem; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:.92rem; margin:18px 0 8px; }
+  p, li { font-size:.88rem; line-height:1.85; }
+  p { margin:8px 0; }
+  ul, ol { margin:8px 0 8px 22px; }
+  code { background:#0d1526; border:1px solid var(--line); border-radius:4px; padding:1px 6px; font-size:.8em; color:#a8c7ff; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:22px; }
+  .card h2 { border:none; margin:0 0 10px; font-size:1.02rem; }
+  .badge { font-size:.7rem; font-weight:700; padding:2px 8px; border-radius:99px; margin-left:8px; vertical-align:2px; }
+  .b-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .b-warn { background:rgba(251,191,36,.15); color:var(--warn); }
+  .b-muted { background:rgba(147,161,189,.15); color:var(--muted); }
+  .alert { background:rgba(251,191,36,.07); border:1px solid rgba(251,191,36,.45); border-radius:12px; padding:16px 18px; margin-bottom:22px; }
+  .alert h2 { color:var(--warn); border:none; margin:0 0 8px; font-size:1rem; }
+  .alert p, .alert li { font-size:.85rem; }
+  .chips { display:flex; gap:10px; flex-wrap:wrap; margin:6px 0 14px; }
+  .chip { font-size:.78rem; padding:4px 12px; border-radius:99px; border:1px solid var(--line); background:var(--card); }
+  .chip b { color:var(--text); }
+  .toc { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 6px; }
+  .toc a { color:#7ea2ff; text-decoration:none; font-size:.78rem; border:1px solid var(--line); border-radius:99px; padding:3px 10px; }
+  .toc a:hover { background:#16203a; }
+  .table-wrap { overflow-x:auto; margin:12px 0 18px; border:1px solid var(--line); border-radius:10px; }
+  table { border-collapse:collapse; width:100%; font-size:.8rem; line-height:1.7; }
+  th, td { border-bottom:1px solid var(--line); padding:7px 10px; text-align:left; vertical-align:top; white-space:normal; }
+  thead th { background:#0f1830; color:#c6d4f0; font-size:.78rem; position:sticky; top:0; }
+  tbody tr:hover { background:#131d33; }
+  td.cell-ok { color:var(--ok); }
+  td.cell-note { color:var(--warn); }
+  td.cell-diff { color:#f87171; font-weight:600; }
+  .files a { display:block; color:#7ea2ff; text-decoration:none; font-size:.9rem; padding:10px 12px; border:1px solid var(--line); border-radius:10px; margin-bottom:10px; background:var(--card); }
+  .files a:hover { background:#16203a; }
+  .files a b { color:var(--text); }
+  .files a span { display:block; color:var(--muted); font-size:.78rem; margin-top:3px; }
+  .vgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
+  .vcard { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .vhead { display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap; }
+  .lchip { font-weight:800; font-size:1.05rem; color:#ffd28a; background:rgba(255,210,138,.1); border:1px solid rgba(255,210,138,.3); border-radius:8px; padding:1px 10px; }
+  .snd { color:var(--muted); font-size:.72rem; }
+  .json { font-size:.78rem; color:#a8c7ff; background:#0d1526; border:1px solid var(--line); border-radius:8px; padding:8px 10px; margin:6px 0; line-height:1.7; }
+  .steps { list-style:none; margin:6px 0 0; }
+  .steps li { font-size:.78rem; padding:3px 0; border-top:1px dashed #1a2742; line-height:1.7; }
+  .verdict { display:inline-block; font-size:.66rem; font-weight:700; border-radius:5px; padding:0 6px; margin-right:6px; }
+  .vd-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .vd-kd { background:rgba(251,191,36,.18); color:var(--warn); }
+  .vd-note, .vd-skip { background:rgba(147,161,189,.14); color:var(--muted); }
+  .req { color:var(--muted); font-size:.72rem; }
+  .note { border-top:1px dashed var(--line); margin-top:26px; padding-top:14px; color:var(--muted); font-size:.78rem; line-height:1.9; }
+  .note a { color:#7ea2ff; }
+  .note code { font-size:.92em; }
+  del { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/pros/dashboard/">← 首脳ダッシュボードへ戻る</a>
+  <h1>正本（t_b071b7a8/story_diff.md）からの変更点一覧</h1>
+  <p class="sub">作成: オ課長 2026-09-05 / タスク t_a4b29680。比較対象: t_b071b7a8/story_diff.md（正本・非改変）↔ t_a4b29680/story_diff.md（本更新版）。変更原則: ストーリー・アクション分解・音・文字表記・wiki突合の各列は1行も書き換えていない（差分列の記入と説明文の更新のみ）。</p>
+<div class="card"><h2>目次</h2><div class="toc"></div></div><h1
+id="diff_vs_mastermd--正本t_b071b7a8story_diffmdからの変更点一覧">diff_vs_master.md
+— 正本（t_b071b7a8/story_diff.md）からの変更点一覧</h1>
+<p>作成: オ課長 2026-09-05 / タスク:
+t_a4b29680（お話し通り本文の機械突合・差分列 前倒し記入） 比較対象:
+<code>~/ProsLC/deliverables/t_b071b7a8/story_diff.md</code>（正本・2026-09-04
+t_f0ea7de1 版・非改変）↔︎
+<code>~/ProsLC/deliverables/t_a4b29680/story_diff.md</code>（本更新版）</p>
+<h2 id="変更原則">変更原則</h2>
+<ul>
+<li><strong>ストーリー・アクション分解・音・文字表記・wiki突合
+の各列は1行も書き換えていない</strong>（差分列の記入と説明文の更新のみ）。</li>
+<li>正本側（t_b071b7a8）は一切編集していない。</li>
+</ul>
+<h2 id="0ソースと優先順位">§0（ソースと優先順位）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>変更内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>「未入手」行 → 新設</td>
+<td>お話し通り本文を「入手済み」として正本パス（<code>~/ProsLC/deliverables/t_a4b29680/source/FonixStory.json</code>）・出典（蜂谷さん
+9/5「プロス公式が公開しているそのまま」）・突合結果（9/5
+verify_ohanashi.py・NG 0）を記載</td>
+</tr>
+<tr>
+<td>優先順位の付番</td>
+<td>旧「2（説明補助）」→「3」へ繰り下げ、旧「3（口頭裏付け）」→「4」。お話し通り行を「2（お話し通り・突合対象）」として挿入</td>
+</tr>
+<tr>
+<td>s への優先ルール適用</td>
+<td>「矛盾時はお話し通り優先」の例外として、s の扱いは 9/17
+本山先生判断（現行 merged版を維持・オ課長 9/5 決定）を明記</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1一覧表26行">§1（一覧表・26行）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>行</th>
+<th>「お話し通り差分」列の変更</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a〜l・n〜u・w〜z（23行）</td>
+<td>「未照合（9/10説明待ち）」→「一致（9/5機械突合）」</td>
+</tr>
+<tr>
+<td>m</td>
+<td>→「一致（注記）—
+①「持つ」②「一口食べる」は本文に動作記述なし（ストーリー欄の前段補完）。核心「お腹をさする(rub
+your tummy)」は本文どおり一致（9/5機械突合）」</td>
+</tr>
+<tr>
+<td>s</td>
+<td>→「差分（既知）— 本文は「つまんで引き上げ(pull
+up)」まで・「ひねる(twist)」はmerged版PDF本文「pull up, twist and
+say」由来で本文にない。テンプレート本文は書き換えず 9/17
+定例で本山先生判断（オ課長 9/5 決定・9/5機械突合）」</td>
+</tr>
+<tr>
+<td>v</td>
+<td>→「一致（表記差分）— アクションは完全一致。音の発話表記のみ本文 "v"
+vs 現行 "vvvv"（表記の正は merged版 "vvvv" を維持・9/5機械突合）」</td>
+</tr>
+</tbody>
+</table></div>
+<p>上記以外のセル（ストーリー・アクション分解・音・文字表記・wiki突合）は<strong>全26行で無変更</strong>。</p>
+<h2 id="2突合手順--910-最終確認用に縮小">§2（突合手順 → 9/10
+最終確認用に縮小）</h2>
+<ul>
+<li>旧「聞きながら全行転記する」手順を削除し、<strong>残差分2点（s・v）の確認
++ A〜C
+エスカレーション規定</strong>の3項に縮小。9/5機械突合済みであることを明記。</li>
+</ul>
+<h2 id="5要確認リスト">§5（要確認リスト）</h2>
+<ul>
+<li>項目1「お話し通り本文が未入手」に**解消済み（2026-09-05）**の打ち消し線と要旨を追記（本文自体は履歴として残す）。項目2〜6は無変更。</li>
+</ul>
+<h2 id="6受入基準セルフチェック">§6（受入基準セルフチェック）</h2>
+<ul>
+<li>t_f0ea7de1
+納品時点の記録として保持（表題に「2026-09-04納品時点の記録」と追記）。行「「お話し通り」との差分を明記する列」の根拠に「※2026-09-05
+に本文入手済み・全行記入完了」を追記。判定の書き換えなし。</li>
+</ul>
+<h2 id="7検証方法">§7（検証方法）</h2>
+<ul>
+<li>verify_story_diff.py
+の説明を維持しつつ、同梱タスク名を正確化（t_a85c1307 →
+<strong>t_f0ea7de1</strong>: スクリプトの実在場所
+<code>/Users/kt/ProsLC/deliverables/t_f0ea7de1/verify_story_diff.py</code>）・<code>verify_ohanashi.py</code>（t_a4b29680
+同梱）による突合の担当範囲を追記。</li>
+</ul>
+<h2 id="無変更セクション">無変更セクション</h2>
+<ul>
+<li>§3（9/3定例の口頭裏付けメモ）・§4（food版→merged版 差分明細）—
+1行も変更していない。</li>
+</ul>
+<h2 id="検証">検証</h2>
+<ul>
+<li>機械突合: <code>verify_ohanashi.py</code> 実行済み（exit 0・NG
+0・結果 <code>verify_ohanashi_result.txt</code>）。本更新版
+story_diff.md
+の§1に対する再実行も想定内（差分列文言は列のためパース対象外・アクション分解列は無変更のため結果不変）。</li>
+<li>template.md 本体: 無変更（触っていない）。</li>
+</ul>
+
+  <div class="note">
+    <b>正本・出典</b>: 4号機 <code>~/ProsLC/deliverables/t_a4b29680/</code>（本文正本: <code>source/FonixStory.json</code> — 蜂谷さん 2026-09-05 提供「各キャラのおはなしはプロス公式が公開しているそのまま」）<br>
+    突合: オ課長 <code>verify_ohanashi.py</code>（2026-09-05・NG 0）／ HTML生成: スジュン 2026-09-05（タスク t_1bfcf1c2）／ 掲載: ktblog <code>/pros/deliverables/t_448af273/</code>（Basic認証・関係者限定）<br>
+    フロー: t_a4b29680（機械突合）→ t_1bfcf1c2（HTML化・配置）→ t_448af273（ダッシュボード掲載納品）→ t_fdf511b7（本番検収）
+  </div>
+</div>
+</body>
+</html>

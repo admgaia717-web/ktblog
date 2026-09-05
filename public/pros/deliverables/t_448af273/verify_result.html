@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>機械突合の結果（verify_ohanashi） — PROS お話し通り突合（t_a4b29680）</title>
+<style>
+  :root { --bg:#0b1220; --card:#121a2b; --line:#233250; --text:#e8edf7; --muted:#93a1bd; --ok:#4ade80; --warn:#fbbf24; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; padding:24px 16px 60px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  a.back { color:var(--muted); text-decoration:none; font-size:.85rem; }
+  a.back:hover { color:var(--text); }
+  h1 { font-size:1.35rem; margin:10px 0 4px; }
+  .sub { color:var(--muted); font-size:.85rem; line-height:1.7; margin-bottom:20px; }
+  h2 { font-size:1.05rem; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:.92rem; margin:18px 0 8px; }
+  p, li { font-size:.88rem; line-height:1.85; }
+  p { margin:8px 0; }
+  ul, ol { margin:8px 0 8px 22px; }
+  code { background:#0d1526; border:1px solid var(--line); border-radius:4px; padding:1px 6px; font-size:.8em; color:#a8c7ff; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:22px; }
+  .card h2 { border:none; margin:0 0 10px; font-size:1.02rem; }
+  .badge { font-size:.7rem; font-weight:700; padding:2px 8px; border-radius:99px; margin-left:8px; vertical-align:2px; }
+  .b-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .b-warn { background:rgba(251,191,36,.15); color:var(--warn); }
+  .b-muted { background:rgba(147,161,189,.15); color:var(--muted); }
+  .alert { background:rgba(251,191,36,.07); border:1px solid rgba(251,191,36,.45); border-radius:12px; padding:16px 18px; margin-bottom:22px; }
+  .alert h2 { color:var(--warn); border:none; margin:0 0 8px; font-size:1rem; }
+  .alert p, .alert li { font-size:.85rem; }
+  .chips { display:flex; gap:10px; flex-wrap:wrap; margin:6px 0 14px; }
+  .chip { font-size:.78rem; padding:4px 12px; border-radius:99px; border:1px solid var(--line); background:var(--card); }
+  .chip b { color:var(--text); }
+  .toc { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 6px; }
+  .toc a { color:#7ea2ff; text-decoration:none; font-size:.78rem; border:1px solid var(--line); border-radius:99px; padding:3px 10px; }
+  .toc a:hover { background:#16203a; }
+  .table-wrap { overflow-x:auto; margin:12px 0 18px; border:1px solid var(--line); border-radius:10px; }
+  table { border-collapse:collapse; width:100%; font-size:.8rem; line-height:1.7; }
+  th, td { border-bottom:1px solid var(--line); padding:7px 10px; text-align:left; vertical-align:top; white-space:normal; }
+  thead th { background:#0f1830; color:#c6d4f0; font-size:.78rem; position:sticky; top:0; }
+  tbody tr:hover { background:#131d33; }
+  td.cell-ok { color:var(--ok); }
+  td.cell-note { color:var(--warn); }
+  td.cell-diff { color:#f87171; font-weight:600; }
+  .files a { display:block; color:#7ea2ff; text-decoration:none; font-size:.9rem; padding:10px 12px; border:1px solid var(--line); border-radius:10px; margin-bottom:10px; background:var(--card); }
+  .files a:hover { background:#16203a; }
+  .files a b { color:var(--text); }
+  .files a span { display:block; color:var(--muted); font-size:.78rem; margin-top:3px; }
+  .vgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
+  .vcard { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .vhead { display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap; }
+  .lchip { font-weight:800; font-size:1.05rem; color:#ffd28a; background:rgba(255,210,138,.1); border:1px solid rgba(255,210,138,.3); border-radius:8px; padding:1px 10px; }
+  .snd { color:var(--muted); font-size:.72rem; }
+  .json { font-size:.78rem; color:#a8c7ff; background:#0d1526; border:1px solid var(--line); border-radius:8px; padding:8px 10px; margin:6px 0; line-height:1.7; }
+  .steps { list-style:none; margin:6px 0 0; }
+  .steps li { font-size:.78rem; padding:3px 0; border-top:1px dashed #1a2742; line-height:1.7; }
+  .verdict { display:inline-block; font-size:.66rem; font-weight:700; border-radius:5px; padding:0 6px; margin-right:6px; }
+  .vd-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .vd-kd { background:rgba(251,191,36,.18); color:var(--warn); }
+  .vd-note, .vd-skip { background:rgba(147,161,189,.14); color:var(--muted); }
+  .req { color:var(--muted); font-size:.72rem; }
+  .note { border-top:1px dashed var(--line); margin-top:26px; padding-top:14px; color:var(--muted); font-size:.78rem; line-height:1.9; }
+  .note a { color:#7ea2ff; }
+  .note code { font-size:.92em; }
+  del { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/pros/dashboard/">← 首脳ダッシュボードへ戻る</a>
+  <h1>機械突合の結果（verify_ohanashi）</h1>
+  <p class="sub">verify_ohanashi.py 実行結果 — FonixStory.json（お話し通り本文）× story_diff.md §1 の突合。2026-09-05 実行・exit 0・NG 0。元テキスト: 4号機 <code>~/ProsLC/deliverables/t_a4b29680/verify_ohanashi_result.txt</code></p>
+  <div class="chips">
+    <span class="chip">突合済み <b>26/26 行</b></span>
+    <span class="chip">NG <b>0</b></span>
+    <span class="chip">完全一致 <b>23</b></span>
+    <span class="chip">一致（前段補完 NOTE）<b>1 → m</b></span>
+    <span class="chip">既知差分 <b>1 → s</b>（9/17 本山先生判断待ち）</span>
+    <span class="chip">表記差分のみ <b>1 → v</b>（“v” vs “vvvv”）</span>
+  </div>
+  <div class="alert">
+    <h2>9/10（木）蜂谷さん最終確認 — 残議題は s・v の2点のみ</h2>
+    <p>全26行は 2026-09-05 に機械突合済み（verify_ohanashi.py・NG 0）。9/10 は下記2点の確認のみでよい。</p>
+    <ul>
+      <li><b>s / Suzy Spaghetti</b>: 本文は「つまんで引き上げ（pull up）」まで。「ひねる（twist）」は merged版PDF本文「pull up, twist and say」由来で本文にない → どちらを正とするかは <b>9/17 定例で本山先生判断</b>（現行 merged版を維持・オ課長 9/5 決定）</li>
+      <li><b>v / Vicky Velvet Bean</b>: アクションは完全一致。音の発話表記のみ本文 “v” vs 現行 “vvvv” → <b>表記をどちらに寄せるか</b>（wiki正本・merged版は “vvvv”・連続音6字の運用ルールあり）</li>
+    </ul>
+    <p>確認の結果テンプレート本文を書き換える場合: d〜z はそのまま反映。<b>A〜C に差分が出たら t_95c471e2（生成パラメータ params.md 承認済み）への影響としてオ課長へエスカレートして再承認</b>（9/5時点で A〜C は完全一致・影響なし）。</p>
+  </div>
+  <h2>文字別の判定（26字ぶん・JSON本文 ↔ 差分表アクション分解）</h2>
+  <p class="req">step判定: OK=本文に動作あり / NOTE=前段補完（本文に明示なし） / 既知差分=既知の差分 / テンプレ付帯=テンプレート側付帯ステップ（JSON本文スコープ外）</p>
+  <div class="vgrid">
+<div class="vcard">
+  <div class="vhead"><span class="lchip">a</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: You bring her to your mouth and say “a”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>手のひらにリンゴを乗せる <span class="req">(要: bring her to your mouth)</span></li><li><span class="verdict vd-ok">OK</span>口の前に運ぶ <span class="req">(要: bring her to your mouth)</span></li><li><span class="verdict vd-ok">OK</span>口を大きく開けて「a」 <span class="req">(要: say “a”)</span></li><li><span class="verdict vd-skip">テンプレ付帯</span>開始姿勢へ戻る <span class="req">(テンプレート側付帯ステップ(開始姿勢へ戻る)。JSON本文スコープ外)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">b</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: You grab her stalk and pull the green part away and say “b”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手で茎をつかむ <span class="req">(要: grab her stalk)</span></li><li><span class="verdict vd-ok">OK</span>もう片方の手で緑の部分（房）をつかむ <span class="req">(要: the green part)</span></li><li><span class="verdict vd-ok">OK</span>緑の部分をブッと引き離す <span class="req">(要: pull the green part away)</span></li><li><span class="verdict vd-skip">テンプレ付帯</span>開始姿勢へ戻る <span class="req">(テンプレート側付帯ステップ(開始姿勢へ戻る)。JSON本文スコープ外)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">c</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: You bring him to your mouth and snap off a bite and say “c”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手でキュウリを持つ <span class="req">(要: bring him to your mouth)</span></li><li><span class="verdict vd-ok">OK</span>口に運ぶ <span class="req">(要: bring him to your mouth)</span></li><li><span class="verdict vd-ok">OK</span>一口パクッとかじる <span class="req">(要: snap off a bite)</span></li><li><span class="verdict vd-skip">テンプレ付帯</span>開始姿勢へ戻る <span class="req">(テンプレート側付帯ステップ(開始姿勢へ戻る)。JSON本文スコープ外)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">d</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Grab your cup with one hand and dunk him with the other and say “d”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手にカップを持つ <span class="req">(要: your cup with one hand)</span></li><li><span class="verdict vd-ok">OK</span>もう片方の手にドーナツを持つ <span class="req">(要: dunk him with the other)</span></li><li><span class="verdict vd-ok">OK</span>カップの中へ浸す（dunk） <span class="req">(要: dunk)</span></li><li><span class="verdict vd-ok">OK</span>「d」と言う <span class="req">(要: say “d”)</span></li><li><span class="verdict vd-skip">テンプレ付帯</span>開始姿勢へ戻る <span class="req">(テンプレート側付帯ステップ(開始姿勢へ戻る)。JSON本文スコープ外)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">e</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Grab her body with one hand and pull the stalk off with the other and say “e”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手でナスの体をつかむ <span class="req">(要: grab her body with one hand)</span></li><li><span class="verdict vd-ok">OK</span>もう片方の手でヘタをつかむ <span class="req">(要: the stalk off with the other)</span></li><li><span class="verdict vd-ok">OK</span>ヘタを引き抜く <span class="req">(要: pull the stalk off)</span></li><li><span class="verdict vd-ok">OK</span>「e」と言う <span class="req">(要: say “e”)</span></li><li><span class="verdict vd-skip">テンプレ付帯</span>開始姿勢へ戻る <span class="req">(テンプレート側付帯ステップ(開始姿勢へ戻る)。JSON本文スコープ外)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">f</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: With your index finger pointed down, wave the finger like you are shaking salt off of Freddy and say “ffff”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>人差し指1本を立てる <span class="req">(要: index finger pointed down)</span></li><li><span class="verdict vd-ok">OK</span>指先を下向きにする <span class="req">(要: pointed down)</span></li><li><span class="verdict vd-ok">OK</span>塩を振るように上から振る <span class="req">(要: shaking salt off)</span></li><li><span class="verdict vd-ok">OK</span>「ffff」と言う <span class="req">(要: say “ffff”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">g</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Grab his stalk with two fingers and pick one grape and say “g”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手の2本の指で茎をつまむ <span class="req">(要: stalk with two fingers)</span></li><li><span class="verdict vd-ok">OK</span>もう片方の2本の指で1粒をつまむ <span class="req">(要: pick one grape)</span></li><li><span class="verdict vd-ok">OK</span>もいで取る <span class="req">(要: pick one grape)</span></li><li><span class="verdict vd-ok">OK</span>「g」と言う <span class="req">(要: say “g”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">h</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Make a slicing motion with your right hand and say “h”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>右手を包丁に見立てる <span class="req">(要: right hand)</span></li><li><span class="verdict vd-ok">OK</span>切り分けるスライス動作 <span class="req">(要: slicing motion)</span></li><li><span class="verdict vd-ok">OK</span>「h」と言う <span class="req">(要: say “h”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">i</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: With Izzy in your palm flick a seed out with one finger and say “i”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>掌を上に向けて実を乗せる <span class="req">(要: with Izzy in your palm)</span></li><li><span class="verdict vd-ok">OK</span>もう片方の人差し指を弾く構え <span class="req">(要: one finger)</span></li><li><span class="verdict vd-ok">OK</span>種を1粒はじき出す <span class="req">(要: flick a seed out)</span></li><li><span class="verdict vd-ok">OK</span>「i」と言う <span class="req">(要: say “i”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">j</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: With Jimmy on the spoon shake your hand and say “j”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>スプーンにゼリーを乗せる <span class="req">(要: on the spoon)</span></li><li><span class="verdict vd-ok">OK</span>手首を左右に震わせる（プルプル） <span class="req">(要: shake your hand)</span></li><li><span class="verdict vd-ok">OK</span>「j」と言う <span class="req">(要: say “j”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">k</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: To pull her apart put your arms and hands together and move the right hand down and say “k”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両腕と手を揃えて前に出す <span class="req">(要: arms and hands together)</span></li><li><span class="verdict vd-ok">OK</span>右手を下へスッと引く <span class="req">(要: move the right hand down)</span></li><li><span class="verdict vd-ok">OK</span>引き裂いた形で止める <span class="req">(要: pull her apart)</span></li><li><span class="verdict vd-ok">OK</span>「k」と言う <span class="req">(要: say “k”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">l</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: When you clean Lenny, grab him with two hands and pull one up and say “l”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両手で縦に持つ（上の手と下の手） <span class="req">(要: grab him with two hands)</span></li><li><span class="verdict vd-ok">OK</span>洗うようにこする <span class="req">(要: when you clean Lenny)</span></li><li><span class="verdict vd-ok">OK</span>上の手をスッと引き上げる <span class="req">(要: pull one up)</span></li><li><span class="verdict vd-ok">OK</span>「l」と言う <span class="req">(要: say “l”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">m</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Rub your tummy and say “mmmm”.</p>
+  <ol class="steps"><li><span class="verdict vd-note">NOTE</span>片手でマフィンを持つ <span class="req">(JSON本文は「Mary Muffin is a delicious breakfast food. Rub your tummy…」のみで「マフィンを持つ」動作の記述なし。story_diff ストーリー欄「食べたあと」の前段補完)</span></li><li><span class="verdict vd-note">NOTE</span>一口食べる <span class="req">(同上。「一口食べる」は本文に動作として記述なし（ストーリー補完）。アクション核心 Rub your tummy は③で一致)</span></li><li><span class="verdict vd-ok">OK</span>手でお腹を円を描いてさする <span class="req">(要: rub your tummy)</span></li><li><span class="verdict vd-ok">OK</span>「mmmm」と言う <span class="req">(要: say “mmmm”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">n</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Grab Nancy with your chopsticks, bring her to your mouth and say “nnnn”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>箸で麺をつまむ <span class="req">(要: chopsticks)</span></li><li><span class="verdict vd-ok">OK</span>口まで運ぶ <span class="req">(要: bring her to your mouth)</span></li><li><span class="verdict vd-ok">OK</span>すする <span class="req">(要: say “nnnn”)</span></li><li><span class="verdict vd-ok">OK</span>「nnnn」と言う <span class="req">(要: say “nnnn”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">o</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: With one finger above your mouth, bring Ozzie down to your mouth and say “o”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>指先でオリーブをつまむ <span class="req">(要: one finger above your mouth)</span></li><li><span class="verdict vd-ok">OK</span>口の上に構える <span class="req">(要: above your mouth)</span></li><li><span class="verdict vd-ok">OK</span>ゆっくり口へ降ろす <span class="req">(要: bring Ozzie down to your mouth)</span></li><li><span class="verdict vd-ok">OK</span>「o」と言う <span class="req">(要: say “o”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">p</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: With two hands held in front of your body move fingers up and say “p”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両手を体の前で合わせる（掌を上） <span class="req">(要: two hands held in front of your body)</span></li><li><span class="verdict vd-ok">OK</span>指を上へパッと開く <span class="req">(要: move fingers up)</span></li><li><span class="verdict vd-ok">OK</span>「p」と言う <span class="req">(要: say “p”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">q</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: When you fish for Qwilly, pull back with one hand and say “q”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手で釣り竿を構える <span class="req">(要: fish for Qwilly)</span></li><li><span class="verdict vd-ok">OK</span>糸を垂らす <span class="req">(要: fish for Qwilly)</span></li><li><span class="verdict vd-ok">OK</span>手を手前に引く（引き上げる） <span class="req">(要: pull back with one hand)</span></li><li><span class="verdict vd-ok">OK</span>「q」と言う <span class="req">(要: say “q”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">r</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: With one hand pull Randy by from the ground and say “r”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手を土の中のラディッシュへ <span class="req">(要: one hand)</span></li><li><span class="verdict vd-ok">OK</span>ぐっとつかむ <span class="req">(要: pull Randy by from the ground)</span></li><li><span class="verdict vd-ok">OK</span>土から引き抜く <span class="req">(要: from the ground)</span></li><li><span class="verdict vd-ok">OK</span>「r」と言う <span class="req">(要: say “r”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">s</span><span class="badge b-warn">差分(既知)</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Use your thumb and index finger and grab a string of spaghetti and pull up, and say “ssss”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>親指と人差し指で麺をつまむ <span class="req">(要: thumb and index finger)</span></li><li><span class="verdict vd-ok">OK</span>上へ引き上げる <span class="req">(要: pull up)</span></li><li><span class="verdict vd-kd">既知差分</span>手首をひねる <span class="req">(ひねり(twist)は merged PDF 本文「pull up, twist and say」由来。JSON(お話し通り)にはなし → オ課長認定の既知差分・9/17本山先生判断待ち)</span></li><li><span class="verdict vd-ok">OK</span>「ssss」と言う <span class="req">(要: say “ssss”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">t</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Put your hands out to the side and pull Tommy and his friend off the vine and say “t”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両手を体の横に広げる（掌を上） <span class="req">(要: hands out to the side)</span></li><li><span class="verdict vd-ok">OK</span>ツルからトマト2個をつかむ <span class="req">(要: his friend off the vine)</span></li><li><span class="verdict vd-ok">OK</span>引き摘む <span class="req">(要: pull Tommy and his friend off the vine)</span></li><li><span class="verdict vd-ok">OK</span>「t」と言う <span class="req">(要: say “t”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">u</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Grab Unger in one hand, squeeze and say “u”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>片手で実をつかむ <span class="req">(要: grab Unger in one hand)</span></li><li><span class="verdict vd-ok">OK</span>ぎゅっと握る（squeeze） <span class="req">(要: squeeze)</span></li><li><span class="verdict vd-ok">OK</span>「u」と言う <span class="req">(要: say “u”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">v</span><span class="badge b-ok">一致</span><span class="badge b-warn">音: 表記差分</span></div>
+  <p class="json">本文: Put your hands together in front of you and pull apart like a “v” and say “v”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両手を体の前で合わせる <span class="req">(要: hands together in front of you)</span></li><li><span class="verdict vd-ok">OK</span>V字にパッと引き開く <span class="req">(要: pull apart like a “v”)</span></li><li><span class="verdict vd-ok">OK</span>「vvvv」と言う <span class="req">(要: say “v”)</span></li></ol>
+<p class="req" style="margin-top:6px">音表記: JSON “v” vs diff “vvvv”</p></div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">w</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: With hands and fingers pointed down in front of you, wave Wally and say “w”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両手を体の前に出す（指先を下向き） <span class="req">(要: hands and fingers pointed down)</span></li><li><span class="verdict vd-ok">OK</span>指を波打つように振る <span class="req">(要: wave Wally)</span></li><li><span class="verdict vd-ok">OK</span>「w」と言う <span class="req">(要: say “w”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">x</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: As you lay Lexi down on the bagel, you cross your arms and say “x”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両手でロックスを持つ <span class="req">(要: lay Lexi down on the bagel)</span></li><li><span class="verdict vd-ok">OK</span>ベーグルの上に載せる（lay down） <span class="req">(要: lay Lexi down)</span></li><li><span class="verdict vd-ok">OK</span>両腕を交差させる <span class="req">(要: cross your arms)</span></li><li><span class="verdict vd-ok">OK</span>「x」と言う <span class="req">(要: say “x”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">y</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Break Yady open with both hands and say “y”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>両手で山芋を挟んで持つ <span class="req">(要: both hands)</span></li><li><span class="verdict vd-ok">OK</span>両手に開いて割る <span class="req">(要: break Yady open)</span></li><li><span class="verdict vd-ok">OK</span>「y」と言う <span class="req">(要: say “y”)</span></li></ol>
+</div>
+<div class="vcard">
+  <div class="vhead"><span class="lchip">z</span><span class="badge b-ok">一致</span><span class="badge b-ok">音: 一致</span></div>
+  <p class="json">本文: Zachery always zips his mouth shut and says “zzzz”.</p>
+  <ol class="steps"><li><span class="verdict vd-ok">OK</span>口の前に指を立てる <span class="req">(要: zips his mouth shut)</span></li><li><span class="verdict vd-ok">OK</span>チャックを閉めるように手を動かす <span class="req">(要: zips his mouth shut)</span></li><li><span class="verdict vd-ok">OK</span>唇を閉じたまま「zzzz」と言う <span class="req">(要: says “zzzz”)</span></li></ol>
+</div>
+  </div>
+  <h2>TSV 集計（verify_ohanashi_result.txt 末尾より・letter / status / sound_status / note_steps）</h2>
+  <div class="table-wrap"><table>
+<thead><tr><th>letter</th><th>status</th><th>sound_status</th><th>note_steps</th></tr></thead>
+<tbody>
+<tr><td><b>a</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>b</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>c</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>d</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>e</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>f</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>g</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>h</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>i</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>j</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>k</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>l</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>m</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req">①,②</td></tr><tr><td><b>n</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>o</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>p</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>q</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>r</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>s</b></td><td class="cell-diff">差分(既知)</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>t</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>u</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>v</b></td><td class="cell-ok">一致</td><td class="cell-note">表記差分</td><td class="req"></td></tr><tr><td><b>w</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>x</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>y</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr><tr><td><b>z</b></td><td class="cell-ok">一致</td><td class="cell-ok">一致</td><td class="req"></td></tr></tbody>
+</table></div>
+  <h2>A〜C 完全一致確認（params.md 再承認ガード）</h2>
+  <p>a・b・c とも全ステップ OK・音一致（9/5機械突合）。9/10 の確認で A〜C に差分が出た場合は t_95c471e2（生成パラメータ承認済み）への影響としてオ課長へエスカレートして再承認を取る。</p>
+
+  <div class="note">
+    <b>正本・出典</b>: 4号機 <code>~/ProsLC/deliverables/t_a4b29680/</code>（本文正本: <code>source/FonixStory.json</code> — 蜂谷さん 2026-09-05 提供「各キャラのおはなしはプロス公式が公開しているそのまま」）<br>
+    突合: オ課長 <code>verify_ohanashi.py</code>（2026-09-05・NG 0）／ HTML生成: スジュン 2026-09-05（タスク t_1bfcf1c2）／ 掲載: ktblog <code>/pros/deliverables/t_448af273/</code>（Basic認証・関係者限定）<br>
+    フロー: t_a4b29680（機械突合）→ t_1bfcf1c2（HTML化・配置）→ t_448af273（ダッシュボード掲載納品）→ t_fdf511b7（本番検収）
+  </div>
+</div>
+</body>
+</html>

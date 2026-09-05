@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>26キャラ ストーリー・アクション差分表（story_diff） — PROS お話し通り突合（t_a4b29680）</title>
+<style>
+  :root { --bg:#0b1220; --card:#121a2b; --line:#233250; --text:#e8edf7; --muted:#93a1bd; --ok:#4ade80; --warn:#fbbf24; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; padding:24px 16px 60px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  a.back { color:var(--muted); text-decoration:none; font-size:.85rem; }
+  a.back:hover { color:var(--text); }
+  h1 { font-size:1.35rem; margin:10px 0 4px; }
+  .sub { color:var(--muted); font-size:.85rem; line-height:1.7; margin-bottom:20px; }
+  h2 { font-size:1.05rem; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:.92rem; margin:18px 0 8px; }
+  p, li { font-size:.88rem; line-height:1.85; }
+  p { margin:8px 0; }
+  ul, ol { margin:8px 0 8px 22px; }
+  code { background:#0d1526; border:1px solid var(--line); border-radius:4px; padding:1px 6px; font-size:.8em; color:#a8c7ff; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:22px; }
+  .card h2 { border:none; margin:0 0 10px; font-size:1.02rem; }
+  .badge { font-size:.7rem; font-weight:700; padding:2px 8px; border-radius:99px; margin-left:8px; vertical-align:2px; }
+  .b-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .b-warn { background:rgba(251,191,36,.15); color:var(--warn); }
+  .b-muted { background:rgba(147,161,189,.15); color:var(--muted); }
+  .alert { background:rgba(251,191,36,.07); border:1px solid rgba(251,191,36,.45); border-radius:12px; padding:16px 18px; margin-bottom:22px; }
+  .alert h2 { color:var(--warn); border:none; margin:0 0 8px; font-size:1rem; }
+  .alert p, .alert li { font-size:.85rem; }
+  .chips { display:flex; gap:10px; flex-wrap:wrap; margin:6px 0 14px; }
+  .chip { font-size:.78rem; padding:4px 12px; border-radius:99px; border:1px solid var(--line); background:var(--card); }
+  .chip b { color:var(--text); }
+  .toc { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 6px; }
+  .toc a { color:#7ea2ff; text-decoration:none; font-size:.78rem; border:1px solid var(--line); border-radius:99px; padding:3px 10px; }
+  .toc a:hover { background:#16203a; }
+  .table-wrap { overflow-x:auto; margin:12px 0 18px; border:1px solid var(--line); border-radius:10px; }
+  table { border-collapse:collapse; width:100%; font-size:.8rem; line-height:1.7; }
+  th, td { border-bottom:1px solid var(--line); padding:7px 10px; text-align:left; vertical-align:top; white-space:normal; }
+  thead th { background:#0f1830; color:#c6d4f0; font-size:.78rem; position:sticky; top:0; }
+  tbody tr:hover { background:#131d33; }
+  td.cell-ok { color:var(--ok); }
+  td.cell-note { color:var(--warn); }
+  td.cell-diff { color:#f87171; font-weight:600; }
+  .files a { display:block; color:#7ea2ff; text-decoration:none; font-size:.9rem; padding:10px 12px; border:1px solid var(--line); border-radius:10px; margin-bottom:10px; background:var(--card); }
+  .files a:hover { background:#16203a; }
+  .files a b { color:var(--text); }
+  .files a span { display:block; color:var(--muted); font-size:.78rem; margin-top:3px; }
+  .vgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
+  .vcard { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .vhead { display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap; }
+  .lchip { font-weight:800; font-size:1.05rem; color:#ffd28a; background:rgba(255,210,138,.1); border:1px solid rgba(255,210,138,.3); border-radius:8px; padding:1px 10px; }
+  .snd { color:var(--muted); font-size:.72rem; }
+  .json { font-size:.78rem; color:#a8c7ff; background:#0d1526; border:1px solid var(--line); border-radius:8px; padding:8px 10px; margin:6px 0; line-height:1.7; }
+  .steps { list-style:none; margin:6px 0 0; }
+  .steps li { font-size:.78rem; padding:3px 0; border-top:1px dashed #1a2742; line-height:1.7; }
+  .verdict { display:inline-block; font-size:.66rem; font-weight:700; border-radius:5px; padding:0 6px; margin-right:6px; }
+  .vd-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .vd-kd { background:rgba(251,191,36,.18); color:var(--warn); }
+  .vd-note, .vd-skip { background:rgba(147,161,189,.14); color:var(--muted); }
+  .req { color:var(--muted); font-size:.72rem; }
+  .note { border-top:1px dashed var(--line); margin-top:26px; padding-top:14px; color:var(--muted); font-size:.78rem; line-height:1.9; }
+  .note a { color:#7ea2ff; }
+  .note code { font-size:.92em; }
+  del { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/pros/dashboard/">← 首脳ダッシュボードへ戻る</a>
+  <h1>26キャラ ストーリー・アクション差分表（story_diff）</h1>
+  <p class="sub">更新: オ課長 2026-09-05（タスク t_a4b29680）— お話し通り本文入手・機械突合により「お話し通り差分」列 全26行記入済み。変更点一覧は <a href="diff_vs_master.html" style="color:#7ea2ff">diff_vs_master.html</a>、突合の詳細結果は <a href="verify_result.html" style="color:#7ea2ff">verify_result.html</a>。</p>
+  <div class="alert">
+    <h2>9/10（木）蜂谷さん最終確認 — 残議題は s・v の2点のみ</h2>
+    <p>全26行は 2026-09-05 に機械突合済み（verify_ohanashi.py・NG 0）。9/10 は下記2点の確認のみでよい。</p>
+    <ul>
+      <li><b>s / Suzy Spaghetti</b>: 本文は「つまんで引き上げ（pull up）」まで。「ひねる（twist）」は merged版PDF本文「pull up, twist and say」由来で本文にない → どちらを正とするかは <b>9/17 定例で本山先生判断</b>（現行 merged版を維持・オ課長 9/5 決定）</li>
+      <li><b>v / Vicky Velvet Bean</b>: アクションは完全一致。音の発話表記のみ本文 “v” vs 現行 “vvvv” → <b>表記をどちらに寄せるか</b>（wiki正本・merged版は “vvvv”・連続音6字の運用ルールあり）</li>
+    </ul>
+    <p>確認の結果テンプレート本文を書き換える場合: d〜z はそのまま反映。<b>A〜C に差分が出たら t_95c471e2（生成パラメータ params.md 承認済み）への影響としてオ課長へエスカレートして再承認</b>（9/5時点で A〜C は完全一致・影響なし）。</p>
+  </div>
+<div class="card"><h2>目次</h2><div class="toc"></div></div><h1 id="26キャラ-ストーリーアクション差分表story_diff">26キャラ
+ストーリー・アクション差分表（story_diff）</h1>
+<p>作成: キム・ジュモク（第5中隊・教材ライター）2026-09-04 / タスク:
+t_f0ea7de1（親: t_b071b7a8 テンプレート） 更新: オ課長 2026-09-05 /
+タスク:
+t_a4b29680（お話し通り本文入手・機械突合により「お話し通り差分」列を全行記入。変更点一覧は同dir
+<code>diff_vs_master.md</code>） 用途:
+「1文字＝1動画」指示テンプレート（5〜11秒・繰り返しアニメ・音/文字/アクション3点セット）の前提となる、26キャラの「ストーリー（なぜその動きなのか）」と「アクション分解」の一覧。</p>
+<h2 id="0-ソースと優先順位">0. ソースと優先順位</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>優先</th>
+<th>ソース</th>
+<th>内容・役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1（正本）</td>
+<td><code>wiki/pros-phonics.md</code>（merged版準拠一覧表）+
+<code>inbox/01_PP_A4_a-z_merged.pdf</code></td>
+<td>字・キャラ名・食べ物・アクション・音の基準。アクションは改訂後（塩振り
+f・つまみひねり s・V字 v）を採用</td>
+</tr>
+<tr>
+<td>2（お話し通り・突合対象）</td>
+<td>8/30送付アプリの「お話し通り」本文 — 蜂谷さん 2026-09-05
+提供・「各キャラのおはなしはプロス公式が公開しているそのまま」。<strong>正本:
+<code>~/ProsLC/deliverables/t_a4b29680/source/FonixStory.json</code></strong>（出典キャッシュ:
+<code>~/.hermes/profiles/oh/cache/documents/doc_d96330bf29f2_FonixStory.json</code>・26字
+EN/JA 本文＋語彙）</td>
+<td><strong>2026-09-05 機械突合済み（verify_ohanashi.py・NG
+0）</strong>。差分は s（ひねり）・v（音表記）の2点のみ →
+§1「お話し通り差分」列に記入。9/10
+は蜂谷さんによる残差分2点の最終確認のみ。矛盾時のお話し通り優先ルールのうち
+s への適用可否は 9/17 定例で本山先生判断（現行 merged版を維持・オ課長
+9/5 決定）</td>
+</tr>
+<tr>
+<td>3（説明補助）</td>
+<td><code>inbox/00_PP_A4_Story_short.pdf</code>（全文ストーリー版・merged版と英文同一文）</td>
+<td>味覚・食べ方の背景。旧「short版」由来の固有表現（U字手形 u・ピック
+o・骨 h・vサプリ等）は2026-09-04 の裏取りで誤出典と判明 →
+削除済み・merged版どおり確定（t_72096f03/short-noto-uratori.md
+§2〜§3）</td>
+</tr>
+<tr>
+<td>4（口頭裏付け）</td>
+<td>9/3定例 文字起こし（本山先生）</td>
+<td>a・b・d のジェスチャーの意味と理論（§3 に出典時刻付きで明記）</td>
+</tr>
+</tbody>
+</table></div>
+<p>注: <code>01_PP_A4_a-z_food.pdf</code> は p12 が Kelly Kelp
+重複（Lenny Leek 欠落）のため src
+としては使わない（差分参照のみ・§4）。</p>
+<h2 id="1-一覧表az全26行">1. 一覧表（a〜z・全26行）</h2>
+<p>各行: 字 / キャラ名 / 食べ物 / ストーリー（なぜその動きか） /
+アクション分解（手の動き3〜5ステップ・「」は発声のタイミング） /
+音（letter sound・連続音は ffff/mmmm 表記） / 文字表記 / wiki突合 /
+お話し通り差分。
+文字表記の【案】＝公式イラスト未確認のデザイン仮説（a〜c
+は生成パラメータ <code>~/ProsLC/deliverables/t_95c471e2/params.md</code>
+§4 承認済み）。2026-09-04
+にメソッド動画（prosphonics_method_full.mp4）に映る公式授業カードとフレーム照合し、j・r・t・u・v・x・y・z
+の8字を訂正・k
+は要再確認（~/ProsLC/deliverables/t_72096f03/method-video-analysis.md
+§2）。正式一覧表DL入手時に最終確認。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>字</th>
+<th>キャラ名</th>
+<th>食べ物</th>
+<th>ストーリー（なぜその動きか）</th>
+<th>アクション分解</th>
+<th>音</th>
+<th>文字表記</th>
+<th>wiki突合</th>
+<th>お話し通り差分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>Annie Apple</td>
+<td>リンゴ</td>
+<td>赤くて丸くて美味しいリンゴを手に持って、口に運んで食べる。動きそのものが「食べる」で、深い理由はない（9/3定例・本山先生「理由はなく
+あー。動きと音を結びつける練習」）</td>
+<td>①手のひらにリンゴを乗せる → ②口の前に運ぶ →
+③口を大きく開けて「a」と言う → ④開始姿勢へ戻る</td>
+<td>a</td>
+<td>a の丸い膨らみがリンゴ本体・短い尾が茎（承認済み）</td>
+<td class="cell-ok">✓一致（L36）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Betty Broccoli</td>
+<td>ブロッコリー</td>
+<td>緑の美味しい野菜でビタミンCたっぷり。茎を持って、食べる緑の房を「ブッ」と引き剥がす下ごしらえの動き（9/3定例・本山先生「茎を持って房を剥がしてブッ」）</td>
+<td>①片手で茎をつかむ → ②もう片方の手で緑の部分（房）をつかむ →
+③緑の部分をブッと引き離す → ④開始姿勢へ戻る</td>
+<td>b</td>
+<td>縦棒が茎・丸い部分が緑の房（承認済み）</td>
+<td class="cell-ok">✓一致（L37）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>c</td>
+<td>Cary Cucumber</td>
+<td>キュウリ</td>
+<td>みずみずしくカリッとした夏のおやつ。洗ってそのまま口に運んで一口かじる</td>
+<td>①片手でキュウリを持つ → ②口に運ぶ → ③一口パクッとかじる →
+④開始姿勢へ戻る</td>
+<td>c</td>
+<td>c の弧がキュウリのつるりの曲線（承認済み）</td>
+<td class="cell-ok">✓一致（L38）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>d</td>
+<td>Duncan Donut</td>
+<td>ドーナツ</td>
+<td>朝食の定番で、ココアやコーヒーに浸して食べるのがアメリカ流 —
+だから浸す（dunk）動きになる（9/3定例・本山先生「そういう食べ方するからアメリカ人」）</td>
+<td>①片手にカップを持つ → ②もう片方の手にドーナツを持つ →
+③カップの中へ浸す（dunk） → ④「d」と言う → ⑤開始姿勢へ戻る</td>
+<td>d</td>
+<td>丸い部分がドーナツの輪・縦棒は要確認【案】</td>
+<td class="cell-ok">✓一致（L39）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>e</td>
+<td>Emma Eggplant</td>
+<td>ナス</td>
+<td>紫色で体が卵のような形のヘルシー野菜（ダイエット食）。調理前にヘタを引っ張って取る</td>
+<td>①片手でナスの体をつかむ → ②もう片方の手でヘタをつかむ →
+③ヘタを引き抜く → ④「e」と言う → ⑤開始姿勢へ戻る</td>
+<td>e</td>
+<td>輪の部分がナスの本体・上の横ばりがヘタ【案】</td>
+<td class="cell-ok">✓一致（L40）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>f</td>
+<td>Freddy French Fry</td>
+<td>フライドポテト</td>
+<td>熱々でケチャップに合う。人差し指をフレンチフライに見立て、塩を落とすように振って味を整える
+— merged版で新設された動き（food版の旧動作「口に運ぶ」は廃止・§4）</td>
+<td>①人差し指1本を立てる → ②指先を下向きにする →
+③塩を振るように上から振る → ④「ffff」と言う</td>
+<td>ffff</td>
+<td>縦棒がフライ（指）・上の横ばりが塩の振り【案】</td>
+<td class="cell-ok">✓一致（L41）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>g</td>
+<td>Gary Grape</td>
+<td>ぶどう</td>
+<td>丸くて紫の果物。おやつにもジュースにもなる。房の茎をつまんで、1粒ずつもいで食べる</td>
+<td>①片手の2本の指で茎をつまむ → ②もう片方の2本の指で1粒をつまむ →
+③もいで取る → ④「g」と言う</td>
+<td>g</td>
+<td>丸い部分が房・下の尾が茎【案】</td>
+<td class="cell-ok">✓一致（L42）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>h</td>
+<td>Hazel Ham</td>
+<td>ハム</td>
+<td>サンドイッチにぴったりの肉。切り分けて食べるため、右手を包丁に見立てたスライスの動きになる</td>
+<td>①右手を包丁に見立てる → ②切り分けるスライス動作 → ③「h」と言う</td>
+<td>h</td>
+<td>アーチがハムの塊・縦棒は骨【案】</td>
+<td class="cell-ok">✓一致（L43）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>i</td>
+<td>Izzy Ita Palm</td>
+<td>イタヤシの実(南米)</td>
+<td>南米の小さな果物で種がたくさん（ビタミンA・C）。掌に載せて、指で種をパチッとはじき出す</td>
+<td>①掌を上に向けて実を乗せる → ②もう片方の人差し指を弾く構え →
+③種を1粒はじき出す → ④「i」と言う</td>
+<td>i</td>
+<td>縦棒が実・点がはじき出す種【案】</td>
+<td class="cell-ok">✓一致（L44）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>j</td>
+<td>Jimmy Jello</td>
+<td>ゼリー</td>
+<td>ぷるぷるとよく揺れるデザート（低カロリー）。スプーンに載せても震える
+— その揺れをそのまま手で真似る</td>
+<td>①スプーンにゼリーを乗せる → ②手首を左右に震わせる（プルプル） →
+③「j」と言う</td>
+<td>j</td>
+<td>フック部分に黄色いゼリー【案】</td>
+<td class="cell-ok">✓一致（L45）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>k</td>
+<td>Kelly Kelp</td>
+<td>昆布(海草)</td>
+<td>海に住む海草（カルシウム・ビタミンA）。長いので、両腕を揃えて持って右手を下へ引き裂く</td>
+<td>①両腕と手を揃えて前に出す → ②右手を下へスッと引く →
+③引き裂いた形で止める → ④「k」と言う</td>
+<td>k</td>
+<td>縦棒が昆布の体・斜めの腕が引く手【案】</td>
+<td class="cell-ok">✓一致（L46）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>l</td>
+<td>Lenny Leek</td>
+<td>ポロネギ</td>
+<td>長くて白と緑の野菜（カルシウム・ビタミンC・ダイエット食）。使う前に両手で洗う
+— 汚れを落とすように上の手を引き上げる。food版では本キャラ欠落（p12
+重複・§4）</td>
+<td>①両手で縦に持つ（上の手と下の手） → ②洗うようにこする →
+③上の手をスッと引き上げる → ④「l」と言う</td>
+<td>l</td>
+<td>縦棒がポロネギの長い軸【案】</td>
+<td class="cell-ok">✓一致（L47）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>m</td>
+<td>Mary Muffin</td>
+<td>マフィン</td>
+<td>ふわふわで朝食にぴったり。食べたあと、お腹をさすって「うまい」を表現する</td>
+<td>①片手でマフィンを持つ → ②一口食べる → ③手でお腹を円を描いてさする →
+④「mmmm」と言う</td>
+<td>mmmm</td>
+<td>3連のアーチがマフィンの膨らみ【案】</td>
+<td class="cell-ok">✓一致（L48）</td>
+<td class="cell-note">一致（注記）—
+①「持つ」②「一口食べる」は本文に動作記述なし（ストーリー欄の前段補完）。核心「お腹をさする(rub
+your tummy)」は本文どおり一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>n</td>
+<td>Nancy Noodle</td>
+<td>麺</td>
+<td>炭水化物たっぷりのエネルギー食。誰もが大好き —
+箸でつまんで口へ運んですする</td>
+<td>①箸で麺をつまむ → ②口まで運ぶ → ③すする → ④「nnnn」と言う</td>
+<td>nnnn</td>
+<td>アーチが麺のゆるいカーブ【案】</td>
+<td class="cell-ok">✓一致（L49）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>o</td>
+<td>Ozzie Olive</td>
+<td>オリーブ</td>
+<td>小さくて低カロリーのダイエット食（良い脂質が多い）。指でつまんで、口の上からゆっくり降ろして食べる</td>
+<td>①指先でオリーブをつまむ → ②口の上に構える → ③ゆっくり口へ降ろす →
+④「o」と言う</td>
+<td>o</td>
+<td>輪がオリーブの実そのもの【案】</td>
+<td class="cell-ok">✓一致（L50）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>p</td>
+<td>Puffy Popcorn</td>
+<td>ポップコーン</td>
+<td>たんぱく質と食物繊維が多くてヘルシーなおやつ。鍋の中で弾ける —
+両手を合わせて開くとポンと開く</td>
+<td>①両手を体の前で合わせる（掌を上に） → ②指を上へパッと開く →
+③「p」と言う</td>
+<td>p</td>
+<td>丸い部分が弾けるポップコーン・縦棒は鍋の柄【案】</td>
+<td class="cell-ok">✓一致（L51）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>q</td>
+<td>Qwilly Queenfish</td>
+<td>クイーンフィッシュ(豪州近海)</td>
+<td>オーストラリア近海に住む白身の魚（低脂肪）。釣りで釣る —
+アタリが来たら糸を手前に引く</td>
+<td>①片手で釣り竿を構える → ②糸を垂らす → ③手を手前に引く（引き上げる）
+→ ④「q」と言う</td>
+<td>q</td>
+<td>丸い部分が魚の体・縦棒が釣り糸【案】</td>
+<td class="cell-ok">✓一致（L52）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>r</td>
+<td>Randy Radish（旧Ruby）</td>
+<td>ラディッシュ</td>
+<td>サラダに合う小さくて赤い野菜（低脂肪・食物繊維・ビタミンC）。土から引き抜いて収穫する。food版の名前は旧
+Ruby Radish（§4）</td>
+<td>①片手を土の中のラディッシュへ → ②ぐっとつかむ → ③土から引き抜く →
+④「r」と言う</td>
+<td>r</td>
+<td>赤い根（ラディッシュ）＋緑の葉【案】</td>
+<td class="cell-ok">✓一致（L53）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>s</td>
+<td>Suzy Spaghetti</td>
+<td>スパゲッティ</td>
+<td>誰に愛される麺（炭水化物・食物繊維・鉄分）。親指と人差し指で1束つまんで引き上げ、くるっとひねる
+—
+merged版で新設された動き（food版の旧動作「フォークで巻く」は廃止・§4）</td>
+<td>①親指と人差し指で麺をつまむ → ②上へ引き上げる → ③手首をひねる →
+④「ssss」と言う</td>
+<td>ssss</td>
+<td>曲線がスパゲッティ1本【案】</td>
+<td class="cell-ok">✓一致（L54）</td>
+<td class="cell-diff">差分（既知）— 本文は「つまんで引き上げ(pull
+up)」まで・「ひねる(twist)」はmerged版PDF本文「pull up, twist and
+say」由来で本文にない。テンプレート本文は書き換えず 9/17
+定例で本山先生判断（オ課長 9/5 決定・9/5機械突合）</td>
+</tr>
+<tr>
+<td>t</td>
+<td>Tommy Tomato</td>
+<td>トマト</td>
+<td>ツルに実る赤くて丸い野菜（低脂肪・食物繊維・ビタミン）。両手を広げて、トマトとそのお友だちを一緒に摘み取る</td>
+<td>①両手を体の横に広げる（掌を上） → ②ツルからトマト2個をつかむ →
+③引き摘む → ④「t」と言う</td>
+<td>t</td>
+<td>緑のツルに赤いトマトの実【案】</td>
+<td class="cell-ok">✓一致（L55）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>u</td>
+<td>Unger Ugli Fruit</td>
+<td>ウグリフルーツ(ジャマイカ)</td>
+<td>ジャマイカ産。見た目は丑いけど甘くて美味しい（ビタミンC）。片手で握って柔らかさを確かめる</td>
+<td>①片手で実をつかむ → ②ぎゅっと握る（squeeze） → ③「u」と言う</td>
+<td>u</td>
+<td>U字の窪みにオレンジ色の実（ウグリ）が載る【案】</td>
+<td class="cell-ok">✓一致（L56）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>v</td>
+<td>Vicky Velvet Bean</td>
+<td>ベルベットビーン</td>
+<td>ビタミンとミネラルたっぷりで体を強くする。両手を合わせて持って、V字にパッと引き開く（merged版改訂動作・§4）</td>
+<td>①両手を体の前で合わせる → ②V字にパッと引き開く →
+③「vvvv」と言う</td>
+<td>vvvv</td>
+<td>V字に淡色の実（ベルベットビーン）【案】</td>
+<td class="cell-ok">✓一致（L57）</td>
+<td class="cell-note">一致（表記差分）— アクションは完全一致。音の発話表記のみ本文 "v" vs
+現行 "vvvv"（表記の正は merged版 "vvvv" を維持・9/5機械突合）</td>
+</tr>
+<tr>
+<td>w</td>
+<td>Wally Watercress</td>
+<td>クレソン(川の水草)</td>
+<td>川の水辺に住む濃い緑の葉野菜（サラダに最高・ビタミン豊富）。水流に揺れる
+— 指先を下に向けてひらひらと振る</td>
+<td>①両手を体の前に出す（指先を下向き） → ②指を波打つように振る →
+③「w」と言う</td>
+<td>w</td>
+<td>波形が水草の揺れ【案】</td>
+<td class="cell-ok">✓一致（L58）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Lexi Lox</td>
+<td>ロックス(喫煙サーモン)</td>
+<td>ベーグルに載せる特別に調理したサーモン（低脂肪・低カロリー）。ベーグルに載せるとき、自然と両腕が交差して
+X になる</td>
+<td>①両手でロックスを持つ → ②ベーグルの上に載せる（lay down） →
+③両腕を交差させる → ④「x」と言う</td>
+<td>x</td>
+<td>Xの字に赤いサーモン（ロックス）【案】</td>
+<td class="cell-ok">✓一致（L59）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>y</td>
+<td>Yady Yam</td>
+<td>山芋</td>
+<td>中が紫〜紅色で甘い（低脂肪・食物繊維・栄養豊富）。両手で挟んでパカッと割って食べる</td>
+<td>①両手で山芋を挟んで持つ → ②両手に開いて割る → ③「y」と言う</td>
+<td>y</td>
+<td>緑の葉＋紅紫の山芋【案】</td>
+<td class="cell-ok">✓一致（L60）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+<tr>
+<td>z</td>
+<td>Zachery Zucchini（旧Zach）</td>
+<td>ズッキーニ</td>
+<td>低カロリーでビタミンA・Cたっぷり。とても内気でおしゃべりが苦手 —
+いつも口をチャックで閉じている。food版の名前は旧 Zach
+Zucchini（§4）</td>
+<td>①口の前に指を立てる → ②チャックを閉めるように手を動かす →
+③唇を閉じたまま「zzzz」と言う</td>
+<td>zzzz</td>
+<td>緑のズッキーニがジグザグ（口のチャック表現はストーリー側で維持）【案】</td>
+<td class="cell-ok">✓一致（L61）</td>
+<td class="cell-ok">一致（9/5機械突合）</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-910-蜂谷さん最終確認残議題のみ">2. 9/10
+蜂谷さん最終確認（残議題のみ）</h2>
+<p>2026-09-05、本文（FonixStory.json）入手により全26行を機械突合済み（verify_ohanashi.py・NG
+0・§1「お話し通り差分」列記入済み）。9/10
+の突合会は下記の残差分2点の確認のみでよい。</p>
+<ol type="1">
+<li><strong>s / Suzy Spaghetti</strong>: 本文は「つまんで引き上げ(pull
+up)」まで・merged版テンプレートの「ひねる(twist)」はPDF本文由来。<strong>どちらを正とするか本山先生の判断（9/17
+定例議題「h・m・s
+採否」と共通）</strong>。蜂谷さんの「お話し通り」読み解きで裏取りが取れたら反映する。</li>
+<li><strong>v / Vicky Velvet Bean</strong>: 音の発話表記が本文 "v" vs
+現行
+"vvvv"（アクションは完全一致）。<strong>表記をどちらに寄せるか</strong>のみ（wiki正本・merged版は
+"vvvv"・連続音6字の運用ルールあり）。</li>
+<li>確認の結果テンプレート本文を書き換える場合は、d〜z
+はそのまま反映・<strong>A〜C に差分が出た場合は t_95c471e2（params.md
+承認済み）への影響をオ課長へエスカレートして再承認を取る</strong>（9/5時点で
+A〜C は完全一致・影響なし）。</li>
+</ol>
+<h2 id="3-93定例で本山先生が口頭説明済みのストーリー裏付けメモ">3.
+9/3定例で本山先生が口頭説明済みのストーリー（裏付けメモ）</h2>
+<p>出典:
+<code>wiki/meeting-2026-09-03-transcript.txt</code>（時刻付き）・<code>wiki/meeting-2026-09-03.md</code>「プロスフォニックスの核」</p>
+<ul>
+<li><strong>a / Annie Apple</strong>: 「手にリンゴ → 口へ →
+あっ」。ジェスチャーに深い理由はなく、<strong>動きと音を結びつける練習</strong>が目的（[039:22]「理由はなく
+あーなんですよ」）。</li>
+<li><strong>b / Betty Broccoli</strong>:
+「茎を持って、緑の房をブッと剥がす」。食べる下ごしらえがそのままアクション（[037:44]〜[038:17]）。</li>
+<li><strong>d / Duncan Donut</strong>:
+「カップを持って、ドーナツをココアに浸してドゥ」。<strong>アメリカではそういう食べ方</strong>というストーリーがある（[042:23]〜[042:53]）。</li>
+<li>理論:
+<strong>動きの形の意味を理解していないとジェスチャーがズレる</strong>（[042:11]〜）→
+本表の「ストーリー」列はテンプレート作成時の理解の根拠になる。</li>
+<li>運用原則:
+3点セット（音・文字・アクション）必須／クイズにしない・お手本を真似る／ダメ出しせず「できたね」を積む。</li>
+</ul>
+<h2 id="4-food版--merged版-の差分明細本表は-merged版採用">4. food版 →
+merged版 の差分明細（本表は merged版採用）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>food版（旧・使用禁止）</th>
+<th>merged版（本表）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p12（l）</td>
+<td><strong>Kelly Kelp が重複し Lenny Leek 欠落</strong></td>
+<td>Lenny Leek 正常収録</td>
+</tr>
+<tr>
+<td>f のアクション</td>
+<td>「口に運ぶ（bring him to your mouth）」</td>
+<td>「人差し指を下向きに、塩を振るよう振る」に改訂</td>
+</tr>
+<tr>
+<td>s のアクション</td>
+<td>「フォークで巻く（spin on your fork）」</td>
+<td>「親指+人差し指でつまみ、引き上げてひねる」に改訂</td>
+</tr>
+<tr>
+<td>v のアクション</td>
+<td>「両手の間に挟んで引き離す」</td>
+<td>「両手を合わせてV字に開く」に改訂</td>
+</tr>
+<tr>
+<td>改名</td>
+<td>Ruby Radish / Zach Zucchini</td>
+<td><strong>Randy Radish / Zachery Zucchini</strong></td>
+</tr>
+<tr>
+<td>音・表記</td>
+<td>末尾ピリオドあり・音列が aa/bb/cc 等重字・z は "z"</td>
+<td>ピリオド廃止・音列は単字表記（連続音は ffff/mmmm 等のみ）・" i " " j
+" はスペース付き表記</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-要確認リスト911-突合時のチェックポイント">5.
+要確認リスト（9/11 突合時のチェックポイント）</h2>
+<ol type="1">
+<li><del>「お話し通り」アプリ本文がローカルに未入手 →
+全行の差分列が「未照合」。9/10 の蜂谷さん説明後に §2
+の手順で更新すること</del> → <strong>解消（2026-09-05）</strong>:
+本文入手・機械突合済み（§0・§2）。残差分は s・v の2点のみ（9/10
+蜂谷さん最終確認）。</li>
+<li>**文字表記の【案】（d〜z・23字）**はデザイン仮説。公式キャラクター一覧表DLはパスワード保護中（wiki
+open-questions.md #5）なので、公式イラスト入手後に確定させる。</li>
+<li><strong>o の「ピックに刺す」</strong>:
+裏取り完了・merged版どおり確定（2026-09-04）。手元2PDFは英文同一文で
+short版固有の記述は誤出典（t_72096f03/short-noto-uratori.md
+§2）。イラストに手・ピックの描き込みなし → 映像の正は
+merged版「指を口の上に、ゆっくり降ろす」。§1 o 行は修正済み。</li>
+<li><strong>h の「左手で骨を持つ」</strong>:
+裏取り完了・merged版どおり確定（2026-09-04）。両PDFのイラストに手・人体を描いたキャラは1つもない（同上
+§2.3）→ 右手スライスのみ。§1 h 行のアクションは
+merged版どおりに修正済み。</li>
+<li><strong>u の「U字手形」</strong>:
+裏取り完了・merged版どおり確定（2026-09-04）。アクションは「片手で握ってsqueeze」。文字表記のU字説明は公式イラスト照合で「U字の窪みに実が載る」に更新（t_72096f03/method-video-analysis.md
+§2）。§1 u 行は修正済み。</li>
+<li>A〜C に差分が出た場合は
+t_95c471e2（生成パラメータ承認済み）への影響を必ずオ課長にエスカレートする。</li>
+</ol>
+<h2 id="6-受入基準セルフチェックt_f0ea7de12026-09-04納品時点の記録">6.
+受入基準セルフチェック（t_f0ea7de1・2026-09-04納品時点の記録）</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>基準</th>
+<th>判定</th>
+<th>根拠</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26文字（a〜z）全行が埋まっている</td>
+<td>OK</td>
+<td>§1 に26行。a〜z の欠落なし（スクリプト検証済み・§7）</td>
+</tr>
+<tr>
+<td>各キャラにストーリーとアクション分解がある</td>
+<td>OK</td>
+<td>全行にストーリー（1〜2文）＋3〜5ステップのアクション分解＋音＋文字表記</td>
+</tr>
+<tr>
+<td>wiki/pros-phonics.md と一致していることを突合できる列</td>
+<td>OK</td>
+<td>「wiki突合」列（字・キャラ名・食べ物・アクション概要・音の5項目をスクリプトで照合・§7）</td>
+</tr>
+<tr>
+<td>「お話し通り」との差分を明記する列</td>
+<td>OK</td>
+<td>「お話し通り差分」列。本文未入手のため全行「未照合（9/10説明待ち）」を明記し、§2
+に突合手順、§3 に口頭説明済み分の裏付け ※2026-09-05
+に本文入手済み・全行記入完了（§0・§2）</td>
+</tr>
+<tr>
+<td>差分表が9/11時点で蜂谷さんの説明と突合できる状態</td>
+<td>OK</td>
+<td>列構造がそのまま転記欄になる設計。優先ルール（矛盾時はお話し通り）とA〜Cのエスカレーション先を明記</td>
+</tr>
+<tr>
+<td>クラウドアップロードなし（ローカル処理のみ）</td>
+<td>OK</td>
+<td>入力はローカルの wiki・PDF のみ。外部送信なし</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-検証方法">7. 検証方法</h2>
+<p><code>verify_story_diff.py</code>（t_f0ea7de1
+同梱）が次を機械的に確認する: ①本表の行数＝26・a〜z 連続
+②字/キャラ名/食べ物/音が <code>wiki/pros-phonics.md</code>
+一覧表（L34〜61）と完全一致 ③アクション分解・ストーリーの空欄なし。
+お話し通り本文との突合は <code>verify_ohanashi.py</code>（t_a4b29680
+同梱・2026-09-05）が担当: 26字ぶんの本文アクション句 ↔︎ 本表 §1
+アクション分解・音列を突合し、結果を
+<code>verify_ohanashi_result.txt</code>
+に出力する（本表の「お話し通り差分」列の値は同スクリプトの TSV
+集計と対応）。</p>
+
+  <div class="note">
+    <b>正本・出典</b>: 4号機 <code>~/ProsLC/deliverables/t_a4b29680/</code>（本文正本: <code>source/FonixStory.json</code> — 蜂谷さん 2026-09-05 提供「各キャラのおはなしはプロス公式が公開しているそのまま」）<br>
+    突合: オ課長 <code>verify_ohanashi.py</code>（2026-09-05・NG 0）／ HTML生成: スジュン 2026-09-05（タスク t_1bfcf1c2）／ 掲載: ktblog <code>/pros/deliverables/t_448af273/</code>（Basic認証・関係者限定）<br>
+    フロー: t_a4b29680（機械突合）→ t_1bfcf1c2（HTML化・配置）→ t_448af273（ダッシュボード掲載納品）→ t_fdf511b7（本番検収）
+  </div>
+</div>
+</body>
+</html>

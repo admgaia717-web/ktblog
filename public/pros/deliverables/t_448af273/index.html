@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お話し通り突合 成果物（t_a4b29680） — PROS お話し通り突合（t_a4b29680）</title>
+<style>
+  :root { --bg:#0b1220; --card:#121a2b; --line:#233250; --text:#e8edf7; --muted:#93a1bd; --ok:#4ade80; --warn:#fbbf24; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; padding:24px 16px 60px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  a.back { color:var(--muted); text-decoration:none; font-size:.85rem; }
+  a.back:hover { color:var(--text); }
+  h1 { font-size:1.35rem; margin:10px 0 4px; }
+  .sub { color:var(--muted); font-size:.85rem; line-height:1.7; margin-bottom:20px; }
+  h2 { font-size:1.05rem; margin:28px 0 10px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  h3 { font-size:.92rem; margin:18px 0 8px; }
+  p, li { font-size:.88rem; line-height:1.85; }
+  p { margin:8px 0; }
+  ul, ol { margin:8px 0 8px 22px; }
+  code { background:#0d1526; border:1px solid var(--line); border-radius:4px; padding:1px 6px; font-size:.8em; color:#a8c7ff; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:22px; }
+  .card h2 { border:none; margin:0 0 10px; font-size:1.02rem; }
+  .badge { font-size:.7rem; font-weight:700; padding:2px 8px; border-radius:99px; margin-left:8px; vertical-align:2px; }
+  .b-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .b-warn { background:rgba(251,191,36,.15); color:var(--warn); }
+  .b-muted { background:rgba(147,161,189,.15); color:var(--muted); }
+  .alert { background:rgba(251,191,36,.07); border:1px solid rgba(251,191,36,.45); border-radius:12px; padding:16px 18px; margin-bottom:22px; }
+  .alert h2 { color:var(--warn); border:none; margin:0 0 8px; font-size:1rem; }
+  .alert p, .alert li { font-size:.85rem; }
+  .chips { display:flex; gap:10px; flex-wrap:wrap; margin:6px 0 14px; }
+  .chip { font-size:.78rem; padding:4px 12px; border-radius:99px; border:1px solid var(--line); background:var(--card); }
+  .chip b { color:var(--text); }
+  .toc { display:flex; gap:8px; flex-wrap:wrap; margin:0 0 6px; }
+  .toc a { color:#7ea2ff; text-decoration:none; font-size:.78rem; border:1px solid var(--line); border-radius:99px; padding:3px 10px; }
+  .toc a:hover { background:#16203a; }
+  .table-wrap { overflow-x:auto; margin:12px 0 18px; border:1px solid var(--line); border-radius:10px; }
+  table { border-collapse:collapse; width:100%; font-size:.8rem; line-height:1.7; }
+  th, td { border-bottom:1px solid var(--line); padding:7px 10px; text-align:left; vertical-align:top; white-space:normal; }
+  thead th { background:#0f1830; color:#c6d4f0; font-size:.78rem; position:sticky; top:0; }
+  tbody tr:hover { background:#131d33; }
+  td.cell-ok { color:var(--ok); }
+  td.cell-note { color:var(--warn); }
+  td.cell-diff { color:#f87171; font-weight:600; }
+  .files a { display:block; color:#7ea2ff; text-decoration:none; font-size:.9rem; padding:10px 12px; border:1px solid var(--line); border-radius:10px; margin-bottom:10px; background:var(--card); }
+  .files a:hover { background:#16203a; }
+  .files a b { color:var(--text); }
+  .files a span { display:block; color:var(--muted); font-size:.78rem; margin-top:3px; }
+  .vgrid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
+  .vcard { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .vhead { display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap; }
+  .lchip { font-weight:800; font-size:1.05rem; color:#ffd28a; background:rgba(255,210,138,.1); border:1px solid rgba(255,210,138,.3); border-radius:8px; padding:1px 10px; }
+  .snd { color:var(--muted); font-size:.72rem; }
+  .json { font-size:.78rem; color:#a8c7ff; background:#0d1526; border:1px solid var(--line); border-radius:8px; padding:8px 10px; margin:6px 0; line-height:1.7; }
+  .steps { list-style:none; margin:6px 0 0; }
+  .steps li { font-size:.78rem; padding:3px 0; border-top:1px dashed #1a2742; line-height:1.7; }
+  .verdict { display:inline-block; font-size:.66rem; font-weight:700; border-radius:5px; padding:0 6px; margin-right:6px; }
+  .vd-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .vd-kd { background:rgba(251,191,36,.18); color:var(--warn); }
+  .vd-note, .vd-skip { background:rgba(147,161,189,.14); color:var(--muted); }
+  .req { color:var(--muted); font-size:.72rem; }
+  .note { border-top:1px dashed var(--line); margin-top:26px; padding-top:14px; color:var(--muted); font-size:.78rem; line-height:1.9; }
+  .note a { color:#7ea2ff; }
+  .note code { font-size:.92em; }
+  del { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/pros/dashboard/">← 首脳ダッシュボードへ戻る</a>
+  <h1>お話し通り突合 成果物（t_a4b29680）</h1>
+  <p class="sub">26キャラ×「お話し通り」本文の突合結果一式。9/10（木）蜂谷さん最終確認（残差分 s・v の2点）の事前資料。突合: オ課長 2026-09-05（NG 0）／ HTML化・配置: スジュン（t_1bfcf1c2）</p>
+  <div class="chips">
+    <span class="chip">突合対象 <b>26字すべて</b></span>
+    <span class="chip">機械突合 <b>NG 0</b>（verify_ohanashi.py・9/5）</span>
+    <span class="chip">完全一致 <b>23</b> ＋ 注記1（m）＋ 既知差分1（s）＋ 表記差分1（v）</span>
+  </div>
+  <div class="alert">
+    <h2>9/10（木）蜂谷さん最終確認 — 残議題は s・v の2点のみ</h2>
+    <p>全26行は 2026-09-05 に機械突合済み（verify_ohanashi.py・NG 0）。9/10 は下記2点の確認のみでよい。</p>
+    <ul>
+      <li><b>s / Suzy Spaghetti</b>: 本文は「つまんで引き上げ（pull up）」まで。「ひねる（twist）」は merged版PDF本文「pull up, twist and say」由来で本文にない → どちらを正とするかは <b>9/17 定例で本山先生判断</b>（現行 merged版を維持・オ課長 9/5 決定）</li>
+      <li><b>v / Vicky Velvet Bean</b>: アクションは完全一致。音の発話表記のみ本文 “v” vs 現行 “vvvv” → <b>表記をどちらに寄せるか</b>（wiki正本・merged版は “vvvv”・連続音6字の運用ルールあり）</li>
+    </ul>
+    <p>確認の結果テンプレート本文を書き換える場合: d〜z はそのまま反映。<b>A〜C に差分が出たら t_95c471e2（生成パラメータ params.md 承認済み）への影響としてオ課長へエスカレートして再承認</b>（9/5時点で A〜C は完全一致・影響なし）。</p>
+  </div>
+  <div class="card">
+    <h2>出典・経緯<span class="badge b-ok">検品合格</span></h2>
+    <ul>
+      <li><b>「お話し通り」本文</b>: 蜂谷さん 2026-09-05 提供 —「各キャラのおはなしはプロス公式が公開しているそのまま」（8/30送付アプリ本文・正本 <code>source/FonixStory.json</code>・26字 EN/JA 本文＋語彙）</li>
+      <li><b>2026-09-05 機械突合</b>: verify_ohanashi.py で26字ぶんの本文アクション句 ↔ 差分表アクション分解・音列を突合（NG 0）。「お話し通り差分」列 全26行記入済み</li>
+      <li><b>テンプレート本文は書き換えず</b>: 現行 merged版を維持（オ課長 9/5 決定）。s の「ひねる（twist）」採否のみ 9/17 定例で本山先生判断</li>
+    </ul>
+  </div>
+  <div class="card files">
+    <h2>成果物（3点・すべて本ページ配下のHTML）</h2>
+    <a href="story_diff.html"><b>story_diff.html — 26キャラ ストーリー・アクション差分表</b><span>「お話し通り差分」列入りの全セクション（§0 ソースと優先順位〜§7 検証方法）。9/10 の残議題はページ冒頭に強調表示</span></a>
+    <a href="verify_result.html"><b>verify_result.html — 機械突合の結果</b><span>26字ぶんの判定カード（本文文 ↔ アクション分解のステップ別判定）＋ TSV 集計。s・v・m の根拠がここで読める</span></a>
+    <a href="diff_vs_master.html"><b>diff_vs_master.html — 正本からの変更点一覧</b><span>t_b071b7a8（正本・非改変）→ t_a4b29680（本更新版）の変更点。ストーリー等の各列は1行も書き換えていないことの記録</span></a>
+  </div>
+
+  <div class="note">
+    <b>正本・出典</b>: 4号機 <code>~/ProsLC/deliverables/t_a4b29680/</code>（本文正本: <code>source/FonixStory.json</code> — 蜂谷さん 2026-09-05 提供「各キャラのおはなしはプロス公式が公開しているそのまま」）<br>
+    突合: オ課長 <code>verify_ohanashi.py</code>（2026-09-05・NG 0）／ HTML生成: スジュン 2026-09-05（タスク t_1bfcf1c2）／ 掲載: ktblog <code>/pros/deliverables/t_448af273/</code>（Basic認証・関係者限定）<br>
+    フロー: t_a4b29680（機械突合）→ t_1bfcf1c2（HTML化・配置）→ t_448af273（ダッシュボード掲載納品）→ t_fdf511b7（本番検収）
+  </div>
+</div>
+</body>
+</html>
