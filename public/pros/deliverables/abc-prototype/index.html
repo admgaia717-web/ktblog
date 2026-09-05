@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC試作動画 — プロスフォニックス「1文字＝1動画」プロトタイプ</title>
+<style>
+  :root { --bg:#0b1220; --card:#121a2b; --line:#233250; --text:#e8edf7; --muted:#93a1bd; --ok:#4ade80; --warn:#fbbf24; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; padding:24px 16px 60px; }
+  .wrap { max-width:920px; margin:0 auto; }
+  a.back { color:var(--muted); text-decoration:none; font-size:.85rem; }
+  a.back:hover { color:var(--text); }
+  h1 { font-size:1.35rem; margin:10px 0 4px; }
+  h1 .en { color:#7ea2ff; font-weight:800; margin-right:.4em; }
+  .sub { color:var(--muted); font-size:.85rem; line-height:1.6; margin-bottom:20px; }
+  .legend { display:flex; gap:14px; flex-wrap:wrap; font-size:.78rem; margin-bottom:18px; }
+  .legend span { display:inline-flex; align-items:center; gap:5px; }
+  .dot { width:9px; height:9px; border-radius:50%; display:inline-block; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:22px; }
+  .card h2 { font-size:1.02rem; margin-bottom:2px; }
+  .card .char { color:#7ea2ff; font-weight:800; margin-right:.35em; }
+  .badge { font-size:.7rem; font-weight:700; padding:2px 8px; border-radius:99px; margin-left:8px; vertical-align:middle; }
+  .b-ok { background:rgba(74,222,128,.15); color:var(--ok); }
+  .b-warn { background:rgba(251,191,36,.15); color:var(--warn); }
+  .meta { color:var(--muted); font-size:.78rem; margin-bottom:10px; line-height:1.6; }
+  video { width:100%; border-radius:8px; background:#000; display:block; }
+  .note { border-top:1px dashed var(--line); margin-top:22px; padding-top:14px; color:var(--muted); font-size:.78rem; line-height:1.8; }
+  .note a { color:#7ea2ff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/pros/dashboard/">← 首脳ダッシュボードへ戻る</a>
+  <h1><span class="en">ABC</span>試作動画3本 — 1文字＝1動画 プロトタイプ</h1>
+  <p class="sub">AI生成（Fal.ai / Kling motion-control）。入力は<b>正本メソッド動画のマーク実演</b>（A〜C切り出し）＋公式キャラ静止画。
+  音・文字・アクションの3点セット／ループ5-11秒の受入基準で検品済（chisu・2026-09-05）。</p>
+  <div class="legend">
+    <span><i class="dot" style="background:var(--ok)"></i>検品合格</span>
+    <span><i class="dot" style="background:var(--warn)"></i>条件付き仮採用（9/17定例で先生判断）</span>
+    <span><i class="dot" style="background:var(--muted)"></i>音はポスト実音響（別タスク）</span>
+  </div>
+
+  <div class="card">
+    <h2><span class="char">A</span>Annie Apple（リンゴ）<span class="badge b-warn">仮採用・9/17判断待ち</span></h2>
+    <p class="meta">7.7秒ループ / 1904×1080 / 無音（音はポスト実音響）。アクション「リンゴを口に運ぶ」— 口元への到達が正本未達のため仮採用。文字（リンゴ体aフォルム）・ループは合格。</p>
+    <video src="a_annie_apple.mp4" controls loop muted playsinline preload="metadata"></video>
+  </div>
+
+  <div class="card">
+    <h2><span class="char">B</span>Betty Broccoli（ブロッコリー）<span class="badge b-ok">検品合格</span></h2>
+    <p class="meta">8.0秒ループ / 1264×720 / 無音（音はポスト実音響）。アクション「茎をつかんで緑の部分（フローレット冠）を引き離す」— 正本一致。ブーメラン逆再生でシームレスループ。</p>
+    <video src="b_betty_broccoli.mp4" controls loop muted playsinline preload="metadata"></video>
+  </div>
+
+  <div class="card">
+    <h2><span class="char">C</span>Cary Cucumber（キュウリ）<span class="badge b-ok">検品合格・実音入り</span></h2>
+    <p class="meta">6.9秒ループ / 1904×1080 / 実音 /c/ 入り（3.9-4.3秒・波形検証済）。アクション「口に運んで一口パクッ」— 正本一致。先尾クロスフェードループ。</p>
+    <video src="c_cary_cucumber.mp4" controls loop muted playsinline preload="metadata"></video>
+  </div>
+
+  <div class="note">
+    <b>元ネタ参照（マーク実演・正本メソッド動画より）</b>：
+    <a href="/pros/deliverables/t_dc78faab/viewer/" target="_blank" rel="noopener">26字ジェスチャービューア</a>
+    （正式版動画から26字すべての切り出しクリップを一覧再生できます）
+    <br>
+    個別ファイル: <a href="a_annie_apple.mp4">a_annie_apple.mp4</a> ／
+    <a href="b_betty_broccoli.mp4">b_betty_broccoli.mp4</a> ／
+    <a href="c_cary_cucumber.mp4">c_cary_cucumber.mp4</a>
+    <br>
+    検品報告・生成パラメータ実績: 4号機 <code>~/ProsLC/deliverables/t_631e569b/</code>（検品）・
+    <code>~/ProsLC/deliverables/t_95c471e2/params.md</code>（承認済パラメータ正本）／ Kanban ボード pros-lc
+    <br>
+    次の一手: 9/10 KT元動画（マーク撮影）着 → motion-control で差替（eundong）／ 9/16 18:00 3本確定 ／ 9/17 定例で投影
+  </div>
+</div>
+</body>
+</html>

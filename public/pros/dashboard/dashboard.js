@@ -108,6 +108,7 @@ const TASKS = [
   { id: 'ag-07', owner: 'agent', title: '英会話A2「レストランで注文する」レッスンパッケージを納品（本文＋挿絵2＋音声）', due: '9/4', tag: '納品', done: true },
   { id: 'ag-08', owner: 'agent', title: '正式版メソッド動画から26字ジェスチャー分解・叩き台作成（第5中隊フル稼働・カード t_dc78faab）', due: '9/6 18:00', tag: '分解', done: true, note: '9/4完了（2日早い）。タイムスタンプ実測・クリップ26本・突合○13/△10/×3・gestures.json' },
   { id: 'ag-09', owner: 'agent', title: '叩き台v1（26字分解一式）をダッシュボードへ納品・ビューア公開（カード t_5a8e6275）', due: '9/4', tag: '納品', done: true },
+  { id: 'ag-10', owner: 'agent', title: 'ABC試作動画3本を完成・ダッシュボードに掲載（Fal.ai motion-control・検品済 t_631e569b）→ 9/17定例で投影', due: '9/5', tag: '納品', done: true, note: 'A仮採用（口未達・9/17先生判断）/ B・C合格 / C実音入り。正本切替は9/10 KT元動画→9/16確定' },
   // 全員
   { id: 'al-01', owner: 'all', title: '9/17（木）14:30〜16:00 Zoom に出席', due: '9/17', tag: '会議' },
   { id: 'al-02', owner: 'all', title: '会議・思いつきは録音して Telegram に入れる運用を始める', due: '継続', tag: '習慣' },
