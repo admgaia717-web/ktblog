@@ -299,6 +299,28 @@ function resetProgress() {
   renderBoard();
 }
 
+function initSectionNavigation() {
+  const reveal = () => {
+    const target = document.getElementById(location.hash.slice(1));
+    if (!target) return;
+    const panel = target.querySelector(':scope > details:not(.artifact-archive)');
+    if (panel) panel.open = true;
+    for (let parent = target.parentElement; parent; parent = parent.parentElement) {
+      if (parent.tagName === 'DETAILS') parent.open = true;
+    }
+    requestAnimationFrame(() => {
+      const inset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 92;
+      window.scrollTo({top: Math.max(0, target.getBoundingClientRect().top + window.scrollY - inset), behavior: 'instant'});
+    });
+  };
+  window.addEventListener('hashchange', reveal);
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (link && link.getAttribute('href') === location.hash) reveal();
+  });
+  reveal();
+}
+
 function init() {
   renderFlow();
   renderRoadmap();
@@ -330,13 +352,14 @@ function init() {
   $('#copy-btn').addEventListener('click', copyProgress);
   $('#reset-btn').addEventListener('click', resetProgress);
   const nav = $('#topnav');
-  const sections = [...document.querySelectorAll('main section[id]')];
+  const sections = [...document.querySelectorAll('main > section[id]')];
   const io = new IntersectionObserver((entries) => {
     for (const en of entries) if (en.isIntersecting) {
       for (const a of nav.querySelectorAll('a')) a.classList.toggle('active', a.getAttribute('href') === `#${en.target.id}`);
     }
   }, { rootMargin: '-40% 0px -55% 0px' });
   sections.forEach((s) => io.observe(s));
+  initSectionNavigation();
 }
 
 document.addEventListener('DOMContentLoaded', init);
