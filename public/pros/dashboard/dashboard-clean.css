@@ -225,3 +225,19 @@ footer {font-size:11px;color:var(--muted);background:none;border:0;padding:36px 
   .disclosure {break-inside:avoid}
   footer {padding:12px}
 }
+
+/* Market research is an additive panel; meeting/task data stays unchanged. */
+.workspace .market-research{margin-top:10px}
+.market-research h3{font-size:16px;font-weight:600;line-height:1.7;margin:0 0 10px}
+.market-research p,.market-research li{font-size:14px;line-height:1.9;overflow-wrap:anywhere}
+.market-research .research-status{font-size:11px;color:var(--muted);margin:0 0 10px}
+.market-research .research-lead{font-size:16px;margin:0 0 22px;max-width:960px}
+.research-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 24px}
+.research-cards article{padding:18px;background:#f3f6ef;border:1px solid var(--line);border-radius:8px}
+.research-cards p{margin:0}.research-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.research-columns ul{padding-left:21px;margin:0}.research-columns li{margin:8px 0}
+.research-correction{border-left:3px solid #a67c38;background:#f8f2e7;padding:15px 18px;margin:24px 0}
+.research-decision{border:1px solid var(--line);border-radius:8px;padding:18px}.research-decision p{margin:8px 0 0}
+.research-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:22px}.research-actions>a:last-child{font-size:13px;min-height:44px;display:inline-flex;align-items:center}
+.market-research .research-note{font-size:12px;color:var(--muted);margin:18px 0 0}
+@media(max-width:720px){.research-cards,.research-columns{grid-template-columns:1fr;gap:14px}.research-cards article{padding:15px}.research-actions{gap:8px}.research-actions .action-link{white-space:normal;max-width:100%}}
