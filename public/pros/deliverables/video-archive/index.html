@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>動画一覧（タイムスタンプ付き）— プロスフォニックス</title>
+<style>
+  :root { --bg:#0f172a; --card:#1e293b; --ink:#e2e8f0; --muted:#94a3b8; --accent:#f59e0b; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; padding:24px; }
+  h1 { font-size:1.5rem; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:.9rem; margin-bottom:24px; }
+  .controls { display:flex; gap:8px; margin-bottom:20px; flex-wrap:wrap; }
+  .controls button { background:var(--card); color:var(--ink); border:1px solid #334155; padding:8px 14px; border-radius:8px; cursor:pointer; font-size:.85rem; }
+  .controls button.active { background:var(--accent); color:#0f172a; font-weight:700; border-color:var(--accent); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:20px; }
+  .card { background:var(--card); border-radius:12px; overflow:hidden; border:1px solid #334155; }
+  .card video { width:100%; display:block; background:#000; }
+  .card img { width:100%; display:block; }
+  .meta { padding:12px 14px; }
+  .ts { font-size:.75rem; color:var(--accent); font-weight:700; letter-spacing:.02em; }
+  .name { font-size:.95rem; font-weight:700; margin:4px 0 2px; }
+  .desc { font-size:.8rem; color:var(--muted); line-height:1.5; }
+  .lost { opacity:.85; border-style:dashed; }
+  .compare { position:fixed; bottom:16px; right:16px; background:var(--accent); color:#0f172a; font-weight:800; padding:10px 16px; border-radius:999px; cursor:pointer; border:none; box-shadow:0 4px 16px rgba(0,0,0,.4); }
+  .dup-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+</style>
+</head>
+<body>
+<h1>動画一覧（KT送受信分）</h1>
+<p class="sub">タイムスタンプ順。並べ替えや2本並べての比較ができます。基本は動画クリックで再生。</p>
+<div class="controls">
+  <button class="active" data-sort="new">新しい順</button>
+  <button data-sort="old">古い順</button>
+  <button id="compare-btn">🔍 2本並べて比較モード</button>
+</div>
+<div class="grid" id="grid">
+
+  <div class="card lost" data-ts="20260907_1200">
+    <img src="/pros/deliverables/video-archive/preview_lost_carry_cucumber_0.5s.png" alt="Carrie Cucumber かじりデモのフレーム連接（0.5秒間隔）">
+    <div class="meta">
+      <span class="ts">2026-09-07 12:00頃 受信（元ファイル消失・解析時フレームのみ現存）</span>
+      <p class="name">Astraテスト① Carrie Cucumber かじりデモ</p>
+      <p class="desc">KT自作・gpt6 Astra。13.25秒・1280×720・24fps。子どもアバターがキュウリをかじり切る（歯型あり・動作完遂）。ナレ: "Carrie cucumber is green and crispy… snap off a bite and say…"。音声=ナレーション方式。</p>
+    </div>
+  </div>
+
+  <div class="card lost" data-ts="20260907_1200">
+    <img src="/pros/deliverables/video-archive/preview_lost_annie_apple_0.5s.png" alt="Annie Apple かじりデモのフレーム連接（0.5秒間隔）">
+    <div class="meta">
+      <span class="ts">2026-09-07 12:00頃 受信（元ファイル消失・解析時フレームのみ現存）</span>
+      <p class="name">Astraテスト② Annie Apple かじりデモ</p>
+      <p class="desc">KT自作・gpt6 Astra。13.58秒・1280×720・24fps。同じ子どもアバターがリンゴを口へ運びかじる。ナレ: "Annie Apple is red, round and delicious. You bring her to your mouth and say,…"。音声=ナレーション方式。</p>
+    </div>
+  </div>
+
+  <div class="card" data-ts="20260907_1500">
+    <video controls playsinline preload="metadata" src="/pros/deliverables/video-archive/20260907_1500_astra_palmpose_annie.mp4"></video>
+    <div class="meta">
+      <span class="ts">2026-09-07 15:00 受信 ✅保管済</span>
+      <p class="name">Astraテスト③ 手のひらAnnie Apple 説明ポーズ</p>
+      <p class="desc">KT自作・gpt6 Astra。12.0秒・832×480・24fps。ピクサー風人物が手のひらにAnnie Appleキャラを乗せて静止提示。音声="A"くり返し。北浦先生改善点（手のひらポーズ・キャラクター化）を満たす。</p>
+    </div>
+  </div>
+
+</div>
+<button class="compare" id="compare-fab">🔍 比較</button>
+<script>
+const grid = document.getElementById('grid');
+function sortCards(mode){
+  const cards = [...grid.querySelectorAll('.card')];
+  cards.sort((a,b)=> mode==='new' ? b.dataset.ts.localeCompare(a.dataset.ts) : a.dataset.ts.localeCompare(b.dataset.ts));
+  cards.forEach(c=>grid.appendChild(c));
+}
+document.querySelectorAll('.controls button[data-sort]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.controls button[data-sort]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    sortCards(btn.dataset.sort);
+  });
+});
+// 比較モード: カードを2枚選ぶと並べて拡大表示
+let selected = [];
+function toggleCompare(card){
+  if(selected.includes(card)){
+    card.style.outline='';
+    selected = selected.filter(c=>c!==card);
+  } else {
+    if(selected.length>=2){ selected[0].style.outline=''; selected.shift(); }
+    selected.push(card);
+    card.style.outline='3px solid #f59e0b';
+  }
+  if(selected.length===2) showCompare();
+}
+function showCompare(){
+  const w = window.open('','_blank');
+  const [a,b] = selected;
+  const va = a.querySelector('video,img'), vb = b.querySelector('video,img');
+  const mk = el => el.tagName==='VIDEO'
+    ? `<video controls autoplay loop src="${el.src}"></video>`
+    : `<img src="${el.src}">`;
+  w.document.write(`<!DOCTYPE html><html><head><title>比較</title><style>body{margin:0;background:#0f172a;color:#e2e8f0;font-family:sans-serif;display:flex;flex-direction:column;height:100vh}h2{margin:10px 16px 0;font-size:1rem}.dup{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 16px 16px}.dup>div{display:flex;flex-direction:column;min-width:0}.dup video,.dup img{width:100%;flex:1;object-fit:contain;background:#000;border-radius:8px}p{margin:6px 16px;color:#94a3b8;font-size:.85rem}</style></head><body><h2>比較モード（2本並べて再生）</h2><p>左=${a.querySelector('.name').textContent}　右=${b.querySelector('.name').textContent}</p><div class="dup"><div>${mk(va)}<p>${a.querySelector('.name').textContent}</p></div><div>${mk(vb)}<p>${b.querySelector('.name').textContent}</p></div></div></body></html>`);
+}
+document.getElementById('compare-fab').addEventListener('click',()=>{
+  document.body.style.cursor = selected.length===2 ? '' : 'crosshair';
+  document.querySelectorAll('.card').forEach(c=> c.onclick = () => toggleCompare(c));
+});
+</script>
+</body>
+</html>
