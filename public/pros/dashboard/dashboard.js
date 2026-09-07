@@ -8,7 +8,7 @@ const MEETING = {
   date: '2026-09-03',
   title: '第2回 定例ミーティング',
   minutes: 100,
-  next: { iso: '2026-09-17T14:30:00+09:00', label: '9月17日（木）14:30〜16:00', place: 'Zoom（プロスのアカウント）' },
+  next: { iso: '2026-09-10T16:30:00+09:00', label: '9月10日（木）16:30〜18:00', place: 'Zoom（プロスのアカウント）' },
 };
 
 const MEMBERS = {
@@ -50,7 +50,7 @@ const FLOW = [
 /* ロードマップ（月＝2026-09 を 1 とする列位置） */
 const ROADMAP = [
   { stage: 'STAGE 0', name: '準備・お手本', start: 1, span: 1, color: 'sky',
-    goals: ['録音→オ課長に読み込み', 'A・B・C 動画試作', '設定説明書・音声入力導入', '9/17 で確認'] },
+    goals: ['録音→オ課長に読み込み', 'A・B・C 動画試作', '設定説明書・音声入力導入', '9/10 で確認'] },
   { stage: 'STAGE 1', name: 'A〜G アバターアプリ＋SNS 開始', start: 1, span: 2, color: 'apple',
     goals: ['ジェスチャー付きアバター A〜G', 'メイキング動画で SNS 先行', '既存 SNS・TikTok・LINE 接続', '先生が直接オ課長に指示'] },
   { stage: 'STAGE 2', name: '26文字・ゲーム化・振り返り', start: 2, span: 3, color: 'broccoli',
@@ -66,11 +66,11 @@ const ROADMAP_MONTHS = ['9月', '10月', '11月', '12月', '1月', '2月', '3月
 const TASKS = [
   // 玉川（KT）
   { id: 'kt-01', owner: 'tamagawa', title: '今回の生録音をエージェント（現・オ課長）に読み込ませ、アクションプランを4人に共有', due: '9/5', tag: '最優先', done: true, note: 'このダッシュボードが成果物' },
-  { id: 'kt-02', owner: 'tamagawa', title: 'マークの動画を元に「動画→動画生成」で A（Annie Apple）を試作（約100円/本）', due: '9/10', tag: '試作' },
-  { id: 'kt-03', owner: 'tamagawa', title: 'B（Betty Broccoli）・C を続けて試作し、3本セットで共有', due: '9/17', tag: '試作' },
+  { id: 'kt-02', owner: 'tamagawa', title: 'マークの動画を元に「動画→動画生成」で A（Annie Apple）を試作（約100円/本）', due: '9/4 完了（前倒し）', tag: '試作', done: true, note: '第5中隊が9/4に完成（カード t_362c6bd1）' },
+  { id: 'kt-03', owner: 'tamagawa', title: 'B（Betty Broccoli）・C を続けて試作し、3本セットで共有', due: '9/5 完了（前倒し）', tag: '試作', done: true, note: '3本セット完成・全て実音入り（正本 t_7ea0884b）' },
   { id: 'kt-04', owner: 'tamagawa', title: 'オ課長への「お手本の指示」を出し、指示の仕方を先生方に見せる', due: '9/10', tag: 'お手本' },
   { id: 'kt-05', owner: 'tamagawa', title: 'エージェント設定の説明書（本山先生・北浦先生用）を作って送る', due: '9/10', tag: '説明書' },
-  { id: 'kt-06', owner: 'tamagawa', title: '他社フォニックス教材（ズーフォニックス・マツカ等）のネット展開を調査', due: '9/17', tag: '調査' },
+  { id: 'kt-06', owner: 'tamagawa', title: '他社フォニックス教材（ズーフォニックス・マツカ等）のネット展開を調査', due: '9/10', tag: '調査' },
   { id: 'kt-07', owner: 'tamagawa', title: 'プロス訪問：SNS（FB・Instagram・TikTok・X・LINE）とエージェントのアカウント接続', due: '9月中', tag: '訪問' },
   { id: 'kt-08', owner: 'tamagawa', title: 'LINE 集客（Lステップ相当）をエージェントで構築', due: '10月', tag: '集客', done: true, note: '9/6 完成。友だち追加→7日間の自動配信・管理画面つき（pros-line）。残りは公式アカウント開設（ki-08）と接続だけで、接続は5分' },
   { id: 'kt-09', owner: 'tamagawa', title: '役割別エージェント（SNS 発信・事務）の増設と設定依頼', due: '10月', tag: '拡張' },
@@ -78,48 +78,48 @@ const TASKS = [
   { id: 'kt-11', owner: 'tamagawa', title: '社長・本山先生との3者会談に出席（経営・資金・責任範囲）', due: '日程調整中', tag: '経営' },
   // 本山先生
   { id: 'mo-01', owner: 'motoyama', title: 'Zoom の録音（生声）を KT とオ課長（システム側 Telegram）に送る', due: '9/4', tag: '最優先' },
-  { id: 'mo-02', owner: 'motoyama', title: 'KT のお手本の後、オ課長に直接指示して動画を1本作ってみる', due: '9/17', tag: '体験' },
+  { id: 'mo-02', owner: 'motoyama', title: 'KT のお手本の後、オ課長に直接指示して動画を1本作ってみる', due: '9/10', tag: '体験' },
   { id: 'mo-03', owner: 'motoyama', title: '社長・本山先生・KT の3者会談を設定する', due: '9月中', tag: '経営' },
-  { id: 'mo-04', owner: 'motoyama', title: '「最小パーツ（1文字＝1動画）」と A〜G の順番を承認する', due: '9/17', tag: '設計' },
+  { id: 'mo-04', owner: 'motoyama', title: '「最小パーツ（1文字＝1動画）」と A〜G の順番を承認する', due: '9/10', tag: '設計' },
   { id: 'mo-05', owner: 'motoyama', title: '北浦先生がこの仕事に時間を割けるよう社内で調整する', due: '9月中', tag: '体制' },
   { id: 'mo-06', owner: 'motoyama', title: 'IAM 関連資料をまとめて共有（ローカル処理前提）', due: '随時', tag: '資料' },
   { id: 'mo-07', owner: 'motoyama', title: '思いついたことを録音して Telegram に送る（音声入力アプリ導入）', due: '継続', tag: '習慣' },
   // 北浦先生
-  { id: 'ki-01', owner: 'kitaura', title: 'オ課長に指示して Annie Apple 動画を作ってみる（手にリンゴ→口へ→「あっ」）', due: '9/17', tag: '体験' },
-  { id: 'ki-02', owner: 'kitaura', title: '子どもがよく見る SNS を確認して共有', due: '9/17', tag: '調査' },
-  { id: 'ki-03', owner: 'kitaura', title: '現在の SNS 運用（HP・FB・Instagram・Google ビジネスプロフィール）の内容と方針を KT とすり合わせ', due: '9/17', tag: 'SNS' },
-  { id: 'ki-04', owner: 'kitaura', title: 'TikTok・X・LINE の開設可否をプロス内で確認（LINE の配信の仕組みは完成済み → 可否が決まれば15分でつながる）', due: '9/17', tag: 'SNS' },
-  { id: 'ki-08', owner: 'kitaura', title: 'LINE公式アカウント「プロス」を開設する（LINE Official Account Manager・15分）→ 管理画面の2つの文字列を KT に渡す', due: '9/17', tag: 'SNS', note: '手順は KT から送る。開設後はKT・エージェントが接続して QR を掲載' },
+  { id: 'ki-01', owner: 'kitaura', title: 'オ課長に指示して Annie Apple 動画を作ってみる（手にリンゴ→口へ→「あっ」）', due: '9/10', tag: '体験' },
+  { id: 'ki-02', owner: 'kitaura', title: '子どもがよく見る SNS を確認して共有', due: '9/10', tag: '調査' },
+  { id: 'ki-03', owner: 'kitaura', title: '現在の SNS 運用（HP・FB・Instagram・Google ビジネスプロフィール）の内容と方針を KT とすり合わせ', due: '9/10', tag: 'SNS' },
+  { id: 'ki-04', owner: 'kitaura', title: 'TikTok・X・LINE の開設可否をプロス内で確認（LINE の配信の仕組みは完成済み → 可否が決まれば15分でつながる）', due: '9/10', tag: 'SNS' },
+  { id: 'ki-08', owner: 'kitaura', title: 'LINE公式アカウント「プロス」を開設する（LINE Official Account Manager・15分）→ 管理画面の2つの文字列を KT に渡す', due: '9/10', tag: 'SNS', note: '手順は KT から送る。開設後はKT・エージェントが接続して QR を掲載' },
   { id: 'ki-05', owner: 'kitaura', title: '音声入力アプリ（Typeless 等）を入れて、話して指示できるようにする', due: '9/10', tag: '道具' },
   { id: 'ki-06', owner: 'kitaura', title: '試作動画のジェスチャーが正確か確認してフィードバック', due: '試作後', tag: '品質' },
-  { id: 'ki-07', owner: 'kitaura', title: '丸ごと任せられる仕事を1つ選んで KT に渡す', due: '9/17', tag: 'AX' },
+  { id: 'ki-07', owner: 'kitaura', title: '丸ごと任せられる仕事を1つ選んで KT に渡す', due: '9/10', tag: 'AX' },
   // 蜂谷さん
   { id: 'ha-01', owner: 'hachiya', title: '8/30 送付アプリの「お話し通り」（26キャラのストーリー）を読み、ジェスチャーの意味を理解して KT に説明', due: '9/10', tag: '宿題' },
   { id: 'ha-02', owner: 'hachiya', title: 'Telegram「プロスAX 人間界」の運営と記録', due: '継続', tag: '運営' },
-  { id: 'ha-03', owner: 'hachiya', title: '本山先生と相談してアプリ側の計画を作る（自分でも作ってみる）', due: '9/17', tag: '計画' },
+  { id: 'ha-03', owner: 'hachiya', title: '本山先生と相談してアプリ側の計画を作る（自分でも作ってみる）', due: '9/10', tag: '計画' },
   { id: 'ha-04', owner: 'hachiya', title: '会議の録音バックアップ（毎回）', due: '毎回', tag: '記録' },
   // オ課長＋第5中隊（4号機 Hermes: oh / ri / jumeok / gwangbeom / eundong / chisu）
   { id: 'ag-00', owner: 'agent', title: 'まー君（pi）からオ課長（4号機 Hermes）へ引き継ぎ。Telegram @Prososio1bot ＋ Mattermost #pros-lc で応答', due: '9/4', tag: '体制', done: true },
   { id: 'ag-01', owner: 'agent', title: '9/3 会議の録音・会議録を読み込み、プロジェクトのコンテキストを保持', due: '9/4', tag: '記憶', done: true },
-  { id: 'ag-02', owner: 'agent', title: 'A・B・C のジェスチャー動画3本を生成（担当：eundong、Fal.ai 約300円、カード t_7ea0884b）', due: '9/16 18:00', tag: '生成' },
-  { id: 'ag-03', owner: 'agent', title: '26キャラのストーリーを指示テンプレートに言語化（担当：jumeok、カード t_b071b7a8）', due: '9/12 ドラフト・9/16 確定', tag: '整理' },
-  { id: 'ag-05', owner: 'agent', title: '3本の検品（担当：chisu、check_deliverables.py ＋目視）→ 9/17 定例で投影', due: '9/16', tag: '検品' },
+  { id: 'ag-02', owner: 'agent', title: 'A・B・C のジェスチャー動画3本を生成（担当：eundong、Fal.ai 約300円、カード t_7ea0884b）', due: '9/5 完了（前倒し）', tag: '生成', done: true, note: '9/5に3本完成・全3本実音入り（正本 t_7ea0884b）。KT元動画による差替は定例後' },
+  { id: 'ag-03', owner: 'agent', title: '26キャラのストーリーを指示テンプレートに言語化（担当：jumeok、カード t_b071b7a8）', due: '9/4 完了（前倒し）', tag: '整理', done: true, note: 'お話し通り突合済（完全一致23＋m注記＋s/v残差分）。s採否は9/10定例で本山先生判断' },
+  { id: 'ag-05', owner: 'agent', title: '3本の検品（担当：chisu、check_deliverables.py ＋目視）→ 9/10 定例で投影', due: '9/5 完了（前倒し）', tag: '検品', done: true, note: 'B/C合格・A条件付き合格（t_631e569b）＋実音入り版再検品合格（t_51e69ce5）' },
   { id: 'ag-04', owner: 'agent', title: 'SNS 投稿の下書き→（接続後）投稿', due: '接続後', tag: '発信' },
   { id: 'ag-06', owner: 'agent', title: 'A（Annie Apple）ループ動画を先行納品（Fal.ai 64円・t_362c6bd1）→ 納品物セクションで公開中', due: '9/4', tag: '納品', done: true },
   { id: 'ag-07', owner: 'agent', title: '英会話A2「レストランで注文する」レッスンパッケージを納品（本文＋挿絵2＋音声）', due: '9/4', tag: '納品', done: true },
   { id: 'ag-08', owner: 'agent', title: '正式版メソッド動画から26字ジェスチャー分解・叩き台作成（第5中隊フル稼働・カード t_dc78faab）', due: '9/6 18:00', tag: '分解', done: true, note: '9/4完了（2日早い）。タイムスタンプ実測・クリップ26本・突合○13/△10/×3・gestures.json' },
   { id: 'ag-09', owner: 'agent', title: '叩き台v1（26字分解一式）をダッシュボードへ納品・ビューア公開（カード t_5a8e6275）', due: '9/4', tag: '納品', done: true },
-  { id: 'ag-10', owner: 'agent', title: 'ABC試作動画3本を完成・ダッシュボードに掲載（Fal.ai motion-control・検品済 t_631e569b）→ 9/17定例で投影', due: '9/5', tag: '納品', done: true, note: 'A仮採用（口未達・9/17先生判断）/ B・C合格 / C実音入り。正本切替は9/10 KT元動画→9/16確定' },
+  { id: 'ag-10', owner: 'agent', title: 'ABC試作動画3本を完成・ダッシュボードに掲載（Fal.ai motion-control・検品済 t_631e569b）→ 9/10定例で投影', due: '9/5', tag: '納品', done: true, note: 'A仮採用（口未達・9/10定例で先生判断）/ B・C合格 / 全3本実音入り（9/5音入れ・再検品済 t_51e69ce5）。KT元動画差替は定例後に実施' },
   { id: 'ag-11', owner: 'agent', title: 'マーク先生アバター版A動画を完成・ダッシュボードに掲載（アバター静止画m01採用→motion-control→実音響・カード t_41379410系）', due: '9/5', tag: '納品', done: true, note: 'ピクサー風先生アバター・7.4秒ループ・実音 /a/ つき・検品合格（t_d77c36b2）・課金$0.90（プール残$0.35）' },
   // 全員
-  { id: 'al-01', owner: 'all', title: '9/17（木）14:30〜16:00 Zoom に出席', due: '9/17', tag: '会議' },
+  { id: 'al-01', owner: 'all', title: '9/10（木）16:30〜18:00 Zoom に出席', due: '9/10', tag: '会議', note: '9/17 14:30〜から変更（9/6・蜂谷さん通知）' },
   { id: 'al-02', owner: 'all', title: '会議・思いつきは録音して Telegram に入れる運用を始める', due: '継続', tag: '習慣' },
   { id: 'al-03', owner: 'all', title: '来週（9/10）はエージェントを使ってみて、必要なら短い打合せ', due: '9/10', tag: '判断' },
 ];
 
 /* 課題・リスク */
 const ISSUES = [
-  { level: 'high', title: '収益化モデルが未定', body: 'どこから有料にするか（DL 教材・会員・ゲーム）が決まっていない。まず無料で認知→反応→欲しいものを作る、で3ヶ月検証。', owner: ['tamagawa', 'motoyama'], action: '9/17 までに仮説を1枚にまとめる' },
+  { level: 'high', title: '収益化モデルが未定', body: 'どこから有料にするか（DL 教材・会員・ゲーム）が決まっていない。まず無料で認知→反応→欲しいものを作る、で3ヶ月検証。', owner: ['tamagawa', 'motoyama'], action: '9/10 までに仮説を1枚にまとめる' },
   { level: 'high', title: '社長への責任と投資判断', body: '「チャンスでも賭けにしない」。責任が取れる範囲で進めたい本山先生と、今がチャンスと見る KT の温度差。', owner: ['motoyama', 'tamagawa'], action: '社長・本山先生・KT の3者会談で合意' },
   { level: 'high', title: '北浦先生の時間がない', body: '現場の中心が最も忙しい。自分でエージェントを覚える時間も惜しい。', owner: ['kitaura', 'motoyama'], action: '仕事を丸ごと KT・エージェントに振る。社内で時間を確保' },
   { level: 'high', title: '動ける期間が 9〜12月に限られる', body: '1〜3月は先生方の繁忙期で時間が取れない。', owner: ['all'], action: '12月までに「楽になった」実感を作る。無ければ中止も選択肢' },
@@ -141,7 +141,7 @@ const DECISIONS = [
   { title: '拡散はエージェントが実行', body: '既存の HP・Facebook・Instagram・Google ビジネスプロフィールと接続。TikTok・LINE を追加。' },
   { title: '生の録音を毎回残す', body: '会議＝エージェントへの命令。要約ではなく生声をオ課長に入れる。' },
   { title: '3ヶ月単位で振り返る', body: 'KT は仕込み6ヶ月目安。12月が最初の節目。' },
-  { title: '定例は木曜、次回 9/17 14:30〜16:00', body: '来週は「エージェントを使ってみてから」必要なら。9/24 は KT 不可。' },
+  { title: '定例は木曜、次回 9/10 16:30〜18:00', body: '9/17 14:30〜16:00 から変更（9/6・蜂谷さん通知）。9/24 は KT 不可。' },
   { title: 'Telegram を2本立てで使う', body: '人間界＝人に伝える／システム＝オ課長に直接指示する。' },
   { title: '経営・資金は3者で別途', body: '社長・本山先生・KT で会って話す。' },
 ];
