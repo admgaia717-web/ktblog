@@ -1,0 +1,229 @@
+{
+  "title": "プロス ABC まねっこレッスン",
+  "release_date": "2026-09-08",
+  "edition": "首脳用ダッシュボード配布版・先生と使う対面版",
+  "standard_mode": "正本カード＋提供WAV全長＋先生の対面ジェスチャー",
+  "delivery_scope": [
+    "ABC教材",
+    "ABC印刷カード1枚",
+    "先生用手引き1枚",
+    "修正依頼コピー"
+  ],
+  "implementation_status": "元教材の画面・音声制御・印刷物を無改変で収録。配布ファイルの同一性と参照を検証済み。",
+  "teacher_adoption": "発音・動作・授業での採用は先生の確認待ち",
+  "copyright": "© Pros Language Center",
+  "sources": [
+    {
+      "name": "01_PP_A4_a-z_merged.pdf",
+      "use": "正本キャラクター・ABC原文・著作権表示",
+      "source_document_bundled": false
+    },
+    {
+      "name": "PROS Phonics CHARACTERS・STORY（characters.js）",
+      "use": "ABCのお話とキャラクターデータ",
+      "source_document_bundled": false
+    },
+    {
+      "name": "a_sound_call.wav／b_sound_call.wav／c_sound_crisp.wav",
+      "use": "提供音源の全長再生",
+      "provided_audio_bundled": true
+    },
+    {
+      "name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "use": "画面・操作・印刷物の無改変配布"
+    }
+  ],
+  "audio": {
+    "a": {
+      "path": "assets/a.wav",
+      "source_name": "提供音源 a_sound_call.wav",
+      "sha256": "54d0c180ed29734f98190314f9f9f05bac813d3e3298b839016d90cfc8e17c78",
+      "frames": 36960,
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "duration_s": 0.77,
+      "provided_file_unchanged": true,
+      "reported_prior_processing": "0.12s lead-in silence + call (0.37s) + natural decay tail, loudnorm 2-pass linear I=-16 TP=-3 LRA=11 (achieved TP=-3.00), mono 48k",
+      "processing_history_source": "a_sound_provenance.json（元教材の出典記録を引継ぎ）",
+      "teacher_adoption": "確認待ち",
+      "phonetic_approval_by_technical_checks": false
+    },
+    "b": {
+      "path": "assets/b.wav",
+      "source_name": "提供音源 b_sound_call.wav",
+      "sha256": "74f75b52073a2675d9b6227c3b70d6cc2fdea2da5f8ee385ce2cb9809ac25479",
+      "frames": 48960,
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "duration_s": 1.02,
+      "provided_file_unchanged": true,
+      "reported_prior_processing": "0.12s lead-in silence + burst (0.25s) + full syllable tail, loudnorm 2-pass linear I=-16 TP=-3 LRA=11 (achieved TP=-3.00), mono 48k",
+      "processing_history_source": "b_sound_provenance.json（元教材の出典記録を引継ぎ）",
+      "teacher_adoption": "確認待ち",
+      "phonetic_approval_by_technical_checks": false
+    },
+    "c": {
+      "path": "assets/c.wav",
+      "source_name": "提供音源 c_sound_crisp.wav",
+      "sha256": "496eaf18c9cc701f34cd6bf9427eb091ac721227beeade3cf4ce610a0f2d5b1b",
+      "frames": 34560,
+      "sample_rate": 48000,
+      "channels": 1,
+      "bits": 16,
+      "duration_s": 0.72,
+      "provided_file_unchanged": true,
+      "reported_prior_processing": "0.12s lead-in silence + burst + 0.25s tail, loudnorm TP=-3, mono 48k",
+      "processing_history_source": "c_sound_provenance.json（元教材の出典記録を引継ぎ）",
+      "teacher_adoption": "確認待ち",
+      "phonetic_approval_by_technical_checks": false
+    }
+  },
+  "video_adoption": {
+    "standard_video_included": false,
+    "reason_by_letter": {
+      "a": "旧試作は正本の小文字a意匠と異なる。最新候補も口内にキャラの目や輪郭が残り、先生の採用確認待ち。",
+      "b": "房を茎から離す動きはあるが、小さいキャラの口で人の調音を示せず、正本意匠とも異なる。",
+      "c": "口へ運ぶ動き3回と提供音1回が対応せず、食物で口元が隠れる区間もある。"
+    },
+    "assessment_source": "元教材の先生用ガイドと素材検査記録（2026-09-08）",
+    "new_video_generation_for_release": false
+  },
+  "limits": [
+    "教材単体による自習の習得や学習効果は未検証。",
+    "スマホ幅の画面検証と、iOS・Android実機の音声再生確認は別。実機での音声再生は未検証。",
+    "PDF出力済み。実紙プリンター出力は未検証。",
+    "掌へのキャラクター静止合成と練習中のキャラクター透過切替は未実装。",
+    "先生の発音・動作・授業採用の承認を、技術検査の合格で代用しない。"
+  ],
+  "privacy": {
+    "microphone": false,
+    "camera": false,
+    "student_data_collection": false,
+    "automatic_feedback_submission": false,
+    "feedback_persistence": "再読込で消える。必要な文は先生がコピーする。"
+  },
+  "package_files": [
+    {
+      "path": "index.html",
+      "bytes": 9950,
+      "sha256": "e1a9dae3e3b4dc1817632a413f1d3c1153916132e6b6ef23e9a3ceb8b40b001f",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "app.js",
+      "bytes": 10131,
+      "sha256": "16ad56e78ab9efb0ffffc245621f1e2cdccd055839ae7428791e54d0e98f90e9",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "lesson-data.js",
+      "bytes": 4000,
+      "sha256": "f261916ac96eabcee237360d4d3c45548baaad2dd75f6a6349e1674656b99ea9",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "style.css",
+      "bytes": 9240,
+      "sha256": "6b2cfa0c3edd3d9366a638c31df8e5ecee72abc6fbea1eedb5f6f52b4464c7d2",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "assets/a.png",
+      "bytes": 153982,
+      "sha256": "4131639646faeb6566f3657150a0d487c9de9b9c1c588e7fd1ba15249ef7d6c7",
+      "source_name": "PROS正本キャラクター Annie Apple（01_PP_A4_a-z_merged.pdf／a.png）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "assets/b.png",
+      "bytes": 123137,
+      "sha256": "b191857fda03f0ef85dd14d247fcf67c1faa27928b47da5c2dd7a4115d547d6c",
+      "source_name": "PROS正本キャラクター Betty Broccoli（01_PP_A4_a-z_merged.pdf／b.png）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "assets/c.png",
+      "bytes": 128635,
+      "sha256": "d3b294f62c3af0eff862571de2bc0d7310fef636f92a7d3d81b15d77aa11a00b",
+      "source_name": "PROS正本キャラクター Cary Cucumber（01_PP_A4_a-z_merged.pdf／c.png）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "assets/a.wav",
+      "bytes": 73998,
+      "sha256": "54d0c180ed29734f98190314f9f9f05bac813d3e3298b839016d90cfc8e17c78",
+      "source_name": "提供音源 a_sound_call.wav",
+      "unchanged_copy": true
+    },
+    {
+      "path": "assets/b.wav",
+      "bytes": 97998,
+      "sha256": "74f75b52073a2675d9b6227c3b70d6cc2fdea2da5f8ee385ce2cb9809ac25479",
+      "source_name": "提供音源 b_sound_call.wav",
+      "unchanged_copy": true
+    },
+    {
+      "path": "assets/c.wav",
+      "bytes": 69198,
+      "sha256": "496eaf18c9cc701f34cd6bf9427eb091ac721227beeade3cf4ce610a0f2d5b1b",
+      "source_name": "提供音源 c_sound_crisp.wav",
+      "unchanged_copy": true
+    },
+    {
+      "path": "print/cards.html",
+      "bytes": 3380,
+      "sha256": "da2b793ce1fc925e200f50132b6ca674ebe3f3f4156ed77171cc7611fcfa5996",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "print/teacher-guide.html",
+      "bytes": 8851,
+      "sha256": "22e65dd2909594f45236d58c452c39638b98d5a913b871133c89e1552e464975",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "print/print.css",
+      "bytes": 1114,
+      "sha256": "53d3274594699e3f3ca68926d6a6178058f17e98a67c703cda207bdf2c5ba35b",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "print/print.js",
+      "bytes": 100,
+      "sha256": "d7e1024c6fcab05f7804bf8c1eb74cbaca637d352e8f5bfdb4500ded08ed589a",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "print/cards.pdf",
+      "bytes": 506099,
+      "sha256": "49fe1cc0b436f6e3734552ac0db8e1e8c597d377caaf50441743d2ff1c8f0872",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "print/teacher-guide.pdf",
+      "bytes": 109580,
+      "sha256": "3ea46a9b1fd738ecb425246e934e8bd2df114f2bdfbfabc88b5e28064ff8708f",
+      "source_name": "プロス ABC まねっこレッスン 対面版（2026-09-08）",
+      "unchanged_copy": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 2373,
+      "sha256": "d7b642b867cb6ea1ee4847a366379669d2e2633859e1c0730dea8e28b6a8109d",
+      "source_name": "配布用の使い方（2026-09-08）",
+      "unchanged_copy": false
+    }
+  ],
+  "hash_note": "manifest.jsonとZIP自身のSHAは自己参照を避けるため本ファイルに含めない。ZIPにはruntime・印刷物・README・本manifestのみを収録。"
+}

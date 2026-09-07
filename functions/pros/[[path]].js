@@ -36,6 +36,25 @@ export async function onRequest(context) {
   }
 
   // 認証OK → 元の静的アセットへパススルー
+  const pathname = new URL(request.url).pathname;
+  if (pathname === '/pros/deliverables/abc-lesson' ||
+      pathname.startsWith('/pros/deliverables/abc-lesson/')) {
+    const source = await context.next();
+    let response = new Response(source.body, source);
+    // Only the classroom lesson excludes platform-injected analytics.
+    // Authentication above and every other Pros path remain unchanged.
+    response.headers.set('Cache-Control', 'private, no-store, no-transform');
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    response.headers.set('Referrer-Policy', 'same-origin');
+    if ((response.headers.get('Content-Type') || '').includes('text/html')) {
+      response = new HTMLRewriter()
+        .on('script[src*="static.cloudflareinsights.com/beacon"]', {
+          element(element) { element.remove(); }
+        })
+        .transform(response);
+    }
+    return response;
+  }
   return context.next();
 }
 

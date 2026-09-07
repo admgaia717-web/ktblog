@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="light"><title>プロス ABC まねっこレッスン</title>
+<link rel="icon" href="assets/a.png"><link rel="stylesheet" href="style.css">
+<script src="lesson-data.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<div id="error" class="error" role="alert" hidden></div>
+<main>
+<section id="home" class="screen" aria-labelledby="home-title">
+<header class="home-head"><p class="eyebrow">PROS LANGUAGE CENTER</p><h1 id="home-title">ABC <span>まねっこレッスン</span></h1><p class="intro">えらんで、みて、いっしょに まねっこ。</p></header>
+<div class="card-grid" aria-label="文字をえらぶ">
+<button class="pick apple" data-letter="a"><img src="assets/a.png" alt="小文字 a の形の Annie Apple"><span class="pick-name"><b>a</b><span>Annie Apple<small>アニー アップル</small></span></span></button>
+<button class="pick broccoli" data-letter="b"><img src="assets/b.png" alt="小文字 b の形の Betty Broccoli"><span class="pick-name"><b>b</b><span>Betty Broccoli<small>ベティ ブロッコリー</small></span></span></button>
+<button class="pick cucumber" data-letter="c"><img src="assets/c.png" alt="小文字 c の形の Cary Cucumber"><span class="pick-name"><b>c</b><span>Cary Cucumber<small>ケイリー キュウリ</small></span></span></button>
+</div>
+<div class="home-guide"><button id="open-guide" class="quiet">先生用ガイド →</button></div>
+</section>
+<section id="lesson" class="screen" hidden aria-labelledby="lesson-title">
+<header class="lesson-head"><button id="back-home" class="quiet">← えらぶ</button><nav class="letter-nav" aria-label="文字をかえる"><button data-letter="a" aria-label="a にかえる">a</button><button data-letter="b" aria-label="b にかえる">b</button><button data-letter="c" aria-label="c にかえる">c</button></nav><button id="lesson-guide" class="quiet">先生用ガイド</button></header>
+<div class="lesson-grid">
+<div class="character-stage"><img id="lesson-image" src="assets/a.png" alt=""><h1 id="lesson-title" tabindex="-1"></h1><p id="lesson-jp" class="subtle"></p><p class="stage-note">先生と いっしょに</p></div>
+<div class="lesson-controls">
+<button id="story-button" class="action story" aria-expanded="false" aria-controls="story-panel"><span>01</span> おはなし</button>
+<div id="story-panel" class="story-panel" hidden><p id="story-text"></p><p class="subtle">先生が お話を読んでね。</p></div>
+<button id="listen-button" class="action listen"><span>02</span> 音をきく</button>
+<div class="practice-box">
+<button id="practice-button" class="action primary"><span>03</span> いっしょにまねる</button>
+<p class="practice-hint">音をきいて、先生のうごきを まねしよう。</p>
+<fieldset><legend>なんかい？</legend><div class="options"><label><input type="radio" name="repeat" value="1" checked><span>1回</span></label><label><input type="radio" name="repeat" value="3"><span>3回</span></label><label><input type="radio" name="repeat" value="5"><span>5回</span></label></div></fieldset>
+<div class="settings-row"><label for="gap">まねする時間</label><select id="gap"><option value="2">2秒</option><option value="4" selected>4秒</option><option value="6">6秒</option></select><label class="sequence-label"><input id="sequence" type="checkbox"> abc つづけて</label></div>
+<p class="setting-note">abc は、a → b → c の順に、それぞれ選んだ回数。</p>
+</div>
+<div class="playback-status"><p id="status" role="status" aria-live="polite">おはなし・音・まねっこ、どこからでも。</p><button id="stop-button" class="stop">■ とめる</button></div>
+<div class="finish-actions"><button id="again-button" class="action again">もういっかい</button><button id="done-button" class="action done">できたね</button></div>
+<details id="teacher-cue"><summary>先生へ：この文字の動作と原文</summary><p id="gesture-text"></p><p id="teacher-prompt"></p><blockquote id="original-text" lang="en"></blockquote><p>お話は静止カードを見せて説明し、練習は提供音と先生の実演を使います。映像の採否は「先生用ガイド」で確認できます。</p></details>
+</div></div>
+</section>
+<section id="guide" class="screen guide" hidden aria-labelledby="guide-title">
+<header class="guide-head"><button id="close-guide" class="quiet">← レッスンへ</button><p class="eyebrow">TEACHER'S GUIDE</p><h1 id="guide-title" tabindex="-1">先生用ガイド</h1><p class="intro">カードを見せる。音をきく。先生とまねる。</p></header>
+<div class="guide-opening"><h2>授業前の準備は、3つ。</h2><ol><li>ABCカードと、この手引きを印刷します。</li><li>使う文字の「音をきく」で、音量と音を確かめます。</li><li>動作と声かけを読み、先生が実演します。</li></ol><p>今回は先生と対面で使う教材です。提供音の発音と動作、授業での採用は先生の確認をお願いします。</p></div>
+<div class="print-links"><a href="print/cards.pdf" target="_blank" rel="noopener">ABCカード PDF <small>A4・横 1枚</small></a><a href="print/teacher-guide.pdf" target="_blank" rel="noopener">先生用手引き PDF <small>A4・縦 1枚</small></a><a href="print/cards.html" target="_blank" rel="noopener">カードを印刷する <small>印刷HTML</small></a><a href="print/teacher-guide.html" target="_blank" rel="noopener">手引きを印刷する <small>印刷HTML</small></a></div>
+<h2>音・文字の形・意味のある動作</h2><p>食べ物のキャラクターの特徴を知り、お話に沿った動きと音を一緒に楽しみます。将来の自然な読み書きにつなげる入口です。今はテストや発音採点をしません。</p><p>26体はそれぞれ、食べる・つまむ・割るなど、食べ物のお話から動作が決まる構成です。今回の範囲はABC。合意の順序は ABC → A〜G → 26文字 → 2・3文字の読みです。</p>
+<h2>5〜10分の進め方 <small>今回の提案時間</small></h2><ol class="flow"><li><b>1〜2分｜えらぶ・見る</b>好きなカードを選び、「おはなし」を先生が読みます。カードを静止させ、食べ物と動きの意味を見せます。</li><li><b>3〜6分｜きく・まねる</b>「音をきく」の後、先生が動作を見せます。「いっしょにまねる」で1回から。慣れたら3回・5回へ。返す間は2・4・6秒から選びます。</li><li><b>1〜2分｜もういちど・できたね</b>「もういっかい？」と誘い、聞くだけ・動くだけの参加も受け止めます。「できたね」で終わります。</li></ol>
+<h2>ABCのお話と実演</h2><div id="guide-characters"></div>
+<h2>見本動画の先生確認</h2><p>生成映像を標準画面で使うかは、技術検査・内容照合・先生の採用確認を分けて決めます。現在は正本カード＋提供音＋先生の実演で練習します。掌でのキャラクター静止や、練習時のキャラクターだけの透過切替は今回実装していません。</p><div id="media-review"></div>
+<details><summary>音の扱いと、画面の操作</summary><p>使用する音は提供WAVのみ。今回の処理では全長・速度・ピッチ・音量・前後の余白を変更していません。提供前には音量加工の履歴があります。ファイルの同一性は発音承認の証明ではありません。</p><p>説明と練習は独立しています。「1回」は提供WAV全長を1回再生する意味です。「もういっかい」は現在の回数・間・abc連続の設定で練習します。文字変更・停止・ガイドへの移動・タブを隠す操作では再生を止めます。画面を戻したときはボタンを押して再開してください。</p><p>マイク、カメラ、録音、児童名、点数、ログインは使いません。入力内容は保存・外部送信されません。音はクリックで開始します。</p></details>
+<h2>直したいことを、一言で</h2><p>「文字／お話・音・動作・見え方のどれ／直したい一言」で伝えられます。コピーした後、先生が受け渡す方法を選んでください。</p>
+<form id="feedback-form"><div class="feedback-selects"><label for="feedback-letter">文字<select id="feedback-letter"><option>a</option><option>b</option><option>c</option></select></label><label for="feedback-kind">確認すること<select id="feedback-kind"><option>お話</option><option>音</option><option selected>動作</option><option>見え方</option></select></label></div><label for="feedback-note">直したい一言</label><textarea id="feedback-note" rows="3" maxlength="600" placeholder="例：胸前から口へ運ぶ動きを、もう一度見せたい。"></textarea><label for="feedback-output">受け渡す文</label><textarea id="feedback-output" rows="3" readonly></textarea><button id="copy-button" class="action primary" type="button">修正依頼をコピー</button><p id="copy-status" role="status" aria-live="polite">外部送信はしません。児童名は書かないでください。</p></form>
+</section>
+</main><footer>© Pros Language Center</footer><audio id="voice" preload="none"></audio><noscript>このレッスンにはJavaScriptが必要です。印刷物は print フォルダのPDFから利用できます。</noscript>
+</body></html>
