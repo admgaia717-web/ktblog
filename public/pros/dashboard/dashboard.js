@@ -111,6 +111,7 @@ const TASKS = [
   { id: 'ag-09', owner: 'agent', title: '叩き台v1（26字分解一式）をダッシュボードへ納品・ビューア公開（カード t_5a8e6275）', due: '9/4', tag: '納品', done: true },
   { id: 'ag-10', owner: 'agent', title: 'ABC試作動画3本を完成・ダッシュボードに掲載（Fal.ai motion-control・検品済 t_631e569b）→ 9/10定例で投影', due: '9/5', tag: '納品', done: true, note: 'A仮採用（口未達・9/10定例で先生判断）/ B・C合格 / 全3本実音入り（9/5音入れ・再検品済 t_51e69ce5）。KT元動画差替は定例後に実施' },
   { id: 'ag-11', owner: 'agent', title: 'マーク先生アバター版A動画を完成・ダッシュボードに掲載（アバター静止画m01採用→motion-control→実音響・カード t_41379410系）', due: '9/5', tag: '納品', done: true, note: 'ピクサー風先生アバター・7.4秒ループ・実音 /a/ つき・検品合格（t_d77c36b2）・課金$0.90（プール残$0.35）' },
+  { id: 'ag-12', owner: 'agent', title: '9/10定例 判断資料3枚（動画づくりの線・3者会談の土台・集客LINE運用の型）をダッシュボードに掲載（KT下書き 9/8）', due: '9/8', tag: '納品', done: true, note: '「9/10 定例 判断資料」セクション新設＋資料室に元PDF（sheets-2026-09-10.pdf）' },
   // 全員
   { id: 'al-01', owner: 'all', title: '9/10（木）16:30〜18:00 Zoom に出席', due: '9/10', tag: '会議', note: '9/17 14:30〜から変更（9/6・蜂谷さん通知）' },
   { id: 'al-02', owner: 'all', title: '会議・思いつきは録音して Telegram に入れる運用を始める', due: '継続', tag: '習慣' },
