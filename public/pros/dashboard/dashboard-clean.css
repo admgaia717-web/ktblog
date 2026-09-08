@@ -276,10 +276,10 @@ footer {font-size:11px;color:var(--muted);background:none;border:0;padding:36px 
 .previous-prototypes .showcase{margin-top:0}
 @media(max-width:700px){.abc-lesson-release{grid-template-columns:1fr;padding:23px 20px;gap:24px;margin-top:8px}.abc-release-actions{display:grid;grid-template-columns:1fr;margin-top:19px;gap:6px}.abc-release-start{width:100%}.abc-release-download{justify-content:center}.abc-release-copy .abc-release-device{line-height:1.7}.desktop-break{display:none}.abc-release-materials{max-width:470px;justify-self:center;width:100%}.abc-release-cards figcaption{font-size:.65rem}.abc-release-review{padding-top:19px}.abc-release-print a{font-size:.81rem}.abc-release-print span{font-size:.68rem}}
 
-/* 9/10 定例 判断資料シート（9/8 追加・KT下書きの反映） */
-.sheets-intro{font-size:12px;color:var(--muted);margin:0 0 16px}
-.sheets-intro a{color:var(--accent);font-weight:600}
-.sheet{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:0 0 14px;scroll-margin-top:96px}
+/* 9/10 定例 判断資料パネル（9/8 追加・KT下書きを各セクションに埋め込み） */
+.sheet-anchor{font-size:12px;color:var(--muted);border-top:1px dashed var(--line);margin-top:16px;padding-top:10px;line-height:1.8}
+.sheet-anchor a{color:var(--accent);font-weight:600}
+.sheet{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:14px 0 4px;scroll-margin-top:96px}
 .sheet-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
 .sheet-head .sheet-no{font-size:11px;color:var(--accent);font-weight:600;letter-spacing:.08em;white-space:nowrap}
 .sheet-head h3{font-size:19px;font-weight:650;margin:0;line-height:1.5}
