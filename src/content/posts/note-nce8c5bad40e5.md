@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/nce8c5bad40e5"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311279203/rectangle_large_type_2_2350226da0ac1ee4195963111861792a.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "OpenAI", "投資", "生成AI", "哲学"]
 ---
 
 ## 2ナノ共同開発が意味する製造競争の新局面
@@ -70,3 +70,4 @@ tags: ["note.com"]
 https://news.google.com/rss/articles/CBMidEFVX3lxTFBiS0Q4YUpOZTJRSXJkTS12cmJkNGJGMktRa3hUYVNDa2NILUUtT0ZycTRfUnpubDBzamdIdFprQ3JPZThGeHRiSXlseUhNclhjLUJuMl9aQTBDSWhRWDhuUlFkWnl2N09ENW9MWkRXdlNQSlBT?oc=5
 
 元記事: https://note.com/keity717/n/nce8c5bad40e5
+

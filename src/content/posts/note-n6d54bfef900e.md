@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n6d54bfef900e"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311720959/rectangle_large_type_2_2cc1d839bfe7869b937539863bae2ebf.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI"]
 ---
 
 ## ラジコン趣味の頂点に立つヘリコプター——ホバリング習得まで約1カ月の壁
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMijgFBVV95cUxPX2RrTUh0czRMTVYwVElDN3ZWVWd
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n6d54bfef900e
+

@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/n0e64ee4f4634"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311307506/rectangle_large_type_2_863df115d2a360cad960fa610a70207c.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "執筆"]
 ---
 
 前話 #24 のどこかで、レオはふと呟いた。「この何年かを、誰かに伝えたい」。軌道エレベーター「エル・ミラージュ」から見上げた少年時代、月面基地セレニウムで暮らした青春、軌道上宇宙港「オービタル」で迎えた朝。それを、ひとつの「大人向けの絵本」にしたくなったのだ。あのときは叶わなかった、その想い。今回は、オービタルの完成とともに、ついに結晶する。—— これは、一枚の絵からはじまった、スペースエコノミーの大団円の物語です。
@@ -96,3 +96,4 @@ tags: ["note.com"]
 #宇宙開発 #宇宙ビジネス #スペースエコノミー #軌道エレベーター #月面基地
 
 元記事: https://note.com/keity717/n/n0e64ee4f4634
+

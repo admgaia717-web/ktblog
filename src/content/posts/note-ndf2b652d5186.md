@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/ndf2b652d5186"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311316513/rectangle_large_type_2_673fc5c074f9495ba129fe416577c1c2.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "執筆"]
 ---
 
 ## 未来の史料に残る、眠らない店の灯り
@@ -74,3 +74,4 @@ tags: ["note.com"]
 『現代古代史』編集部
 
 元記事: https://note.com/keity717/n/ndf2b652d5186
+

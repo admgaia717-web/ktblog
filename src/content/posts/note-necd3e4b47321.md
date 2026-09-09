@@ -4,7 +4,7 @@ date: 2026-09-08
 category: "note.com"
 note_url: "https://note.com/keity717/n/necd3e4b47321"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311512413/rectangle_large_type_2_92f59b5c47b7946fade1a7f21007f686.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI", "ペット"]
 ---
 
 ## 大桑・のぞきど森林公園に天然芝のRCカーコースが誕生した
@@ -84,3 +84,4 @@ https://news.google.com/rss/articles/CBMiS0FVX3lxTE01emdBVnFuVUdxVk4zbWFiS2hIVmx
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/necd3e4b47321
+

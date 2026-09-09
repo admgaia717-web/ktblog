@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2aa0c94f1545"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311222415/rectangle_large_type_2_eb0564c81b639c4b139e0926f56267bd.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "生成AI", "ロボット", "LLM", "ローカルLLM", "投資", "執筆", "Apple", "AGI"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける
@@ -91,3 +91,4 @@ https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YUzViR1BtY2lyMHFPM2x0YXlWSWZ
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n2aa0c94f1545
+

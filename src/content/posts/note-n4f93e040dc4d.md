@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n4f93e040dc4d"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311804294/rectangle_large_type_2_086dc21cc4876a654cff2191ed9343d4.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AIエージェント", "健康", "ロボット", "AGI"]
 ---
 
 ## 日立、森永、オラクル、アリババ——現場でAIエージェントが動き始めた
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMiZkFVX3lxTFBoMzZIellzdFl5VG1WS3doQ05DbWt
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n4f93e040dc4d
+

@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/nedc0fa1b57c8"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311779785/rectangle_large_type_2_b16f065387e0e1dcde88a1c78c0fda7d.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "投資", "AGI", "Apple"]
 ---
 
 ## 何が起きたか：Palladyne AIとFANUC Americaの戦略提携
@@ -102,3 +102,4 @@ https://news.google.com/rss/articles/CBMikgFBVV95cUxQTDhHUVZzd0ItT1pCV1lkUjBfQWF
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nedc0fa1b57c8
+

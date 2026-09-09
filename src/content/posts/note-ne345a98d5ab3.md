@@ -4,7 +4,7 @@ date: 2026-09-08
 category: "note.com"
 note_url: "https://note.com/keity717/n/ne345a98d5ab3"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311516472/rectangle_large_type_2_95f77a23a82efd73f8e2e972e661b242.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "Apple", "AGI", "投資"]
 ---
 
 ## 4人を乗せ、月へ——アルテミス有人宇宙船打ち上げ成功
@@ -98,3 +98,4 @@ https://news.google.com/rss/articles/CBMidkFVX3lxTE1fY09wUVB0QkhkMFVneE9TekNmV29
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/ne345a98d5ab3
+

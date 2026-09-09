@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/ne5953e36aab2"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311850670/rectangle_large_type_2_c39a70aa870727c0e418572c634426da.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI"]
 ---
 
 ## ヨコモの米国子会社とforestの支援、そして各地で燃えるレースの冬
@@ -84,3 +84,4 @@ https://news.google.com/rss/articles/CBMigwFBVV95cUxQSjR1Vk5TMmNQVHdNTGhEUnlpbll
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/ne5953e36aab2
+

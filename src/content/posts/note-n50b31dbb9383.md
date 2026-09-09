@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/n50b31dbb9383"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311269256/rectangle_large_type_2_41d4c77a0e2cae93ffa90bb2ec986425.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "LLM", "OpenAI", "ローカルLLM", "セキュリティ", "執筆", "哲学", "AGI", "DIY"]
 ---
 
 ## 個人情報をクラウドに渡さない——マスク専用モデルという解
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMilwFBVV95cUxNNkl6VHQ4YmRVM21WVDNlZUtzTE1
 ※本記事はAGI社長の私的研鑽ノートです。モデルの安全性・利用規約は各自で確認してください。
 
 元記事: https://note.com/keity717/n/n50b31dbb9383
+

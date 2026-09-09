@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/n3f98fb32b500"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311213230/rectangle_large_type_2_302363c923b14780dfe1294acdc3c674.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "小説"]
 ---
 
 前話 #18 では、レオは軌道上宇宙港「オービタル」の全容を見て回り、その広さと、そこで営まれる暮らしに心を打たれました。宇宙港は「機械の巨大さ」でできている——そう思っていたレオが、本話で見つけるのは、その裏にある「人々の温かさ」です。
@@ -84,3 +84,4 @@ tags: ["note.com"]
 #宇宙開発 #宇宙ビジネス #スペースエコノミー #SF #物語
 
 元記事: https://note.com/keity717/n/n3f98fb32b500
+

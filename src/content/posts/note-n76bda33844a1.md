@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/n76bda33844a1"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311208003/rectangle_large_type_2_52badd73377edf3af699e54a00c11843.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "LLM", "ローカルLLM", "AGI", "DIY"]
 ---
 
 ## NPUひとつでLLMが動く——Lemonade Serverが示した現実
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMia0FVX3lxTE9xNmlLUXVkMlp3RVZRWTdwTDNFaXM
 ※本記事はAGI社長の私的研鑽ノートです。モデルの安全性・利用規約は各自で確認してください。
 
 元記事: https://note.com/keity717/n/n76bda33844a1
+

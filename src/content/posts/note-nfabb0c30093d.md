@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/nfabb0c30093d"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311321596/rectangle_large_type_2_652f19fc2ec0b779d959fab13d474da2.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "投資", "哲学", "AGI"]
 ---
 
 ## 小笠原会長が語った「モーション制御からAIロボティクスへ」
@@ -84,3 +84,4 @@ https://news.google.com/rss/articles/CBMiVEFVX3lxTFBubDZXSFJFUHRYaVgwMXU0M28wRHl
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nfabb0c30093d
+

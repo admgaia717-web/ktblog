@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/nd447f5592cac"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311227606/rectangle_large_type_2_ade75d4fd3df673736e93518837ebfe5.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "Apple", "ローカルLLM", "プログラミング", "執筆"]
 ---
 
 ## 同日投入で9Bから397Bまで—Ornith-1.5ファミリーの全体像
@@ -58,3 +58,4 @@ Ornith-1.5のMLX版を動かすには、ランタイム側の対応状況の確�
 今号の文章はクラウドモデルで生成し、編集部によるローカル推論の実測は行っていません。
 
 元記事: https://note.com/keity717/n/nd447f5592cac
+

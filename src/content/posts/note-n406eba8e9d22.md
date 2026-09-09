@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n406eba8e9d22"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311762762/rectangle_large_type_2_c45846da4291e5847d4a70006cb9eb1d.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ローカルLLM", "LLM", "AIエージェント", "執筆", "AGI", "投資"]
 ---
 
 ## ローカルLLMとローカルフード——個人がAIと共に自給する時代へ
@@ -110,3 +110,4 @@ https://news.google.com/rss/articles/CBMilgFBVV95cUxPZUVZT3VfdUdUVjNkWkVoVl9Gdmp
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n406eba8e9d22
+

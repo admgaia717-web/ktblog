@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/n118b6dd0a099"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311263043/rectangle_large_type_2_cf91a2a63c456355943a26379fa3b776.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "映像"]
 ---
 
 前話 #21 では、軌道上宇宙港「オービタル」の仮設ドックが完成し、地球と月をつなぐ定期便が動き始めました。レオは月面基地の整備士から、オービタル常駐のオペレーターへと籍を移したのです。ただ、ひとつだけ心残りがありました。宇宙港のあちこちで、絵がバラバラだった。ドッグは線の細い青、居住区はあたたかい金色、管制塔は冷たい鉄色。宇宙港がひとつの街のように見えるのに、絵は別々の画家が描いたようでした。
@@ -61,3 +61,4 @@ tags: ["note.com"]
 #宇宙開発 #宇宙ビジネス #スペースエコノミー #軌道エレベーター #月面基地
 
 元記事: https://note.com/keity717/n/n118b6dd0a099
+

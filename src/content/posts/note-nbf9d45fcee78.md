@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/nbf9d45fcee78"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311253879/rectangle_large_type_2_2302a367f7ab1a23df7a5eea8ee08528.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "節約"]
 ---
 
 前話 #20 では、軌道上の宇宙港「オービタル」がついに世界へ門を開きました。たくさんの工場と、それを守る「おそうじ屋さん」が動き出したのです。けれど、そこで「なぜ宇宙でモノが作れるの？」「おそうじでどうやってお金がもうかるの？」と、わかったようでわからない人も多かったはず。
@@ -110,3 +110,4 @@ tags: ["note.com"]
 #宇宙開発 #宇宙ビジネス #スペースエコノミー #デブリ回収 #軌道上工場
 
 元記事: https://note.com/keity717/n/nbf9d45fcee78
+

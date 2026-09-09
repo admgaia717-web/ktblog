@@ -4,7 +4,7 @@ date: 2026-09-08
 category: "note.com"
 note_url: "https://note.com/keity717/n/n22b8fb550f55"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311690841/rectangle_large_type_2_bcf7e4026e97bda59e9d93d2939e417d.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI"]
 ---
 
 ## 第1段階──地上で詰いた電力という制約
@@ -100,3 +100,4 @@ https://news.google.com/rss/articles/CBMirgFBVV95cUxOWXl0UG9aZmlpRW1IQ2lPbFl0bkZ
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n22b8fb550f55
+

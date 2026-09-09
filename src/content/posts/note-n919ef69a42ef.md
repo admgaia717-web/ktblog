@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n919ef69a42ef"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311722573/rectangle_large_type_2_9ef54d19edddb87b43f8c6d7a96dddf6.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "執筆"]
 ---
 
 ## 同時多発する「版画」展、その波の正体
@@ -66,3 +66,4 @@ Longchamp076 Duparc besace
 『芸術って何だろ？』編集部
 
 元記事: https://note.com/keity717/n/n919ef69a42ef
+

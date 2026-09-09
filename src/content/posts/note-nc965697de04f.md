@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/nc965697de04f"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311364517/rectangle_large_type_2_19d7f9ba994adbfbcc0f5ddc0b2e85e4.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AGI", "投資", "執筆"]
 ---
 
 ## 何が起きたか——10月9日の発表
@@ -86,3 +86,4 @@ https://news.google.com/rss/articles/CBMiZkFVX3lxTE1nZmRndmw2TXhKNGZYdGJvbnhCUzZ
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nc965697de04f
+

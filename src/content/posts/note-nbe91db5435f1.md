@@ -4,7 +4,7 @@ date: 2026-09-08
 category: "note.com"
 note_url: "https://note.com/keity717/n/nbe91db5435f1"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311397217/rectangle_large_type_2_8ce750e315ac4cab33d6c8579d44cf23.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ローカルLLM", "LLM", "AIエージェント", "ロボット", "AGI"]
 ---
 
 ## ローカルLLMとローカルフードで個人はやっていける——農福連携こそ今回の核心
@@ -86,3 +86,4 @@ https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yRThwbzdTNzhWcW9SOFUzT25xY25
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nbe91db5435f1
+

@@ -4,7 +4,7 @@ date: 2026-09-07
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2dc4c57f95cc"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311274123/rectangle_large_type_2_6b3b02c0626bde52e061359d915dddd4.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "音楽"]
 ---
 
 前話 #22 で、オービタルは青と金の灯りに染まり、バラバラだった宇宙港が「ひとつの街」になりました。絵が揃ったのです。ただ、レオは思っていました。街が揃っただけでは、まだ不完全だ。街には、人の暮らしの鼓動、つまり「一日のリズム」がなければ、生きているとは言えないのだと。
@@ -60,3 +60,4 @@ tags: ["note.com"]
 #宇宙開発 #宇宙ビジネス #スペースエコノミー #軌道エレベーター #月面基地
 
 元記事: https://note.com/keity717/n/n2dc4c57f95cc
+

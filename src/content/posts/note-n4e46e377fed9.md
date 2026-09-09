@@ -4,7 +4,7 @@ date: 2026-09-08
 category: "note.com"
 note_url: "https://note.com/keity717/n/n4e46e377fed9"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311390812/rectangle_large_type_2_89f46ff5ba58cb35ecb27cd085a6d881.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "映像"]
 ---
 
 ## まだ名前のないホールで、最初の展示が始まる
@@ -61,3 +61,4 @@ tags: ["note.com"]
 『芸術って何だろ？』編集部
 
 元記事: https://note.com/keity717/n/n4e46e377fed9
+
