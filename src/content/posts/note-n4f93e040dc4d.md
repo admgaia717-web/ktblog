@@ -1,0 +1,98 @@
+---
+title: "【加藤出版社 #28】現場の「自動化」現実——製造・建設・医療でAIエージェントが担う業務と限界"
+date: 2026-09-09
+category: "note.com"
+note_url: "https://note.com/keity717/n/n4f93e040dc4d"
+eyecatch: "https://assets.st-note.com/production/uploads/images/311804294/rectangle_large_type_2_086dc21cc4876a654cff2191ed9343d4.jpeg?fit=bounds&quality=85&width=1280"
+tags: ["note.com"]
+---
+
+## 日立、森永、オラクル、アリババ——現場でAIエージェントが動き始めた
+
+AIエージェントは、もはやデモの中の存在ではありません。現場で実際に動き始めた事例が、複数の業界から出ています。
+
+日立はHMAXで社会インフラ改革に挑み、AIエージェントが現場で本当に動くのかを検証しています。失敗が許されないインフラの領域で使えると証明されれば、AIエージェントの信頼性に対する見方は一変するはずです。
+
+建設業の現場では、クラウドCONOCがJAPAN AIと共同開発したAIエージェントにより、現場写真の整理や現地調査記録の効率化が進められています。建設現場は記録業務の負担が重く、現場の人が本来の作業に集中できない構造がありました。ここをAIエージェントが担うのは、道具を道具のために使う典型的な姿です。
+
+森永乳業は、ホイップ製造の現場で「匠の技」の自動化に着手しました。長年の経験にしか見えなかった技術を、数値化とAIの力で置き換える試みです。技術の継承が難しい製造業にとって重要な挑戦ですが、すべての技が代替できるかは今後の検証にかかっています。
+
+海外の動きも見逃せません。オラクルは臨床現場へのAIエージェント展開の拡大を受けており、強気の見方が変わる可能性があります。医療という最も判断が問われる領域への展開は、AIと人間の役割分担を試す場でもあります。また、アリババはロボット向けのAIエージェントを発表し、現場での自律行動を実現しました。ソフトの中に閉じていたAIが、物理的な動きを持つ存在になりつつあります。
+
+事例を並べれば、傾向は明らかです。記録・整理・定型の再生のような業務から、AIエージェントは浸透しています。一方で、最終的な判断をどこに置くかは、各社とも模索の途上だと考えられます。ここは事実というより筆者の見立てですが、導入の速度以上に「どこまで任せるか」の線引きが今後の成否を分けるでしょう。道具の進化は止まりません。それを使う現場が、道具を使いこなす立場に回れるかどうかが、次の問いになります。
+
+![挿絵](https://assets.st-note.com/production/uploads/images/311804268/picture_pc_cc236063b70522bc0849f2f731ddf73d.jpeg)  
+挿絵
+
+## 写真の整理から「匠の技」まで、製造・建設・医療で何が代替され、何が残るか
+
+製造・建設・医療の現場では、AIエージェントの導入がすでに現実の段階に入っています。注目すべきは、代替が始まった業務と、なお人間に残る業務の境界線が見えてきたことです。
+
+まず代替されつつあるのは、手間のかかる定型作業です。建設業クラウドCONOCがJAPAN AIと共同開発したAIエージェントは、現場写真の整理や現地調査記録の作成を効率化します。撮りためた写真を分類し記録として整える作業は、誰でもできる反面、膨大な時間を奪われるものです。AIが担えば、人間は本来の業務に集中できます。
+
+次に、「匠の技」の領域という難しい問いがあります。森永乳業はホイップ製造の現場で、熟練者の技の自動化に乗り出しました。技が失われるという悲観的な読み方と、言葉にされなかった技がデータ化され継承可能になるという読み方の二つができます。私は後者の可能性に賭けたい。ただし、技を数値化できても、どう使うかの判断は製造に立つ人間の側にあります。
+
+医療では、オラクルのAIエージェントが臨床現場への展開を拡大しつつあり、従来の強気な見方が変わる可能性が指摘されています。診断や処置の最終責任をAIが負うことはないと考えるのが筋でしょう。記録や情報整理はAIが担い、患者への判断は医師が行う分業が現実的な姿です。
+
+さらに自動化の先には、物理的な自律行動があります。アリババはロボット向けAIエージェントを発表し、現場で自律的に動くロボットの実現を進めました。また日立はHMAXで社会インフラ改革に取り組み、AIエージェントが実際の現場で動くかを検証しています。社会を支えるインフラ領域でAIがどこまで動けるかを見極める試みは、今後の現場自動化の試金石になるはずです。
+
+整理すれば、定型作業、記録の整備、再現可能な技がAIに移り、全体を見て判断し責任を取る仕事が人間に残ります。境界線をどこに引くかは、各現場の実践者が自らの手で確かめるしかありません。
+
+![挿絵](https://assets.st-note.com/production/uploads/images/311804283/picture_pc_d43aaacee1ac4d5eab2c3c8b5ae90c25.jpeg)  
+挿絵
+
+## AIを持つ時代の生存戦略——現場の人が道具を使いこなす側に回れ
+
+AIが現場に入ってくる時代に、私たちが取るべき戦略は明快です。道具を使いこなす側に回ることです。AIはあくまで道具であり、それをどう使い、どこで止めて判断するかを決めるのは人間です。この関係が逆転しない限り、現場の人の価値は失われません。クラウドを借りる時代からAIを持つ時代へ。主導権は、使い手にあるのです。
+
+実際、現場を知る人ほどAIを上手に使えます。建設業クラウドCONOCがJAPAN AIと共同開発したAIエージェントは、現場写真の整理や現地調査記録の効率化を担います。写真がどの工事のどの場面か、記録のどこに不備があるか。それを見抜けるのは現場を歩いてきた人です。日立がHMAXで社会インフラ改革に挑み、AIエージェントが現場で動くかを検証しているのも、技術の性能だけでなく、現場との適合を見極める試みだと言えます。
+
+森永乳業のホイップ製造現場では「匠の技」の自動化への革新が進められています。ここで大事なのは、技が消えることではなく、技が言語化され、形として残ることです。匠自身がその引き受け手になれます。自分の勘と動きを言葉にしてAIに渡せる人は、自動化の主導者になれるのです。
+
+医療ではオラクルのAIエージェントの臨床現場への展開が拡大し、ロボット向けにはアリババがAIエージェントを発表して現場での自律行動が実現しつつあります。道具が賢くなるほど、使い手の判断と誠実さが問われる時代です。
+
+だから私はこう提言します。自分の業務の中の「これはAIに任せられる部分」と「これは人が判断すべき部分」を、今日から仕分けしてみてください。任せられる部分を任せて時短を生み、残った時間を判断と経験の伝承に充てる。それが、AIを持つ時代に現場の人が生き残る道だと考えます。恐れるのではなく、道具の主人になる。それだけのことです。
+
+![挿絵](https://assets.st-note.com/production/uploads/images/311804276/picture_pc_1dfff6f4a2600c38ec70210f817a0b06.jpeg)  
+挿絵
+
+## 加藤出版社の見立て——判断は人間にあり、現場の誠実さが最後の砦
+
+AIが現場に入り込む時代、最後に残る砦は何か。加藤出版社の見立てを、あえて断言しておきたい。それは「判断は人間にあり、現場の誠実さが最後の砦」という一点に尽きる。
+
+AIエージェントは、確かに仕事を変えつつある。写真を整理し、記録を作り、定められた手順に沿って動く。これらはAIの得意分野であり、今後も自動化が進むだろう。だが、自動化が進めば進むほどに、浮かび上がってくるのはそれ以外の部分の重みである。すなわち、何を優先し、どこまで許容し、いつ手を止めるかという判断だ。判断は、現場にしかできない。AIが出す答えを、その場の状況に照らして受け入れるか、修正するか、退けるか。この最終的な裁定を機械に委ねる時代は、来ないと考える。
+
+もう一つ、強調したいのは誠実さである。AIの提案は、便利であるがゆえに危険でもある。もっともらしい答えを、そのまま通してしまう誘惑が常につきまとう。ここで問われるのが、現場の人が「本当に合っているか」と、自分の目と知識で確かめる姿勢、つまり誠実さだ。道具の精度が上がれば上がるほど、道具を使う側の誠実さが結果を分ける。検証を怠れば、道具の誤りはそのまま現場の誤りになる。逆に、現場が丁寧に検証し続ける限り、AIは何度でもやり直せる道具であり続ける。精度の高い道具ほど、使う側の姿勢が問われるという逆説を、われわれは忘れてはならない。
+
+だから見立てはこうだ。AIに任せられる仕事は、どんどん任せてよい。ただし、判断の椅子は明け渡さないこと。そして、AIの答えを鵜呑みにしない現場の誠実さこそが、自動化時代の安全装置であり、最後の砦である。この砦を太くできるかどうかが、これからの現場の質を左右すると、われわれは見ている。
+
+![挿絵](https://assets.st-note.com/production/uploads/images/311804255/picture_pc_b8598f40272c6685917643d0e8fb99bc.jpeg)  
+挿絵
+
+## 用語集
+
+AIエージェント:人への指示を待たずに記録整理など業務を自律的にこなすAIのこと。
+
+HMAX:日立が社会インフラ改革に向け、AIエージェントが現場で動くかを検証している取り組み。
+
+匠の技:熟練者の長年の経験にしか見えない技術で、森永乳業が数値化とAIによる自動化を試みている。
+
+臨床現場:医師による診断や処置が行われる医療の現場で、オラクルのAIエージェント展開が拡大している領域。
+
+自律行動:アリババが発表したロボット向けAIエージェントが、外部からの指示なしに現場で自ら動くこと。
+
+出典
+
+https://news.google.com/rss/articles/CBMid0FVX3lxTE5JZG42aXVLOTFPZjRWdlppY2FCa0syQzBPbm1uZzVnZ29Qa1ZaU0ZBNk1LbXhrM1dOZ19rYnYtTV9weHY2SkRQdXItdHRqS2xLVzIwX1Q0LWpqTzRtRi1mMms0aWNVR24wci1DRE9jcGM5a1E2MV8w0gF8QVVfeXFMTkpaMkNyRENJN2U5ZFhqQjA4WlJ1QW5rLW5JdDlHMGhtQmMxMFVxWGxUOEI5Ump1REJ0d0VDbWg0WHZaeWJUbnd4cmlWZGtNMTViSGVUZl9HNVVFTHpZbHVacVZ3ODBOTGp2OVF5QmUtOFRxYlhyQ1RkVW04cg?oc=5
+
+https://news.google.com/rss/articles/CBMiakFVX3lxTFBTOGZwclpJWmo4WmR6dzdaQUQ2TXhtUGNpR2JPMzZkQ2dqWXgwamZrNjB6MVNJdTk5NmpMclZOdmdtOGJiNTVGODcydk4wU3ZQR1ZkU1pFbURPUzhIYXN2NFdjUEk1OUpKdmc?oc=5
+
+https://news.google.com/rss/articles/CBMiZkFVX3lxTFBObzY5NzRuWEZrM1R5UTd2TU1hQ002VFZfNk1xTFJkT01OeW1BUWNyUHBKb1RNcThQNzBMbTdYVWhPaHhoWVRMLVFLXzFSc3ExeVBaMzExMFU3d2lQZlBLNTdqZDZ2QQ?oc=5
+
+https://news.google.com/rss/articles/CBMiigFBVV95cUxPX0ZXcEtZM3hYMVdmRm56WnJxWWdGVkhXZ1RONFh1REFlWHZJY2lsQ192NF9pTzBzWmhvZzJibnVTSEIwRXd6a0x0aWdlZjlJZXNFU2ZzTXVwMnBOYkptXzRmUVFud2haQ3c2bHo1X0VLamRhcTBRUThidlRZdUJDWFpGVEo4LUNBeUHSAY8BQVVfeXFMTVNzVVV3dzc0SXFySWxpUmpCcVk1TEY0cG1YNlFLemNWaWM2SEZnS2hwdjRKa3dDOVVQSERfc3NzaE1pekFQeHhIdUthZjh3c1gzYko3bk93aUpYYnhSdUZxTmRST0tsZmgtSVlwWlBHWU5Od09HZFFGLXhuQmhGOVNvMUppa2x6VU5MNUtIT28?oc=5
+
+https://news.google.com/rss/articles/CBMiZkFVX3lxTFBoMzZIellzdFl5VG1WS3doQ05DbWtmdDNVeGVTTE5ubWt6Z1lqMHptQjg1TnR0Y3pBdVBiVldTWVk3MmFaUGJ0Ni1lOFJHMzhVMFh1N1FFcVd2QkllUXRSbFJvb2JoUQ?oc=5
+
+※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
+
+元記事: https://note.com/keity717/n/n4f93e040dc4d
