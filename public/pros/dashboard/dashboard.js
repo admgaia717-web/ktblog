@@ -114,6 +114,7 @@ const TASKS = [
   { id: 'ag-12', owner: 'agent', title: '9/10定例 判断資料3枚（動画づくりの線・3者会談の土台・集客LINE運用の型）を各セクションへパネル埋め込み（KT下書き 9/8）', due: '9/8', tag: '納品', done: true, note: '動画の線→教材づくりの考え方・3者会談→次回ミーティング・集客LINE→集客LINEセクションを全面更新。資料室に元PDF（sheets-2026-09-10.pdf）' },
   { id: 'ag-13', owner: 'agent', title: 'B（Betty Broccoli・ぶ）カメラ形式動画を最速制作・納品（KT見本A同型・無音版＋実音/b/×3版・カード t_e85820e7）', due: '9/10', tag: '納品', done: true, note: 'KT「予算度外視で最速」承認・kling i2v 1テイク $0.42・実音はメソッド動画由来（TTS不使用）・検品 t_055251f3' },
   { id: 'ag-14', owner: 'agent', title: 'A動画 修正版v2（男の子AI声・リンゴ半透明）をダッシュボードへ納品（カード t_4df73866・正本は音付mp4+無音版+静止画）', due: '9/13', tag: '納品', done: true, note: '「Annie Apple, a, a, a」・開始ポーズ静止・aタイミングでリンゴ半透明・8s 1080p・検品合格（仕様§7 t_d1c571c7口開き修正版）' },
+  { id: 'ag-15', owner: 'agent', title: 'A動画 正面アングル版v3をダッシュボードへ納品（カード t_d7561177・KT添付サンプルベース・正本は音付mp4+無音版）', due: '9/19', tag: '納品', done: true, note: 'KT添付サンプルの正面アングルをそのまま使用（再生成なし）・AI男声（v2と同一マスター）・開始ポーズ静止・aでリンゴ半透明・10.29s 832x480・検収6項目OK（qa_report.json）' },
   // 全員
   { id: 'al-01', owner: 'all', title: '9/10（木）16:30〜18:00 Zoom に出席', due: '9/10', tag: '会議', note: '9/17 14:30〜から変更（9/6・蜂谷さん通知）' },
   { id: 'al-02', owner: 'all', title: '会議・思いつきは録音して Telegram に入れる運用を始める', due: '継続', tag: '習慣' },

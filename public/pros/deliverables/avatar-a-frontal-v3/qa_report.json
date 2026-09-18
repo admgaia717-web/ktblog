@@ -1,0 +1,50 @@
+{
+  "card": "t_d7561177",
+  "deliverables": {
+    "silent_master": "avatar_a_annie_apple_v3_frontal.mp4",
+    "sound_master": "avatar_a_annie_apple_v3_frontal_sound.mp4",
+    "base_copy": "source/base_frontal_a.mp4",
+    "base_copy_md5": "ce2a86908490fb0c076e6c406c59d5d3",
+    "base_archive_copy": "~/ProsLC/deliverables/video-archive/20260914_1129_a_frontal_astra.mp4"
+  },
+  "video_structure": {
+    "fps": 24,
+    "resolution": "832x480",
+    "frames": 247,
+    "duration_s": 10.2917,
+    "segments": [
+      {"label": "A frozen pose (opaque apple)", "v3_frames": [1, 58], "src": "f001 unblend a=0.86"},
+      {"label": "B1 beat", "v3_frames": [59, 116], "src": "sample f024-f081"},
+      {"label": "B2 beat", "v3_frames": [117, 174], "src": "sample f024-f081"},
+      {"label": "B3 beat", "v3_frames": [175, 232], "src": "sample f024-f081"},
+      {"label": "R return (opaque apple)", "v3_frames": [233, 247], "src": "sample f082-f096"}
+    ]
+  },
+  "audio": {
+    "onsets_s": {"name": 0.30, "a1": 3.417, "a2": 5.833, "a3": 8.250},
+    "mouth_open_plateaus_v3": [[3.29, 4.25], [5.71, 6.67], [8.13, 9.09]],
+    "loudnorm_result": {"input_i": "-16.28", "input_tp": "-2.96", "input_lra": "2.20"},
+    "reference_v2_sound": {"input_i": "-16.46", "input_tp": "-2.99", "input_lra": "3.10"},
+    "master_source_md5": "dee29a034c13e909e66eacd6d4a30c03"
+  },
+  "acceptance_6_items": {
+    "1_frontal_angle_same_look": "OK - base video used as-is (Path B), no regeneration",
+    "2_ai_boy_voice_provenance": "OK - voice_provenance.json, master md5 dee29a03",
+    "3_annie_apple_frozen_opaque": "OK - frames 1-58 MAD 0.0014 (identical), apple B channel 52->82, no halo (QA freeze_opaque)",
+    "4_a_apple_only_transparent_performer_opaque": "OK - beats are untouched sample frames; apple stays semi-transparent (sample-native), performer never altered; no mask-outside delta by construction (no global alpha applied to any beat frame)",
+    "5_mouth_opens_at_each_beat": "OK - mouth-open ratio at onsets 0.1698/0.1692/0.1648 vs peak 0.1728 (98%/98%/95%)",
+    "6_loop_5_11s": "OK - 10.29s, ends on start pose f096, cross-beat MAD 0.379 (encode noise)"
+  },
+  "machine_evidence": {
+    "freeze_mad": {"f1_vs_f30": 0.00142, "f1_vs_f58": 0.00137},
+    "video_stream_md5_match_silent_vs_sound": "4691d4d429dea3d58c89a3fa67c9cf36",
+    "cross_beat_mad_f83_f141": 0.37915,
+    "apple_B_channel": {"native_pose": 52.4, "opaque_pose": 82.3, "beat_frames_untouched": 83.7}
+  },
+  "evidence_files_work": "workspace work/: qa_freeze_opaque.png, qa_machine.json, qa_extra.json, qa_audio_v2.json, final_sheet_1-6.png",
+  "limitations": [
+    "mouth opening quality is sample-native (KT sample's own mouth animation; spec 6-5 allows declaring sample-origin limits)",
+    "semi-transparency in 'a' beats is the KT sample's native look (already semi-transparent); per construction no new transparency was applied and the performer was never touched",
+    "'Annie Apple' name cut [0.30,2.00) contains trailing silence before first beat; kept as in v2 pacing"
+  ]
+}
