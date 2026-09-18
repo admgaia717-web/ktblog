@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>変更履歴 | PROS PHONICS チームの作業室</title>
+<link rel="stylesheet" href="dashboard-clean.css?v=20260918-chlog1">
+<style>
+/* 変更履歴ページ専用の追記スタイル（本体 dashboard-clean.css を継承） */
+.clh-note {background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px;font-size:12px;color:var(--muted);line-height:1.9}
+.clh-note b {color:var(--ink)}
+.clh-legend {margin:10px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11px}
+.clh-legend span {white-space:nowrap}
+.clh-legend .lg-open {color:#8a5a00;background:#fdf3dd;border:1px solid #e3c88a;border-radius:4px;padding:1px 7px;font-weight:600}
+.clh-legend .lg-fix {color:var(--muted)}
+.clh-month {margin:14px 0}
+.clh-month>.disclosure summary h2 {font-size:16px}
+.clh-count {font-variant-numeric:tabular-nums}
+.clh-item {background:#fff;border:1px solid var(--line);border-radius:10px;margin:9px 0;overflow:hidden}
+.clh-item summary {list-style:none;display:flex;align-items:baseline;gap:14px;padding:12px 18px;cursor:pointer;min-height:44px}
+.clh-item summary::-webkit-details-marker {display:none}
+.clh-item summary:after {content:"＋";margin-left:auto;flex-shrink:0;color:var(--accent);font-size:16px}
+.clh-item[open]>summary:after {content:"−"}
+.clh-item summary:hover {background:#fafbf7}
+.clh-date {flex-shrink:0;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.clh-cat {flex-shrink:0;font-size:11px;font-weight:600;letter-spacing:.04em;border-radius:4px;padding:1px 8px;white-space:nowrap}
+.clh-cat.cat-site {color:var(--accent);background:var(--broccoli-soft)}
+.clh-cat.cat-content {color:#7a4a1f;background:var(--peach-soft)}
+.clh-cat.cat-meeting {color:#4a5a7a;background:var(--sky-soft)}
+.clh-cat.cat-system {color:var(--muted);background:#eef0ec}
+.clh-line {font-size:14px;font-weight:600;line-height:1.7;min-width:0}
+.clh-item[open] .clh-line {font-weight:400}
+.clh-body {border-top:1px solid var(--line);padding:16px 20px 18px;font-size:13px;line-height:1.9}
+.clh-meta {margin:0 0 10px;font-size:11px;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 14px}
+.clh-meta b {font-weight:600;color:var(--ink)}
+.clh-body h4 {margin:14px 0 4px;font-size:12px;color:var(--accent);letter-spacing:.06em}
+.clh-body ul {margin:2px 0;padding-left:1.25em}
+.clh-body li {margin:2px 0}
+.clh-git {font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--muted);background:#f4f5f1;border-radius:4px;padding:2px 7px}
+.clh-body a {word-break:break-all}
+.clh-back {display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;background:#fff;border:1px solid var(--line);border-radius:6px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none}
+.clh-back:hover {border-color:#8aa28f;background:#fafbf7}
+.clh-tools {display:flex;justify-content:flex-end;min-height:44px;align-items:center}
+.clh-tools button {font:inherit;font-size:12px;font-weight:600;color:var(--accent);background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px 14px;min-height:38px;cursor:pointer}
+.clh-tools button:hover {border-color:#8aa28f;background:#fafbf7}
+.clh-tools button[disabled] {color:var(--muted);cursor:default}
+details.clh-more {margin:6px 0 0}
+details.clh-more>summary {list-style:none;cursor:pointer;text-align:center;font-size:13px;font-weight:600;color:var(--accent);padding:12px;border:1px dashed var(--line);border-radius:8px;min-height:44px}
+details.clh-more>summary::-webkit-details-marker {display:none}
+details.clh-more[open]>summary {display:none}
+@media (max-width:640px){
+  .clh-item summary {flex-wrap:wrap;gap:6px 10px;padding:11px 14px}
+  .clh-line {flex-basis:100%}
+}
+@media print { .clh-tools {display:none} }
+</style>
+</head>
+<body id="top" class="workspace">
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><i></i><span>PROS PHONICS<small>チームの作業室</small></span></a>
+    <nav id="topnav" aria-label="ページ内">
+      <a href="index.html">作業室トップ</a><a href="changes.html" class="active">変更履歴</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="changelog" aria-labelledby="chlog-title">
+    <div class="collection-heading"><div><p class="eyebrow">PROS PHONICS / 運用</p><h1 id="chlog-title">変更履歴。</h1><p>このサイト（/pros/）にどんな更新が入ったか。新しい順に、1行で。</p></div><span class="collection-note">関係者共有</span></div>
+
+    <div class="clh-note">
+      <b>このページのルール（正本）</b>： サイト更新と同じ作業内で記録する。記録なしに更新を完了としない。並びは常に新しい順・追記位置はこの先頭月の最上部。
+      <ul class="clh-legend">
+        <li class="lg-open">「開く」で詳細</li>
+        <li class="lg-fix">詳細には 担当・Agent・モデル・<b>変更前Gitバージョン</b>・確認・戻し方 を書く</li>
+        <li class="lg-fix">展開状態はリロードで初期に戻る（仕様）</li>
+      </ul>
+      <ul class="clh-legend">
+        <li class="lg-fix">分類: <b>公開ページ</b>＝/pros/ のページ構成や掲載体裁 ／ <b>教材・成果物</b>＝動画・教材・資料の新規掲載や差替 ／ <b>会議・計画</b>＝会議情報・記録関連 ／ <b>システム</b>＝ビルド・認証・内部ファイル</li>
+        <li class="lg-fix">正本: <code>~/ProsLC/specs/ktblog-changelog.md</code>（ルールをこの1文書に固定）</li>
+      </ul>
+    </div>
+
+    <div class="clh-tools"><noscript><span style="font-size:11px;color:var(--muted)">全件をそのまま表示しています</span></noscript><button id="clh-toggle-all" type="button" hidden>全件を開く</button></div>
+
+    <div id="clh-months">
+
+    <div class="clh-month">
+      <details class="disclosure" open>
+        <summary><h2>2026年9月</h2><span><span class="clh-count" data-declared="4">4件</span>・新しい順</span></summary>
+        <div class="detail-body">
+
+          <details class="clh-item" data-entry>
+            <summary>
+              <span class="clh-date">9/18（金）</span>
+              <span class="clh-cat cat-system">システム</span>
+              <span class="clh-line">サイト更新に必ず変更履歴を書く運用を開始（このページの新設）</span>
+            </summary>
+            <div class="clh-body">
+              <div class="clh-meta">
+                <span>日時: <b>2026-09-18</b></span>
+                <span>担当: <b>蜂谷さん</b></span>
+                <span>Agent: <b>オ課長（oh・Hermes 4号機）</b></span>
+                <span>モデル: <b>glm-5.3-flash（zai）</b></span>
+              </div>
+              <h4>変更内容</h4>
+              <ul>
+                <li>変更履歴ページ <a href="changes.html">changes.html</a> を新設（単一HTML・inline CSS・JS依存なし）</li>
+                <li>ダッシュボード本体にリンク3箇所を追加（ナビ・資料室・フッタ）</li>
+              </ul>
+              <h4>確認</h4>
+              <ul>
+                <li>実測は納品時（変更履歴一覧の段階開示・スマホ390px）— この行は導入作業自体が初回記録</li>
+              </ul>
+              <h4>残った問題</h4>
+              <ul>
+                <li>本日の音声解析（会議文字起こし）の反映は次の変更として実施予定</li>
+              </ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul>
+                <li><span class="clh-git">025d275fbb9c68d5b624be9e7ce9304d8733f3f5</span></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="clh-item" data-entry>
+            <summary>
+              <span class="clh-date">9/14（日）</span>
+              <span class="clh-cat cat-system">システム</span>
+              <span class="clh-line">文字起こし実行スクリプトを修正（投稿関数の例外・文字起こし起動方法の2件）</span>
+            </summary>
+            <div class="clh-body">
+              <div class="clh-meta">
+                <span>日時: <b>2026-09-14</b></span>
+                <span>担当: <b>?</b>（指示者不明・後で補う）</span>
+                <span>Agent: <b>オ課長（oh・Hermes 4号機）</b></span>
+                <span>モデル: <b>glm-5.3-flash（zai）</b></span>
+              </div>
+              <h4>変更内容</h4>
+              <ul>
+                <li>transcribe_hachitani_audio.py: 投稿関数の例外要因（関数内importの温床）を解消、mlx-whisper の起動をCLI直接経由に変更</li>
+                <li>サイト公開物への影響なし（ローカル作業用スクリプト）</li>
+              </ul>
+              <h4>確認</h4>
+              <ul>
+                <li>投稿関数が例外なしで動作・文字起こしがGPUで実行できることを実機検証済み</li>
+              </ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul>
+                <li>対象がサイト外のため対象外（ローカルのスクリプト）</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="clh-item" data-entry>
+            <summary>
+              <span class="clh-date">9/13（日）</span>
+              <span class="clh-cat cat-content">教材・成果物</span>
+              <span class="clh-line">A動画 修正版v2（音つき・無音版）を納品物へ掲載</span>
+            </summary>
+            <div class="clh-body">
+              <div class="clh-meta">
+                <span>日時: <b>2026-09-13</b></span>
+                <span>担当: <b>?</b>（指示者不明・後で補う）</span>
+                <span>Agent: <b>オ課長＋第5中隊（oh・gwangbeom）</b></span>
+                <span>モデル: <b>glm-5.3-flash（zai）</b></span>
+              </div>
+              <h4>変更内容</h4>
+              <ul>
+                <li>納品物セクションの A（Annie Apple）動画を修正版v2へ差替（音つき正本＋無音版＋静止画）</li>
+              </ul>
+              <h4>確認</h4>
+              <ul>
+                <li>検品合格・公開URL検収済み（ボード t_f16c5762）</li>
+              </ul>
+              <h4>残った問題</h4>
+              <ul>
+                <li>正面アングル版の4点修正が未着手（ボード t_d7561177）</li>
+              </ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul>
+                <li>遡及記録のため記載なし（運用開始9/18より前の変更）</li>
+              </ul>
+              <h4>戻し方</h4>
+              <ul>
+                <li>遡及記録のため記載なし</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="clh-item" data-entry>
+            <summary>
+              <span class="clh-date">9/8（火）</span>
+              <span class="clh-cat cat-meeting">会議・計画</span>
+              <span class="clh-line">9/10定例の判断資料3枚を各セクションへ掲載・資料室に元PDF</span>
+            </summary>
+            <div class="clh-body">
+              <div class="clh-meta">
+                <span>日時: <b>2026-09-08</b></span>
+                <span>担当: <b>?</b>（指示者不明・後で補う）</span>
+                <span>Agent: <b>オ課長＋第5中隊</b></span>
+                <span>モデル: <b>glm-5.3-flash（zai）</b></span>
+              </div>
+              <h4>変更内容</h4>
+              <ul>
+                <li>判断資料3枚（動画づくりの線・3者会談・集客LINE）を関連セクションへパネル埋め込み、資料室に元PDF（sheets-2026-09-10.pdf）</li>
+              </ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul>
+                <li>遡及記録のため記載なし（運用開始9/18より前の変更）</li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+      </details>
+    </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>PROS PHONICS チームの作業室 · 関係者内共有（アクセス制限あり）· 無断転載・外部共有はお控えください · <a href="index.html">作業室トップへ</a></footer>
+
+<script src="dashboard.js"></script>
+<script>
+(function () {
+  'use strict';
+  var toggle = document.getElementById('clh-toggle-all');
+  if (!toggle) return;
+  // JS があるときだけボタンを出す（JSなし環境では段階開示だけが動く）
+  toggle.hidden = false;
+  var items = Array.prototype.slice.call(document.querySelectorAll('details[data-entry]'));
+  var months = Array.prototype.slice.call(document.querySelectorAll('.clh-month > details.disclosure'));
+  function render() {
+    var allOpen = items.length > 0 && items.every(function (d) { return d.open; });
+    toggle.textContent = allOpen ? '全件をたたむ' : '全件を開く';
+  }
+  toggle.addEventListener('click', function () {
+    var anyClosed = items.some(function (d) { return !d.open; });
+    var target = !anyClosed ? false : true;
+    items.forEach(function (d) { d.open = target; });
+    months.forEach(function (d) { d.open = true; });
+    render();
+  });
+  items.forEach(function (d) { d.addEventListener('toggle', render); });
+  render();
+})();
+</script>
+</body>
+</html>
