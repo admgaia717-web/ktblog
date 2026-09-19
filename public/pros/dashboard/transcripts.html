@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>文字起こし一覧 | PROS PHONICS チームの作業室</title>
+<link rel="stylesheet" href="dashboard-clean.css?v=20260919-t1">
+<style>
+.tr-note {background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 20px;font-size:12px;color:var(--muted);line-height:1.9;margin-bottom:18px}
+.tr-list {display:grid;gap:12px}
+.tr-card {display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px 22px;text-decoration:none;color:inherit;transition:none}
+.tr-card:hover {border-color:#8aa28f}
+.tr-top {display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.tr-date {font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tr-title {font-size:16px;font-weight:650}
+.tr-open {margin-left:auto;font-size:12px;font-weight:600;color:var(--accent);white-space:nowrap}
+.tr-meta {font-size:12px;color:var(--muted);margin-top:4px}
+</style>
+</head>
+<body id="top" class="workspace">
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><i></i><span>PROS PHONICS<small>チームの作業室</small></span></a>
+    <nav id="topnav" aria-label="ページ内">
+      <a href="index.html">作業室トップ</a><a href="transcripts.html" class="active">文字起こし</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="transcripts" aria-labelledby="tr-title">
+    <div class="collection-heading"><div><p class="eyebrow">PROS PHONICS / 会議の記録</p><h1 id="tr-title">文字起こし一覧。</h1><p>定例ミーティングの全文。新しい順。開いて、その場で検索できます。</p></div><span class="collection-note">関係者共有</span></div>
+
+    <div class="tr-note">自動文字起こし（Whisper）です。話者は分離されていません。固有名詞に誤変換があります（各ページ先頭に注記つき）。会議のたびにこの一覧へ追加します。</div>
+
+    <div class="tr-list">
+      <a class="tr-card" href="transcript_20260910.html">
+        <div class="tr-top"><span class="tr-date">9/10（木）</span><span class="tr-title">プロスフォニックス 定例ミーティング</span><span class="tr-open">開く ↗</span></div>
+        <div class="tr-meta">Zoom・104分・2,977行・参加：本山先生・北浦先生・玉川・蜂谷さん。制作方針（A完璧化ファースト）・Mattermost運用の確定など</div>
+      </a>
+      <a class="tr-card" href="transcript.html">
+        <div class="tr-top"><span class="tr-date">9/3（木）</span><span class="tr-title">プロスフォニックス 第2回定例ミーティング</span><span class="tr-open">開く ↗</span></div>
+        <div class="tr-meta">Zoom・100分・2,069行・参加：本山先生・北浦先生・玉川・蜂谷さん。「1文字＝1動画」・100円動画・役割分担の共有など</div>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>PROS PHONICS チームの作業室 · 関係者内共有（アクセス制限あり）· 無断転載・外部共有はお控えください · <a href="index.html">作業室トップへ</a></footer>
+</body>
+</html>
