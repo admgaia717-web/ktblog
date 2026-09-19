@@ -122,7 +122,6 @@ const TASKS = [
   { id: 'al-03b', owner: 'all', title: 'エージェントを使ってみて、必要なら短い打合せ', due: '9/10 完了（前倒し）', tag: '判断', done: true, note: '9/10定例でMM体験・@運用の確認まで実施' },
   { id: 'al-04', owner: 'all', title: '10/1（木）16:30〜18:00 Zoom に出席', due: '10/1', tag: '会議', note: '9/18・蜂谷さん通知' },
   { id: 'al-02', owner: 'all', title: '会議・思いつきは録音して Telegram に入れる運用を始める', due: '継続', tag: '習慣' },
-  { id: 'al-03', owner: 'all', title: '来週（9/10）はエージェントを使ってみて、必要なら短い打合せ', due: '9/10', tag: '判断' },
 ];
 
 /* 課題・リスク */
