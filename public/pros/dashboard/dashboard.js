@@ -8,7 +8,7 @@ const MEETING = {
   date: '2026-09-03',
   title: '第2回 定例ミーティング',
   minutes: 100,
-  next: { iso: '2026-09-10T16:30:00+09:00', label: '9月10日（木）16:30〜18:00', place: 'Zoom（プロスのアカウント）' },
+  next: { iso: '2026-10-01T16:30:00+09:00', label: '10月1日（木）16:30〜18:00', place: 'Zoom（プロスのアカウント）' },
 };
 
 const MEMBERS = {
@@ -115,14 +115,21 @@ const TASKS = [
   { id: 'ag-13', owner: 'agent', title: 'B（Betty Broccoli・ぶ）カメラ形式動画を最速制作・納品（KT見本A同型・無音版＋実音/b/×3版・カード t_e85820e7）', due: '9/10', tag: '納品', done: true, note: 'KT「予算度外視で最速」承認・kling i2v 1テイク $0.42・実音はメソッド動画由来（TTS不使用）・検品 t_055251f3' },
   { id: 'ag-14', owner: 'agent', title: 'A動画 修正版v2（男の子AI声・リンゴ半透明）をダッシュボードへ納品（カード t_4df73866・正本は音付mp4+無音版+静止画）', due: '9/13', tag: '納品', done: true, note: '「Annie Apple, a, a, a」・開始ポーズ静止・aタイミングでリンゴ半透明・8s 1080p・検品合格（仕様§7 t_d1c571c7口開き修正版）' },
   { id: 'ag-15', owner: 'agent', title: 'A動画 正面アングル版v3をダッシュボードへ納品（カード t_d7561177・KT添付サンプルベース・正本は音付mp4+無音版）', due: '9/19', tag: '納品', done: true, note: 'KT添付サンプルの正面アングルをそのまま使用（再生成なし）・AI男声（v2と同一マスター）・開始ポーズ静止・aでリンゴ半透明・10.29s 832x480・検収6項目OK（qa_report.json）' },
+  { id: 'ag-16', owner: 'agent', title: 'A完璧化サポート（声修正の検証・原形の非劣化保存の仕組み）を9/10方針として継続', due: '10/1', tag: '制作', note: '9/10定例決定: Bの前にAを作り込む・声はMarkのままなので修正' },
+  { id: 'ag-17', owner: 'agent', title: 'キーフレーム方式（写真数枚のパラパラ）でB・Cの試作評価', due: '10/1', tag: '試作', note: '9/10定例決定: 動画より正確な可能性・B/Cで試す' },
   // 全員
-  { id: 'al-01', owner: 'all', title: '9/10（木）16:30〜18:00 Zoom に出席', due: '9/10', tag: '会議', note: '9/17 14:30〜から変更（9/6・蜂谷さん通知）' },
+  { id: 'al-01', owner: 'all', title: '9/10（木）16:30〜18:00 Zoom に出席', due: '9/10 完了（前倒し）', tag: '会議', done: true, note: '9/10実施。決定は各セクションへ反映済み' },
+  { id: 'al-03b', owner: 'all', title: 'エージェントを使ってみて、必要なら短い打合せ', due: '9/10 完了（前倒し）', tag: '判断', done: true, note: '9/10定例でMM体験・@運用の確認まで実施' },
+  { id: 'al-04', owner: 'all', title: '10/1（木）16:30〜18:00 Zoom に出席', due: '10/1', tag: '会議', note: '9/18・蜂谷さん通知' },
   { id: 'al-02', owner: 'all', title: '会議・思いつきは録音して Telegram に入れる運用を始める', due: '継続', tag: '習慣' },
   { id: 'al-03', owner: 'all', title: '来週（9/10）はエージェントを使ってみて、必要なら短い打合せ', due: '9/10', tag: '判断' },
 ];
 
 /* 課題・リスク */
 const ISSUES = [
+  { level: 'high', title: 'A動画の声がMark先生のまま（9/10決定: 修正してからB）', body: 'キャラは可愛いが声だけ先生の声。Bへ行く前にA完璧化が必要（9/10定例）。', owner: ['agent', 'kitaura'], action: '声の修正 → 北浦先生ダメ出し → 次へ（進行中）' },
+  { level: 'mid', title: 'キーフレーム方式の評価が未実施', body: '写真数枚のパラパラ方式が動画より正確か、B・Cでの試作で確かめる（9/10定例）。', owner: ['agent'], action: 'B・Cで試して10/1までに評価' },
+  { level: 'low', title: '9/10会議の文字起こし本文の掲載可否が未決', body: '決定事項・課題はサイトへ反映済み（この変更）。本文掲載は掲載許可ルールにより別途判断。', owner: ['hachiya'], action: '掲載要否を蜂谷さんが判断' },
   { level: 'high', title: '収益化モデルが未定', body: 'どこから有料にするか（DL 教材・会員・ゲーム）が決まっていない。まず無料で認知→反応→欲しいものを作る、で3ヶ月検証。', owner: ['tamagawa', 'motoyama'], action: '9/10 までに仮説を1枚にまとめる' },
   { level: 'high', title: '社長への責任と投資判断', body: '「チャンスでも賭けにしない」。責任が取れる範囲で進めたい本山先生と、今がチャンスと見る KT の温度差。', owner: ['motoyama', 'tamagawa'], action: '社長・本山先生・KT の3者会談で合意' },
   { level: 'high', title: '北浦先生の時間がない', body: '現場の中心が最も忙しい。自分でエージェントを覚える時間も惜しい。', owner: ['kitaura', 'motoyama'], action: '仕事を丸ごと KT・エージェントに振る。社内で時間を確保' },
