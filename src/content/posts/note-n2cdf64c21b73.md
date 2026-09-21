@@ -4,7 +4,7 @@ date: 2026-09-15
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2cdf64c21b73"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313940273/rectangle_large_type_2_1051f6282fa2939ad768ac85add83346.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ローカルLLM", "LLM", "AIエージェント", "ロボット", "Bitcoin", "AGI", "投資"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——今回の核心は「小規模の勝ち残り」
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMilwFBVV95cUxOQnl3S2NveUg0WDEzTEJ2d2tzSnF
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n2cdf64c21b73
+

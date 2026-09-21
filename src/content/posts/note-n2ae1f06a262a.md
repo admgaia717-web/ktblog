@@ -4,7 +4,7 @@ date: 2026-09-20
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2ae1f06a262a"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315642881/rectangle_large_type_2_4a37d0c1aea7fff85d6764759c69757c.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資"]
 ---
 
 ## インテルが先んじる次世代EUV導入の現在地
@@ -72,3 +72,4 @@ tags: ["note.com"]
 https://news.google.com/rss/articles/CBMihwFBVV95cUxPRkhYN0ZET3dFQ2NoSmtnb1dkWFZGbmZmeDhRWkgyeGEtb2FXM0JjYWllekNGd05OOTlGQTB5aDZfYUJxbnh5NVFSZXRYRk9CemlGb3U1WmY1Zy1QeFNBRVR5ZUhCWmNIdVU5Y1l3emk2NnBOVlp2WVpITmlUUVhFV18wZGtzUlE?oc=5
 
 元記事: https://note.com/keity717/n/n2ae1f06a262a
+

@@ -4,7 +4,7 @@ date: 2026-09-16
 category: "note.com"
 note_url: "https://note.com/keity717/n/n8b61f57d476c"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314307974/rectangle_large_type_2_aef9b32fad144dd65f5698bf0a7baedd.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "小説"]
 ---
 
 朝の、団地。聖人は、机の、上で、束を、持ち直した。白い、紙の、七枚。役所で、読んでもらえた、束。今日は、別の、行き先だ。鞄に、入れ、階段を、降りる。川の、向こうで、商店街の、シャッターが、順に、上がる音が、する。空気は、ひんやり、している。自転車に、乗らず、歩く。川面に、朝の、光が、細く、落ちて、いた。
@@ -32,3 +32,4 @@ tags: ["note.com"]
 連載『$MAIDO』は毎日17時30分、この紙面で。
 
 元記事: https://note.com/keity717/n/n8b61f57d476c
+

@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/n35f6ec818c43"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312528899/rectangle_large_type_2_86f862e0254531374e2bd48301bd4467.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "ロボット", "Apple", "AGI"]
 ---
 
 ## コンデンサが渋滞の起点になった——今回の制約の所在
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMid0FVX3lxTE9Da2hvM0ZKNHIyMHotOUdjSGRITmt
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n35f6ec818c43
+

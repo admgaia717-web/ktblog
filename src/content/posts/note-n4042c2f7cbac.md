@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n4042c2f7cbac"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312761931/rectangle_large_type_2_400cc339c40c8295308087407ba9e5c3.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "LLM", "ローカルLLM", "AIエージェント", "DIY", "投資", "Apple", "哲学", "AGI", "健康"]
 ---
 
 ## 規模拡大に頼らない垂直農法——ローカルLLMとローカルフードで個人はやっていける
@@ -92,3 +92,4 @@ https://news.google.com/rss/articles/CBMinAFBVV95cUxNelh3QmItQm1JTHU0bGRwR2pVRjF
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n4042c2f7cbac
+

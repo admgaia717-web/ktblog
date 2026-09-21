@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n82e9d0851c3b"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312720922/rectangle_large_type_2_0b76d5102832c7298fe6dae905358453.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "セキュリティ", "投資", "Apple", "AGI"]
 ---
 
 ## カリフォルニアから上がった機密ミッション
@@ -103,3 +103,4 @@ https://news.google.com/rss/articles/CBMisgFBVV95cUxQak5xVjdWbnY4NEV1WGJ6TlFVcDN
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n82e9d0851c3b
+

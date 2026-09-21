@@ -4,7 +4,7 @@ date: 2026-09-16
 category: "note.com"
 note_url: "https://note.com/keity717/n/n1f731f6e60af"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314335106/rectangle_large_type_2_f1b475c8f43128bbbf3a47a7faff1461.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資"]
 ---
 
 ## 施行前日を控えた中国「出入国管理規定」の全体像
@@ -72,3 +72,4 @@ tags: ["note.com"]
 https://news.google.com/rss/articles/CBMif0FVX3lxTFBrNW5raEVScG50Z1l0c0hrQXpqV0RvZ01pXzlVM3lrQUxOeUFqUlNEVk8tUDN2azNNc3FSa3FGVWpHTkJCMnpiRzFodDM2OWUtdnlrTXM1b2JyREx1dmtCdnp4MjNTanlxUHZpU2lRaExoT3haeVdWM2wxWmd3Y0U?oc=5
 
 元記事: https://note.com/keity717/n/n1f731f6e60af
+

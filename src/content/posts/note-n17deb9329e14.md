@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/n17deb9329e14"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312555807/rectangle_large_type_2_1cd3e7b66c6195d6bff794a9eeec5686.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "プログラミング", "LLM", "Apple", "ロボット", "執筆"]
 ---
 
 ## 9月4日と5日、1日違いで上がった2つのバージョン
@@ -58,3 +58,4 @@ mlx-lmだけ更新が途絶えた理由は、資料からは分かりません�
 今号の文章はクラウドモデルで生成し、編集部によるローカル推論の実測は行っていません。
 
 元記事: https://note.com/keity717/n/n17deb9329e14
+

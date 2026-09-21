@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n320e494d7bc2"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311953867/rectangle_large_type_2_55204a26e46c437c6a004e5dfb78047f.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "防災"]
 ---
 
 ## 暫定反ダンピング措置の発動——何が決まったのか
@@ -84,3 +84,4 @@ https://news.google.com/rss/articles/CBMiVEFVX3lxTE5xbUt1RmxhQlpMRzJERjlTYlQ5RFh
 https://news.google.com/rss/articles/CBMibkFVX3lxTFBBcVNZTFZYS0Zab2wxc0t2WmJKZVdEcGxpMDJ4NnRUYkFBQlJ2NDhxRWk5NVo5OTJrU3ppWlVCdTZkWGJYREJxeTU0cEYxbUJTVkM5cTlydjJENGJUYWRtT0ViaVhLZXNzNDdnX3V3?oc=5
 
 元記事: https://note.com/keity717/n/n320e494d7bc2
+

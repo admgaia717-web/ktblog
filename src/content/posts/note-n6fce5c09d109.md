@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n6fce5c09d109"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312777582/rectangle_large_type_2_35280ea91942b432453f3d421a323659.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "投資", "映像", "AGI", "執筆"]
 ---
 
 ## XPengが動いた——IRON向け工場自動化の開始と量産への慎重さ
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZE8xb3Q2M0F5eTJnS1dKQklZc3d
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n6fce5c09d109
+

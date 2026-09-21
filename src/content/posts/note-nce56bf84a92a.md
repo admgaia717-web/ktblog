@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/nce56bf84a92a"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312072440/rectangle_large_type_2_cce7136aa21c7b08b2a39813af371708.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AGI", "投資", "執筆"]
 ---
 
 ## 起亜がGT3台を発表、EV3からEV5まで——何が起きたか
@@ -88,3 +88,4 @@ https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KVEUtSW9OSFpfcGo0ZXptbEdnUTF
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nce56bf84a92a
+

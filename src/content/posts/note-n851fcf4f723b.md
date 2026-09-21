@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/n851fcf4f723b"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313356389/rectangle_large_type_2_214a7004d82add09ee1539df97fe14a8.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "哲学", "健康"]
 ---
 
 ## 週末という名の奇習——未来から振り返る
@@ -61,3 +61,4 @@ tags: ["note.com"]
 『現代古代史』編集部
 
 元記事: https://note.com/keity717/n/n851fcf4f723b
+

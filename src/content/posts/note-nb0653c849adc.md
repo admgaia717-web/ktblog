@@ -4,7 +4,7 @@ date: 2026-09-18
 category: "note.com"
 note_url: "https://note.com/keity717/n/nb0653c849adc"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314804700/rectangle_large_type_2_a08878286aeeeac57a06089075c834c3.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "防災"]
 ---
 
 ## 3年まで縮まった韓中半導体格差の実態
@@ -72,3 +72,4 @@ https://news.google.com/rss/articles/CBMidEFVX3lxTE1uZ2hIUDBSMTM2b3MtRlNCalRFUlV
 https://news.google.com/rss/articles/CBMif0FVX3lxTE9KQmVBMzJ4T3lpWlhtX3h6VWZuelN0UzZXRjlyMnlqbzRoQ3duMWNrT1l0NlNYWWQtd0k5TENBcFh6TkdrNXBOZnhVYUNDYzBFT2RYbFhLRklLLUQ0ZUpHSFlBMU96X1BPbkRMNlZnVWRISFUzanR2T3F2R0s4SU0?oc=5
 
 元記事: https://note.com/keity717/n/nb0653c849adc
+

@@ -4,7 +4,7 @@ date: 2026-09-18
 category: "note.com"
 note_url: "https://note.com/keity717/n/nb12ba72598d6"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314878544/rectangle_large_type_2_61fa0e261cd33a76b90c5e4d15bae20c.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "映像", "哲学", "AGI"]
 ---
 
 ## 10月はツーリングRCの祭り——京商とタミヤの新車が同時襲来
@@ -76,3 +76,4 @@ https://news.google.com/rss/articles/CBMiZEFVX3lxTFAtS2lrSjhWUUlueHI1WnNEdWl4eWN
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nb12ba72598d6
+

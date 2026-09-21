@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/n77e09bb5e68c"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312066670/rectangle_large_type_2_8f4c70d5e868626f20beaa2c68bd3c84.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "ローカルLLM", "LLM", "AIエージェント", "AGI"]
 ---
 
 ## 採算性という名の正門——テーゼと今回の核心
@@ -92,3 +92,4 @@ https://news.google.com/rss/articles/CBMipwFBVV95cUxQYjhaUDRWdVBXOGtfRFpzNmI5ZlJ
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n77e09bb5e68c
+

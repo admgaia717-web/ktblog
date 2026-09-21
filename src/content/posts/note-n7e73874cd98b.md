@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/n7e73874cd98b"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312378722/rectangle_large_type_2_a452e18638b4986e5e7f0aa2747059e5.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AGI", "投資", "執筆"]
 ---
 
 ## 年内打ち上げ断念——月探査機は何が起きたのか
@@ -84,3 +84,4 @@ https://news.google.com/rss/articles/CBMiVEFVX3lxTE0yTndRb1N6MnR1YkRkWnBxVjNXNG4
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n7e73874cd98b
+

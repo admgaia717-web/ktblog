@@ -4,7 +4,7 @@ date: 2026-09-16
 category: "note.com"
 note_url: "https://note.com/keity717/n/n1ff4d4a1030b"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314141667/rectangle_large_type_2_b303907a10601ee5e58469962f07cf0b.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "LLM", "AIエージェント", "投資", "AGI", "ロボット", "哲学", "DIY"]
 ---
 
 ## AIとローカルフードで個人はやっていける——農水省の新動向が示す核心
@@ -76,3 +76,4 @@ https://news.google.com/rss/articles/CBMibEFVX3lxTFBqa3pnWG5kXzNNaVVEWHpvNi1ETl9
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n1ff4d4a1030b
+

@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/nc2b420a78d05"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312406448/rectangle_large_type_2_fbbd52172926a664228a1065097d76c1.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AIエージェント", "哲学", "ペット", "セキュリティ", "投資"]
 ---
 
 ## 未来の民俗学者が首をかしげるもの――国家が民を数える習俗
@@ -74,3 +74,4 @@ tags: ["note.com"]
 『現代古代史』編集部
 
 元記事: https://note.com/keity717/n/nc2b420a78d05
+

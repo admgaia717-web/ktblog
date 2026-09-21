@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/n881eb0c787c4"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312227295/rectangle_large_type_2_b1aee7a09c23cbdab588345496f54049.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ローカルLLM", "LLM", "AIエージェント", "ロボット", "AGI"]
 ---
 
 ## AIとローカルフードがあれば、個人はやっていける——AI農業特区のいま
@@ -86,3 +86,4 @@ https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DT0VRdHdvWVFyOFVaUENFNW0tY1J
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n881eb0c787c4
+

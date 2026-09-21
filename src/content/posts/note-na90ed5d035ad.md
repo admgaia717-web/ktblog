@@ -4,7 +4,7 @@ date: 2026-09-18
 category: "note.com"
 note_url: "https://note.com/keity717/n/na90ed5d035ad"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314764330/rectangle_large_type_2_630c1bcef84442e210c5f2f366c7dbaa.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "ペット", "LLM", "AIエージェント", "AGI", "DIY"]
 ---
 
 ## ローカルLLMとローカルフード——個人はやっていける
@@ -104,3 +104,4 @@ https://news.google.com/rss/articles/CBMiXkFVX3lxTE9iV0FHZkdORDE0bzVDYU9aLTBNZmY
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/na90ed5d035ad
+

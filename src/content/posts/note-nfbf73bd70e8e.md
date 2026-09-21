@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/nfbf73bd70e8e"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312872596/rectangle_large_type_2_2b9ce60209311d0b4fc6bad5dbe70e75.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "セキュリティ", "AGI"]
 ---
 
 ## 第3段階：AI計算資源の枯渇が顕在化した
@@ -90,3 +90,4 @@ https://news.google.com/rss/articles/CBMiugFBVV95cUxNWWRIUzNnV1htcmFaMm5vQXc1dDh
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nfbf73bd70e8e
+

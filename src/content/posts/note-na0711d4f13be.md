@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/na0711d4f13be"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313490421/rectangle_large_type_2_dd723fb8ab9e4b908570605c960f3ed9.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "音楽"]
 ---
 
 ## クリスティーズが示した2026年APAC展覧会ガイドの中身
@@ -72,3 +72,4 @@ tags: ["note.com"]
 『芸術って何だろ？』編集部
 
 元記事: https://note.com/keity717/n/na0711d4f13be
+

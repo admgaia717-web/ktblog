@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n7bb70fe53ab1"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312735319/rectangle_large_type_2_d62d78c57bb6d515b1b62c1efffe396d.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "投資", "AIエージェント", "ローカルLLM", "LLM", "ロボット", "AGI"]
 ---
 
 ## 個人はAIと共に食料自給できる——水耕栽培研修と収穫体験が示す入口
@@ -93,3 +93,4 @@ https://news.google.com/rss/articles/CBMiZEFVX3lxTE5HRUlCdGt2UTlSd2FZSGluLXY4eF8
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n7bb70fe53ab1
+

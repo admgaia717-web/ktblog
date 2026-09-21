@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/nbb71f95f49a3"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311916896/rectangle_large_type_2_949c83c92bdbda5dbd630ca19e4cc1e5.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット"]
 ---
 
 ## はじまりは、一枚の「コピー」だった
@@ -70,3 +70,4 @@ tags: ["note.com"]
 『芸術って何だろ？』編集部
 
 元記事: https://note.com/keity717/n/nbb71f95f49a3
+

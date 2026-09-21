@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/nff5c121975e8"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313571679/rectangle_large_type_2_c5a587379b487c4e9602f8cadddd28c7.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "Apple", "AGI"]
 ---
 
 ## 制約の起点：中国AIを苦しめる高性能半導体の供給不足
@@ -92,3 +92,4 @@ https://news.google.com/rss/articles/CBMi0AFBVV95cUxQamNUUmdidGlyZlpRVGZZYTI0c1N
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nff5c121975e8
+

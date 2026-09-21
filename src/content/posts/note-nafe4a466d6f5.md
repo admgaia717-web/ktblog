@@ -4,7 +4,7 @@ date: 2026-09-15
 category: "note.com"
 note_url: "https://note.com/keity717/n/nafe4a466d6f5"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313889148/rectangle_large_type_2_7899f4dafee060a1dd2c3cab821bc225.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "防災", "投資", "AGI"]
 ---
 
 ## 台湾が6年で1.2兆円、日本も有事増産へ——今回何が起きたのか
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMibEFVX3lxTE5IVGhSOWotaUR0cW1HaVpqMDFueVV
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nafe4a466d6f5
+

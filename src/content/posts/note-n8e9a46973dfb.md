@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n8e9a46973dfb"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312957563/rectangle_large_type_2_51850589da03ef48f42430ed3b7e51c3.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "Apple", "生成AI", "投資", "執筆"]
 ---
 
 ## AMDが明言した「HBM確保が最大の課題」の意味
@@ -72,3 +72,4 @@ AMDの発言が意味するのは、AI半導体の競争が演算性能の設計
 https://news.google.com/rss/articles/CBMidEFVX3lxTE1mNUVPY1lNUm9kUGdkSU1lWGhCNVhubWpzcFJQRVI3VGo2ZUFQSVdITDZkdWlzZVNIV195TkhNVHJMeU5DMEhWOTRZUDR6cEE0MWxuYzQydDZ4R0dxMzJVaUtDQlh0R05FSFhqc0Vid1UtTzAy?oc=5
 
 元記事: https://note.com/keity717/n/n8e9a46973dfb
+

@@ -4,7 +4,7 @@ date: 2026-09-18
 category: "note.com"
 note_url: "https://note.com/keity717/n/nabe7ab5722f8"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314758776/rectangle_large_type_2_e1c8674a724516974e66b8f217415a2e.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "執筆", "AGI", "ペット"]
 ---
 
 ## パーカーズバーグに集まった挑戦者たち——ニューイヤーズ・トロフィーレースの現場
@@ -78,3 +78,4 @@ https://news.google.com/rss/articles/CBMigwFBVV95cUxQSjR1Vk5TMmNQVHdNTGhEUnlpbll
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nabe7ab5722f8
+

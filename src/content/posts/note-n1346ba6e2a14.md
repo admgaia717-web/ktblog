@@ -4,7 +4,7 @@ date: 2026-09-20
 category: "note.com"
 note_url: "https://note.com/keity717/n/n1346ba6e2a14"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315452514/rectangle_large_type_2_674f55e591522d53ca7360f0a3e0aed1.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "執筆", "ロボット", "投資"]
 ---
 
 ## 中国製造装置の35％国産化が意味するもの
@@ -72,3 +72,4 @@ https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTjI2amczd0lYN3E3ZlRvY1U4RTB
 https://news.google.com/rss/articles/CBMihgFBVV95cUxQck53X1dHNzRuekJtNzlMNV9ndFVqazJ3Mm11Z3ZlR3lRTTNPRXhodXE5WlU0MllzSVlhSHB0SUFfeW9RdXBaWHBRSXB1U1VLNmo4M25Xc3VRTzJpNEs0cHNIbUFUNnI2YTI4VWJyc2N5SW80MjdobzJhTUlaajJoaFdlUy1PUQ?oc=5
 
 元記事: https://note.com/keity717/n/n1346ba6e2a14
+

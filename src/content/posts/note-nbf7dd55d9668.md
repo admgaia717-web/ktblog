@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/nbf7dd55d9668"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312667951/rectangle_large_type_2_22c9b372f756e29d106567a781ec9cf3.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "投資", "AGI"]
 ---
 
 ## 好決算なのに株価が伸びない——日本のロボット大手に何が起きているか
@@ -98,3 +98,4 @@ https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HSjI0RDJncUZZVjRLZDBDREhMTzN
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nbf7dd55d9668
+

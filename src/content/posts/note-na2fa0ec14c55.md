@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/na2fa0ec14c55"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312118705/rectangle_large_type_2_218d65efe403a6abf29dcd0992cdd58d.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "小説"]
 ---
 
 ## 焼き物に「絵」が生まれるまで — 鉄絵銅彩の基本
@@ -74,3 +74,4 @@ tags: ["note.com"]
 『芸術って何だろ？』編集部
 
 元記事: https://note.com/keity717/n/na2fa0ec14c55
+

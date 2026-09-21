@@ -4,7 +4,7 @@ date: 2026-09-17
 category: "note.com"
 note_url: "https://note.com/keity717/n/n4d576a4d95a2"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314477477/rectangle_large_type_2_934c1de2e1475a053267a3ffb0bbd1b6.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "LLM", "ローカルLLM", "AIエージェント", "投資", "Apple", "AGI"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——耕作放棄地が300人の仕事を生んだ理由
@@ -91,3 +91,4 @@ https://news.google.com/rss/articles/CBMikAFBVV95cUxPaWtyTnZTdmlkY3JwSTM4a2NMajY
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n4d576a4d95a2
+

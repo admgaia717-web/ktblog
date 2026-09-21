@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2dff4c4f6c23"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313620679/rectangle_large_type_2_378833d463f231563027097b4d32f57e.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "執筆"]
 ---
 
 ## なぜ今、「版画のホーマー」なのか——展覧会の背景と意義
@@ -66,3 +66,4 @@ tags: ["note.com"]
 『芸術って何だろ？』編集部
 
 元記事: https://note.com/keity717/n/n2dff4c4f6c23
+

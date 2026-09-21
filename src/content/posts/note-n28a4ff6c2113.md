@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/n28a4ff6c2113"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313464133/rectangle_large_type_2_7268c1da8864b9e275ccbcb5e18a8308.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "LLM", "ローカルLLM", "AIエージェント", "ロボット", "AGI"]
 ---
 
 ## スマート農業研修会と県別DX——連載の核心を断言する
@@ -90,3 +90,4 @@ https://news.google.com/rss/articles/CBMiUEFVX3lxTFBMVmRaOGE4TUV0eExZc2UweF9iVXZ
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n28a4ff6c2113
+

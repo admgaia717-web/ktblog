@@ -4,7 +4,7 @@ date: 2026-09-15
 category: "note.com"
 note_url: "https://note.com/keity717/n/n27f21e426cc5"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313992903/rectangle_large_type_2_6e3cb538b892d8a212e7306ab71f562a.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "防災", "投資"]
 ---
 
 ## 韓国・改正反スパイ法の施行——半導体機密流出に最高懲役30年
@@ -72,3 +72,4 @@ https://news.google.com/rss/articles/CBMif0FVX3lxTE1hTVN0Qm9EUkFIakQ0RDRuaVpzVlY
 https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nWWFiZW1FemEzYV9ic3VTb1hobGlIRHFvQXItcTB1N1RRNzNYUHJRTy1yVjhLMUc2alRXSkk1YzJtSXhKUUYxWVpwVHNHV1JOWDJOTWlMVThhMkZmaXJoVGZIVdIBaEFVX3lxTFByV2ZPbTY4SnRqRGxlR2pDWjlRVmFMbDRSbDNqRHYzdXBCU1pNcGh4ajU0cmxVWXZzV0RaNS15WWpMMjZkOVRNWWIxM2pia2RDRXNDNGF5SlM0dVNKcDVRZEhHWndMSW9q?oc=5
 
 元記事: https://note.com/keity717/n/n27f21e426cc5
+

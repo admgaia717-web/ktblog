@@ -4,7 +4,7 @@ date: 2026-09-16
 category: "note.com"
 note_url: "https://note.com/keity717/n/nb749723e4e3d"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314183382/rectangle_large_type_2_25852ad42aa05e02f0713ec32a6eecc3.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "LLM", "ローカルLLM", "AIエージェント", "生成AI", "AGI", "投資"]
 ---
 
 ## goose、IBMとNASA、Unsloth Desktop——いま同時に動いた三つの発表
@@ -86,3 +86,4 @@ https://news.google.com/rss/articles/CBMickFVX3lxTE9JY204MlZnejd6TUZ3RXZYY3JQVS1
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nb749723e4e3d
+

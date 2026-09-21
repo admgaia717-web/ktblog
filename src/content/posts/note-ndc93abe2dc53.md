@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/ndc93abe2dc53"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313068618/rectangle_large_type_2_546fec583591963f97a7a32ca2b85d81.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "執筆"]
 ---
 
 ## ハーバードの『Critical Printing』が目指すもの
@@ -55,3 +55,4 @@ Homi K. Bhabha 2 (cropped)
 『芸術って何だろ？』編集部
 
 元記事: https://note.com/keity717/n/ndc93abe2dc53
+

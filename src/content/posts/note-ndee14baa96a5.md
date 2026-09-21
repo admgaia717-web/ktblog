@@ -4,7 +4,7 @@ date: 2026-09-16
 category: "note.com"
 note_url: "https://note.com/keity717/n/ndee14baa96a5"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314299577/rectangle_large_type_2_df2cf9d6ae4e1a220d9d3b9f3f93ae63.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ロボット", "ローカルLLM", "LLM", "映像", "AIエージェント", "AGI"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——実機体験と高校改革が示す自給の入口
@@ -88,3 +88,4 @@ https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qb0RkRjg5S1ZnZ0M5bHBfaF9IUXR
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/ndee14baa96a5
+

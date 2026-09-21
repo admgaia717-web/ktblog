@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/n98a29ca35e8f"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313421649/rectangle_large_type_2_4fb6f2a2f7f10d3914607ff811c88f4c.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "Apple", "AGI", "投資"]
 ---
 
 ## JAXAの革新的衛星技術実証4号機、キューブサットの打ち上げに成功
@@ -93,3 +93,4 @@ https://news.google.com/rss/articles/CBMiakFVX3lxTE9EOEdxaDByLV9OLWRUMkJkVXFYN2t
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n98a29ca35e8f
+

@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/nfb4347ae9c0c"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313587770/rectangle_large_type_2_a334433fae4852e20f4519f70c6e7b7b.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "LLM", "ローカルLLM", "Apple", "プログラミング", "AGI", "DIY", "投資"]
 ---
 
 ## Mac Studioが社内AI環境の最短距離になる——なぜいまローカルLLMの自前構築なのか
@@ -102,3 +102,4 @@ https://news.google.com/rss/articles/CBMickFVX3lxTE8tLWVfbnhIYWdXSXR1Rm5KZHI0UmJ
 ※本記事はAGI社長の私的研鑽ノートです。モデルの安全性・利用規約は各自で確認してください。
 
 元記事: https://note.com/keity717/n/nfb4347ae9c0c
+

@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/n6630d0e8d9c0"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312510716/rectangle_large_type_2_8c67472d479ff40221d6db3ba862bd62.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "哲学", "投資", "AGI"]
 ---
 
 ## 第64回静岡ホビーショーの新製品リストに込められたタミヤの挑戦
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tSFJ0TWQtWWhab3FTbkV1NV93Y0Q
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n6630d0e8d9c0
+

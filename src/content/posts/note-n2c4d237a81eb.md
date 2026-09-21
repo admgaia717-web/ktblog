@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2c4d237a81eb"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311900164/rectangle_large_type_2_4149cb548615ac0baa1c44ba44acec02.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ロボット", "LLM", "ローカルLLM", "AIエージェント", "AGI", "投資"]
 ---
 
 ## 田植え機を買わず、9月に米を収穫する——ローカルLLMとローカルフードのテーゼ
@@ -93,3 +93,4 @@ https://news.google.com/rss/articles/CBMia0FVX3lxTFBpSkdFNWJvZTdDTkQ5MDN6M0hEVGl
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n2c4d237a81eb
+

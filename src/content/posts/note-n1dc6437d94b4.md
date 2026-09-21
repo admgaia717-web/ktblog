@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/n1dc6437d94b4"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313506885/rectangle_large_type_2_7a8f917db78f0673507e9a88c5662079.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AIエージェント", "AGI", "投資"]
 ---
 
 ## 月35万円で35体が働く——NECの「無人部署」が何を語るか
@@ -88,3 +88,4 @@ https://news.google.com/rss/articles/CBMiREFVX3lxTE5yTHlMNDFMTVFnSlotdEljZWVrVWt
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n1dc6437d94b4
+

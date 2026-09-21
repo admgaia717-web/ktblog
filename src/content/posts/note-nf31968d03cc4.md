@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/nf31968d03cc4"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312133775/rectangle_large_type_2_dc52eb4493f8a5c1259beda4cac12c82.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AIエージェント", "生成AI", "セキュリティ", "Apple", "AGI", "健康"]
 ---
 
 ## 導入率77％の後追い——企業が「使ってみた」で終わっている理由
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMivAFBVV95cUxNU2xkeEZkcEc5cHl4TDJqYmx6VVI
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nf31968d03cc4
+

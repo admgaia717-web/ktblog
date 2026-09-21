@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/ne00ca0380ec9"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312363020/rectangle_large_type_2_80f9cdfcf733affa36ccbb037a446c17.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "Apple", "AGI", "投資"]
 ---
 
 ## アウディがA2 e-tronを欧州発表——A2の車名が約20年ぶりに復活した
@@ -102,3 +102,4 @@ https://news.google.com/rss/articles/CBMiT0FVX3lxTE9FWUtpMXZVSDRiQWsyMEhuM2VRaVg
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/ne00ca0380ec9
+

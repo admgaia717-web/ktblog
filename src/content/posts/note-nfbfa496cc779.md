@@ -4,7 +4,7 @@ date: 2026-09-17
 category: "note.com"
 note_url: "https://note.com/keity717/n/nfbfa496cc779"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314608552/rectangle_large_type_2_18a134b144804b9883c6dde8b30a1ddc.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ローカルLLM", "LLM", "ロボット", "AIエージェント", "AGI", "投資"]
 ---
 
 ## IoTで畑を測る——個人がAIと共に食料自給するというテーゼ
@@ -85,3 +85,4 @@ https://news.google.com/rss/articles/CBMilAFBVV95cUxPeEVZOUxlYUlGNVdkTTY4UFgwcmd
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nfbfa496cc779
+

@@ -4,7 +4,7 @@ date: 2026-09-20
 category: "note.com"
 note_url: "https://note.com/keity717/n/nb6cc4a0c5263"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315536487/rectangle_large_type_2_e3b546a721efe1e5edef2a8a87dc4bb5.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "映像", "AGI", "投資"]
 ---
 
 ## 名古屋市役所西庁舎に何が起きたか——県委託撮影中の衝突事故の核心
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMif0FVX3lxTE5lT2owdkszcTF0Z002UGs2NmJhUjF
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nb6cc4a0c5263
+

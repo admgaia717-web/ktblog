@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/nb9cb46baa76e"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313115830/rectangle_large_type_2_47f37a942e897fb2885bbe67d9d7220a.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資"]
 ---
 
 ## DeepSeekの新モデルが主張するHBM使用量の大幅削減の内容
@@ -76,3 +76,4 @@ DeepSeekの新モデルがHBM使用量の大幅削減を主張したこと自体
 https://news.google.com/rss/articles/CBMidEFVX3lxTE1JRlNoUmp4RVRSdWJKQlBET3VuR3Z2VlhmcU1TTXdWaGUwamRzYTRPSDFTWkxvZWNhZ2pXR2c5Q1pkQU13MWMtclBxeUZZcTFhbkRiYzQxZ29lR0tUZlRlTkVkbWFfYzZOV1NoSi1adC05X0Q3?oc=5
 
 元記事: https://note.com/keity717/n/nb9cb46baa76e
+

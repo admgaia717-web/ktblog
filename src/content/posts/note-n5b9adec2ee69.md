@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n5b9adec2ee69"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311892100/rectangle_large_type_2_728f56a3400708a0baf7461011fba0e2.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "ロボット", "Apple", "執筆"]
 ---
 
 ## トレンドTOP10に並ぶQwen3.8-27B系——4本入りした理由
@@ -64,3 +64,4 @@ GSQについては、ISTA-DASLabのGSQ-RCO-GGUFがGGUF配下の形式名とし�
 今号の文章はクラウドモデルで生成し、編集部によるローカル推論の実測は行っていません。
 
 元記事: https://note.com/keity717/n/n5b9adec2ee69
+

@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/nb7036f57aafd"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312032736/rectangle_large_type_2_23d42681af0749b571ab0ae8b89ec95c.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "セキュリティ", "投資", "Apple", "AGI"]
 ---
 
 ## Armが「IPからチップへ」踏み越えた日——第N段階の開幕
@@ -92,3 +92,4 @@ https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaWFXSWVubmlabWxoTUdhdklLeW9
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nb7036f57aafd
+

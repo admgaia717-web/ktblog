@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/nc7fe23334b13"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312386213/rectangle_large_type_2_81e1b520cb33e4ec9683bd5ea452d4e6.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI"]
 ---
 
 ## 手のひらのハチロクと実寸大ランチボックス、サイズの両極が同時に話題に
@@ -74,3 +74,4 @@ https://news.google.com/rss/articles/CBMiSkFVX3lxTE9ab3RSZHJSZlIxOXQ3QjZid0tsQlp
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nc7fe23334b13
+

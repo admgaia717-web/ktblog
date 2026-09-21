@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/nc02f0c2329ee"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313149407/rectangle_large_type_2_e7127c74ce209288139ab121378578e8.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "LLM", "Apple", "Bitcoin", "AGI", "投資"]
 ---
 
 ## 借りるAIから、持つAIへ——自宅で動かすという選択
@@ -84,3 +84,4 @@ https://news.google.com/rss/articles/CBMiY0FVX3lxTE5ETTNBOFY3VUhaQUpJVVdoWElkUzk
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nc02f0c2329ee
+

@@ -4,7 +4,7 @@ date: 2026-09-17
 category: "note.com"
 note_url: "https://note.com/keity717/n/nd40f436aac03"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314488860/rectangle_large_type_2_3d29a50f95360371ff0bc27efab481c3.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "Apple"]
 ---
 
 ## LG化学と江華マイクロエレクトロニクスの提携が意味するもの
@@ -74,3 +74,4 @@ https://news.google.com/rss/articles/CBMidEFVX3lxTE5pbDFlQWFBVkE5dE9ocklnaVRJSW0
 https://news.google.com/rss/articles/CBMiRkFVX3lxTE5sYWFvN0tRaXlLQVB1THBuYzJMR2Rub21uOThhZlNtSHBCV1VfSzQybWZXNHUxcHR5SlVNZ2d4WU9UMm54Ymc?oc=5
 
 元記事: https://note.com/keity717/n/nd40f436aac03
+

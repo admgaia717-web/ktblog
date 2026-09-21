@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n3efa856b2f45"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313037373/rectangle_large_type_2_5b261ff7c4418ca1a1bcf11bbfee7a16.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "Bitcoin", "AGI"]
 ---
 
 ## 演算チップの供給制約が起点となる——GPUからAIファクトリーへ
@@ -94,3 +94,4 @@ https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMEY2eHZJNW5rTF91Zi1hTWFFVTV
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n3efa856b2f45
+

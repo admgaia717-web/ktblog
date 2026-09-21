@@ -4,7 +4,7 @@ date: 2026-09-20
 category: "note.com"
 note_url: "https://note.com/keity717/n/n9af052c04dae"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315441534/rectangle_large_type_2_e504a3a7549da14a92eae27f30796341.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ローカルLLM", "LLM", "AIエージェント", "ロボット", "映像", "AGI"]
 ---
 
 ## AI時代の義務教育——ローカルLLMとローカルフードで個人はやっていける
@@ -86,3 +86,4 @@ https://news.google.com/rss/articles/CBMiV0FVX3lxTE01SFNaS0hCNTZpdE11TGtnX1JyY1R
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n9af052c04dae
+

@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/n850c9e2db414"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311882706/rectangle_large_type_2_9a6157eaa078ddd6c8eb26df93e93b4a.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "LLM", "DIY", "ローカルLLM", "Apple", "AGI", "健康", "執筆"]
 ---
 
 ## Abliteration.AIが動かし始めた「検閲なきモデル市場」の衝撃
@@ -92,3 +92,4 @@ https://news.google.com/rss/articles/CBMijwFBVV95cUxPd0Q4bkhuNDZHQUxZNGFYNGl1SjF
 ※本記事はAGI社長の私的研鑽ノートです。モデルの安全性・利用規約は各自で確認してください。
 
 元記事: https://note.com/keity717/n/n850c9e2db414
+

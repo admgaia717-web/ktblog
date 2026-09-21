@@ -3,6 +3,7 @@ title: "128GB革命 #12 DGX Spark論争(前)——帯域614対273、Mac派が最
 date: 2026-09-13
 category: "テクノロジー"
 eyecatch: "/Users/kt/m5max-series/images/ep12/eyecatch.png"
+tags: ["Apple", "ローカルLLM", "LLM", "生成AI", "ロボット", "ゲーム", "DIY", "投資", "執筆"]
 ---
 スタバでサイズを迷うあの数秒、好きなんだよね。トールにするか、ヴェンティにするか。中身は同じコーヒーなのに、カップで満足感が変わる。実はいまローカルLLM界隈で起きている「DGX Spark対M5 Max」の論争も、構造はこれにすごく似てる。どちらも128GBのメモリを積んだマシンなのに、「速い」というたった一つの言葉が、正反対の二つの実測を生んでる。片方は「Macの方が速い」。もう片方は「場面によりDGXが13〜45%速い」。どちらの数字にも嘘がない。それなのに結論が割れてる。前編の今回は、Mac派が「勝つ」と信じる根拠を、一次データだけを頼りに追ってみるよ。
 
@@ -47,3 +48,4 @@ Mac側の並列処理の最高記録も一応押さえておくと、oMLXコミ�
 - NVIDIA開発者フォーラム「DeepSeek-V4-Flash vLLM移植 <2 t/s」: https://forums.developer.nvidia.com/t/deepseekv4-flash-hybrid-quant-1x-dgx-spark-antirezs-optimized-128-gb-mlx-recipe-ported-to-vllm-for-gb10/369584
 
 次回予告: 第13回はDGX Spark論争・後編。バッチ32で368tps、18倍の並列スケールとEAGLE3の実力、「条件付き勝者表」で論争に決着をつけるよ。
+

@@ -3,6 +3,7 @@ title: "128GB革命 #11 M4 MaxからM5 Maxへ——数字が語る「世代交�
 date: 2026-09-12
 category: "テクノロジー"
 eyecatch: "/Users/kt/m5max-series/images/ep11/eyecatch.jpg"
+tags: ["Apple", "LLM", "ローカルLLM", "投資", "執筆", "節約"]
 ---
 # 128GB革命 #11 M4 MaxからM5 Maxへ——数字が語る「世代交代」の正体
 
@@ -43,3 +44,4 @@ eyecatch: "/Users/kt/m5max-series/images/ep11/eyecatch.jpg"
 # next: DGX Spark論争(前) 帯域614 vs 273・Mac派の根拠
 # improvement_reflection: 前回レビューの①(h2直後figure)は挿入方式を維持しつつ挿入後に即座に位置補正を入れて対応
 # videos: GriXfu4tL30 / tn2Hvw7eCsw / q5oaA3mcMD4
+

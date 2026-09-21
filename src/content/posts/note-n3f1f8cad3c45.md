@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/n3f1f8cad3c45"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313207672/rectangle_large_type_2_0664e888ec3d61196d9e2f6618900472.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AGI", "投資"]
 ---
 
 ## NASAの火星オービター契約7億ドル、Rocket Labが異議申し立て——何が起きたか
@@ -88,3 +88,4 @@ https://news.google.com/rss/articles/CBMizAFBVV95cUxPVXZZcGhob2pIY3pWSFhGWU1iZ0V
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n3f1f8cad3c45
+

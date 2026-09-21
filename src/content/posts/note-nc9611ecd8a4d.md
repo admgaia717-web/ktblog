@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/nc9611ecd8a4d"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313362577/rectangle_large_type_2_6b435dffd562f9a0971c1ce2eaf2aec9.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "投資", "AGI"]
 ---
 
 ## ソフィア・テックパークで何が起きたか——業界横断の戦略提唱の始まり
@@ -92,3 +92,4 @@ https://news.google.com/rss/articles/CBMivwFBVV95cUxOeFlLRGt1bUxRQ0M2S3VYZVNtSFV
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nc9611ecd8a4d
+

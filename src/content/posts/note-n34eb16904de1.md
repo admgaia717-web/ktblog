@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/n34eb16904de1"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313202021/rectangle_large_type_2_06161a8f47f561355a66c2d4ddbd1176.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI"]
 ---
 
 ## 全日本模型ホビーショーで見た「パンサーG 後期型」——今回の核心
@@ -80,3 +80,4 @@ https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Db0dheDJhNnpXZ3hidloyeTFHNHh
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n34eb16904de1
+

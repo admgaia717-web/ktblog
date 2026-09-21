@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/n101c1fa550a9"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312359797/rectangle_large_type_2_43c787b87945d4ee201b706de79a1c1e.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AGI"]
 ---
 
 ## 米データセンター、電力という壁に当たる
@@ -90,3 +90,4 @@ https://news.google.com/rss/articles/CBMirwFBVV95cUxPS01SRmg3SzhUN3dLc3R5N09pWjd
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n101c1fa550a9
+

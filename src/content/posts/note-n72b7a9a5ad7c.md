@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/n72b7a9a5ad7c"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313630556/rectangle_large_type_2_0f01753978d3e607738720379819abf9.png?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ペット", "小説", "音楽"]
 ---
 
 七時。川沿いの、道を、自転車で、進む。犬飼は、役所の、駐輪場に、車輪を、停め、ロッカーに、上着を、掛けた。鞄から、六法を、出す。役所の、本では、ない。自分の、本だ。赤い、栞の、頁を、開く。横に、緑の、メモが、一枚。昨夜、書いた、三つの、欄。預かる、人。発行する、人。戻す、場所。机の、引き出しに、六法を、戻し、鍵を、掛けた。窓口が、開くまで、まだ、ある。
@@ -34,3 +34,4 @@ tags: ["note.com"]
 連載『$MAIDO』は毎日17時30分、この紙面で。
 
 元記事: https://note.com/keity717/n/n72b7a9a5ad7c
+

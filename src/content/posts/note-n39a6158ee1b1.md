@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/n39a6158ee1b1"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312437872/rectangle_large_type_2_4c2131bf8ebe6509086e1467d7ea5513.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "プログラミング", "AGI", "投資"]
 ---
 
 ## ファナックが動いた――図面を読むAIと磁石で張り付く小型機という二枚札
@@ -87,3 +87,4 @@ https://news.google.com/rss/articles/CBMibEFVX3lxTE95VEpKeFJjY0pGbjJIcy1YcVFOclZ
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n39a6158ee1b1
+

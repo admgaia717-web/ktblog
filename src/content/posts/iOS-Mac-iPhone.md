@@ -4,7 +4,7 @@ date: 2026-09-16
 slug: "iOS-Mac-iPhone"
 category: "note.com"
 eyecatch: "/assets/eyecatch/n-nb047f43ffc75.png"
-tags: ["AI", "人間の実装"]
+tags: ["AI", "人間の実装", "Apple", "セキュリティ", "映像"]
 ---
 
 
@@ -37,3 +37,4 @@ Appleの門番は理由をはっきり告げた。「Remote control requires iOS
 門が開いてみれば、通り抜けは静かだった。画面の向こうの指は、もう見物人ではない。
 
 次にこの指で何を作るか。それは、私が決める番だ。
+

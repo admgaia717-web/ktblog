@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/nc78ff65eb5aa"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313080691/rectangle_large_type_2_8e28c7bad66165b50adf32f2e57630ba.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AGI", "投資"]
 ---
 
 ## オーストラリアでEVがガソリン車を追い抜いた——販売台数が示す節目
@@ -91,3 +91,4 @@ https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GbUpSbzBaZVRoMHdfSU1DVmIybjJ
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nc78ff65eb5aa
+

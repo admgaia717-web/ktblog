@@ -4,7 +4,7 @@ date: 2026-09-15
 category: "note.com"
 note_url: "https://note.com/keity717/n/ncdfa6ebc7d72"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313772111/rectangle_large_type_2_c4754b7fb82f43e027423fde0fe83ab4.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "LLM", "AIエージェント", "AGI"]
 ---
 
 ## テーゼの再確認——個人がAIと共に食料自給する時代と、プランテックスの量産化実証
@@ -83,3 +83,4 @@ https://news.google.com/rss/articles/CBMibEFVX3lxTE8yZEFYLTJUOEpTWTJzeU5LNVVoaml
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/ncdfa6ebc7d72
+

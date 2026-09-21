@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/n0619d89f7cf2"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312058995/rectangle_large_type_2_757b058cbe8fcb446b8324c3f1b6926e.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "防災", "投資", "プログラミング", "Apple", "AGI"]
 ---
 
 ## 防衛分野で何が起きたのか——三菱重工とNECの戦略的提携
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMif0FVX3lxTE91aGJBaFN2VkR4SWFYZ042SnRkaDJ
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n0619d89f7cf2
+

@@ -4,7 +4,7 @@ date: 2026-09-21
 category: "note.com"
 note_url: "https://note.com/keity717/n/nde4c2122a325"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315763834/rectangle_large_type_2_c0cae1571d4a72da41857d1f8568b595.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "LLM", "ローカルLLM", "AIエージェント", "AGI"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——耕作放棄地が問いかけるもの
@@ -85,3 +85,4 @@ https://news.google.com/rss/articles/CBMif0FVX3lxTE9BSEtGOEE5RXhsQWZlaWtFN2l5ekt
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nde4c2122a325
+

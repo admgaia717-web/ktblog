@@ -4,7 +4,7 @@ date: 2026-09-15
 category: "note.com"
 note_url: "https://note.com/keity717/n/n36abd8079f8a"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313840580/rectangle_large_type_2_e2cb29e02760e1cd3ffe1a87a1c260e4.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "LLM", "ローカルLLM", "Apple", "プログラミング", "ロボット", "投資", "AGI"]
 ---
 
 ## 100万円のPCが1位に——ローカルLLMブームの正体
@@ -86,3 +86,4 @@ https://news.google.com/rss/articles/CBMiU0FVX3lxTFB4WmF6UjZZLVBJY0JRakpvVGpJeGY
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n36abd8079f8a
+

@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/n8f6832ee668f"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312281091/rectangle_large_type_2_d575a4a60499e21eda2c0e7fb8affa02.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "ロボット", "生成AI", "健康"]
 ---
 
 ## 6000人規模の公開採用が示すサムスンの本気——下半期採用の中身を読む
@@ -74,3 +74,4 @@ https://news.google.com/rss/articles/CBMidEFVX3lxTE5XRFVFMWNuMFp6VGhKbnNkNThpU3Z
 https://news.google.com/rss/articles/CBMigwFBVV95cUxPZy0tRW1QYy0xQzBzaWphUkMtMlRwYURzR2VnV01xeWZPemUzNk5xWUJ6c1RCVnFSUHo0SUJwNjYwMmJZWXpIS1NXby1UTGRrTnZCMWpQRU5KeWVIdWFLZUVCdHJ6VEJaM2U3OGhJMkhTbjBpWHdELVQzWWVidGQxRnZ2MA?oc=5
 
 元記事: https://note.com/keity717/n/n8f6832ee668f
+

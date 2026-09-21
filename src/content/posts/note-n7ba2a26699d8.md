@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n7ba2a26699d8"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313042099/rectangle_large_type_2_65c3cd0739b5f255029b479651b181ea.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AIエージェント", "Apple", "Bitcoin", "AGI", "投資"]
 ---
 
 ## Cheryの英国EV初投入と吉利のスペイン3車種目——同時に動いた二つのニュース
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMFA4eGI3VFROZU5jLUYzMmNpWTl
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n7ba2a26699d8
+

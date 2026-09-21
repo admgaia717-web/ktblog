@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/n9aa4ea196ba9"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312855882/rectangle_large_type_2_9e72d1f21fad75b9228b624a82d9cd95.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "投資", "AGI", "防災"]
 ---
 
 ## 「中国は10年先」と言われたドローン産業、米国が予算240倍で巻き返しを宣言
@@ -80,3 +80,4 @@ https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeVRCWERVUmdIcGpOMGJiRTExNl9
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n9aa4ea196ba9
+

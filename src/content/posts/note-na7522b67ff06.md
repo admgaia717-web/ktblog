@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/na7522b67ff06"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313448290/rectangle_large_type_2_13ee3669eb92b9eeaae84ffb184aea7a.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資"]
 ---
 
 ## 月という単位で支払うという未来からの奇異な約束
@@ -63,3 +63,4 @@ tags: ["note.com"]
 『現代古代史』編集部
 
 元記事: https://note.com/keity717/n/na7522b67ff06
+

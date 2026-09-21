@@ -4,7 +4,7 @@ date: 2026-09-09
 category: "note.com"
 note_url: "https://note.com/keity717/n/ncddf769b4b2d"
 eyecatch: "https://assets.st-note.com/production/uploads/images/311991178/rectangle_large_type_2_d4d46e3a45840945b67f7778cf1450a6.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "健康"]
 ---
 
 ## 未来から見れば奇妙な風景――病気の人を集めるという発想
@@ -68,3 +68,4 @@ tags: ["note.com"]
 『現代古代史』編集部
 
 元記事: https://note.com/keity717/n/ncddf769b4b2d
+

@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/n15068070cdeb"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313102540/rectangle_large_type_2_5b3859ce1eb6bc448c0695a9a452bb91.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "LLM", "ローカルLLM", "AIエージェント", "AGI", "DIY"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——京都市南部の町工場がレタス工場に変わった日
@@ -94,3 +94,4 @@ https://news.google.com/rss/articles/CBMikwFBVV95cUxPdmZKVHlWVVhKZUJaMkdyWGFfSzB
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n15068070cdeb
+

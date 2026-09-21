@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/nffe0a74ce4fa"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312805241/rectangle_large_type_2_c6a4ecdf91e11009e2c68da88da03135.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "生成AI", "AIエージェント", "投資", "Apple", "AGI", "健康", "執筆"]
 ---
 
 ## 最大500万円の補助金が示す、AI導入の現実のコスト
@@ -88,3 +88,4 @@ https://news.google.com/rss/articles/CBMidEFVX3lxTFAxanBQRy1ZdHJuempEb1dtLVFLQUJ
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nffe0a74ce4fa
+

@@ -4,7 +4,7 @@ date: 2026-09-16
 category: "note.com"
 note_url: "https://note.com/keity717/n/n708bb6bafc2e"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314153552/rectangle_large_type_2_1c08d113a7eb0eb104faedec72b22e91.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "AGI"]
 ---
 
 ## ASEANが中国を初めて抜いた——輸出統計が示す転換点
@@ -74,3 +74,4 @@ tags: ["note.com"]
 https://news.google.com/rss/articles/CBMidEFVX3lxTE52Vkp6Si1uSnRmYnQ2RnpwZWpoRXVRNER4NTFrZnpLeVJZVEJzMFZLYVFQZlljTGdzUnFJRUM2QUdLeTZhcF9HS1BmRXR1aGJFQ2I3OU5lYlRkWjhDXzRMRWxJNHZaMjh1emxLc2RISDVyX0Yw?oc=5
 
 元記事: https://note.com/keity717/n/n708bb6bafc2e
+

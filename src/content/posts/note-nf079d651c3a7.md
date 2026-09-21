@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/nf079d651c3a7"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312184833/rectangle_large_type_2_b757cb34050915afddae5744655ab8ed.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI", "投資"]
 ---
 
 ## H3ロケット8号機、衛星台座の剥離が疑われる飛行中破壊——何が起きたか
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMibEFVX3lxTE0xWGU0dlFlT2RkMW5EQmxab0VFWkd
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/nf079d651c3a7
+

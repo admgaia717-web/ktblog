@@ -4,7 +4,7 @@ date: 2026-09-16
 category: "note.com"
 note_url: "https://note.com/keity717/n/n373ced5d638f"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314112158/rectangle_large_type_2_fb67b9eaac41c90415bed8a365e82c93.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "LLM", "ローカルLLM", "AIエージェント", "投資", "生成AI", "ロボット", "AGI", "執筆"]
 ---
 
 ## なぜ今、畑をデジタルに再現するのか——ローカルLLMとローカルフードで個人はやっていける
@@ -93,3 +93,4 @@ https://news.google.com/rss/articles/CBMiX0FVX3lxTE04REwwcldxSlBRQ1JYY0IybGdpaFV
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n373ced5d638f
+

@@ -2,7 +2,7 @@
 title: "128GB革命 #13 DGX Spark論争(後)——バッチ18倍と投機decode、論争の決着のつけ方"
 date: 2026-09-14
 category: "テクノロジー"
-tags: ["ローカルLLM", "M5Max", "DGXSpark", "AppleSilicon"]
+tags: ["ローカルLLM", "M5Max", "DGXSpark", "AppleSilicon", "Apple", "生成AI", "プログラミング", "ロボット", "セキュリティ", "ゲーム", "料理", "DIY"]
 excerpt: "バッチ32で368tps・18倍の並列スケールとEAGLE3投機decode。一次データで突き合わせた「条件付き勝者表」で論争に決着をつける。"
 note_url: "https://note.com/keity717/n/ncbe036f3f696"
 substack_url: "https://keity717.substack.com/p/the-128gb-revolution-13-the-dgx-spark"
@@ -50,3 +50,4 @@ DGX派のもう一つの切り札が投機的decode（speculative decoding）、
 - NVIDIA開発者フォーラム「DeepSeek-V4-Flash vLLM移植（GB10）実測スレ」（2026年）: https://forums.developer.nvidia.com/t/deepseekv4-flash-hybrid-quant-1x-dgx-spark-antirezs-optimized-128-gb-mlx-recipe-ported-to-vllm-for-gb10/369584
 
 次回予告: 第14回は日本語圏の底力。kamo78のmactopテレメトリ、あきらパパの自作モデル、運用ノウハウの実践編だよ。
+

@@ -4,7 +4,7 @@ date: 2026-09-19
 category: "note.com"
 note_url: "https://note.com/keity717/n/nf45ae01cc1a6"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315085629/rectangle_large_type_2_ea6f6226286a528be41f2f092973dfe9.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "LLM", "ローカルLLM", "AIエージェント", "AGI", "節約"]
 ---
 
 ## 台湾とサバ州が交わすスマート農業の経験、そしてクウジットとLyrataの提携が示すもの
@@ -93,3 +93,4 @@ https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBcnBLeUZkeUNzRV9uQ1p4VjFYT2J
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nf45ae01cc1a6
+

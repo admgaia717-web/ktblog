@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/nf4066fd1e0b0"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312661332/rectangle_large_type_2_945fa40bc09347513a5487a97535aadc.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AIエージェント"]
 ---
 
 ## 町ごとにずれていた時刻という奇習
@@ -69,3 +69,4 @@ WORLD MAP AND TIME ZONE CLOCKS AT DON MUENG AIRPORT BANGKOK THAILAND JAN 2013 (8
 『現代古代史』編集部
 
 元記事: https://note.com/keity717/n/nf4066fd1e0b0
+

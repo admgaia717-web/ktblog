@@ -4,7 +4,7 @@ date: 2026-09-20
 category: "note.com"
 note_url: "https://note.com/keity717/n/n04ec240a4c4d"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315405631/rectangle_large_type_2_ccaab233a264edd44c013cc0674026cd.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "ペット", "防災", "AGI"]
 ---
 
 ## 秋田・鹿角で何が起きたか——空からクマを見つける実証実験
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFaHVjYlc2SENJaklTQld3UjMydnd
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n04ec240a4c4d
+

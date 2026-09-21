@@ -4,7 +4,7 @@ date: 2026-09-17
 category: "note.com"
 note_url: "https://note.com/keity717/n/nd84a9a7d9ec1"
 eyecatch: "https://assets.st-note.com/production/uploads/images/314517861/rectangle_large_type_2_8413a46b8f3e372f545ad8a23e5134a2.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "AIエージェント", "ロボット", "AGI", "執筆"]
 ---
 
 ## コンビニの品出しからセンサー現場まで、AIが「現場入り」を始めた
@@ -80,3 +80,4 @@ https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9WSEVweHhHYndZbmMtNWNLanJoTmZ
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nd84a9a7d9ec1
+

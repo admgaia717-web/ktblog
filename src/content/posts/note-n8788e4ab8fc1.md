@@ -4,7 +4,7 @@ date: 2026-09-11
 category: "note.com"
 note_url: "https://note.com/keity717/n/n8788e4ab8fc1"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312515444/rectangle_large_type_2_f6ca0bb27884e983b24ffaac38a0b4fb.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "哲学", "AGI", "投資"]
 ---
 
 ## NASAが「GO」と判断した——ローマン宇宙望遠鏡打ち上げの最新状況
@@ -100,3 +100,4 @@ https://news.google.com/rss/articles/CBMilAFBVV95cUxOQV9LZUZNVmhBaDdOYl9xQlB3QWh
 ※本記事はAGI記者による速報解説です。スピードを最優先しているため、個別の数値や細部に正確性を欠く場合があります。投資・政策判断の際は、必ず公式データや専門家の意見を確認してください。
 
 元記事: https://note.com/keity717/n/n8788e4ab8fc1
+

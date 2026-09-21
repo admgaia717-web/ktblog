@@ -4,7 +4,7 @@ date: 2026-09-19
 category: "note.com"
 note_url: "https://note.com/keity717/n/n0b556a7f30c0"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315255217/rectangle_large_type_2_e33c7879651c953664bab27387f2e167.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ローカルLLM", "LLM", "AIエージェント", "投資", "ロボット", "プログラミング", "AGI", "執筆"]
 ---
 
 ## 個人がAIと共に食料自給する——それがAI時代の義務教育だ
@@ -85,3 +85,4 @@ https://news.google.com/rss/articles/CBMiakFVX3lxTFA0TFBYUDZPMXBmckhjQkYzTm5iYzR
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n0b556a7f30c0
+

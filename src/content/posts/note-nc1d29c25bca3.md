@@ -4,7 +4,7 @@ date: 2026-09-12
 category: "note.com"
 note_url: "https://note.com/keity717/n/nc1d29c25bca3"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312907072/rectangle_large_type_2_7434f0256939292faf6d1c5d78c9b6c4.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "ロボット", "AIエージェント", "ローカルLLM", "LLM", "生成AI", "AGI"]
 ---
 
 ## 十勝で何が変わる——AI農業特区とローカルフードの核心
@@ -94,3 +94,4 @@ https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NUWd5c1U0dWpWcXJEWllVSWs4RU5
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nc1d29c25bca3
+

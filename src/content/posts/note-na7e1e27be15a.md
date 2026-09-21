@@ -4,7 +4,7 @@ date: 2026-09-14
 category: "note.com"
 note_url: "https://note.com/keity717/n/na7e1e27be15a"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313655520/rectangle_large_type_2_2ad06a4c86bbedc366e305888019f9cb.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "投資", "哲学", "LLM"]
 ---
 
 ## NAND積層が挑む「HBM超え」の大容量構想
@@ -70,3 +70,4 @@ NAND積層でHBM超えの大容量を実現しようというSandiskのHBF構想
 https://news.google.com/rss/articles/CBMicEFVX3lxTE5iUnB5WTdXRi1hOVk5Sk5RMmotVkZCekMxNTQ1X0JJdzZtalU1b09VcFQwRHNmMXRBSHdvUFhpZ1pJY2REQVh0ZWQ0SU1oQXVNZGVkMDNGUE1SSU93UFNoMGxsMkptLTc4cHk4YzY3a3o?oc=5
 
 元記事: https://note.com/keity717/n/na7e1e27be15a
+

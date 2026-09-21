@@ -4,7 +4,7 @@ date: 2026-09-19
 category: "note.com"
 note_url: "https://note.com/keity717/n/n7837e9db7efd"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315116499/rectangle_large_type_2_e9faf07871033f6b46e83977e6d59ec1.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "LLM", "ローカルLLM", "AIエージェント", "哲学", "AGI"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——ダラット、ハッセルト、そして「ザ・ループ」へ
@@ -95,3 +95,4 @@ https://news.google.com/rss/articles/CBMilgFBVV95cUxPZUVZT3VfdUdUVjNkWkVoVl9Gdmp
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n7837e9db7efd
+

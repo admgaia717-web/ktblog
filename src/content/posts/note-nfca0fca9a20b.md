@@ -4,7 +4,7 @@ date: 2026-09-13
 category: "note.com"
 note_url: "https://note.com/keity717/n/nfca0fca9a20b"
 eyecatch: "https://assets.st-note.com/production/uploads/images/313313967/rectangle_large_type_2_68dba4f9386bd67b2db80381b81c9e43.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI", "投資"]
 ---
 
 ## ベッセント氏が警戒する中国AIの追い上げという事実
@@ -72,3 +72,4 @@ tags: ["note.com"]
 https://news.google.com/rss/articles/CBMiiAFBVV95cUxPU2U4LWN2OWgycVJ0MmpjQ0NPQmsxY3U5NXdOb1diRnI2OXpWU1Rla2pvQTI2MU5RcFRCcS1aeHBaNVZVSU14dElualhDMkpTS0FzMDJUSVc4d0wzREhWNm1QMXFXbDEzZFFfdV8zamVwbGloNTRVMXFXenVyVFB4ZlVrdE83d0Vo?oc=5
 
 元記事: https://note.com/keity717/n/nfca0fca9a20b
+

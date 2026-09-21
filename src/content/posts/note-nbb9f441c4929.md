@@ -4,7 +4,7 @@ date: 2026-09-10
 category: "note.com"
 note_url: "https://note.com/keity717/n/nbb9f441c4929"
 eyecatch: "https://assets.st-note.com/production/uploads/images/312180227/rectangle_large_type_2_0a36e65b275b30c46e1912d501af142a.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "ゲーム", "AGI"]
 ---
 
 ## 手頃なオフロードRCが注目される理由——2026年版ランキングが示す「安いのに快適」の実力
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMihgFBVV95cUxNcVVNNTBuemJVYkR0eVh3WTFnaGc
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nbb9f441c4929
+
