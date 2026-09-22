@@ -6,7 +6,7 @@
 
 const MEETING = {
   date: '2026-09-03',
-  title: '第2回 定例ミーティング',
+  title: '第1回 定例ミーティング',
   minutes: 100,
   next: { iso: '2026-10-01T16:30:00+09:00', label: '10月1日（木）16:30〜18:00', place: 'Zoom（プロスのアカウント）' },
 };
@@ -21,7 +21,9 @@ const MEMBERS = {
 };
 
 /* 会議の流れ（分） */
-const FLOW = [
+const FLOWS = {
+  '2026-09-03': { label: '9/3（木）第1回定例・100分', minutes: 100,
+    blocks: [
   { from: 0, to: 8, title: 'オープニングと疑問の整理', who: ['motoyama', 'kitaura'],
     points: ['Zoom で顔を見ながら話す運用に決定（プロスのアカウント2本）', '本山先生の疑問：「100円で作れる」とは何か／アプリ化の形／2文字・3文字・有料化までの全体像が描けない', '北浦先生：枠組みをある程度決めてから進めたい'] },
   { from: 8, to: 27, title: '「100円動画」の正体と拡散戦略', who: ['tamagawa', 'motoyama'],
@@ -45,7 +47,29 @@ const FLOW = [
   { from: 92, to: 100, title: '経営と責任のすり合わせ', who: ['motoyama', 'tamagawa'],
     points: ['本山先生：社長への責任。チャンスでも賭けにしない、責任が取れる範囲で', 'KT：今がチャンス。設備投資は価値が下がりにくい', '社長・本山先生・KT の3者で経営・資金の話をする場を設ける'],
     decision: '3者会談を設定' },
-];
+] },
+  '2026-09-10': { label: '9/10（木）第2回定例・104分', minutes: 104,
+    blocks: [
+      { from: 0, to: 12, title: 'オープニング・動画生成の技術論', who: ['tamagawa', 'motoyama'],
+        points: ['Blender 人形リグの生成結果を検討', '動画生成の品質とコスト（1本100円→50円台）を確認'],
+        decision: 'A完璧化ファースト（B の前に A を作り込む）' },
+      { from: 12, to: 20, title: 'エージェント基盤と KT の事業線', who: ['tamagawa', 'hachiya'],
+        points: ['エージェント基盤の現状共有（Hermes 4号機・2ルート構成）', 'KT の iWAM 翻訳・構成ロボットの事業線を整理'] },
+      { from: 20, to: 28, title: 'IWAM・書籍家と週末の実験', who: ['tamagawa'],
+        points: ['書籍4冊・iWAMロボットを週末に作成予定', 'Kindle 1日25冊の実験報告'] },
+      { from: 28, to: 43, title: 'プロスフォニックス制作方針・原形保存', who: ['motoyama', 'kitaura'],
+        points: ['完成形は劣化させない・以後は「できたやつをベースに」', '制作物の原形（プロトタイプ）非劣化保存を最優先に置く'],
+        decision: '原形の非劣化保存を最優先' },
+      { from: 43, to: 60, title: '進め方・声・キーフレーム方式・ストーリー論', who: ['kitaura', 'motoyama', 'tamagawa'],
+        points: ['声はマーク先生のまま → 直してから B へ', 'キーフレーム方式（写真4枚パラパラ）を B・C で試行', 'ストーリー重視：最低ラインはフォニックス＋アニメっぽい演出・長短2バージョン'],
+        decision: 'キーフレーム方式を試行・ストーリー重視' },
+      { from: 60, to: 93, title: '話し合いの型と Mattermost 運用', who: ['hachiya', 'all'],
+        points: ['MM再編: 「プロス フォニックス動画作成」へ集約・ロボットは @付けで呼ぶ', '/stop 対応・止まったら「続けなさい」「生成してください」'],
+        decision: 'MM中心化の運用を確定' },
+      { from: 93, to: 104, title: 'MM中心化の確定と閉会', who: ['all'],
+        points: ['宿題確認: KT=翻訳チェック実験・キーフレーム試作＋声修正／なお子=指示をMMへ／北浦=休み時間ダメ出し／オ課長=サイト更新', '次回 10/1（木）16:30〜18:00 を確認'] },
+    ] },
+};
 
 /* ロードマップ（月＝2026-09 を 1 とする列位置） */
 const ROADMAP = [
@@ -144,16 +168,21 @@ const ISSUES = [
 
 /* 決定事項 */
 const DECISIONS = [
-  { title: '4人でエージェントを共有し、先生が直接指示して作る', body: '会議時点のマー君は 9/4 にオ課長（4号機 Hermes）へ引き継ぎ。KT が最初にお手本の指示。無理な指示は KT・蜂谷さんが途中で解釈を入れる。' },
-  { title: '最小パーツは「1文字＝1動画」', body: 'Annie Apple → あっ。音・文字・アクションの3点セットを必ず入れる。短い繰り返しアニメでよい。' },
-  { title: 'A・B・C を試作 → A〜G → 26文字', body: 'ジェスチャー付きの人型アバター。マークの動きを動画→動画生成でコピー。約100円/本。' },
-  { title: '第一段階は無料で公開', body: '1音ずつ面白がって発音・ジェスチャーしてもらうところまでは、お金を取らない。' },
-  { title: '拡散はエージェントが実行', body: '既存の HP・Facebook・Instagram・Google ビジネスプロフィールと接続。TikTok・LINE を追加。' },
-  { title: '生の録音を毎回残す', body: '会議＝エージェントへの命令。要約ではなく生声をオ課長に入れる。' },
-  { title: '3ヶ月単位で振り返る', body: 'KT は仕込み6ヶ月目安。12月が最初の節目。' },
-  { title: '定例は木曜、次回 9/10 16:30〜18:00', body: '9/17 14:30〜16:00 から変更（9/6・蜂谷さん通知）。9/24 は KT 不可。' },
-  { title: 'Telegram を2本立てで使う', body: '人間界＝人に伝える／システム＝オ課長に直接指示する。' },
-  { title: '経営・資金は3者で別途', body: '社長・本山先生・KT で会って話す。' },
+  { title: 'A完璧化ファースト', body: 'B の前に A を作り込む。声（Markのまま）を直してから次へ。時間がかかってもよい。', meta: { when: '2026-09-10', where: '第2回定例' } },
+  { title: '原形の非劣化保存', body: 'できあがった完成形は劣化しない。以後は「できたやつをベースに」動かす。', meta: { when: '2026-09-10', where: '第2回定例' } },
+  { title: 'キーフレーム方式を試行', body: '動画より「写真数枚のパラパラ（この形→この形）」の方が正確な可能性。B・C で試す。', meta: { when: '2026-09-10', where: '第2回定例' } },
+  { title: 'ストーリー重視', body: '最低ラインは「フォニックス＋アニメっぽい演出」。長短2バージョン構想。', meta: { when: '2026-09-10', where: '第2回定例' } },
+  { title: 'MM（Mattermost）中心の運用に移行', body: '会話・指示はMMへ集約。ロボットは@付けで呼ぶ。/stop 対応・止まったら「続けなさい」。', meta: { when: '2026-09-10', where: '第2回定例' } },
+  { title: '4人でエージェントを共有し、先生が直接指示して作る', body: '会議時点のマー君は 9/4 にオ課長（4号機 Hermes）へ引き継ぎ。KT が最初にお手本の指示。無理な指示は KT・蜂谷さんが途中で解釈を入れる。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: '最小パーツは「1文字＝1動画」', body: 'Annie Apple → あっ。音・文字・アクションの3点セットを必ず入れる。短い繰り返しアニメでよい。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: 'A・B・C を試作 → A〜G → 26文字', body: 'ジェスチャー付きの人型アバター。マークの動きを動画→動画生成でコピー。約100円/本。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: '第一段階は無料で公開', body: '1音ずつ面白がって発音・ジェスチャーしてもらうところまでは、お金を取らない。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: '拡散はエージェントが実行', body: '既存の HP・Facebook・Instagram・Google ビジネスプロフィールと接続。TikTok・LINE を追加。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: '生の録音を毎回残す', body: '会議＝エージェントへの命令。要約ではなく生声をオ課長に入れる。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: '3ヶ月単位で振り返る', body: 'KT は仕込み6ヶ月目安。12月が最初の節目。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: '定例は木曜、次回 9/10 16:30〜18:00', body: '9/17 14:30〜16:00 から変更（9/6・蜂谷さん通知）。9/24 は KT 不可。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: 'Telegram を2本立てで使う', body: '人間界＝人に伝える／システム＝オ課長に直接指示する。', meta: { when: '2026-09-03', where: '第1回定例' } },
+  { title: '経営・資金は3者で別途', body: '社長・本山先生・KT で会って話す。', meta: { when: '2026-09-03', where: '第1回定例' } },
 ];
 
 /* ---------------- レンダリング ---------------- */
@@ -178,11 +207,19 @@ function avatar(key) {
   return `<span class="avatar c-${m.color}" title="${esc(m.name)}">${esc(m.initial)}</span>`;
 }
 
-function renderFlow() {
+let currentFlowKey = '2026-09-10';
+function flowBars(key) {
+  const f = FLOWS[key];
+  const bar = $('#flow-bar');
+  if (!bar) return;
+  bar.innerHTML = f.blocks.map((b, i) => `<span style="flex:${b.to - b.from}" class="seg s${i % 6}" title="${esc(b.title)}"></span>`).join('');
+}
+function setFlow(key) {
+  currentFlowKey = key;
+  const f = FLOWS[key];
   const track = $('#flow-track');
-  const total = MEETING.minutes;
-  track.style.gridTemplateColumns = FLOW.map((b) => `minmax(240px, ${b.to - b.from}fr)`).join(' ');
-  track.innerHTML = FLOW.map((b, i) => `
+  track.style.gridTemplateColumns = f.blocks.map((b) => `minmax(240px, ${b.to - b.from}fr)`).join(' ');
+  track.innerHTML = f.blocks.map((b, i) => `
     <article class="flow-card" style="--i:${i}">
       <div class="flow-time"><span>${String(b.from).padStart(2, '0')}:00</span><i></i><span>${String(b.to).padStart(2, '0')}:00</span></div>
       <h3><span class="flow-no">${i + 1}</span>${esc(b.title)}</h3>
@@ -190,9 +227,21 @@ function renderFlow() {
       <ul>${b.points.map((p) => `<li>${esc(p)}</li>`).join('')}</ul>
       ${b.decision ? `<div class="flow-decision">決定：${esc(b.decision)}</div>` : ''}
     </article>`).join('');
-  const bar = $('#flow-bar');
-  bar.innerHTML = FLOW.map((b, i) => `<span style="flex:${b.to - b.from}" class="seg s${i % 6}" title="${esc(b.title)}"></span>`).join('');
-  $('#flow-total').textContent = `${total}分`;
+  flowBars(key);
+  $('#flow-total').textContent = `${f.minutes}分`;
+  document.querySelectorAll('.flow-tab').forEach((t2) => t2.classList.toggle('active', t2.dataset.flow === key));
+}
+function renderFlow() {
+  const tabs = Object.keys(FLOWS).sort().reverse().map((k) => `<button type="button" class="flow-tab${k === currentFlowKey ? ' active' : ''}" data-flow="${k}">${esc(FLOWS[k].label)}</button>`).join('');
+  const host = $('#flow-tabs');
+  if (host) {
+    host.innerHTML = tabs;
+    host.onclick = (e) => {
+      const b = e.target.closest('.flow-tab');
+      if (b && b.dataset.flow) setFlow(b.dataset.flow);
+    };
+  }
+  setFlow(currentFlowKey);
 }
 
 function renderRoadmap() {
@@ -213,8 +262,11 @@ function renderRoadmap() {
 }
 
 function renderDecisions() {
-  $('#decisions-grid').innerHTML = DECISIONS.map((d, i) => `
-    <article class="decision"><span class="d-no">${String(i + 1).padStart(2, '0')}</span><h3>${esc(d.title)}</h3><p>${esc(d.body)}</p></article>`).join('');
+  $('#decisions-grid').innerHTML = DECISIONS.map((d, i) => {
+    const m = d.meta || {};
+    const src = m.when ? `<div class="d-src">決定: ${esc(m.when)}${m.where ? '・' + esc(m.where) : ''}</div>` : '';
+    return `<article class="decision"><span class="d-no">${String(i + 1).padStart(2, '0')}</span><h3>${esc(d.title)}</h3><p>${esc(d.body)}</p>${src}</article>`;
+  }).join('');
 }
 
 function renderIssues() {
