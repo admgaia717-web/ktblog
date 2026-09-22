@@ -303,6 +303,13 @@ footer {font-size:11px;color:var(--muted);background:none;border:0;padding:36px 
 /* 9/19 Update badge */
 .upd-badge {font-size:10px;font-weight:700;color:#8a5a00;background:#fdf3dd;border:1px solid #e3c88a;border-radius:4px;padding:2px 7px;letter-spacing:.04em;white-space:nowrap;flex-shrink:0}
 
+/* ABC教材リリースの折りたたみ（他の成果物行と同じ1行サマリ＋＋で開く） */
+.abc-release-fold .k {font-size:11px;color:var(--muted);font-family:var(--font-jp);white-space:nowrap}
+.abc-release-fold b {font-size:15px;font-weight:700}
+.abc-release-fold .open-plus {margin-left:auto;flex-shrink:0;font-size:18px;line-height:1;color:var(--muted);font-weight:700}
+.abc-release-fold[open] .open-plus {display:none}
+.abc-lesson-release {background:transparent;border:0;padding:0;box-shadow:none}
+
 /* 会議の流れ・回切替タブ */
 .flow-tabs {display:flex;gap:8px;margin:0 0 14px;flex-wrap:wrap}
 .flow-tab {border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-family:var(--font-jp);cursor:pointer;color:var(--muted)}
