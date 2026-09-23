@@ -4,7 +4,7 @@ date: 2026-09-21
 category: "テクノロジー"
 eyecatch: "/assets/engine-compare/eyecatch-91.jpg"
 excerpt: "最新の作画エンジンを追ったらライセンスの壁に当たった。商用可・最速をリサーチから選び、艦隊全員が描ける状態にするまでの実測記録。"
-tags: ["画像生成", "ComfyUI", "FLUX", "ローカルLLM", "M1Max", "AI"]
+tags: ["画像生成", "ComfyUI", "FLUX", "ローカルLLM", "M1Max", "AI", "Apple", "ロボット", "プログラミング", "暗号通貨", "AIエージェント", "生成AI", "アニメ", "投資"]
 note_url: "https://note.com/keity717/n/n691c0a5ce661"
 ---
 ## はじまりは、一本のURLだった
@@ -202,4 +202,5 @@ python3 fleet_draw.py flux2klein "prompt" --size 1024x1024 --steps 4
 ---
 
 *この記事の作例は、すべて4号機のローカルComfyUIで生成した。使用エンジンと生成時間は本文のとおり。FLUX.2 [klein] 4B・Z-Image-Turbo・Qwen-Image 2512・FLUX.1-schnell は Apache 2.0。Qwen-Image-2.1 は Qwen Research License（非商用）。*
+
 

@@ -4,7 +4,7 @@ date: 2026-09-22
 category: "note.com"
 note_url: "https://note.com/keity717/n/ncb4473db696a"
 eyecatch: "https://assets.st-note.com/production/uploads/images/316256361/rectangle_large_type_2_6b2dce51ecdc1d2c4bf94f8f291fe675.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "映像", "哲学", "AGI"]
 ---
 
 ## ゴーグルの向こうに広がる、リアルな疾走感
@@ -88,3 +88,4 @@ https://news.google.com/rss/articles/CBMie0FVX3lxTE9SV2Fsdk5WelZuajFfMHd2TnY3QmR
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/ncb4473db696a
+

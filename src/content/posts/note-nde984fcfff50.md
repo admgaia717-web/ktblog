@@ -4,7 +4,7 @@ date: 2026-09-23
 category: "note.com"
 note_url: "https://note.com/keity717/n/nde984fcfff50"
 eyecatch: "https://assets.st-note.com/production/uploads/images/316471591/rectangle_large_type_2_cc41a5af141a30682f2f2eed45254323.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "AGI"]
 ---
 
 ## 「Sea to Sky Model Train and Hobby Show」が見せた、鉄道模型とホビーの接点
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMihgJBVV95cUxQS0YzSlNTczhrb3NQUDVXWjk4cWR
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/nde984fcfff50
+

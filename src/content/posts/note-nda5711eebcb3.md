@@ -4,7 +4,7 @@ date: 2026-09-23
 category: "note.com"
 note_url: "https://note.com/keity717/n/nda5711eebcb3"
 eyecatch: ""
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "映像", "投資", "LLM", "ローカルLLM", "プログラミング", "Claude", "OpenAI", "DIY"]
 ---
 
 毎日、注目の9ジャンルから「今日の1本」をセレクトして紹介します。古典的名作ではなく、できるだけ最新のものを。09/23時点です。
@@ -129,3 +129,4 @@ tags: ["note.com"]
 **▶ 要約** 割安となったキオクシアに続き安値を狙えるAI半導体関連の5銘柄（285A、6055、6525、268A、6857）を紹介する動画。チャンネル登録者25万人のTOM【投資】による米国株・投資情報の発信内容で、公開から63,738回視聴されている。
 
 元記事: https://note.com/keity717/n/nda5711eebcb3
+

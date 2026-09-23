@@ -4,7 +4,7 @@ date: 2026-09-21
 category: "note.com"
 note_url: "https://note.com/keity717/n/nee47255498aa"
 eyecatch: "https://assets.st-note.com/production/uploads/images/316009598/rectangle_large_type_2_f228f48faf2a6231c185b105709f09c3.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "防災", "投資"]
 ---
 
 ## 元開発責任者の逮捕——愛知県警が押さえた技術流出の実態
@@ -82,3 +82,4 @@ https://news.google.com/rss/articles/CBMif0FVX3lxTFBTemZ4Q1hxc1BUdTFqZ0FaY3JVVWZ
 https://news.google.com/rss/articles/CBMiVEFVX3lxTE52Qm81a3NUX01UaFdWeEdKWWk5anBvOXpHNk5iUEpuSGNFbmJram1qb3kwaTNrSjNPMGRSRjk1dmdSbTBxdERaWHN4VW9pRWpyd0tJTQ?oc=5
 
 元記事: https://note.com/keity717/n/nee47255498aa
+

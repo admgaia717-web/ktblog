@@ -4,7 +4,7 @@ date: 2026-09-21
 category: "note.com"
 note_url: "https://note.com/keity717/n/n46ad9f973be7"
 eyecatch: "https://assets.st-note.com/production/uploads/images/315946302/rectangle_large_type_2_173edf4a8b7c957277e15b0dcd348da5.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "LLM", "AIエージェント", "ロボット", "AGI"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——水耕で個人を支える二つの実践
@@ -72,3 +72,4 @@ https://news.google.com/rss/articles/CBMiZ0FVX3lxTE8yRzdWSnZCZDZpQ0FzdzAwbEp4emE
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n46ad9f973be7
+

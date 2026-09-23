@@ -4,7 +4,7 @@ date: 2026-09-23
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2fb2cca61559"
 eyecatch: "https://assets.st-note.com/production/uploads/images/316479589/rectangle_large_type_2_f9f2596de0481d5cd28afe078cff9201.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ローカルLLM", "LLM", "AIエージェント", "DIY", "ロボット", "AGI"]
 ---
 
 ## 地下1.1kmの農場が照らす、ローカルで食うという選択
@@ -94,3 +94,4 @@ https://news.google.com/rss/articles/CBMinwFBVV95cUxNdnFmMURNUUJhV2hoVVdrMTJMS2R
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n2fb2cca61559
+

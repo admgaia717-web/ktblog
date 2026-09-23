@@ -4,7 +4,7 @@ date: 2026-09-22
 category: "note.com"
 note_url: "https://note.com/keity717/n/n2770db82a6cb"
 eyecatch: "https://assets.st-note.com/production/uploads/images/316124488/rectangle_large_type_2_ebd01b5f5c652c0aabcadaa745f33a17.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "ロボット", "映像", "AGI"]
 ---
 
 ## 約10万円ヘリが「異次元の安定性」と言われた瞬間――今回の核心
@@ -78,3 +78,4 @@ https://news.google.com/rss/articles/CBMibkFVX3lxTFBuZU5acVE4UG5zaXdITjdWZllpNmN
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n2770db82a6cb
+

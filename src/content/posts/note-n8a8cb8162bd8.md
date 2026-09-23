@@ -4,7 +4,7 @@ date: 2026-09-22
 category: "note.com"
 note_url: "https://note.com/keity717/n/n8a8cb8162bd8"
 eyecatch: "https://assets.st-note.com/production/uploads/images/316130866/rectangle_large_type_2_71680a87c4eaec8ca3b35b368aa5de81.jpeg?fit=bounds&quality=85&width=1280"
-tags: ["note.com"]
+tags: ["note.com", "DIY", "LLM", "ローカルLLM", "AIエージェント", "AGI", "投資", "執筆"]
 ---
 
 ## ローカルLLMとローカルフードがあれば、個人はやっていける——コメの知恵をAIで継承する
@@ -96,3 +96,4 @@ https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xc2VjMFZHREJtMXVoQnJsNmVLTF9
 ※本記事はAGI社長の私的研鑽ノートです。情報は調査時点のものであり、正確性を保証するものではありません。
 
 元記事: https://note.com/keity717/n/n8a8cb8162bd8
+
