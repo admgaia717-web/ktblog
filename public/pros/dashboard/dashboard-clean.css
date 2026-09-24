@@ -356,9 +356,4 @@ body.reportpage .topbar .pill-next {display:none}
 .links .link .pdf-btn:hover {background:var(--accent);color:#fff}
 .links .link.has-pdf {padding-right:132px}
 @media(max-width:720px){.links .link.has-pdf{padding-right:14px;padding-bottom:52px}.links .link .pdf-btn{top:auto;bottom:14px;transform:none;right:14px}}
-
-/* ---- 資料室カード統一（9/24追加）: 全カード折りたたみ型・「開く」ボタン ---- */
-.links .link-fold .doc-note {font-size:12px;color:var(--muted);margin:10px 0 0}
-.links .link-fold summary .open-plus {display:none}
-/* .links .link .pdf-btn が position:absolute のため、折りたたみ内では静的配置へ戻す */
-.links .link-fold .detail-body .pdf-btn {position:static;transform:none;min-height:36px;display:inline-flex;align-items:center}
+/* 資料室カード統一の折りたたみ規則は9/23の直リンク化に伴い削除 */
