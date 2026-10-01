@@ -345,3 +345,14 @@ body.trpage h2 {scroll-margin-top:150px}
 .links .link.has-pdf {padding-right:132px}
 @media(max-width:720px){.links .link.has-pdf{padding-right:14px;padding-bottom:52px}.links .link .pdf-btn{top:auto;bottom:14px;transform:none;right:14px}}
 /* 資料室カード統一の折りたたみ規則は9/23の直リンク化に伴い削除 */
+
+/* 9/24 成果物の視認性（蜂谷さん指示・仕様 deliverables-visibility-spec-20260924）:
+   .latest-added = 成果物 sec-head 直下の常時表示1行（新規成果物が増えたときだけ差し替え）
+   .new-badge = 新着行のNEW（変更履歴の先頭3エントリに含まれる日付の行。対象日が過ぎたら外す）
+   .ltype = 行末のリンク種別ラベル（▶ 動画 / ↗ 別ページ / PDF / ⬇ ダウンロード）
+   .location-fold = 成果物セクション冒頭の「納品物の所在一覧」折りたたみ */
+.latest-added {margin:8px 0 0;font-size:13px;color:var(--ink);font-weight:400}
+.latest-added a {color:var(--accent);font-weight:600}
+.new-badge {font-size:10px;font-weight:700;color:#fff;background:var(--accent);border-radius:4px;padding:2px 6px;letter-spacing:.04em;white-space:nowrap;flex-shrink:0}
+.link .ltype {margin-left:auto;flex-shrink:0;font-size:11px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:2px 6px;white-space:nowrap}
+.location-fold {margin:0 0 24px}
