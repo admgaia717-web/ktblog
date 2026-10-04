@@ -298,7 +298,8 @@ function renderDecisions() {
     const m = d.meta || {};
     const src = m.when ? `<div class="d-src">決定: ${esc(m.when)}${m.where ? '・' + esc(m.where) : ''}</div>` : '';
     const badge = m.when === '2026-10-01' ? '<span class="new-badge">NEW</span>' : '';
-    return `<article class="decision"><span class="d-no">${String(i + 1).padStart(2, '0')}</span><h3>${badge}${esc(d.title)}</h3><p>${esc(d.body)}</p>${src}</article>`;
+    const cls = m.when === '2026-10-01' ? ' decision is-new' : ' decision';
+    return `<article class="${cls}"><span class="d-no">${String(i + 1).padStart(2, '0')}</span><h3>${badge}${esc(d.title)}</h3><p>${esc(d.body)}</p>${src}</article>`;
   }).join('');
 }
 
