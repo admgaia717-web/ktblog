@@ -303,6 +303,9 @@ footer {font-size:11px;color:var(--muted);background:none;border:0;padding:36px 
 /* 9/19 Update badge */
 .upd-badge {font-size:10px;font-weight:700;color:#8a5a00;background:#fdf3dd;border:1px solid #e3c88a;border-radius:4px;padding:2px 7px;letter-spacing:.04em;white-space:nowrap;flex-shrink:0}
 
+/* NEW badge（決めたこと・最新の定例分） */
+.new-badge {display:inline-block;font-size:10px;font-weight:700;color:#fff;background:#c0392b;border-radius:4px;padding:2px 7px;letter-spacing:.06em;margin-right:6px;vertical-align:1px;white-space:nowrap}
+
 /* ABC教材リリースの折りたたみ（他の成果物行と同じ1行サマリ＋＋で開く） */
 .abc-lesson-release {display:block;background:transparent;border:0;padding:0;box-shadow:none}
 .abc-release-fold .k {font-size:11px;color:var(--muted);font-family:var(--font-jp);white-space:nowrap}

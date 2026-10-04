@@ -297,7 +297,8 @@ function renderDecisions() {
   $('#decisions-grid').innerHTML = DECISIONS.map((d, i) => {
     const m = d.meta || {};
     const src = m.when ? `<div class="d-src">決定: ${esc(m.when)}${m.where ? '・' + esc(m.where) : ''}</div>` : '';
-    return `<article class="decision"><span class="d-no">${String(i + 1).padStart(2, '0')}</span><h3>${esc(d.title)}</h3><p>${esc(d.body)}</p>${src}</article>`;
+    const badge = m.when === '2026-10-01' ? '<span class="new-badge">NEW</span>' : '';
+    return `<article class="decision"><span class="d-no">${String(i + 1).padStart(2, '0')}</span><h3>${badge}${esc(d.title)}</h3><p>${esc(d.body)}</p>${src}</article>`;
   }).join('');
 }
 
