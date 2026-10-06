@@ -310,6 +310,12 @@ footer {font-size:11px;color:var(--muted);background:none;border:0;padding:36px 
 /* 決めたこと・最新の定例分はカード全体を淡い黄緑色に（以前の分は従来色のまま） */
 .decision.is-new {background:#f0f7e6;border-color:#b9d48a}
 
+/* 成果物一覧の行形式統一＋星評価（蜂谷さん指示 2026-10-06） */
+.link .d-type {font-size:11px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:1px 6px;white-space:nowrap;flex-shrink:0}
+.link .rate {font-size:17px;letter-spacing:.12em;color:var(--line);cursor:pointer;white-space:nowrap;flex-shrink:0;line-height:1;min-height:44px;display:inline-flex;align-items:center;user-select:none}
+.link .rate.rated {color:#e8a13a}
+.link .rate:hover {color:var(--accent)}
+
 /* ABC教材リリースの折りたたみ（他の成果物行と同じ1行サマリ＋＋で開く） */
 .abc-lesson-release {display:block;background:transparent;border:0;padding:0;box-shadow:none}
 .abc-release-fold .k {font-size:11px;color:var(--muted);font-family:var(--font-jp);white-space:nowrap}
