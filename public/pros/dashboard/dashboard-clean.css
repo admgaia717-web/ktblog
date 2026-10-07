@@ -316,6 +316,19 @@ footer {font-size:11px;color:var(--muted);background:none;border:0;padding:36px 
 .link .rate.rated {color:#e8a13a}
 .link .rate:hover {color:var(--accent)}
 
+/* 成果物のレビュー書き込み欄（蜂谷さん指示 2026-10-07） */
+.review-box {background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:22px 0 0}
+.review-box textarea {width:100%;box-sizing:border-box;font-family:var(--font-jp);font-size:14px;line-height:1.8;padding:10px 12px;border:1px solid var(--line);border-radius:6px;resize:vertical}
+.review-box #review-post {margin-top:8px;min-height:40px;padding:8px 20px;border:0;border-radius:6px;background:var(--accent);color:#fff;font-weight:700;font-size:13px;cursor:pointer}
+.review-box #review-post:hover {background:#244a3b}
+.review-note-line {font-size:11px;color:var(--muted);margin:8px 0 0}
+#review-list {list-style:none;margin:12px 0 0;padding:0}
+#review-list li {display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13px;line-height:1.7}
+#review-list .r-time {color:var(--muted);font-size:11px;white-space:nowrap;flex-shrink:0}
+#review-list .r-body {flex:1}
+#review-list .r-del {border:1px solid var(--line);background:#fff;border-radius:4px;font-size:11px;color:var(--muted);padding:2px 8px;cursor:pointer;flex-shrink:0}
+#review-list .r-empty {color:var(--muted);border:0}
+
 /* ABC教材リリースの折りたたみ（他の成果物行と同じ1行サマリ＋＋で開く） */
 .abc-lesson-release {display:block;background:transparent;border:0;padding:0;box-shadow:none}
 .abc-release-fold .k {font-size:11px;color:var(--muted);font-family:var(--font-jp);white-space:nowrap}

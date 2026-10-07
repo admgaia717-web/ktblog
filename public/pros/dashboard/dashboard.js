@@ -342,6 +342,52 @@ function initRatings() {
   });
 }
 
+/* 成果物のレビュー（書き込み欄・localStorage保存・蜂谷さん指示 2026-10-07） */
+const REVIEW_KEY = 'pros-review-v1';
+function loadReviews() {
+  try { return JSON.parse(localStorage.getItem(REVIEW_KEY) || '[]'); } catch { return []; }
+}
+function saveReviews(r) {
+  try { localStorage.setItem(REVIEW_KEY, JSON.stringify(r)); } catch { /* private mode */ }
+}
+function escHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function renderReviews() {
+  const list = $('#review-list');
+  if (!list) return;
+  const reviews = loadReviews();
+  list.innerHTML = reviews.length
+    ? reviews.map((r, i) => `<li><span class="r-time">${escHtml(r.time)}</span><span class="r-body">${escHtml(r.text)}</span><button type="button" class="r-del" data-i="${i}">消す</button></li>`).join('')
+    : '<li class="r-empty">まだレビューはありません。</li>';
+}
+function initReviews() {
+  const input = $('#review-input');
+  const btn = $('#review-post');
+  if (!input || !btn) return;
+  renderReviews();
+  btn.addEventListener('click', () => {
+    const text = (input.value || '').trim();
+    if (!text) return;
+    const reviews = loadReviews();
+    reviews.unshift({ time: new Date().toLocaleString('ja-JP'), text });
+    saveReviews(reviews);
+    input.value = '';
+    renderReviews();
+  });
+  const list = $('#review-list');
+  if (list) {
+    list.addEventListener('click', (ev) => {
+      const del = ev.target.closest('.r-del');
+      if (!del) return;
+      const reviews = loadReviews();
+      reviews.splice(Number(del.dataset.i), 1);
+      saveReviews(reviews);
+      renderReviews();
+    });
+  }
+}
+
 let filter = 'all-members';
 
 function renderBoard() {
@@ -456,6 +502,7 @@ function init() {
   renderBoard();
   renderCountdown();
   initRatings();
+  initReviews();
   $('#meeting-next').textContent = MEETING.next.label;
   $('#board-grid').addEventListener('change', (e) => {
     const cb = e.target;
