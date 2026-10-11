@@ -90,8 +90,78 @@ details.clh-more[open]>summary {display:none}
 
     <div class="clh-month">
       <details class="disclosure" open>
-        <summary><h2>2026年10月</h2><span><span class="clh-count" data-declared="11">11件</span>・新しい順</span></summary>
+        <summary><h2>2026年10月</h2><span><span class="clh-count" data-declared="13">13件</span>・新しい順</span></summary>
         <div class="detail-body">
+
+          <details class="clh-item" data-entry>
+            <summary>
+              <span class="clh-date">10/10（土）</span>
+              <span class="clh-cat cat-page">公開ページ</span>
+              <span class="clh-line">成果物のレビュー・メモ・星の各機能をすべて削除（蜂谷さん依頼）</span>
+            </summary>
+            <div class="clh-body">
+              <div class="clh-meta">
+                <span>日時: <b>2026-10-10</b></span>
+                <span>担当: <b>蜂谷さん</b></span>
+                <span>Agent: <b>オ課長（oh・Hermes 4号機）</b></span>
+                <span>モデル: <b>glm-5.3-flash（zai）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul>
+                <li>成果物一覧の「レビューを書く」欄を削除した</li>
+                <li>各カードの Memo ボタン（押すと入力欄が出る書き込み機能）も、仕組みごとすべて削除した</li>
+                <li>各カードの星（☆クリックで評価する機能）も削除した</li>
+                <li>成果物一覧の Updateバッジが古い日付（10/7）のままだったので 10/9 に合わせた</li>
+                <li>成果物の一覧は「日付・種別・名前・ひとこと・リンク」だけのシンプルな形になった</li>
+              </ul>
+              <h4>確認</h4>
+              <ul>
+                <li>公開URLを認証つきで取得し、「レビューを書く」欄の削除・Writeボタン・バッジ同期を確認</li>
+              </ul>
+              <h4>残った問題</h4>
+              <ul>
+                <li>なし</li>
+              </ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">5cbb21e（5cbb21e972706dacdf137d56e73dae7bdb041b85）</span></li></ul>
+            </div>
+          </details>
+
+          <details class="clh-item" data-entry>
+            <summary>
+              <span class="clh-date">10/9（金）</span>
+              <span class="clh-cat cat-page">公開ページ</span>
+              <span class="clh-line">成果物の各行にメモ欄を追加（蜂谷さん依頼）</span>
+            </summary>
+            <div class="clh-body">
+              <div class="clh-meta">
+                <span>日時: <b>2026-10-09</b></span>
+                <span>担当: <b>蜂谷さん</b></span>
+                <span>Agent: <b>オ課長（oh・Hermes 4号機）</b></span>
+                <span>モデル: <b>glm-5.3-flash（zai）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul>
+                <li>成果物一覧の全23行に Memo ボタンをつけ、押すとその行だけのメモ入力欄が開くようにした</li>
+                <li>メモは「保存」でこのブラウザに記録（リロード後も残る）・メモがある行は「Memo ●」で分かる</li>
+                <li>星の評価・一覧下のレビュー欄とは別の記録として動く</li>
+              </ul>
+              <h4>確認</h4>
+              <ul>
+                <li>公開URLを認証つきで取得し、Memoボタン・入力欄・保存の動作を確認</li>
+              </ul>
+              <h4>残った問題</h4>
+              <ul>
+                <li>メモも星もレビューも「このブラウザ保存」のため、みんなで共有するには別の仕組みが必要（要望が出たら対応）</li>
+              </ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">5cbb21e（5cbb21e972706dacdf137d56e73dae7bdb041b85）</span></li></ul>
+            </div>
+          </details>
 
           <details class="clh-item" data-entry>
             <summary>

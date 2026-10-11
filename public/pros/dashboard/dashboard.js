@@ -313,81 +313,6 @@ function renderIssues() {
     </article>`).join('');
 }
 
-/* 成果物の評価（星3つ・localStorage保存・蜂谷さん指示 2026-10-06） */
-const RATE_KEY = 'pros-rate-v1';
-function loadRatings() {
-  try { return JSON.parse(localStorage.getItem(RATE_KEY) || '{}'); } catch { return {}; }
-}
-function saveRatings(r) {
-  try { localStorage.setItem(RATE_KEY, JSON.stringify(r)); } catch { /* private mode */ }
-}
-function paintRate(el, n) {
-  el.textContent = '★★★'.slice(0, n) + '☆☆☆'.slice(0, 3 - n);
-  el.classList.toggle('rated', n > 0);
-}
-function initRatings() {
-  const rates = loadRatings();
-  document.querySelectorAll('a.link[data-id] .rate').forEach((el) => {
-    const id = el.closest('a[data-id]').dataset.id;
-    paintRate(el, rates[id] || 0);
-    el.addEventListener('click', (ev) => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      const cur = rates[id] || 0;
-      const next = cur >= 3 ? 0 : cur + 1;
-      rates[id] = next;
-      saveRatings(rates);
-      paintRate(el, next);
-    });
-  });
-}
-
-/* 成果物のレビュー（書き込み欄・localStorage保存・蜂谷さん指示 2026-10-07） */
-const REVIEW_KEY = 'pros-review-v1';
-function loadReviews() {
-  try { return JSON.parse(localStorage.getItem(REVIEW_KEY) || '[]'); } catch { return []; }
-}
-function saveReviews(r) {
-  try { localStorage.setItem(REVIEW_KEY, JSON.stringify(r)); } catch { /* private mode */ }
-}
-function escHtml(s) {
-  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-}
-function renderReviews() {
-  const list = $('#review-list');
-  if (!list) return;
-  const reviews = loadReviews();
-  list.innerHTML = reviews.length
-    ? reviews.map((r, i) => `<li><span class="r-time">${escHtml(r.time)}</span><span class="r-body">${escHtml(r.text)}</span><button type="button" class="r-del" data-i="${i}">消す</button></li>`).join('')
-    : '<li class="r-empty">まだレビューはありません。</li>';
-}
-function initReviews() {
-  const input = $('#review-input');
-  const btn = $('#review-post');
-  if (!input || !btn) return;
-  renderReviews();
-  btn.addEventListener('click', () => {
-    const text = (input.value || '').trim();
-    if (!text) return;
-    const reviews = loadReviews();
-    reviews.unshift({ time: new Date().toLocaleString('ja-JP'), text });
-    saveReviews(reviews);
-    input.value = '';
-    renderReviews();
-  });
-  const list = $('#review-list');
-  if (list) {
-    list.addEventListener('click', (ev) => {
-      const del = ev.target.closest('.r-del');
-      if (!del) return;
-      const reviews = loadReviews();
-      reviews.splice(Number(del.dataset.i), 1);
-      saveReviews(reviews);
-      renderReviews();
-    });
-  }
-}
-
 let filter = 'all-members';
 
 function renderBoard() {
@@ -501,8 +426,6 @@ function init() {
   renderIssues();
   renderBoard();
   renderCountdown();
-  initRatings();
-  initReviews();
   $('#meeting-next').textContent = MEETING.next.label;
   $('#board-grid').addEventListener('change', (e) => {
     const cb = e.target;
