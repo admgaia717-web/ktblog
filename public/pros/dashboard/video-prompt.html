@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="description" content="フォニックス動画の作り方と、北浦先生の指摘・直し方のまとめ（A〜D の実績から）。"><title>動画作成プロンプト｜プロスフォニックス</title>
+<style>
+:root{color-scheme:light;--ink:#283c35;--muted:#53645b;--line:#dce3d9;--accent:#315f4c;--paper:#fff;--back:#f6f5f0}
+*{box-sizing:border-box}html{scroll-padding-top:24px}body{margin:0;background:var(--back);color:var(--ink);font:16px/1.95 "Hiragino Sans","Yu Gothic",Meiryo,sans-serif}a{color:#245e48;text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible,[tabindex]:focus-visible{outline:3px solid #997623;outline-offset:4px}
+header,main,footer{width:min(1120px,calc(100% - 48px));margin:auto}header{padding:28px 0 20px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}header a{font-size:14px;min-height:44px;display:inline-flex;align-items:center}header span{font-size:12px;color:var(--muted)}main{background:var(--paper);padding:36px 42px;border:1px solid var(--line);border-radius:14px;overflow:hidden}h1{font-size:clamp(25px,3vw,36px);line-height:1.55;margin:0 0 12px}h2{font-size:23px;line-height:1.6;margin:48px 0 16px;padding-top:18px;border-top:1px solid var(--line)}p,li{overflow-wrap:anywhere}p{margin:16px 0}li{margin:8px 0}strong{font-weight:650}main>p:first-of-type{font-size:13px;color:var(--muted)}.table-scroll{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:8px}table{border-collapse:collapse;font-size:14px;line-height:1.8;width:100%;min-width:760px}th,td{padding:15px 16px;text-align:left;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}th{background:#edf2e9;font-weight:650}td{min-width:160px}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}td:first-child{font-weight:550}footer{font-size:12px;color:var(--muted);padding:28px 0 40px}.report-nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 28px}.report-nav a{padding:8px 12px;background:#edf2e9;border-radius:5px;font-size:13px;min-height:44px;display:inline-flex;align-items:center;text-decoration:none}.reading-note{font-size:13px;color:var(--muted)}
+@media(max-width:720px){header,main,footer{width:calc(100% - 28px)}header{padding-top:18px;gap:4px}main{padding:24px 17px}h2{font-size:20px;margin-top:36px}body{font-size:15px}th,td{padding:12px}ol,ul{padding-left:23px}}
+@media print{body{background:white;font-size:11px}header,main,footer{width:100%}main{padding:0;border:0}.report-nav{display:none}.table-scroll{overflow:visible}table{min-width:0;font-size:9px}th,td{min-width:0;padding:6px}h2{break-after:avoid}a{color:inherit}}
+</style>  <link rel="stylesheet" href="dashboard-clean.css?v=20260924-head">
+</head><body class="reportpage">
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><i></i><span>PROS PHONICS<small>チームの作業室</small></span></a>
+    <nav id="topnav" aria-label="ページ内">
+      <a href="index.html">作業室トップ</a><a href="index.html#board">タスク</a><a href="index.html#deliverables">成果物</a><a href="index.html#links" class="active">資料</a><a href="changes.html">変更履歴</a>
+    </nav>
+  </div>
+</header>
+<main>
+<h1>フォニックス動画 作成プロンプト（A〜D の実績から・2026-10-15 版）</h1>
+<p>蜂谷さんの依頼（10/15 20:26）で、北浦先生の指示と直し方をまとめた資料です。次のアルファベットを作る時は、この順に進めます。</p>
+<h2>1. 動画の決まり（A・B・C の最終版で先生 OK）</h2>
+<ul>
+<li>少年は A〜D と同じ子（a_v2_key_start.png の子）。背景は暖かい黄色の無地、正面・目の高さ、カメラは動かさない。</li>
+<li>声は<strong>声G</strong>: 先生の録音 → ElevenLabs voice-changer（Liam, seed 7）→ +4半音（長さは変えない）→ 最大 -1dB。高さは約 175〜180Hz。</li>
+<li>文字は Century Gothic Bold。名前（例: Cary Cucumber）と、下の小文字3つ（音が鳴るたびに赤くなる）。</li>
+<li>流れ: 名前 2.0 秒 → 音 ×3（3.0 / 5.5 / 8.0 秒）→ 0.5 秒。合計 10.0 秒・240 コマ・1920×1080・AAC。</li>
+<li>カードは merged 版 PDF（01_PP_A4_a-z_merged.pdf）の該当ページから、絵と字が欠けないよう余白をとって切り出す。</li>
+<li>キャラクター（Annie・Betty・Cary）は名前の場面で拳に半透明（0.6）で重ね、手が動き始めたら消す。位置は口にかからない所（C は先生が赤で印をつけた位置）。</li>
+</ul>
+<h2>2. 作り方の手順</h2>
+<ol>
+<li>先生の静止画（x_1 = 始め、x_2 = 音の時）を受け取る。左右は「子ども自身の左右」と「画面の左右」を両方書いて確かめる。</li>
+<li>始めの絵・音の時の絵を作る（nano-banana-pro）。<strong>左右が入れ替わりやすい</strong>ので、「画面の右から来る腕」のように画面の向きで指示する。音の時の絵は「始めの絵から、動く手だけを変える」指示で作ると左右がずれない。</li>
+<li>2枚の間の動きを H3（minimax h3-max-turbo、seed 202）で作る。手は開かない・まばたきしない・頭を動かさない、と書く。</li>
+<li>コマを数値で調べ、手の動く範囲と口が開く範囲を決める。手のコマは、1コマごとの変化量がそろうように選ぶ。</li>
+<li>合成する。顔と頭は止めた1コマに固定し、手の部分だけ H3 のコマを貼る。口は口元の楕円だけを位置合わせして貼る。</li>
+<li>音のコマ・口・手のなめらかさを、数値と原寸の切り出しで確かめてから提出する。</li>
+</ol>
+<h2>3. 先生から受けた指摘と直し方（くり返さないために）</h2>
+<div class="table-scroll"><table><thead><tr><th>指摘</th><th>原因</th><th>直し方</th></tr></thead><tbody><tr><td>音は腕を動かすタイミングで（C v2）</td><td>下ろし終わってから音</td><td>手の動きの途中、または手が着いた瞬間に音を置く</td></tr><tr><td>動きをもっと速く（C v3）</td><td>下ろすのに 1 秒</td><td>約 0.5 秒（12 コマ）、ゆっくり始めて止める</td></tr><tr><td>始めのグーがぼやける（C v4）</td><td>動画のコマが元の絵よりやわらかい</td><td>止まっている間は元の絵のグーを使う</td></tr><tr><td>口の周りがグーの前に出る・グーが欠ける（C v5）</td><td>口の貼り範囲がグーにかかる</td><td>口を貼ったあと、グーだけを上に重ねる</td></tr><tr><td>口の片側が動かない（C v6）</td><td>グーを守る範囲が口の端にかかる</td><td>グーの範囲を拳だけにしぼる</td></tr><tr><td>鼻が二重（B v9・D v2）</td><td>口を開ける時に頭が下がり、位置合わせが足りない</td><td>位置合わせの幅を広げ（±24px）、貼る範囲を鼻の下からにする</td></tr><tr><td>顎〜頬が二重（B v14）</td><td>口の貼り範囲が顎の線をまたぐ</td><td>貼る範囲を口の周りの楕円にする</td></tr><tr><td>口が動いていない（D v2）</td><td>休みの時も開いた口を貼っていた</td><td>休みは閉じた口、音の数コマ前から少しずつ開く</td></tr><tr><td>親指が長い・見える（B v12・v13）</td><td>動画で親指がのびる</td><td>親指を縮める、または見えないようにする</td></tr><tr><td>キャラが手を隠す（B v10）</td><td>不透明で重ねていた</td><td>手が動くと透明にする</td></tr><tr><td>キャラが口にかかる（C v7〜v9）</td><td>位置</td><td>小指側の下へ。先生に赤で位置を描いてもらうと早い</td></tr><tr><td>頭がうなずく</td><td>H3 は腕と一緒に頭も動く</td><td>顔は止めたコマに固定し、胸から下だけを貼る</td></tr></tbody></table></div>
+<h2>4. 確認のしかた</h2>
+<ul>
+<li>1 コマごとの変化（顔・口・手）を数値で出し、急な跳びと止まりがないかを見る。</li>
+<li>音の位置と口の開きを、音のコマで確かめる。</li>
+<li>原寸で顔と手を切り出し、二重線・つなぎ目・残像を見る。</li>
+<li>声は数値（高さ）と音声認識で確かめる（耳での確認は先生にお願いする）。</li>
+</ul>
+<h2>5. 提出のしかた</h2>
+<ul>
+<li>修正版ができたら、<strong>毎回新しいスレッド</strong>で北浦先生と蜂谷さんに知らせる（北浦先生 10/15 の指示）。</li>
+<li>先生の承認前に「採用」と書かない。最終版の指示が出たら final-abc/&lt;文字&gt;/ に動画・作り方・素材を保存する。</li>
+</ul>
+<h2>6. 各文字の最終版</h2>
+<ul>
+<li>B: v14（10/14）。C: v9（10/15）。A: v2cg2 の映像＋声G が現行候補。D: 作成中（v2）。</li>
+</ul>
+</main><footer>作成 2026-10-15 · フォニ丸pi（5号機 scotty・claude-opus-5-5）· 蜂谷さん依頼 · 関係者内共有</footer></body></html>
