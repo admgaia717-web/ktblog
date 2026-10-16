@@ -49,9 +49,21 @@ details.clh-more {margin:6px 0 0}
 details.clh-more>summary {list-style:none;cursor:pointer;text-align:center;font-size:13px;font-weight:600;color:var(--accent);padding:12px;border:1px dashed var(--line);border-radius:8px;min-height:44px}
 details.clh-more>summary::-webkit-details-marker {display:none}
 details.clh-more[open]>summary {display:none}
+/* まとめ記録（同じ文字の掲載を1行に集約・各回は＋／−で開閉） */
+.clh-group-note {margin:0 0 12px;font-size:12px;color:var(--muted);line-height:1.8}
+.clh-sub {border-left:2px solid #e4e7df;border-radius:0 8px 8px 0;margin:0 0 6px;background:#fcfdfa}
+.clh-sub summary {list-style:none;display:flex;align-items:baseline;gap:10px;padding:9px 14px;cursor:pointer;min-height:38px}
+.clh-sub summary::-webkit-details-marker {display:none}
+.clh-sub summary:after {content:"＋";margin-left:auto;flex-shrink:0;color:var(--accent);font-size:14px}
+.clh-sub[open]>summary:after {content:"−"}
+.clh-sub summary:hover {background:#f6f8f2}
+.clh-sub-v {font-weight:700;font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums}
+.clh-sub-date {font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.clh-sub-body {border-top:1px dashed #e4e7df;padding:10px 16px 12px;font-size:12px;line-height:1.85}
 @media (max-width:640px){
   .clh-item summary {flex-wrap:wrap;gap:6px 10px;padding:11px 14px}
   .clh-line {flex-basis:100%}
+  .clh-sub summary {padding:8px 10px;gap:6px}
 }
 @media print { .clh-tools {display:none} }
 </style>
@@ -90,10 +102,32 @@ details.clh-more[open]>summary {display:none}
 
     <div class="clh-month">
       <details class="disclosure" open>
-        <summary><h2>2026年10月</h2><span><span class="clh-count" data-declared="68">68件</span>・新しい順</span></summary>
+        <summary><h2>2026年10月</h2><span><span class="clh-count" data-declared="24">24件</span>・新しい順</span></summary>
         <div class="detail-body">
 
           <details class="clh-item" data-entry>
+            <summary>
+              <span class="clh-date">10/16（金）</span>
+              <span class="clh-cat cat-page">公開ページ</span>
+              <span class="clh-line">変更履歴の一覧を同じ文字ごとにまとめて、開閉式にした（蜂谷さん依頼）</span>
+            </summary>
+            <div class="clh-body">
+              <div class="clh-meta">
+                <span>日時: <b>2026-10-16 23:36</b></span>
+                <span>担当: <b>KT</b></span>
+                <span>Agent: <b>オ課長（oh）</b></span>
+                <span>モデル: <b>glm-5.3-flash（Z.ai）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul><li>同じ文字の掲載（A・B・C・D・E）を、文字ごとに1行にまとめた</li><li>まとめた行の中の各行（各回）は、＋／−で開閉できるようにした</li><li>変更前Gitバージョンは、まとめても1つも消さずに全部残した</li></ul>
+              <h4>確認</h4>
+              <ul><li>公開ページで開閉とGitバージョンの表示を確認</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">08551b2</span>（08551b29327cb6b82e7af23406a8e49cfd18f184）この変更の前の状態</li></ul>
+            </div>
+          </details>
+
+<details class="clh-item" data-entry>
             <summary>
               <span class="clh-date">10/16（金）</span>
               <span class="clh-cat cat-content">教材・成果物</span>
@@ -121,10 +155,11 @@ details.clh-more[open]>summary {display:none}
             <summary>
               <span class="clh-date">10/16（金）</span>
               <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v11 を成果物に掲載</span>
+              <span class="clh-line">E Emma Eggplant v1〜v11 を成果物に掲載（11回をまとめて記録）</span>
             </summary>
             <div class="clh-body">
-              <div class="clh-meta">
+              <p class="clh-group-note">同じEを11回に分けて掲載した記録を1行にまとめたもの。各行を開くと、その回の変更前Gitバージョンが見られます。</p>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v11</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -137,18 +172,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">b028820</span>（b02882075f5d43b17883d25eb6833cace91c1fb5）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v10 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">b028820</span>（b02882075f5d43b17883d25eb6833cace91c1fb5）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v10</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -161,18 +186,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">d3b4e72</span>（d3b4e7289bbd65f98a8872a7f765d659b5f33595）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v9 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">d3b4e72</span>（d3b4e7289bbd65f98a8872a7f765d659b5f33595）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v9</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -185,18 +200,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">cda170c</span>（cda170c9e02e0a873116c3db4120ab3298c9c89e）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v8 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">cda170c</span>（cda170c9e02e0a873116c3db4120ab3298c9c89e）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v8</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -209,18 +214,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">0b76e7a</span>（0b76e7a4ae470c738a1769202268265509c805db）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v7 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">0b76e7a</span>（0b76e7a4ae470c738a1769202268265509c805db）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v7</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -233,18 +228,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">b24824a</span>（b24824a0d6da4baf7ede974418715de026e1cdea）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v6 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">b24824a</span>（b24824a0d6da4baf7ede974418715de026e1cdea）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v6</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -257,18 +242,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">e365c58</span>（e365c587e46b43266efca031060050039a432c15）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v5 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">e365c58</span>（e365c587e46b43266efca031060050039a432c15）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v5</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -281,18 +256,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">45b13ac</span>（45b13ace60d185453c175d55c63ce15fc274846f）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v4 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">45b13ac</span>（45b13ace60d185453c175d55c63ce15fc274846f）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v4</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -305,18 +270,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">4533dda</span>（4533dda5d8e0cb6a5ef77d70d06db27d3316b7c7）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v3 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">4533dda</span>（4533dda5d8e0cb6a5ef77d70d06db27d3316b7c7）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v3</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -329,18 +284,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">da2e54c</span>（da2e54cdd6e29100f2b25c33f1c1f95a80f4d402）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v2 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">da2e54c</span>（da2e54cdd6e29100f2b25c33f1c1f95a80f4d402）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v2</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -353,18 +298,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">5482b49</span>（5482b49bdfb18b8af4846099a2cb9fc1587460c7）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/16（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">E Emma Eggplant v1 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">5482b49</span>（5482b49bdfb18b8af4846099a2cb9fc1587460c7）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v1</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -377,9 +312,29 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">985d5b3</span>（985d5b32eb34b9170b7dc6860a45fa0458d04cda）</li></ul>
+              <ul><li><span class="clh-git">985d5b3</span>（985d5b32eb34b9170b7dc6860a45fa0458d04cda）</li></ul></div></details>
             </div>
           </details>
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
 
           <details class="clh-item" data-entry>
             <summary>
@@ -451,12 +406,13 @@ details.clh-more[open]>summary {display:none}
 
           <details class="clh-item" data-entry>
             <summary>
-              <span class="clh-date">10/16（金）</span>
+              <span class="clh-date">10/15〜16</span>
               <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v9 を成果物に掲載</span>
+              <span class="clh-line">D Duncan Donut v1〜v9 を成果物に掲載（9回をまとめて記録）</span>
             </summary>
             <div class="clh-body">
-              <div class="clh-meta">
+              <p class="clh-group-note">同じDを9回に分けて掲載した記録を1行にまとめたもの。各行を開くと、その回の変更前Gitバージョンが見られます。</p>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v9</span><span class="clh-sub-date">10/16（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-16</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -469,18 +425,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">dff1cc5</span>（dff1cc5b81227e8d451b299b54e3afc608bc3a0f）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v8 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">dff1cc5</span>（dff1cc5b81227e8d451b299b54e3afc608bc3a0f）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v8</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -493,18 +439,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">c180aea</span>（c180aea23af7b9b7d97ddc887b75c1e926ee0b29）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v7 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">c180aea</span>（c180aea23af7b9b7d97ddc887b75c1e926ee0b29）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v7</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -517,18 +453,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">9b71414</span>（9b714143e04eb6bb773f93df3b40063401e2cfb8）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v6 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">9b71414</span>（9b714143e04eb6bb773f93df3b40063401e2cfb8）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v6</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -541,18 +467,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">39683b9</span>（39683b9a50760ab30ee33bb58cc77422705add2f）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v5 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">39683b9</span>（39683b9a50760ab30ee33bb58cc77422705add2f）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v5</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -565,18 +481,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">814cfc1</span>（814cfc10b83f23ce8e1105ab17dcbca451dee9ad）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v4 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">814cfc1</span>（814cfc10b83f23ce8e1105ab17dcbca451dee9ad）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v4</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -589,18 +495,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">b1bc79a</span>（b1bc79a18f8f314c0d8dd99aa0d9bf5001f64fc9）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v3 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">b1bc79a</span>（b1bc79a18f8f314c0d8dd99aa0d9bf5001f64fc9）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v3</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -613,9 +509,49 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">0c40736</span>（0c4073624d949cee9e18917b6da29f39363e0535）</li></ul>
+              <ul><li><span class="clh-git">0c40736</span>（0c4073624d949cee9e18917b6da29f39363e0535）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v2</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
+                <span>日時: <b>2026-10-15</b></span>
+                <span>担当: <b>KT</b></span>
+                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
+                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul><li>成果物ページ /pros/deliverables/phonimaru-d-v2/ を追加</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
+              <h4>確認</h4>
+              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">23184ff</span>（23184ffd1384713b655e894282223c84a31a07c0）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v1</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
+                <span>日時: <b>2026-10-15</b></span>
+                <span>担当: <b>KT</b></span>
+                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
+                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul><li>「動画の成果物」一覧に1行追加（ページ /pros/deliverables/phonimaru-d-v1/ は公開済み）</li></ul>
+              <h4>確認</h4>
+              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
             </div>
           </details>
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
 
           <details class="clh-item" data-entry>
             <summary>
@@ -641,62 +577,19 @@ details.clh-more[open]>summary {display:none}
             </div>
           </details>
 
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v2 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
-                <span>日時: <b>2026-10-15</b></span>
-                <span>担当: <b>KT</b></span>
-                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
-                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
-              </div>
-              <h4>やったこと</h4>
-              <ul><li>成果物ページ /pros/deliverables/phonimaru-d-v2/ を追加</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
-              <h4>確認</h4>
-              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
-              <h4>戻し方</h4>
-              <ul><li>この変更のコミットを revert する</li></ul>
-              <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">23184ff</span>（23184ffd1384713b655e894282223c84a31a07c0）</li></ul>
-            </div>
-          </details>
+          
+
+          
 
           <details class="clh-item" data-entry>
             <summary>
               <span class="clh-date">10/15（木）</span>
               <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">D Duncan Donut v1 を成果物一覧に掲載</span>
+              <span class="clh-line">C Cary Cucumber v1〜v9 を成果物に掲載（9回をまとめて記録）</span>
             </summary>
             <div class="clh-body">
-              <div class="clh-meta">
-                <span>日時: <b>2026-10-15</b></span>
-                <span>担当: <b>KT</b></span>
-                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
-                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
-              </div>
-              <h4>やったこと</h4>
-              <ul><li>「動画の成果物」一覧に1行追加（ページ /pros/deliverables/phonimaru-d-v1/ は公開済み）</li></ul>
-              <h4>確認</h4>
-              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
-              <h4>戻し方</h4>
-              <ul><li>この変更のコミットを revert する</li></ul>
-              <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v9 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <p class="clh-group-note">同じCを9回に分けて掲載した記録を1行にまとめたもの。各行を開くと、その回の変更前Gitバージョンが見られます。</p>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v9</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -709,18 +602,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v8 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v8</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -733,18 +616,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v7 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v7</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -757,18 +630,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v6 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v6</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -781,18 +644,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v5 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v5</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -805,18 +658,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v4 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v4</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -829,18 +672,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v3 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v3</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -853,18 +686,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v2 を成果物一覧に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v2</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-15</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -877,9 +700,37 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul>
+              <ul><li><span class="clh-git">6e949b9</span>（6e949b96b3ea6835a2358f7092379f008277bef4）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v1</span><span class="clh-sub-date">10/15（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
+                <span>日時: <b>2026-10-15</b></span>
+                <span>担当: <b>KT</b></span>
+                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
+                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul><li>成果物ページ /pros/deliverables/phonimaru-c-v1/ を追加</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
+              <h4>確認</h4>
+              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">d7b4f5d</span>（d7b4f5d3ecba9f91cdd1a14ee63f73b2f6e4f9cd）</li></ul></div></details>
             </div>
           </details>
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
 
           <details class="clh-item" data-entry>
             <summary>
@@ -903,38 +754,17 @@ details.clh-more[open]>summary {display:none}
             </div>
           </details>
 
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/15（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">C Cary Cucumber v1 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
-                <span>日時: <b>2026-10-15</b></span>
-                <span>担当: <b>KT</b></span>
-                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
-                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
-              </div>
-              <h4>やったこと</h4>
-              <ul><li>成果物ページ /pros/deliverables/phonimaru-c-v1/ を追加</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
-              <h4>確認</h4>
-              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
-              <h4>戻し方</h4>
-              <ul><li>この変更のコミットを revert する</li></ul>
-              <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">d7b4f5d</span>（d7b4f5d3ecba9f91cdd1a14ee63f73b2f6e4f9cd）</li></ul>
-            </div>
-          </details>
+          
 
           <details class="clh-item" data-entry>
             <summary>
-              <span class="clh-date">10/14（水）</span>
+              <span class="clh-date">10/13〜14</span>
               <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v14 を成果物に掲載</span>
+              <span class="clh-line">B Betty Broccoli v2〜v14 を成果物に掲載（13回をまとめて記録）</span>
             </summary>
             <div class="clh-body">
-              <div class="clh-meta">
+              <p class="clh-group-note">同じBを13回に分けて掲載した記録を1行にまとめたもの。各行を開くと、その回の変更前Gitバージョンが見られます。いちばん最初のv1は10/7に「ABCの3本」として掲載（この月の下のほうの記録）です。</p>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v14</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -947,18 +777,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">07cd9c5</span>（07cd9c5cf0d0663176f233bdc9aed345986ad31c）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v13 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">07cd9c5</span>（07cd9c5cf0d0663176f233bdc9aed345986ad31c）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v13</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -971,18 +791,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">8a30431</span>（8a304317c76a977e76c7cf380462534506bb6387）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v12 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">8a30431</span>（8a304317c76a977e76c7cf380462534506bb6387）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v12</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -995,18 +805,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">767f182</span>（767f1822d11224ec96a3d6a0234213d96af16ef0）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v11 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">767f182</span>（767f1822d11224ec96a3d6a0234213d96af16ef0）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v11</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1019,18 +819,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">df58967</span>（df589672fca95c48792e60693088a67001df9520）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v10 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">df58967</span>（df589672fca95c48792e60693088a67001df9520）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v10</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1043,18 +833,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6980d9d</span>（6980d9daa69343b11b24ba08051b8ca0d92fcc4b）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v9 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">6980d9d</span>（6980d9daa69343b11b24ba08051b8ca0d92fcc4b）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v9</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1067,18 +847,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">4435327</span>（44353272594e110a9fa41b60683a670f00d2081c）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v8 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">4435327</span>（44353272594e110a9fa41b60683a670f00d2081c）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v8</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1091,18 +861,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">1971764</span>（197176458f0a5f3ceeff6b15976313d9063bdf0f）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v7 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">1971764</span>（197176458f0a5f3ceeff6b15976313d9063bdf0f）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v7</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1115,18 +875,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">859ee34</span>（859ee344a9a3e79e3f027b946a4e8ae4c6436128）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/14（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v6 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">859ee34</span>（859ee344a9a3e79e3f027b946a4e8ae4c6436128）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v6</span><span class="clh-sub-date">10/14（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-14</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1139,18 +889,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">2920b91</span>（2920b918cf8e83ce3099077158ef3ac9cb0b2e19）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/13（火）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v5 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">2920b91</span>（2920b918cf8e83ce3099077158ef3ac9cb0b2e19）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v5</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1163,18 +903,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">392029c</span>（392029c025448dad6bdfe42e0d0c60d939766c31）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/13（火）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v4 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">392029c</span>（392029c025448dad6bdfe42e0d0c60d939766c31）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v4</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1187,18 +917,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">a3810ef</span>（a3810ef568c130e0d230938bd5e9f204383a8bd7）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/13（火）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v3 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">a3810ef</span>（a3810ef568c130e0d230938bd5e9f204383a8bd7）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v3</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1211,18 +931,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">01c6bbd</span>（01c6bbd243146c12d840e258a30c154a82fb1675）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/13（火）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">B Betty Broccoli v2 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">01c6bbd</span>（01c6bbd243146c12d840e258a30c154a82fb1675）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v2</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1235,18 +945,43 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">7df1c49</span>（7df1c491bbaae24eb2da0077bb2c9fe3b5249d44）</li></ul>
+              <ul><li><span class="clh-git">7df1c49</span>（7df1c491bbaae24eb2da0077bb2c9fe3b5249d44）</li></ul></div></details>
             </div>
           </details>
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
 
           <details class="clh-item" data-entry>
             <summary>
               <span class="clh-date">10/13（火）</span>
               <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A v2 の声4パターン（少年らしい低めの声）を成果物に掲載</span>
+              <span class="clh-line">A v2 の別版4本を成果物に掲載（まとめて記録）</span>
             </summary>
             <div class="clh-body">
-              <div class="clh-meta">
+              <p class="clh-group-note">A v2の別版を4回に分けて掲載した記録を1行にまとめたもの。各行を開くと、その回の変更前Gitバージョンが見られます。</p>
+              <details class="clh-sub"><summary><span class="clh-sub-v">少年らしい低めの声</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1259,18 +994,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">33c7f48</span>（33c7f48e22bf0c2508b55d961f79cbb5dc26baeb）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/13（火）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A v2 の声4パターン（明るい子どもの声）を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">33c7f48</span>（33c7f48e22bf0c2508b55d961f79cbb5dc26baeb）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">明るい子どもの声</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1283,18 +1008,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">a777be5</span>（a777be516e7bf1bbe43df0c7fe1d5c8df9d39b2a）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/13（火）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A v2（名前も Century Gothic）を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">a777be5</span>（a777be516e7bf1bbe43df0c7fe1d5c8df9d39b2a）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">名前も Century Gothic</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1307,18 +1022,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">09019f5</span>（09019f5ba80a923d806e278daaab3c7a9d4f71d7）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/13（火）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A v2（Century Gothic の a）を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">09019f5</span>（09019f5ba80a923d806e278daaab3c7a9d4f71d7）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">Century Gothic の a</span><span class="clh-sub-date">10/13（火）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-13</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1331,9 +1036,15 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">c0505ab</span>（c0505ab8cd179e96ed418373250aea69c745c7b2）</li></ul>
+              <ul><li><span class="clh-git">c0505ab</span>（c0505ab8cd179e96ed418373250aea69c745c7b2）</li></ul></div></details>
             </div>
           </details>
+
+          
+
+          
+
+          
 
           <details class="clh-item" data-entry>
             <summary>
@@ -1361,12 +1072,13 @@ details.clh-more[open]>summary {display:none}
 
           <details class="clh-item" data-entry>
             <summary>
-              <span class="clh-date">10/11（日）</span>
+              <span class="clh-date">10/7〜11</span>
               <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A ピクサー風 v7 を成果物に掲載</span>
+              <span class="clh-line">A ピクサー風 v3〜v7 を成果物に掲載（5回をまとめて記録）</span>
             </summary>
             <div class="clh-body">
-              <div class="clh-meta">
+              <p class="clh-group-note">同じA（ピクサー風）を5回に分けて掲載した記録を1行にまとめたもの。各行を開くと、その回の変更前Gitバージョンが見られます。</p>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v7</span><span class="clh-sub-date">10/11（日）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-11</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1379,18 +1091,8 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">86c9e70</span>（86c9e70e65a2636a23c44376e61c9d2c7b6aa0bc）</li></ul>
-            </div>
-          </details>
-
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/9（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A ピクサー風 v6 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
+              <ul><li><span class="clh-git">86c9e70</span>（86c9e70e65a2636a23c44376e61c9d2c7b6aa0bc）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v6</span><span class="clh-sub-date">10/9（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
                 <span>日時: <b>2026-10-09</b></span>
                 <span>担当: <b>KT</b></span>
                 <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
@@ -1403,9 +1105,53 @@ details.clh-more[open]>summary {display:none}
               <h4>戻し方</h4>
               <ul><li>この変更のコミットを revert する</li></ul>
               <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">6aae35b</span>（6aae35bdbbf6fd1cc671a47da0bb189bf3507d71）</li></ul>
+              <ul><li><span class="clh-git">6aae35b</span>（6aae35bdbbf6fd1cc671a47da0bb189bf3507d71）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v5</span><span class="clh-sub-date">10/9（金）</span></summary><div class="clh-sub-body"><div class="clh-meta">
+                <span>日時: <b>2026-10-09</b></span>
+                <span>担当: <b>KT</b></span>
+                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
+                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul><li>成果物ページ /pros/deliverables/phonimaru-a-pixar-v5/ を追加（A v5）</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
+              <h4>確認</h4>
+              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">3279f32</span>（3279f32f700a231c7ea6aec36ab020bffc7b0e3f）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v4</span><span class="clh-sub-date">10/8（木）</span></summary><div class="clh-sub-body"><div class="clh-meta">
+                <span>日時: <b>2026-10-08</b></span>
+                <span>担当: <b>KT</b></span>
+                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
+                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul><li>成果物ページ /pros/deliverables/phonimaru-a-pixar-v4/ を追加（A v4）</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
+              <h4>確認</h4>
+              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">754246e</span>（754246e96b05ace71934c0e2aa2cd07f1e606e83）</li></ul></div></details>
+              <details class="clh-sub"><summary><span class="clh-sub-v">v3</span><span class="clh-sub-date">10/7（水）</span></summary><div class="clh-sub-body"><div class="clh-meta">
+                <span>日時: <b>2026-10-07</b></span>
+                <span>担当: <b>KT</b></span>
+                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
+                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
+              </div>
+              <h4>やったこと</h4>
+              <ul><li>成果物ページ /pros/deliverables/phonimaru-a-pixar-v3/ を追加（A v3 と、v2 との比較動画）</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
+              <h4>確認</h4>
+              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
+              <h4>戻し方</h4>
+              <ul><li>この変更のコミットを revert する</li></ul>
+              <h4>変更前Gitバージョン</h4>
+              <ul><li><span class="clh-git">5bc6d3a</span>（5bc6d3a1b6becc1079d69d9953bc50f5991479ab）</li></ul></div></details>
             </div>
           </details>
+
+          
 
           <details class="clh-item" data-entry>
             <summary>
@@ -1477,77 +1223,11 @@ details.clh-more[open]>summary {display:none}
             </div>
           </details>
 
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/9（金）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A ピクサー風 v5 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
-                <span>日時: <b>2026-10-09</b></span>
-                <span>担当: <b>KT</b></span>
-                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
-                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
-              </div>
-              <h4>やったこと</h4>
-              <ul><li>成果物ページ /pros/deliverables/phonimaru-a-pixar-v5/ を追加（A v5）</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
-              <h4>確認</h4>
-              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
-              <h4>戻し方</h4>
-              <ul><li>この変更のコミットを revert する</li></ul>
-              <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">3279f32</span>（3279f32f700a231c7ea6aec36ab020bffc7b0e3f）</li></ul>
-            </div>
-          </details>
+          
 
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/8（木）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A ピクサー風 v4 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
-                <span>日時: <b>2026-10-08</b></span>
-                <span>担当: <b>KT</b></span>
-                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
-                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
-              </div>
-              <h4>やったこと</h4>
-              <ul><li>成果物ページ /pros/deliverables/phonimaru-a-pixar-v4/ を追加（A v4）</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
-              <h4>確認</h4>
-              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
-              <h4>戻し方</h4>
-              <ul><li>この変更のコミットを revert する</li></ul>
-              <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">754246e</span>（754246e96b05ace71934c0e2aa2cd07f1e606e83）</li></ul>
-            </div>
-          </details>
+          
 
-          <details class="clh-item" data-entry>
-            <summary>
-              <span class="clh-date">10/7（水）</span>
-              <span class="clh-cat cat-content">教材・成果物</span>
-              <span class="clh-line">A ピクサー風 v3 を成果物に掲載</span>
-            </summary>
-            <div class="clh-body">
-              <div class="clh-meta">
-                <span>日時: <b>2026-10-07</b></span>
-                <span>担当: <b>KT</b></span>
-                <span>Agent: <b>5号機 scotty（pi・フォニ丸pi の提出スクリプト）</b></span>
-                <span>モデル: <b>claude-opus-5-5（Claude サブスク）</b></span>
-              </div>
-              <h4>やったこと</h4>
-              <ul><li>成果物ページ /pros/deliverables/phonimaru-a-pixar-v3/ を追加（A v3 と、v2 との比較動画）</li><li>「動画の成果物」一覧の先頭に1行追加</li></ul>
-              <h4>確認</h4>
-              <ul><li>公開URLを認証つきで取得し、ページと動画が表示されることを確認（提出スクリプトが自動で確認）</li></ul>
-              <h4>戻し方</h4>
-              <ul><li>この変更のコミットを revert する</li></ul>
-              <h4>変更前Gitバージョン</h4>
-              <ul><li><span class="clh-git">5bc6d3a</span>（5bc6d3a1b6becc1079d69d9953bc50f5991479ab）</li></ul>
-            </div>
-          </details>
+          
 
           <details class="clh-item" data-entry>
             <summary>
