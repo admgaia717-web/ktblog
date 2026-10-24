@@ -165,7 +165,7 @@
     return card;
   }
 
-  /* ================= 動画播放器 ================= */
+  /* ================= 動画プレーヤー ================= */
   const player = $("#player");
   const video = $("#v");
   function openPlayer(it) {
@@ -447,7 +447,7 @@
       }
       if (res.ok && data.ok) {
         msg.className = "msg ok";
-        msg.textContent = "送りました。進捗は「进行」で見られます。";
+        msg.textContent = "送りました。進捗は「進行中」で見られます。";
         $("#body").value = "";
         setTimeout(loadBoard, 1000);
       } else {

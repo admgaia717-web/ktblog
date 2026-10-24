@@ -1,7 +1,7 @@
 // /pros/phonics/api/thread の GET — Webアプリから依頼スレッドの状態を読み取る。
 //
 // query: ?root=<root_post_id>  … そのスレッドの投稿を新しい順に返す
-//         （無指定なら「依頼」性质的投稿だけを新しい順）
+//         （無指定なら「依頼」的な投稿だけを新しい順）
 //
 // 認証: Basic 5155（/pros/* と共通）。読み取り専用。
 
@@ -82,7 +82,7 @@ export async function onRequest(context) {
       // 指定スレッド（root か、そのスレッドへの返信）
       if (p.id !== root && p.root_id !== root) continue;
     } else {
-      // 依頼性质的投稿だけ（Webアプリからの依頼・承認）
+      // 依頼的な投稿だけ（Webアプリからの依頼・承認）
       const ph = props.phonics || {};
       if (!props.override_username && ph.kind !== "request" && ph.kind !== "reply") continue;
     }
