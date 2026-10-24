@@ -4,111 +4,134 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>フォニックス教材動画 | 北浦先生・蜂谷さんの作業室</title>
+<title>教材動画ワークスペース | 依頼する・見る</title>
 <link rel="stylesheet" href="phonics.css">
 </head>
 <body>
+
 <header class="topbar">
-  <div class="wrap">
-    <a class="logo" href="#top"><i></i><span>PROS PHONICS<small>教材動画 作業室</small></span></a>
+  <div class="wrap bar">
+    <a class="logo" href="#top"><span class="mark"></span><span class="lt">教材動画ワークスペース<small>PROS PHONICS</small></span></a>
     <nav aria-label="ページ内">
-      <a href="#browse">成果物</a>
-      <a href="#request">依頼する</a>
+      <a href="#make">依頼する</a>
+      <a href="#library">見る</a>
       <a href="#status">進行状況</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap" id="top">
+<main id="top">
 
+  <!-- ヒーロー -->
   <section class="hero">
-    <h1>フォニックス教材動画</h1>
-    <p>ABCD…Z を1文字ずつ作る、先生の教材動画です。各文字の版を並べています。気になるものは再生して、そのまま依頼できます。</p>
-    <p class="stat" id="stat">読み込み中…</p>
-  </section>
-
-  <!-- 成果物一覧 -->
-  <section id="browse">
-    <h2>成果物一覧</h2>
-    <div class="filters">
-      <div class="letters" id="letters" role="tablist" aria-label="文字で絞り込む"></div>
-      <label class="search">
-        <span class="sr-only">検索</span>
-        <input type="search" id="q" placeholder="タイトルで検索（例: 声・口・Kelly）" autocomplete="off">
-      </label>
-      <label class="toggle">
-        <input type="checkbox" id="latestOnly"> 最終版だけ
-      </label>
+    <div class="wrap">
+      <p class="eyebrow">北浦先生・蜂谷さんの教材動画</p>
+      <h1>作りたい Generate、<br>見たい Find。</h1>
+      <p class="lead">動画の依頼は上のフォームから。公開済みの動画はすべて下の「見る」に揃っています。</p>
+      <div class="kpis" id="kpis"></div>
     </div>
-    <div id="list" class="list" aria-live="polite"></div>
-    <p id="empty" class="empty" hidden>該当する版がありません。</p>
   </section>
 
-  <!-- 依頼 -->
-  <section id="request">
-    <h2>動画 修改を依頼する</h2>
-    <div class="card request">
-      <p class="note">
-        送ると「Send the message」チャンネルのフォニ丸Dに届きます。作業中は同じスレッドで返事が来ます。
-      </p>
-      <form id="form" autocomplete="off">
-        <div class="row2">
-          <label>
-            <span>対象の文字</span>
-            <select id="letter" required>
-              <option value="">選んでください</option>
-            </select>
-          </label>
-          <label>
-            <span>対象の版</span>
-            <select id="version"><option value="">指定なし（先生にお願い）</option></select>
-          </label>
-        </div>
-        <label>
-          <span>依頼内容 <b class="req">必須</b></span>
-          <textarea id="body" rows="5" required placeholder="例: 拳が顔に被るので下げて。/l/ の口をもっと開いて。"></textarea>
+  <!-- 依頼（生成） -->
+  <section id="make" class="wrap band">
+    <div class="band-head">
+      <span class="num">01</span>
+      <div>
+        <h2>動画を頼む</h2>
+        <p class="sub">直すところを書いて送るだけ。担当が作業して、同じ場所で返事をします。</p>
+      </div>
+    </div>
+
+    <form id="form" class="composer" autocomplete="off">
+      <label class="field">
+        <span class="lab">どこ直したい？</span>
+        <textarea id="body" rows="4" required
+          placeholder="例: Kelly の拳が顔に被っている。下げてほしい。&#10;例: Lenny の /l/ の口をもっと開いて。"></textarea>
+        <span class="hint" id="hint">キャラクター名も書いておくと早く動けます。例「Kelly」「Lenny」</span>
+      </label>
+
+      <div class="composer-foot">
+        <label class="field who">
+          <span class="lab">誰が</span>
+          <select id="name" required>
+            <option value="北浦先生">北浦先生</option>
+            <option value="蜂谷さん">蜂谷さん</option>
+            <option value="KT">KT</option>
+          </select>
         </label>
-        <label>
-          <span>お名前</span>
-          <input type="text" id="name" placeholder="例: 北浦先生" maxlength="40">
-        </label>
-        <label class="consent">
+        <label class="check">
           <input type="checkbox" id="ok" required>
-          <span>内容はこのチーム内だけで扱われることを確認しました</span>
+          <span>チーム内だけで扱うことを確認しました</span>
         </label>
-        <div class="actions">
-          <button type="submit" id="send">依頼を送る</button>
-          <span id="msg" class="msg" role="status"></span>
-        </div>
-      </form>
+        <button type="submit" id="send" class="btn-primary">
+          <span class="btn-label">依頼を送る</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+      <p class="msg" id="msg" role="status"></p>
+    </form>
+  </section>
+
+  <!-- 成果物（見る） -->
+  <section id="library" class="wrap band">
+    <div class="band-head">
+      <span class="num">02</span>
+      <div>
+        <h2>見る</h2>
+        <p class="sub">先生の最終版には <span class="pill-final">印</span> がつきます。過去の版も全部残してあります。</p>
+      </div>
     </div>
+
+    <div class="filters" id="filterbar">
+      <div class="chars" id="chars" role="tablist" aria-label="キャラクターで絞り込む"></div>
+      <div class="filter-right">
+        <label class="search">
+          <span class="sr-only">検索</span>
+          <input type="search" id="q" placeholder="検索（例: 声、口、Litte）" autocomplete="off">
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="finalOnly">
+          <span class="track"><span class="knob"></span></span>
+          <span>先生の最終版だけ</span>
+        </label>
+      </div>
+    </div>
+
+    <div id="list" class="grid" aria-live="polite"></div>
+    <p id="empty" class="empty" hidden>条件に合う動画がありません。</p>
   </section>
 
   <!-- 進行状況 -->
-  <section id="status">
-    <h2>進行状況</h2>
-    <div class="card">
+  <section id="status" class="wrap band">
+    <div class="band-head">
+      <span class="num">03</span>
+      <div>
+        <h2>進行状況</h2>
+        <p class="sub">各キャラクターが今どの状態か。</p>
+      </div>
+    </div>
+    <div class="table-wrap">
       <table class="status-table">
-        <thead><tr><th>文字</th><th>最新版</th><th>枚数</th><th>備考</th></tr></thead>
+        <thead><tr><th>キャラクター</th><th>現在の版</th><th>公開数</th><th>状態</th></tr></thead>
         <tbody id="statusBody"></tbody>
       </table>
-      <p class="note">
-        「最新」は公開済みの最後の版です。先生の確認可根据採否が変わります。
-      </p>
-    </div>
-  </section>
-
-  <section id="player" class="player-wrap" hidden>
-    <div class="player-box">
-      <button id="closePlayer" class="close" aria-label="閉じる">×</button>
-      <h3 id="pTitle"></h3>
-      <p class="pMeta" id="pMeta"></p>
-      <video id="v" controls playsinline preload="metadata"></video>
-      <p class="note" id="pNote"></p>
     </div>
   </section>
 
 </main>
+
+<!-- 再生ダイアログ -->
+<div id="player" class="player" hidden>
+  <div class="player-box">
+    <button id="closePlayer" class="close" aria-label="閉じる">×</button>
+    <div class="player-head">
+      <h3 id="pTitle"></h3>
+      <p class="pMeta" id="pMeta"></p>
+    </div>
+    <video id="v" controls playsinline preload="metadata"></video>
+    <p class="pNote" id="pNote"></p>
+  </div>
+</div>
 
 <footer class="foot">
   <div class="wrap">

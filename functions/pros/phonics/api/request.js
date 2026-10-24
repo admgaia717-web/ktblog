@@ -1,6 +1,6 @@
 // /pros/api/request の POST — Webアプリの依頼を Mattermost「Send the message」に送る。
 //
-// 入力: { letter, version, body, name }
+// 入力: { body, name }
 // 出力: { ok: true } / { ok: false, message }
 //
 // 認証: Cloudflare Pages の環境変数 PHONICS_WEBAPP_PAT（投稿専用アカウントのPAT）を読む。
@@ -69,8 +69,6 @@ export async function onRequest(context) {
   }
 
   const body = String((payload && payload.body) || "").trim();
-  const letter = String((payload && payload.letter) || "").trim().toUpperCase();
-  const version = String((payload && payload.version) || "").trim();
   const name = String((payload && payload.name) || "").trim();
 
   if (!body) {
@@ -79,16 +77,15 @@ export async function onRequest(context) {
   if (body.length > MAX_BODY) {
     return json({ ok: false, message: "依頼内容は " + MAX_BODY + " 文字までです。" }, 400);
   }
-  if (letter && !/^[A-Z]$/.test(letter)) {
-    return json({ ok: false, message: "対象の文字が不正です。" }, 400);
-  }
 
-  const who = name || "先生";
+  // 依頼者は北浦先生・蜂谷さん・KT の3名に絞る（他人の名義で投稿しないため）
+  const ALLOWED = ["北浦先生", "蜂谷さん", "KT"];
+  const who = ALLOWED.indexOf(name) >= 0 ? name : "北浦先生";
+
   const lines = [
     "@phonimaru-d Webアプリからの依頼です。",
     "",
     "【依頼者】" + who,
-    "【対象】" + (letter ? letter : "未指定") + (version ? " " + version : ""),
     "",
     "【依頼内容】",
     body,
