@@ -209,8 +209,8 @@
   function renderBoard() {
     const box = $("#boardList");
     if (!box) return;
-    // 依頼（override_username があるもの）だけ
-    const reqs = boardState.posts.filter((p) => p.who);
+    // 依頼（root_id が無いもの）とそのスレッドの返信
+    const reqs = boardState.posts.filter((p) => p.kind === "request" || p.kind === "reply" || p.who);
     if (!reqs.length) {
       box.innerHTML = '<p class="empty">依頼はまだありません。上のフォームから送ってください。</p>';
       return;
@@ -218,10 +218,13 @@
     // ルート（依頼）ごとにまとめる
     const groups = {};
     reqs.forEach((p) => {
-      const key = p.root_id || p.id;
-      if (!groups[key]) groups[key] = { root: key, request: null, replies: [] };
-      if (!p.root_id) groups[key].request = p;
-      else groups[key].replies.push(p);
+      if (!p.root_id) {
+        if (!groups[p.id]) groups[p.id] = { root: p.id, request: p, replies: [] };
+        else groups[p.id].request = p;
+      } else {
+        if (!groups[p.root_id]) groups[p.root_id] = { root: p.root_id, request: null, replies: [] };
+        groups[p.root_id].replies.push(p);
+      }
     });
 
     box.innerHTML = "";
@@ -229,7 +232,9 @@
       const g = groups[key];
       const r = g.request;
       if (!r) return;
-      const last = g.replies.length ? g.replies[0] : null;
+      // 最新の応答を状態として使う（新しい順で来るので先頭が最新）
+      const replies = g.replies.slice().sort((a, b) => b.create_at - a.create_at);
+      const last = replies.length ? replies[0] : null;
       const st = last ? last.state : "request";
       const card = document.createElement("article");
       card.className = "req" + (st === "need_approval" ? " is-wait" : "");

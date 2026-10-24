@@ -92,7 +92,8 @@ export async function onRequest(context) {
       root_id: p.root_id || "",
       create_at: p.create_at,
       user_id: p.user_id,
-      who: props.override_username || "",
+      // 依頼は依頼者名（override_username）、応答はフォニ丸D
+      who: props.override_username || (ph.kind === "reply" ? "フォニ丸D" : ""),
       message: p.message || "",
       files: (props.files || []).map((f) => ({ name: f.name, id: f.id, size: f.size })),
       state: ph.state || "",
