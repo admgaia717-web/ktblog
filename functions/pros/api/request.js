@@ -3,8 +3,10 @@
 // 入力: { letter, version, body, name }
 // 出力: { ok: true } / { ok: false, message }
 //
-// 認証: Cloudflare Pages の環境変数 PHONICS_MM_PAT（フォニ丸D の個人PAT）を読む。
+// 認証: Cloudflare Pages の環境変数 PHONICS_WEBAPP_PAT（投稿専用アカウントのPAT）を読む。
 // 表示名は props.override_username で依頼者名義にする。
+// 注意: フォニ丸D のPATで投げると user_id が フォニ丸D になり、ブリッジが
+//       自分の投稿とみなして無視する。専用の投稿アカウントが必要。
 
 const MM_BASE = "https://ktailabo.tail5c4c1d.ts.net";
 const CHANNEL_ID = "meskynx4fibo3ch7r7x8imi7nw"; // send-the-message
@@ -54,7 +56,7 @@ export async function onRequest(context) {
     });
   }
 
-  const token = context.env && context.env.PHONICS_MM_PAT;
+  const token = context.env && context.env.PHONICS_WEBAPP_PAT;
   if (!token) {
     return json({ ok: false, message: "サーバーの送信設定が未完了です。" }, 500);
   }
