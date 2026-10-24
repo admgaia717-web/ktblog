@@ -209,7 +209,7 @@
     msg.className = "msg";
     msg.textContent = "送っています…";
     try {
-      const res = await fetch("/pros/api/request", {
+      const res = await fetch("/pros/phonics/api/request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -220,6 +220,11 @@
         })
       });
       const data = await res.json().catch(() => ({}));
+      if (res.status === 401) {
+        msg.className = "msg err";
+        msg.textContent = "認証が切れました。ページを再読み込みしてください。";
+        return;
+      }
       if (res.ok && data.ok) {
         msg.className = "msg ok";
         msg.textContent = "送りました。フォニ丸D が返事をします（このチャンネル内に返信が届きます）。";
