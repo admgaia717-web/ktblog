@@ -109,7 +109,7 @@
 
     const total = D.items.length;
     $("#stat").textContent =
-      "公開 " + total + "版（A〜" + D.letters[D.letters.length - 1].k + "）。phabet ごとに " +
+      "公開 " + total + "版（A〜" + D.letters[D.letters.length - 1].k + "）。文字ごとに " +
       D.letters.map((l) => l.k).join(" ") + "。表示中 " + rows.length + "版。";
   }
 

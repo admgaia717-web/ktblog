@@ -91,6 +91,7 @@ button[type=submit]:hover{background:#174a40}
 /* 動画プレイヤー */
 .player-wrap{position:fixed;inset:0;background:rgba(20,18,15,.72);display:flex;align-items:center;
   justify-content:center;padding:20px;z-index:50}
+.player-wrap[hidden]{display:none}
 .player-box{background:#fff;border-radius:var(--radius);padding:20px 22px;max-width:1000px;width:100%;position:relative}
 .player-box h3{margin:0 40px 4px 0;font-size:19px}
 .player-box video{width:100%;border-radius:9px;background:#000;display:block;margin:10px 0}
