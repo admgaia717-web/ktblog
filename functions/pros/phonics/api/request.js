@@ -70,6 +70,9 @@ export async function onRequest(context) {
 
   const body = String((payload && payload.body) || "").trim();
   const name = String((payload && payload.name) || "").trim();
+  const rootId = String((payload && payload.root_id) || "").trim();
+  const budget = String((payload && payload.budget) || "").trim();
+  const approve = !!(payload && payload.approve);
 
   if (!body) {
     return json({ ok: false, message: "依頼内容を入力してください。" }, 400);
@@ -82,16 +85,37 @@ export async function onRequest(context) {
   const ALLOWED = ["北浦先生", "蜂谷さん", "KT"];
   const who = ALLOWED.indexOf(name) >= 0 ? name : "北浦先生";
 
-  const lines = [
-    "@phonimaru-d Webアプリからの依頼です。",
-    "",
-    "【依頼者】" + who,
-    "",
-    "【依頼内容】",
-    body,
-  ];
+  const lines = approve
+    ? [
+        "@phonimaru-d 承認です。",
+        "",
+        "【承認者】" + who,
+        (budget ? "【上限金額】" + budget + " ドル" : ""),
+        "",
+        "【内容】",
+        body,
+      ].filter((x) => x !== "")
+    : [
+        "@phonimaru-d Webアプリからの依頼です。",
+        "",
+        "【依頼者】" + who,
+        (budget ? "【予算の上限】" + budget + " ドル" : ""),
+        "",
+        "【依頼内容】",
+        body,
+      ].filter((x) => x !== "");
 
-  const props = { override_username: who };
+  const props = { override_username: who, phonics: { kind: "request", state: "request" } };
+  const postPayload = {
+    channel_id: CHANNEL_ID,
+    message: lines.join("\n"),
+    props: props,
+  };
+  // 承認は同じスレッドに返す（フォニ丸D が文脈を保ったまま受け取る）
+  if (approve && rootId) {
+    postPayload.root_id = rootId;
+    props.phonics.state = "approved";
+  }
   const res = await fetch(MM_BASE + "/api/v4/posts", {
     method: "POST",
     headers: {
@@ -99,11 +123,7 @@ export async function onRequest(context) {
       "Content-Type": "application/json",
       "User-Agent": "phonics-webapp/1.0",
     },
-    body: JSON.stringify({
-      channel_id: CHANNEL_ID,
-      message: lines.join("\n"),
-      props: props,
-    }),
+    body: JSON.stringify(postPayload),
   });
 
   if (!res.ok) {

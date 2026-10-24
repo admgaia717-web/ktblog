@@ -173,7 +173,23 @@ textarea:focus,input:focus,select:focus{
 .switch input:checked + .track .knob{transform:translateX(17px)}
 
 /* ---------- カード ---------- */
+.group{margin-bottom:14px;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--card);overflow:hidden}
+.group-head{
+  width:100%;display:flex;align-items:center;gap:12px;cursor:pointer;
+  background:transparent;border:none;padding:15px 20px;font-family:inherit;text-align:left;
+  border-bottom:1px solid transparent;transition:background .16s;
+}
+.group-head:hover{background:#fafaf7}
+.group.open .group-head{border-bottom-color:var(--line);background:#fafaf7}
+.group-name{font-size:17px;font-weight:700;letter-spacing:-.01em;flex:1}
+.group-count{font-size:12.5px;color:var(--muted);background:#f1f0ea;border-radius:99px;padding:2px 11px;font-weight:600}
+.chev{color:var(--muted);font-size:13px;transition:transform .2s;width:14px}
+.group:not(.open) .chev{transform:rotate(-90deg)}
+.group .grid{display:none;padding:20px;gap:20px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.group.open .grid{display:grid}
+
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:22px;padding-bottom:8px}
+.group .grid{padding-bottom:0}
 .card{
   background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
   overflow:hidden;display:flex;flex-direction:column;
@@ -258,6 +274,48 @@ textarea:focus,input:focus,select:focus{
   transition:background .16s,transform .16s;
 }
 .close:hover{background:#e4e2da;transform:rotate(90deg)}
+
+/* ---------- 進行ボード ---------- */
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.req{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:16px 18px;display:flex;flex-direction:column;gap:9px;
+  box-shadow:0 1px 2px rgba(15,20,18,.04);
+}
+.req.is-wait{border-color:var(--accent);background:linear-gradient(180deg,#fffaf7,var(--card))}
+.req-top{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.req-who{font-weight:700;font-size:15px}
+.req-time{font-size:11.5px;color:var(--muted);margin-left:auto}
+.chip{font-size:11.5px;font-weight:700;border-radius:99px;padding:2px 10px;background:#f1f0ea;color:var(--muted)}
+.chip.need_approval{background:var(--accent-soft);color:var(--accent)}
+.chip.delivered{background:var(--brand-soft);color:var(--brand)}
+.chip.answered{background:#eef1f6;color:#41506b}
+.req-body{margin:0;font-size:14px;line-height:1.65;color:var(--ink-2);white-space:pre-wrap;word-break:break-word}
+.req-foot{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+.req-files{font-size:12px;color:var(--muted)}
+.btn.approve{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.approve:hover{background:#c4551f;border-color:#c4551f;color:#fff}
+
+/* ---------- 会話ドロワー ---------- */
+.drawer{
+  position:fixed;inset:0;z-index:60;display:flex;justify-content:flex-end;
+  background:rgba(8,12,11,.6);backdrop-filter:blur(6px);animation:fade .2s ease;
+}
+.drawer[hidden]{display:none}
+.drawer-box{
+  width:min(560px,100%);height:100%;overflow-y:auto;background:var(--bg);
+  padding:26px 24px 40px;position:relative;box-shadow:-24px 0 60px -24px rgba(0,0,0,.4);
+  animation:slide .26s cubic-bezier(.2,.8,.3,1);
+}
+@keyframes slide{from{transform:translateX(28px);opacity:.4}to{transform:none;opacity:1}}
+.drawer-box h3{margin:0 40px 18px 0;font-size:20px}
+.drawer-box .close{position:sticky;top:0;float:right;margin-top:-6px}
+.msg-item{border-radius:var(--r-md);padding:13px 16px;margin-bottom:12px;border:1px solid var(--line);background:var(--card)}
+.msg-item.ask{background:#f2f8f6;border-color:#cfe6df}
+.msg-item.reply{background:var(--card)}
+.msg-head{font-size:11.5px;color:var(--muted);margin-bottom:6px;letter-spacing:.02em}
+.msg-text{margin:0;font-family:inherit;font-size:14px;line-height:1.7;white-space:pre-wrap;word-break:break-word}
+.msg-files{margin:9px 0 0;padding-left:18px;font-size:13px;color:var(--ink-2)}
 
 /* ---------- フッター ---------- */
 .foot{margin-top:70px;border-top:1px solid var(--line);padding:24px 0 46px;color:var(--muted);font-size:13.5px}

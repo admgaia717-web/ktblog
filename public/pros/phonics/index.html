@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>教材動画ワークスペース | 依頼する・見る</title>
+<title>教材動画ワークスペース | 依頼する・見る・決める</title>
 <link rel="stylesheet" href="phonics.css">
 </head>
 <body>
@@ -13,9 +13,10 @@
   <div class="wrap bar">
     <a class="logo" href="#top"><span class="mark"></span><span class="lt">教材動画ワークスペース<small>PROS PHONICS</small></span></a>
     <nav aria-label="ページ内">
-      <a href="#make">依頼する</a>
+      <a href="#make">頼む</a>
+      <a href="#board">進行中</a>
       <a href="#library">見る</a>
-      <a href="#status">進行状況</a>
+      <a href="#status">状態</a>
     </nav>
   </div>
 </header>
@@ -25,20 +26,20 @@
   <!-- ヒーロー -->
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">北浦先生・蜂谷さんの教材動画</p>
-      <h1>作りたい Generate、<br>見たい Find。</h1>
-      <p class="lead">動画の依頼は上のフォームから。公開済みの動画はすべて下の「見る」に揃っています。</p>
+      <p class="eyebrow">北浦先生・蜂谷さん・KT の教材動画</p>
+      <h1>頼む、見る、決める。<br>ここで全部できる。</h1>
+      <p class="lead">動画の依頼、進捗の確認、成果物の視聴まで、この画面だけで完結します。</p>
       <div class="kpis" id="kpis"></div>
     </div>
   </section>
 
-  <!-- 依頼（生成） -->
+  <!-- 依頼 -->
   <section id="make" class="wrap band">
     <div class="band-head">
       <span class="num">01</span>
       <div>
         <h2>動画を頼む</h2>
-        <p class="sub">直すところを書いて送るだけ。担当が作業して、同じ場所で返事をします。</p>
+        <p class="sub">直すところを書いて送るだけ。作業の進み具合は下の「進行」で見られます。</p>
       </div>
     </div>
 
@@ -46,7 +47,7 @@
       <label class="field">
         <span class="lab">どこ直したい？</span>
         <textarea id="body" rows="4" required
-          placeholder="例: Kelly の拳が顔に被っている。下げてほしい。&#10;例: Lenny の /l/ の口をもっと開いて。"></textarea>
+          placeholder="例: Kelly の拳が顔に被っている。下げてほしい。&#10;例: Z を作って。"></textarea>
         <span class="hint" id="hint">キャラクター名も書いておくと早く動けます。例「Kelly」「Lenny」</span>
       </label>
 
@@ -58,6 +59,10 @@
             <option value="蜂谷さん">蜂谷さん</option>
             <option value="KT">KT</option>
           </select>
+        </label>
+        <label class="field budget">
+          <span class="lab">生成の予算（ドル）<i>任意</i></span>
+          <input type="text" id="budget" inputmode="decimal" placeholder="1.0">
         </label>
         <label class="check">
           <input type="checkbox" id="ok" required>
@@ -72,13 +77,28 @@
     </form>
   </section>
 
-  <!-- 成果物（見る） -->
-  <section id="library" class="wrap band">
+  <!-- 進行 -->
+  <section id="board" class="wrap band">
     <div class="band-head">
       <span class="num">02</span>
       <div>
+        <h2>進行中</h2>
+        <p class="sub">出した依頼の進み具合。承認が要るものはここで承認できます。</p>
+      </div>
+    </div>
+
+    <div class="board" id="boardList">
+      <p class="empty">依頼はまだありません。上のフォームから送ってください。</p>
+    </div>
+  </section>
+
+  <!-- 成果物 -->
+  <section id="library" class="wrap band">
+    <div class="band-head">
+      <span class="num">03</span>
+      <div>
         <h2>見る</h2>
-        <p class="sub">先生の最終版には <span class="pill-final">印</span> がつきます。過去の版も全部残してあります。</p>
+        <p class="sub">先生の最終版には <span class="pill-final">印</span>。過去の版も全部残してあります。</p>
       </div>
     </div>
 
@@ -87,7 +107,7 @@
       <div class="filter-right">
         <label class="search">
           <span class="sr-only">検索</span>
-          <input type="search" id="q" placeholder="検索（例: 声、口、Litte）" autocomplete="off">
+          <input type="search" id="q" placeholder="検索（例: 声、口、Annie）" autocomplete="off">
         </label>
         <label class="switch">
           <input type="checkbox" id="finalOnly">
@@ -104,9 +124,9 @@
   <!-- 進行状況 -->
   <section id="status" class="wrap band">
     <div class="band-head">
-      <span class="num">03</span>
+      <span class="num">04</span>
       <div>
-        <h2>進行状況</h2>
+        <h2>状態</h2>
         <p class="sub">各キャラクターが今どの状態か。</p>
       </div>
     </div>
@@ -120,7 +140,7 @@
 
 </main>
 
-<!-- 再生ダイアログ -->
+<!-- 動画播放器 -->
 <div id="player" class="player" hidden>
   <div class="player-box">
     <button id="closePlayer" class="close" aria-label="閉じる">×</button>
@@ -130,6 +150,14 @@
     </div>
     <video id="v" controls playsinline preload="metadata"></video>
     <p class="pNote" id="pNote"></p>
+  </div>
+</div>
+
+<!-- 依頼の詳細 -->
+<div id="drawer" class="drawer" hidden>
+  <div class="drawer-box">
+    <button id="closeDrawer" class="close" aria-label="閉じる">×</button>
+    <div id="drawerBody"></div>
   </div>
 </div>
 
