@@ -1,0 +1,109 @@
+:root{
+  --ink:#1c1a17; --muted:#6b6459; --line:#e2dccc; --bg:#fbf8f1; --card:#fff;
+  --brand:#1d5c4f; --brandbg:#e8f3ef; --accent:#b4551f; --accentbg:#fdeee8;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Meiryo,sans-serif;
+  font-size:17px;line-height:1.8;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ヘッダー */
+.topbar{background:#fff;border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:20}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700}
+.logo i{width:26px;height:26px;border-radius:8px;background:var(--brand);display:block}
+.logo span{display:flex;flex-direction:column;line-height:1.25;font-size:16px;letter-spacing:.02em}
+.logo small{font-size:11px;color:var(--muted);font-weight:400;letter-spacing:.08em}
+.topbar nav{display:flex;gap:18px}
+.topbar nav a{color:var(--ink);text-decoration:none;font-size:15px;padding:4px 0;border-bottom:2px solid transparent}
+.topbar nav a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ヒーロー */
+.hero{margin:32px 0 8px;padding:26px 28px;background:var(--brand);color:#fff;border-radius:var(--radius)}
+.hero h1{margin:0 0 8px;font-size:32px;line-height:1.35}
+.hero p{margin:0;font-size:16px;color:#dcece6}
+.hero .stat{margin-top:12px;font-size:14px;color:#b9d6cc}
+
+h2{font-size:23px;margin:48px 0 12px;padding-bottom:8px;border-bottom:3px solid var(--ink)}
+
+/* 絞り込み */
+.filters{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:14px 0 20px}
+.letters{display:flex;gap:6px;flex-wrap:wrap;flex:1 1 auto}
+.letters button{border:2px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;
+  min-width:40px;padding:6px 10px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit}
+.letters button:hover{border-color:var(--brand)}
+.letters button[aria-selected="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
+.search input{border:2px solid var(--line);border-radius:9px;padding:8px 12px;font-size:15px;font-family:inherit;min-width:240px;background:#fff}
+.search input:focus{outline:none;border-color:var(--brand)}
+.toggle{display:flex;align-items:center;gap:6px;font-size:15px;color:var(--muted)}
+
+/* 一覧 */
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.item.latest{border-color:var(--brand);box-shadow:0 0 0 2px var(--brandbg)}
+.thumb{background:#efe9dd;aspect-ratio:16/9;display:block;width:100%;object-fit:cover;cursor:pointer;border:0;padding:0}
+.item .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.item .ver{display:inline-block;align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.04em;
+  background:var(--brandbg);color:var(--brand);border-radius:20px;padding:1px 10px}
+.item .ver.old{background:#f1eee7;color:var(--muted)}
+.item h3{margin:0;font-size:16px;line-height:1.5;font-weight:700}
+.item .meta{margin:0;font-size:13px;color:var(--muted)}
+.item .row{display:flex;gap:8px;margin-top:auto;padding-top:8px}
+.item .row a,.item .row button{flex:1;text-align:center;border:2px solid var(--line);background:#fff;color:var(--ink);
+  border-radius:8px;padding:6px 10px;font-size:14px;cursor:pointer;text-decoration:none;font-family:inherit}
+.item .row .play{border-color:var(--brand);color:var(--brand);font-weight:700}
+.item .row a:hover,.item .row button:hover{border-color:var(--accent);color:var(--accent)}
+.empty{color:var(--muted);padding:24px 0}
+
+/* 依頼フォーム */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px}
+.request form{display:flex;flex-direction:column;gap:14px;margin-top:12px}
+label{display:flex;flex-direction:column;gap:5px;font-size:15px}
+label>span{font-weight:700;font-size:14px}
+.req{color:var(--accent);font-size:12px;margin-left:4px}
+input[type=text],input[type=search],select,textarea{border:2px solid var(--line);border-radius:9px;padding:9px 12px;
+  font-size:15px;font-family:inherit;background:#fff;width:100%}
+textarea{resize:vertical;line-height:1.7}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consent{flex-direction:row;align-items:flex-start;gap:9px}
+.consent input{width:auto;margin-top:5px}
+.consent span{font-weight:400;font-size:14px;color:var(--muted)}
+.actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+button[type=submit]{background:var(--brand);color:#fff;border:none;border-radius:9px;padding:11px 26px;
+  font-size:16px;font-weight:700;cursor:pointer;font-family:inherit}
+button[type=submit]:disabled{opacity:.5;cursor:wait}
+button[type=submit]:hover{background:#174a40}
+.msg{font-size:14px}
+.msg.ok{color:var(--brand)}
+.msg.err{color:var(--accent)}
+.note{font-size:14px;color:var(--muted);margin:8px 0 0}
+
+/* 進行状況表 */
+.status-table{border-collapse:collapse;width:100%;font-size:15px}
+.status-table th,.status-table td{border:1px solid var(--line);padding:9px 12px;text-align:left}
+.status-table th{background:#f3efe6;font-weight:700}
+.status-table td.l{font-weight:700;font-size:17px;color:var(--brand);width:60px}
+
+/* 動画プレイヤー */
+.player-wrap{position:fixed;inset:0;background:rgba(20,18,15,.72);display:flex;align-items:center;
+  justify-content:center;padding:20px;z-index:50}
+.player-box{background:#fff;border-radius:var(--radius);padding:20px 22px;max-width:1000px;width:100%;position:relative}
+.player-box h3{margin:0 40px 4px 0;font-size:19px}
+.player-box video{width:100%;border-radius:9px;background:#000;display:block;margin:10px 0}
+.pMeta{margin:0;font-size:13px;color:var(--muted)}
+.close{position:absolute;top:12px;right:14px;border:none;background:#f1eee7;font-size:24px;line-height:1;
+  width:36px;height:36px;border-radius:50%;cursor:pointer;color:var(--ink)}
+
+.foot{border-top:1px solid var(--line);margin-top:56px;padding:22px 0 40px;color:var(--muted);font-size:14px}
+.foot a{color:var(--brand)}
+
+@media(max-width:720px){
+  .hero h1{font-size:25px}
+  .row2{grid-template-columns:1fr}
+  .search input{min-width:100%}
+  body{font-size:16px}
+}
