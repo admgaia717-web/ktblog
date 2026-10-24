@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>村上さんへ　AIのお手伝いさん「はじめ方ガイド」</title>
+<meta name="description" content="録音からの議事録づくりと、NHKラジオ講座での会話練習。AIのお手伝いさん Muse の始め方を、順番にやさしくご案内します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#e58bb1; --pink-deep:#c95d8f; --pink-soft:#fdf0f5; --cream:#fffaf4;
+  --sage:#7ba889; --sage-soft:#eef6f0; --ink:#4a3f42; --ink-soft:#7a6a6e;
+  --gold:#d9a441; --card:#ffffff; --line:#f3d9e4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;
+  font-size:20px;line-height:1.95;letter-spacing:.02em}
+h1,h2,h3{font-family:"Shippori Mincho","Hiragino Mincho ProN",serif;line-height:1.5}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 80px}
+.hero{
+  background:linear-gradient(160deg,#fdeef5 0%,#fdf6ec 55%,#eef6f0 100%);
+  border-bottom:3px solid var(--line);text-align:center;
+  padding:64px 20px 52px;position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"❀";position:absolute;color:#f6c3d8;font-size:64px;opacity:.55}
+.hero::before{top:18px;left:22px}
+.hero::after{bottom:10px;right:26px}
+.hero .kicker{color:var(--pink-deep);font-weight:700;font-size:17px;letter-spacing:.18em}
+.hero h1{font-size:40px;margin:14px auto 10px;max-width:680px;color:#59323f}
+.hero p{max-width:620px;margin:10px auto 0;color:var(--ink-soft);font-size:20px}
+.wish{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.wish div{background:#fff;border:2px solid var(--line);border-radius:18px;
+  padding:16px 22px;max-width:340px;text-align:left;box-shadow:0 4px 14px rgba(201,93,143,.08)}
+.wish b{color:var(--pink-deep)}
+nav.toc{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:34px 0 6px}
+nav.toc a{background:#fff;border:2px solid var(--pink);color:var(--pink-deep);
+  text-decoration:none;border-radius:999px;padding:10px 20px;font-weight:700;font-size:18px}
+nav.toc a:hover{background:var(--pink-soft)}
+section{margin-top:54px}
+h2{font-size:30px;color:#59323f;border-bottom:3px dotted var(--pink);
+  padding-bottom:10px;margin-bottom:22px}
+h2 .no{color:var(--pink);margin-right:.35em}
+h3{font-size:24px;color:var(--pink-deep);margin:30px 0 8px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:20px;
+  padding:28px 30px;box-shadow:0 4px 16px rgba(120,80,95,.06);margin-top:18px}
+.card.green{border-color:#cfe4d6;background:var(--sage-soft)}
+ol.steps{list-style:none;counter-reset:st;padding:0;margin:8px 0}
+ol.steps li{counter-increment:st;position:relative;padding:10px 0 10px 62px;min-height:52px}
+ol.steps li::before{content:counter(st);position:absolute;left:0;top:8px;
+  width:44px;height:44px;border-radius:50%;background:var(--pink);color:#fff;
+  font-weight:900;text-align:center;line-height:44px;font-size:22px}
+ol.steps.green li::before{background:var(--sage)}
+ul.plain{padding-left:1.3em;margin:8px 0}
+ul.plain li{margin:8px 0}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:16px}
+.flow div{background:#fff;border:2px solid var(--line);border-radius:16px;padding:16px 18px}
+.flow b{display:block;color:var(--pink-deep);font-size:19px;margin-bottom:4px}
+.flow span{font-size:18px;color:var(--ink-soft)}
+.example{background:#fff7ea;border:2px dashed var(--gold);border-radius:16px;
+  padding:20px 24px;margin:18px 0;font-size:20px}
+.example .cap{font-weight:900;color:#a5761d;font-size:17px;letter-spacing:.08em}
+.note{background:var(--pink-soft);border-radius:14px;padding:16px 22px;margin:16px 0;font-size:19px}
+.video{margin:22px 0}
+.video .frame{position:relative;padding-top:56.25%;border-radius:18px;overflow:hidden;
+  border:3px solid var(--line);box-shadow:0 6px 18px rgba(120,80,95,.12);background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video p{margin:10px 4px 0;font-size:18px;color:var(--ink-soft)}
+.video p b{color:var(--ink)}
+.big{font-size:22px;font-weight:700}
+.center{text-align:center}
+footer{margin-top:70px;text-align:center;color:var(--ink-soft);font-size:17px;
+  border-top:2px solid var(--line);padding-top:26px}
+.badge{display:inline-block;background:var(--sage);color:#fff;border-radius:999px;
+  padding:2px 16px;font-size:16px;font-weight:700;vertical-align:middle;margin-left:8px}
+@media (max-width:560px){
+  body{font-size:19px}
+  .hero h1{font-size:31px}
+  h2{font-size:26px}
+  .card{padding:22px 20px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="kicker">むらかみさんへの ごあんない</div>
+  <h1>AIのお手伝いさん<br>「はじめ方ガイド」</h1>
+  <p>村上さん、こんにちは。玉川です。<br>
+  先日お話しいただいた2つのことを形にするための、ご案内です。</p>
+  <div class="wish">
+    <div><b>1つ目</b><br>会議の録音から、議事録を作ること</div>
+    <div><b>2つ目</b><br>NHKラジオ講座の教科書で、会話の練習をすること</div>
+  </div>
+  <p>どちらも、AIのお手伝いさんにお願いする形でできます。<br>
+  むずかしい言葉は使いません。1つずつ進めれば大丈夫です。</p>
+</header>
+
+<div class="wrap">
+
+<nav class="toc">
+  <a href="#dekiru">できること</a>
+  <a href="#nagare">全体の流れ</a>
+  <a href="#step1">ステップ1〜2</a>
+  <a href="#step3">ステップ3〜4</a>
+  <a href="#step5">ステップ5〜6</a>
+  <a href="#anshin">安心のお約束</a>
+  <a href="#komatta">困ったときは</a>
+</nav>
+
+<section id="dekiru">
+  <h2>できるようになること</h2>
+  <div class="card">
+    <ul class="plain">
+      <li>録音を渡すと、話の内容を文字にして、<b>議事録の形</b>に整えてくれます</li>
+      <li>手書きのメモを写真で渡すと、読んで、資料に取り入れてくれます</li>
+      <li>教科書のページを写真で渡すと、その内容で<b>会話の練習相手</b>になってくれます</li>
+      <li>質問すると、その場で答えてくれます</li>
+    </ul>
+    <p>お願いするときは、ふだんの言葉で大丈夫です。特別な命令文はいりません。</p>
+    <div class="example">
+      <div class="cap">たとえば、こんなふうに伝えます</div>
+      「この録音から、議事録を作ってください」<br>
+      「このページで、会話の練習をしてください」
+    </div>
+  </div>
+</section>
+
+<section id="nagare">
+  <h2>全体の流れ</h2>
+  <p>準備は全部で6つのステップです。全部を一度にする必要はありません。1日1つでも、かまいません。</p>
+  <div class="flow">
+    <div><b>ステップ1</b><span>Muse（ミューズ）のアプリを入れる</span></div>
+    <div><b>ステップ2</b><span>招待コードを入力する</span></div>
+    <div><b>ステップ3</b><span>WhatsApp（ワッツアップ）を入れる</span></div>
+    <div><b>ステップ4</b><span>MuseとWhatsAppをつなぐ</span></div>
+    <div><b>ステップ5</b><span>練習1　録音から議事録を作る</span></div>
+    <div><b>ステップ6</b><span>練習2　教科書で会話の練習をする</span></div>
+  </div>
+  <div class="card">
+    <h3 style="margin-top:0">始める前に、ご用意いただくもの</h3>
+    <ul class="plain">
+      <li>ふだんお使いのスマートフォン</li>
+      <li>充電器（途中で電池が切れないように）</li>
+      <li>LINEが使える状態（分からないときに玉川へ連絡するため）</li>
+    </ul>
+    <p>パスワードをご用意いただく必要はありません。入力が必要な場面では、ご本人が、ご自分の手で入力してください。</p>
+    <p>パソコンをお使いの場合は、アプリの代わりに <b>muse.ai</b> というページからも使えます。この後の説明は、スマートフォンを中心に書いています。</p>
+  </div>
+</section>
+
+<section id="step1">
+  <h2><span class="no">1・2</span>Museを入れて、コードを入力する</h2>
+  <div class="card">
+    <h3 style="margin-top:0">ステップ1　Museのアプリを入れる</h3>
+    <p>Museは、AIのお手伝いさんの名前です。まず、このアプリをスマートフォンに入れます。</p>
+    <p class="big">iPhoneをお使いの方</p>
+    <ol class="steps">
+      <li>ホーム画面で「App Store」という、青いアイコンを押します</li>
+      <li>画面の下、または上の「検索」を押します</li>
+      <li>「Muse」と入力して検索します</li>
+      <li>「Muse」のアプリが表示されたら、「入手」を押します</li>
+      <li>インストールが終わったら、「開く」を押します</li>
+      <li>画面の案内に沿って、参加の手続きを進めてください</li>
+    </ol>
+    <p class="big">Androidをお使いの方</p>
+    <ol class="steps">
+      <li>ホーム画面で「Play ストア」という、カラフルな三角のアイコンを押します</li>
+      <li>画面の上の検索欄を押します</li>
+      <li>「Muse」と入力して検索します</li>
+      <li>「Muse」のアプリが表示されたら、「インストール」を押します</li>
+      <li>インストールが終わったら、「開く」を押します</li>
+      <li>画面の案内に沿って、参加の手続きを進めてください</li>
+    </ol>
+    <div class="note">途中で分からなくなったら、その画面のままで止めてください。LINEで玉川にご連絡いただければ、その場面から一緒に確認します。</div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">ステップ2　招待コードを入力する</h3>
+    <p>参加の手続きが終わったら、招待コードを入力します。このコードは、玉川が以前LINEでお送りしたものです。LINEのトーク画面をさかのぼると見つかります。</p>
+    <div class="note"><b>大切な決まりが1つあります。</b>コードの入力は、<b>参加してから48時間以内</b>にお願いします。時間が過ぎると入力できなくなります。参加したら、その流れで入力まで済ませてください。</div>
+    <ol class="steps">
+      <li>Museのアプリを開きます</li>
+      <li>「設定」を開きます（スマートフォン本体の設定ではなく、Museのアプリの中にある「設定」です）</li>
+      <li>設定の中の「Redeem token」という項目を押します（英語ですが、意味は「コードを入力する場所」です）</li>
+      <li>LINEでお送りしたコードを、そのまま入力します</li>
+      <li>確認のボタンを押して、完了です</li>
+    </ol>
+    <p>入力がうまくいかないときは、無理に何度も試さなくて大丈夫です。その画面の写真（スクリーンショット）を撮って、LINEで玉川にお送りください。</p>
+  </div>
+
+  <h3>動画で見る　Museって、どんなもの？</h3>
+  <div class="video">
+    <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/6Rjz1YQ8hWY" title="Museの紹介動画" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <p><b>「頼めば自分で動いてくれるAIエージェント『Muse』」</b>（AI虎の巻／約8分）<br>
+    Museとは何か、何ができるかを、図解でやさしく紹介しています。まず全体を知りたい方に。</p>
+  </div>
+  <div class="video">
+    <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/u3kfkIBxUSI" title="Museの始め方動画" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <p><b>「MetaのAIエージェント『Muse』が日本上陸。無料で試せます」</b>（ぐりこ先生／約3分半）<br>
+    短い入門編です。長い動画が負担な方は、こちらからどうぞ。</p>
+  </div>
+  <div class="note">動画の中で別の招待コードが紹介されることがあります。村上さんが入力するコードは、<b>玉川がLINEでお送りしたもの</b>です。お間違えのないようにお願いします。</div>
+</section>
+
+<section id="step3">
+  <h2><span class="no">3・4</span>WhatsAppを入れて、つなぐ</h2>
+  <div class="card">
+    <h3 style="margin-top:0">ステップ3　WhatsAppを入れる</h3>
+    <p>WhatsAppは、LINEと同じようなメッセージのアプリです。海外では多くの方が使っています。</p>
+    <p>このアプリを入れる理由は1つです。<b>WhatsAppから、自分のMuseに話しかけられるようになる</b>からです。声で伝えることも、写真を送ることも、文書のファイルを送ることもできます。</p>
+    <p class="big">iPhoneをお使いの方</p>
+    <ol class="steps green">
+      <li>「App Store」を開きます</li>
+      <li>「WhatsApp」と入力して検索します</li>
+      <li>「WhatsApp Messenger」を「入手」します</li>
+      <li>開いて、画面の案内に沿って登録を進めます</li>
+    </ol>
+    <p class="big">Androidをお使いの方</p>
+    <ol class="steps green">
+      <li>「Play ストア」を開きます</li>
+      <li>「WhatsApp」と入力して検索します</li>
+      <li>「WhatsApp Messenger」を「インストール」します</li>
+      <li>開いて、画面の案内に沿って登録を進めます</li>
+    </ol>
+    <div class="note">登録の途中では電話番号を入力します。すると、確認の番号が届きます。その番号は、ご本人の確認のためのものです。他の人に教えず、ご自分で入力してください。</div>
+  </div>
+
+  <div class="video">
+    <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/y3EdIiJeTXk" title="WhatsAppの使い方動画" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <p><b>「How to Use Whatsapp - Beginner's Guide」</b>（Howfinity／約10分・200万回以上見られている動画）<br>
+    英語の動画ですが、登録から、メッセージ・写真・通話までの画面の動きがよく分かります。言葉が分からなくても、画面の様子を見るだけでも参考になります。実際の操作は、このページの日本語の手順に沿って進めてください。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">ステップ4　MuseとWhatsAppをつなぐ</h3>
+    <p>アプリが2つ入ったら、最後につなぐ作業をします。操作はMuseのアプリの中で行います。</p>
+    <ol class="steps green">
+      <li>Museのアプリを開きます</li>
+      <li>「設定」を開きます</li>
+      <li>設定の中の「Messaging channels」という項目を押します（英語ですが、意味は「つなぐメッセージアプリを選ぶ場所」です）</li>
+      <li>「WhatsApp」を選びます</li>
+      <li>画面の案内に沿って進めると、接続が完了します</li>
+    </ol>
+    <p>接続が終わると、WhatsAppの中に、Museとのトーク画面が現れます。試しに、ひと言送ってみてください。</p>
+    <div class="example">
+      <div class="cap">試しに送る ひとこと</div>
+      「こんにちは」
+    </div>
+    <p>返事が来れば、準備は完了です。音声で送りたいときは、トーク画面のマイクのボタンを。写真や文書を送りたいときは、クリップのような形のボタンから選べます。</p>
+  </div>
+</section>
+
+<section id="step5">
+  <h2><span class="no">5・6</span>さっそく練習してみましょう</h2>
+  <div class="card">
+    <h3 style="margin-top:0">ステップ5　練習1　録音から議事録を作る</h3>
+    <p>会議の録音を渡して、議事録を作ってもらいます。Wordで作ったような、きちんとした形に整えることもお願いできます。</p>
+    <ol class="steps">
+      <li>会議を録音します（スマートフォンの録音アプリで大丈夫です）</li>
+      <li>手書きのメモがあれば、写真に撮ります</li>
+      <li>WhatsAppの、Museとのトーク画面を開きます</li>
+      <li>録音のファイルを送ります</li>
+      <li>メモの写真も送ります</li>
+      <li>下のお願いの文章を送ります</li>
+    </ol>
+    <div class="example">
+      <div class="cap">お願いの文章の例　そのまま写してお使いください</div>
+      この録音から、議事録を作ってください。<br>
+      日時、参加者、話し合ったこと、決まったこと、次にやることを、分けて書いてください。<br>
+      Wordで作ったような形に整えてください。
+    </div>
+    <p>出来上がったら内容を確認してください。直してほしいところは、そのまま伝えれば大丈夫です。「参加者の名前が違います」「この部分を、もう少し短くしてください」など、言い直せば何度でも直してくれます。</p>
+    <p>見本にしたい議事録がある場合は、その写真やファイルも一緒に送って、「この形で作ってください」と添えてください。</p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">ステップ6　練習2　教科書で会話の練習をする</h3>
+    <p>NHKラジオ講座の教科書を使って、会話の練習をします。</p>
+    <ol class="steps">
+      <li>教科書の、練習したいページを開きます</li>
+      <li>そのページの写真を撮るか、スクリーンショットを撮ります</li>
+      <li>WhatsAppの、Museとのトーク画面を開きます</li>
+      <li>その写真を送ります</li>
+      <li>下のお願いの文章を送ります</li>
+    </ol>
+    <div class="example">
+      <div class="cap">お願いの文章の例　そのまま写してお使いください</div>
+      このページの内容で、先生役になって、会話の練習をしてください。<br>
+      私が質問したら、答えてください。<br>
+      答えは、やさしい言葉でお願いします。
+    </div>
+    <ul class="plain">
+      <li>質問は、日本語でも大丈夫です</li>
+      <li>分からない単語があれば、「これはどういう意味ですか」と聞いてください</li>
+      <li>もう一度聞きたいときは、「もう一度お願いします」と伝えてください</li>
+    </ul>
+    <p>練習は、好きなときに始められて、好きなときに終われます。時間を気にする必要はありません。</p>
+  </div>
+</section>
+
+<section id="anshin">
+  <h2>安心のための、お約束</h2>
+  <div class="card green">
+    <ul class="plain">
+      <li>メッセージの送信、予約、買い物など、<b>大事な操作は、村上さんの確認なしに進みません</b>。勝手に決めることはありません</li>
+      <li>途中で「確認してください」と聞かれることがあります。そのときは、内容を見てから、よいかどうかをお答えください</li>
+      <li><b>パスワードは、エージェントにも、誰にも、教えないでください</b>。パスワードを聞かれる場面があっても、教える必要はありません</li>
+      <li>お金の支払いに関わることは、必ずご本人が確認してから進めてください</li>
+    </ul>
+    <p class="center big">この決まりがあるので、安心してお試しいただけます。</p>
+  </div>
+</section>
+
+<section id="komatta">
+  <h2>困ったときは</h2>
+  <div class="card">
+    <p>分からなくなったら、無理に進めないでください。それが一番大切です。</p>
+    <ol class="steps green">
+      <li>その画面のままで止めます</li>
+      <li>できれば、その画面の写真（スクリーンショット）を撮ります</li>
+      <li>LINEで、玉川にその写真を送ります</li>
+      <li>「ここで分からなくなりました」と、ひと言添えてください</li>
+    </ol>
+    <p>写真があると、話が早く進みます。写真が撮れなければ、言葉だけでも大丈夫です。</p>
+  </div>
+  <div class="card" style="text-align:center">
+    <p class="big" style="margin-top:6px">最初は、誰でも不慣れです。</p>
+    <p>うまくいかないことがあっても、それは普通のことです。<br>
+    まずはステップ1から、ゆっくり始めましょう。<br>
+    レクチャーの時間に、玉川が一から一緒に進めます。<br>
+    村上さんのペースで、大丈夫です。</p>
+  </div>
+</section>
+
+<footer>
+  ご案内：玉川勝史（鶴舞人工知能倶楽部）<br>
+  AIのお手伝いさん「はじめ方ガイド」
+</footer>
+
+</div>
+</body>
+</html>
