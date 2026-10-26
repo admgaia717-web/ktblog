@@ -223,3 +223,10 @@ button { -webkit-tap-highlight-color: transparent; }
   .topbar nav{overflow-x:auto;max-width:100%;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
   .topbar nav a{white-space:nowrap}
 }
+
+/* ---------- 共通タブ（2026-10-27 動線整理） ---------- */
+.topbar nav.main-tabs{display:flex;align-items:center;gap:6px}
+.topbar nav.main-tabs a.tab{font-weight:700;font-size:14px;padding:8px 16px;border-radius:99px;
+  border:1.5px solid #1f6f54;color:#1f6f54;background:#fff;text-decoration:none;white-space:nowrap}
+.topbar nav.main-tabs a.tab:hover{background:#e7f2ee;color:#1f6f54}
+.topbar nav.main-tabs a.tab.is-current{background:#1f6f54;color:#fff}
