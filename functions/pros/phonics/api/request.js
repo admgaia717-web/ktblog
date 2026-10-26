@@ -85,6 +85,7 @@ export async function onRequest(context) {
   const ALLOWED = ["北浦先生", "蜂谷さん", "KT"];
   const who = ALLOWED.indexOf(name) >= 0 ? name : "北浦先生";
 
+  const isReply = !!rootId && !approve;
   const lines = approve
     ? [
         "@phonimaru-d 承認です。",
@@ -95,6 +96,13 @@ export async function onRequest(context) {
         "【内容】",
         body,
       ].filter((x) => x !== "")
+    : isReply
+    ? [
+        "@phonimaru-d",
+        "",
+        "【" + who + "】",
+        body,
+      ]
     : [
         "@phonimaru-d Webアプリからの依頼です。",
         "",
@@ -105,16 +113,19 @@ export async function onRequest(context) {
         body,
       ].filter((x) => x !== "");
 
-  const props = { override_username: who, phonics: { kind: "request", state: "request" } };
+  // 返信は state を空にして、進行ボードの状態表示を巻き戻さない
+  const props = {
+    override_username: who,
+    phonics: { kind: "request", state: approve ? "approved" : (isReply ? "" : "request") },
+  };
   const postPayload = {
     channel_id: CHANNEL_ID,
     message: lines.join("\n"),
     props: props,
   };
-  // 承認は同じスレッドに返す（フォニ丸D が文脈を保ったまま受け取る）
-  if (approve && rootId) {
+  // 承認・返信は同じスレッドに返す（フォニ丸D が文脈を保ったまま受け取る）
+  if (rootId) {
     postPayload.root_id = rootId;
-    props.phonics.state = "approved";
   }
   const res = await fetch(MM_BASE + "/api/v4/posts", {
     method: "POST",

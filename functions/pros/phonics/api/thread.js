@@ -81,12 +81,12 @@ export async function onRequest(context) {
     if (root) {
       // 指定スレッド（root か、そのスレッドへの返信）
       if (p.id !== root && p.root_id !== root) continue;
-    } else {
-      // 依頼的な投稿だけ（Webアプリからの依頼・承認）
-      const ph = props.phonics || {};
-      if (!props.override_username && ph.kind !== "request" && ph.kind !== "reply") continue;
     }
+    // root 無指定は全投稿を返す（会話画面が新着・未読を検知できるようにする。
+    // 依頼だけに絞るとフォニ丸Dの応答が取れず、返信が来たか分からないため）
     const ph = props.phonics || {};
+    // 添付は metadata.files に入る（props.files ではない。これが無いと動画が表示されない）
+    const metaFiles = (p.metadata && p.metadata.files) || props.files || [];
     items.push({
       id: p.id,
       root_id: p.root_id || "",
@@ -94,8 +94,9 @@ export async function onRequest(context) {
       user_id: p.user_id,
       // 依頼は依頼者名（override_username）、応答はフォニ丸D
       who: props.override_username || (ph.kind === "reply" ? "フォニ丸D" : ""),
+      phonics_present: !!props.phonics,
       message: p.message || "",
-      files: (props.files || []).map((f) => ({ name: f.name, id: f.id, size: f.size })),
+      files: metaFiles.map((f) => ({ name: f.name, id: f.id, size: f.size, mime: f.mime_type || "" })),
       state: ph.state || "",
       kind: ph.kind || "",
     });

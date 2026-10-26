@@ -235,7 +235,9 @@
       // 最新の応答を状態として使う（新しい順で来るので先頭が最新）
       const replies = g.replies.slice().sort((a, b) => b.create_at - a.create_at);
       const last = replies.length ? replies[0] : null;
-      const st = last ? last.state : "request";
+      // 返信（state なし）が最新でも状態を巻き戻さない。最後に状態を持つ投稿を使う
+      const lastWithState = replies.find((x) => x.state);
+      const st = lastWithState ? lastWithState.state : "request";
       const card = document.createElement("article");
       card.className = "req" + (st === "need_approval" ? " is-wait" : "");
 
@@ -267,6 +269,11 @@
       openBtn.textContent = "会話を見る";
       openBtn.onclick = () => openDrawer(key);
       foot.appendChild(openBtn);
+      const chatLink = document.createElement("a");
+      chatLink.className = "btn";
+      chatLink.href = "chat?root=" + encodeURIComponent(key);
+      chatLink.textContent = "チャットで話す";
+      foot.appendChild(chatLink);
 
       if (st === "need_approval") {
         const ok = document.createElement("button");

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>会話 | 教材動画ワークスペース</title>
+<link rel="stylesheet" href="chat.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="bar">
+    <a class="logo" href="/pros/phonics/"><span class="mark"></span><span>教材動画ワークスペース<small>動画が届く、おしゃべりノート</small></span></a>
+    <nav aria-label="移動">
+      <a href="/pros/phonics/#library">動画ライブラリ</a>
+      <a href="/pros/phonics/">依頼・進行ボード</a>
+      <a href="/pros/dashboard/">チームの作業室</a>
+      <button type="button" id="notifBtn" class="notif" title="新しい返信が来たら音で知らせます">新着の音: OFF</button>
+    </nav>
+  </div>
+</header>
+
+<main class="chat-wrap" id="chatWrap">
+  <aside class="sidebar" id="sidebar">
+    <button type="button" id="newReq" class="new-req">＋ 新しい依頼を送る</button>
+    <label class="who-row">あなたの名前
+      <select id="name">
+        <option value="北浦先生">北浦先生</option>
+        <option value="蜂谷さん">蜂谷さん</option>
+        <option value="KT">KT</option>
+      </select>
+    </label>
+    <p class="side-hint">依頼を選ぶと、右に会話が出ます。<br>返信も動画の確認も、ここでできます。</p>
+    <div id="threadList" class="thread-list" aria-live="polite"></div>
+  </aside>
+
+  <section class="conversation" id="conversation">
+    <div class="conv-head" id="convHead">
+      <button type="button" id="backBtn" class="back" aria-label="依頼の一覧へ戻る">← 一覧</button>
+      <div id="convTitle" class="conv-title">依頼を選んでください</div>
+      <span id="convState" class="chip"></span>
+    </div>
+    <div class="approve-bar" id="approveBar" hidden>
+      <span>承認すると作業が進みます。金額は会話の中の見積もりをご確認ください。</span>
+      <button type="button" id="approveBtn">承認して進めて</button>
+    </div>
+    <div class="messages" id="messages">
+      <p class="empty">左の一覧から依頼を選んでください。<br>話しかけると、フォニ丸Dがここで答えます。<br>届いた動画も、この会話の中でそのまま見られます。</p>
+    </div>
+    <div class="reply-who" id="replyWho" hidden></div>
+    <form class="reply-form" id="replyForm" hidden>
+      <textarea id="replyBody" rows="2" placeholder="返信を書く（Enter で送信・Shift+Enter で改行）"></textarea>
+      <button type="submit" id="replySend">送信</button>
+    </form>
+    <p class="msg" id="convMsg" role="status"></p>
+  </section>
+</main>
+
+<div class="modal" id="newModal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-label="新しい依頼">
+    <h2>新しい依頼</h2>
+    <p class="modal-sub">修正でも雑談でも、そのまま書いて送れます。</p>
+    <textarea id="newBody" rows="5" placeholder="例: Kelly の拳が顔に被っている。下げてほしい。"></textarea>
+    <input type="text" id="newBudget" inputmode="decimal" placeholder="生成の予算（ドル・任意）">
+    <label class="check"><input type="checkbox" id="newOk"><span>チーム内だけで扱うことを確認しました</span></label>
+    <div class="modal-actions">
+      <button type="button" id="newCancel" class="ghost">やめる</button>
+      <button type="button" id="newSend" class="primary">依頼を送る</button>
+    </div>
+    <p class="msg" id="newMsg" role="status"></p>
+  </div>
+</div>
+
+<script src="deliverables.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
