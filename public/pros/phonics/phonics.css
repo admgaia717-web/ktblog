@@ -330,3 +330,15 @@ textarea:focus,input:focus,select:focus{
   .search input{min-width:0;width:100%}
   .filter-right{width:100%}
 }
+
+/* ---------- ダッシュボードへ戻る（2026-10-27） ---------- */
+.back-dash{flex:none;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;
+  text-decoration:none;font-weight:700;font-size:13.5px;color:#fff;background:#1f6f54;
+  border:1px solid #1f6f54;border-radius:99px;padding:7px 14px;transition:background .18s}
+.back-dash:hover{background:#174f3d;color:#fff}
+.topbar .bar .logo{margin-right:auto}
+@media (max-width:720px){
+  .topbar .bar{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:8px;row-gap:6px}
+  .topbar nav{overflow-x:auto;max-width:100%;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+  .topbar nav a{white-space:nowrap}
+}
