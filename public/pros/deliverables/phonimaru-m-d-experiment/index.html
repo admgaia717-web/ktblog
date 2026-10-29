@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>実験: M の円運動（フォニ丸D） | PROS PHONICS</title>
+  <link rel="stylesheet" href="/pros/dashboard/dashboard-clean.css?v=20260924-head">
+  <style>
+    .banner-exp{border:2px solid #b3261e;background:#fff5f4;color:#8c1d18;border-radius:10px;padding:14px 18px;margin:0 0 18px;font-weight:700;line-height:1.7}
+    .banner-exp span{display:block;font-weight:400;color:#5b1a16;font-size:.9em;margin-top:4px}
+    .exp-video{width:100%;max-width:960px;display:block;border-radius:8px;background:#000}
+    .exp-row{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:18px;align-items:start}
+    @media(max-width:820px){.exp-row{grid-template-columns:1fr}}
+    .exp-row figcaption{font-size:.86rem;color:#444;line-height:1.7}
+    .num{font-variant-numeric:tabular-nums}
+    .tag-exp{display:inline-block;background:#b3261e;color:#fff;border-radius:999px;padding:2px 10px;font-size:.72rem;font-weight:700;letter-spacing:.02em}
+  </style>
+</head>
+<body id="top" class="workspace subpage">
+  <header class="topbar">
+    <div class="wrap">
+      <a class="logo" href="/pros/dashboard/index.html"><i></i><span>PROS PHONICS<small>チームの作業室</small></span></a>
+      <nav id="topnav" aria-label="ページ内">
+        <a href="/pros/dashboard/index.html">作業室トップ</a><a href="/pros/dashboard/index.html#deliverables" class="active">成果物</a><a href="/pros/dashboard/changes.html">変更履歴</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="banner-exp">
+      実験（フォニ丸D）。先生の確認前・採用版ではありません。
+      <span>蜂谷さんの依頼による比較実験です。先生への告知はしていません。M の確定版ではありません。</span>
+    </div>
+
+    <div class="collection-heading">
+      <div>
+        <p class="eyebrow">PROS PHONICS / 実験 · M</p>
+        <h1>M の円運動を動画AIで作れるか（実験）</h1>
+        <p>はじめの絵1枚から、/m/ でおへそ周りを2周さする動きを試しました。使ったモデルは FAL の Wan 3.0 です。声・カード・Muffin・音はまだ載せていません。</p>
+      </div>
+      <span class="collection-note">関係者共有</span>
+      <span class="upd-badge" title="2026-10-29 新規">10/29 実験</span>
+    </div>
+
+    <div class="sheet-toolbar">
+      <p class="toolbar-note">10/29 · フォニ丸D · 生成は合計5回・$1.05 · 先生の確認前</p>
+    </div>
+
+    <article class="sheet">
+      <div class="sheet-head"><span class="sheet-no">1 · 数値のまとめ</span><h3>向き・周回・カメラ・費用</h3><span class="sheet-sub">手の位置は MediaPipe の手のひら中心で測定</span></div>
+      <div class="tbl"><table>
+        <tr><th>実験</th><th>設定</th><th>向き</th><th>周回</th><th>カメラ</th><th>費用</th></tr>
+        <tr><td><b>exp5（本命）</b></td><td>720p・3秒・入力反転→戻す</td><td class="ok">反時計回り</td><td class="num">2.13周</td><td>ほぼ固定（顔 23.1→22.8→23.0%）</td><td class="num">$0.30</td></tr>
+        <tr><td><b>exp4</b></td><td>480p・3秒・入力反転→戻す</td><td class="ok">反時計回り</td><td class="num">2.38周</td><td>ほぼ固定（顔 23.1→22.0→22.8%）</td><td class="num">$0.15</td></tr>
+        <tr><td><b>exp3</b></td><td>480p・2秒・反転なし</td><td class="ng">時計回り</td><td class="num">1.51周</td><td>ほぼ固定（顔 22.9→22.3%）</td><td class="num">$0.10</td></tr>
+        <tr><td>exp1</td><td>480p・5秒・反転なし</td><td class="ng">時計回り</td><td class="num">0.58周</td><td>固定</td><td class="num">$0.25</td></tr>
+        <tr><td>exp2</td><td>480p・5秒・reference-to-video</td><td>—</td><td>—</td><td>固定</td><td class="num">$0.25</td></tr>
+        <tr><td colspan="5"><b>合計</b>（無効な送信2件はAPIに拒否され、動画なし）</td><td class="num"><b>$1.05</b></td></tr>
+      </table></div>
+      <p class="small">モデルはすべて FAL <code>alibaba/wan-3.0/image-to-video</code>（exp2 のみ <code>reference-to-video</code>）。1秒あたり 480p $0.05、720p $0.10。2026-10-29 に fal.ai のモデルページで確認。</p>
+    </article>
+
+    <article class="sheet">
+      <div class="sheet-head"><span class="sheet-no">2 · exp5（本命）</span><h3>720p・3秒・反時計回り</h3><span class="sheet-sub">入力の絵を左右反転して生成し、出力を戻しました</span></div>
+      <div class="exp-row">
+        <figure>
+          <video class="exp-video" src="exp5.mp4" controls playsinline preload="none" aria-label="exp5 720p 3秒"></video>
+          <figcaption><span class="tag-exp">実験</span> 反時計回り 2.13周。終わりは始めの姿勢に戻っています。指の分離は480pより改善。手とシャツの境目はまだにじみます。</figcaption>
+        </figure>
+        <figure>
+          <img src="e5_hand.png" alt="exp5 の手の確認画（4fps・12コマ）" style="width:100%;border:1px solid #ddd;border-radius:8px">
+          <figcaption>手の確認画（4fps・12コマ）。指の間と手のひらの縁が、シャツににじむコマがあります。</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="sheet">
+      <div class="sheet-head"><span class="sheet-no">3 · exp4</span><h3>480p・3秒・反転して戻す</h3><span class="sheet-sub">向きが逆だったので、入力の反転で直しました</span></div>
+      <div class="exp-row">
+        <figure>
+          <video class="exp-video" src="exp4.mp4" controls playsinline preload="none" aria-label="exp4 480p 3秒"></video>
+          <figcaption><span class="tag-exp">実験</span> 反時計回り 2.38周。最後に手が少し下がります（終端の指示不足）。</figcaption>
+        </figure>
+        <figure>
+          <img src="e4_hand.png" alt="exp4 の手の確認画" style="width:100%;border:1px solid #ddd;border-radius:8px">
+          <figcaption>手の確認画（4fps・12コマ）。480p は指がまとまって見えるコマがあります。</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="sheet">
+      <div class="sheet-head"><span class="sheet-no">4 · exp3</span><h3>480p・2秒・反転なし</h3><span class="sheet-sub">プロンプトで反時計回りを指定したが、時計回りになった回</span></div>
+      <div class="exp-row">
+        <figure>
+          <video class="exp-video" src="exp3.mp4" controls playsinline preload="none" aria-label="exp3 480p 2秒"></video>
+          <figcaption><span class="tag-exp">実験</span> 時計回り 1.51周。指示と逆。カメラ固定は守られています。</figcaption>
+        </figure>
+        <figure>
+          <img src="e3_hand.png" alt="exp3 の手の確認画" style="width:100%;border:1px solid #ddd;border-radius:8px">
+          <figcaption>手の確認画（6fps・12コマ）。</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="sheet">
+      <div class="sheet-head"><span class="sheet-no">5 · 所見</span><h3>分かったこと</h3><span class="sheet-sub">数値は上、ここは見立て</span></div>
+      <ul>
+        <li><b>向き:</b> プロンプトの「反時計回り」は効きませんでした。入力の絵を反転して生成し、戻すと反時計回りになりました。</li>
+        <li><b>周回:</b> 2秒で1.5周、3秒で2.1〜2.4周。時間で調整できます。</li>
+        <li><b>カメラ:</b> 「固定・ズームなし」を入れると、ほぼ動きませんでした（顔の大きさの変化は1%以内）。</li>
+        <li><b>終わりの下がり:</b> 「最後は始めの姿勢に戻る」を入れると戻りました。exp4 は指示不足で下がっています。</li>
+        <li><b>手の形:</b> 手とシャツの境目がにじみます。720p で改善しますが、消えません。モデルが毎フレーム描き直すためです。</li>
+        <li><b>比較:</b> reference-to-video（exp2）は手が横に伸びて崩れました。image-to-video の方が使えます。</li>
+      </ul>
+    </article>
+
+    <article class="sheet">
+      <div class="sheet-head"><span class="sheet-no">6 · 記録</span><h3>ファイルの確認用</h3><span class="sheet-sub">差し替えの取り違え防止</span></div>
+      <ul>
+        <li><code>exp5.mp4</code> sha256 <code>bcba1dfc63bf0e7a</code>（720p・3.0秒）</li>
+        <li><code>exp4.mp4</code> sha256 <code>94bb1ba52c5b3f39</code>（480p・3.0秒）</li>
+        <li><code>exp3.mp4</code> sha256 <code>3e2ef027415aa9be</code>（480p・2.0秒）</li>
+        <li>入力: pi の <code>key_m_start.png</code>。音声は入れていません。</li>
+      </ul>
+      <p class="small">このページは実験の記録です。先生の確認前・採用版ではありません。</p>
+    </article>
+  </main>
+
+  <footer>PROS PHONICS チームの作業室 · 関係者内共有 · 無断転載・外部共有はお控えください · <a href="/pros/dashboard/index.html">作業室トップへ</a></footer>
+</body>
+</html>
