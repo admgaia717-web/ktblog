@@ -12,6 +12,8 @@ const REALM = "pros";
 const MAX_POSTS = 60;
 // 蜂谷さんの実験スレッドは Webアプリに出さない（2026-10-29 指示）
 const HIDDEN_ROOTS = new Set(["neqbtbqerbnt7x8sbdhp6sz7ih"]);
+// 旧スレッドの表示名は蜂谷さん（元の依頼文は残す。2026-10-29 指示）
+const OWNER_OVERRIDE = { "8w14yd4p4byrmrt51ap9hmpgky": "蜂谷さん" };
 
 function safeEqual(a, b) {
   if (typeof a !== "string" || typeof b !== "string") return false;
@@ -96,7 +98,7 @@ export async function onRequest(context) {
       create_at: p.create_at,
       user_id: p.user_id,
       // 依頼は依頼者名（override_username）、応答はフォニ丸D
-      who: props.override_username || (ph.kind === "reply" ? "フォニ丸D" : ""),
+      who: (!p.root_id && OWNER_OVERRIDE[p.id]) || props.override_username || (ph.kind === "reply" ? "フォニ丸D" : ""),
       phonics_present: !!props.phonics,
       message: p.message || "",
       files: metaFiles.map((f) => ({ name: f.name, id: f.id, size: f.size, mime: f.mime_type || "" })),
