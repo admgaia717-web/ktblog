@@ -10,6 +10,8 @@ const CHANNEL_ID = "meskynx4fibo3ch7r7x8imi7nw";
 const REQUIRED_PASSWORD = "5155";
 const REALM = "pros";
 const MAX_POSTS = 60;
+// 蜂谷さんの実験スレッドは Webアプリに出さない（2026-10-29 指示）
+const HIDDEN_ROOTS = new Set(["neqbtbqerbnt7x8sbdhp6sz7ih"]);
 
 function safeEqual(a, b) {
   if (typeof a !== "string" || typeof b !== "string") return false;
@@ -78,6 +80,7 @@ export async function onRequest(context) {
     const p = posts[pid];
     if (!p || p.type) continue;
     const props = p.props || {};
+    if (HIDDEN_ROOTS.has(p.root_id || p.id)) continue;
     if (root) {
       // 指定スレッド（root か、そのスレッドへの返信）
       if (p.id !== root && p.root_id !== root) continue;
