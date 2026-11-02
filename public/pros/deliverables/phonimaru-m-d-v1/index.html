@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>M Mary Muffin d-v1（10秒）| 作成：フォニ丸D</title>
+  <link rel="stylesheet" href="/pros/dashboard/dashboard-clean.css?v=20260924-head">
+  <style>
+    h1.big{font-size:30px;font-weight:800;line-height:1.4;margin:6px 0 10px}
+    @media(max-width:640px){h1.big{font-size:24px}}
+    .made-by{margin:0 0 10px;font-size:15px;font-weight:800;color:var(--accent)}
+    .lead{font-size:15px;line-height:1.9;margin:0 0 18px}
+    .banner{border:2px solid #b3261e;background:#fff5f4;color:#8c1d18;border-radius:10px;padding:12px 16px;margin:0 0 16px;font-weight:700;line-height:1.7}
+    .banner span{display:block;font-weight:400;color:#5b1a16;font-size:.88em;margin-top:4px}
+    .player{width:100%;max-width:960px;display:block;border-radius:8px;background:#000;margin:0 0 8px}
+    .cap{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 18px}
+    h2{font-size:18px;margin:22px 0 8px}
+    table{border-collapse:collapse;width:100%;max-width:960px;font-size:14px;line-height:1.7}
+    th,td{border:1px solid #d9d4c7;padding:8px 10px;text-align:left;vertical-align:top}
+    th{background:#f6f2e8;width:170px;font-weight:700}
+    ul{padding-left:20px;margin:0 0 8px} li{font-size:14px;line-height:1.8;margin:2px 0}
+    .small{font-size:12px;color:var(--muted);line-height:1.7}
+    .links a{margin-right:14px}
+  </style>
+</head>
+<body id="top" class="workspace subpage">
+  <header class="topbar"><div class="wrap">
+    <a class="logo" href="/pros/dashboard/index.html"><i></i><span>PROS PHONICS<small>チームの作業室</small></span></a>
+    <nav id="topnav" aria-label="ページ内">
+      <a href="/pros/dashboard/index.html">作業室トップ</a>
+      <a href="/pros/dashboard/index.html#deliverables" class="active">成果物</a>
+      <a href="/pros/deliverables/phonimaru-m-compare/">M の比較</a>
+      <a href="/pros/dashboard/video-prompt">動画作成プロンプト</a>
+    </nav>
+  </div></header>
+
+  <main class="wrap">
+    <p class="made-by">作成：フォニ丸D</p>
+
+    <div class="banner">
+      M の D 版（10秒）。蜂谷さんの承認（11/2・上限 $2.10）で作りました。
+      <span>先生の確認前・採用版ではありません。v27 は上書きしていません。</span>
+    </div>
+
+    <h1 class="big">M Mary Muffin d-v1（10秒）</h1>
+    <p class="lead">名前 → /m/ ×3。各 /m/ で、おへそ周りを画面で反時計回りに2周します。声は pi の M v7。カード・Muffin・反転は今の M と同じです。</p>
+
+    <video class="player" src="M_mary_muffin_d-v1.mp4" poster="img/M_mary_muffin_d-v1.jpg" controls playsinline preload="none" aria-label="M Mary Muffin d-v1 10秒"></video>
+    <p class="cap">10.0秒 / 24fps / 1920×1080 / AAC。mp4 の sha256 は <code>d45514fc684a1d14</code>。</p>
+
+    <h2>作り方</h2>
+    <table>
+      <tr><th>生成</th><td>FAL <code>alibaba/wan-3.0/image-to-video</code>、720p・3秒を3本。各2周。入力は左右反転し、出力を戻す。</td></tr>
+      <tr><th>構成</th><td>2.9〜4.4 / 5.4〜6.9 / 7.9〜9.4 秒に2周ずつ。組の間に1.0秒の静止。名前 2.0秒、/m/ 3.0・5.5・8.0秒。</td></tr>
+      <tr><th>全身生成</th><td>体・頭も Wan の出力をそのまま使う。pi 版のように体を止めて腕だけを貼る方法ではない。</td></tr>
+      <tr><th>合成</th><td>カード・名前・m 表示・Muffin・v7 の音を、v27 と同じ位置に合成。</td></tr>
+      <tr><th>費用</th><td>初回の10秒テスト $1.00（4周だったため使わず）＋ 3秒×3 $0.90 ＝ <b>$1.90</b>（上限 $2.10）。</td></tr>
+    </table>
+
+    <h2>機械検査</h2>
+    <table>
+      <tr><th>顔</th><td>240/240 検出。pitch 幅 1.98°、yaw 1.13°、roll 2.69°、鼻先 y 4.33px。</td></tr>
+      <tr><th>手</th><td>240/240 検出（2手）。手の上下の幅 49.28px。</td></tr>
+      <tr><th>周回</th><td>合成後 <b>5.98周</b>（反時計回り）。</td></tr>
+      <tr><th>音</th><td>名前 0.449〜1.210秒。 /m/ 2.999〜4.170 / 5.499〜6.670 / 7.999〜9.170秒。</td></tr>
+      <tr><th>拡大</th><td>3.2・3.7・4.1・6.2・8.6・9.1秒の手元を拡大。跡・にじみ・指の欠けは見えません。</td></tr>
+      <tr><th>継ぎ目</th><td>5.4・6.9・7.9秒で切替。静止位置で切っており、位置差はわずか。</td></tr>
+    </table>
+
+    <h2>残っている点</h2>
+    <ul>
+      <li>3本の継ぎ目は、完全に同一のコマではない。静止位置で切っている。</li>
+      <li>体・頭は Wan の生成のまま。pi 版のように1コマ固定ではない（pitch 幅 1.98°）。</li>
+      <li>動いている途中、指の形がコマで少し揺れる。</li>
+      <li>先生の確認前。採用版ではない。</li>
+    </ul>
+
+    <p class="links">
+      <a href="/pros/deliverables/phonimaru-m-compare/">M の比較ページ</a>
+      <a href="/pros/deliverables/phonimaru-m-d-experiment/">exp5 の実験ページ</a>
+      <a href="/pros/deliverables/phonimaru-m-v28/">pi 版 v28</a>
+    </p>
+    <p class="small">2026-11-03 · フォニ丸D · 関係者内共有 · 無断転載・外部共有はお控えください。</p>
+  </main>
+
+  <footer>PROS PHONICS チームの作業室 · 関係者内共有（アクセス制限あり）· <a href="/pros/dashboard/index.html">作業室トップへ</a></footer>
+</body>
+</html>
