@@ -8,7 +8,7 @@ const MEETING = {
   date: '2026-09-03',
   title: '第1回 定例ミーティング',
   minutes: 100,
-  next: { iso: '2026-11-05T16:30:00+09:00', label: '11月5日（木）16:30〜18:00', place: 'Zoom（プロスのアカウント）' },
+  next: { iso: '2026-12-03T16:30:00+09:00', label: '12月3日（木）16:30〜18:00', place: 'Zoom（プロスのアカウント）' },
 };
 
 const MEMBERS = {
