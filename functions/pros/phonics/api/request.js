@@ -11,10 +11,8 @@
 const MM_BASE = "https://ktailabo.tail5c4c1d.ts.net";
 const CHANNEL_ID = "meskynx4fibo3ch7r7x8imi7nw"; // send-the-message
 const MAX_BODY = 2000;
-const REQUIRED_PASSWORD = 'kodama-momo-2156';
-const COOKIE_NAME = 'pros_auth';
-const COOKIE_MAX_AGE = 2592000; // 30日（秒）
-const SECRET_SUFFIX = '::pros-cookie-v1';
+const REQUIRED_PASSWORD = '5155';
+const REALM = 'pros';
 
 function safeEqual(a, b) {
   if (typeof a !== 'string' || typeof b !== 'string') return false;
@@ -27,32 +25,7 @@ function safeEqual(a, b) {
   return diff === 0;
 }
 
-async function hmacHex(msg) {
-  const enc = new TextEncoder();
-  const key = await crypto.subtle.importKey(
-    'raw', enc.encode(REQUIRED_PASSWORD + SECRET_SUFFIX),
-    { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
-  const sig = await crypto.subtle.sign('HMAC', key, enc.encode(msg));
-  let hex = '';
-  for (const b of new Uint8Array(sig)) hex += b.toString(16).padStart(2, '0');
-  return hex;
-}
-
-async function hasValidCookie(request) {
-  const cookie = request.headers.get('Cookie') || '';
-  const m = cookie.match(/(?:^|;\s*)pros_auth=([^;\s]+)/);
-  if (!m) return false;
-  const parts = m[1].split('.');
-  if (parts.length !== 3 || parts[0] !== 'v1') return false;
-  const exp = parseInt(parts[1], 10);
-  if (!Number.isFinite(exp) || exp < Math.floor(Date.now() / 1000) - 300) return false;
-  const sig = await hmacHex('pros-auth:' + parts[1]);
-  return safeEqual(parts[2], sig);
-}
-
-// Cookie（30日ログイン）または Basic（ユーザー名任意・共通パスワード）を許可
-async function isAuthorized(request) {
-  if (await hasValidCookie(request)) return true;
+function isAuthorized(request) {
   const auth = request.headers.get('Authorization');
   if (!auth || !auth.startsWith('Basic ')) return false;
   let decoded = '';
@@ -76,8 +49,11 @@ export async function onRequest(context) {
     return json({ ok: false, message: "POST のみ対応しています。" }, 405);
   }
 
-  if (!(await isAuthorized(request))) {
-    return json({ ok: false, message: "ログインが必要です。" }, 401);
+  if (!isAuthorized(request)) {
+    return new Response('Authentication required', {
+      status: 401,
+      headers: { 'WWW-Authenticate': `Basic realm="${REALM}", charset="UTF-8"` },
+    });
   }
 
   const token = context.env && context.env.PHONICS_WEBAPP_PAT;

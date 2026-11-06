@@ -3,17 +3,20 @@
 // query: ?root=<root_post_id>  … そのスレッドの投稿を新しい順に返す
 //         （無指定なら「依頼」的な投稿だけを新しい順）
 //
-// 認証: 共通パスワード（/pros/* と共通）。読み取り専用。
+// 認証: Basic 5155（/pros/* と共通）。読み取り専用。
 
 const MM_BASE = "https://ktailabo.tail5c4c1d.ts.net";
 const CHANNEL_ID = "meskynx4fibo3ch7r7x8imi7nw";
-const REQUIRED_PASSWORD = 'kodama-momo-2156';
-const COOKIE_NAME = 'pros_auth';
-const COOKIE_MAX_AGE = 2592000; // 30日（秒）
-const SECRET_SUFFIX = '::pros-cookie-v1';
+const REQUIRED_PASSWORD = "5155";
+const REALM = "pros";
+const MAX_POSTS = 60;
+// 蜂谷さんの実験スレッドは Webアプリに出さない（2026-10-29 指示）
+const HIDDEN_ROOTS = new Set(["neqbtbqerbnt7x8sbdhp6sz7ih"]);
+// 旧スレッドの表示名は蜂谷さん（元の依頼文は残す。2026-10-29 指示）
+const OWNER_OVERRIDE = { "8w14yd4p4byrmrt51ap9hmpgky": "蜂谷さん" };
 
 function safeEqual(a, b) {
-  if (typeof a !== 'string' || typeof b !== 'string') return false;
+  if (typeof a !== "string" || typeof b !== "string") return false;
   const enc = new TextEncoder();
   const aBytes = enc.encode(a);
   const bBytes = enc.encode(b);
@@ -23,37 +26,12 @@ function safeEqual(a, b) {
   return diff === 0;
 }
 
-async function hmacHex(msg) {
-  const enc = new TextEncoder();
-  const key = await crypto.subtle.importKey(
-    'raw', enc.encode(REQUIRED_PASSWORD + SECRET_SUFFIX),
-    { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
-  const sig = await crypto.subtle.sign('HMAC', key, enc.encode(msg));
-  let hex = '';
-  for (const b of new Uint8Array(sig)) hex += b.toString(16).padStart(2, '0');
-  return hex;
-}
-
-async function hasValidCookie(request) {
-  const cookie = request.headers.get('Cookie') || '';
-  const m = cookie.match(/(?:^|;\s*)pros_auth=([^;\s]+)/);
-  if (!m) return false;
-  const parts = m[1].split('.');
-  if (parts.length !== 3 || parts[0] !== 'v1') return false;
-  const exp = parseInt(parts[1], 10);
-  if (!Number.isFinite(exp) || exp < Math.floor(Date.now() / 1000) - 300) return false;
-  const sig = await hmacHex('pros-auth:' + parts[1]);
-  return safeEqual(parts[2], sig);
-}
-
-// Cookie（30日ログイン）または Basic（ユーザー名任意・共通パスワード）を許可
-async function isAuthorized(request) {
-  if (await hasValidCookie(request)) return true;
-  const auth = request.headers.get('Authorization');
-  if (!auth || !auth.startsWith('Basic ')) return false;
-  let decoded = '';
-  try { decoded = atob(auth.slice('Basic '.length)); } catch { return false; }
-  const i = decoded.indexOf(':');
+function isAuthorized(request) {
+  const auth = request.headers.get("Authorization");
+  if (!auth || !auth.startsWith("Basic ")) return false;
+  let decoded = "";
+  try { decoded = atob(auth.slice("Basic ".length)); } catch { return false; }
+  const i = decoded.indexOf(":");
   if (i === -1) return false;
   return safeEqual(decoded.slice(i + 1), REQUIRED_PASSWORD);
 }
@@ -73,8 +51,11 @@ export async function onRequest(context) {
   if (request.method !== "GET") {
     return json({ ok: false, message: "GET のみ対応しています。" }, 405);
   }
-  if (!(await isAuthorized(request))) {
-    return json({ ok: false, message: "ログインが必要です。" }, 401);
+  if (!isAuthorized(request)) {
+    return new Response("Authentication required", {
+      status: 401,
+      headers: { "WWW-Authenticate": `Basic realm="${REALM}", charset="UTF-8"` },
+    });
   }
   const token = env && env.PHONICS_WEBAPP_PAT;
   if (!token) {
