@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>ログイン | PROS PHONICS チームの作業室</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#fff7e8;color:#23262f;font-family:"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN",sans-serif;line-height:1.8}
+.card{background:#fffdf8;border:2px solid #f0e3cc;border-radius:22px;padding:34px 30px;width:min(360px,calc(100% - 32px));text-align:center;box-shadow:4px 4px 0 #f0e3cc}
+.k{font-size:11px;font-weight:800;letter-spacing:.14em;color:#6b7280}
+h1{font-size:1.25rem;font-weight:900;margin:6px 0 4px}
+p{font-size:12px;color:#6b7280;font-weight:700;margin:0 0 18px}
+input[type=password]{width:100%;font:inherit;font-weight:800;padding:12px 16px;border:2px solid #f0e3cc;border-radius:999px;text-align:center;margin-bottom:12px}
+button{width:100%;font:inherit;font-weight:900;padding:12px 16px;border:2px solid #23262f;border-radius:999px;background:#ffcb2f;cursor:pointer;box-shadow:2px 2px 0 #23262f}
+button:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #23262f}
+.err{display:none;color:#c23b3b;font-weight:800;font-size:12px;margin:0 0 12px}
+.note{font-size:11px;color:#6b7280;font-weight:700;margin:14px 0 0}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="k">PROS PHONICS</div>
+  <h1>ログイン</h1>
+  <p>関係者用ページです。パスワードを入れてください。</p>
+  <p class="err" id="err">パスワードが違います。もう一度お願いします。</p>
+  <form method="post" action="/pros/login">
+    <input type="hidden" name="next" id="next" value="">
+    <input type="password" name="pw" id="pw" placeholder="パスワード" autocomplete="current-password" required autofocus>
+    <button type="submit">入る</button>
+  </form>
+  <p class="note">一度入れると、この端末に30日ほど覚えられます。</p>
+</div>
+<script>
+const q=new URLSearchParams(location.search);
+if(q.get('e')==='1'){document.getElementById('err').style.display='block';}
+const n=q.get('next');
+if(n){document.getElementById('next').value=n;}
+</script>
+</body>
+</html>
