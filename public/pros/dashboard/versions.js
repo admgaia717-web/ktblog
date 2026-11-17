@@ -1,6 +1,6 @@
-// 自動生成（phonics_hub_build.py）。手で直さないこと。
+// 自動生成（phonics_hub_build.py + add_n_versions.py）。手で直さないこと。
 window.PHONICS_VERSIONS = {
- "generatedAt": "2026-11-17 08:30 +0900",
+ "generatedAt": "2026-11-17 14:05 +0900",
  "sources": "費用=pi-brain/budget/ledger.json・最終版=lab/final-abc/FINAL-INDEX.md（scotty 実測・機械転記）・掲載順=ktblog の掲載コミット＋今回の新規17本",
  "letters": [
   {
@@ -1244,17 +1244,17 @@ window.PHONICS_VERSIONS = {
   {
    "letter": "N",
    "name": "Nancy Noodle",
-   "status": "先生の確認待ち",
+   "status": "合格",
    "current": {
-    "seq": 36,
-    "label": "NM13v",
-    "page": "/pros/deliverables/phonimaru-n-nm13v/"
+    "seq": 60,
+    "label": "C2",
+    "page": "/pros/deliverables/phonimaru-n-c2/"
    },
    "final": {
-    "label": "確認中（NM13v）",
-    "page": "/pros/deliverables/phonimaru-n-nm13v/",
-    "date": "",
-    "note": "合格版はまだ出ていません"
+    "label": "C2（完成版）",
+    "page": "/pros/deliverables/phonimaru-n-c2/",
+    "date": "2026-11-12",
+    "note": "蜂谷さんが完成版と確認（11/17）"
    },
    "cost": null,
    "versions": [
@@ -1509,6 +1509,174 @@ window.PHONICS_VERSIONS = {
      "slug": "phonimaru-n-nm13v",
      "date": "2026-11-12",
      "page": "/pros/deliverables/phonimaru-n-nm13v/"
+    },
+    {
+     "seq": "N-37",
+     "label": "d-v1",
+     "slug": "phonimaru-n-d-v1",
+     "date": "2026-11-05",
+     "page": "/pros/deliverables/phonimaru-n-d-v1/"
+    },
+    {
+     "seq": "N-38",
+     "label": "d-v2",
+     "slug": "phonimaru-n-d-v2",
+     "date": "2026-11-05",
+     "page": "/pros/deliverables/phonimaru-n-d-v2/"
+    },
+    {
+     "seq": "N-39",
+     "label": "NM4-B",
+     "slug": "phonimaru-n-nm4b",
+     "date": "2026-11-09T15:44",
+     "page": "/pros/deliverables/phonimaru-n-nm4b/"
+    },
+    {
+     "seq": "N-40",
+     "label": "NM5",
+     "slug": "phonimaru-n-nm5",
+     "date": "2026-11-09T15:53",
+     "page": "/pros/deliverables/phonimaru-n-nm5/"
+    },
+    {
+     "seq": "N-41",
+     "label": "NM5v2",
+     "slug": "phonimaru-n-nm5v2",
+     "date": "2026-11-09T16:21",
+     "page": "/pros/deliverables/phonimaru-n-nm5v2/"
+    },
+    {
+     "seq": "N-42",
+     "label": "NM6",
+     "slug": "phonimaru-n-nm6",
+     "date": "2026-11-09T17:08",
+     "page": "/pros/deliverables/phonimaru-n-nm6/"
+    },
+    {
+     "seq": "N-43",
+     "label": "NM7",
+     "slug": "phonimaru-n-nm7",
+     "date": "2026-11-09T17:23",
+     "page": "/pros/deliverables/phonimaru-n-nm7/"
+    },
+    {
+     "seq": "N-44",
+     "label": "NM7v2",
+     "slug": "phonimaru-n-nm7v2",
+     "date": "2026-11-09T18:01",
+     "page": "/pros/deliverables/phonimaru-n-nm7v2/"
+    },
+    {
+     "seq": "N-45",
+     "label": "NM8b",
+     "slug": "phonimaru-n-nm8b",
+     "date": "2026-11-09T19:45",
+     "page": "/pros/deliverables/phonimaru-n-nm8b/"
+    },
+    {
+     "seq": "N-46",
+     "label": "NM8c",
+     "slug": "phonimaru-n-nm8c",
+     "date": "2026-11-09T19:56",
+     "page": "/pros/deliverables/phonimaru-n-nm8c/"
+    },
+    {
+     "seq": "N-47",
+     "label": "NM8d",
+     "slug": "phonimaru-n-nm8d",
+     "date": "2026-11-09T20:20",
+     "page": "/pros/deliverables/phonimaru-n-nm8d/"
+    },
+    {
+     "seq": "N-48",
+     "label": "NM8e",
+     "slug": "phonimaru-n-nm8e",
+     "date": "2026-11-09T20:45",
+     "page": "/pros/deliverables/phonimaru-n-nm8e/"
+    },
+    {
+     "seq": "N-49",
+     "label": "NM8f",
+     "slug": "phonimaru-n-nm8f",
+     "date": "2026-11-09T20:59",
+     "page": "/pros/deliverables/phonimaru-n-nm8f/"
+    },
+    {
+     "seq": "N-50",
+     "label": "NM9",
+     "slug": "phonimaru-n-nm9",
+     "date": "2026-11-09T22:30",
+     "page": "/pros/deliverables/phonimaru-n-nm9/"
+    },
+    {
+     "seq": "N-51",
+     "label": "NM9d",
+     "slug": "phonimaru-n-nm9d",
+     "date": "2026-11-09T22:45",
+     "page": "/pros/deliverables/phonimaru-n-nm9d/"
+    },
+    {
+     "seq": "N-52",
+     "label": "NM9e",
+     "slug": "phonimaru-n-nm9e",
+     "date": "2026-11-09T22:52",
+     "page": "/pros/deliverables/phonimaru-n-nm9e/"
+    },
+    {
+     "seq": "N-53",
+     "label": "NM9f",
+     "slug": "phonimaru-n-nm9f",
+     "date": "2026-11-09T23:01",
+     "page": "/pros/deliverables/phonimaru-n-nm9f/"
+    },
+    {
+     "seq": "N-54",
+     "label": "NM10b",
+     "slug": "phonimaru-n-nm10b",
+     "date": "2026-11-10T08:33",
+     "page": "/pros/deliverables/phonimaru-n-nm10b/"
+    },
+    {
+     "seq": "N-55",
+     "label": "NM11",
+     "slug": "phonimaru-n-nm11",
+     "date": "2026-11-10T12:26",
+     "page": "/pros/deliverables/phonimaru-n-nm11/"
+    },
+    {
+     "seq": "N-56",
+     "label": "NM13",
+     "slug": "phonimaru-n-nm13",
+     "date": "2026-11-10T14:37",
+     "page": "/pros/deliverables/phonimaru-n-nm13/"
+    },
+    {
+     "seq": "N-57",
+     "label": "NM13b",
+     "slug": "phonimaru-n-nm13b",
+     "date": "2026-11-10T14:47",
+     "page": "/pros/deliverables/phonimaru-n-nm13b/"
+    },
+    {
+     "seq": "N-58",
+     "label": "NM13c",
+     "slug": "phonimaru-n-nm13c",
+     "date": "2026-11-10T14:58",
+     "page": "/pros/deliverables/phonimaru-n-nm13c/"
+    },
+    {
+     "seq": "N-59",
+     "label": "C1",
+     "slug": "phonimaru-n-c1",
+     "date": "2026-11-12T18:19",
+     "page": "/pros/deliverables/phonimaru-n-c1/"
+    },
+    {
+     "seq": "N-60",
+     "label": "C2",
+     "slug": "phonimaru-n-c2",
+     "date": "2026-11-12T19:00",
+     "page": "/pros/deliverables/phonimaru-n-c2/"
     }
    ]
   },
