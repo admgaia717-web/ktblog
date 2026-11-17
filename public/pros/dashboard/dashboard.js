@@ -134,9 +134,9 @@ const TASKS = [
   { id: 'kt-01', owner: 'tamagawa', title: '今回の生録音をエージェント（現・オ課長）に読み込ませ、アクションプランを4人に共有', due: '9/5', tag: '最優先', done: true, note: 'このダッシュボードが成果物' },
   { id: 'kt-02', owner: 'tamagawa', title: 'マークの動画を元に「動画→動画生成」で A（Annie Apple）を試作（約100円/本）', due: '9/4 完了（前倒し）', tag: '試作', done: true, note: '第5中隊が9/4に完成（カード t_362c6bd1）' },
   { id: 'kt-03', owner: 'tamagawa', title: 'B（Betty Broccoli）・C を続けて試作し、3本セットで共有', due: '9/5 完了（前倒し）', tag: '試作', done: true, note: '3本セット完成・全て実音入り（正本 t_7ea0884b）' },
-  { id: 'kt-04', owner: 'tamagawa', title: 'オ課長への「お手本の指示」を出し、指示の仕方を先生方に見せる', due: '9/10', tag: 'お手本' },
+  { id: 'kt-04', owner: 'tamagawa', title: 'オ課長への「お手本の指示」を出し、指示の仕方を先生方に見せる', due: '9/10 完了', tag: 'お手本', done: true, note: 'お手本の指示の型は26字分解＋指示テンプレートとして納品済み（ag-03）' },
   { id: 'kt-05', owner: 'tamagawa', title: 'エージェント設定の説明書（本山先生・北浦先生用）を作って送る', due: '9/10', tag: '説明書' },
-  { id: 'kt-06', owner: 'tamagawa', title: '他社フォニックス教材（ズーフォニックス・マツカ等）のネット展開を調査', due: '9/10', tag: '調査' },
+  { id: 'kt-06', owner: 'tamagawa', title: '他社フォニックス教材（ズーフォニックス・マツカ等）のネット展開を調査', due: '9/10 完了', tag: '調査', done: true, note: '調査レポートを資料室に掲載済み（2026-09-06）' },
   { id: 'kt-07', owner: 'tamagawa', title: 'プロス訪問：SNS（FB・Instagram・TikTok・X・LINE）とエージェントのアカウント接続', due: '9月中', tag: '訪問' },
   { id: 'kt-08', owner: 'tamagawa', title: 'LINE 集客（Lステップ相当）をエージェントで構築', due: '10月', tag: '集客', done: true, note: '9/6 完成。友だち追加→7日間の自動配信・管理画面つき（pros-line）。残りは公式アカウント開設（ki-08）と接続だけで、接続は5分' },
   { id: 'kt-09', owner: 'tamagawa', title: '役割別エージェント（SNS 発信・事務）の増設と設定依頼', due: '10月', tag: '拡張' },
@@ -160,7 +160,7 @@ const TASKS = [
   { id: 'ki-06', owner: 'kitaura', title: '試作動画のジェスチャーが正確か確認してフィードバック', due: '試作後', tag: '品質' },
   { id: 'ki-07', owner: 'kitaura', title: '丸ごと任せられる仕事を1つ選んで KT に渡す', due: '9/10', tag: 'AX' },
   // 蜂谷さん
-  { id: 'ha-01', owner: 'hachiya', title: '8/30 送付アプリの「お話し通り」（26キャラのストーリー）を読み、ジェスチャーの意味を理解して KT に説明', due: '9/10', tag: '宿題' },
+  { id: 'ha-01', owner: 'hachiya', title: '8/30 送付アプリの「お話し通り」（26キャラのストーリー）を読み、ジェスチャーの意味を理解して KT に説明', due: '9/10 完了', tag: '宿題', done: true, note: '26キャラの突合は完了・教材に反映（ag-03）' },
   { id: 'ha-02', owner: 'hachiya', title: 'Telegram「プロスAX 人間界」の運営と記録', due: '継続', tag: '運営' },
   { id: 'ha-03', owner: 'hachiya', title: '本山先生と相談してアプリ側の計画を作る（自分でも作ってみる）', due: '9/10', tag: '計画' },
   { id: 'ha-04', owner: 'hachiya', title: '会議の録音バックアップ（毎回）', due: '毎回', tag: '記録' },
@@ -181,12 +181,12 @@ const TASKS = [
   { id: 'ag-13', owner: 'agent', title: 'B（Betty Broccoli・ぶ）カメラ形式動画を最速制作・納品（KT見本A同型・無音版＋実音/b/×3版・カード t_e85820e7）', due: '9/10', tag: '納品', done: true, note: 'KT「予算度外視で最速」承認・kling i2v 1テイク $0.42・実音はメソッド動画由来（TTS不使用）・検品 t_055251f3' },
   { id: 'ag-14', owner: 'agent', title: 'A動画 修正版v2（男の子AI声・リンゴ半透明）をダッシュボードへ納品（カード t_4df73866・正本は音付mp4+無音版+静止画）', due: '9/13', tag: '納品', done: true, note: '「Annie Apple, a, a, a」・開始ポーズ静止・aタイミングでリンゴ半透明・8s 1080p・検品合格（仕様§7 t_d1c571c7口開き修正版）' },
   { id: 'ag-15', owner: 'agent', title: 'A動画 正面アングル版v3をダッシュボードへ納品（カード t_d7561177・KT添付サンプルベース・正本は音付mp4+無音版）', due: '9/19', tag: '納品', done: true, note: 'KT添付サンプルの正面アングルをそのまま使用（再生成なし）・AI男声（v2と同一マスター）・開始ポーズ静止・aでリンゴ半透明・10.29s 832x480・検収6項目OK（qa_report.json）' },
-  { id: 'ag-16', owner: 'agent', title: 'A完璧化サポート（声修正の検証・原形の非劣化保存の仕組み）を9/10方針として継続', due: '10/1', tag: '制作', note: '9/10定例決定: Bの前にAを作り込む・声はMarkのままなので修正' },
+  { id: 'ag-16', owner: 'agent', title: 'A完璧化サポート（声修正の検証・原形の非劣化保存の仕組み）を9/10方針として継続', due: '10/1 完了', tag: '制作', done: true, note: 'pi制作ラインで声Gを確定（Aの最終版候補＝v2cg2映像＋声G）' },
   { id: 'ag-17', owner: 'agent', title: 'キーフレーム方式（写真数枚のパラパラ）でB・Cの試作評価', due: '10/1', tag: '試作', note: '9/10定例決定: 動画より正確な可能性・B/Cで試す' },
   // 全員
   { id: 'al-01', owner: 'all', title: '9/10（木）16:30〜18:00 Zoom に出席', due: '9/10 完了（前倒し）', tag: '会議', done: true, note: '9/10実施。決定は各セクションへ反映済み' },
   { id: 'al-03b', owner: 'all', title: 'エージェントを使ってみて、必要なら短い打合せ', due: '9/10 完了（前倒し）', tag: '判断', done: true, note: '9/10定例でMM体験・@運用の確認まで実施' },
-  { id: 'al-04', owner: 'all', title: '10/1（木）16:30〜18:00 Zoom に出席', due: '10/1', tag: '会議', note: '9/18・蜂谷さん通知' },
+  { id: 'al-04', owner: 'all', title: '10/1（木）16:30〜18:00 Zoom に出席', due: '10/1 完了', tag: '会議', done: true, note: '10/1実施・文字起こし公開済み' },
   { id: 'kt-15', owner: 'tamagawa', title: '26文字動画を週2本ペースで継続（11月末目標・M分の遅れを巻き戻す）', due: '11月末', tag: '動画' },
   // 11/5定例の宿題（第4回）
   { id: 'al-05', owner: 'all', title: '11/5（木）16:30〜 定例に出席', due: '11/5 完了', tag: '会議', done: true, note: '前半61分を実施・文字起こし公開済み' },
@@ -258,21 +258,11 @@ const DECISIONS = [
 ];
 
 /* ---------------- レンダリング ---------------- */
-const STORE_KEY = 'pros-dash-v1';
+/* チェック状態はこの JS のデータが正（2026-11-17〜。全員が同じ数字を見る） */
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-function loadState() {
-  try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch { return {}; }
-}
-function saveState(state) {
-  try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch { /* private mode */ }
-}
-let state = loadState();
-if (!state.done) state.done = {};
-for (const t of TASKS) if (t.done && state.done[t.id] === undefined) state.done[t.id] = true;
-
-function isDone(id) { return !!state.done[id]; }
+function isDone(id) { const t = TASKS.find((x) => x.id === id); return !!(t && t.done); }
 
 function avatar(key) {
   const m = MEMBERS[key];
@@ -376,7 +366,7 @@ function renderBoard() {
           ${list.map((t) => `
           <li class="task ${isDone(t.id) ? 'is-done' : ''}">
             <label>
-              <input type="checkbox" data-id="${t.id}" ${isDone(t.id) ? 'checked' : ''}>
+              <input type="checkbox" data-id="${t.id}" ${isDone(t.id) ? 'checked' : ''} disabled>
               <span class="box"></span>
               <span class="task-body">
                 <span class="task-title">${esc(t.title)}</span>
@@ -399,6 +389,19 @@ function renderProgress() {
   $('#progress-bar').style.width = `${pct}%`;
   const ring = $('#ring');
   if (ring) ring.style.setProperty('--p', pct);
+}
+
+/* 「最終更新」は変更履歴の最新日付から自動表示（手書きやめ・2026-11-17〜） */
+function renderLastUpdated() {
+  const el = $('#last-updated');
+  if (!el) return;
+  const WD = ['日', '月', '火', '水', '木', '金', '土'];
+  fetch('changes.html', { credentials: 'same-origin' }).then((r) => r.text()).then((t) => {
+    const m = t.match(/2026-(\d\d)-(\d\d)/);
+    if (!m) return;
+    const d = new Date(2026, Number(m[1]) - 1, Number(m[2]));
+    el.textContent = `最終更新 2026-${m[1]}-${m[2]}（${WD[d.getDay()]}）`;
+  }).catch(() => { /* 変更できないときはHTMLに書かれた日付のまま */ });
 }
 
 function renderCountdown() {
@@ -430,13 +433,6 @@ function copyProgress() {
   }
 }
 
-function resetProgress() {
-  if (!confirm('チェックをすべて外します。よろしいですか？')) return;
-  state = { done: {} };
-  saveState(state);
-  renderBoard();
-}
-
 function initSectionNavigation() {
   const reveal = () => {
     const target = document.getElementById(location.hash.slice(1));
@@ -466,20 +462,8 @@ function init() {
   renderIssues();
   renderBoard();
   renderCountdown();
+  renderLastUpdated();
   $('#meeting-next').textContent = MEETING.next.label;
-  $('#board-grid').addEventListener('change', (e) => {
-    const cb = e.target;
-    if (!(cb instanceof HTMLInputElement) || !cb.dataset.id) return;
-    state.done[cb.dataset.id] = cb.checked;
-    saveState(state);
-    cb.closest('.task').classList.toggle('is-done', cb.checked);
-    const col = cb.closest('.col');
-    const list = TASKS.filter((t) => t.owner === col.dataset.owner);
-    const done = list.filter((t) => isDone(t.id)).length;
-    col.querySelector('.col-count').textContent = `${done}/${list.length}`;
-    col.querySelector('.col-progress i').style.width = `${(done / list.length) * 100}%`;
-    renderProgress();
-  });
   $('#filters').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-filter]');
     if (!b) return;
@@ -488,7 +472,6 @@ function init() {
     renderBoard();
   });
   $('#copy-btn').addEventListener('click', copyProgress);
-  $('#reset-btn').addEventListener('click', resetProgress);
   const nav = $('#topnav');
   const sections = [...document.querySelectorAll('main > section[id]')];
   const io = new IntersectionObserver((entries) => {

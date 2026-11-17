@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="プロスフォニックス 首脳スタッフ ダッシュボード。2026年9月3日 第1回定例ミーティングの流れ・決定・担当タスク・課題・ロードマップ・チェックリスト。">
+  <meta name="robots" content="noindex,nofollow">
+  <title>プロスフォニックス｜成果物とチームの作業室</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="dashboard-clean.css?v=20261010-clean">
+<style>
+/* 資料室カードは従来型の直リンク（9/23）: 折りたたみ用CSSは削除済み */
+</style>
+</head>
+<body id="top" class="workspace">
+  <a class="skip-link" href="#records">会議・計画へ移動</a>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="logo" href="#top"><i></i><span>PROS PHONICS<small>チームの作業室</small></span></a>
+      <nav id="topnav" aria-label="ページ内">
+        <a href="#records" class="active">会議・計画</a><a href="#board">タスク</a><a href="#deliverables">成果物</a><a href="#links">資料</a><a href="changes.html">変更履歴</a>
+      </nav>
+      <span class="pill-next">次回 11/5（木）16:30 <b id="countdown">—</b></span>
+    </div>
+  </header>
+
+
+
+  <main class="wrap">
+    <div class="collection-heading"><div><p class="eyebrow">プロスフォニックス / チームの作業室</p><h1 id="records-title">会議・計画</h1><p>会議と、これからのこと。必要な項目だけ、開いて確認できます。</p></div><span class="collection-note">関係者共有</span><span class="collection-note" style="font-variant-numeric:tabular-nums">最終更新 2026-10-04（日）</span></div>
+    <div class="meeting-strip"><span>はじめに</span><a href="#picture">プロジェクトの全体像 <span aria-hidden="true">→</span></a><span><a href="#core">教材づくりの考え方 <span aria-hidden="true">→</span></a></span><span><a href="#rules">働き方のルール <span aria-hidden="true">→</span></a></span></div>
+    <section id="records" class="records">
+    <section id="next">
+      <details class="disclosure"><summary><h2>次回ミーティング</h2><span>11/5（木）16:30〜18:00・Zoom</span><span class="upd-badge" title="2026-10-04 更新">10/4 Update</span></summary><div class="detail-body">
+      <div class="next">
+        <div class="next-card">
+          <div class="k">NEXT MEETING</div>
+          <h3 id="meeting-next">11月5日（木）16:30〜18:00</h3>
+          <p>参加：本山先生・北浦先生・玉川・蜂谷さん。前回 10/1 実施（第3回定例・114分）・決定は「決めたこと」「会議の流れ」へ反映済み。文字起こしは<a href="transcript_20261001.html">文字起こし一覧</a>から。</p>
+          <div class="zoom-box">
+            <p style="font-weight:700;margin:0 0 6px">Zoomオンライン会議（今後もこのURLを使い続けます）</p>
+            <p style="margin:0 0 4px"><a href="https://us02web.zoom.us/j/84675502971?pwd=JbcbkWyUGjiVhpnUo8rvpe3YfQtnGd.1" target="_blank" rel="noopener">会議に参加（ZoomのURL） ↗</a></p>
+            <p style="margin:0 0 4px;font-variant-numeric:tabular-nums">ミーティングID: 846 7550 2971</p>
+            <p style="margin:0;font-variant-numeric:tabular-nums">パスコード: 333840</p>
+          </div>
+          <span class="cd" id="countdown-2">—</span>
+        </div>
+        <div class="card">
+          <h3 style="font-weight:900;margin-bottom:10px">議題案</h3>
+          <p style="font-size:12px;color:var(--muted);margin:0 0 10px">※下記は10/1に扱った議題（次回分は決まり次第更新します）</p>
+          <p style="font-size:12px;color:var(--muted);margin:0 0 10px">判断資料（9/8）: <a href="#sheet-video">動画づくりの線</a> · <a href="#sheet-kaigi">3者会談の土台</a> · <a href="#sheet-line">集客LINE運用の型</a>（<a href="sheets-2026-09-10.html">判断資料のページ</a>）</p>
+          <ol class="agenda">
+            <li>A・B・C の試作動画を全員で見る（ジェスチャーは正確か・手にリンゴは見えるか）</li>
+            <li>先生が自分でオ課長に指示してみた感想と、つまずいた点</li>
+            <li>SNS：現状の運用と接続の段取り、TikTok・LINE の可否、子どもが見る SNS（LINE の配信の仕組みは完成済み → 開設の段取りを決めるだけ）</li>
+            <li>他社フォニックス教材・ゲームの調査結果を共有（<a href="#research">9/6調査・展開案</a>）</li>
+            <li>収益化の仮説（無料の範囲・有料化点）を1枚で確認（<a href="market-research-2026-09-06.html#part-6">家庭用・先生用の検証案</a>）</li>
+            <li>3者会談（社長・本山先生・KT）の日程</li>
+          </ol>
+        </div>
+        <article class="sheet" id="sheet-kaigi" style="grid-column:1/-1">
+          <div class="sheet-head"><span class="sheet-no">9/10 判断資料 2/3 · 3者会談（社長・本山先生・KT）用 下書き</span><h3>売るのは教材ではなく、工程。</h3><span class="sheet-sub">価格・契約の数字なし。判断材料ではなく、話す土台。</span></div>
+          <div class="cols2">
+            <div>
+              <h4>事業の定義</h4>
+              <p>教室・教材のAI英会話教育＋その工程の外販。先生が線を引き、採用を決める。その判断を工程の中心に置いたまま、量産と検品だけをAIに渡す。教材を売らなくていい。</p>
+              <h4>なぜ英会話の本質から外れないか</h4>
+              <p>7/23事業計画書との関係: 計画書の「事業A：プロス社内AX」と収益仮説「AX導入支援」を本線に置く。「事業B：教材」は当面「無料で愛される側」（9/3合意「第一段階は無料で公開」）。汎用のAIコンサルではなく、教育の縦割り。</p>
+              <h4>すでにある資産</h4>
+              <ul>
+                <li>43年の教育実績と、現役の先生が品質を判断する体制</li>
+                <li>8年間の独自体系「プロスフォニックス」</li>
+                <li>教材は無料で愛される側に置き、お金は工程の移植から取る</li>
+                <li>人材評価ツール（iWAM）の輸入販売で持つB2Bの顧客関係</li>
+                <li>ヒットに賭ける事業ではなく、すでに回っている体制を守秘（書籍・メソッドはローカル処理）で回した実績</li>
+                <li>他所に入れる事業。投資は小さく、責任範囲を切りやすい</li>
+              </ul>
+            </div>
+            <div>
+              <h4>最初の商品（案）</h4>
+              <p><b>名前（仮）「教室AX スターター」</b> — 「先生が守る線を引き、AI部隊が量産し、検品エージェントが線を守らせ、先生は最後に採用だけ決める」工程の移植。</p>
+              <ul>
+                <li><b>中身</b>: Mattermostのテナント＋中隊（受付・分解・制作・検品・報告）＋先生の承認フロー＋3ヶ月の伴走</li>
+                <li><b>第1版</b>: 9/10までに作る「エージェント設定の説明書（本山先生・北浦先生用）」がそのまま第1版</li>
+                <li><b>実績・証拠</b>: プロスフォニックス。納品カード（t_…）と検品ログを、そのまま参照事例にする</li>
+              </ul>
+              <h4>責任範囲・守秘</h4>
+              <ul>
+                <li>顧客のメソッド・書籍はローカル処理</li>
+                <li>先生が最後に採用を決める</li>
+                <li>子ども・保護者のデータは最小限</li>
+                <li>権利・売上分配・他社展開の条件は試作前に文書化（計画書10の未決定事項）</li>
+              </ul>
+              <h4>価格</h4>
+              <p>空欄。社長・本山先生の判断。この紙は下書きで、財務・契約の判断材料にはしない。</p>
+            </div>
+          </div>
+          <div class="cols2">
+            <div>
+              <h4>3者会談で決めること</h4>
+              <ol>
+                <li>この定義で、事業として持つか</li>
+                <li>責任範囲（KT／プロス／先生）と、投資の上限</li>
+                <li>12月の節目で何を見て続行・中止を決めるか（「楽になった」実感の定義）</li>
+              </ol>
+            </div>
+            <div>
+              <h4>順番</h4>
+              <p>看板を出すのは12月の節目以降。先に教材が愛される → 工程が語れる → 仕事が来る。「AI製」を親に向けて前に出さない。語るのは作り方だけ。本山先生の書籍・メソッドの中身は語らない。</p>
+            </div>
+          </div>
+          <div class="sheet-anchor">下書き（9/8）· 財務・法務の判断材料ではありません · 3者会談の日程は調整中 · 印刷用は <a href="sheets-2026-09-10.html">判断資料のページ</a></div>
+        </article>
+      </div>
+      </div></details>
+    </section>
+    <section id="picture">
+      <details class="disclosure"><summary><h2>プロジェクトの全体像</h2><span>なぜ作るのか → 何を回すのか → どう続くのか</span></summary><div class="detail-body">
+      <div class="project-intro">      <div>
+        <span class="eyebrow"><i></i>2026年9月3日（木）第1回 定例ミーティング・Zoom・100分</span>
+        <h3>プロスを、<span class="hl">日本でいちばん楽しい</span><br>英会話教室に。</h3>
+        <p class="lead">「読める喜び」を最初に味わわせる。そのために、音・文字・アクションが一体になったプロスフォニックスを、まず1文字ぶんの動画から形にする。作りながら発信し、3ヶ月ごとに振り返る。このページは4人＋オ課長（AI 制作部隊）の共通の作業台です。</p>
+        <div class="hero-meta">
+          <span><b>26</b>キャラ（a〜z）</span>
+          <span><b>¥100</b>動画1本（11秒）</span>
+          <span><b>A→C</b>まず3文字を試作</span>
+          <span><b>3ヶ月</b>単位で振り返り</span>
+          <span><b>9〜12月</b>動ける期間</span>
+        </div></div>
+      <div class="card">
+        <div class="bp">
+          <div class="bp-box c-apple">
+            <div class="k">MISSION</div>
+            <h3>読める喜びを、最初に。</h3>
+            <p>体・音・絵を結びつけて、正しい音で聞けて発音できる。従来の退屈なフォニックスではなく「楽しいから読める」。日本人の英語の入り口を間違えない。</p>
+          </div>
+          <div class="bp-arrow">→</div>
+          <div class="pillars">
+            <div class="pillar c-apple"><b>教材アプリ（作る）</b><span>1文字＝1動画のジェスチャー付きアバター。A・B・C → A〜G → 26文字 → 2文字・3文字の読み → 多読へ。</span></div>
+            <div class="pillar c-broccoli"><b>発信（広める）</b><span>メイキングとショート動画を無料で。既存 HP・FB・Instagram に TikTok・LINE を足し、エージェントが投稿。</span></div>
+            <div class="pillar c-berry"><b>業務 AX（楽にする）</b><span>先生方の SNS・事務・資料整理をエージェントへ。空いた時間で教材を作る。</span></div>
+          </div>
+          <div class="bp-arrow">→</div>
+          <div class="bp-box c-lemon">
+            <div class="k">OUTCOME</div>
+            <h3>認知 → 反応 → 教材</h3>
+            <p>知ってもらい、欲しいものを聞き、DL 教材・ゲーム・本・会員として販売する。プロスの生徒も家で遊べる。教室の集客にも効く。</p>
+          </div>
+        </div>
+        <div class="mission-line">合言葉：<em>小さく作って、見せて、直す。</em>　録音がそのままオ課長への指示になる。</div>
+      </div>
+      </div></details>
+    </section>
+    <section id="core">
+      <details class="disclosure"><summary><h2>教材づくりの考え方</h2><span>作る人・広める人が知っておくこと＋動画づくりの線（守る5点）</span></summary><div class="detail-body">
+      <div class="core">
+        <div class="card">
+          <h3 style="font-weight:900">3点セットを、必ず一緒に</h3>
+          <div class="trio">
+            <div class="c-apple">音<small>letter sound。あっ／ブッ／ドゥ</small></div>
+            <div class="c-lemon">文字<small>文字の形の中にキャラが住む</small></div>
+            <div class="c-broccoli">アクション<small>手の動き。意味のあるジェスチャー</small></div>
+          </div>
+          <p style="font-size:.9rem">体の動きと音を結びつけると、動きをしただけで音が思い出せる。小3までは体・音・視覚が一体で、日本語にない母音も体を使うと正確に出る。フォニックスはもともと読めない子のための速習プログラムで、右脳を使う。ズーフォニックスと同じ考えをプロス独自に発展させたもの。</p>
+          <div class="chars">
+            <div class="char c-apple"><div class="glyph">a</div><div><b>Annie Apple → あっ</b><span>赤くて丸くて美味しい。口に持っていって「あっ」。手のところにリンゴが見える形が理想。</span></div></div>
+            <div class="char c-broccoli"><div class="glyph">b</div><div><b>Betty Broccoli → ブッ</b><span>緑の美味しい野菜。茎を持って房を割りながら「ブッ」。</span></div></div>
+            <div class="char c-peach"><div class="glyph">d</div><div><b>Duncan Donut → ドゥ</b><span>カップのココアにドーナツをつけて「ドゥ」。理由が分かると形がズレない。</span></div></div>
+          </div>
+          <div class="quote">「体と音と絵を全部結びつける。それがプロスフォニックスのいちばん大きな特徴」<small>— 本山先生</small></div>
+        </div>
+        <div class="card">
+          <h3 style="font-weight:900">目的（本山先生の箇条書き）</h3>
+          <ul class="goals" style="margin-top:12px">
+            <li><i></i>最終的に、自然に読めて書けるようになる</li>
+            <li><i></i>その基礎を段階に合わせて作る。最初の大事な段階がフォニックス</li>
+            <li><i></i>正しい音で聞けて、正しい音で発音できる</li>
+            <li><i></i>聞くのも発するのも面白い。楽しいという思いで読める</li>
+            <li><i></i>入り口を間違えない。「自分で読めた」喜びが英語を好きになる第一歩</li>
+          </ul>
+          <h3 style="font-weight:900;margin-top:22px">作る人の心得</h3>
+          <ul style="font-size:.9rem;margin-top:8px">
+            <li>26キャラのストーリー（なぜその動きか）を先に理解する。分からないまま作るとジェスチャーがズレる</li>
+            <li>最小パーツは「文字を押すと1本の短い動画が回る」。GIF のような繰り返しでよい</li>
+            <li>クイズにしない。お手本を見て真似する。ダメ出しせず「できたね」を積む</li>
+            <li>本山先生が語る背景を、作り手が深く理解してから作る。中身＝先生、技術＝KT・蜂谷さん</li>
+          </ul>
+          <div class="quote" style="border-color:var(--broccoli);background:var(--broccoli-soft)">「手のところにアップルがあって、食べる仕草だと分かる形に」<small>— 北浦先生</small></div>
+        </div>
+        <article class="sheet" id="sheet-video">
+          <div class="sheet-head"><span class="sheet-no">9/10 判断資料 1/3 · 動画づくりの線</span><h3>愛される動画のために、守るのは5点。あとは崩していい。</h3></div>
+          <p><strong>動画の役目を「先生の代わり」から「子どもが好きになる入口」へ。</strong>9/3の合意「1文字＝1動画」は変えません。変えるのは動画のジャンルです。授業の正本は対面版（ABC まねっこレッスン）のまま。</p>
+          <div class="roles"><span>守る＝先生が所有</span><span>承認＝本山先生・北浦先生</span><span>崩す側＝玉川（KT）</span><span>検品＝チス（機械＋目視）</span><span>採用＝先生が最後に決める</span></div>
+          <h4>守る5点（これを壊すとフォニックス教材でなくなる）</h4>
+          <div class="sheet-scroll"><table>
+            <thead><tr><th>守ること</th><th>なぜ</th><th>検品項目（チス用）</th></tr></thead>
+            <tbody>
+              <tr><td><b>音</b><br>先生の提供音そのまま</td><td>音の瞬間は先生の実音WAVを使う。AI声で置き換えない。音の瞬間は音楽を下げ、裸の音が1回は聞こえる。</td><td>提供WAVとSHA一致／音の区間で音楽が十分小さい／裸の1回がある</td></tr>
+              <tr><td><b>口</b><br>音の瞬間に見えている</td><td>食べ物・キャラ・手で口を隠さない。口の形が学習の芯（A・Cの試作で落ちた点）。</td><td>音の区間のフレームで口が露出している（自動検出＋目視）</td></tr>
+              <tr><td><b>動作</b><br>正本の動きを音と同時に1回</td><td>a：胸前から口へ運んで食べる／b：茎をつかんで房を引き離す／c：口へ運んで一口かじる。別の動きに置き換えない。3回動いて音1回にしない。</td><td>動作と音の同期／動作回数＝音回数／先生用手引きの記述と一致</td></tr>
+              <tr><td><b>文字の形</b><br>正本の意匠</td><td>小文字の形の中にキャラがいる正本の意匠。判別できないほど変形しない。音と同時に文字が1回は画面にある。</td><td>正本画像（assets/a.png 等）と照合／音の区間に文字が画面内</td></tr>
+              <tr><td><b>絵柄</b><br>音だけ、名前は言わない</td><td>1本1文字・お話し通り。「エー」は出さない。1本に1文字。お話（赤くてまるい、口へ運ぶ…）に反する設定を足さない。</td><td>文字名の音声・字幕がない／他の文字の音が混ざらない（abc連結は例外）／お話し通りテンプレートと突合</td></tr>
+            </tbody>
+          </table></div>
+          <div class="cols2">
+            <div>
+              <h4>崩していい（KTの領分。5点さえ守れば全部自由）</h4>
+              <ul>
+                <li>テンポ・リズム／音楽／ギャグ／親にウケる小ネタ／決めゼリフ</li>
+                <li>最初の1〜2秒でフック。「目が離せない」の型</li>
+                <li>同じ音が3回以上。子どもが返す「間」は2秒（対面版の設定と同じ）</li>
+                <li>最後のコマ＝最初のコマ。ループの作りで繰り返し見られる</li>
+                <li>キャラの性格／世界観／カメラ／尺／歌か寸劇か／動作を大げさに／実写かアニメか</li>
+                <li>口の形は実写の人間の顔がいちばん伝わる。先生の顔＋カードのキャラを軽く動かす、安くて強い形</li>
+              </ul>
+            </div>
+            <div>
+              <h4>合格基準と進め方</h4>
+              <p><b>合格＝「もう1回」。</b>北浦先生のクラスの子3〜5人に見せて「もう1回」が出るか、勝手にジェスチャーをまねするか。再生回数ではない。</p>
+              <p>まずAだけ、20秒の歌ループを1本 → 子どもで確認 → B・C → 26文字。</p>
+              <h4>前提</h4>
+              <ul>
+                <li>先生の顔出しは同意を取る</li>
+                <li>キャラクター名の権利範囲を公開前に確認（計画書14の確認項目）</li>
+                <li>この動画は配信用。授業の正本は対面版</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sheet-anchor">KT下書き（9/8）。記入欄（直したい点・一言）つきの印刷用は <a href="sheets-2026-09-10.html">判断資料のページ</a>へ</div>
+          <article class="sheet" id="sheet-policy-910">
+            <div class="sheet-head"><span class="sheet-no">9/10 定例で確定 · 制作方針</span><h3>A を完璧にしてから B へ。原形は劣化させず保存。</h3><span class="sheet-sub">9/10定例の決定（音声記録より）。以後の動画制作はこの線で。</span></div>
+            <div class="cols2">
+              <div>
+                <h4>決まったこと</h4>
+                <ul>
+                  <li><b>A完璧化ファースト</b> — B の前に A を作り込む。声（Markのまま）を直してから次へ。時間がかかってもよい</li>
+                  <li><b>原形の非劣化保存</b> — できあがった完成形は劣化しない。以後は「できたやつをベースに」動かす</li>
+                  <li><b>キーフレーム方式を試行</b> — 動画より「写真数枚のパラパラ（この形→この形）」の方が正確な可能性。B・C で試す</li>
+                  <li><b>ストーリー重視</b> — 最低ラインは「フォニックス＋アニメっぽい演出」。長短2バージョン構想。Aだけだと一般の人はアップルである意味が分からない</li>
+                </ul>
+              </div>
+              <div>
+                <h4>進め方</h4>
+                <ul>
+                  <li>なお子さんが指示を書く → KT が解釈してAIへ（細かい調整はZoom・それ以外は文字）</li>
+                  <li>北浦先生が休み時間等にダメ出し（どこがダメかまで言葉で）→ 持ち帰って指示化</li>
+                  <li>修正のズレ蓄積を避けるため、基本は「元に戻して1発修正」</li>
+                  <li>コストは1本100円→50円台に低下中。失敗テイクは実験材料</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sheet-anchor">9/10定例（音声記録 2026-09-10）より · 詳細は変更履歴と会議録へ</div>
+          </article>
+        </article>
+      </div>
+      </div></details>
+    </section>
+    <section id="rules">
+      <details class="disclosure"><summary><h2>働き方のルール</h2><span>4人＋オ課長で回すための約束</span></summary><div class="detail-body">
+      <div class="rules">
+        <div class="rule c-sky"><h3><i></i>Telegram は2本立て</h3><p><span class="chip">プロスAX 人間界</span>人に伝える・相談する。<span class="chip">システム（ロボット付き）</span>オ課長に直接指示する。KT に言う意味がない命令は直接オ課長へ。</p></div>
+        <div class="rule c-apple"><h3><i></i>録音して、そのまま送る</h3><p>会議も思いつきも生声で残す。要約ではダメ。録音がオ課長への命令になり、時間が節約できる。</p></div>
+        <div class="rule c-lemon"><h3><i></i>話して入力する</h3><p>音声入力アプリ（Typeless・Aqua など）をキーボード代わりに。長く話して、ポンと送る。</p></div>
+        <div class="rule c-broccoli"><h3><i></i>先生が直接、指示する</h3><p>KT が最初にお手本。次から先生がオ課長に「こんな動画を」と言う。無理な指示は KT・蜂谷さんが途中で解釈を入れる。</p></div>
+        <div class="rule c-berry"><h3><i></i>壊していい。何度でも</h3><p>エージェントは人間ではないので、何回でもやり直せる。スクラップ＆ビルド。エージェントはいつ潰してもよい。</p></div>
+        <div class="rule c-peach"><h3><i></i>定例は木曜</h3><p>基本枠 15:00〜16:30（受付の手配のため事前に確定）。Zoom はプロスのアカウント。次回は 11/5（木）16:30〜18:00（10/4・蜂谷さん通知）。</p></div>
+        <div class="rule c-sky"><h3><i></i>仕事は丸ごと渡す</h3><p>北浦先生が自分でエージェントを覚える時間がもったいなければ、仕事ごと KT に振ってよい。本物だけ返す。</p></div>
+        <div class="rule c-apple"><h3><i></i>守秘</h3><p>オ課長は外部接続あり（企業レベルの守秘）。本山先生の書籍・IAM 資料はクラウドに上げずローカルで処理。</p></div>
+        <div class="rule c-berry"><h3><i></i>オ課長と第5中隊（9/4〜）</h3><p>まー君（pi）の後継として 4号機 Hermes の<b>オ課長</b>が案件受付・仕様書・検収・報告を担当。配下の制作部隊：<span class="chip">ri 隊長（分解・発注）</span><span class="chip">jumeok（本文）</span><span class="chip">gwangbeom（コード）</span><span class="chip">eundong（画像・音声・動画）</span><span class="chip">chisu（検品）</span>。窓口は Telegram @Prososio1bot ／ Mattermost #pros-lc。依頼は「何を・誰に・なぜ・いつまでに」で。</p></div>
+        <div class="rule c-lemon"><h3><i></i>Mattermost で回す（9/10〜）</h3><p>動画指示は <span class="chip">フォニックス動画作成</span>（旧・教材リクエストから改名）に集約。人間同士の相談は <span class="chip">プロスAX 人間界</span>（ロボット不在）。ロボットは@付けで呼ぶ（オ課長は全投稿に反応しうる）。止まったら「続けなさい」「生成してください」で再開・仕様書確認で止まるのは仕様。<code>/stop</code> で中止。Telegram は緊急用として保持。</p></div>
+      </div>
+      </div></details>
+    </section>
+    <section id="lstep">
+      <details class="disclosure"><summary><h2>集客 LINE：公式アカウントは必須。「Lステップ」は不要。</h2><span>9/10 判断資料 3/3・運用の型｜配信の仕組みは9/6完成・あとは開設の可否だけ</span></summary><div class="detail-body">
+      <article class="sheet" id="sheet-line">
+        <div class="sheet-head"><span class="sheet-no">9/10 判断資料 3/3 · 集客LINE</span><h3>公式アカウントは必須。「Lステップ」は不要。</h3><span class="sheet-sub">運用の型。</span></div>
+        <p><b>LINEが効く場所は3つだけ。</b>①3タップで体験レッスンの予約まで行ける導線（予約までの摩擦を減らす）②在校生の保護者連絡（第2の柱）③連絡窓口 — 保護者の連絡手段はLINE。教室がLINE公式を持つのは「連絡窓口」として当たり前になっている。一方「Lステップ」（有料ツールと、配信で売り込む文化）は情報商材・コンサル向けのもので、親が先生に会って決める子どもの英会話教室にはほぼ効かない。中身は自前で作ってあるので、道具を買う必要もない。</p>
+        <h4>やる順番</h4>
+        <div class="sheet-scroll"><table>
+          <thead><tr><th>#</th><th>やること</th><th>誰</th><th>目安</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><b>開設</b> — 「プロス」名義で開設（電話番号・プロフィール写真）。あわせて認証済アカウントを申請（無料）。設定は「チャット：オン」「自動応答：オフ」→ 管理画面の2つの文字列をKTへ → 7日間配信が動く</td><td>北浦先生 or 蜂谷さん（開設 → KT）</td><td>15分・当日</td></tr>
+            <tr><td>2</td><td><b>友だち追加</b> — QRをHP・FB・Instagram・Googleビジネスプロフィール・教室の入口・チラシへ。TikTok/YouTubeのプロフィール欄もLINEへ</td><td>KT・中隊</td><td>当日</td></tr>
+            <tr><td>3</td><td><b>リッチメニュー</b> — 画面下の固定メニューは「体験レッスン」「ABC動画」「教室について」「アクセス」の4つ</td><td>KT・中隊</td><td>当日</td></tr>
+            <tr><td>4</td><td><b>体験予約の受け皿</b> — 1画面のフォーム → オ課長が受け取り → 確認・前日リマインド・翌日の案内（毎朝10時）</td><td>KT・中隊</td><td>5分</td></tr>
+            <tr><td>5</td><td><b>7日間配信</b> — 1日目 ウェルカム＋A・B・C動画 → 2日目 プロスの考え方 → 3〜5日目 今日の1文字 → 6日目 まとめ → 7日目 これからの案内</td><td>KT（作り方）・先生方（掲出）</td><td>1週間</td></tr>
+            <tr><td>6</td><td><b>在校生の登録</b> — 保護者にQRを配って「在校生」タグ。以後の連絡はここから。休講・振替・イベント・持ち物を「在校生」タグへ</td><td>先生方</td><td>次の授業から</td></tr>
+            <tr><td>7</td><td><b>見る数字</b> — 友だち数／ブロック率／体験予約数／入会数。ブロック率が10〜15%を超えたら配信が多すぎ</td><td>オ課長（月次で報告）</td><td>毎月</td></tr>
+          </tbody>
+        </table></div>
+        <div class="cols2">
+          <div>
+            <h4>お金の目安（要確認: プランと単価は最新の公式情報で）</h4>
+            <p>無料枠は月200通。「1通」＝1人に1メッセージ。1対1のチャット返信は無料。超えたら有料プランへ。当面はゼロ円で回る。7日間配信＝7通/人 → 新規およそ28人/月まで無料。</p>
+            <h4>9/10で決めるのは「開設の可否」だけ</h4>
+            <p>配信の仕組みは9/6に完成済み。決まれば、つながるまで全体で15分。9/10の場で「LINEは動いている」を見せられる。</p>
+          </div>
+          <div>
+            <h4>やりすぎないための線</h4>
+            <ul>
+              <li>7日間が終わったら配信は月2〜3回まで。売り込まれた瞬間にブロックされる</li>
+              <li>子どもの名前・写真は最小限。写真は同意を取る</li>
+              <li>AIの自動返信は最初は「オ課長が下書き → 先生が1タップで送信」。料金・日程を間違えると信用が飛ぶ。FAQだけの自動化は実績が溜まってから</li>
+            </ul>
+            <h4>なぜやるか</h4>
+            <p>売り込みではなく、先生に会う価値を先に渡す。9/6完成の仕組みで先生の事務が減る。12月の「楽になった」実感はここで作れる。</p>
+          </div>
+        </div>
+        <div class="sheet-anchor">KT下書き（9/8）· 印刷用は <a href="sheets-2026-09-10.html">判断資料のページ</a></div>
+      </article>
+      </div></details>
+    </section>
+    <section id="decisions">
+      <details class="disclosure"><summary><h2>決めたこと</h2><span>定例での合意・新しい順（出典つき）</span><span class="upd-badge" title="2026-10-03 更新">10/3 Update</span></summary><div class="detail-body">
+      <div class="decisions" id="decisions-grid"></div>
+      </div></details>
+    </section>
+    <section id="flow">
+      <details class="disclosure"><summary><h2>会議の流れ</h2><span>定例ごとの記録・回を切り替えて表示</span></summary><div class="detail-body">
+      <div class="card">
+        <div class="flow-tabs" id="flow-tabs"></div><div class="flow-scale"><span>00:00</span><div class="bar" id="flow-bar"></div><span id="flow-total">100分</span></div>
+        <div class="flow-wrap"><div id="flow-track"></div></div>
+      </div>
+      </div></details>
+    </section>
+    <section id="roadmap">
+      <details class="disclosure"><summary><h2>ロードマップ</h2><span>9月〜来春。赤い斜線は先生方の繁忙期</span></summary><div class="detail-body">
+      <div class="card rm">
+        <div class="rm-inner">
+          <div class="rm-head"><div></div><div id="rm-months"></div></div>
+          <div id="rm-rows"></div>
+          <div class="rm-legend"><span><i></i>1〜3月：先生方は時間を割けない → 軽運転・エージェント中心</span><span>12月：3ヶ月の振り返り。「楽になった」実感が無ければ止める判断も可</span></div>
+        </div>
+      </div>
+      </div></details>
+    </section>
+    <section id="issues">
+      <details class="disclosure"><summary><h2>課題・気になること</h2><span>放置すると止まるもの</span></summary><div class="detail-body">
+      <div class="issues" id="issues-grid"></div>
+      </div></details>
+    </section>
+    </section>
+    <section id="board">
+      <div class="sec-head"><h2>タスク</h2><p>担当別に、進み具合をチェックできます。</p></div>
+      <details class="disclosure"><summary><h2>担当別タスク</h2><span>担当者を選んで、チェックできます</span></summary><div class="detail-body">
+      <aside class="progress-panel">
+        <h2>チームの進み具合</h2>
+        <div class="ring" id="ring"><span id="progress-pct">0%</span></div>
+        <div class="bar"><i id="progress-bar" style="width:0%"></i></div>
+        <div style="display:flex;justify-content:space-between;font-weight:800;font-size:.85rem"><span>完了タスク</span><span id="progress-num">0 / 0</span></div>
+        <div class="btns">
+          <button class="btn primary" id="copy-btn" type="button">進捗をコピー（Telegram用）</button>
+          <button class="btn ghost" id="reset-btn" type="button">リセット</button>
+        </div>
+        <p style="font-size:.74rem;color:var(--muted);margin:10px 0 0;font-weight:700">チェックはこのブラウザに保存されます。共有はコピーして Telegram へ。</p>
+      </aside>
+      <div class="board-tools">
+        <div id="filters">
+          <button type="button" data-filter="all-members" class="active">みんな</button>
+          <button type="button" data-filter="tamagawa">玉川（KT）</button>
+          <button type="button" data-filter="motoyama">本山先生</button>
+          <button type="button" data-filter="kitaura">北浦先生</button>
+          <button type="button" data-filter="hachiya">蜂谷さん</button>
+          <button type="button" data-filter="agent">オ課長＋第5中隊</button>
+          <button type="button" data-filter="all">全員</button>
+        </div>
+        <div class="spacer"></div>
+      </div>
+      <div id="board-grid"></div>
+      </div></details>
+    </section>
+    <section id="deliverables" aria-labelledby="deliverables-title">
+      <div class="sec-head"><h2 id="deliverables-title">成果物</h2><p>できあがったもの。まず見て、試して。気づいたことを、次の一歩に。 <span class="upd-badge" title="2026-10-26 更新">10/26 Update</span></p></div>
+      <p class="latest-added" style="margin-top:10px"><a class="link" href="/pros/phonics/" style="border:2px solid #1d5c4f;border-radius:8px;padding:10px 14px;display:inline-block;text-decoration:none"><b>教材動画一覧サイト（Web）</b> — 公開108版を文字ごとに並べる。再生・依頼はここで。</a></p>
+      <p class="latest-added">最新の追加: <b>10/26</b> L Lenny Leek v5（声の高さ 3案） → <a href="/pros/deliverables/phonimaru-l-v5/" target="_blank" rel="noopener">ページを開く</a></p>
+      <details class="disclosure artifact-archive"><summary><h2>すべての成果物（新しい順）</h2><span>動画・教材・資料・音声・元データ / 132件</span><span class="upd-badge" title="2026-10-09 更新">10/9 Update</span></summary><div class="detail-body"><div class="links">
+        <a class="link" href="/pros/deliverables/phonimaru-l-v5/" target="_blank" rel="noopener" data-id="phonimaru-l-v5"><span class="k">10/26</span> <span class="new-badge">NEW</span><b>L Lenny Leek v5（声の高さ 3案）</b><span class="d-type">動画</span><span>L v5（声の高さ 3案: +1・+2・+3半音）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-k-v4/" target="_blank" rel="noopener" data-id="phonimaru-k-v4"><span class="k">10/26</span><b>K Kelly Kelp v4（カードの角を他の文字とそろえた版）</b><span class="d-type">動画</span><span>K v4（v3 のカードの角を丸くした）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-l-v4/" target="_blank" rel="noopener" data-id="phonimaru-l-v4"><span class="k">10/26</span><b>L Lenny Leek v4（カードの角を他の文字とそろえた版）</b><span class="d-type">動画</span><span>L v4（v3 のカードの角を丸くした）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-l-v3/" target="_blank" rel="noopener" data-id="phonimaru-l-v3"><span class="k">10/26</span><b>L Lenny Leek v3（Lenny を体の中心に置き、顔の伸びをおさえた版）</b><span class="d-type">動画</span><span>L v3（Lenny は体の中心・/l/ で顔が伸びるのをおさえた）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-l-v2/" target="_blank" rel="noopener" data-id="phonimaru-l-v2"><span class="k">10/26</span><b>L Lenny Leek v2（口の閉じる時と Lenny の位置を直した版）</b><span class="d-type">動画</span><span>L v2（口は声の終わりで閉じる・Lenny は体の中心）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-l-v1/" target="_blank" rel="noopener" data-id="phonimaru-l-v1"><span class="k">10/23</span><b>L Lenny Leek v1（はじめの版）</b><span class="d-type">動画</span><span>L v1（重ねたグーから上のグーをあごの下へ・Lenny は両手のグーに重ねる）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-k-v3/" target="_blank" rel="noopener" data-id="phonimaru-k-v3"><span class="k">10/23</span><b>K Kelly Kelp v3（Kelly を右手に重なる位置へ）</b><span class="d-type">動画</span><span>K v3（Kelly を右へずらし右手に重ねる）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-k-v2/" target="_blank" rel="noopener" data-id="phonimaru-k-v2"><span class="k">10/23</span><b>K Kelly Kelp v2（Kelly の位置・名前の聞こえ方を修正）</b><span class="d-type">動画</span><span>K v2（Kelly を指先の高さへ・名前の聞こえ方を修正）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-k-v1/" target="_blank" rel="noopener" data-id="phonimaru-k-v1"><span class="k">10/23</span><b>K Kelly Kelp v1（はじめの版）</b><span class="d-type">動画</span><span>K v1（合掌から左手を正面へ倒す・Kelly は両腕の間）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v7/" target="_blank" rel="noopener" data-id="phonimaru-j-v7"><span class="k">10/23</span><b>J Jimmy Jello v7（声を変換し直し・まばたきなし）</b><span class="d-type">動画</span><span>J v7（声を seed 3 で変換し直し、まばたきなし）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v6/" target="_blank" rel="noopener" data-id="phonimaru-j-v6"><span class="k">10/23</span><b>J Jimmy Jello v6（Jimmy を拳に少し重ね、手の動きでフェード）</b><span class="d-type">動画</span><span>J v6（Jimmy を拳に重ね、手の動きでフェード）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v5/" target="_blank" rel="noopener" data-id="phonimaru-j-v5"><span class="k">10/23</span><b>J Jimmy Jello v5（手の形を v2 から作り直し・声 +4半音）</b><span class="d-type">動画</span><span>J v5（終わりの形＝案 D、声 +4半音）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v4c/" target="_blank" rel="noopener" data-id="phonimaru-j-v4c"><span class="k">10/22</span><b>J Jimmy Jello v4c（声 +3半音）</b><span class="d-type">動画</span><span>J v4c（声 +3半音）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v4b/" target="_blank" rel="noopener" data-id="phonimaru-j-v4b"><span class="k">10/22</span><b>J Jimmy Jello v4b（声の高さの聞き比べ：+0半音 / +2半音）</b><span class="d-type">動画</span><span>J v4b（声の高さ +0 / +2半音の聞き比べ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v4/" target="_blank" rel="noopener" data-id="phonimaru-j-v4"><span class="k">10/22</span><b>J Jimmy Jello v4（手を縦に90度ひねる・声は B〜H と同じ作り方）</b><span class="d-type">動画</span><span>J v4（手を縦にひねる・声は B〜H と同じ作り方）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v3c/" target="_blank" rel="noopener" data-id="phonimaru-j-v3c"><span class="k">10/22</span><b>J Jimmy Jello v3c（声だけ作り直し：マーク先生の声から A と同じ手順）</b><span class="d-type">動画</span><span>J v3c（声を A と同じもとの声から作り直し）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v3/" target="_blank" rel="noopener" data-id="phonimaru-j-v3"><span class="k">10/22</span><b>J Jimmy Jello v3（手を上げる・指が正面まで回る・顎と口・声を A の作り方に）</b><span class="d-type">動画</span><span>J Jimmy Jello v3（手を上げ、指が正面まで回る。声2種）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v2/" target="_blank" rel="noopener" data-id="phonimaru-j-v2"><span class="k">10/22</span><b>J Jimmy Jello v2（途中の版：始めは手の甲が上・指が下、1回だけ回る）</b><span class="d-type">動画</span><span>J Jimmy Jello v2（途中の版・1回だけ回る）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-j-v1/" target="_blank" rel="noopener" data-id="phonimaru-j-v1"><span class="k">10/22</span><b>J Jimmy Jello v1（グーの手首をひねる・Jimmy は手の真下）</b><span class="d-type">動画</span><span>J Jimmy Jello v1（グーの手首をひねる）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v8/" target="_blank" rel="noopener" data-id="phonimaru-i-v8"><span class="k">10/22</span><b>I Izzy Ita Palm v8（H3 で作り直し・切り貼りなし・声は v3）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v8（H3 作り直し・切り貼りなし）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v7/" target="_blank" rel="noopener" data-id="phonimaru-i-v7"><span class="k">10/22</span><b>I Izzy Ita Palm v7（1回のピンッ・周りの乱れを直す・声は v3）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v7（1回のピンッ・声 v3）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v6/" target="_blank" rel="noopener" data-id="phonimaru-i-v6"><span class="k">10/22</span><b>I Izzy Ita Palm v6（指だけのピンッ・名前の声の作り直し2案）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v6（指だけ・名前の声2案）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v5/" target="_blank" rel="noopener" data-id="phonimaru-i-v5"><span class="k">10/22</span><b>I Izzy Ita Palm v5（声の明るさを C〜H に合わせる・2案）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v5（声の明るさ2案）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v4/" target="_blank" rel="noopener" data-id="phonimaru-i-v4"><span class="k">10/22</span><b>I Izzy Ita Palm v4（体を止める・指だけはじく・Palm の高さ2案）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v4（体を止める、指だけ、Palm 2案）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v3/" target="_blank" rel="noopener" data-id="phonimaru-i-v3"><span class="k">10/22</span><b>I Izzy Ita Palm v3（口をなめらかに・声を A 基準に・腕を止めて指だけはじく）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v3（口なめらか、声G、腕を止めて指だけ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v2/" target="_blank" rel="noopener" data-id="phonimaru-i-v2"><span class="k">10/21</span><b>I Izzy Ita Palm v2（Izzy を手の前に・口をなめらかに・基準音声・腕を肘まで）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v2（Izzy 手の前、口は E/F と同じ作り方、基準音声、腕を肘まで）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-i-v1/" target="_blank" rel="noopener" data-id="phonimaru-i-v1"><span class="k">10/21</span><b>I Izzy Ita Palm v1（はじめの版）</b><span class="d-type">動画</span><span>I Izzy Ita Palm v1（平らな手のひら＋種をはじく。声G）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v10/" target="_blank" rel="noopener" data-id="phonimaru-h-v10"><span class="k">10/21</span><b>H Hazel Ham v10（v6 の腕に戻し、Hazel を手のひらの真下へ）</b><span class="d-type">動画</span><span>H Hazel Ham v10（腕は v6、Hazel を手のひらの真下へ。カード元の大きさ。声は v6 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v9/" target="_blank" rel="noopener" data-id="phonimaru-h-v9"><span class="k">10/21</span><b>H Hazel Ham v9（v6 の形で手を少し内側へ・手刀を立てたまま）</b><span class="d-type">動画</span><span>H Hazel Ham v9（v6 の形で手を少し内側へ・手刀を立てたまま。カード元の大きさ。声は v6 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v7/" target="_blank" rel="noopener" data-id="phonimaru-h-v7"><span class="k">10/21</span><b>H Hazel Ham v7（手を体の前へ・手刀を立てたまま・カードを元の大きさ）</b><span class="d-type">動画</span><span>H Hazel Ham v7（手刀を立てたまま体の前へ。カードを元の大きさに。声は v6 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v6/" target="_blank" rel="noopener" data-id="phonimaru-h-v6"><span class="k">10/21</span><b>H Hazel Ham v6（腕を肘90°で振り下ろす）</b><span class="d-type">動画</span><span>H Hazel Ham v6（腕を肘90°で振り下ろす。Hazel を指先へ。声は v5 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v5/" target="_blank" rel="noopener" data-id="phonimaru-h-v5"><span class="k">10/21</span><b>H Hazel Ham v5（Hazel の z を直した版）</b><span class="d-type">動画</span><span>H Hazel Ham v5（Hazel の z を先生の録音に近づけた。映像・/h/ は v4 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v4/" target="_blank" rel="noopener" data-id="phonimaru-h-v4"><span class="k">10/21</span><b>H Hazel Ham v4（/h/ の終わりをなめらかに）</b><span class="d-type">動画</span><span>H Hazel Ham v4（/h/ の終わりをなめらかに。映像は v3 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v3/" target="_blank" rel="noopener" data-id="phonimaru-h-v3"><span class="k">10/21</span><b>H Hazel Ham v3（/h/ の息を短く）</b><span class="d-type">動画</span><span>H Hazel Ham v3（/h/ の息を短く。映像は v2 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v2/" target="_blank" rel="noopener" data-id="phonimaru-h-v2"><span class="k">10/21</span><b>H Hazel Ham v2（/h/ の音を「ハッ」に）</b><span class="d-type">動画</span><span>H Hazel Ham v2（/h/ の音を「ハッ」に。映像は v1 と同じ）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-h-v1/" target="_blank" rel="noopener" data-id="phonimaru-h-v1"><span class="k">10/21</span><b>H Hazel Ham v1（最初の版）</b><span class="d-type">動画</span><span>H Hazel Ham v1（最初の版）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v9/" target="_blank" rel="noopener" data-id="phonimaru-g-v9"><span class="k">10/21</span><b>G Gary Grape v9（声 U1・口角の跡を修正）</b><span class="d-type">動画</span><span>G Gary Grape v9（声 U1・口角の跡を修正）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v8/" target="_blank" rel="noopener" data-id="phonimaru-g-v8"><span class="k">10/20</span><b>G Gary Grape v8（左の口元の残像を修正・高めの声2段階）</b><span class="d-type">動画</span><span>G Gary Grape v8（口元の残像を修正。声 U1 約198Hz・U2 約205Hz）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v7/" target="_blank" rel="noopener" data-id="phonimaru-g-v7"><span class="k">10/20</span><b>G Gary Grape v7（T2 より高め・加工を減らした声2段階）</b><span class="d-type">動画</span><span>G Gary Grape v7（T2 より高め。U1 約198Hz・U2 約205Hz）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v6/" target="_blank" rel="noopener" data-id="phonimaru-g-v6"><span class="k">10/20</span><b>G Gary Grape v6（ざらつきを減らした声2段階）</b><span class="d-type">動画</span><span>G Gary Grape v6（ざらつきを除いた声。T1 は A と同じ高さ、T2 は少し高め）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v5/" target="_blank" rel="noopener" data-id="phonimaru-g-v5"><span class="k">10/20</span><b>G Gary Grape v5（声の明るさ2段階）</b><span class="d-type">動画</span><span>G Gary Grape v5（P1 の響きを2段階明るく。S1 少し・S2 もう少し）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v4/" target="_blank" rel="noopener" data-id="phonimaru-g-v4"><span class="k">10/20</span><b>G Gary Grape v4（声2パターン）</b><span class="d-type">動画</span><span>G Gary Grape v4（WORLD をやめ、声を P1・P2 の2パターンで比較）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v3/" target="_blank" rel="noopener" data-id="phonimaru-g-v3"><span class="k">10/20</span><b>G Gary Grape v3</b><span class="d-type">動画</span><span>G Gary Grape v3（声を A 基準 180Hz にそろえ、/g/ の出だしの破裂音を除去）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v2/" target="_blank" rel="noopener" data-id="phonimaru-g-v2"><span class="k">10/20</span><b>G Gary Grape v2</b><span class="d-type">動画</span><span>G Gary Grape v2（声を約211Hz→168Hz に下げ、カードの g の左の欠けを修正）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-g-v1/" target="_blank" rel="noopener" data-id="phonimaru-g-v1"><span class="k">10/20</span><b>G Gary Grape v1</b><span class="d-type">動画</span><span>G Gary Grape v1（左手で Gary を持ち、右手で一粒つまんで引き下ろす）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v13/" target="_blank" rel="noopener" data-id="phonimaru-f-v13"><span class="k">10/20</span><b>F Freddy French Fry v13</b><span class="d-type">動画</span><span>F Freddy French Fry v13（/f/ の音を C に決定）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v12/" target="_blank" rel="noopener" data-id="phonimaru-f-v12"><span class="k">10/20</span><b>F Freddy French Fry v12（/f/ の音 4パターン）</b><span class="d-type">動画</span><span>F Freddy French Fry v12（/f/ の音を ffff に近づけた4パターン A〜D）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v11/" target="_blank" rel="noopener" data-id="phonimaru-f-v11"><span class="k">10/20</span><b>F Freddy French Fry v11</b><span class="d-type">動画</span><span>F Freddy French Fry v11（右側の頬の切れ目を消す）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v10/" target="_blank" rel="noopener" data-id="phonimaru-f-v10"><span class="k">10/20</span><b>F Freddy French Fry v10</b><span class="d-type">動画</span><span>F Freddy French Fry v10（/f/ の時、上の前歯が下唇に少し当たるまで閉じる）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v9/" target="_blank" rel="noopener" data-id="phonimaru-f-v9"><span class="k">10/20</span><b>F Freddy French Fry v9</b><span class="d-type">動画</span><span>F Freddy French Fry v9（v8 の口で、/f/ の時をもう少し閉じる）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v8/" target="_blank" rel="noopener" data-id="phonimaru-f-v8"><span class="k">10/20</span><b>F Freddy French Fry v8</b><span class="d-type">動画</span><span>F Freddy French Fry v8（初めの口を E と同じに・/f/ の口は /e/ を少し閉じた形）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v7/" target="_blank" rel="noopener" data-id="phonimaru-f-v7"><span class="k">10/20</span><b>F Freddy French Fry v7</b><span class="d-type">動画</span><span>F Freddy French Fry v7（口角を左右対称に下げる・変わり目をなめらかに・f の口の肌の色を合わせる）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v6/" target="_blank" rel="noopener" data-id="phonimaru-f-v6"><span class="k">10/19</span><b>F Freddy French Fry v6</b><span class="d-type">動画</span><span>F Freddy French Fry v6（笑顔→口角を少しずつ下げる→閉じた口→f の口）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v5/" target="_blank" rel="noopener" data-id="phonimaru-f-v5"><span class="k">10/19</span><b>F Freddy French Fry v5</b><span class="d-type">動画</span><span>F Freddy French Fry v5（笑顔→口をゆるめる→f の口を約1秒でなめらかに）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v4/" target="_blank" rel="noopener" data-id="phonimaru-f-v4"><span class="k">10/19</span><b>F Freddy French Fry v4</b><span class="d-type">動画</span><span>F Freddy French Fry v4（口を約0.7秒でなめらかに・/f/ の出だしの破裂音を弱める）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v3/" target="_blank" rel="noopener" data-id="phonimaru-f-v3"><span class="k">10/19</span><b>F Freddy French Fry v3</b><span class="d-type">動画</span><span>F Freddy French Fry v3（Freddy を小さく・塩を少量に・口をなめらかに。手は v2 のまま）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v2/" target="_blank" rel="noopener" data-id="phonimaru-f-v2"><span class="k">10/19</span><b>F Freddy French Fry v2</b><span class="d-type">動画</span><span>F Freddy French Fry v2（手首だけ振る・Freddy を指の下に小さく・f の口を閉じ気味に）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-f-v1/" target="_blank" rel="noopener" data-id="phonimaru-f-v1"><span class="k">10/19</span><b>F Freddy French Fry v1</b><span class="d-type">動画</span><span>F Freddy French Fry v1（指さしで小さく振る・塩と Freddy）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v13/" target="_blank" rel="noopener" data-id="phonimaru-e-v13"><span class="k">10/19</span><b>E Emma Eggplant v13（シャツに残る肌色を消す）</b><span class="d-type">動画</span><span>E Emma Eggplant v13（シャツに残る肌色を消す）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v12/" target="_blank" rel="noopener" data-id="phonimaru-e-v12"><span class="k">10/19</span><b>E Emma Eggplant v12（お腹のシャツとベルトを止める）</b><span class="d-type">動画</span><span>E Emma Eggplant v12（お腹のシャツとベルトを止める）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v11/" target="_blank" rel="noopener" data-id="phonimaru-e-v11"><span class="k">10/16</span><b>E Emma Eggplant v11（止まっている手のひらをくっきりに）</b><span class="d-type">動画</span><span>E Emma Eggplant v11（止まっている手のひらをくっきりに）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v10/" target="_blank" rel="noopener" data-id="phonimaru-e-v10"><span class="k">10/16</span><b>E Emma Eggplant v10（止まる場面と動く場面の境目のガタつきを直す）</b><span class="d-type">動画</span><span>E Emma Eggplant v10（止まる場面と動く場面の境目のガタつきを直す）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v9/" target="_blank" rel="noopener" data-id="phonimaru-e-v9"><span class="k">10/16</span><b>E Emma Eggplant v9（グーの下・左手のぼやけ・お腹の肌色を直す）</b><span class="d-type">動画</span><span>E Emma Eggplant v9（グーの下・左手のぼやけ・お腹の肌色を直す）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v8/" target="_blank" rel="noopener" data-id="phonimaru-e-v8"><span class="k">10/16</span><b>E Emma Eggplant v8（固定している腕の輪郭を止める）</b><span class="d-type">動画</span><span>E Emma Eggplant v8（固定している腕の輪郭を止める）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v7/" target="_blank" rel="noopener" data-id="phonimaru-e-v7"><span class="k">10/16</span><b>E Emma Eggplant v7（v6 の胸・グーの揺れを止める）</b><span class="d-type">動画</span><span>E Emma Eggplant v7（v6 の胸・グーの揺れを止める）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v6/" target="_blank" rel="noopener" data-id="phonimaru-e-v6"><span class="k">10/16</span><b>E Emma Eggplant v6（v5 の動き・手を動かす間は胴を止める）</b><span class="d-type">動画</span><span>E Emma Eggplant v6（v5 の動き・胴を止める）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v5/" target="_blank" rel="noopener" data-id="phonimaru-e-v5"><span class="k">10/16</span><b>E Emma Eggplant v5（v1 の腕の下がり半分＋v2 の手首半分を同時に）</b><span class="d-type">動画</span><span>E Emma Eggplant v5（v1 の腕の半分＋v2 の手首の半分を同時に）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v4/" target="_blank" rel="noopener" data-id="phonimaru-e-v4"><span class="k">10/16</span><b>E Emma Eggplant v4（v2 の動き・手首の曲がりを小さく・両手を小さく）</b><span class="d-type">動画</span><span>E Emma Eggplant v4（v2 の動き・手首の曲がりを小さく・両手を小さく）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v3/" target="_blank" rel="noopener" data-id="phonimaru-e-v3"><span class="k">10/16</span><b>E Emma Eggplant v3（前腕を大きく動かす・手を小さく）</b><span class="d-type">動画</span><span>E Emma Eggplant v3（前腕を大きく動かす・手を小さく）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v2/" target="_blank" rel="noopener" data-id="phonimaru-e-v2"><span class="k">10/16</span><b>E Emma Eggplant v2（グーを倒す・手首で下ろす・Emma の位置）</b><span class="d-type">動画</span><span>E Emma Eggplant v2（グーを倒す・手首で下ろす・Emma の位置）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-e-v1/" target="_blank" rel="noopener" data-id="phonimaru-e-v1"><span class="k">10/16</span><b>E Emma Eggplant v1（最初の版）</b><span class="d-type">動画</span><span>E Emma Eggplant v1（最初の版）。</span><span class="rate" role="group" aria-label="評価">☆☆☆</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v9/" target="_blank" rel="noopener" data-id="phonimaru-d-v9"><span class="k">10/16</span><b>D Duncan Donut v9（口の残像と服の伸びを直す）</b><span class="d-type">動画</span><span>D Duncan Donut v9（口の残像と服の伸びを直す）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v8/" target="_blank" rel="noopener" data-id="phonimaru-d-v8"><span class="k">10/15</span><b>D Duncan Donut v8（口の変わり目をなめらかに）</b><span class="d-type">動画</span><span>D Duncan Donut v8（口の変わり目をなめらかに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v7/" target="_blank" rel="noopener" data-id="phonimaru-d-v7"><span class="k">10/15</span><b>D Duncan Donut v7（口を直接なめらかにつなぐ）</b><span class="d-type">動画</span><span>D Duncan Donut v7（口を直接なめらかにつなぐ）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v6/" target="_blank" rel="noopener" data-id="phonimaru-d-v6"><span class="k">10/15</span><b>D Duncan Donut v6（初めの口の形を v4 に戻す）</b><span class="d-type">動画</span><span>D Duncan Donut v6（初めの口の形を v4 に戻す）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v5/" target="_blank" rel="noopener" data-id="phonimaru-d-v5"><span class="k">10/15</span><b>D Duncan Donut v5（Duncan の消え方と口をなめらかに）</b><span class="d-type">動画</span><span>D Duncan Donut v5（Duncan の消え方と口をなめらかに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v4/" target="_blank" rel="noopener" data-id="phonimaru-d-v4"><span class="k">10/15</span><b>D Duncan Donut v4（Duncan をカップ付きの原画に）</b><span class="d-type">動画</span><span>D Duncan Donut v4（Duncan をカップ付きに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v3/" target="_blank" rel="noopener" data-id="phonimaru-d-v3"><span class="k">10/15</span><b>D Duncan Donut v3（口をすぼめる・服の伸びを直す・Duncan を右手に重ねる）</b><span class="d-type">動画</span><span>D Duncan Donut v3（口すぼめ・服の伸び・Duncan 重ね）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v2/" target="_blank" rel="noopener" data-id="phonimaru-d-v2"><span class="k">10/15</span><b>D Duncan Donut v2（鼻の二重を直し、口を動かす）</b><span class="d-type">動画</span><span>D Duncan Donut v2（鼻の二重・口の動きを修正）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-d-v1/" target="_blank" rel="noopener" data-id="phonimaru-d-v1"><span class="k">10/15</span><b>D Duncan Donut v1（A〜C と同じ子・声G）</b><span class="d-type">動画</span><span>D Duncan Donut v1（A〜C と同じ子・声G）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v9/" target="_blank" rel="noopener" data-id="phonimaru-c-v9"><span class="k">10/15</span><b>C Cary Cucumber v9（Cary を先生が赤で描いた位置へ）</b><span class="d-type">動画</span><span>C Cary Cucumber v9（Cary を赤の位置へ）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v8/" target="_blank" rel="noopener" data-id="phonimaru-c-v8"><span class="k">10/15</span><b>C Cary Cucumber v8（Cary をもう少し右下へ・口にかからない位置）</b><span class="d-type">動画</span><span>C Cary Cucumber v8（Cary を右下へ）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v7/" target="_blank" rel="noopener" data-id="phonimaru-c-v7"><span class="k">10/15</span><b>C Cary Cucumber v7（Cary を小指のあたりへ）</b><span class="d-type">動画</span><span>C Cary Cucumber v7（Cary を小指のあたりへ）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v6/" target="_blank" rel="noopener" data-id="phonimaru-c-v6"><span class="k">10/15</span><b>C Cary Cucumber v6（/k/ で口全体が動く・グーは口より手前）</b><span class="d-type">動画</span><span>C Cary Cucumber v6（/k/ で口全体が動く）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v5/" target="_blank" rel="noopener" data-id="phonimaru-c-v5"><span class="k">10/15</span><b>C Cary Cucumber v5（グーを口元より手前に・Cary は v3 に戻す）</b><span class="d-type">動画</span><span>C Cary Cucumber v5（グーを口元より手前に）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v4/" target="_blank" rel="noopener" data-id="phonimaru-c-v4"><span class="k">10/15</span><b>C Cary Cucumber v4（はじめの口元のグーをくっきり）</b><span class="d-type">動画</span><span>C Cary Cucumber v4（はじめの口元のグーをくっきり）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v3/" target="_blank" rel="noopener" data-id="phonimaru-c-v3"><span class="k">10/15</span><b>C Cary Cucumber v3（きゅうりをかじって、すばやく腕を下ろす）</b><span class="d-type">動画</span><span>C Cary Cucumber v3（すばやく腕を下ろす）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v2/" target="_blank" rel="noopener" data-id="phonimaru-c-v2"><span class="k">10/15</span><b>C Cary Cucumber v2（/k/ を腕の動きの途中に・グーは右胸前）</b><span class="d-type">動画</span><span>C Cary Cucumber v2（/k/ を腕の動きの途中に・右胸前）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-c-v1/" target="_blank" rel="noopener" data-id="phonimaru-c-v1"><span class="k">10/15</span><b>C Cary Cucumber v1（A・B と同じ子・声G）</b><span class="d-type">動画</span><span>C Cary Cucumber v1（A・B と同じ子・声G）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v14/" target="_blank" rel="noopener" data-id="phonimaru-b-v14"><span class="k">10/14</span><b>B Betty Broccoli v14（顎〜頬の二重を直す）</b><span class="d-type">動画</span><span>B Betty Broccoli v14（顎〜頬の二重を直す）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v13/" target="_blank" rel="noopener" data-id="phonimaru-b-v13"><span class="k">10/14</span><b>B Betty Broccoli v13（左手を動かす間、右手の親指を見せない）</b><span class="d-type">動画</span><span>B Betty Broccoli v13（左手を動かす間、右手の親指を見せない）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v12/" target="_blank" rel="noopener" data-id="phonimaru-b-v12"><span class="k">10/14</span><b>B Betty Broccoli v12（右手の親指を自然な長さに）</b><span class="d-type">動画</span><span>B Betty Broccoli v12（右手の親指を自然な長さに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v11/" target="_blank" rel="noopener" data-id="phonimaru-b-v11"><span class="k">10/14</span><b>B Betty Broccoli v11（指の残像を消す・Betty を完全に消す）</b><span class="d-type">動画</span><span>B Betty Broccoli v11（指の残像を消す・Betty を完全に消す）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v10/" target="_blank" rel="noopener" data-id="phonimaru-b-v10"><span class="k">10/14</span><b>B Betty Broccoli v10（左手が動く時に Betty を薄く）</b><span class="d-type">動画</span><span>B Betty Broccoli v10（左手が動く時に Betty を薄く）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v9/" target="_blank" rel="noopener" data-id="phonimaru-b-v9"><span class="k">10/14</span><b>B Betty Broccoli v9（鼻の二重をなくす）</b><span class="d-type">動画</span><span>B Betty Broccoli v9（鼻の二重をなくす）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v8/" target="_blank" rel="noopener" data-id="phonimaru-b-v8"><span class="k">10/14</span><b>B Betty Broccoli v8（左手を上に開く・口をなめらかに）</b><span class="d-type">動画</span><span>B Betty Broccoli v8（左手を上へ開く・口をなめらかに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v7/" target="_blank" rel="noopener" data-id="phonimaru-b-v7"><span class="k">10/14</span><b>B Betty Broccoli v7（手を90°回し、4本の指と手のひらの付け根をくっつけたグー）</b><span class="d-type">動画</span><span>B Betty Broccoli v7（両拳を90°回し、4本の指と手のひらの付け根を合わせたグー）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v6/" target="_blank" rel="noopener" data-id="phonimaru-b-v6"><span class="k">10/14</span><b>B Betty Broccoli v6（手のひらを合わせたグー・倒す時と /b/ をそろえる）</b><span class="d-type">動画</span><span>B Betty Broccoli v6（手のひらを合わせたグー・倒す瞬間と /b/ をそろえる・口をなめらかに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v5/" target="_blank" rel="noopener" data-id="phonimaru-b-v5"><span class="k">10/13</span><b>B Betty Broccoli v5（手の大きさを戻し、拳を横に開く動きに）</b><span class="d-type">動画</span><span>B Betty Broccoli v5（手の大きさを戻す・親指を倒して左右対称・拳を横に開く）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v4/" target="_blank" rel="noopener" data-id="phonimaru-b-v4"><span class="k">10/13</span><b>B Betty Broccoli v4（手の向きを先生の写真に合わせ、動きをなめらかに）</b><span class="d-type">動画</span><span>B Betty Broccoli v4（両拳を先生の写真の向きに・動きをなめらかに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v3/" target="_blank" rel="noopener" data-id="phonimaru-b-v3"><span class="k">10/13</span><b>B Betty Broccoli v3（Betty の大きさ・手の向き・口の動きを修正）</b><span class="d-type">動画</span><span>B Betty Broccoli v3（Betty を Annie 程度に縮小・手を縦向きに・口をなめらかに）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-b-v2/" target="_blank" rel="noopener" data-id="phonimaru-b-v2"><span class="k">10/13</span><b>B Betty Broccoli v2（A v2 と同じ作り方・声G）</b><span class="d-type">動画</span><span>B Betty Broccoli の最初の版（A v2 と同じ作り方・声G）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-v2-boyvoice/" target="_blank" rel="noopener" data-id="phonimaru-a-v2-boyvoice"><span class="k">10/13</span><b>A Annie Apple v2（少年らしい低めの声・4パターン）</b><span class="d-type">動画</span><span>A v2cg2 の声を少年らしい低めの声に替えた4パターン。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-v2-kidvoice/" target="_blank" rel="noopener" data-id="phonimaru-a-v2-kidvoice"><span class="k">10/13</span><b>A Annie Apple v2（声を明るい子どもの声に・4パターン）</b><span class="d-type">動画</span><span>A v2cg2 の声を明るい子どもの声に替えた4パターン。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-v2-cg2/" target="_blank" rel="noopener" data-id="phonimaru-a-v2-cg2"><span class="k">10/13</span><b>A Annie Apple v2（a と名前を Century Gothic に）</b><span class="d-type">動画</span><span>A v2 の名前と右下の a a a を Century Gothic にした版。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-v2-cg/" target="_blank" rel="noopener" data-id="phonimaru-a-v2-cg"><span class="k">10/13</span><b>A Annie Apple v2（a を Century Gothic に）</b><span class="d-type">動画</span><span>A v2 の右下の a a a を Century Gothic にした版。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-bangai-lipsync/" target="_blank" rel="noopener" data-id="phonimaru-a-bangai-lipsync"><span class="k">10/12</span><b>番外編 A Annie Apple（Kling 口パク）</b><span class="d-type">動画</span><span>番外編: 先生の声＋Kling lipsync の A（実験）。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-pixar-v7/" target="_blank" rel="noopener" data-id="phonimaru-a-pixar-v7"><span class="k">10/11</span><b>A Annie Apple ピクサー風（v7）</b><span class="d-type">動画</span><span>A ピクサー風 v6 の、口の開閉で出ていた残像を消した版。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-pixar-v6/" target="_blank" rel="noopener" data-id="phonimaru-a-pixar-v6"><span class="k">10/9</span><b>A Annie Apple ピクサー風（v6）</b><span class="d-type">動画</span><span>A ピクサー風 v5 の、口が閉じた所から開く動きをなめらかにした版。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-pixar-v5/" target="_blank" rel="noopener" data-id="phonimaru-a-pixar-v5"><span class="k">10/9</span><b>A Annie Apple ピクサー風（v5）</b><span class="d-type">動画</span><span>A ピクサー風 v4 の /æ/ の口を、先生の添付画像の大きさまで開けた版。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-pixar-v4/" target="_blank" rel="noopener" data-id="phonimaru-a-pixar-v4"><span class="k">10/8</span><b>A Annie Apple ピクサー風（v4）</b><span class="d-type">動画</span><span>A ピクサー風 v3 の手のひらの向き・/æ/ の口の大きさ・a の字（Century Gothic）を直した版。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-a-pixar-v3/" target="_blank" rel="noopener" data-id="phonimaru-a-pixar-v3"><span class="k">10/7</span><b>A Annie Apple ピクサー風（v3）</b><span class="d-type">動画</span><span>10/2 の A（ピクサー風）を、画角・/æ/ の口・原音・Annie の半透明で直した版。前の版との比較動画つき。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonimaru-abc-v1/" target="_blank" rel="noopener" data-id="phonimaru-abc-v1"><span class="k">10/7</span><b>フォニ丸pi ABC 3本（v1）</b><span class="d-type">動画</span><span>先生のご要望を台帳にして作った3D少年のA・B・C。原音そのまま・各10秒×3本。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/phonics-mouth-abc/" target="_blank" rel="noopener" data-id="phonics-mouth-abc"><span class="k">9/28</span><b>先生の音と口 a・b・c</b><span class="d-type">動画</span><span>マーク先生の実演を文字ごとに切り出し・声は加工せずそのまま。口の中を図で見せる1本約27秒×3本。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/avatar-a-frontal-v3/avatar_a_annie_apple_v3_frontal_sound.mp4" target="_blank" rel="noopener" data-id="avatar-a-frontal-v3"><span class="k">9/19</span><b>A動画 正面アングル版v3</b><span class="d-type">動画</span><span>KT添付サンプルベース・AI男声・開始ポーズ静止でaでリンゴ半透明。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/avatar-a-fix-v2/avatar_a_annie_apple_v2_sound.mp4" target="_blank" rel="noopener" data-id="avatar-a-fix-v2"><span class="k">9/13</span><b>A動画 修正版v2</b><span class="d-type">動画</span><span>男の子AI声・開始ポーズ静止でaでリンゴ半透明。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/video-archive/20260910_1809_b_betty_broccoli_camera_voiced.mp4" target="_blank" rel="noopener" data-id="b-betty-camera-voiced"><span class="k">9/10</span><b>B（Betty Broccoli・ぶ）カメラ形式動画</b><span class="d-type">動画</span><span>見本Aと同型で完成。3D男の子がブロッコリーで「ブッ」×3・実音つき。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/astra-test/astra_palmpose_annie_demo.mp4" target="_blank" rel="noopener" data-id="astra-palmpose"><span class="k">9/7</span><b>Astraテスト動画（手のひらAnnie Apple）</b><span class="d-type">動画</span><span>北浦先生改善点を満たす参考サンプル・12秒。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/t_4b54b441/avatar_a_annie_apple_sound.mp4" target="_blank" rel="noopener" data-id="avatar-a-sound"><span class="k">9/5</span><b>マーク先生アバター版A 音つき</b><span class="d-type">動画</span><span>先生アバターが「リンゴを口へ→『あっ』」・7.4秒ループ・先生の実音。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/t_4b54b441/avatar_a_annie_apple.mp4" target="_blank" rel="noopener" data-id="avatar-a-silent"><span class="k">9/5</span><b>同動画 無音版</b><span class="d-type">動画</span><span>音つき版と同一映像・音なし。投影時の音まわり調整・編集素材用。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/abc-prototype/" target="_blank" rel="noopener" data-id="abc-prototype"><span class="k">9/5</span><b>ABC試作動画3本</b><span class="d-type">動画</span><span>1文字＝1動画のプロトタイプ完成。A仮採用・B/C検品合格・実音入り。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/t_362c6bd1/a_annie_apple_loop3_preview.mp4" target="_blank" rel="noopener" data-id="a-loop3"><span class="k">9/4</span><b>A（Annie Apple）ループ動画</b><span class="d-type">動画</span><span>1文字＝1動画の第1号。4.7秒シームレスループ。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/t_dc78faab/viewer/" target="_blank" rel="noopener" data-id="gestures-viewer"><span class="k">9/4</span><b>26字ジェスチャー ビューア</b><span class="d-type">資料</span><span>26字の切り出しクリップを判定つきでブラウザ再生。</span><span class="ltype">▶ 動画</span></a>
+        <a class="link" href="/pros/deliverables/abc-lesson/" target="_blank" rel="noopener" data-id="abc-lesson"><span class="k">9/8</span><b>プロス ABC まねっこレッスン（対面版）</b><span class="d-type">教材</span><span>音・文字・アクションをひとつの授業に。教材画面・印刷カード・手引き・一式ダウンロードつき。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/video-archive/" target="_blank" rel="noopener" data-id="video-archive"><span class="k">9/7</span><b>動画一覧アーカイブ（常設）</b><span class="d-type">資料</span><span>KT送受信の動画を時系列で一覧保存・新旧並べ替え＋2本同時再生の比較モードつき。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/t_4b54b441/avatar_still_v1.png" target="_blank" rel="noopener" data-id="avatar-still-v1"><span class="k">9/5</span><b>マーク先生アバター 決定静止画</b><span class="d-type">元データ</span><span>ピクサー風の先生・右手に赤リンゴ。A〜全26字の動画の入力元。</span><span class="ltype">↗ 画像</span></a>
+        <a class="link" href="/pros/deliverables/t_362c6bd1/a_annie_still_v2.png" target="_blank" rel="noopener" data-id="a-still-v2"><span class="k">9/4</span><b>A キャラ静止画</b><span class="d-type">元データ</span><span>小文字 a のフォルム＝リンゴ本体。A動画の入力元。</span><span class="ltype">↗ 画像</span></a>
+        <a class="link" href="/pros/deliverables/lesson-restaurant-a2/lesson-restaurant-en-A2.md" target="_blank" rel="noopener" data-id="lesson-a2-md"><span class="k">9/4</span><b>英会話A2『レストランで注文する』</b><span class="d-type">教材</span><span>会話・単語・文法・練習5問つきのレッスン1本。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/lesson-restaurant-a2/audio-restaurant-en-A2-dialogue.mp3" target="_blank" rel="noopener" data-id="lesson-a2-audio"><span class="k">9/4</span><b>同レッスン 音声</b><span class="d-type">音声</span><span>2話者・A2向けスロー速度。本文の会話と完全一致を検証済み。</span><span class="ltype">▶ 音声</span></a>
+        <a class="link" href="/pros/deliverables/gesture_timemap_v1_oh.md" target="_blank" rel="noopener" data-id="timemap-v1"><span class="k">9/4</span><b>26字ジェスチャー実演タイムマップ（履歴）</b><span class="d-type">元データ</span><span>初版は推定でドリフトあり・タイミングには使わないこと。確定版は叩き台v1。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/t_dc78faab/README.md" target="_blank" rel="noopener" data-id="gestures-readme"><span class="k">9/4</span><b>26字ジェスチャー分解 叩き台v1</b><span class="d-type">元データ</span><span>26字の実演タイムスタンプ・クリップ26本・突合表を一式納品。</span><span class="ltype">↗ 別ページ</span></a>
+        <a class="link" href="/pros/deliverables/t_dc78faab/gestures.json" target="_blank" rel="noopener" data-id="gestures-json"><span class="k">9/4</span><b>gestures.json（機械可読マスタ）</b><span class="d-type">元データ</span><span>26字の開始/終了秒・実音タイミングを収録。</span><span class="ltype">↗ 別ページ</span></a>
+      </div>
+      <p class="archive-note">以前の試作・元データ・制作時の検品記録です。</p></div></details>
+    </section>
+    <section id="research" class="market-research" aria-labelledby="research-title">
+      <details class="disclosure"><summary><h2 id="research-title">教材・ゲーム市場と、プロスの展開案</h2><span>9/6調査・9/10定例の検討材料｜少数音の「遊べて読める1単元」から</span></summary><div class="detail-body">
+        <p class="research-status">公式情報を再確認 · 提案は未決定</p>
+        <p class="research-lead"><strong>実演動画・カード・3つの遊び・短い読本を、1単元に。</strong> まず既存のA・B・Cで品質を確認し、先生の指導順に合う6〜8音で「まねする→音をつなぐ→読める」を試す案です。</p>
+        <div class="research-cards">
+          <article><h3>1. 音と動きのたからさがし</h3><p>お手本をまねて、みんなでカードを探す。最後は文字から音を思い出す。<b>最初に試す候補。</b></p></article>
+          <article><h3>2. ことばキッチン</h3><p>音カードを食材のように並べ、一音ずつ言ってからつなげる。読めた語を絵と結びつける。</p></article>
+          <article><h3>3. よめた！ミニブック</h3><p>習った音を使う短い本を読む。QR音声と日本語ガイドで、家庭でももう一度遊ぶ。</p></article>
+        </div>
+        <div class="research-columns">
+          <div><h3>市場から学ぶこと</h3><ul>
+            <li><a href="https://agocards.com/phonics/ago-phonics-zero/?lang=ja" target="_blank" rel="noopener">AGO</a>：紙のゲームで、絵付き語から文字だけの読みへ。</li>
+            <li><a href="https://www.mpi-j.co.jp/c/item/2817/" target="_blank" rel="noopener">mpi BBL</a>：12冊5,390円。音声と読本をつなぐ。</li>
+            <li><a href="https://www.phonicsplay.co.uk/faqs" target="_blank" rel="noopener">PhonicsPlay</a>：個人年£12・学校年£90。ゲーム＋印刷物＋指導案。</li>
+            <li><a href="https://jollylearning.com/en-gb/jolly-classroom" target="_blank" rel="noopener">Jolly Classroom</a>：Phonicsは年£300／校。£120は評価専用。</li>
+          </ul></div>
+          <div><h3>無料と有料の分け方（仮案）</h3><ul>
+            <li><b>無料</b>：採用した実演2〜3音＋カード1枚＋遊び方1つ。</li>
+            <li><b>家庭用</b>：1単元のカード・QR・遊び・読本・日本語ガイド。</li>
+            <li><b>先生用</b>：授業台本・大判素材・配布文・確認票を追加。</li>
+            <li><b>継続契約</b>：次の単元の実需要と支援工数を確認してから。</li>
+          </ul></div>
+        </div>
+        <p class="research-correction"><strong>前の調査の訂正：</strong>動作を教える動画・アプリは既にあり、mpiにも動画と家庭学習アプリがあります。「国内空白」「1,600円が上限」「26本で首位」は根拠にしません。具体的な反例と出典は詳細資料に掲載しました。</p>
+        <div class="research-decision"><h3>9/10に決めたいこと</h3><p>対象年齢・最初の遊び・使用する音・無料体験の範囲・試用参加者。9月に授業で試し、10月に家庭と講師へ、11月に小規模販売、12月に継続判断する工程案です。</p><p>見る材料は<strong>先生の準備時間／自発的な反復／文字だけ・未練習語の読み／家庭での再利用／実購入と支援工数</strong>。児童の追跡を前提にしません。</p></div>
+        <div class="research-actions"><a class="action-link" href="market-research-2026-09-06.html">商品比較・価格・工程案を読む <span aria-hidden="true">↗</span></a><a href="2026-09-06_pros-phonics-market-and-product-strategy.md" download>調査資料を保存</a></div>
+        <p class="research-note">2026-09-06確認。海外価格は現地表示で、送料等を含みません。商品の存在と販売方式を確認した資料です。売上・利益・日本での需要・最適価格は未検証。既存の会議合意と担当タスクはそのままです。</p>
+      </div></details>
+    </section>
+    <section id="links">
+      <div class="sec-head"><h2>資料室</h2><p>計画書と、これまでの記録 <span class="upd-badge" title="2026-10-16 更新">10/16 Update</span></p></div>
+      <div class="links">
+        <a class="link" href="video-prompt.html"><span class="k">10/15 作り方</span><b>動画作成プロンプト（A〜D の実績から）</b><span>フォニックス動画の決まり・手順・北浦先生の指摘と直し方のまとめ。次の文字を作る時の資料</span></a>
+        <a class="link" href="sheets-2026-09-10.html"><span class="k">9/8 資料</span><b>9/10定例 判断資料 3枚</b><span>動画づくりの線／3者会談の土台／集客LINE運用の型。中身の記載と「PDFを開く」ボタンつき</span></a>
+        <a class="link" href="market-research-2026-09-06.html"><span class="k">9/6 調査</span><b>教材・ゲーム市場と展開案</b><span>商品比較・価格・3つの遊び・9〜12月の検証案。公式出典付き</span></a>
+        <a class="link" href="/pros/"><span class="k">入口</span><b>プロス 資料室</b><span>関係者共有ページの入口</span></a>
+        <a class="link" href="/pros/pross-kickoff-meeting-2026-08-27.html"><span class="k">8/27</span><b>キックオフ記録</b><span>第1回。結論「まずおもちゃを1つ」</span></a>
+        <a class="link" href="/pros/pross-ax-phonics-business-plan.html"><span class="k">計画</span><b>事業計画書</b><span>プロスAX・プロスフォニックス（7/23）</span></a>
+        <a class="link" href="transcripts.html"><span class="k">会議記録</span> <span class="upd-badge" title="2026-10-03 更新">10/3 Update</span><b>文字起こし一覧</b><span>定例ミーティングの全文。新しい順・時刻付き・検索できます</span></a>
+        <a class="link" href="sources.html"><span class="k">出典</span><b>出典と対照（26字）</b><span>正本（merged版PDF）とお話し通りの対照表。元資料のPDF 3冊も掲載しています</span></a>
+        <a class="link" href="https://turumaijichikyougikai-cmd.github.io/pros-phonics-toy/" target="_blank" rel="noopener"><span class="k">アプリ</span><b>フォニックスおもちゃ v0.2</b><span>26キャラ・ストーリー付き（ログイン不要）</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>PROS PHONICS チームの作業室 · 会議記録 2026-09-03 · 関係者内共有（アクセス制限あり）· 無断転載・外部共有はお控えください</footer>
+
+  <script src="dashboard.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { const a = document.getElementById('countdown'), b = document.getElementById('countdown-2'); if (a && b) b.textContent = a.textContent; });
+  </script>
+</body>
+</html>

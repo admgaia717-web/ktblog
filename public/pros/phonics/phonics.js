@@ -25,10 +25,13 @@
   function renderKpis() {
     const box = $("#kpis");
     if (!box) return;
-    const finals = D.items.filter(isFinal).length;
+    const V = window.PHONICS_VERSIONS;
+    const chars = V && V.letters ? V.letters.filter((L) => L.versions && L.versions.length).length : D.chars.length;
+    const finals = V && V.letters ? V.letters.filter((L) => L.final && L.status === "合格").length : D.items.filter(isFinal).length;
+    const pubCount = V && V.letters ? V.letters.reduce((n, L) => n + L.versions.filter((v) => !v.unpublished).length, 0) : D.items.length;
     box.innerHTML =
-      '<div class="kpi"><b>' + D.chars.length + '</b><span>キャラクター</span></div>' +
-      '<div class="kpi"><b>' + D.items.length + '</b><span>公開中の版</span></div>' +
+      '<div class="kpi"><b>' + chars + '</b><span>キャラクター</span></div>' +
+      '<div class="kpi"><b>' + pubCount + '</b><span>公開中の版</span></div>' +
       '<div class="kpi"><b>' + finals + '</b><span>先生の最終版</span></div>';
   }
 
@@ -386,27 +389,43 @@
     }
   }
 
-  /* ================= 進行状況 ================= */
+  /* ================= 進行状況（A〜Z・versions.js の台帳から） ================= */
   function renderStatus() {
     const tb = $("#statusBody");
     tb.innerHTML = "";
-    D.chars.forEach((c) => {
-      const finalItem = D.items.find((i) => i.slug === c.adopted_slug);
+    const V = window.PHONICS_VERSIONS;
+    if (!V || !V.letters) return;
+    const escT = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    V.letters.forEach((L) => {
       const tr = document.createElement("tr");
-      const tdWho = document.createElement("td");
-      tdWho.className = "who";
-      tdWho.textContent = c.name;
+      const tdL = document.createElement("td");
+      tdL.className = "who";
+      tdL.innerHTML = "<b>" + L.letter + "</b> " + escT(L.name || "");
       const tdV = document.createElement("td");
-      tdV.textContent = finalItem
-        ? (finalItem.letter + " " + (finalItem.title.match(/v\d+[a-z]?/) || ["—"])[0]) : "—";
-      const tdN = document.createElement("td");
-      tdN.textContent = c.count + "版";
+      if (L.current) {
+        const seq = L.letter + "-" + String(L.current.seq).padStart(2, "0");
+        tdV.innerHTML = '<span class="seqtag">' + seq + "</span> " + escT(L.current.label);
+        if (L.current.page) tdV.innerHTML = '<span class="seqtag">' + seq + '</span> <a href="' + L.current.page + '" target="_blank" rel="noopener">' + escT(L.current.label) + "</a>";
+      } else {
+        tdV.textContent = "—";
+      }
       const tdS = document.createElement("td");
       const st = document.createElement("span");
-      st.className = "state " + (c.note === "公開済み" ? "live" : "wait");
-      st.textContent = c.note;
+      st.className = "state " + (L.status === "合格" ? "live" : (L.status === "まだ" ? "" : "wait"));
+      st.textContent = L.status;
       tdS.appendChild(st);
-      tr.appendChild(tdWho); tr.appendChild(tdV); tr.appendChild(tdN); tr.appendChild(tdS);
+      const tdF = document.createElement("td");
+      if (L.final) {
+        const a = document.createElement("a");
+        a.href = L.final.page;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.textContent = L.final.label + (L.final.note ? "（" + L.final.note + "）" : "");
+        tdF.appendChild(a);
+      } else {
+        tdF.textContent = "—";
+      }
+      tr.appendChild(tdL); tr.appendChild(tdV); tr.appendChild(tdS); tr.appendChild(tdF);
       tb.appendChild(tr);
     });
   }

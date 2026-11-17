@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>教材動画ワークスペース | 依頼する・見る・決める</title>
+<link rel="stylesheet" href="phonics.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="logo" href="#top"><span class="mark"></span><span class="lt">教材動画ワークスペース<small>PROS PHONICS</small></span></a>
+    <nav aria-label="ページ内">
+      <a href="#make">頼む</a>
+      <a href="#board">進行中</a>
+      <a href="#library">見る</a>
+      <a href="#status">状態</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">北浦先生・蜂谷さん・KT の教材動画</p>
+      <h1>頼む、見る、決める。<br>ここで全部できる。</h1>
+      <p class="lead">動画の依頼、進捗の確認、成果物の視聴まで、この画面だけで完結します。</p>
+      <div class="kpis" id="kpis"></div>
+    </div>
+  </section>
+
+  <!-- 依頼 -->
+  <section id="make" class="wrap band">
+    <div class="band-head">
+      <span class="num">01</span>
+      <div>
+        <h2>動画を頼む</h2>
+        <p class="sub">直すところを書いて送るだけ。作業の進み具合は下の「進行」で見られます。</p>
+      </div>
+    </div>
+
+    <form id="form" class="composer" autocomplete="off">
+      <label class="field">
+        <span class="lab">どこ直したい？</span>
+        <textarea id="body" rows="4" required
+          placeholder="例: Kelly の拳が顔に被っている。下げてほしい。&#10;例: Z を作って。"></textarea>
+        <span class="hint" id="hint">キャラクター名も書いておくと早く動けます。例「Kelly」「Lenny」</span>
+      </label>
+
+      <div class="composer-foot">
+        <label class="field who">
+          <span class="lab">誰が</span>
+          <select id="name" required>
+            <option value="北浦先生">北浦先生</option>
+            <option value="蜂谷さん">蜂谷さん</option>
+            <option value="KT">KT</option>
+          </select>
+        </label>
+        <label class="field budget">
+          <span class="lab">生成の予算（ドル）<i>任意</i></span>
+          <input type="text" id="budget" inputmode="decimal" placeholder="1.0">
+        </label>
+        <label class="check">
+          <input type="checkbox" id="ok" required>
+          <span>チーム内だけで扱うことを確認しました</span>
+        </label>
+        <button type="submit" id="send" class="btn-primary">
+          <span class="btn-label">依頼を送る</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+      <p class="msg" id="msg" role="status"></p>
+    </form>
+  </section>
+
+  <!-- 進行 -->
+  <section id="board" class="wrap band">
+    <div class="band-head">
+      <span class="num">02</span>
+      <div>
+        <h2>進行中</h2>
+        <p class="sub">出した依頼の進み具合。承認が要るものはここで承認できます。</p>
+      </div>
+    </div>
+
+    <div class="board" id="boardList">
+      <p class="empty">依頼はまだありません。上のフォームから送ってください。</p>
+    </div>
+  </section>
+
+  <!-- 成果物 -->
+  <section id="library" class="wrap band">
+    <div class="band-head">
+      <span class="num">03</span>
+      <div>
+        <h2>見る</h2>
+        <p class="sub">先生の最終版には <span class="pill-final">印</span>。過去の版も全部残してあります。</p>
+      </div>
+    </div>
+
+    <div class="filters" id="filterbar">
+      <div class="chars" id="chars" role="tablist" aria-label="キャラクターで絞り込む"></div>
+      <div class="filter-right">
+        <label class="search">
+          <span class="sr-only">検索</span>
+          <input type="search" id="q" placeholder="検索（例: 声、口、Annie）" autocomplete="off">
+        </label>
+        <label class="switch">
+          <input type="checkbox" id="finalOnly">
+          <span class="track"><span class="knob"></span></span>
+          <span>先生の最終版だけ</span>
+        </label>
+      </div>
+    </div>
+
+    <div id="list" class="grid" aria-live="polite"></div>
+    <p id="empty" class="empty" hidden>条件に合う動画がありません。</p>
+  </section>
+
+  <!-- 進行状況 -->
+  <section id="status" class="wrap band">
+    <div class="band-head">
+      <span class="num">04</span>
+      <div>
+        <h2>状態</h2>
+        <p class="sub">各キャラクターが今どの状態か。</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="status-table">
+        <thead><tr><th>キャラクター</th><th>現在の版</th><th>公開数</th><th>状態</th></tr></thead>
+        <tbody id="statusBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<!-- 動画プレーヤー -->
+<div id="player" class="player" hidden>
+  <div class="player-box">
+    <button id="closePlayer" class="close" aria-label="閉じる">×</button>
+    <div class="player-head">
+      <h3 id="pTitle"></h3>
+      <p class="pMeta" id="pMeta"></p>
+    </div>
+    <video id="v" controls playsinline preload="metadata"></video>
+    <p class="pNote" id="pNote"></p>
+  </div>
+</div>
+
+<!-- 依頼の詳細 -->
+<div id="drawer" class="drawer" hidden>
+  <div class="drawer-box">
+    <button id="closeDrawer" class="close" aria-label="閉じる">×</button>
+    <div id="drawerBody"></div>
+  </div>
+</div>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>PROS PHONICS｜制作: フォニ丸D（DeepSeek Harness）｜<a href="../dashboard/">チームの作業室へ戻る</a></p>
+  </div>
+</footer>
+
+<script src="deliverables.js"></script>
+<script src="phonics.js"></script>
+</body>
+</html>
