@@ -1517,13 +1517,13 @@ window.PHONICS_VERSIONS = {
    "name": "Ozzie Olive",
    "status": "先生の確認待ち",
    "current": {
-    "seq": 10,
-    "label": "v10（指が口元で長くなるのを直した版）",
-    "page": "/pros/deliverables/phonimaru-o-v10/"
+    "seq": 13,
+    "label": "v13（腕・残像・指先・口を直した版）",
+    "page": "/pros/deliverables/phonimaru-o-v13/"
    },
    "final": {
-    "label": "確認中（v10（指が口元で長くなるのを直した版））",
-    "page": "/pros/deliverables/phonimaru-o-v10/",
+    "label": "確認中（v13）",
+    "page": "/pros/deliverables/phonimaru-o-v13/",
     "date": "",
     "note": "合格版はまだ出ていません"
    },
@@ -1601,7 +1601,28 @@ window.PHONICS_VERSIONS = {
      "label": "v10（指が口元で長くなるのを直した版）",
      "slug": "phonimaru-o-v10",
      "date": "2026-11-16",
-     "page": "/pros/deliverables/phonimaru-o-v10/"
+     "page": "/pros/deliverables/phonimaru-o-v13/"
+    },
+    {
+     "seq": 11,
+     "label": "v11（先生が赤で囲んだ範囲だけ動かした版）",
+     "slug": "phonimaru-o-v11",
+     "date": "2026-11-16",
+     "page": "/pros/deliverables/phonimaru-o-v11/"
+    },
+    {
+     "seq": 12,
+     "label": "v12（描き直した赤線の範囲を守った版）",
+     "slug": "phonimaru-o-v12",
+     "date": "2026-11-17",
+     "page": "/pros/deliverables/phonimaru-o-v12/"
+    },
+    {
+     "seq": 13,
+     "label": "v13（腕・残像・指先・口を直した版）",
+     "slug": "phonimaru-o-v13",
+     "date": "2026-11-17",
+     "page": "/pros/deliverables/phonimaru-o-v13/"
     }
    ]
   },

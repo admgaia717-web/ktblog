@@ -367,9 +367,10 @@ body.trpage h2 {scroll-margin-top:150px}
 .location-fold {margin:0 0 24px}
 
 /* ---- フォニックス動画ハブ（2026-11-17） ---- */
-.phonics-hub {margin:14px 0 6px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);padding:18px 20px 14px}
-.phonics-hub h3 {margin:0;font-size:1.25rem;font-weight:800;color:var(--ink)}
-.phonics-hub h3 span {font-size:.85rem;font-weight:700;color:var(--muted);margin-left:10px}
+.phonics-hub {margin:14px 0 6px}
+.phonics-hub > summary h2 {font-size:1.08rem;font-weight:800}
+.phonics-hub > .detail-body {padding:4px 22px 16px}
+.phonics-hub[open] > summary {border-bottom:1px solid var(--line)}
 .hub-sub {margin:6px 0 14px;font-size:.9rem;color:var(--muted)}
 .hub-sub a {color:var(--accent);font-weight:700}
 .final-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
