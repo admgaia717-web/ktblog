@@ -1,6 +1,6 @@
-// 自動生成（phonics_hub_build.py + add_n_versions.py）。手で直さないこと。
+// 自動生成（phonics_hub_build.py + add_n_versions.py + fix4.py）。手で直さないこと。
 window.PHONICS_VERSIONS = {
- "generatedAt": "2026-11-17 14:05 +0900",
+ "generatedAt": "2026-11-18 10:17 +0900",
  "sources": "費用=pi-brain/budget/ledger.json・最終版=lab/final-abc/FINAL-INDEX.md（scotty 実測・機械転記）・掲載順=ktblog の掲載コミット＋今回の新規17本",
  "letters": [
   {
@@ -1685,13 +1685,13 @@ window.PHONICS_VERSIONS = {
    "name": "Ozzie Olive",
    "status": "先生の確認待ち",
    "current": {
-    "seq": 13,
-    "label": "v13（腕・残像・指先・口を直した版）",
-    "page": "/pros/deliverables/phonimaru-o-v13/"
+    "seq": 17,
+    "label": "v17（v15 に戻して口元だけ直した版）",
+    "page": "/pros/deliverables/phonimaru-o-v17/"
    },
    "final": {
-    "label": "確認中（v13）",
-    "page": "/pros/deliverables/phonimaru-o-v13/",
+    "label": "確認中（v17）",
+    "page": "/pros/deliverables/phonimaru-o-v17/",
     "date": "",
     "note": "合格版はまだ出ていません"
    },
@@ -1791,6 +1791,34 @@ window.PHONICS_VERSIONS = {
      "slug": "phonimaru-o-v13",
      "date": "2026-11-17",
      "page": "/pros/deliverables/phonimaru-o-v13/"
+    },
+    {
+     "seq": 14,
+     "label": "v14（腕の二重・口元の指先を直した版）",
+     "slug": "phonimaru-o-v14",
+     "date": "2026-11-17",
+     "page": "/pros/deliverables/phonimaru-o-v14/"
+    },
+    {
+     "seq": 15,
+     "label": "v15（指の周りの縁取りを減らした版）",
+     "slug": "phonimaru-o-v15",
+     "date": "2026-11-17",
+     "page": "/pros/deliverables/phonimaru-o-v15/"
+    },
+    {
+     "seq": 16,
+     "label": "v16（口と指の間の跡・口の左右の跡を減らした版）",
+     "slug": "phonimaru-o-v16",
+     "date": "2026-11-17",
+     "page": "/pros/deliverables/phonimaru-o-v16/"
+    },
+    {
+     "seq": 17,
+     "label": "v17（v15 に戻して口元だけ直した版）",
+     "slug": "phonimaru-o-v17",
+     "date": "2026-11-17",
+     "page": "/pros/deliverables/phonimaru-o-v17/"
     }
    ]
   },
