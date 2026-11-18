@@ -1,6 +1,6 @@
-// 自動生成（phonics_hub_build.py + add_n_versions.py + fix4.py）。手で直さないこと。
+// 自動生成（phonics_hub_build.py ほか）。手で直さないこと。
 window.PHONICS_VERSIONS = {
- "generatedAt": "2026-11-18 10:17 +0900",
+ "generatedAt": "2026-11-18 10:44 +0900",
  "sources": "費用=pi-brain/budget/ledger.json・最終版=lab/final-abc/FINAL-INDEX.md（scotty 実測・機械転記）・掲載順=ktblog の掲載コミット＋今回の新規17本",
  "letters": [
   {
@@ -13,10 +13,10 @@ window.PHONICS_VERSIONS = {
     "page": "/pros/deliverables/phonimaru-a-v2-cg2/"
    },
    "final": {
-    "label": "v2cg2 映像＋声G",
+    "label": "v2cg2（最終版）",
     "page": "/pros/deliverables/phonimaru-a-v2-cg2/",
     "date": "—",
-    "note": "先生の確定の一言を確認中（最終版候補）"
+    "note": ""
    },
    "cost": null,
    "versions": [
@@ -1775,7 +1775,7 @@ window.PHONICS_VERSIONS = {
      "seq": 11,
      "label": "v11（先生が赤で囲んだ範囲だけ動かした版）",
      "slug": "phonimaru-o-v11",
-     "date": "2026-11-16",
+     "date": "2026-11-17",
      "page": "/pros/deliverables/phonimaru-o-v11/"
     },
     {
