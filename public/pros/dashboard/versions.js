@@ -1,6 +1,6 @@
-// 自動生成（phonics_hub_build.py ほか）。手で直さないこと。
+// 自動生成（phonics_hub_build.py + add_n_versions.py + fix4/5/7）。手で直さないこと。
 window.PHONICS_VERSIONS = {
- "generatedAt": "2026-11-18 10:44 +0900",
+ "generatedAt": "2026-11-20 11:47 +0900",
  "sources": "費用=pi-brain/budget/ledger.json・最終版=lab/final-abc/FINAL-INDEX.md（scotty 実測・機械転記）・掲載順=ktblog の掲載コミット＋今回の新規17本",
  "letters": [
   {
@@ -1683,18 +1683,13 @@ window.PHONICS_VERSIONS = {
   {
    "letter": "O",
    "name": "Ozzie Olive",
-   "status": "先生の確認待ち",
+   "status": "作業中",
    "current": {
-    "seq": 17,
-    "label": "v17（v15 に戻して口元だけ直した版）",
-    "page": "/pros/deliverables/phonimaru-o-v17/"
+    "seq": 18,
+    "label": "v20（不採用）",
+    "page": "/pros/deliverables/phonimaru-o-v20/"
    },
-   "final": {
-    "label": "確認中（v17）",
-    "page": "/pros/deliverables/phonimaru-o-v17/",
-    "date": "",
-    "note": "合格版はまだ出ていません"
-   },
+   "final": null,
    "cost": {
     "budget": 6.15,
     "spent": 6.15,
@@ -1819,6 +1814,83 @@ window.PHONICS_VERSIONS = {
      "slug": "phonimaru-o-v17",
      "date": "2026-11-17",
      "page": "/pros/deliverables/phonimaru-o-v17/"
+    },
+    {
+     "seq": 18,
+     "label": "v20（不採用）",
+     "slug": "phonimaru-o-v20",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-o-v20/"
+    }
+   ]
+  },
+  {
+   "letter": "P",
+   "name": "Puffy Popcorn",
+   "status": "先生の確認待ち",
+   "current": {
+    "seq": 1,
+    "label": "v1（グー→パー、/p/ の口、Puffy 半透明）",
+    "page": "/pros/deliverables/phonimaru-p-v1/"
+   },
+   "final": null,
+   "cost": {
+    "spent_usd": 1.25,
+    "orders": [
+     {
+      "job": "pf_start",
+      "endpoint": "fal-ai/nano-banana-pro/edit",
+      "usd": 0.3,
+      "total_after": 0.3,
+      "at": "2026-11-19 20:04:44 +0900"
+     },
+     {
+      "job": "pf_end",
+      "endpoint": "fal-ai/nano-banana-pro/edit",
+      "usd": 0.3,
+      "total_after": 0.6,
+      "at": "2026-11-19 20:04:45 +0900"
+     },
+     {
+      "job": "pv1",
+      "endpoint": "alibaba/wan-3.0/image-to-video",
+      "usd": 0.6,
+      "total_after": 1.2,
+      "at": "2026-11-19 21:13:50 +0900"
+     },
+     {
+      "job": "vc_p_s7",
+      "endpoint": "fal-ai/elevenlabs/voice-changer",
+      "usd": 0.05,
+      "total_after": 1.25,
+      "at": "2026-11-19 21:29:53 +0900"
+     }
+    ],
+    "budget_changes": [
+     {
+      "from": null,
+      "to": 2.0,
+      "ok_link": "https://ktailabo.tail5c4c1d.ts.net/pros/pl/s6pm9jpajtbixfkqj9kg369oxo",
+      "ok_by": "kitaura",
+      "at": "2026-11-19 20:03:53 +0900"
+     }
+    ],
+    "budget_usd": 2.0
+   },
+   "versions": [
+    {
+     "seq": 1,
+     "label": "v1（グー→パー、/p/ の口、Puffy 半透明）",
+     "slug": "phonimaru-p-v1",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-p-v1/"
+    },
+    {
+     "seq": 2,
+     "label": "動画AI 1回目（合成前の素の動画）",
+     "slug": "phonimaru-p-douga1",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-p-douga1/"
     }
    ]
   },

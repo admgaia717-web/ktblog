@@ -404,6 +404,21 @@ function renderLastUpdated() {
   }).catch(() => { /* 変更できないときはHTMLに書かれた日付のまま */ });
 }
 
+/* 履歴のA〜Zボタン: 押すとその文字を開いてそこへ飛ぶ（2026-11-17） */
+function initPhJump() {
+  const wrap = $('#ph-jump');
+  if (!wrap) return;
+  wrap.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-l]');
+    if (!b || b.disabled) return;
+    const target = document.getElementById('ph-letter-' + b.dataset.l);
+    if (!target) return;
+    for (const d of wrap.parentElement.querySelectorAll('details.ph-letter')) d.open = (d === target);
+    target.open = true;
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
+
 function renderCountdown() {
   const target = new Date(MEETING.next.iso);
   const now = new Date();
@@ -463,6 +478,7 @@ function init() {
   renderBoard();
   renderCountdown();
   renderLastUpdated();
+  initPhJump();
   $('#meeting-next').textContent = MEETING.next.label;
   $('#filters').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-filter]');

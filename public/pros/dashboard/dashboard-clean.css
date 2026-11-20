@@ -382,10 +382,21 @@ body.trpage h2 {scroll-margin-top:150px}
 .final-card video {width:100%;aspect-ratio:16/9;border-radius:8px;background:#111;display:block}
 .fc-link {font-size:.8rem;font-weight:700;color:var(--accent)}
 .phonics-history summary h2, .phonics-cost summary h2 {font-size:1.02rem}
-.ph-letter {margin:0 0 18px}
-.ph-letter h4 {margin:6px 0 8px;font-size:.95rem;color:var(--ink);border-left:4px solid var(--accent);padding-left:8px}
-.ph-letter h4 span {font-weight:400;color:var(--muted);font-size:.8rem;margin-left:8px}
-.ph-letter .links {display:flex;flex-direction:column;gap:8px;grid-template-columns:none}
+.ph-letter {margin:0 0 10px;border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden}
+.ph-letter > summary {list-style:none;display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer}
+.ph-letter > summary::-webkit-details-marker {display:none}
+.ph-letter > summary:after {content:"＋";margin-left:auto;flex-shrink:0;color:var(--accent);font-size:18px;font-weight:400}
+.ph-letter[open] > summary:after {content:"−"}
+.ph-letter > summary:hover {background:#fafbf7}
+.ph-letter > summary h4 {margin:0;font-size:.95rem;font-weight:800;color:var(--ink)}
+.ph-letter > summary h4 span {font-weight:400;color:var(--muted);font-size:.8rem;margin-left:8px}
+.ph-letter > summary .ph-count {margin-left:auto;margin-right:12px;font-weight:400;color:var(--muted);font-size:.78rem;flex-shrink:0}
+.ph-letter > .ph-letter-body {padding:2px 14px 12px}
+.ph-letter .links {display:flex;flex-direction:column;gap:8px}
+.ph-jump {display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.ph-jump-btn {min-width:34px;height:30px;border:1px solid var(--line);background:#fff;border-radius:6px;font-weight:800;color:var(--accent);cursor:pointer;font-family:var(--font-en);font-size:.9rem}
+.ph-jump-btn:hover {background:var(--broccoli-soft)}
+.ph-jump-btn[disabled] {color:#b9c2ba;background:var(--cream);cursor:default;border-style:dashed}
 .ph-reserved {display:flex;align-items:center;gap:8px;padding:8px 12px;border:1px dashed var(--line);border-radius:8px;color:var(--muted);font-size:.85rem;background:var(--cream)}
 .ph-reserved b {color:var(--muted);font-weight:600}
 .ph-note {margin:8px 0 0;font-size:.8rem;color:var(--muted)}
