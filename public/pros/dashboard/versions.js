@@ -1,6 +1,6 @@
 // 自動生成（phonics_hub_build.py + add_n_versions.py + fix4/5/7）。手で直さないこと。
 window.PHONICS_VERSIONS = {
- "generatedAt": "2026-11-20 11:47 +0900",
+ "generatedAt": "2026-11-20 13:51 +0900",
  "sources": "費用=pi-brain/budget/ledger.json・最終版=lab/final-abc/FINAL-INDEX.md（scotty 実測・機械転記）・掲載順=ktblog の掲載コミット＋今回の新規17本",
  "letters": [
   {
@@ -1683,17 +1683,17 @@ window.PHONICS_VERSIONS = {
   {
    "letter": "O",
    "name": "Ozzie Olive",
-   "status": "作業中",
+   "status": "先生の確認待ち",
    "current": {
-    "seq": 18,
-    "label": "v20（不採用）",
-    "page": "/pros/deliverables/phonimaru-o-v20/"
+    "seq": 26,
+    "label": "v27（最終候補）",
+    "page": "/pros/deliverables/phonimaru-o-v27/"
    },
    "final": null,
    "cost": {
-    "budget": 6.15,
-    "spent": 6.15,
-    "remaining": 0.0
+    "budget": 6.44,
+    "spent": 6.36,
+    "remaining": 0.08
    },
    "versions": [
     {
@@ -1821,6 +1821,62 @@ window.PHONICS_VERSIONS = {
      "slug": "phonimaru-o-v20",
      "date": "2026-11-19",
      "page": "/pros/deliverables/phonimaru-o-v20/"
+    },
+    {
+     "seq": 19,
+     "label": "v18（途中の版）",
+     "slug": "phonimaru-o-v18",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-o-v18/"
+    },
+    {
+     "seq": 20,
+     "label": "v19（途中の版）",
+     "slug": "phonimaru-o-v19",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-o-v19/"
+    },
+    {
+     "seq": 21,
+     "label": "v21（途中の版）",
+     "slug": "phonimaru-o-v21",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-o-v21/"
+    },
+    {
+     "seq": 22,
+     "label": "v22（途中の版）",
+     "slug": "phonimaru-o-v22",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-o-v22/"
+    },
+    {
+     "seq": 23,
+     "label": "v23（途中の版）",
+     "slug": "phonimaru-o-v23",
+     "date": "2026-11-19",
+     "page": "/pros/deliverables/phonimaru-o-v23/"
+    },
+    {
+     "seq": 24,
+     "label": "v24（途中の版）",
+     "slug": "phonimaru-o-v24",
+     "date": "2026-11-20",
+     "page": "/pros/deliverables/phonimaru-o-v24/"
+    },
+    {
+     "seq": 25,
+     "label": "v26（途中の版）",
+     "slug": "phonimaru-o-v26",
+     "date": "2026-11-20",
+     "page": "/pros/deliverables/phonimaru-o-v26/"
+    },
+    {
+     "seq": 26,
+     "label": "v27（最終候補）",
+     "slug": "phonimaru-o-v27",
+     "date": "2026-11-20",
+     "page": "/pros/deliverables/phonimaru-o-v27/"
     }
    ]
   },
