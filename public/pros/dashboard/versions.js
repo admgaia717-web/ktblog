@@ -1,6 +1,6 @@
 // 自動生成（phonics_hub_build.py + add_n_versions.py + fix4/5/7）。手で直さないこと。
 window.PHONICS_VERSIONS = {
- "generatedAt": "2026-11-20 13:51 +0900",
+ "generatedAt": "2026-11-20 15:01 +0900",
  "sources": "費用=pi-brain/budget/ledger.json・最終版=lab/final-abc/FINAL-INDEX.md（scotty 実測・機械転記）・掲載順=ktblog の掲載コミット＋今回の新規17本",
  "letters": [
   {
@@ -1685,9 +1685,9 @@ window.PHONICS_VERSIONS = {
    "name": "Ozzie Olive",
    "status": "先生の確認待ち",
    "current": {
-    "seq": 26,
-    "label": "v27（最終候補）",
-    "page": "/pros/deliverables/phonimaru-o-v27/"
+    "seq": 29,
+    "label": "v30（最終版）",
+    "page": "/pros/deliverables/phonimaru-o-v30/"
    },
    "final": null,
    "cost": {
@@ -1877,6 +1877,27 @@ window.PHONICS_VERSIONS = {
      "slug": "phonimaru-o-v27",
      "date": "2026-11-20",
      "page": "/pros/deliverables/phonimaru-o-v27/"
+    },
+    {
+     "seq": 27,
+     "label": "v28（途中の版）",
+     "slug": "phonimaru-o-v28",
+     "date": "2026-11-20",
+     "page": "/pros/deliverables/phonimaru-o-v28/"
+    },
+    {
+     "seq": 28,
+     "label": "v29（途中の版）",
+     "slug": "phonimaru-o-v29",
+     "date": "2026-11-20",
+     "page": "/pros/deliverables/phonimaru-o-v29/"
+    },
+    {
+     "seq": 29,
+     "label": "v30（最終版）",
+     "slug": "phonimaru-o-v30",
+     "date": "2026-11-20",
+     "page": "/pros/deliverables/phonimaru-o-v30/"
     }
    ]
   },
