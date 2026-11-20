@@ -19,6 +19,20 @@
     <main class="wrap">
     <div class="sheet-toolbar"><p class="toolbar-note"><b class="st st-ng">検討用・先生に出す版ではありません</b> · 11/19 · Claude（作業の途中経過。費用 0ドル） · このページは一覧に載せていません</p></div>
     <article class="sheet">
+      <div class="sheet-head"><span class="sheet-no">11/20 · 現時点の最良候補</span><h3>v26（ほおのくぼみを FLUX.3 で描き直し）</h3><span class="sheet-sub">左 v23・右 v26</span></div>
+      <div class="vgrid">
+        <figure><video src="compare_cheek_6x_halfspeed_v23_v26.mp4" poster="img/compare_cheek_6x_halfspeed_v23_v26.jpg" controls playsinline preload="none" aria-label="ほお 6倍・半分の速さ"></video><figcaption><b>ほおと指・6倍・半分の速さ</b> 指が口の横に来た所（3回とも）。</figcaption></figure>
+        <figure><video src="compare_hand_2x_v23_v26.mp4" poster="img/compare_hand_2x_v23_v26.jpg" controls playsinline preload="none" aria-label="手と顔 2倍・通常の速さ"></video><figcaption><b>手と顔・2倍・通常の速さ</b> 音あり。</figcaption></figure>
+        <figure><video src="O_ozzie_olive_v26.mp4" poster="img/O_ozzie_olive_v26.jpg" controls playsinline preload="none" aria-label="v26 単体"></video><figcaption><b>v26 単体</b> 10秒・音あり。</figcaption></figure>
+      </div>
+      <ul>
+        <li>やったこと：1回目の指が口に来る区間（1.2秒）のほおと指のまわりを切り出し、FLUX.3 Edit Video（fal、0.03ドル/秒）で「ほおのくぼみ・段差を消す」描き直しを1回。結果のうち、指の真下のほお（くぼみの所）だけを貼り戻し、2回目・3回目にも同じ直しを使った。</li>
+        <li>結果（4倍で確認）：くぼみ（縦の段差）は消え、ほおがなめらかにつながった。指の形・口・色は v23 と同じ。v23 と違う画素は、3回の指が口に来るコマ（87コマ）の、x 973〜1052・y 328〜429 の中だけ。名前の区間ほかは v23 と差0。</li>
+        <li>費用：今回 約0.04ドル（台帳は見込みの0.06ドルで記録）。O の合計 6.36ドル／予算 6.44ドル。</li>
+        <li>まだ残る所：上へ戻る所が速い（コマ 79→80 ほか）、手首の下の細い白い筋、ひじの袖の切れ目（v23 と同じ）。</li>
+      </ul>
+    </article>
+    <article class="sheet">
       <div class="sheet-head"><span class="sheet-no">11/20 · ほおのくぼみ</span><h3>v23 か v24 か（未決）</h3><span class="sheet-sub">左 v23・右 v24</span></div>
       <div class="vgrid">
         <figure><video src="compare_cheek_6x_halfspeed_v23_v24.mp4" poster="img/compare_cheek_6x_halfspeed_v23_v24.jpg" controls playsinline preload="none" aria-label="ほお 6倍・半分の速さ"></video><figcaption><b>ほおと指・6倍・半分の速さ</b> 指が口の横に来た所（2.7秒・5.2秒・7.7秒のあと）を見てください。</figcaption></figure>
