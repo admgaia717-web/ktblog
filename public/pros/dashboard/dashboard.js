@@ -419,6 +419,32 @@ function initPhJump() {
   });
 }
 
+/* pi の記録追加が月ヘッダの後半を移動させることがあるため、読み込み時に形を整える（2026-11-20） */
+function repairChangesDom() {
+  for (const sum of document.querySelectorAll('.clh-month > summary')) {
+    const nested = sum.querySelectorAll(':scope details.clh-item');
+    if (!nested.length) continue;
+    let body = sum.nextElementSibling;
+    if (!body || !body.classList.contains('detail-body')) {
+      body = document.createElement('div');
+      body.className = 'detail-body';
+      sum.after(body);
+    }
+    for (const d of nested) body.appendChild(d);
+    const outer = sum.querySelector(':scope > span:last-of-type');
+    if (outer && !outer.textContent.includes('新しい順')) {
+      const sp = document.createElement('span');
+      sp.textContent = '・新しい順';
+      outer.appendChild(sp);
+    }
+  }
+  for (const n of document.querySelectorAll('.detail-body')) {
+    for (const t of Array.from(n.childNodes)) {
+      if (t.nodeType === 3 && t.textContent.trim() === '・新しい順') t.remove();
+    }
+  }
+}
+
 function renderCountdown() {
   const target = new Date(MEETING.next.iso);
   const now = new Date();
@@ -478,6 +504,7 @@ function init() {
   renderBoard();
   renderCountdown();
   renderLastUpdated();
+  repairChangesDom();
   initPhJump();
   $('#meeting-next').textContent = MEETING.next.label;
   $('#filters').addEventListener('click', (e) => {
