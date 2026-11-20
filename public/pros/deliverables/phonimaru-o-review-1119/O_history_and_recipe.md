@@ -7,6 +7,15 @@
 
 ---
 
+## 0. 受け取る人へ（プロスプロジェクトの Opus 5.5 → フォニ丸pi）
+1. 今の最良は **v27**（scotty `~/phonics-durable/lab/20261112-o/v27/O_ozzie_olive_v27.mp4`）。蜂谷さんの評価は「若干気になるけど及第点」（11/20）。**北浦先生にはまだ出していない。** 出す時は蜂谷さんの OK を取ってから、submit.py で。
+2. 作業の Python は scotty の `~/phonics-durable/lab/20261112-o/.venv/bin/python`（opencv・torch・RIFE 4.25・fal-client 入り）。システムの python3 には opencv も fal_client も入っていない。
+3. 有料の注文は、必ず `~/phonics-durable/pi-brain/budget/fal_run.py submit ... --letter O` を通す（予算の番人）。予算の追加は、北浦先生か蜂谷さんの Mattermost の OK 投稿のリンクが要る。
+4. 直しは「原因のコマを4倍で見て、方法を1つに決めて、1回で作る」。前の版より悪い所が出たら入れない。同じ方法のやり直しは3回まで。
+5. ktblog に載せる時は、`~/ktblog` で `git pull --rebase` → ページと変更履歴を1件 → push → 認証つきで開いて確かめる。wrangler では配信しない。
+
+---
+
 ## 1. 修正の軌跡（何をして、何が効いて、何が無駄だったか）
 
 | 版 | したこと | 結果 |
