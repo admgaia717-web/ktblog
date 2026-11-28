@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>英会話9案の収支</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,800&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE work: a finance desk's plan, conclusion first, every number sourced or marked 仮
+   IDEA a school ledger crossed with a station timetable board
+   PICTURE first-year gross margin per plan as ledger bars, live with the AI-cost switch
+   COLOUR white or night ground, black ink, signal red for what matters, one grey
+   TYPE BIZ UDPGothic (universal design, Japanese) + Archivo wide for figures
+   LAYOUT finding and live totals across the top, ledger bars beneath; phone stacks */
+:root{color-scheme:light dark;--bg:light-dark(#fff,#0e0e0e);--ink:light-dark(#111,#f1f1f1);--sub:light-dark(#5c5c5c,#a9a9a9);--line:light-dark(#dcdcdc,#2f2f2f);--soft:light-dark(#f4f4f4,#1a1a1a);--track:light-dark(#e6e6e6,#2a2a2a);--red:light-dark(#d9002a,#ff5a6e);--redsoft:light-dark(#fdecef,#2b1115)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "BIZ UDPGothic","Hiragino Sans","Noto Sans JP",sans-serif;overflow-x:clip}
+.num{font-family:Archivo,"BIZ UDPGothic",sans-serif;font-stretch:112%;font-weight:800;font-variant-numeric:tabular-nums}
+.band{padding-block:clamp(28px,4vw,56px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.wrap{max-width:1240px;margin-inline:auto}
+h1,h2,h3{line-height:1.2;text-wrap:balance;margin:0;font-weight:700}
+h1{font-size:clamp(30px,4.6vw,46px);letter-spacing:-.01em}
+h2{font-size:24px;margin-bottom:8px}
+h3{font-size:24px}
+h4{font-size:17px;margin:20px 0 4px}
+p{margin:0 0 12px}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+.small{font-size:14px;color:var(--sub)}
+.red{color:var(--red)}
+header.band{border-top:10px solid var(--ink);padding-bottom:20px}
+.top{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:end}
+.lead{font-size:20px;line-height:1.6;margin-top:14px}
+.draft{font-size:14px;color:var(--sub);border-left:3px solid var(--red);padding-left:10px;margin:14px 0 0}
+.keys{display:grid;grid-template-columns:minmax(0,1fr);border-top:3px solid var(--ink)}
+.key{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.key .num{font-size:clamp(28px,3.4vw,40px);line-height:1.05;white-space:nowrap;order:2}
+.key .lab{font-size:15px;color:var(--sub)}
+.key.hot .num{color:var(--red)}
+.ctrl{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin:4px 0 14px}
+.seg{display:inline-flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.seg button{font:inherit;font-size:15px;border:0;background:none;color:var(--ink);padding:8px 16px;min-height:44px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg);font-weight:700}
+.seg button:focus-visible{outline:2px solid var(--red);outline-offset:-3px}
+label.inl{display:inline-flex;align-items:center;gap:8px;font-size:15px}
+input[type=number],select{font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1px solid var(--sub);border-radius:6px;padding:8px 10px;min-height:44px;width:8.5em}
+input:focus-visible,select:focus-visible{outline:2px solid var(--red);outline-offset:1px}
+.ledger{border-top:3px solid var(--ink)}
+.brow{display:grid;grid-template-columns:6.5em minmax(0,1fr) 10.5em;gap:14px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.brow .nm a{font-weight:700;text-decoration:none}
+.brow .nm .small{display:block;line-height:1.3}
+.btrack{position:relative;height:26px}
+.bs{position:absolute;left:0;top:0;height:26px;background:var(--track);border-radius:0 4px 4px 0}
+.bg{position:absolute;left:0;top:5px;height:16px;background:var(--ink);border-radius:0 4px 4px 0}
+.brow.hot .bg{background:var(--red)}
+.bv{text-align:right;white-space:nowrap;line-height:1.3}
+.bv .num{font-size:20px}
+.bv .small{display:block}
+.bv.neg .num{color:var(--red)}
+.pending{position:absolute;inset:0;border:1px dashed var(--sub);border-radius:4px;display:flex;align-items:center;padding-left:10px;font-size:14px;color:var(--sub)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--sub);margin-top:10px}
+.legend i{display:inline-block;width:14px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+#tip{position:fixed;z-index:9;pointer-events:none;background:var(--ink);color:var(--bg);font-size:14px;line-height:1.5;padding:6px 10px;border-radius:6px;max-width:280px;opacity:0;transition:opacity .12s}
+#tip.on{opacity:1}
+.ways{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 24px;border-top:3px solid var(--ink)}
+.way{padding:14px 0;border-bottom:1px solid var(--line)}
+.way .num{font-size:28px;line-height:1.1;display:block;margin:6px 0}
+.way b{display:block;font-size:17px}
+.cost{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:start}
+.crow{display:grid;grid-template-columns:11em minmax(0,1fr) 7.5em;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.crow .ct{height:18px;background:var(--ink);border-radius:0 4px 4px 0}
+.crow.hot .ct{background:var(--red)}
+.crow .v{text-align:right;white-space:nowrap}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%}
+th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{border-bottom:2px solid var(--ink);font-size:14px;line-height:1.4}
+td.r,th.r{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+.nav{display:flex;gap:8px;overflow-x:auto;padding:10px max(5vw,16px);background:var(--bg);border-block:1px solid var(--line)}
+.nav a{flex:none;text-decoration:none;font-weight:700;padding:6px 16px;border:1px solid var(--line);border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover,.nav a:focus-visible{border-color:var(--ink)}
+.plan{display:grid;grid-template-columns:7em minmax(0,1fr);gap:clamp(16px,3vw,40px);border-top:3px solid var(--ink);padding-top:24px;margin-top:44px}
+.pname{font-size:44px;font-weight:700;line-height:1.05}
+.pname .chip{margin-top:12px}
+.chip{font-size:14px;border:1px solid var(--line);border-radius:999px;padding:1px 10px;white-space:nowrap;display:inline-block;font-weight:700}
+.chip.r{border-color:var(--red);color:var(--red)}
+.one{margin-top:8px}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:14px 0 0}
+.facts div{border-top:1px solid var(--line);padding:10px 0}
+.facts dt{font-size:14px;color:var(--sub);font-weight:700}
+.facts dd{margin:2px 0 0}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 28px}
+.steps{list-style:none;padding:0;margin:4px 0 0;border-top:2px solid var(--ink)}
+.steps li{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:4px 16px;padding:8px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.steps .d{white-space:nowrap}
+.warn{background:var(--soft);padding:12px 14px;border-radius:6px;margin-top:18px}
+.calc{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:start}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;border-top:3px solid var(--ink);padding-top:14px}
+.fields label{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:700}
+.fields input,.fields select{width:100%}
+.res{border-top:3px solid var(--red);padding-top:14px;position:sticky;top:84px}
+.res .big{font-size:clamp(36px,5vw,52px);line-height:1;display:block;margin:4px 0 10px}
+.res dl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;margin:0}
+.res dt{color:var(--sub);font-size:15px}
+.res dd{margin:0;text-align:right;white-space:nowrap}
+.grow{display:grid;grid-template-columns:10em minmax(0,1fr);gap:16px;align-items:center;border-bottom:1px solid var(--line);padding-block:6px}
+.ghead{border-bottom:2px solid var(--ink);padding-block:0}
+.gname a{font-weight:700;text-decoration:none}
+.gname .small{display:block;line-height:1.35}
+.track{position:relative;height:52px}
+.ghead .track{height:48px}
+.mo{position:absolute;bottom:4px;font-size:14px;color:var(--sub);padding-left:5px;white-space:nowrap}
+.now{position:absolute;top:2px;font-size:14px;color:var(--red);font-weight:700;padding-left:6px;white-space:nowrap}
+.gl{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+.today{position:absolute;top:0;bottom:0;width:2px;background:var(--red)}
+.bar{position:absolute;top:31px;height:12px;background:var(--ink);border-radius:4px}
+.ms{position:absolute;top:0;bottom:0;width:36px;margin-left:-18px;padding:0;border:0;background:none;cursor:pointer;color:var(--ink);font:inherit}
+.ms::after{content:"";position:absolute;left:12px;top:30px;width:12px;height:12px;background:var(--red);transform:rotate(45deg);box-shadow:0 0 0 2px var(--bg)}
+.ms span{position:absolute;left:50%;top:3px;transform:translateX(-50%);font-size:14px;font-weight:700;white-space:nowrap;line-height:1.3}
+.ms:focus-visible{outline:2px solid var(--red);outline-offset:-2px}
+.mchips{display:none}
+.todo{list-style:none;padding:0;margin:0;border-top:3px solid var(--ink)}
+.todo li{border-bottom:1px solid var(--line)}
+.todo label{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;padding:12px 0;cursor:pointer;min-height:44px}
+.todo input{width:22px;height:22px;margin:4px 0 0;accent-color:var(--red)}
+.todo input:checked+span .t{text-decoration:line-through;color:var(--sub)}
+.todo .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.rules{columns:2;column-gap:40px;padding-left:1.2em;margin:0}
+.rules li{break-inside:avoid;margin-bottom:10px}
+.src{columns:2;column-gap:40px;padding-left:1.2em;margin:0;font-size:14px}
+.src li{break-inside:avoid;margin-bottom:6px}
+footer.band{border-top:3px solid var(--ink)}
+@media(min-width:900px){.nav{position:sticky;top:0;z-index:5}}
+@media(max-width:900px){.top,.cost,.calc{grid-template-columns:minmax(0,1fr)}.ways{grid-template-columns:repeat(2,minmax(0,1fr))}.rules,.src{columns:1}.res{position:static}}
+@media(max-width:600px){h1{font-size:28px}.brow{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}.brow .btrack{grid-column:1/-1;grid-row:2}.crow{grid-template-columns:minmax(0,1fr) auto}.crow .ct{grid-column:1/-1;grid-row:2}.ways{grid-template-columns:minmax(0,1fr)}.plan,.facts,.two,.fields{grid-template-columns:minmax(0,1fr)}.steps li{grid-template-columns:minmax(0,1fr)}.grow{grid-template-columns:minmax(0,1fr);gap:2px}.ghead .gname{display:none}.ms span{display:none}.mchips{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 4px}.lead{font-size:18px}table{font-size:14px}th,td{padding:7px 4px}}
+@media(prefers-reduced-motion:reduce){#tip{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="band" style="padding-block:12px;border-bottom:1px solid var(--line)"><div class="wrap"><a href="index.html" style="font-weight:700">← 収益化マップ（全体）に戻る</a></div></div>
+<header class="band">
+<div class="wrap top">
+<div>
+<h1>いちばん稼げるのは企業研修。<br>代理店を除く8案で、1年目の粗利は約840万円（仮定）</h1>
+<p class="lead">お金の柱は<b class="red">助成金で相手の負担を半分以下にする法人研修</b>と、<b class="red">大手の1/4の値段で出せる大人向けコーチング</b>。英検と宿題はすぐ結果が出る入口で、宿題は<b>決まった時間にこちらから電話をかけて</b>やらせます。AIは「文字起こし＋読み上げ」型で作ります。リアルタイム音声型だと粗利が半分以下になります。</p>
+<p class="draft">社内検討用の下書き（2026年11月28日）。値段・人数・先生の時給・AIの1分単価は<b>仮</b>です。相場・助成金・統計は下の出典の公表値です。下のスイッチと時給を変えると、図と合計がその場で計算し直されます。</p>
+</div>
+<div class="keys" aria-live="polite">
+<div class="key"><span class="num" id="kSales">—</span><span class="lab">1年目の売上（仮）</span></div>
+<div class="key hot"><span class="num" id="kGross">—</span><span class="lab">粗利（仮）</span></div>
+<div class="key"><span class="num" id="kRate">—</span><span class="lab">粗利率</span></div>
+</div>
+</div>
+</header>
+
+<section class="band" style="padding-top:0">
+<div class="wrap">
+<h2>案ごとの1年目の粗利（売上から先生の時間・AI・手数料を引いた額）</h2>
+<div class="ctrl">
+<div class="seg" role="group" aria-label="AIの作り方">
+<button type="button" id="aiP" aria-pressed="true">文字起こし＋読み上げ型（3円/分）</button>
+<button type="button" id="aiR" aria-pressed="false">リアルタイム音声型（24円/分）</button>
+</div>
+<label class="inl" for="wage">先生の時給 <input type="number" id="wage" value="2500" min="0" step="100"> 円</label>
+</div>
+<div class="ledger" id="ledger"></div>
+<div class="legend"><span><i style="background:var(--ink)"></i>粗利</span><span><i style="background:var(--track)"></i>売上（宿題は「やめずに残る月謝」）</span><span>行に触れると計算の中身が出ます</span></div>
+</div>
+</section>
+
+<section class="band" style="background:var(--soft)">
+<div class="wrap">
+<h2>お金の入り方は4つ</h2>
+<div class="ways">
+<div class="way"><b>法人に売り、助成金で相手の負担を減らす</b><span class="num red">粗利 約445万円</span><span class="small">企業・観光・日本語。会社や観光協会が国・県の制度で費用の45〜60%を取り戻せるので、値下げせずに売れます。</span></div>
+<div class="way"><b>値段の高い個人向けコース</b><span class="num">粗利 約214万円</span><span class="small">大人。大手コーチングは3か月50〜63万円。プロスは13.2万円で出しても1人あたり約10.7万円残ります。</span></div>
+<div class="way"><b>今のお客さんに新しい商品を売る</b><span class="num">粗利 約142万円</span><span class="small">英検・測定・電話。金額は小さいですが、すぐ結果が出て、入会と継続のきっかけになります。</span></div>
+<div class="way"><b>やめる人を減らす</b><span class="num">差し引き 約41万円</span><span class="small">宿題。売上は増えませんが、残る月謝が増えます。生徒100人・月謝9,900円・退会率1ポイント改善の例です。</span></div>
+</div>
+<p class="small" style="margin-top:10px">4つの数字は「文字起こし＋読み上げ型・時給2,500円」の場合です。代理店は条件が分かるまで計算に入れていません。</p>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap cost">
+<div>
+<h2>AIの原価は作り方で8倍ちがう</h2>
+<p>生徒1人が月100分AIと話すと、リアルタイム音声型は<b>約2,400円</b>、文字起こし＋読み上げ型は<b>約300円</b>。宿題を月1,100円で売ると、リアルタイム型では1人あたり毎月約1,300円の赤字になります。</p>
+<div style="border-top:3px solid var(--ink)">
+<div class="crow"><span>リアルタイム音声型</span><span class="ct" style="width:100%"></span><span class="v"><span class="num">24円</span>/分</span></div>
+<div class="crow hot"><span>文字起こし＋読み上げ型</span><span class="ct" style="width:12.5%"></span><span class="v"><span class="num red">3円</span>/分</span></div>
+<div class="crow"><span>学校向け市販品の値段</span><span class="ct" style="width:0;background:none"></span><span class="v"><span class="num">150円</span>/月・人</span></div>
+</div>
+<p class="small" style="margin-top:8px">1ドル150円で計算。リアルタイム型は旧モデルでの実測例（約0.16ドル/分、追加の指示文なし）。文字起こし＋読み上げ型は、文字起こし約0.3セント/分・読み上げ約1.5セント/分から出し、余裕を見て約2倍にした見積もりです。</p>
+</div>
+<div>
+<h4 style="margin-top:0">どう作るか</h4>
+<ul style="padding-left:1.2em;margin:0">
+<li>話す→文字にする→文章のAIが返事と採点→読み上げる、の順に分けて作る。</li>
+<li>指示文（台本）は短くし、繰り返す部分は使い回す。指示文は会話のたびに送られて原価が増えるため。</li>
+<li>最初の週に、KTが10分の会話を10回やって1分あたりの実際の原価を測る。その数字を上のスイッチの代わりに計算機に入れる。</li>
+<li>KTのローカルLLMで動かせば原価はさらに下がる。ただしKTがいないと止まるので、生徒向けはクラウドで動かす形を先に作る。</li>
+</ul>
+<p class="small" style="margin-top:10px">学校向けのスタディポケットAI英会話は1人月150円（税別）と公表しています。原価を下げる作り方は実在します。</p>
+</div>
+</div>
+</section>
+
+<nav class="nav" aria-label="案の一覧">
+<a href="#plan-kigyo">企業</a><a href="#plan-otona">大人</a><a href="#plan-kanko">観光</a><a href="#plan-eiken">英検</a><a href="#plan-nihongo">日本語</a><a href="#plan-shukudai">宿題</a><a href="#plan-denwa">電話</a><a href="#plan-sokutei">測定</a><a href="#plan-dairiten">代理店</a><a href="#calc">計算機</a><a href="#roadmap">ロードマップ</a><a href="#todo">今週</a>
+</nav>
+
+<main class="band" style="padding-top:8px">
+<div class="wrap">
+
+<article class="plan" id="plan-kigyo">
+<div class="pname">企業<br><span class="chip r">粗利 約261万円</span></div>
+<div>
+<h3>会社向けAI英会話研修（3か月・12時間）</h3>
+<p class="one">社員は毎日AIで練習し、週1回1時間、先生のレッスン（5人まで）を受ける。人事には毎月、受講率と伸びの報告書を送る。<b>レッスンを10時間以上にして、国の助成金の対象になる形で作る</b>のが要です。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>会社（iWAMの取引先の人事部、奈良の中小企業）</dd></div>
+<div><dt>値段（仮）</dt><dd>1人3か月33,000円</dd></div>
+<div><dt>相場</dt><dd>法人向けAIアプリのTORAbit for Businessは1人月1,909〜3,436円。社員研修の費用は1人あたり約3.6万円が相場</dd></div>
+<div><dt>相手の負担を減らす制度</dt><dd>人材開発支援助成金（人材育成支援コース）。中小企業は研修費の45%（賃金の条件を満たせば60%）と、受講1時間あたり800円が戻る。会社の外で行う研修を10時間以上やるのが条件</dd></div>
+</dl>
+<div class="two">
+<div>
+<h4>1人あたりの計算</h4>
+<table><tbody>
+<tr><td>値段</td><td class="r">33,000円</td></tr>
+<tr><td>先生（12時間÷5人＝2.4時間）</td><td class="r">−6,000円</td></tr>
+<tr><td>AI（300分×3円）</td><td class="r">−900円</td></tr>
+<tr class="tot"><td>粗利</td><td class="r">26,100円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">1年目の仮定：1期50人（5社×10人）を年2期。売上330万円・粗利261万円。</p>
+</div>
+<div>
+<h4>会社の実質負担（中小企業の例）</h4>
+<table><tbody>
+<tr><td>支払い</td><td class="r">33,000円</td></tr>
+<tr><td>研修費の45%が戻る</td><td class="r">−14,850円</td></tr>
+<tr><td>賃金助成（12時間×800円）</td><td class="r">−9,600円</td></tr>
+<tr class="tot"><td>実質負担</td><td class="r">8,550円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">研修中も賃金を払い、要件をすべて満たした場合。60%なら実質3,600円。</p>
+</div>
+</div>
+<h4>売り先と最初の90日</h4>
+<ol class="steps">
+<li><span class="d num">12月</span><span>助成金に詳しい社労士に、この研修の組み方で対象になるか確認する。社労士は申請の代行もでき、紹介先にもなる</span></li>
+<li><span class="d num">1月</span><span>社長と本山先生の承認をもらって、iWAMの取引先5社に提案する</span></li>
+<li><span class="d num">1〜2月</span><span>会社が労働局に計画届を出す（研修開始の6か月前〜1か月前まで）。4月開始なら2月末までが期限</span></li>
+<li><span class="d num">4〜6月</span><span>1期目。終わったら報告書を作り、会社の支給申請を手伝う</span></li>
+</ol>
+<p class="warn"><b>注意：</b>助成金は会社が申請し、要件を満たした場合だけ研修のあとで支給されます。会社はいったん全額を払います。「必ず戻る」とは言わず、社労士と一緒に案内します。サブスク型研修向けの枠（定額制訓練・助成率60%）は令和4〜8年度の期間限定なので、来年度もあるかは確認が必要です。</p>
+</div>
+</article>
+
+<article class="plan" id="plan-otona">
+<div class="pname">大人<br><span class="chip r">粗利 約214万円</span></div>
+<div>
+<h3>大人向けAIコーチング（3か月）</h3>
+<p class="one">毎日AIで20分練習し、週1回30分、先生と計画と進み具合を確認する。大手が人の手でやっている「続けさせる仕組み」を、AIで安く出します。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>転職・昇進・海外出張などで英語が必要な社会人</dd></div>
+<div><dt>値段（仮）</dt><dd>3か月132,000円（月44,000円）</dd></div>
+<div><dt>相場</dt><dd>プログリットは3か月632,500円、イングリードは516,340円（どちらも入会金55,000円は別）。安い側ではBizmatesのコーチングが月34,650円〜</dd></div>
+<div><dt>相手の負担を減らす制度</dt><dd>一般教育訓練給付（受講者に費用の20%、上限10万円）。講座の指定が必要で、指定は年2回（4月1日・10月1日）。実績を作ってから申請する</dd></div>
+</dl>
+<div class="two">
+<div>
+<h4>1人あたりの計算</h4>
+<table><tbody>
+<tr><td>値段</td><td class="r">132,000円</td></tr>
+<tr><td>先生（30分×12回＝6時間）</td><td class="r">−15,000円</td></tr>
+<tr><td>AI（1,800分×3円）</td><td class="r">−5,400円</td></tr>
+<tr><td>カード決済の手数料（3.6%）</td><td class="r">−4,750円</td></tr>
+<tr class="tot"><td>粗利</td><td class="r">106,850円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">1年目の仮定：1期10人を年2期。売上264万円・粗利214万円。</p>
+</div>
+<div>
+<h4>先生1時間あたりの売上</h4>
+<table><tbody>
+<tr><td>大人コーチング</td><td class="r">22,000円</td></tr>
+<tr><td>企業研修</td><td class="r">13,750円</td></tr>
+<tr><td>英検二次特訓</td><td class="r">14,700円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">AIが練習を受け持つので、先生の時間は「確認と励まし」だけ。1人の先生が受け持つのは最大10人まで。</p>
+</div>
+</div>
+<h4>売り先と最初の90日</h4>
+<ol class="steps">
+<li><span class="d num">2月</span><span>コースを設計する（毎日のAI練習メニューと、30分面談の型）</span></li>
+<li><span class="d num">3月</span><span>モニター3人で試す（割引）。始める前と終わったあとに「測定」でレベルを測る</span></li>
+<li><span class="d num">4月</span><span>新年度に合わせて10人で開講。LINEと紹介、企業研修の受講者に声をかける</span></li>
+<li><span class="d num">6月</span><span>3か月の伸びをまとめ、本人の了承を得て事例にする</span></li>
+</ol>
+<p class="warn"><b>注意：</b>この値段で売れるかは先生の質と、伸びを数字で見せられるかで決まります。モニターで伸びが見えなければ値段を下げます。</p>
+</div>
+</article>
+
+<article class="plan" id="plan-kanko">
+<div class="pname">観光<br><span class="chip r">粗利 約134万円</span></div>
+<div>
+<h3>奈良の観光地向け 接客英語のAI練習</h3>
+<p class="one">お土産屋・飲食店・宿のスタッフが、自分の店で起きる場面をAI相手に2か月練習し、先生が店で2回仕上がりを確認する。観光協会や商工会と組んで<b>県の補助金で地域まとめて</b>受けてもらうと大きくなります。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>奈良市まわりの店・宿。まとめ役として観光協会・商工会</dd></div>
+<div><dt>値段（仮）</dt><dd>1店舗44,000円（スタッフ5人まで・AI練習2か月・店での確認2回）</dd></div>
+<div><dt>相場と需要</dt><dd>接客英語の研修会社は社員1人あたり3〜4万円が相場。奈良市の外国人訪問者は2025年に351.7万人で過去最多。一方、奈良県のインバウンド消費単価は全国最下位</dd></div>
+<div><dt>相手の負担を減らす制度</dt><dd>奈良県観光地域づくり推進補助金の「観光産業人材の育成」枠。上限200万円、補助率1/3（地域連携なら1/2）。観光協会・商工会・民間事業者などが申請でき、令和8年度は4/17〜5/18に受付</dd></div>
+</dl>
+<div class="two">
+<div>
+<h4>1店舗あたりの計算</h4>
+<table><tbody>
+<tr><td>値段</td><td class="r">44,000円</td></tr>
+<tr><td>先生（90分×2回＝3時間）</td><td class="r">−7,500円</td></tr>
+<tr><td>AI（5人×60分×3円）</td><td class="r">−900円</td></tr>
+<tr><td>交通費など</td><td class="r">−2,000円</td></tr>
+<tr class="tot"><td>粗利</td><td class="r">33,600円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">1年目の仮定：春に10店、補助金を使った観光協会の案件で30店。売上176万円・粗利134万円。</p>
+</div>
+<div>
+<h4>補助金を使った場合（30店・地域連携の例）</h4>
+<table><tbody>
+<tr><td>研修費の合計</td><td class="r">1,320,000円</td></tr>
+<tr><td>補助（1/2）</td><td class="r">−660,000円</td></tr>
+<tr class="tot"><td>1店あたりの実質負担</td><td class="r">22,000円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">採択されるか、どこまで補助の対象になるかは要綱で確認が必要です。</p>
+</div>
+</div>
+<h4>売り先と最初の90日</h4>
+<ol class="steps">
+<li><span class="d num">12月</span><span>社長と本山先生の承認をもらったら、観光協会・商工会に「来年度の県補助金で一緒に申請できるか」を聞く</span></li>
+<li><span class="d num">1〜2月</span><span>よくある場面を10個決めてAI練習を作り、知り合いの2店舗で無料で試す</span></li>
+<li><span class="d num">3月</span><span>桜の時期の前に、有料で10店</span></li>
+<li><span class="d num">4〜5月</span><span>観光協会と県補助金を申請（受付時期は令和9年度の案内で確認）。公共案件の受け皿（ウォムかプロスか）は社長・本山先生と決める</span></li>
+</ol>
+<p class="warn"><b>注意：</b>店は忙しいので1回5分、スマホだけで終わる形にします。補助金は年度ごとに採択が決まるので、まず民間の店で実績を作ります。</p>
+</div>
+</article>
+
+<article class="plan" id="plan-eiken">
+<div class="pname">英検<br><span class="chip r">粗利 約62万円</span></div>
+<div>
+<h3>英検®二次（面接）のAI特訓</h3>
+<p class="one">一次に受かった人が二次までの約3週間、毎日AIで面接練習をして、先生と本番形式の模擬面接を2回やる。<b>金額は小さいですが、3月に結果が出て、入会のきっかけになる商品</b>です。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>保護者（自校の中高生と外部の一次合格者）</dd></div>
+<div><dt>値段（仮）</dt><dd>9,800円（AI練習3週間・模擬面接20分×2回）</dd></div>
+<div><dt>相場</dt><dd>オンライン英会話の直前集中（25分×最大14回）は11,000円。ベルリッツのマンツーマン10回は76,230円</dd></div>
+<div><dt>需要</dt><dd>英検の志願者は2025年度に454万人。高校入試でも奈良を含む5府県が活用</dd></div>
+</dl>
+<div class="two">
+<div>
+<h4>1人あたりの計算</h4>
+<table><tbody>
+<tr><td>値段</td><td class="r">9,800円</td></tr>
+<tr><td>先生（20分×2回）</td><td class="r">−1,670円</td></tr>
+<tr><td>AI（15分×21日×3円）</td><td class="r">−950円</td></tr>
+<tr><td>カード決済の手数料（3.6%）</td><td class="r">−350円</td></tr>
+<tr class="tot"><td>粗利</td><td class="r">6,830円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">1年目の仮定：年3回×30人。売上88万円・粗利62万円。リアルタイム型AIだと1人あたりの粗利はほぼ0円になります。</p>
+</div>
+<div>
+<h4>本当のお金はここ</h4>
+<p>外部から来た30人のうち3人が通常コース（月1.2万円）に入り、1年続けば<b>43万円</b>の月謝になります。3人・1.2万円・1年はすべて仮の数字です。第3回の結果で入会率を実際に測ります。</p>
+<p class="small">英スピ（塾向けの既製品）を使う場合は、仕入れ値が非公開のため問い合わせが必要です。</p>
+</div>
+</div>
+<h4>最初の90日</h4>
+<ol class="steps">
+<li><span class="d num">〜12/4</span><span>英スピに、プロスで使えるかと仕入れ値を聞く。使えなければKTが文字起こし型で作る</span></li>
+<li><span class="d num">〜12/14</span><span>自校の生徒に第3回の受験を案内する（個人申込の締切）</span></li>
+<li><span class="d num">2/15〜</span><span>一次の合否が出た日から販売。二次は2/28と3/7、合否は3/9と3/16</span></li>
+<li><span class="d num">3/16〜</span><span>合格者数を集計（公開は保護者の同意を得てから）し、通常コースを案内する</span></li>
+</ol>
+</div>
+</article>
+
+<article class="plan" id="plan-nihongo">
+<div class="pname">日本語<br><span class="chip">粗利 約50万円</span></div>
+<div>
+<h3>外国人社員の日本語AI練習（20時間）</h3>
+<p class="one">英会話ではありませんが、同じ「AI練習＋先生」の仕組みを日本語に置き換えます。奈良県の補助金で会社の負担が半分になります。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>外国人を雇う県内の中小企業、監理団体</dd></div>
+<div><dt>値段（仮）</dt><dd>1グループ（5人）220,000円（20時間）</dd></div>
+<div><dt>市場</dt><dd>奈良県の外国人労働者は11,418人（2025年10月末、前年比15.0%増）。製造業が4,074人で最多</dd></div>
+<div><dt>相手の負担を減らす制度</dt><dd>奈良県外国人材定着支援事業補助金。20時間以上の日本語研修に費用の1/2以内、上限20万円。監理団体も対象</dd></div>
+</dl>
+<h4>1人あたりの計算</h4>
+<table><tbody>
+<tr><td>値段（22万円÷5人）</td><td class="r">44,000円</td></tr>
+<tr><td>先生（20時間÷5人＝4時間）</td><td class="r">−10,000円</td></tr>
+<tr><td>AI（300分×3円）</td><td class="r">−900円</td></tr>
+<tr class="tot"><td>粗利</td><td class="r">33,100円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">1年目の仮定：3グループ（15人）。売上66万円・粗利50万円。会社の負担は1グループ11万円（補助11万円）。</p>
+<p class="warn"><b>注意：</b>日本語を教える先生が必要です。プロスにいなければ提携先を探します。補助金は令和8年度の案内なので、来年度もあるかを4月に県へ確認します。</p>
+</div>
+</article>
+
+<article class="plan" id="plan-shukudai">
+<div class="pname">宿題<br><span class="chip">差し引き 約41万円</span></div>
+<div>
+<h3>生徒のAI毎日宿題</h3>
+<p class="one">その週のレッスンで習った表現を、家でAI相手に毎日5分話す。<b>売上を増やす商品ではなく、やめる生徒を減らす仕組み</b>です。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>最初の3か月は無料。効果が見えたら月額オプション（例：月1,100円）にするか、月謝に含める</dd></div>
+<div><dt>相場</dt><dd>個人向けAI英会話アプリは月3,000〜7,500円前後。ELSA Proは月900円〜</dd></div>
+<div><dt>なぜ効くか</dt><dd>レアジョブは、オンライン英会話をやめる最大の原因を「伸びているか分からないこと」と説明。ECCはレッスン前後の自宅学習アプリにAI評価を入れた</dd></div>
+<div><dt>測り方</dt><dd>今の月ごとの退会率を先に記録し、3か月後に比べる</dd></div>
+</dl>
+<h4>計算の考え方（例）</h4>
+<p>やる日と時間を決めて逃げにくくするのが、次の<a href="#plan-denwa">「電話」</a>です。</p>
+<p>生徒100人・月謝9,900円で、毎月の退会率を1ポイント下げると、1年で延べ78人分の月謝（1か月目1人、2か月目2人…12か月目12人の合計）が残り、<b>約77万円</b>。AIの原価は100人×300円×12か月で36万円なので、差し引き<b>約41万円</b>です。生徒数・月謝・退会率はプロスの実際の数字に入れ替えてください（下の計算機でできます）。</p>
+</div>
+</article>
+
+<article class="plan" id="plan-denwa">
+<div class="pname">電話<br><span class="chip r">粗利 約45万円</span></div>
+<div>
+<h3>宿題コール：決まった時間に、AIの先生から電話がかかってくる</h3>
+<p class="one">毎日、本人が決めた時間に、AIの先生が<b>こちらから電話をかけます</b>。3分で、その週に習った表現を思い出させ、1問だけ英語で話させます。<b>やるかどうかを本人の気分に任せず、電話の時間がやらせる</b>のが要です。ヨーガや勤行と同じく、決まった時間に毎日くり返すことで習慣にします。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>在籍生（子どもは保護者）、外の大人・シニア。大人コーチングと企業研修には中に組み込む</dd></div>
+<div><dt>値段（仮）</dt><dd>平日毎日3分（月20回）で月3,300円</dd></div>
+<div><dt>実例</dt><dd>韓国の「電話英語」は、毎日同じ時間に先生からの電話を受けて始める形（平日毎日27分・月13万ウォンの例）。日本ではスピークが2026年10月に電話形式の機能を出したが、アプリを開いて自分からかける形</dd></div>
+<div><dt>なぜこちらからかける</dt><dd>プログリット（3か月632,500円）は「毎日の勉強をやり切らせる仕組み」にお金を払うサービスと評されている。続けさせる力には高いお金が払われる</dd></div>
+<div><dt>なぜ決まった時間</dt><dd>習慣は、同じきっかけでくり返すと身につく。身につくまで平均66日（ロンドン大学の研究）。毎日同じ時間に鳴る電話が、そのきっかけになる</dd></div>
+<div><dt>なぜ思い出させる</dt><dd>思い出すテストをくり返した人は、読み直した人より1週間後によく覚えていた（正答率61%対40%）。3分でも「読む」より「思い出す」の方が残る</dd></div>
+</dl>
+<div class="two">
+<div>
+<h4>1回の電話（3分）</h4>
+<ol class="steps">
+<li><span class="d num">0:00</span><span>「プロスのAIの先生です」と名乗り、名前を呼ぶ</span></li>
+<li><span class="d num">0:15</span><span>その週のレッスンの表現を3つ、日本語を聞いて英語で言ってもらう</span></li>
+<li><span class="d num">1:30</span><span>今日の1問（英検の面接の質問、仕事や旅行の場面など）</span></li>
+<li><span class="d num">2:30</span><span>ひとつほめて、直すところを1つだけ言い、明日の予告をする</span></li>
+<li><span class="d">通話のあと</span><span>結果をLINEかメールで本人に。子どもは保護者、研修は人事、全員分を担当の先生に</span></li>
+</ol>
+</div>
+<div>
+<h4>出なかったら（人を挟む）</h4>
+<ol class="steps">
+<li><span class="d">10分後</span><span>もう一度かける</span></li>
+<li><span class="d">2日続けて</span><span>出なければ、担当の先生に知らせる</span></li>
+<li><span class="d">その日のうち</span><span>先生が人の声で一度電話する。鶴舞の電話で分かった「AIが取れないときは人に回す」形をそのまま使う</span></li>
+</ol>
+<p class="small" style="margin-top:8px">番号を「プロスの英語の先生」と電話帳に登録してもらう。知らない番号からの電話には出ない人が多いため。</p>
+</div>
+</div>
+<div class="two">
+<div>
+<h4>1人1か月の計算（3分×20回＝60分）</h4>
+<table><tbody>
+<tr><td>値段</td><td class="r">3,300円</td></tr>
+<tr><td>通話料（携帯宛、Twilio 1分0.185ドル）</td><td class="r">−1,665円</td></tr>
+<tr><td>AI（60分×3円）</td><td class="r">−180円</td></tr>
+<tr><td>先生の確認（5分）</td><td class="r">−208円</td></tr>
+<tr><td>カード決済の手数料（3.6%）</td><td class="r">−119円</td></tr>
+<tr class="tot"><td>粗利</td><td class="r">1,128円</td></tr>
+</tbody></table>
+<p class="small" style="margin-top:6px">1年目の仮定：12月〜1月は5人で無料の試行。2月から有料で平均40人×10か月＝延べ400人月。売上132万円・粗利45万円。</p>
+</div>
+<div>
+<h4>原価のいちばん大きいのは電話代</h4>
+<p>通話料が原価の約8割です。国内の光電話の料金表（携帯宛17.6円/60秒）並みの回線を使えれば、通話料は1,056円になり、<b>1人の粗利は1,737円</b>に上がります。KTが目指す「自分がTwilioのような立場になる」電話の仕組みの、最初のお客さんにできます。</p>
+<p class="small">家の固定電話宛ならTwilioでも1分0.0746ドル（60分で約670円）です。1ドル150円で計算。</p>
+</div>
+</div>
+<h4>作り方</h4>
+<ul style="padding-left:1.2em;margin:0">
+<li><b>全二重（聞きながら話す）で作る。</b>生徒が話し始めたらAIはすぐ黙り、短い相づちを入れ、詰まったら日本語で助ける。鶴舞の電話で作っている仕組みをそのまま使う。</li>
+<li><b>AIは「文字起こし＋読み上げ」型を基本にする（3円/分）。</b>音声のまま返すリアルタイム型も、指示文の使い回しが効けば1分約0.023ドル（約3.5円）という2026年10月の試算がある。12月の試行で両方を測って選ぶ。</li>
+<li><b>回線は2段階。</b>12月の試行はKTのPixel 9a＋Macで、数人に。有料にするときは1分ごとに払う業務用の回線（SIP）に移す。スマホ1台は同時に1本しか話せず、朝と夜に電話が集中するため。</li>
+<li><b>個人向けのかけ放題は使わない。</b>ドコモのかけ放題は、機械的な発信を続ける使い方や、大量の通話で利益を得る使い方を定額の対象外にしている。</li>
+<li>OpenAIのリアルタイム音声はSIPで電話につなげられ、通話を人に回す（転送する）こともできる。2026年11月には、こちらから電話をかけるためのAPIも一般提供が始まった（1分0.05ドル＋元のモデル代）。</li>
+<li>名古屋大学の日本語の全二重モデル「J-Moshi」は営利目的に使えないライセンスなので、有料のサービスには使わない。</li>
+</ul>
+<h4>最初の90日</h4>
+<ol class="steps">
+<li><span class="d num">12月</span><span>保護者の同意をもらい、在籍生5人に毎晩3分を2週間（無料）。応答率と、宿題をやった日数を記録する</span></li>
+<li><span class="d num">1月</span><span>業務用の回線を決める。かける時間の予約、結果の送信、人に回す流れを手順書にする</span></li>
+<li><span class="d num">2月</span><span>在籍生と大人に月3,300円で案内する。メルマガの読者には「1週間、無料で電話します」</span></li>
+<li><span class="d num">4月</span><span>大人コーチングと企業研修に組み込む。研修では人事に「電話に出た日数」も報告する</span></li>
+</ol>
+<p class="warn"><b>注意：</b>電話の中では売りません。特定商取引法の「電話勧誘販売」は、事業者が電話をかけ、その電話で契約を勧める取引を指します。電話は申し込み済みの人への授業だけにし、案内はLINEとメールで送ります。かけるのは本人（子どもは保護者）が決めた時間だけで、「ストップ」と言えばいつでも止まるようにします。研修に組み込むと、受講者1人3か月で約5,500円（Twilioの携帯宛の場合）原価が増えます。</p>
+</div>
+</article>
+
+<article class="plan" id="plan-sokutei">
+<div class="pname">測定<br><span class="chip">粗利 約35万円</span></div>
+<div>
+<h3>AIで「話す力」を測る</h3>
+<p class="one">5分ほどで話す力の目安を出し、結果シートを渡してからコースを提案する。体験レッスンでは無料で入会のきっかけにし、企業研修では始める前と後の伸びを見せる道具にします。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>企業・学校（体験レッスンでは無料）</dd></div>
+<div><dt>値段（仮）</dt><dd>1回2,000円</dd></div>
+<div><dt>相場</dt><dd>公的な試験はTOEIC L&amp;Rが7,810円、英検S-CBTが10,400〜12,400円。プロスの測定は資格ではないので「社内の目安」として安く出す</dd></div>
+<div><dt>1回あたり</dt><dd>先生の確認5分（約210円）とAI（約20円）で、粗利は約1,770円。年200回で約35万円（仮）</dd></div>
+</dl>
+<p class="warn"><b>注意：</b>単体の売上は小さいです。価値は「入会率が上がるか」と「企業研修で伸びを数字で見せられるか」。1月からの体験レッスンで、測った人の入会率を記録します。</p>
+</div>
+</article>
+
+<article class="plan" id="plan-dairiten">
+<div class="pname">代理店<br><span class="chip">条件確認待ち</span></div>
+<div>
+<h3>海外AI英語アプリの販売パートナー</h3>
+<p class="one">ELSAのようなアプリを、奈良・関西の私立中高や塾に先生向け研修つきで売る。輸入販売という本業の延長です。</p>
+<dl class="facts">
+<div><dt>誰が払う</dt><dd>私立中高・塾</dd></div>
+<div><dt>値段</dt><dd>ELSA Proは個人の年間会員7,200円（定価）。プロスの取り分は代理店条件しだいで、まだ分かりません</dd></div>
+<div><dt>成功例</dt><dd>ELSAは駿台グループと提携。文科省のモデル校の一つではCEFR A1以上の生徒が23.8%→59.9%</dd></div>
+<div><dt>弱いところ</dt><dd>公立学校向けには1人月150円の市販品があり、値段で勝てない。私立と塾に絞る</dd></div>
+</dl>
+<p class="warn"><b>判断：</b>取り分が分かるまで1年目の計算に入れません。例えば取り分20%で私立3校×300人なら年約130万円ですが、これは仮の数字です。12月に社長・本山先生の承認をもらってからELSA Japanに条件を聞き、出た数字を計算機に入れて決めます。</p>
+</div>
+</article>
+
+<section class="plan" id="calc" style="display:block">
+<h2>計算機：数字を入れ替えて確かめる</h2>
+<p class="small">案を選ぶと仮の数字が入ります。プロスの実際の数字に入れ替えてください。入力はこのブラウザにだけ一時的に残ります。</p>
+<div class="calc">
+<div class="fields">
+<label for="cPlan">案<select id="cPlan"><option value="kigyo">企業</option><option value="otona">大人</option><option value="kanko">観光</option><option value="eiken">英検</option><option value="nihongo">日本語</option><option value="denwa">電話</option><option value="sokutei">測定</option></select></label>
+<label for="cPrice">値段（円／1件）<input type="number" id="cPrice" min="0" step="100"></label>
+<label for="cUnits">1年の件数<input type="number" id="cUnits" min="0" step="1"></label>
+<label for="cTMin">先生の時間（分／1件）<input type="number" id="cTMin" min="0" step="5"></label>
+<label for="cWage">先生の時給（円）<input type="number" id="cWage" min="0" step="100"></label>
+<label for="cAMin">AIと話す時間（分／1件）<input type="number" id="cAMin" min="0" step="10"></label>
+<label for="cARate">AIの原価（円／分）<input type="number" id="cARate" min="0" step="0.5"></label>
+<label for="cFee">決済手数料（%）<input type="number" id="cFee" min="0" step="0.1"></label>
+<label for="cOther">その他の原価（円／1件。電話は通話料）<input type="number" id="cOther" min="0" step="100"></label>
+<label for="cFix">この案の固定費（円／月）<input type="number" id="cFix" min="0" step="1000" value="10000"></label>
+</div>
+<div class="res" aria-live="polite">
+<span class="small">1年の粗利</span>
+<span class="big num" id="rGross">—</span>
+<dl>
+<dt>売上</dt><dd class="num" id="rSales">—</dd>
+<dt>原価</dt><dd class="num" id="rCost">—</dd>
+<dt>1件あたりの粗利</dt><dd class="num" id="rUnit">—</dd>
+<dt>粗利率</dt><dd class="num" id="rRate">—</dd>
+<dt>固定費を払ったあと</dt><dd class="num" id="rNet">—</dd>
+<dt>固定費を回収できる件数</dt><dd class="num" id="rBE">—</dd>
+</dl>
+<button type="button" id="cReset" style="margin-top:14px;font:inherit;font-size:15px;min-height:44px;padding:8px 16px;border:1px solid var(--ink);border-radius:999px;background:none;color:var(--ink);cursor:pointer">仮の数字に戻す</button>
+</div>
+</div>
+<h4 style="margin-top:28px">宿題（やめる人を減らす）の計算</h4>
+<div class="calc">
+<div class="fields">
+<label for="hN">在籍生の数<input type="number" id="hN" value="100" min="0"></label>
+<label for="hF">月謝（円）<input type="number" id="hF" value="9900" min="0" step="100"></label>
+<label for="hD">退会率の改善（ポイント／月）<input type="number" id="hD" value="1" min="0" step="0.1"></label>
+<label for="hMin">AIと話す時間（分／人・月）<input type="number" id="hMin" value="100" min="0" step="10"></label>
+<label for="hRate">AIの原価（円／分）<input type="number" id="hRate" value="3" min="0" step="0.5"></label>
+<label for="hOpt">有料オプション（円／月、0なら無料）<input type="number" id="hOpt" value="0" min="0" step="100"></label>
+<label for="hUp">オプションの申込率（%）<input type="number" id="hUp" value="50" min="0" max="100" step="5"></label>
+</div>
+<div class="res" style="position:static" aria-live="polite">
+<span class="small">1年の差し引き</span>
+<span class="big num" id="hNet">—</span>
+<dl>
+<dt>やめずに残る月謝</dt><dd class="num" id="hKeep">—</dd>
+<dt>オプションの売上</dt><dd class="num" id="hOptS">—</dd>
+<dt>AIの原価</dt><dd class="num" id="hCost">—</dd>
+</dl>
+<p class="small" style="margin-top:10px">月謝の9,900円は関西の大手子ども英会話の例です。退会率の改善幅は仮の数字です。</p>
+</div>
+</div>
+</section>
+
+<section class="plan" id="roadmap" style="display:block">
+<h2>ロードマップ：2026年12月〜2027年7月</h2>
+<p class="small">赤い印に触れると日付と内容が出ます。</p>
+<div class="gantt" id="gantt">
+<div class="grow ghead"><div class="gname"></div><div class="track" id="ghead"></div></div>
+<div class="grow"><div class="gname"><a href="#plan-kigyo">企業</a><span class="small">助成金つき研修</span></div><div><div class="track" data-s="2026-12-01" data-e="2027-07-31" data-m="2026-12-14,社労士|2027-01-18,提案|2027-04-01,1期目|2027-07-01,2期目"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-otona">大人</a><span class="small">AIコーチング</span></div><div><div class="track" data-s="2027-02-01" data-e="2027-06-30" data-m="2027-03-01,モニター|2027-04-05,開講|2027-06-30,結果"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-kanko">観光</a><span class="small">接客英語</span></div><div><div class="track" data-s="2026-12-01" data-e="2027-05-31" data-m="2027-01-18,無料試行|2027-03-08,有料10店|2027-04-26,補助金申請"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-eiken">英検</a><span class="small">二次のAI特訓</span></div><div><div class="track" data-s="2026-12-01" data-e="2027-03-31" data-m="2026-12-14,申込締切|2027-02-15,販売開始|2027-03-16,合否"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-nihongo">日本語</a><span class="small">外国人社員向け</span></div><div><div class="track" data-s="2027-04-01" data-e="2027-06-30" data-m="2027-04-12,確認|2027-05-17,試行"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-shukudai">宿題</a><span class="small">AI毎日宿題</span></div><div><div class="track" data-s="2026-12-01" data-e="2027-03-31" data-m="2026-12-14,試行|2027-01-12,全クラス|2027-03-31,判定"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-denwa">電話</a><span class="small">宿題コール</span></div><div><div class="track" data-s="2026-12-07" data-e="2027-07-31" data-m="2026-12-14,5人で試行|2027-02-01,有料化|2027-04-01,研修に組込"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-sokutei">測定</a><span class="small">話す力を測る</span></div><div><div class="track" data-s="2026-12-01" data-e="2027-06-30" data-m="2027-01-05,体験で開始|2027-04-01,企業研修で"></div><div class="mchips"></div></div></div>
+<div class="grow"><div class="gname"><a href="#plan-dairiten">代理店</a><span class="small">条件確認</span></div><div><div class="track" data-s="2026-12-07" data-e="2027-01-31" data-m="2026-12-21,問い合わせ"></div><div class="mchips"></div></div></div>
+</div>
+</section>
+
+<section class="plan" id="todo" style="display:block">
+<h2>今週（11/30〜12/4）やること</h2>
+<p class="small">チェックはこのブラウザにだけ保存されます。</p>
+<ul class="todo">
+<li><label><input type="checkbox" id="t1"><span><span class="t">社長と本山先生に、プロスの名前を外で使う案（企業・観光・代理店）の承認をお願いする</span><span class="meta"><span class="chip">KT</span><span class="chip r">企業</span><span class="chip">観光</span><span class="chip">代理店</span></span></span></label></li>
+<li><label><input type="checkbox" id="t2"><span><span class="t">助成金に詳しい社労士を1人見つけ、12時間の研修の組み方で人材育成支援コースの対象になるか聞く</span><span class="meta"><span class="chip">KT</span><span class="chip r">企業</span></span></span></label></li>
+<li><label><input type="checkbox" id="t3"><span><span class="t">iWAMの取引先から、英語研修の話ができそうな人事部を5社選ぶ</span><span class="meta"><span class="chip">KT・本山先生</span><span class="chip r">企業</span></span></span></label></li>
+<li><label><input type="checkbox" id="t4"><span><span class="t">文字起こし型AIで10分の会話を10回やり、1分あたりの実際の原価を測る</span><span class="meta"><span class="chip">KT</span><span class="chip">全案</span></span></span></label></li>
+<li><label><input type="checkbox" id="t5"><span><span class="t">英スピに、プロスで使えるかと仕入れ値を聞く</span><span class="meta"><span class="chip">KT</span><span class="chip">英検</span></span></span></label></li>
+<li><label><input type="checkbox" id="t6"><span><span class="t">生徒に第3回英検を案内する（個人申込の締切は12/14）</span><span class="meta"><span class="chip">講師</span><span class="chip">英検</span></span></span></label></li>
+<li><label><input type="checkbox" id="t7"><span><span class="t">今の月ごとの退会率を記録しておく（宿題の効果を比べるため）</span><span class="meta"><span class="chip">講師</span><span class="chip">宿題</span></span></span></label></li>
+<li><label><input type="checkbox" id="t8"><span><span class="t">在籍生の保護者5人に、2週間・毎晩3分の宿題コール（無料）の同意をもらい、かける時間を決めてもらう</span><span class="meta"><span class="chip">講師</span><span class="chip r">電話</span></span></span></label></li>
+<li><label><input type="checkbox" id="t9"><span><span class="t">鶴舞の電話の仕組み（Pixel 9a＋Mac）で、こちらから発信して3分話し、結果をLINEに送るところまで動かす</span><span class="meta"><span class="chip">KT</span><span class="chip r">電話</span></span></span></label></li>
+<li><label><input type="checkbox" id="t10"><span><span class="t">業務用の電話回線（1分ごとに払うSIP）の見積もりを2社から取り、自動発信が規約で認められるか確認する</span><span class="meta"><span class="chip">KT</span><span class="chip r">電話</span></span></span></label></li>
+</ul>
+</section>
+
+<section class="plan" style="display:block">
+<h2>守ること</h2>
+<ul class="rules">
+<li>プロスの名前と信用を外で使う案は、社長と本山先生の承認をもらってから動く。</li>
+<li>値段・契約・助成金・補助金の最終判断は社長と専門家（社労士など）。このページの数字は下書き。</li>
+<li>助成金は「必ず戻る」と言わない。要件と支給の時期を、社労士と一緒に正しく案内する。</li>
+<li>チラシや提案書など外に出すものは、出す前にKTが確認する。</li>
+<li>合格者数や受講者・お店の声を出すときは、本人（子どもは保護者）とお店の同意をとる。</li>
+<li>本山先生の役割は確認と承認だけにし、作業は講師とKT（とAI）が受け持つ。</li>
+<li>電話は申し込んだ本人（子どもは保護者）が決めた時間にだけかける。電話の中では何も売らない。いつでも「ストップ」で止められる。</li>
+<li>電話の最初にAIの先生であることと録音することを伝え、録音は先生だけが見られる場所に期限を決めて置く。</li>
+<li>どの案も手順書を残し、KTがいなくても講師だけで回せる形にする。AIもクラウドで動く形を先に作る。</li>
+</ul>
+</section>
+
+</div>
+</main>
+
+<footer class="band">
+<div class="wrap">
+<h2>出典</h2>
+<p class="small">2026年11月28日時点で確認した公表情報です。助成金・補助金は年度で変わるので、使う前に最新の案内で確認してください。英検®は公益財団法人 日本英語検定協会の登録商標です。</p>
+<ul class="src">
+<li><a href="https://www.mhlw.go.jp/content/11800000/001664046.pdf">人材開発支援助成金 人材育成支援コースの助成率（厚生労働省）</a></li>
+<li><a href="https://jsite.mhlw.go.jp/hokkaido-roudoukyoku/content/contents/002707476.pdf">人材育成支援コース 1人あたりの経費助成限度額（北海道労働局）</a></li>
+<li><a href="https://biz.moneyforward.com/payroll/basic/123094/">人材開発支援助成金の要件と計画届の時期（マネーフォワード）</a></li>
+<li><a href="https://jsite.mhlw.go.jp/osaka-hellowork/content/contents/002027548.pdf">定額制訓練の助成率（大阪労働局）</a></li>
+<li><a href="https://www.mhlw.go.jp/content/11800000/001174263.pdf">人への投資促進コースは令和4〜8年度の期間限定（厚生労働省）</a></li>
+<li><a href="https://www.mhlw.go.jp/content/001159380.pdf">一般教育訓練給付金と講座指定（厚生労働省）</a></li>
+<li><a href="https://www.pref.nara.lg.jp/documents/6522/hojokinannai.pdf">奈良県観光地域づくり推進補助金の案内</a></li>
+<li><a href="https://www.pref.nara.lg.jp/documents/9412/20260415143549.pdf">奈良県外国人材定着支援事業補助金の案内</a></li>
+<li><a href="https://jsite.mhlw.go.jp/nara-roudoukyoku/content/contents/002535311.pdf">奈良労働局 外国人雇用状況（令和7年10月末）</a></li>
+<li><a href="https://prtimes.jp/main/html/rd/p/000000453.000036429.html">奈良市 2025年観光入込客数調査（奈良市）</a></li>
+<li><a href="https://honichi.com/news/2026/10/23/nara_taxfree/">奈良県のインバウンド消費単価（訪日ラボ）</a></li>
+<li><a href="https://www.biz.ne.jp/matome/2009381/">接客英語研修の費用相場（ビズクリップ）</a></li>
+<li><a href="https://imitsu.jp/cost/training/">社員研修の費用相場（アイミツ）</a></li>
+<li><a href="https://boxil.jp/service/51239/">TORAbit for Business の料金（BOXIL）</a></li>
+<li><a href="https://eikaiwa.weblio.jp/ninja-eikaiwa/englead-cost">英語コーチング3か月の料金比較（ネイティブキャンプ英会話ブログ）</a></li>
+<li><a href="https://resemom.jp/mitsukaru-eikaiwa/coaching-english-cospa/">安い英語コーチングの料金（リセマム）</a></li>
+<li><a href="https://www.dreamnews.jp/press/0000332795">英検二次 直前1週間集中コース 11,000円（ENC/GNA）</a></li>
+<li><a href="https://www.berlitz.com/ja-jp/teens/testing-courses">ベルリッツ 英検二次面接 直前対策</a></li>
+<li><a href="https://digitalpr.jp/r/135921">英検 2025年度の志願者数（英検協会）</a></li>
+<li><a href="https://aied.jp/eisp-school/">英スピ 塾向けページ（英検の入試活用）</a></li>
+<li><a href="https://bestjuku.com/shingaku/s-article/54708/">2026年度第3回英検の日程（ベスト個別）</a></li>
+<li><a href="https://www.mext.go.jp/content/20260416-mxt_kyoiku01-000035839_01.pdf">英語の資格・検定試験の受験料一覧（文部科学省）</a></li>
+<li><a href="https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini">OpenAI リアルタイム音声モデルの料金</a></li>
+<li><a href="https://www.eesel.ai/blog/gpt-realtime-mini-pricing">リアルタイム音声の1分あたり実測例（eesel）</a></li>
+<li><a href="https://www.neowin.net/news/openai-announces-next-generation-audio-models-to-power-voice-agents/">文字起こし・読み上げの1分あたり料金（Neowin）</a></li>
+<li><a href="https://ascii.jp/elem/000/004/371/4371544/">スタディポケット AI英会話 1人月150円（ASCII）</a></li>
+<li><a href="https://aipicks.jp/mag/language-school-ai-tools-2026">AI英会話アプリの相場（AIPICKS）</a></li>
+<li><a href="https://eikaiwa.weblio.jp/ninja-eikaiwa/elsaspeak-campaign">ELSA Pro の料金（ネイティブキャンプ英会話ブログ）</a></li>
+<li><a href="https://resemom.jp/release/prtimes/20241023/125868.html">ELSAと駿台グループの提携（リセマム）</a></li>
+<li><a href="https://ai-eigo.mext.go.jp/resultsreport/pdf/r7_09.pdf">文科省 AI英語モデル校の成果報告</a></li>
+<li><a href="https://www.businessinsider.jp/post-271355">オンライン英会話をやめる理由（Business Insider）</a></li>
+<li><a href="https://www.appbank.net/?p=2933556">ECC Study Assist のAI評価機能（AppBank）</a></li>
+<li><a href="https://diamond.jp/educate/articles/english/400287/">関西の子ども英会話の月謝例（ダイヤモンド）</a></li>
+<li><a href="https://www.watch.impress.co.jp/docs/news/2149588.html">スピークの電話機能（Impress Watch）</a></li>
+<li><a href="https://kmong.com/gig/212879">韓国の電話英語：毎日同じ時間に先生から電話（kmong）</a></li>
+<li><a href="https://resemom.jp/mitsukaru-eikaiwa/?p=25145">プログリットは「やり切らせる仕組み」（リセマム）</a></li>
+<li><a href="https://www.showcase-tv.com/eikaiwa/progrit-price/">英語コーチング3か月の料金（ShowcaseTV）</a></li>
+<li><a href="https://www.ucl.ac.uk/news/2009/aug/how-long-does-it-take-form-habit">習慣が身につくまで平均66日（ロンドン大学）</a></li>
+<li><a href="https://gendai.media/articles/-/69129">思い出す練習のテスト効果（現代ビジネス、Roediger &amp; Karpicke 2006）</a></li>
+<li><a href="https://www.twilio.com/en-us/voice/pricing/jp">Twilio 日本の通話料</a></li>
+<li><a href="https://www.docomo.ne.jp/binary/pdf/internet/hikari/tell_service/charge/charge_01.pdf">ドコモ光電話の通話料</a></li>
+<li><a href="https://www.ntt.com/business/mobile/charge/docomobiz-kakehoudai.html">かけ放題の対象外になる使い方（ドコモBiz）</a></li>
+<li><a href="https://developers.openai.com/api/docs/guides/realtime-sip.md">OpenAI リアルタイム音声をSIPで電話につなぐ</a></li>
+<li><a href="https://www.cekura.ai/blogs/openai-realtime-api-pricing">リアルタイム音声の1分あたり試算（Cekura）</a></li>
+<li><a href="https://cryptobriefing.com/gpt-live-outbound-telephony-api-general-availability/">OpenAI 発信用の電話API（Crypto Briefing）</a></li>
+<li><a href="https://forest.watch.impress.co.jp/docs/serial/yajiuma/1663561.html">J-Moshi のライセンス（窓の杜）</a></li>
+<li><a href="https://www.japaneselawtranslation.go.jp/ja/laws/view/66/ja">特定商取引法 電話勧誘販売の定義</a></li>
+<li><a href="https://berkeleyhouse.co.jp/?p=78300">英検S-CBTのスピーキングはヘッドセットで録音（バークレーハウス）</a></li>
+</ul>
+</div>
+</footer>
+
+<div id="tip" role="tooltip"></div>
+
+<script>
+{
+const P={
+ kigyo:{n:'企業',s:'助成金つき研修',price:33000,units:100,tmin:144,amin:300,fee:0,oth:0,hot:1},
+ otona:{n:'大人',s:'AIコーチング',price:132000,units:20,tmin:360,amin:1800,fee:3.6,oth:0,hot:1},
+ kanko:{n:'観光',s:'接客英語',price:44000,units:40,tmin:180,amin:300,fee:0,oth:2000,hot:1},
+ eiken:{n:'英検',s:'二次のAI特訓',price:9800,units:90,tmin:40,amin:315,fee:3.6,oth:0},
+ nihongo:{n:'日本語',s:'外国人社員向け',price:44000,units:15,tmin:240,amin:300,fee:0,oth:0},
+ denwa:{n:'電話',s:'宿題コール',price:3300,units:400,tmin:5,amin:60,fee:3.6,oth:1665,hot:1},
+ sokutei:{n:'測定',s:'話す力を測る',price:2000,units:200,tmin:5,amin:5,fee:0,oth:0}
+};
+const H={n:100,f:9900,d:1,min:100};
+const yen=v=>Math.round(v).toLocaleString('ja-JP')+'円';
+const man=v=>{const a=Math.abs(v)/10000;const s=a>=100?Math.round(a).toLocaleString('ja-JP'):a.toFixed(1);return (v<0?'−':'')+s+'万円'};
+let ai=3,wage=2500;
+const unit=(p,a,w)=>{const c=p.tmin/60*w+p.amin*a+p.price*p.fee/100+p.oth;return {c,g:p.price-c}};
+const led=document.getElementById('ledger');
+const draw=()=>{
+  const rows=[];let ts=0,tg=0;
+  for(const k of Object.keys(P)){const p=P[k],u=unit(p,ai,wage);const s=p.price*p.units,g=u.g*p.units;ts+=s;tg+=g;rows.push({k,p,s,g,u})}
+  const keep=H.n*H.d/100*78*H.f,hc=H.n*H.min*ai*12;ts+=keep;tg+=keep-hc;
+  rows.splice(5,0,{k:'shukudai',p:{n:'宿題',s:'AI毎日宿題'},s:keep,g:keep-hc,tip:`やめずに残る月謝 ${man(keep)} − AI原価 ${man(hc)}`});
+  const mx=Math.max(...rows.map(r=>r.s));
+  let h=rows.map(r=>{
+    const sw=(r.s/mx*100).toFixed(1),gw=(Math.max(r.g,0)/mx*100).toFixed(1);
+    const tip=r.tip||`1件 粗利${yen(r.u.g)}（原価${yen(r.u.c)}）× ${r.p.units}件`;
+    const neg=r.g<0;
+    return `<div class="brow${r.p.hot?' hot':''}" data-tip="${tip}"><div class="nm"><a href="#plan-${r.k}">${r.p.n}</a><span class="small">${r.p.s}</span></div><div class="btrack"><span class="bs" style="width:${sw}%"></span><span class="bg" style="width:${gw}%"></span></div><div class="bv${neg?' neg':''}"><span class="num">${neg?'赤字 ':''}${man(r.g)}</span><span class="small">${r.k==='shukudai'?'残る月謝':'売上'} ${man(r.s)}</span></div></div>`}).join('');
+  h+=`<div class="brow"><div class="nm"><a href="#plan-dairiten">代理店</a><span class="small">海外AIアプリ</span></div><div class="btrack"><span class="pending">条件確認待ち（計算に入れていません）</span></div><div class="bv"><span class="num">—</span></div></div>`;
+  led.innerHTML=h;
+  document.getElementById('kSales').textContent=man(ts);
+  document.getElementById('kGross').textContent=man(tg);
+  document.getElementById('kRate').textContent=(tg/ts*100).toFixed(0)+'%';
+};
+const bP=document.getElementById('aiP'),bR=document.getElementById('aiR'),wI=document.getElementById('wage');
+const setAI=v=>{ai=v;bP.setAttribute('aria-pressed',v===3);bR.setAttribute('aria-pressed',v===24);draw()};
+bP.addEventListener('click',()=>setAI(3));bR.addEventListener('click',()=>setAI(24));
+wI.addEventListener('input',()=>{const v=parseFloat(wI.value);wage=isFinite(v)&&v>=0?v:0;draw()});
+draw();
+
+const $=id=>document.getElementById(id);
+const F=['cPrice','cUnits','cTMin','cWage','cAMin','cARate','cFee','cOther','cFix'];
+const load=k=>{const p=P[k];$('cPrice').value=p.price;$('cUnits').value=p.units;$('cTMin').value=p.tmin;$('cWage').value=2500;$('cAMin').value=p.amin;$('cARate').value=3;$('cFee').value=p.fee;$('cOther').value=p.oth;$('cFix').value=10000;calc()};
+const v=id=>{const x=parseFloat($(id).value);return isFinite(x)&&x>=0?x:0};
+const calc=()=>{
+  const price=v('cPrice'),units=v('cUnits'),c=v('cTMin')/60*v('cWage')+v('cAMin')*v('cARate')+price*v('cFee')/100+v('cOther');
+  const g=price-c,s=price*units,tg=g*units,fix=v('cFix')*12;
+  $('rGross').textContent=man(tg);$('rGross').style.color=tg<0?'var(--red)':'';
+  $('rSales').textContent=man(s);$('rCost').textContent=man(c*units);$('rUnit').textContent=yen(g);
+  $('rRate').textContent=s>0?(tg/s*100).toFixed(0)+'%':'—';
+  $('rNet').textContent=man(tg-fix);
+  $('rBE').textContent=g>0?Math.ceil(fix/g)+'件／年':'回収できません';
+};
+$('cPlan').addEventListener('change',e=>load(e.target.value));
+F.forEach(id=>$(id).addEventListener('input',calc));
+$('cReset').addEventListener('click',()=>load($('cPlan').value));
+load('kigyo');
+
+const hcalc=()=>{
+  const n=v('hN'),f=v('hF'),d=v('hD'),m=v('hMin'),r=v('hRate'),o=v('hOpt'),up=Math.min(v('hUp'),100);
+  const keep=n*d/100*78*f,opt=n*up/100*o*12,cost=n*m*r*12,net=keep+opt-cost;
+  $('hKeep').textContent=man(keep);$('hOptS').textContent=man(opt);$('hCost').textContent=man(cost);
+  $('hNet').textContent=man(net);$('hNet').style.color=net<0?'var(--red)':'';
+};
+['hN','hF','hD','hMin','hRate','hOpt','hUp'].forEach(id=>$(id).addEventListener('input',hcalc));
+hcalc();
+
+const S=Date.UTC(2026,10,23),E=Date.UTC(2027,7,1);
+const ms=d=>{const [y,m,dd]=d.split('-').map(Number);return Date.UTC(y,m-1,dd)};
+const pct=d=>((ms(d)-S)/(E-S)*100).toFixed(2);
+const md=d=>{const [,m,dd]=d.split('-').map(Number);return m+'/'+dd};
+const today='2026-11-28';
+const months=[['2026-12-01','12月'],['2027-01-01','1月'],['2027-02-01','2月'],['2027-03-01','3月'],['2027-04-01','4月'],['2027-05-01','5月'],['2027-06-01','6月'],['2027-07-01','7月']];
+$('ghead').innerHTML=months.map(([d,l])=>`<i class="gl" style="left:${pct(d)}%"></i><span class="mo" style="left:${pct(d)}%">${l}</span>`).join('')+`<i class="today" style="left:${pct(today)}%"></i><span class="now" style="left:${pct(today)}%">今日 11/28</span>`;
+document.querySelectorAll('#gantt .track[data-s]').forEach(t=>{
+  const s=t.dataset.s,e=t.dataset.e;
+  const list=(t.dataset.m||'').split('|').filter(Boolean).map(x=>x.split(','));
+  let h=months.map(([d])=>`<i class="gl" style="left:${pct(d)}%"></i>`).join('');
+  h+=`<i class="today" style="left:${pct(today)}%"></i>`;
+  h+=`<b class="bar" style="left:${pct(s)}%;width:${(pct(e)-pct(s)).toFixed(2)}%"></b>`;
+  h+=list.map(([d,l])=>`<button type="button" class="ms" style="left:${pct(d)}%" data-tip="${md(d)}　${l}" aria-label="${md(d)} ${l}"><span>${l}</span></button>`).join('');
+  t.innerHTML=h;
+  const chips=t.parentElement.querySelector('.mchips');
+  if(chips)chips.innerHTML=list.map(([d,l])=>`<span class="chip r">${md(d)} ${l}</span>`).join('');
+});
+
+const tip=$('tip');
+const show=(el,x,y)=>{tip.textContent=el.dataset.tip;tip.classList.add('on');const r=tip.getBoundingClientRect();let L=x+12,T=y-r.height-10;if(L+r.width>innerWidth-8)L=innerWidth-r.width-8;if(T<8)T=y+16;tip.style.left=L+'px';tip.style.top=T+'px'};
+const hide=()=>tip.classList.remove('on');
+document.addEventListener('pointermove',ev=>{const el=ev.target.closest('[data-tip]');if(el)show(el,ev.clientX,ev.clientY);else hide()});
+document.addEventListener('focusin',ev=>{const el=ev.target.closest('[data-tip]');if(el){const r=el.getBoundingClientRect();show(el,r.left+r.width/2,r.top)}});
+document.addEventListener('focusout',hide);
+document.addEventListener('scroll',hide,{passive:true});
+
+const K='prosplan-todo-v2';let st={};
+try{st=JSON.parse(localStorage.getItem(K)||'{}')||{}}catch(e){st={}}
+document.querySelectorAll('.todo input').forEach(c=>{c.checked=!!st[c.id];c.addEventListener('change',()=>{st[c.id]=c.checked;try{localStorage.setItem(K,JSON.stringify(st))}catch(e){}})});
+}
+</script>
+</body>
+</html>

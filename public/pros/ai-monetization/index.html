@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プロス×AI収益化マップ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,800&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE work: a strategy desk's map, finding first, every figure sourced or marked 仮
+   IDEA a station network map: free channels feed one hub (LINE), money is collected further down the line
+   PICTURE four horizontal layers with the LINE hub as the narrow waist, channels as chips coloured by verdict
+   COLOUR white or night ground, black ink, signal red for 主軸 and the hub, one grey
+   TYPE BIZ UDPGothic (universal design, Japanese) + Archivo wide for figures
+   LAYOUT title and three evidence figures on top, the layer map full width beneath; phone stacks */
+:root{color-scheme:light dark;--bg:light-dark(#fff,#0e0e0e);--ink:light-dark(#111,#f1f1f1);--sub:light-dark(#5c5c5c,#a9a9a9);--line:light-dark(#dcdcdc,#2f2f2f);--soft:light-dark(#f4f4f4,#1a1a1a);--track:light-dark(#e6e6e6,#2a2a2a);--red:light-dark(#d9002a,#ff5a6e);--redsoft:light-dark(#fdecef,#2b1115)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "BIZ UDPGothic","Hiragino Sans","Noto Sans JP",sans-serif;overflow-x:clip}
+.num{font-family:Archivo,"BIZ UDPGothic",sans-serif;font-stretch:112%;font-weight:800;font-variant-numeric:tabular-nums}
+.band{padding-block:clamp(28px,4vw,56px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.wrap{max-width:1240px;margin-inline:auto}
+h1,h2,h3{line-height:1.2;text-wrap:balance;margin:0;font-weight:700}
+h1{font-size:clamp(28px,4.4vw,46px);letter-spacing:-.01em}
+h2{font-size:24px;margin-bottom:8px}
+h3{font-size:24px}
+h4{font-size:17px;margin:16px 0 4px}
+p{margin:0 0 12px}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+.small{font-size:14px;color:var(--sub)}
+.red{color:var(--red)}
+header.band{border-top:10px solid var(--ink);padding-bottom:20px}
+.top{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:end}
+.lead{font-size:20px;line-height:1.6;margin-top:14px}
+.draft{font-size:14px;color:var(--sub);border-left:3px solid var(--red);padding-left:10px;margin:14px 0 0}
+.keys{display:grid;grid-template-columns:minmax(0,1fr);border-top:3px solid var(--ink)}
+.key{padding:10px 0;border-bottom:1px solid var(--line)}
+.key .num{font-size:clamp(26px,3vw,36px);line-height:1.1;display:block;white-space:nowrap}
+.key .lab{font-size:15px;color:var(--sub);display:block}
+.key.hot .num{color:var(--red)}
+.map{border-top:3px solid var(--ink)}
+.layer{display:grid;grid-template-columns:12em minmax(0,1fr) 11em;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.layer .lt b{display:block;font-size:20px}
+.layer .lt span{font-size:14px;color:var(--sub);display:block;line-height:1.45}
+.layer .lv{text-align:right;line-height:1.35}
+.layer .lv .num{font-size:22px;display:block;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.cc{display:inline-flex;flex-direction:column;justify-content:center;min-height:52px;padding:6px 14px;border-radius:8px;text-decoration:none;border:1.5px solid var(--ink);line-height:1.3}
+.cc b{font-size:16px}
+.cc span{font-size:14px;color:var(--sub)}
+.cc.main{background:var(--red);border-color:var(--red);color:#fff}
+.cc.main span{color:#fff;opacity:.9}
+.cc.skip{border:1.5px dashed var(--sub);color:var(--sub)}
+.cc:hover,.cc:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.hub{display:grid;grid-template-columns:12em minmax(0,1fr) 11em;gap:16px;align-items:center;padding:14px 16px;margin:0 -16px;background:var(--red);color:#fff}
+.hub b{font-size:20px}
+.hub p{margin:0;font-size:16px}
+.hub .num{font-size:22px;text-align:right;white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--sub);margin-top:10px}
+.legend i{display:inline-block;width:18px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px;border:1.5px solid var(--ink)}
+.rules3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 28px;border-top:3px solid var(--ink)}
+.rules3 div{padding:14px 0;border-bottom:1px solid var(--line)}
+.rules3 b{display:block;font-size:20px;line-height:1.35;margin-bottom:6px}
+.split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:start}
+.bars{border-top:3px solid var(--ink)}
+.br{display:grid;grid-template-columns:13em minmax(0,1fr) 4.5em;gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.br .bt{height:16px;background:var(--ink);border-radius:0 4px 4px 0}
+.br.hot .bt{background:var(--red)}
+.br .v{text-align:right;white-space:nowrap}
+.br .v .num{font-size:18px}
+.br.rr{grid-template-columns:8em minmax(0,1fr) 7.5em}
+.rg{position:relative;height:18px;background:var(--track);border-radius:4px}
+.rg i{position:absolute;top:0;bottom:0;background:var(--ink);border-radius:4px}
+.rg.hot i{background:var(--red)}
+.nav{display:flex;gap:8px;overflow-x:auto;padding:10px max(5vw,16px);background:var(--bg);border-block:1px solid var(--line)}
+.nav a{flex:none;text-decoration:none;font-weight:700;padding:6px 16px;border:1px solid var(--line);border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+.nav a:hover,.nav a:focus-visible{border-color:var(--ink)}
+.lhead{border-top:3px solid var(--ink);padding-top:20px;margin-top:44px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}
+.card{padding:16px 0;border-bottom:1px solid var(--line)}
+.card h3{font-size:22px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.verdict{font-size:14px;font-weight:700;border-radius:999px;padding:2px 12px;white-space:nowrap;border:1.5px solid var(--ink)}
+.verdict.main{background:var(--red);border-color:var(--red);color:#fff}
+.verdict.skip{border-style:dashed;color:var(--sub);border-color:var(--sub)}
+.card dl{display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:4px 14px;margin:10px 0 0}
+.card dt{font-size:14px;color:var(--sub);font-weight:700;padding-top:2px}
+.card dd{margin:0}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%}
+th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+thead th{border-bottom:2px solid var(--ink);font-size:14px;line-height:1.4}
+td.r,th.r{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+td.c,th.c{text-align:center}
+tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+.dot{font-size:18px}
+.warn{background:var(--soft);padding:12px 14px;border-radius:6px;margin-top:14px}
+#tip{position:fixed;z-index:9;pointer-events:none;background:var(--ink);color:var(--bg);font-size:14px;line-height:1.5;padding:6px 10px;border-radius:6px;max-width:280px;opacity:0;transition:opacity .12s}
+#tip.on{opacity:1}
+.rules{columns:2;column-gap:40px;padding-left:1.2em;margin:0}
+.rules li{break-inside:avoid;margin-bottom:10px}
+.src{columns:2;column-gap:40px;padding-left:1.2em;margin:0;font-size:14px}
+.src li{break-inside:avoid;margin-bottom:6px}
+footer.band{border-top:3px solid var(--ink)}
+.toplink{display:inline-flex;align-items:center;min-height:44px;font-weight:700}
+@media(min-width:900px){.nav{position:sticky;top:0;z-index:5}}
+@media(max-width:900px){.top,.split{grid-template-columns:minmax(0,1fr)}.rules3{grid-template-columns:minmax(0,1fr)}.cards{grid-template-columns:minmax(0,1fr)}.rules,.src{columns:1}.layer,.hub{grid-template-columns:minmax(0,1fr) auto}.layer .chips{grid-column:1/-1;grid-row:2}.hub p{grid-column:1/-1;grid-row:2}}
+@media(max-width:600px){.br,.br.rr{grid-template-columns:minmax(0,1fr) auto}.br .bt,.br .rg{grid-column:1/-1;grid-row:2}.card dl{grid-template-columns:minmax(0,1fr)}.card dt{padding-top:6px}.lead{font-size:18px}table{font-size:14px}th,td{padding:7px 4px}.stack thead{display:none}.stack tr{display:block;padding-block:8px;border-bottom:1px solid var(--line)}.stack td{display:block;border:0;padding:2px 0;text-align:left}.stack td::before{content:attr(data-l);display:block;font-size:14px;color:var(--sub);font-weight:700}}
+@media(prefers-reduced-motion:reduce){#tip{transition:none}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+
+<header class="band">
+<div class="wrap top">
+<div>
+<h1>発信はお金にならない。<br>お金は「人・結果・仕組み」で取る</h1>
+<p class="lead">AIで作った記事や動画は量が増えて値下がりし、YouTubeやAmazonは量産品を締め出しています。プロスの稼ぎどころは、<b class="red">先生の信頼と結果が付いた商品</b>と、<b class="red">教材とAIの運用を他の教室・園・会社に貸す仕組み</b>です。SNSやnoteの役目は、人を<b>LINEとメール（自前の名簿）</b>に集めることです。</p>
+<p class="draft">社内検討用の下書き（2026年11月28日）。手数料・相場・規約は下の出典の公表値です。「売上の目安」はすべて<b>仮</b>の計算（値段×件数）です。英会話9案の収支は<a href="plans.html">別ページ</a>にあります。</p>
+</div>
+<div class="keys">
+<div class="key"><span class="num">0.01〜0.1円</span><span class="lab">子ども向けYouTubeの広告収益（1再生あたり。一般向けは0.3〜1.0円）</span></div>
+<div class="key hot"><span class="num">+81.3%</span><span class="lab">noteのメンバーシップ（月額）売上の伸び（2025年11月・前年同月比）</span></div>
+<div class="key"><span class="num">1日30万円〜</span><span class="lab">AI研修の相場。国の助成金で最大75%が戻る</span></div>
+</div>
+</div>
+</header>
+
+<section class="band" style="padding-top:0">
+<div class="wrap">
+<h2>全体の地図：上で集めて、LINEとメールを通して、下で売る</h2>
+<div class="map" aria-label="収益化の4つの層">
+<div class="layer">
+<div class="lt"><b>集める</b><span>無料で見せる。お金はほぼ入らない</span></div>
+<div class="chips">
+<a class="cc main" href="#c-insta"><b>Instagram</b><span>集客の主力</span></a>
+<a class="cc main" href="#c-mail"><b>メルマガ</b><span>返信するとAIが答える</span></a>
+<a class="cc" href="#c-tiktok"><b>TikTok</b><span>同じ動画を流用</span></a>
+<a class="cc" href="#c-youtube"><b>YouTube</b><span>動画の置き場</span></a>
+<a class="cc" href="#c-event"><b>イベント・マルシェ</b><span>名簿集め</span></a>
+<a class="cc skip" href="#c-substack"><b>Substack</b><span>見送り</span></a>
+<a class="cc skip" href="#c-stamp"><b>LINEスタンプ</b><span>宣伝用のみ</span></a>
+</div>
+<div class="lv"><span class="num">ほぼ0円</span><span class="small">直接の収入</span></div>
+</div>
+<div class="hub">
+<b>LINEとメール（自前の名簿）</b>
+<p>すべての発信の行き先。保護者と生徒にはLINE、大人・先生・会社の人事にはメール。どちらも規約も順位も自分で決められます。ここから自社の決済で売れば手数料は数%だけ。</p>
+<span class="num">手取り 約96%</span>
+</div>
+<div class="layer">
+<div class="lt"><b>小さく売る</b><span>数百〜数千円。名簿の熱を測る</span></div>
+<div class="chips">
+<a class="cc main" href="#c-note"><b>note 有料・月額</b><span>実名の先生で</span></a>
+<a class="cc" href="#c-game"><b>ミニゲーム・アプリ</b><span>在籍生に無料で</span></a>
+<a class="cc" href="#c-kdp"><b>本・ドリル</b><span>名刺代わり</span></a>
+<a class="cc" href="#c-skill"><b>ココナラ・ストアカ</b><span>外部生の入口</span></a>
+<a class="cc skip" href="#c-udemy"><b>Udemy</b><span>見送り</span></a>
+</div>
+<div class="lv"><span class="num">約50万円</span><span class="small">1年目の目安（仮）</span></div>
+</div>
+<div class="layer">
+<div class="lt"><b>人と結果で売る</b><span>1万〜十数万円。先生の時間と合格・伸び</span></div>
+<div class="chips">
+<a class="cc main" href="plans.html"><b>英会話9案</b><span>企業研修・大人ほか</span></a>
+<a class="cc main" href="#c-call"><b>宿題コール</b><span>こちらから電話する</span></a>
+<a class="cc" href="#c-juku"><b>鶴舞AI塾</b><span>子ども向け実践塾</span></a>
+</div>
+<div class="lv"><span class="num">約1,292万円</span><span class="small">1年目の目安（仮）</span></div>
+</div>
+<div class="layer">
+<div class="lt"><b>仕組みを売る</b><span>作ったものを他の教室・園・会社に貸す</span></div>
+<div class="chips">
+<a class="cc main" href="#c-aidx"><b>AI導入支援</b><span>AI社員パック</span></a>
+<a class="cc main" href="#c-license"><b>教室ライセンス</b><span>AIフォニックス教室キット</span></a>
+<a class="cc main" href="#c-en"><b>園向け動画サブスク</b><span>フォニックス動画</span></a>
+<a class="cc main" href="#c-iwam"><b>iWAM×AIレポート</b><span>プロスにしかない</span></a>
+</div>
+<div class="lv"><span class="num">約630万円</span><span class="small">1年目の目安（仮）</span></div>
+</div>
+</div>
+<div class="legend"><span><i style="background:var(--red);border-color:var(--red)"></i>主軸</span><span><i></i>補助</span><span><i style="border-style:dashed;border-color:var(--sub)"></i>見送り</span><span>四角を押すと説明へ移動します</span></div>
+</div>
+</section>
+
+<section class="band" style="background:var(--soft)">
+<div class="wrap">
+<h2>メタの考え方：3つだけ</h2>
+<div class="rules3">
+<div><b>作るのはAI、保証するのは人</b><p>AIで作れるものは誰でも作れるので値下がりします。お金が残るのは「この先生が言うなら」という信頼と、合格や伸びといった結果です。note自身も、その人にしか語れない経験や信頼感がより大きな価値を持つようになったと発表しています。</p></div>
+<div><b>SNSは借りた土地、LINEとメールは自分の土地</b><p>SNSでは、収益化の条件も表示順位も相手が決めます。発信は全部LINEかメールの登録に集め、売るのは自社の決済で。下の図のとおり、売る場所で手元に残るお金は最大2.7倍ちがいます。</p></div>
+<div><b>作った仕組みを、手順書ごと貸す</b><p>プロスの教材とAIの運用（エージェント組織で作る流れ）を、他の教室・園・会社に手順書ごと渡します。教室が増えるほど収入が増え、KTがいなくても回ります。43年続く「教材を届ける会社」の本業そのものです。</p></div>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap split">
+<div>
+<h2>売る場所で、手元に残るお金は最大2.7倍ちがう</h2>
+<p class="small">売上100円のうち手元に残る額。行に触れると条件が出ます。</p>
+<div class="bars" id="take"></div>
+</div>
+<div>
+<h2>広告で稼ぐ道は、プロスには細い</h2>
+<p class="small">1再生あたりの広告収益の目安（YouTube）</p>
+<div class="bars">
+<div class="br rr"><span>一般（大人）向け</span><div class="rg"><i style="left:30%;width:70%"></i></div><span class="v num">0.3〜1.0円</span></div>
+<div class="br rr hot"><span>子ども向け</span><div class="rg hot"><i style="left:1%;width:9%"></i></div><span class="v num red">0.01〜0.1円</span></div>
+</div>
+<p class="small" style="margin-top:6px">10万回再生で、一般向けは3〜10万円、子ども向けは1,000〜1万円の目安。</p>
+<ul style="padding-left:1.2em;margin:14px 0 0">
+<li><b>子ども向けの動画</b>は、子どもの個人情報を守る法律に合わせて、興味に合わせた広告が止まります。</li>
+<li><b>AIで量産した動画</b>は、YouTubeの「本物でないコンテンツ」に当たると収益化されません。2026年7月にはその中身がさらに細かく定められました。</li>
+<li><b>TikTokの報酬</b>は、フォロワー1万人以上・30日で10万再生以上・1分以上の動画が条件で、ビジネスアカウントは対象外です。</li>
+<li><b>Instagramのボーナスと月額機能</b>は、日本では招待された人しか使えません。</li>
+</ul>
+<p class="warn" style="margin-top:14px"><b>結論：</b>フォニックス動画はYouTubeの広告ではなく、<b>園や家庭に直接売る</b>。発信は収入ではなく、LINE登録の数で評価します。</p>
+</div>
+</div>
+</section>
+
+<nav class="nav" aria-label="チャネル一覧">
+<a href="#L-a">集める</a><a href="#L-b">小さく売る</a><a href="#L-c">人と結果</a><a href="#L-d">仕組みを売る</a><a href="#assets">資産</a><a href="#tests">90日の実験</a><a href="#year1">1年目の目安</a><a href="plans.html">英会話9案</a>
+</nav>
+
+<main class="band" style="padding-top:8px">
+<div class="wrap">
+
+<section id="L-a" class="lhead">
+<h2>集める：お金はほぼ入らない。LINEとメールの登録数で評価する</h2>
+<div class="cards">
+<article class="card" id="c-insta">
+<h3>Instagram <span class="verdict main">主軸（集客）</span></h3>
+<dl>
+<dt>お金</dt><dd>日本ではボーナスと月額機能は招待制。企業からのPR案件は、フォロワー2万人前後で1件1〜3万円が目安</dd>
+<dt>実例</dt><dd>言語聴覚士が運営する「コトリドリル」は、フォロワー3万人以上のアカウントから自社の家庭用教材のネットショップへつないでいる</dd>
+<dt>勝ち筋</dt><dd>口の形と音を見せるフォニックスの短い動画を保護者向けに。プロフィールからLINEへ</dd>
+<dt>最初の一手</dt><dd>週3本を8週間。見るのはLINE登録の数だけ</dd>
+</dl>
+</article>
+<article class="card" id="c-mail">
+<h3>メルマガ（返信するとAIが答える） <span class="verdict main">主軸（大人・法人の名簿）</span></h3>
+<dl>
+<dt>届く</dt><dd>社員25人以下の会社のメルマガの平均開封率は21.11%（2026年版の調査）。保護者と生徒はLINE、大人・先生・人事はメールと分ける</dd>
+<dt>仕組み</dt><dd>毎週の「今週の1問」に英語で返信すると、AIが添削と模範解答を数分で返す。難しい返信や申し込みにつながりそうな返信は先生に回す</dd>
+<dt>お金</dt><dd>直接の収入は小さい。読者を有料の毎日添削（例：月980円、仮）、宿題コールの無料体験、大人コーチング、企業研修へつなぐ</dd>
+<dt>LINEとの差</dt><dd>LINEは月5,000通まで月5,000円（ライト）。それを超えるとスタンダード（月15,000円で3万通、超過は1通3円）になる。チャットや応答メッセージは通数に数えない</dd>
+<dt>作り方</dt><dd>受信と返信はKTがすでに使っているCloudflareで作る。受信は無料・無制限、返信の送信はWorkersの有料プランで月3,000通まで込み、その先は1,000通0.35ドル。Cloudflareの送信は個別のやりとり用で宣伝メールには使えないので、一斉配信は別の配信サービスで送る</dd>
+</dl>
+</article>
+<article class="card" id="c-tiktok">
+<h3>TikTok <span class="verdict">補助</span></h3>
+<dl>
+<dt>お金</dt><dd>報酬はフォロワー1万人以上・30日10万再生・1分以上の動画が条件。ビジネスアカウントは対象外なので、会社のアカウントでは報酬が出ない</dd>
+<dt>勝ち筋</dt><dd>Instagram用の動画をそのまま流す。手間を増やさない</dd>
+<dt>最初の一手</dt><dd>同時投稿にして、どちらからLINE登録が多いかを比べる</dd>
+</dl>
+</article>
+<article class="card" id="c-youtube">
+<h3>YouTube <span class="verdict">補助（置き場）</span></h3>
+<dl>
+<dt>お金</dt><dd>子ども向けに設定すると広告単価が下がる（1再生0.01〜0.1円）。AIで量産した動画や、繰り返しの動画は収益化の対象外</dd>
+<dt>勝ち筋</dt><dd>動画の置き場と、園・保護者への見本。限定公開のリンクを営業に使う</dd>
+<dt>最初の一手</dt><dd>フォニックス動画の見本3本を限定公開で置く</dd>
+</dl>
+</article>
+<article class="card" id="c-event">
+<h3>イベント・マルシェ <span class="verdict">補助（名簿）</span></h3>
+<dl>
+<dt>お金</dt><dd>直接の収入は小さい。その場でLINE登録してもらえるのが価値</dd>
+<dt>実例</dt><dd>KTは2026年3月、鶴舞小学校のマルシェでQRコードからAIが歌を作る屋台を出した</dd>
+<dt>勝ち筋</dt><dd>「AIと英語で話してみよう」の体験ブースで、測定と英検の案内につなぐ</dd>
+</dl>
+</article>
+<article class="card" id="c-substack">
+<h3>Substack <span class="verdict skip">見送り</span></h3>
+<dl>
+<dt>お金</dt><dd>手数料10%＋決済手数料。無料から有料に変わる読者は平均3.1%で、有料収入がある書き手は12%だけ</dd>
+<dt>理由</dt><dd>英語圏の読者がいないと成り立たない。日本の保護者や先生にはnoteの方が届く</dd>
+<dt>例外</dt><dd>海外の先生や旅行者に、奈良の学びを英語で発信する場合だけ検討</dd>
+</dl>
+</article>
+<article class="card" id="c-stamp">
+<h3>LINEスタンプ <span class="verdict skip">宣伝用のみ</span></h3>
+<dl>
+<dt>お金</dt><dd>手数料30%を引いた残りの50%（売上の35%）がクリエイターに入る。出品数が膨大で見つけてもらいにくい</dd>
+<dt>勝ち筋</dt><dd>フォニックスのキャラクターを生徒と保護者に配って、教室の話題にする。収入は期待しない</dd>
+</dl>
+</article>
+</div>
+</section>
+
+<section id="L-b" class="lhead">
+<h2>小さく売る：数百〜数千円。「買ってくれる人がいるか」を測る</h2>
+<div class="cards">
+<article class="card" id="c-note">
+<h3>note 有料記事・メンバーシップ <span class="verdict main">主軸（小）</span></h3>
+<dl>
+<dt>お金</dt><dd>カード決済なら手数料5%＋10%。1,000円の記事で手取り855円（振込のたびに270円）</dd>
+<dt>相場</dt><dd>売れている実用ノウハウ記事の平均は1,842円。メンバーシップは月額600円で1,700人以上が参加する例も</dd>
+<dt>伸びている所</dt><dd>有料記事では「育児・教育」と「AI活用」が急成長ジャンルに入っている</dd>
+<dt>勝ち筋</dt><dd>本山先生や講師の実名・経験で「家でできるフォニックス」「先生のAI活用」。KTのAI量産メディアとは別の名前にする（信頼が商品なので）</dd>
+<dt>目安（仮）</dt><dd>月800円×平均50人×12か月＝約48万円</dd>
+</dl>
+</article>
+<article class="card" id="c-game">
+<h3>ミニゲーム・アプリ <span class="verdict">補助</span></h3>
+<dl>
+<dt>お金</dt><dd>ブラウザゲームは広告の山分け。Pokiは50/50（自分で連れてきた人は100%）、CrazyGamesは広告60%・課金70%。大半は少額で、好調なゲームで月200〜2,000ドル</dd>
+<dt>スマホ</dt><dd>2025年12月18日の新しい法律で、Appleのアプリ内課金は手数料26%、外部サイトでの決済は15%に。Googleはサブスクの外部決済が10%</dd>
+<dt>実例</dt><dd>知育アプリのシンクシンクは無料＋アプリ内課金。ワンダーボックスはアプリとワークブックと手で遊ぶ教材を組み合わせた通信教育</dd>
+<dt>勝ち筋</dt><dd>子ども向けは広告に頼れない。まず在籍生の宿題に無料で付けて続ける理由にする。家庭向けの月額は、教材と保護者への報告とセットで</dd>
+</dl>
+</article>
+<article class="card" id="c-kdp">
+<h3>本・ドリル（Kindle） <span class="verdict">補助（名刺代わり）</span></h3>
+<dl>
+<dt>お金</dt><dd>電子書籍の印税は70%か35%を選ぶ（70%は条件あり）。AIで作った中身は申告が必要で、出版は1日3冊まで</dd>
+<dt>勝ち筋</dt><dd>動画と同じキャラクターの「親子フォニックスドリル」。売上より、園や教室への営業で渡す実物として</dd>
+</dl>
+</article>
+<article class="card" id="c-skill">
+<h3>ココナラ・ストアカ <span class="verdict">補助（外部生の入口）</span></h3>
+<dl>
+<dt>お金</dt><dd>ココナラは手数料22%（ビデオ通話は27.5%）。ストアカは自分で集客すれば10%、ストアカ経由は30%（対面は20%）</dd>
+<dt>勝ち筋</dt><dd>英検二次の模擬面接を単発で出品し、近くに教室がない人と出会う。2回目からはLINEと自社の決済へ</dd>
+</dl>
+</article>
+<article class="card" id="c-udemy">
+<h3>Udemy <span class="verdict skip">見送り</span></h3>
+<dl>
+<dt>お金</dt><dd>自分のクーポン経由なら97%、それ以外は37%。定額プランの分配は2026年から15%</dd>
+<dt>理由</dt><dd>自分で集めた人に売るなら、自社のLINEと決済の方が手取りも名簿も残る</dd>
+</dl>
+</article>
+</div>
+</section>
+
+<section id="L-c" class="lhead">
+<h2>人と結果で売る：先生の時間に、合格と伸びの証明を付ける</h2>
+<div class="cards">
+<article class="card">
+<h3>英会話9案 <span class="verdict main">主軸</span></h3>
+<dl>
+<dt>中身</dt><dd>企業研修（助成金つき）、大人コーチング、観光地の接客英語、英検二次特訓、外国人社員の日本語、AI宿題、宿題コール（電話）、測定、代理店</dd>
+<dt>目安（仮）</dt><dd>1年目の売上 約1,173万円・粗利 約842万円</dd>
+<dt>詳しく</dt><dd><a href="plans.html">収支ページを開く</a></dd>
+</dl>
+</article>
+<article class="card" id="c-call">
+<h3>宿題コール（こちらから電話する） <span class="verdict main">主軸（続けさせる）</span></h3>
+<dl>
+<dt>中身</dt><dd>毎日、本人が決めた時間にAIの先生から3分の電話。習った表現を思い出させ、1問だけ英語で話させる。2日続けて出なければ、先生が人の声でかける</dd>
+<dt>なぜ効く</dt><dd>やるかどうかを気分に任せず、電話の時間がやらせる。習慣は同じきっかけでくり返すと身につき、平均66日かかる。思い出す練習は読み直すより長く残る</dd>
+<dt>実例</dt><dd>韓国の「電話英語」は毎日同じ時間に先生から電話を受ける形。「やり切らせる仕組み」が売りのプログリットは3か月632,500円</dd>
+<dt>お金</dt><dd>月3,300円（仮）。原価の7〜8割は通話料で、1人1か月の粗利は1,128〜1,737円（回線しだい）</dd>
+<dt>強み</dt><dd>鶴舞の電話自動化で作っている全二重の音声と「AIが取れないときは人に回す」仕組みをそのまま使える</dd>
+<dt>詳しく</dt><dd><a href="plans.html#plan-denwa">収支ページの「電話」</a></dd>
+</dl>
+</article>
+<article class="card" id="c-juku">
+<h3>鶴舞AI塾 <span class="verdict">補助（地域ブランド）</span></h3>
+<dl>
+<dt>お金</dt><dd>月謝。英語の個別指導は小学生・週1回で月1.2万〜2.3万円が相場</dd>
+<dt>中身</dt><dd>KTが構想している、主に鶴舞小学校の子ども向けにAIで町の困りごとを解決する実践塾</dd>
+<dt>勝ち筋</dt><dd>プロスの教室で開けば、英語とAIの両方を学べる場になる。保護者の名簿が英語コースにつながる</dd>
+<dt>目安（仮）</dt><dd>月8,800円×15人×9か月＝約119万円</dd>
+</dl>
+</article>
+</div>
+</section>
+
+<section id="L-d" class="lhead">
+<h2>仕組みを売る：一度作ったものを、他の会社・教室・園に貸す</h2>
+<div class="cards">
+<article class="card" id="c-aidx">
+<h3>AI導入支援（AI社員パック） <span class="verdict main">主軸</span></h3>
+<dl>
+<dt>お金</dt><dd>AI研修の相場は半日15万円〜・1日30万円〜・伴走型は月10万円。中小企業でAIを導入しているのは20.4%</dd>
+<dt>相手の負担</dt><dd>人材開発支援助成金はAI研修で最大75%。デジタル化・AI導入補助金2026は通常枠5万〜450万円（登録した事業者・ツールが対象）</dd>
+<dt>勝ち筋</dt><dd>プロスの教材づくりを実際に回しているAIエージェントの組織を見せられる。KTの腕に頼り切らないよう、研修・設定・手順書を決まった型で売る</dd>
+<dt>目安（仮）</dt><dd>研修30万円×6件＋伴走 月10万円×3社×6か月＝360万円</dd>
+</dl>
+</article>
+<article class="card" id="c-license">
+<h3>教室ライセンス（AIフォニックス教室キット） <span class="verdict main">主軸（育てる）</span></h3>
+<dl>
+<dt>お金</dt><dd>個人の英語教室から、初期費用と月額をもらう</dd>
+<dt>市場</dt><dd>ECCジュニアは全国に約1万教室。Leptonは1,320拠点でフランチャイズ展開し、2026年5月にAIの発音チェックを入れた。講師養成講座には1つ66,000円の例がある</dd>
+<dt>勝ち筋</dt><dd>本山先生の方法＋AI宿題＋LINEの運用＋手順書をひとまとめに。プロスは教材を教室に届けてきた会社なので、売り方を知っている</dd>
+<dt>目安（仮）</dt><dd>月1万円×平均10教室×12か月＝120万円</dd>
+</dl>
+</article>
+<article class="card" id="c-en">
+<h3>園向けフォニックス動画サブスク <span class="verdict main">主軸（育てる）</span></h3>
+<dl>
+<dt>お金</dt><dd>幼稚園・保育園が月額か年額で払う</dd>
+<dt>実例</dt><dd>セイハは2026年4月から園向けの英語動画サブスクを開始。イーオンとmpi松香フォニックスは「BANANAチャンネル」を2026年9月から本格提供（5〜6月に1か月の無料トライアル）。どちらも値段は公表資料に見当たらない</dd>
+<dt>勝ち筋</dt><dd>計画中のフォニックス動画を、YouTubeの広告ではなく園に売る。大手が始めたばかりなので、奈良の園への対面サポートで差をつける</dd>
+<dt>目安（仮）</dt><dd>月1万円×10園×6か月（秋から）＝60万円</dd>
+</dl>
+</article>
+<article class="card" id="c-iwam">
+<h3>iWAM×AIレポート <span class="verdict main">主軸候補（独自）</span></h3>
+<dl>
+<dt>お金</dt><dd>iWAMの受検に、AIが作る「この人に響く言葉」の1on1ガイドを追加料金で付ける</dd>
+<dt>根拠</dt><dd>iWAMは仕事での傾向を16カテゴリー・48の認識スタイルで見える化し、「どんな言葉でやる気が高まるか」まで分かる</dd>
+<dt>勝ち筋</dt><dd>販売権と人事部の顧客は他社が持っていない。英語研修・AI導入支援の営業の入口にもなる</dd>
+<dt>目安（仮）</dt><dd>1人3,000円×300人＝90万円</dd>
+<dt>注意</dt><dd>個人の診断データの扱い（本人の同意・保存場所）と、開発元のjobEQ社との契約で追加サービスが認められるかを確認</dd>
+</dl>
+</article>
+</div>
+</section>
+
+<section id="assets" class="lhead">
+<h2>プロスにしかない資産と、それを使う場所</h2>
+<p class="small">AIで誰でも作れる部分ではなく、ここに値札を付けます。</p>
+<div class="scroll">
+<table class="stack">
+<thead><tr><th>資産</th><th>何に効くか</th><th>使う場所</th></tr></thead>
+<tbody>
+<tr><td>43年の会社の信用</td><td>「ちゃんとした会社」として法人・園・行政に入れる</td><td>AI導入支援、園向け動画、企業研修</td></tr>
+<tr><td>iWAMの販売権と人事部の顧客</td><td>法人の入口がすでにある</td><td>iWAM×AI、企業研修、AI導入支援</td></tr>
+<tr><td>英語学校と先生（本山先生の方法）</td><td>「この先生が言うなら」という信頼と結果</td><td>note、英会話9案、教室ライセンス</td></tr>
+<tr><td>フォニックス教材（制作中）</td><td>動画・ゲーム・ドリルの元になる</td><td>園向け動画、教室ライセンス、ミニゲーム、本</td></tr>
+<tr><td>AIエージェントの組織（教材を作る工場）</td><td>作る原価がほぼゼロ。仕組み自体が商品の見本</td><td>全部の制作、AI導入支援</td></tr>
+<tr><td>自前のLINEとメールの名簿</td><td>プラットフォームに取られない名簿</td><td>全部の販売</td></tr>
+<tr><td>鶴舞の電話自動化（全二重の音声・人に回す仕組み）</td><td>こちらから電話をかけて続けさせる商品が作れる</td><td>宿題コール、大人コーチング、企業研修</td></tr>
+<tr><td>奈良の地縁と、ウォム（県内の事業所）</td><td>地域の店・園・公共案件に近い</td><td>観光、園向け動画、鶴舞AI塾、公共案件</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="tests" class="lhead">
+<h2>最初の90日の実験：小さく試して、合格ラインに届いたものだけ続ける</h2>
+<p class="small">合格ラインはすべて仮です。届かなければやめるか、形を変えます。</p>
+<div class="scroll">
+<table class="stack">
+<thead><tr><th>実験</th><th>期間</th><th>合格ライン（続ける）</th><th>届かなければ</th></tr></thead>
+<tbody>
+<tr><td>Instagram・TikTokでフォニックスの口の形の動画を週3本</td><td>12〜2月</td><td>LINE登録が月100人</td><td>動画の型を変えて1回だけ再挑戦</td></tr>
+<tr><td>noteに先生の実名で実用記事を3本（1,480円）</td><td>1〜2月</td><td>合計30本売れる</td><td>メンバーシップは作らず、無料記事でLINEへ</td></tr>
+<tr><td>AI社員パックを知り合いの会社とiWAMの取引先に提案</td><td>12〜2月</td><td>30万円以上の受注が1件</td><td>半日の研修だけに縮めて売る</td></tr>
+<tr><td>iWAM受検者10人にAIの1on1ガイドを無料で付ける</td><td>1〜2月</td><td>人事の8割が「有料でもほしい」</td><td>無料の付録のまま、他社との差にする</td></tr>
+<tr><td>知り合いの個人英語教室3つにAI宿題キットを試してもらう</td><td>1〜3月</td><td>2教室が月額を払う意向</td><td>プロスの教室だけで使う</td></tr>
+<tr><td>奈良の園3つにフォニックス動画を1か月無料で</td><td>2〜3月</td><td>1園が有料を希望</td><td>動画は在籍生と教室キットに回す</td></tr>
+<tr><td>宿題コール：在籍生5人（保護者の同意あり）に毎晩3分を2週間、無料で</td><td>12月</td><td>電話に出た日が8割以上で、保護者の8割が「続けたい」</td><td>時間帯と長さを変えて1回だけ再挑戦</td></tr>
+<tr><td>返信するとAIが添削するメルマガを週1回</td><td>12〜2月</td><td>読者の5%が返信し、有料版か電話の無料体験に10人</td><td>呼びかけを変えて1回だけ再挑戦。だめならLINEに一本化</td></tr>
+<tr><td>フォニックスのミニゲームを1本ブラウザで公開</td><td>2〜3月</td><td>在籍生の半分が週1回遊ぶ</td><td>ゲームはやめて動画に集中</td></tr>
+</tbody>
+</table>
+</div>
+<p class="warn"><b>やらないこと：</b>AIで量産した動画や記事で広告収入を狙うこと。LINEスタンプやUdemyを収入の柱にすること。英語圏の読者がいないままSubstackを始めること。</p>
+</section>
+
+<section id="year1" class="lhead">
+<h2>1年目の売上の目安（仮）</h2>
+<p class="small">値段×件数の仮の計算です。原価は案によって大きくちがうので、英会話9案以外は売上だけを示します。</p>
+<div class="scroll">
+<table>
+<thead><tr><th>何で</th><th>計算</th><th class="r">売上の目安</th></tr></thead>
+<tbody>
+<tr><td><a href="plans.html">英会話9案</a></td><td>別ページの計算（粗利 約842万円）。宿題コールを含む</td><td class="r">約1,173万円</td></tr>
+<tr><td>AI導入支援</td><td>研修30万円×6件＋伴走 月10万円×3社×6か月</td><td class="r">360万円</td></tr>
+<tr><td>教室ライセンス</td><td>月1万円×平均10教室×12か月</td><td class="r">120万円</td></tr>
+<tr><td>鶴舞AI塾</td><td>月8,800円×15人×9か月</td><td class="r">約119万円</td></tr>
+<tr><td>iWAM×AIレポート</td><td>3,000円×300人</td><td class="r">90万円</td></tr>
+<tr><td>園向け動画サブスク</td><td>月1万円×10園×6か月</td><td class="r">60万円</td></tr>
+<tr><td>note 有料・月額</td><td>月800円×平均50人×12か月</td><td class="r">48万円</td></tr>
+<tr><td>SNS・ゲーム・本・スタンプ</td><td>集客用。直接の収入は見込まない</td><td class="r">0円</td></tr>
+<tr class="tot"><td>合計</td><td></td><td class="r">約1,970万円</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="lhead">
+<h2>守ること</h2>
+<ul class="rules">
+<li>子どもの顔・声・学習データは保護者の同意をとり、動画では顔を出さない。</li>
+<li>AIで作ったものは、各サービスの決まりどおりに表示・申告する（Kindleは申告が必要）。</li>
+<li>iWAMの診断データは本人の同意をとり、開発元との契約の範囲で使う。</li>
+<li>プロスの名前を外で使う案は、社長と本山先生の承認をもらってから動く。本山先生の役割は監修と承認だけ。</li>
+<li>値段・契約・助成金・補助金の最終判断は社長と専門家。このページの数字は下書き。</li>
+<li>外に出すものは、出す前にKTが確認する。</li>
+<li>メールは事前に同意した人にだけ送り、送信者名と配信停止の連絡先を表示し、同意の記録を残す（特定電子メール法）。Gmailの送信者の要件（SPF・DKIM・DMARC、ワンクリックの配信停止）も最初から満たす。</li>
+<li>AIが返信・電話していることを必ず伝える。子どもには直接メールせず、電話は保護者の番号に保護者が決めた時間だけかける。</li>
+<li>電話の中では何も売らない。案内はLINEとメールで送る。</li>
+<li>どの仕組みも手順書を残し、KTがいなくても講師と事務で回せる形にする。</li>
+</ul>
+</section>
+
+</div>
+</main>
+
+<footer class="band">
+<div class="wrap">
+<h2>出典</h2>
+<p class="small">2026年11月28日時点で確認した公表情報です。手数料と規約は変わるので、始める前に各サービスの最新の案内で確認してください。</p>
+<ul class="src">
+<li><a href="https://biz.moneyforward.com/tax_return/basic/81117/">子ども向けYouTubeの広告単価（マネーフォワード）</a></li>
+<li><a href="https://support.google.com/youtube/answer/1311392?hl=en">YouTube 収益化ポリシー「本物でないコンテンツ」</a></li>
+<li><a href="https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/">YouTubeがAI量産動画の扱いを細かく定めた（TechCrunch）</a></li>
+<li><a href="https://atsoho.com/blog/tiktok-videos-revenue">TikTok 報酬プログラムの条件（2026年10月時点）</a></li>
+<li><a href="https://www.koukoku.jp/service/suketto/marketer/sns/instagram%E5%8F%8E%E7%9B%8A%E5%8C%96%E3%81%A8%E3%81%AF%EF%BC%9F%E3%83%95%E3%82%A9%E3%83%AD%E3%83%AF%E3%83%BC%E6%95%B0%E5%88%A5%E3%81%AE%E5%8F%8E%E5%85%A5%E7%9B%AE%E5%AE%89%E3%81%A8%E5%A7%8B%E3%82%81/">Instagram 収益化の条件と案件の相場（スケット）</a></li>
+<li><a href="https://stockcrew.co.jp/journal/story-kotori">コトリドリル：Instagramから自社教材へ（STOCKCREW）</a></li>
+<li><a href="https://www.help-note.com/hc/ja/articles/360011358873">note コンテンツ販売の手数料（noteヘルプ）</a></li>
+<li><a href="https://www.appbank.net/2026/01/08/iphone-news/2902024.php">note 有料記事・メンバーシップの分析（AppBank）</a></li>
+<li><a href="https://www.appbank.net/2025/12/02/iphone-news/2876475.php">note メンバーシップの事例と「人の価値」（AppBank）</a></li>
+<li><a href="https://voxbooster.com/ja/blog/substack-statistics-2026/">Substack の統計 2026（VoxBooster）</a></li>
+<li><a href="https://creator.line.me/ja/howto/">LINE Creators Market 分配の仕組み</a></li>
+<li><a href="https://app.cinevva.com/guides/web-game-monetization">ブラウザゲームの収益化 2026（Cinevva）</a></li>
+<li><a href="https://www.revenuecat.com/jp/blog/engineering/new-smartphone-law">スマホ新法とアプリの手数料（RevenueCat）</a></li>
+<li><a href="https://apps.apple.com/JP/app/id1082259392">シンクシンク（App Store）</a></li>
+<li><a href="https://www.tv-tokyo.co.jp/plus/external-pr/entry/15321.html">ワンダーボックスの仕組み（ワンダーファイ）</a></li>
+<li><a href="https://kdp.amazon.com/help?topicId=G200634500">Kindle 電子書籍の印税（KDP）</a></li>
+<li><a href="https://internet.watch.impress.co.jp/docs/yajiuma/1533950.html">KDP 1日3冊まで・AI生成の申告（INTERNET Watch）</a></li>
+<li><a href="https://support.udemy.com/hc/en-us/articles/229605008">Udemy 講師の収益分配</a></li>
+<li><a href="https://teach.udemy.com/?p=32821">Udemy 定額プランの分配率の変更</a></li>
+<li><a href="https://atsoho.com/blog/skill-sharing-services">ココナラ・ストアカの手数料（2026年）</a></li>
+<li><a href="https://bestjuku.com/article/8576/">英語の個別指導塾の費用相場（塾選）</a></li>
+<li><a href="https://0120.co.jp/blog/ai-training-113/">AI研修の費用相場 2026（課題解決プラットフォーム）</a></li>
+<li><a href="https://0120.co.jp/blog/ai-training-130/">中小企業のAI導入率（中小機構の調査を引用）</a></li>
+<li><a href="https://j-net21.smrj.go.jp/support/publicsupport/2020011802.html">デジタル化・AI導入補助金2026（J-Net21）</a></li>
+<li><a href="https://school.js88.com/scl_eigo/k/58440">ECCジュニアの教室数</a></li>
+<li><a href="https://prtimes.jp/main/html/rd/p/000000046.000036613.html">Lepton 1,320拠点・AIスピーキングチェック（PR TIMES）</a></li>
+<li><a href="https://www.u-presscenter.jp/item/0c5864d535b4069ccf3ede4bd49b4671_1.pdf">児童英語講師養成プログラムの受講料</a></li>
+<li><a href="https://resemom.jp/release/prtimes/20260428/181443.html">セイハ 園向け英語動画サブスク（リセマム）</a></li>
+<li><a href="https://prtimes.jp/main/html/rd/p/000000268.000062811.html">イーオン×mpi BANANAチャンネル（PR TIMES）</a></li>
+<li><a href="https://jinjibu.jp/service/detl/18436/">iWAM の概要（日本の人事部）</a></li>
+<li><a href="https://www.yano.co.jp/press-release/show/press_id/4199">語学ビジネス市場 2025年度（矢野経済研究所）</a></li>
+<li><a href="https://www.benchmarkemail.com/jp/email-marketing-benchmarks/">メルマガの平均開封率 2026年版（Benchmark Email）</a></li>
+<li><a href="https://www.lycbiz.com/jp/manual/OfficialAccountManager/account-settings">LINE公式アカウントの料金プランと数えないメッセージ（LINEヤフー）</a></li>
+<li><a href="https://www.lycbiz.com/jp/news/line-official-account/20261001/">LINE公式アカウント 追加メッセージ料金の改定（LINEヤフー）</a></li>
+<li><a href="https://blog.cloudflare.com/ja-jp/email-for-agents">Cloudflare Email Service とメールで動くエージェント（Cloudflare）</a></li>
+<li><a href="https://developers.cloudflare.com/email-service/platform/pricing/">Cloudflare Email Service の料金</a></li>
+<li><a href="https://developers.cloudflare.com/email-service/reference/faq/">Cloudflare Email Service は個別のやりとり用（FAQ）</a></li>
+<li><a href="https://support.google.com/mail/answer/81126">Gmail 送信者のガイドライン（Google）</a></li>
+<li><a href="https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/pdf/081203_2.pdf">特定電子メール法の改正の概要（総務省）</a></li>
+<li><a href="https://kmong.com/gig/212879">韓国の電話英語：毎日同じ時間に先生から電話（kmong）</a></li>
+<li><a href="https://resemom.jp/mitsukaru-eikaiwa/?p=25145">プログリットは「やり切らせる仕組み」（リセマム）</a></li>
+<li><a href="https://www.ucl.ac.uk/news/2009/aug/how-long-does-it-take-form-habit">習慣が身につくまで平均66日（ロンドン大学）</a></li>
+<li><a href="https://gendai.media/articles/-/69129">思い出す練習のテスト効果（現代ビジネス）</a></li>
+</ul>
+</div>
+</footer>
+
+<div id="tip" role="tooltip"></div>
+
+<script>
+{
+const T=[
+ ['自社サイト（LINEから）',96,'カード決済の手数料を約3.6%とした場合（仮）',1],
+ ['Google サブスクの外部決済',90,'スマホ新法の後。年100万ドルまでのサブスク'],
+ ['ストアカ（自分で集客）',90,'別途消費税'],
+ ['Substack',87,'手数料10%と決済手数料を引いた後'],
+ ['note（カード決済）',85.5,'5%＋残りの10%。振込のたびに270円'],
+ ['Apple 外部サイトで決済',85,'スマホ新法の後'],
+ ['ココナラ',78,'ビデオ通話のサービスは72.5%'],
+ ['Apple アプリ内課金',74,'スマホ新法の後'],
+ ['Kindle 70%プラン',70,'値段の範囲などの条件あり。配信費用を引く'],
+ ['ストアカ（ストアカ経由）',70,'対面講座は80%'],
+ ['CrazyGames 広告',60,'2026年の公開条件。課金は70%'],
+ ['Poki（Poki経由の人）',50,'自分で連れてきた人は100%'],
+ ['Udemy（自分のクーポン以外）',37,'自分のクーポン経由なら97%'],
+ ['LINEスタンプ',35,'手数料30%を引いた残りの50%']
+];
+const tk=document.getElementById('take');
+tk.innerHTML=T.map(([n,v,c,h])=>`<div class="br${h?' hot':''}" data-tip="${c}"><span>${n}</span><span class="bt" style="width:${v}%"></span><span class="v"><span class="num${h?' red':''}">${v}</span>円</span></div>`).join('');
+
+const tip=document.getElementById('tip');
+const show=(el,x,y)=>{tip.textContent=el.dataset.tip;tip.classList.add('on');const r=tip.getBoundingClientRect();let L=x+12,Tp=y-r.height-10;if(L+r.width>innerWidth-8)L=innerWidth-r.width-8;if(Tp<8)Tp=y+16;tip.style.left=L+'px';tip.style.top=Tp+'px'};
+const hide=()=>tip.classList.remove('on');
+document.addEventListener('pointermove',ev=>{const el=ev.target.closest('[data-tip]');if(el)show(el,ev.clientX,ev.clientY);else hide()});
+document.addEventListener('scroll',hide,{passive:true});
+}
+</script>
+</body>
+</html>
